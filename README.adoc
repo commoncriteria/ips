@@ -26,7 +26,7 @@ Profile for IPS] (html)
 
 === Release Version
 
-* link:ips[Protection Profile for IPS]
+* TBD
 
 === Contributing
 
