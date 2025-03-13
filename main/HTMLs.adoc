@@ -1,0 +1,6 @@
+* https://commoncriteria.github.io/ips/main/AppliedTDs-Diff.html[AppliedTDs-Diff.html]
+* https://commoncriteria.github.io/ips/main/AppliedTDs.html[AppliedTDs.html]
+* https://commoncriteria.github.io/ips/main/diff-v1.0.html[diff-v1.0.html]
+* https://commoncriteria.github.io/ips/main/ips-release-linkable.html[ips-release-linkable.html]
+* https://commoncriteria.github.io/ips/main/ips-release.html[ips-release.html]
+* https://commoncriteria.github.io/ips/main/ips.html[ips.html]
