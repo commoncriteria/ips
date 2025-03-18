@@ -1404,6 +1404,7 @@
 	<!-- Bibliography is auto generated here with CC and CEM docs. If you want other docs -->
 	<!-- included, add them here. -->
 	<bibliography>
+	  <cc-entry/>
       <entry id="bibCESG">
         <tag>CESG</tag>
         <description>CESG - <h:a href="https://www.gov.uk/government/collections/end-user-devices-security-guidance"> End
