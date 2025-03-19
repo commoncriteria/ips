@@ -281,9 +281,11 @@
           </description>
         </usecase>
       </usecases>
+	  <h:p>
       This PP-Module also defines optional and objective requirements for functionality including separation of
 	  management roles and ability to use the TSF to review collected IPS data. These functions are not
  	  dependent on a particular use case being chosen.
+	  </h:p>
     </sec:Use_Cases> 
     
  
@@ -360,9 +362,10 @@
 	and provide an appropriate response to meet their needs, relative to their own risk analysis and their
 	perceived threats. Threats mitigated by the conformant TOE can include attempts to:
 	</h:p>
+	<h:p>
 		<h:ul>
 			<h:li>Perform network-based reconnaissance (probing for information about a monitored network or its endpoints), such as through use of various scanning or mapping techniques. </h:li>
-			<h:li>Obstruct the normal function of monitored networks, endpoints, or services, such as through denial of service attacks. </h:ul>
+			<h:li>Obstruct the normal function of monitored networks, endpoints, or services, such as through denial of service attacks.<h:li>
 			<h:li>Gain inappropriate access to one or more networks, endpoints, or services, such as through brute
 			force password guessing attacks, or by transmitting malicious executable code, scripts, or
 			commands. </h:li>
@@ -371,7 +374,7 @@
 			means that data was removed without proper authorization to remove it. This may be a pull or a
 			push. It can result from intrusion from the outside or by the actions of the insider. </h:li>
 		</h:ul>
-
+		</h:p>
   	<h:p>Note that this PP-Module does not repeat the threats identified in the NDcPP, though they all apply given
 	the conformance and hence dependence of this PP-Module on the NDcPP. Additionally, this PP-Module
 	describes TOE functionality (such as security management functions) that are subject to the same threats
