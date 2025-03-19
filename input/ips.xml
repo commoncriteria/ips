@@ -280,10 +280,12 @@
 			configuration and collect relevant log data for the rest of the TOE.
           </description>
         </usecase>
-      </usecases>
 	  This PP-Module also defines optional and objective requirements for functionality including separation of
 	  management roles and ability to use the TSF to review collected IPS data. These functions are not
  	  dependent on a particular use case being chosen.
+      </usecases>
+
+	  
     </sec:Use_Cases> 
     
  
@@ -411,17 +413,18 @@
         <threat name="T.NETWORK_DISCLOSURE" id="t-network-disclosure">
           <description> Sensitive information on a protected network might be disclosed resulting from ingress- or egress-based
 	  	  actions. </description>
+		  </threat>
 		<threat name="T.NETWORK_DOS" id="t-network-dos">
           <description> Attacks against services inside a protected network, or indirectly by virtue of access to malicious agents
 		  from within a protected network, might lead to denial of services otherwise available within a protected
 		  network. </description>
+		</threat>
 		<threat name="T.NETWORK_MISUSE" id="t-network-misuse">
           <description> Access to services made available by a protected network might be used counter to operational
 		  environment policies. Devices located outside the protected network may attempt to conduct
 		  inappropriate activities while communicating with allowed public services (e.g. manipulation of resident
 		  tools, SQL injection, phishing, forced resets, malicious zip files, disguised executables, privilege escalation
 		  tools, and botnets). </description>
-  
 		  
 <!--            <addressed-by>FCS_COP.1/HASH</addressed-by><rationale>How the SFR addresses the threat.</rationale>
             <addressed-by>FCS_COP.1/SIGN</addressed-by><rationale>How the SFR addresses the threat.</rationale>
