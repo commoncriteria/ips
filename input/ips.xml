@@ -134,8 +134,9 @@
 	  </term>
 	  <term full="Normalization (of network traffic)">
 	  	Filtering of network traffic such that only the useful packets/fragments are allowed through to the destination. Normalization can only be performed by the TOE when the TOE is deployed in inline mode. Normalization can include filtering out any of
+		<comment>Revisit: incomplete sentence for the last section of the "Normalization (of network traffic)" defination</comment>
 	  </term>
-	  <comment>Revisit: incomplete sentence for the last section of the "Normalization (of network traffic)" defination</comment>
+	  
 	  <term full="Profiling (network traffic)">
 	  	See base-lining.</term>
 	  <term full="Promiscuous mode">
@@ -247,7 +248,7 @@
 	<!-- 1.4 TOE_Boundary -->
     <sec:TOE_Boundary>
         <h:p>The physical boundary for a TOE that conforms to this PP-Module is a physical or virtual network device,
-		that also provides generalized network device functionality, such as auditing, I&A, and cryptographic
+		that also provides generalized network device functionality, such as auditing, I&amp;A, and cryptographic
 		services for network communications. The TOE may be standalone or distributed, where a distributed TOE
 		is one that requires multiple distinct components to operate as a logical whole in order to fulfill the
 		requirements of this PP-Module. The TOE’s logical boundary includes all functionality required by the
