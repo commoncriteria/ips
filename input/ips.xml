@@ -260,7 +260,13 @@
 
     <!-- 1.5 Use Cases -->
     <sec:Use_Cases>
-      This PP-Module defines two potential use cases for the IPS TOE:
+    	<h:p>
+      This PP-Module defines two potential use cases for the IPS TOE, listed below.
+    	</h:p><h:p>
+      This PP-Module also defines optional and objective requirements for functionality including separation of
+      management roles and ability to use the TSF to review collected IPS data. These functions are not
+      dependent on a particular use case being chosen.
+    	</h:p>
       <usecases>
         <usecase id="usecase1" title="Standalone System">
           <description>
@@ -280,9 +286,6 @@
 			configuration and collect relevant log data for the rest of the TOE.
           </description>
         </usecase>
-	  This PP-Module also defines optional and objective requirements for functionality including separation of
-	  management roles and ability to use the TSF to review collected IPS data. These functions are not
- 	  dependent on a particular use case being chosen.
       </usecases>
 
 	  
@@ -474,8 +477,9 @@
     <sec:Organizational_Security_Policies>
 
       <OSPs>
+
+      	
         <OSP name="P.ANALYZE">
-          <from base=""/> <!--do not delete-->
 		  <description>Analytical processes and information to derive conclusions about potential intrusions must be applied to IPS data and appropriate response actions taken.</description>
           <objective-refer ref="OE.CONNECTIONS">
             <rationale>The operational environment's ability to facilitate network connections is necessary for the policy to analyze the network traffic associated with these connections.</rationale>
@@ -677,17 +681,16 @@ enforce its policies on network traffic of monitored networks.</description>
 					occurs within a reasonable time period (e.g. the TSF need only generate one audit
 					message for an event that repeated X times during Y seconds).
 					</h:i></h:p>
+				</note>
 					<aactivity>      <!-- at minimum, only the last f-element in the f-component needs to have this -->
    						<no-tests/>   <!-- use this inside the aactivity tag to specify that there are no EAs for the SFR (if just doing <aactivity/> doesn't work) -->
 					</aactivity>
 
-				</note>
-
 				</f-element>
 				<f-element id="fau-gen-1e2-ips">
 					<title>The TSF shall record within each <h:b>IPS auditable event</h:b> record at least the following information: <h:ol type="a">
-						<h:li>Date and time of the event, type of event <h:b>and/or reaction,</h:b> <s>subject identity, and the outcome (success or failure) of the event; and;</s></h:li>
-						<h:li>For each <h:b>IPS auditable event</h:b> type, based on the auditable event definitions of the functional components included in the PP<s>/ST</s>, [<h:i>information specified in column three of the IPS Events table].</h:i></h:li>
+						<h:li>Date and time of the event, type of event <h:b>and/or reaction,</h:b> <h:s>subject identity, and the outcome (success or failure) of the event; and;</h:s></h:li>
+						<h:li>For each <h:b>IPS auditable event</h:b> type, based on the auditable event definitions of the functional components included in the PP<h:s>/ST</h:s>, [<h:i>information specified in column three of the IPS Events table].</h:i></h:li>
 						<comment>Update the second selection to properly have UPS Auidtable evet bolded, just like the first one.</comment>
 					</h:ol>
 
@@ -715,11 +718,11 @@ enforce its policies on network traffic of monitored networks.</description>
 			</section>
 			
 			<section title="Security Management (FMT)" id="m-fmt">
-			<f-component name="Specification of Management Functions (IPS)" cc-id="FMT_SMF.1" iteration="IPS" id="fmt-smf-1">
+			<f-component name="Specification of Management Functions (IPS)" cc-id="fmt_smf.1" iteration="IPS" id="fmt-smf-1">
 				<f-element id="fmt-smf-1-1-ips">
 				<title>
 				The TSF shall be capable of performing the following management functions: [
-				<h:ul><h:i>
+					<h:i><h:ul>
 					<h:li>Enable, disable signatures applied to sensor interfaces, and determine the behavior of IPS functionality</h:li>
 					<h:li>Modify these parameters that define the network traffic to be collected and analyzed:</h:li>
 					<h:ul>
@@ -749,21 +752,19 @@ enforce its policies on network traffic of monitored networks.</description>
 			</section>
 			<!-- NEW SFR-->
 						<section title="Intrusion Prevention (IPS)" id="ips">
-			<f-component name="Anomaly-Based IPS Functionality" cc-id="IPS_ABD_EXT.1" iteration="IPS" id="ips-adb-ext-1-ips">
+			<f-component name="Anomaly-Based IPS Functionality" cc-id="fip_abd_ext.1" id="ips-adb-ext-1-ips">
 				<f-element id="ips-adb-ext-1e1">
 				<title>
 				The TSF shall support the definition of <selectables>
 					<selectable>baselines (‘expected and approved’)</selectable>
 					<selectable>anomaly (‘unexpected’) traffic patterns</selectable>
 					<selectable></selectable>
-				</selectables> including the specification of <selectables>
-					<h:ul>
-					<h:li><selectable>throughput ( <assignable> data elements (e.g. bytes, packets, etc.) per time period (e.g. minutes, hours, days)</assignable> ) </selectable></h:li>
-					<h:li><selectable>time of day;</selectable></h:li>
-					<h:li><selectable>frequency;</selectable></h:li>
-					<h:li></h:li><selectable>thresholds;</selectable></h:li>
-					<h:li><selectable>[ <assignable>other methods</assignable> ]</selectable></h:li>
-					</h:ul>
+				</selectables> including the specification of <selectables linebreak="yes">
+					<selectable>throughput (<assignable> data elements (e.g. bytes, packets, etc.) per time period (e.g. minutes, hours, days)</assignable>) </selectable>
+					<selectable>time of day;</selectable>
+					<selectable>frequency;</selectable>
+					<selectable>thresholds;</selectable>
+					<selectable>[ <assignable>other methods</assignable> ]</selectable>
 					</selectables>
 					and the following network protocol fields:
 					<h:ul>
@@ -772,6 +773,7 @@ enforce its policies on network traffic of monitored networks.</description>
 						<selectable><assignable> subset list of packet header and data elements from IPS_SBD_EXT.1 </assignable></selectable>
 						</selectables></h:li>
 					</h:ul>
+				</title>  
 					<note role="application">
 					Baselines are the definition of known-good traffic (to be allowed per
 					IPS_ABD_EXT.1.3) whilst anomaly traffic is definition of (‘offending’) traffic that is
@@ -782,7 +784,7 @@ enforce its policies on network traffic of monitored networks.</description>
 					or percentage of deviation from expected levels or limits, such as a number of
 					megabytes of data transferred via FTP per hour. 
 					</note>
-				</title>            
+	          
 				<aactivity>      <!-- at minimum, only the last f-element in the f-component needs to have this -->
    						<no-tests/>   <!-- use this inside the aactivity tag to specify that there are no EAs for the SFR (if just doing <aactivity/> doesn't work) -->
 					</aactivity>
@@ -790,7 +792,7 @@ enforce its policies on network traffic of monitored networks.</description>
 				<f-element id="ips-adb-ext-1e2">
 				<title>
 				The TSF shall support the definition of anomaly activity through <selectables><selectable>manual configuration by administrators</selectable><selectable>automated configuration</selectable></selectables>
-				
+				</title>
 				<note role="application">
 				The “baseline” and “anomaly” can be something manually defined/configured
 				by a TOE administrator (or importing definitions), or something that the TOE is
@@ -799,42 +801,37 @@ enforce its policies on network traffic of monitored networks.</description>
 				of “profiling” a network to dynamically defining a baseline or rule; if the product
 				has this functionality, it is outside the scope of this PP-Module.
 				</note>
-				</title>
+				
 				</f-element>
 				<f-element id="ips-adb-ext-1e3">
 				<title>
 				The TSF shall allow the following operations to be associated with anomalybased IPS policies:
 				<h:ul>
-					<h:il>In any mode, for any sensor interface: <selectables>
-						<h:ul>
-							<h:il><selectable>allow the traffic flow</selectable></h:il>
-							<h:il><selectable>send a TCP reset to the source address of the offending traffic</selectable></h:il>
-							<h:il><selectable>send a TCP reset to the destination address of the offending traffic</selectable></h:il>
-							<h:il><selectable>send an ICMP
+					<h:li>In any mode, for any sensor interface: <selectables linebreak="yes">
+						<selectable>allow the traffic flow</selectable>
+							<selectable>send a TCP reset to the source address of the offending traffic</selectable>
+							<selectable>send a TCP reset to the destination address of the offending traffic</selectable>
+							<selectable>send an ICMP
 								<selectables>
 									<selectable>host</selectable>
 									<selectable>destination</selectable>
 									<selectable>port</selectable>
 								</selectables>
 								unreachable message
-								</selectable></h:il>
-							<h:il><selectable>trigger a non-TOE network device to block the offending traffic pattern</selectable></h:il>
-							<selectable></selectable>
-							<selectable></selectable>
-						</h:ul>
-					</h:il>
-					<h:li>
+								</selectable>
+							<selectable>trigger a non-TOE network device to block the offending traffic pattern</selectable>
+					</selectables></h:li>
 					In inline mode:
 						<h:ul>
-							<h:il><h:i>[allow the traffic flow</h:i></h:il>
-							<h:il><h:i>block/drop the traffic flow</h:i></h:il>
-							<h:il><h:i>and</h:i> 
+							<h:li><h:i>[allow the traffic flow</h:i></h:li>
+							<h:li><h:i>block/drop the traffic flow</h:i></h:li>
+							<h:li><h:i>and</h:i> 
 									<selectables>
 										<selectable>modify and forward packets before they pass through the TOE</selectable>
 										<selectable>no other actions</selectable>
-									</selectables></h:il>
+									</selectables></h:li>
 						</h:ul>
-					</h:li>
+					
 				</h:ul>
 				</title>
 				<aactivity>      <!-- at minimum, only the last f-element in the f-component needs to have this -->
@@ -842,7 +839,7 @@ enforce its policies on network traffic of monitored networks.</description>
 				</aactivity>
 				</f-element>
 				</f-component>
-				<f-component name="IP Blocking" cc-id="IPS_IPB_EXT.1" iteration="IPS" id="ips-ipb-ext-1-ips">
+				<f-component name="IP Blocking" cc-id="fip_ipb_ext.1" id="ips-ipb-ext-1-ips">
 				<f-element id="ips-ipb-ext-1e1">
 					<title>
 					The TSF shall support configuration and implementation of known-good and known-bad lists of <selectables>
@@ -853,14 +850,15 @@ enforce its policies on network traffic of monitored networks.</description>
 						<selectable>
 							<assignable>list of address types</assignable>
 							</selectable></selectables>
-						<note role="application">
+
+					</title>
+					<note role="application">
 						The address types defined in this SFR are limited to IP addresses (e.g. a single IP
 						address or a range of IP addresses) because this IPS PP-Module is limited to
 						inspection of IP traffic. IPS TOEs are not prohibited from enabling functionality
 						that would allow/prohibit traffic flow based on other address types, such as
 						MAC addresses.
-						</note>
-					</title>	
+					</note>
 				<aactivity>      <!-- at minimum, only the last f-element in the f-component needs to have this -->
    					<no-tests/>   <!-- use this inside the aactivity tag to specify that there are no EAs for the SFR (if just doing <aactivity/> doesn't work) -->
 				</aactivity>
@@ -880,24 +878,25 @@ enforce its policies on network traffic of monitored networks.</description>
 					</aactivity>
 				</f-element>
 				</f-component>
-				<f-component name="I Network Traffic Analysis" cc-id="IPS_NTA_EXT.1" iteration="ips" id="ips-nta-ext-1-ips">
+				<f-component name="I Network Traffic Analysis" cc-id="fip_nta_ext.1" id="ips-nta-ext-1-ips">
 				<f-element id="ips-nta-ext-1e1">
 					<title>
 					The TSF shall perform analysis of IP-based network traffic forwarded to the
 					TOE’s sensor interfaces, and detect violations of administratively-defined IPS
 					policies.
-					<note role="application">
-					Though it might be the case in some TOEs that any TOE interface can be a sensor
-					interface, that capability is not a requirement. This SFR uses the term “sensor
-					interface” to refer to any TOE interface to which one or more IPS policy has been
-					applied. An administratively-defined IPS policy is any set of rules for traffic
-					analysis, traffic blocking, signature detection, and/or anomaly detection applied
-					to one or more TOE interfaces. The TOE may be capable of allowing the
-					administrator to configure the precedence of IPS policy elements (known-good
-					lists, known-bad lists, signature-based rules, and anomaly- based rules), but any
-					such configurability is not required by this PP-Module.
-					</note>
+
 					</title>
+					<note role="application">
+						Though it might be the case in some TOEs that any TOE interface can be a sensor
+						interface, that capability is not a requirement. This SFR uses the term “sensor
+						interface” to refer to any TOE interface to which one or more IPS policy has been
+						applied. An administratively-defined IPS policy is any set of rules for traffic
+						analysis, traffic blocking, signature detection, and/or anomaly detection applied
+						to one or more TOE interfaces. The TOE may be capable of allowing the
+						administrator to configure the precedence of IPS policy elements (known-good
+						lists, known-bad lists, signature-based rules, and anomaly- based rules), but any
+						such configurability is not required by this PP-Module.
+					</note>
 					<aactivity>      <!-- at minimum, only the last f-element in the f-component needs to have this -->
 						<no-tests/>   <!-- use this inside the aactivity tag to specify that there are no EAs for the SFR (if just doing <aactivity/> doesn't work) -->
 					</aactivity>
@@ -906,25 +905,26 @@ enforce its policies on network traffic of monitored networks.</description>
 					<title>
 					The TSF shall process (be capable of inspecting) the following network traffic protocols:	
 					<h:ul>
-					<h:il>[Internet Protocol version 4 (IPv4), RFC 791</h:il>
-					<h:il>Internet Protocol version 6 (IPv6), RFC 2460</h:il>
-					<h:il>Internet control message protocol version 4 (ICMPv4), RFC 792</h:il>
-					<h:il>Internet control message protocol version 6 (ICMPv6), RFC 2463</h:il>
-					<h:il>Transmission Control Protocol (TCP), RFC 793</h:il>
-					<h:il>User Data Protocol (UDP), RFC 768].</h:il>
-					<note role="application">The identification of protocol RFCs does not imply that the TOE must ensure all
-					packets are conformant to the identified protocol RFCs at all times, nor does it
-					imply that the TOE would be able to enforce full conformance with the RFCs for
-					any traffic flow at any time. The identification of RFCs provides a frame of
-					reference for understanding the packet contents (headers, fields, states,
-					commands, etc.) identified else in this and other SFRs. The implication is that the
-					TOE must be capable of understanding the RFC implementation to the extent the
-					RFC parameters are identified throughout the SFRs.
-					</note>
+					<h:li>[Internet Protocol version 4 (IPv4), RFC 791</h:li>
+					<h:li>Internet Protocol version 6 (IPv6), RFC 2460</h:li>
+					<h:li>Internet control message protocol version 4 (ICMPv4), RFC 792</h:li>
+					<h:li>Internet control message protocol version 6 (ICMPv6), RFC 2463</h:li>
+					<h:li>Transmission Control Protocol (TCP), RFC 793</h:li>
+					<h:li>User Data Protocol (UDP), RFC 768].</h:li>
+
 
 					</h:ul>
-					
 					</title>
+						<note role="application">The identification of protocol RFCs does not imply that the TOE must ensure all
+							packets are conformant to the identified protocol RFCs at all times, nor does it
+							imply that the TOE would be able to enforce full conformance with the RFCs for
+							any traffic flow at any time. The identification of RFCs provides a frame of
+							reference for understanding the packet contents (headers, fields, states,
+							commands, etc.) identified else in this and other SFRs. The implication is that the
+							TOE must be capable of understanding the RFC implementation to the extent the
+							RFC parameters are identified throughout the SFRs.
+						</note>					
+					
 					<aactivity>      <!-- at minimum, only the last f-element in the f-component needs to have this -->
 						<no-tests/>   <!-- use this inside the aactivity tag to specify that there are no EAs for the SFR (if just doing <aactivity/> doesn't work) -->
 					</aactivity>
@@ -936,14 +936,15 @@ enforce its policies on network traffic of monitored networks.</description>
 					support designation of one or more interfaces as ‘management’ for communication between the TOE and external entities without simultaneously
 					being sensor interfaces.
 					<h:ul>
-					<h:il>Promiscuous (listen-only) mode: <assignable>list of interface types</assignable></h:il>
-					<h:il>Inline (data pass-through) mode: <assignable>list of interface types</assignable></h:il>
-					<h:il>Management mode:<assignable>list of interface types</assignable></h:il>
-					<h:il><selectables><h:ul>
-						<h:il><selectable>[Session-reset-capable interfaces:<assignable>list of session-reset-capable interfaces</assignable></selectable></h:il>
-						<h:il><assignable>other interface types</assignable>]</h:il>
-						<h:il>no other interface types</h:il></h:ul></selectables>.</h:il>
+					<h:li>Promiscuous (listen-only) mode: <assignable>list of interface types</assignable></h:li>
+					<h:li>Inline (data pass-through) mode: <assignable>list of interface types</assignable></h:li>
+					<h:li>Management mode:<assignable>list of interface types</assignable></h:li>
+					<h:li><selectables linebreak="yes">
+					<selectable>[Session-reset-capable interfaces:<assignable>list of session-reset-capable interfaces</assignable></selectable>
+				    <selectable><assignable>other interface types</assignable>]</selectable>
+				    <selectable>no other interface types</selectable></selectables>.</h:li>
 					</h:ul>
+					</title>
 					<note role="application">
 					<h:p>
 					Interface types may be Ethernet, Gigabit Ethernet, etc. Promiscuous interfaces
@@ -973,7 +974,7 @@ enforce its policies on network traffic of monitored networks.</description>
 					enable specific ports to serve one or more specific interface functions.
 					</h:p>
 					</note>
-					</title>
+					
 				</f-element>
 
 
@@ -987,152 +988,7 @@ enforce its policies on network traffic of monitored networks.</description>
 			</section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-				<!-- Dependencies for sel-based, feat-based -->
-				<depends on-sel="sel-rot2-audit"/> 
-				
-				<!-- Consistency rationale is required only for SFRs in modified and additional SFR -->
-				<!-- sections of a PP-Module. -->
-<!--				<consistency-rationale>
-					This SFR defines additional uses for X.509 certificate functionality that
-					do not conflict with those defined in the GPOS PP.
-				</consistency-rationale>
--->				
-				<!-- Extended components must provide the following information. -->
-				<!-- Component leveling information for the ECD appendix. -->
-				<comp-lev>
-					specifies how audit data may be transmitted or removed from the TOE, which is not 
-					covered by any FCS_STG component.
-				</comp-lev>
-				<management>
-					The following actions could be considered for the management functions in FMT:
-					<h:ol type="a">
-						<h:li>Ability to configure and manage the audit system and audit data,
-							including the ability to configure name/address of audit/logging server
-							to which to send audit/logging records.
-						</h:li>
-					</h:ol>
-				</management>
-				<audit>The following actions should be auditable if FAU_GEN Security audit data generation 
-					is included in the PP/ST:
-					<h:ol type="a">
-						<h:li>On failure of logging function, capture record of failure and record upon 
-							restart of logging function.
-						</h:li>
-					</h:ol>
-				</audit>
-				<dependencies><h:br/>
-					FAU_GEN.1 Audit Data Generation
-				</dependencies>
-				
-				<!-- Optional description that is seldon used. -->
-<!--				<description>
-					This is something that I want to say up front about this requirement, but I 
-					don't have to. Most people use App Notes for this.
-				</description>
--->
-				<!-- Elements for this component. One or more. -->
-				<f-element id="fcs-cop-ext-1-1-skc">
-					<title>
-						The TSF shall be able to transfer generated audit data to an external IT entity
-						using 
-						<selectables linebreak="yes">
-							<selectable id="sel-fau-itc">a trusted channel as specified in FTP_ITC_EXT.1</selectable>
-							<selectable>removable media requiring physical access to the platform</selectable>
-						</selectables>.
-					</title>
-					
-					<!-- For extended components only that include selections or assignments with an id attribute -->
-					<!-- Make a copy of the title with all selections replaced by assignments and all ids removed.-->
-					<!-- This ensures proper display in the ECD section. -->
-					<ext-comp-def-title>
-						<title>The TSF shall be able to transfer generated audit data to an external IT entity using 
-							<assignable>mechanism for moving audit data</assignable>. 
-						</title>
-					</ext-comp-def-title>
-					
-					<note role="application">
-						Instructions for the ST Author on how to fill in the selections and assignments.
-					</note>
-					
-					<!-- EAs for the element (or component) -->
-					<aactivity level="element">
-						<TSS>What the evaluator has to do with the TSS.</TSS>
-						<Guidance>What the evaluator has to do with the TOE Guidance document.</Guidance>
-						<KMD>What the evaluator has to do with the Key Management Document, or whatever.</KMD>
-						<Tests>The tests that the evaluator has to run to verify that the requirement is met.</Tests>
-					</aactivity>
-					
-					<!-- Optional rules go here. -->
-<!--					<rule id="keyedhash-alg-match-sha-256">
-						<description>If "<h:i><xref to="sel-hmac-sha-256"/></h:i>" is selected in FCS_COP.1/KeyedHash then "<h:i><xref to="sel-hash-sha-256"/></h:i>" 
-							must be selected in FCS_COP.1/Hash.</description>
-						<if><ref-id>sel-hmac-sha-256</ref-id></if><then><ref-id>sel-hash-sha-256</ref-id></then>
-					</rule>
--->
-				</f-element>
-
-				<!-- Audit events for this SFR -->
-				<audit-event>
-					<audit-event-descr>Failure to establish a HTTPS Session.</audit-event-descr>
-					<audit-event-info>Reason for failure.</audit-event-info>
-					<audit-event-info>Non-TOE endpoint of connection (IP address) for failures.</audit-event-info>
-				</audit-event>
-				
-			</f-component>	
 	
-			<!-- We're pretending that this one is from the CC catalog -->
-			<f-component name="Yet Another Requirement"   
-               id="sfr-fcs-yar-1"       
-               cc-id="fcs_yar.1">              
-		
-				<!-- Elements for this component. One or more. -->
-				<f-element id="fcs-yar-1e1">
-					<title>
-						The TSF shall be able to do something important.
-					</title>
-					
-					<note role="application">
-						Instructions for the ST Author on how to fill in the selections and assignments.
-					</note>
-					
-					<!-- EAs for the element (or component) -->
-					<aactivity level="element">
-						<TSS>What the evaluator has to do with the TSS.</TSS>
-						<Guidance>What the evaluator has to do with the TOE Guidance document.</Guidance>
-						<KMD>What the evaluator has to do with the Key Management Document, or whatever.</KMD>
-						<Tests>The tests that the evaluator has to run to verify that the requirement is met.</Tests>
-					</aactivity>
-					
-				</f-element>
-
-				<!-- Audit events for this SFR -->
-				<audit-event>
-					<audit-event-descr>Failure to do the important thing.</audit-event-descr>
-					<audit-event-info>Reason for failure.</audit-event-info>
-				</audit-event>
-				
-			</f-component>	
-	
-			<!-- More components and class sections. -->
-
-		</section> <!-- Class FCS -->
-		
-		<!-- Security Requirements Rationale section -->
-		<!-- This is auto-genertaed and appears here. -->
-		
 	</man-sfrs>  <!-- SFRs -->
     
     <opt-sfrs></opt-sfrs>
