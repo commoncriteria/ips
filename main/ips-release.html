@@ -629,13 +629,13 @@ function showTarget(id){
 	            img[src="images/collapsed.png"] { display:none;}
 
           }
-    </style></head><body onLoad="init()"><h1 class="title" style="page-break-before:auto;">PP-Module for IPS</h1><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><div class="center"><img src="images/niaplogo.png" alt="NIAP Logo"></img><br/>
+    </style></head><body onLoad="init()"><div id="commmentbox-"><a href="#Comment-1-">Comment: Comment-1-</a><br/><a href="#Comment-2-">Comment: Comment-2-</a><br/><a href="#Comment-3-">Comment: Comment-3-</a><br/></div><h1 class="title" style="page-break-before:auto;">PP-Module for IPS</h1><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><div class="center"><img src="images/niaplogo.png" alt="NIAP Logo"></img><br/>
       Version: 1.1<br/>2025-03-21<br/><b>National Information Assurance Partnership</b><br/></div><h2 style="page-break-before:always;">Revision History</h2><table><tr class="header"><th>Version</th><th>Date</th><th>Comment</th></tr><tr><td>1.1</td><td>2025-03-21</td><td><abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022 updates, incorporation of TDs</td></tr>
 <tr><td>1.0</td><td>2021-05-11</td><td>Initial publication</td></tr>
-</table><h2>Contents</h2><div class="toc" id="toc"><a href="#Introduction" style="text-indent:0px">1<span>Introduction</span></a><a href="#Overview" style="text-indent:10px">1.1<span>Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#Compliant_Targets_of_Evaluation" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOE_Boundary" style="text-indent:20px">1.3.1<span>TOE Boundary</span></a><a href="#Use_Cases" style="text-indent:10px">1.4<span>Use Cases</span></a><a href="#app-intro" style="text-indent:10px">1.5<span>Introduction</span></a><a href="#ConformanceClaims" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#Security_Problem_Definition" style="text-indent:0px">3<span>Security Problem Definition</span></a><a href="#sec-threats" style="text-indent:10px">3.1<span>Threats</span></a><a href="#Assumptions" style="text-indent:10px">3.2<span>Assumptions</span></a><a href="#Organizational_Security_Policies" style="text-indent:10px">3.3<span>Organizational Security Policies</span></a><a href="#Security_Objectives" style="text-indent:0px">4<span>Security Objectives</span></a><a href="#Security_Objectives_for_the_Operational_Environment" style="text-indent:10px">4.1<span>Security Objectives for the Operational Environment</span></a><a href="#sec-sor" style="text-indent:10px">4.2<span>Security Objectives Rationale</span></a><a href="#Security_Requirements" style="text-indent:0px">5<span>Security Requirements</span></a><a href="#secreq-ND" style="text-indent:10px">5.1<span>Collaborative 
+</table><h2>Contents</h2><div class="toc" id="toc"><a href="#Introduction" style="text-indent:0px">1<span>Introduction</span></a><a href="#Overview" style="text-indent:10px">1.1<span>Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#Compliant_Targets_of_Evaluation" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOE_Boundary" style="text-indent:10px">1.4<span>TOE Boundary</span></a><a href="#Use_Cases" style="text-indent:10px">1.5<span>Use Cases</span></a><a href="#app-intro" style="text-indent:10px">1.6<span>Introduction</span></a><a href="#ConformanceClaims" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#Security_Problem_Definition" style="text-indent:0px">3<span>Security Problem Definition</span></a><a href="#sec-threats" style="text-indent:10px">3.1<span>Threats</span></a><a href="#Assumptions" style="text-indent:10px">3.2<span>Assumptions</span></a><a href="#Organizational_Security_Policies" style="text-indent:10px">3.3<span>Organizational Security Policies</span></a><a href="#Security_Objectives" style="text-indent:0px">4<span>Security Objectives</span></a><a href="#Security_Objectives_for_the_Operational_Environment" style="text-indent:10px">4.1<span>Security Objectives for the Operational Environment</span></a><a href="#sec-sor" style="text-indent:10px">4.2<span>Security Objectives Rationale</span></a><a href="#Security_Requirements" style="text-indent:0px">5<span>Security Requirements</span></a><a href="#secreq-ND" style="text-indent:10px">5.1<span>Collaborative 
     Protection Profile for Network Devices
        Security Functional Requirements Direction
-    </span></a><a href="#modsfr-ND" style="text-indent:20px">5.1.1<span> Modified SFRs </span></a><a href="#man-sfrs" style="text-indent:10px">5.2<span>TOE Security Functional Requirements</span></a><a href="#ss-audit-table" style="text-indent:20px">5.2.1<span>Auditable Events for Mandatory SFRs</span></a><a href="#sec-fcs" style="text-indent:20px">5.2.2<span>Class: Cryptologic Support (FCS)</span></a><a href="#obj-req-map" style="text-indent:10px">5.3<span>TOE Security Functional Requirements Rationale</span></a><a href="#mod-conrat" style="text-indent:0px">6<span>Consistency Rationale</span></a><a href="#conrat-ND" style="text-indent:10px">6.1<span>Collaborative 
+    </span></a><a href="#modsfr-ND" style="text-indent:20px">5.1.1<span> Modified SFRs </span></a><a href="#man-sfrs" style="text-indent:10px">5.2<span>TOE Security Functional Requirements</span></a><a href="#ss-audit-table" style="text-indent:20px">5.2.1<span>Auditable Events for Mandatory SFRs</span></a><a href="#m-fau" style="text-indent:20px">5.2.2<span>Security Audit (FAU)</span></a><a href="#m-fmt" style="text-indent:20px">5.2.3<span>Security Management (FMT)</span></a><a href="#ips" style="text-indent:20px">5.2.4<span>Intrusion Prevention (IPS)</span></a><a href="#obj-req-map" style="text-indent:10px">5.3<span>TOE Security Functional Requirements Rationale</span></a><a href="#mod-conrat" style="text-indent:0px">6<span>Consistency Rationale</span></a><a href="#conrat-ND" style="text-indent:10px">6.1<span>Collaborative 
     Protection Profile for Network Devices</span></a><a href="#contoe-ND" style="text-indent:20px">6.1.1<span>
 	Consistency of TOE Type
       </span></a><a href="#consecprob-ND" style="text-indent:20px">6.1.2<span>
@@ -653,17 +653,17 @@ function showTarget(id){
      
     <h2 class="indexable" data-level="2" id="Overview">1.1 Overview</h2>
       The scope of this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is to describe the security functionality of an Intrusion Prevention System
-      (IPS) in terms of <a href="#bibCC">[CC]</a> and to define functional and assurance requirements for such products. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is intended for use with the following <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PPs</a></abbr>:
+      (<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr>) in terms of <a href="#bibCC">[CC]</a> and to define functional and assurance requirements for such products. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is intended for use with the following <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PPs</a></abbr>:
       
       <ul>
         <li>collaborative Protection Profile for Network Devices, Version 3.0E (NDcPP or CPP_ND_V3.0E)</li>
       </ul>
       
       <p>
-      This <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> is valid because a device that implements IPS is a specific type of network device, and there is nothing about the implementation of IPS that would prevent any of the security capabilities defined by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> from being satisfied.
+      This <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> is valid because a device that implements <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> is a specific type of network device, and there is nothing about the implementation of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> that would prevent any of the security capabilities defined by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> from being satisfied.
       </p><p>
       A <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that conforms to a <abbr class="dyn-abbr"><a href="#abbr_PP-Configuration">PP-Configuration</a></abbr> containing this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> may be a ‘Distributed <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’ as defined in the NDcPP. For example, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> could have distributed ‘sensor’ components monitoring various logically separated networks, each of which reports to a centralized ‘manager’ component for
-      configuration of IPS policies and aggregation of IPS data.
+      configuration of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies and aggregation of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data.
       </p>
     
 
@@ -684,8 +684,7 @@ The following sections list Common Criteria and technology terms used in this do
       accredited by the National Voluntary Laboratory Accreditation Program (NVLAP) and approved by the NIAP Validation Body to conduct Common Criteria-based evaluations.
     </td></tr>
 <tr><td><div id="Common_Evaluation_Methodology">Common Evaluation Methodology (CEM)</div></td><td>Common Evaluation Methodology for Information Technology Security Evaluation.</td></tr>
-<tr><td><div id="Extended_Package">Extended Package (EP)</div></td><td>A deprecated document form for collecting SFRs that implement a particular protocol, technology,
-	    or functionality. See Functional Packages.</td></tr>
+<tr><td><div id="Distributed_TOE">Distributed TOE</div></td><td>A TOE composed of multiple components operating as a logical whole.</td></tr>
 <tr><td><div id="Functional_Package">Functional Package (FP)</div></td><td>A document that collects SFRs for a particular protocol, technology,
 	    or functionality.</td></tr>
 <tr><td><div id="Operational_Environment">Operational Environment (OE)</div></td><td>Hardware and software that are outside the TOE boundary that support the TOE functionality and security policy.</td></tr>
@@ -698,117 +697,149 @@ The following sections list Common Criteria and technology terms used in this do
 <tr><td><div id="Target_of_Evaluation">Target of Evaluation (TOE)</div></td><td>The product under evaluation. </td></tr>
 <tr><td><div id="TOE_Security_Functionality">TOE Security Functionality (TSF)</div></td><td>The security functionality of the product under evaluation.</td></tr>
 <tr><td><div id="TOE_Summary_Specification">TOE Summary Specification (TSS)</div></td><td>A description of how a TOE satisfies the SFRs in an ST.</td></tr>
-</table><h3 id="tech-terms" class="indexable" data-level="3">1.2.2 Technical Terms</h3><table style="width: 100%"><tr><td><div id="Address_Space_Layout_Randomization">Address Space Layout Randomization (ASLR)</div></td><td>
-		An anti-exploitation feature which loads memory mappings into unpredictable
-		locations. ASLR makes it more difficult for an attacker to redirect control to code
-		that they have introduced into the address space of a process.
-      </td></tr>
-<tr><td><div id="Administrator">Administrator</div></td><td>
-		An administrator is responsible for management activities, including setting policies that are 
-		applied by the enterprise on the operating system.
-		This administrator could be acting remotely through a management server, from which the system
-		receives configuration policies.
-		An administrator can enforce settings on the system which cannot be overridden by non-administrator users.
-      </td></tr>
-<tr><td><div id="Application">Application (app)</div></td><td>
-		Software that runs on a platform and performs tasks on behalf of the user
-		or owner of the platform, as well as its supporting documentation. 
-      </td></tr>
-<tr><td><div id="Application_Programming_Interface">Application Programming Interface (API)</div></td><td>
-		A specification of routines, data structures, object classes, and variables
-		that allows an application to make use of services provided by another software
-		component, such as a library. APIs are often provided for a set of libraries included
-		with the platform.
-      </td></tr>
-<tr><td><div id="Credential">Credential</div></td><td>
-		Data that establishes the identity of a user, e.g. a cryptographic key or
-		password.
-      </td></tr>
-<tr><td><div id="Critical_Security_Parameters">Critical Security Parameters (CSP)</div></td><td>
-		Information that is either user or system defined and
-		is used to operate a cryptographic module in processing encryption functions including
-		cryptographic keys and authentication data, such as passwords, the disclosure or modification
-		of which can compromise the security of a cryptographic module or the security of the
-		information protected by the module.
-      </td></tr>
-<tr><td><div id="DAR_Protection">DAR Protection</div></td><td>
-		Countermeasures that prevent attackers, even those with physical access,
-		from extracting data from non-volatile storage.
-		Common techniques include data encryption and wiping.
-      </td></tr>
-<tr><td><div id="Data_Execution_Prevention">Data Execution Prevention (DEP)</div></td><td>
-		An anti-exploitation feature of modern operating systems executing on
-		modern computer hardware, which enforces a non-execute permission on pages of memory.
-		DEP prevents pages of memory from containing both data and instructions, which makes
-		it more difficult for an attacker to introduce and execute code.
-      </td></tr>
-<tr><td><div id="Developer">Developer</div></td><td>
-		An entity that writes OS software. For the purposes of this document,
-		vendors and developers are the same.
-      </td></tr>
-<tr><td><div id="General_Purpose_Operating_System">General Purpose Operating System</div></td><td>
-		A class of OSes designed to support a wide-variety of workloads consisting of many concurrent applications or services.
-		Typical characteristics for OSes in this class include support for third-party applications,
-		support for multiple users, and security separation between users and their respective resources.
-		General Purpose Operating Systems also lack the real-time constraint that defines Real Time Operating Systems (RTOS).
-		RTOSes typically power routers, switches, and embedded devices.
-      </td></tr>
-<tr><td><div id="Host-based_Firewall">Host-based Firewall</div></td><td>
-		A software-based firewall implementation running on the OS for filtering inbound and
-		outbound network traffic to and from processes running on the OS.
-      </td></tr>
-<tr><td><div id="Operating_System">Operating System (OS)</div></td><td>
-		Software that manages physical and logical resources and provides services
-		for applications. The terms <i>TOE</i> and <i>OS</i> are interchangeable in this
-		document. 
-      </td></tr>
-<tr><td><div id="Personally_Identifiable_Information">Personally Identifiable Information (PII)</div></td><td>
-		Any information about an individual maintained by an agency, including, but
-		not limited to, education, financial transactions, medical history, and criminal or
-		employment history and information which can be used to distinguish or trace an
-		individual's identity, such as their name, social security number, date and place of
-		birth, mother's maiden name, biometric records, etc., including any other personal
-		information which is linked or linkable to an individual.<a href="#bibOMB">[OMB]</a>
-      </td></tr>
-<tr><td><div id="Sensitive_Data">Sensitive Data</div></td><td>
-		Sensitive data may include all user or enterprise data or may be specific
-		application data such as PII, emails, messaging, documents, calendar items, and contacts.
-		Sensitive data must minimally include credentials and keys. Sensitive data shall
-		be identified in the OS's TSS by the ST author. 
-      </td></tr>
-<tr><td><div id="User">User</div></td><td>
-		A user is subject to configuration policies applied
-		to the operating system by administrators.  On some systems under certain
-		configurations, a normal user can temporarily elevate privileges to that of an administrator.
-		At that time, such a user should be considered an administrator.
-      </td></tr>
-<tr><td><div id="Virtual_Machine">Virtual Machine (VM)</div></td><td>Blah Blah Blah</td></tr>
+</table><h3 id="tech-terms" class="indexable" data-level="3">1.2.2 Technical Terms</h3><table style="width: 100%"><tr><td><div id="Anomaly_/_Anomalous_(network_traffic)">Anomaly / Anomalous (network traffic)</div></td><td>
+	  	Traffic that does not fit into a defined baseline and is therefore unexpected or atypical traffic. 
+		Anomalous traffic is not necessarily dangerous, and does not necessarily indicate any threat to the monitored network.
+	  </td></tr>
+<tr><td><div id="Baseline_/_Base-lining_(network_traffic)">Baseline / Base-lining (network traffic)</div></td><td>
+	  	Defining what is to be considered expected or typical network traffic on a monitored
+		network. A traffic baseline does not indicate that all traffic that matches the baseline
+		is safe, or that the traffic is not a potential threat to the monitored network. For
+		example: traffic that matches a baseline can still match a list of known-bad IP
+		addresses; or can match signatures of known threats.
+	  </td></tr>
+<tr><td><div id="Flooding">Flooding</div></td><td>
+	  	Causing an excessive amount of traffic on an IP subnet or targeted against a specific IP address.
+	  </td></tr>
+<tr><td><div id="IPS_policy">IPS policy</div></td><td>
+	  	Any set of rules for traffic analysis, traffic blocking, signature detection, and/or anomaly detection. Many IPS policies could be defined and stored on the TOE, but an IPS policy will not have any affect unless is applied to (made active on) one or more IPS interfaces.
+	  </td></tr>
+<tr><td><div id="Inline_mode">Inline mode</div></td><td>
+	  	The deployment of the TOE (or TOE component) such that monitored network traffic must flow across the TOE, 
+		thus providing the TOE with the opportunity to block the traffic.
+	  </td></tr>
+<tr><td><div id="Normalization_(of_network_traffic)">Normalization (of network traffic)</div></td><td>
+	  	Filtering of network traffic such that only the useful packets/fragments are allowed through to the destination. Normalization can only be performed by the TOE when the TOE is deployed in inline mode. Normalization can include filtering out any of
+		<span style="" class="comment " id="Comment-1-">Revisit: incomplete sentence for the last section of the "Normalization (of network traffic)" defination</span>
+	  </td></tr>
+<tr><td><div id="Profiling_(network_traffic)">Profiling (network traffic)</div></td><td>
+	  	See base-lining.</td></tr>
+<tr><td><div id="Promiscuous_mode">Promiscuous mode</div></td><td>
+	  	The state of an IPS interface in which it’s listening (collecting and inspecting) network traffic. A promiscuous interface could be one that is only listening and never transmitting traffic, or could be an interface through which traffic flows both inbound and outbound as in an inline mode deployment. </td></tr>
+<tr><td><div id="Sensor_interface">Sensor interface</div></td><td>
+	  	Any interface of the TOE that has an IPS policy applied to it.</td></tr>
 </table></div>    
 
 	
 	
+
+	
     <h2 class="indexable" data-level="2" id="Compliant_Targets_of_Evaluation">1.3 Compliant Targets of Evaluation</h2>
-      <h3 class="indexable" data-level="3" id="TOE_Boundary">1.3.1 TOE Boundary</h3>
-        <div class="figure" id="figure-toe"><img id="toe" src="images/Toe.png" width="" height=""></img><br/><span class="ctr" data-myid="toe" data-counter-type="ct-figure">Figure <span class="counter">1</span></span>:
-      General <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> </div>
-       
+		<p>
+			This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> specifically addresses network-based IPSs. A conformant <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> is a product that is connected
+			to one or more distinct networks and is managed as part of an overall enterprise security solution. In
+			particular, a compliant <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> provides network security administrators with the ability to monitor, collect,
+			log, and react in real-time to potentially malicious network traffic. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is focused on inspecting
+			IP traffic (<abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr>, <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr>, <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>, etc.). This limited scope is intentional for a number of reasons including: to
+			define a reasonable boundary for the scope of testing (assurance measures) defined within the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>
+			and to allow future <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-Modules to address other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> and functionality that includes scanners, analyzers,
+			sensors, etc. The scope of the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not preclude support for inspection of other IP protocols
+			(e.g. <abbr class="dyn-abbr"><a href="#abbr_GRE">GRE</a></abbr>, ESP, AH), but the scope of this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not include the evaluation of non-IP protocols
+			including layer 2 protocols, or Ethernet.
+   		</p><p>
+			The baseline requirements of this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> are those determined necessary for an Intrusion Prevention
+			product, though conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr> may provide <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality entirely independently from other
+			network components, and/or be deployed to operate in conjunction with other components of a larger
+			enterprise security solution. For example, though all conformant <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr> must have some capacity to
+			monitor, collect, analyze, and react to network traffic, a conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> could:</p>
+
+			<ul>
+				<li>Monitor all network traffic passively detected by one or more its interfaces, and/or monitor only specific traffic flows that are passed by or through the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> for inspection.</li>
+				<li>Transmit <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data to an external audit storage host, and optionally store <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data internally. <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> audit
+				data can be pushed (initiated by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>) or pulled (initiated by the remote host). Regardless of
+				whether <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data is pushed or pulled, the transmission must be protected in a manner consistent with
+				protected communications required by FAU_STG_EXT.1 of the NDcPP.</li>
+				<li>Analyze network traffic based on rules that an administrator can configure directly on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, and
+				optionally analyze network traffic based on rules imported/applied from another system.</li>
+				<li>React independently to potentially malicious traffic (such as by blocking traffic flows, or by
+				transmitting session resets to the endpoints), and optionally react in collaboration with non-TOE
+				components of the overall enterprise security solution by initiating a connection to non-TOE
+				components to cause/configure the non-TOE component to obstruct the traffic flow.</li>
+			</ul>
+		<p>Many similarities exist between a conformant <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and an Intrusion Detection System (<abbr class="dyn-abbr"><a href="#abbr_IDS">IDS</a></abbr>), but there
+		are some important distinctions. The conformant <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> differs from an <abbr class="dyn-abbr"><a href="#abbr_IDS">IDS</a></abbr> in that the conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
+		must be capable of initiating a proactive response to terminate/interrupt an active potential threat, and
+		to initiate a response in real time that would cause interruption of the suspicious traffic flow. It is not
+		sufficient for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to only be able to generate an audit event or other alert when potentially malicious
+		traffic is detected. However, the Security Administrator may choose to configure the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> such that such
+		proactive responses are not enabled, and such a configuration would be a valid configuration for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.
+		Though a conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may be deployed with only its <abbr class="dyn-abbr"><a href="#abbr_IDS">IDS</a></abbr> functionalities enabled, the conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
+		must demonstrate that capability during the evaluation.</p>
+		<p>Conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr> will detect potentially malicious network traffic using various approaches. Broadly
+		speaking, the traffic analysis could be based on identification of ‘known’ threats, or ‘unknown’ threats.
+		Identification of ‘known’ threats may be performed through pattern matching, e.g. by matching strings of
+		characters within an IP packet, or by matching traffic patterns common with reconnaissance or denial of
+		service (<abbr class="dyn-abbr"><a href="#abbr_DoS">DoS</a></abbr>) attacks. Identification of ‘unknown’ threats may be performed through use of various forms
+		of ‘anomaly’ detection whereby the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> is provided with (or ‘learns/creates’) a definition of
+		‘expected/typical’ traffic patterns, such that it’s able to detect and react to ‘anomalous’
+		(unexpected/atypical) traffic patterns.
+		</p>
+		<p>The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may be a distributed <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> in which some <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> or elements of <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> are enforced by separate <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
+		components distributed across an IP network. In such cases, the NDcPP guidance on the handling of
+		distributed <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr> applies. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not mandate that specific <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> be assigned to specific
+		components in a distributed <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>; however, it is expected that any <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> component that enforces any <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr>
+		function must enforce all dependent functionality for management and audit at minimum</p>
+		<p>Deployment scenarios supported by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> include those shown in Figure 1, which includes a number of
+		possible deployments or use cases for <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality within a single network. Note that this is just an
+		example of an <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> deployment where individual devices implement specific <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality differently;
+		per the requirements in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> (specifically IPS_NTA_EXT.1), a conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must implement
+		both promiscuous and inline mode interfaces, though it is not a requirement for every <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> component to
+		implement both modes.</p>
+			<ul>
+				<li><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> 1 is operating in promiscuous mode, capturing data from two separate networks outside the perimeter firewall, and sending traffic filter updates as needed to the perimeter router and perimeter firewall to block unwanted traffic in real-time.</li>
+				<li><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> 2 is operating in inline mode, analyzing traffic to and from a wireless network, and blocking in realtime any traffic that violates the admin-defined <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies.</li>
+				<li><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> 3 is operating in a combination of promiscuous mode and inline mode. The <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> has at least one pair of interfaces creating a bridge or routing across the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, and is analyzing and filtering traffic in real-time as traffic traverses the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. The same <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> has one or more promiscuous interfaces collecting and analyzing traffic traversing within each separate network, and reacting to anomalous activity, worms, or otherwise unapproved activity.</li>
+			</ul>
+		<p></p>
+		<div class="figure" id="figure-OperEnv"><img id="OperEnv" src="images/deployment_diagram.PNG" width="" height=""></img><br/><span class="ctr" data-myid="OperEnv" data-counter-type="ct-figure">Figure <span class="counter">1</span></span>:
+      Figure 1: <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Deployment Scenario Diagram</div>
+	
+	
+    <h2 class="indexable" data-level="2" id="TOE_Boundary">1.4 TOE Boundary</h2>
+        <p>The physical boundary for a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that conforms to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is a physical or virtual network device,
+		that also provides generalized network device functionality, such as auditing, I&amp;A, and cryptographic
+		services for network communications. The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may be standalone or distributed, where a distributed <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
+		is one that requires multiple distinct components to operate as a logical whole in order to fulfill the
+		requirements of this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>. The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s logical boundary includes all functionality required by the
+		<abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> as well as the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality and related capabilities that are defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>. Any
+		functionality that is provided by the network device that is not relevant to the security requirements
+		defined by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> or the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> is considered to be outside the scope of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.</p>
     
 
 
     
-    <h2 class="indexable" data-level="2" id="Use_Cases">1.4 Use Cases</h2>
-      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> defines two potential use cases for the VPN gateway <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, defined below. The first use
-      case will always be applicable for a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that conforms to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>. The second use case defines an
-      optional deployment for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that accompanies the first use case.
-      
-      <dl><dt id="usecase1"> [USE CASE 1] Network Device</dt><dd><span class="description">
-            The VPN gateway is part of the functionality that is provided by a general network device appliance, such
-            as a router or switch, or a device that is dedicated solely to providing multi-site VPN gateway
-            functionality.
-          </span></dd><dt id="usecase2"> [USE CASE 2] Remote Client Headend</dt><dd><span class="description">
-            The VPN gateway provides the ability to act as a headend for remote clients.
+    <h2 class="indexable" data-level="2" id="Use_Cases">1.5 Use Cases</h2>
+    	<p>
+      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> defines two potential use cases for the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, listed below.
+    	</p><p>
+      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> also defines optional and objective requirements for functionality including separation of
+      management roles and ability to use the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to review collected <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data. These functions are not
+      dependent on a particular use case being chosen.
+    	</p>
+      <dl><dt id="usecase1"> [USE CASE 1] Standalone System</dt><dd><span class="description">
+            The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> exists as a standalone device that is capable of enforcing all of the mandatory requirements
+			defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> by itself.
+
+          </span></dd><dt id="usecase2"> [USE CASE 2] Distributed System</dt><dd><span class="description">
+            The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> exists as a distributed system that is able to apply different <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functions to different network
+			segments. In this case, distributed nodes may each implement all required <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality, or
+			different node types may offer different functions so long as the evaluated configuration collectively
+			addresses all of the mandatory requirements defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>. In this deployment, it is
+			expected (though not required) that a single device be used as a central point to perform
+			configuration and collect relevant log data for the rest of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.
           </span></dd></dl>
-      
+
+	  
      
     
  
@@ -818,7 +849,7 @@ The following sections list Common Criteria and technology terms used in this do
 	
   
 
-<h2 class="indexable" data-level="2" id="app-intro">1.5 Introduction</h2>
+<h2 class="indexable" data-level="2" id="app-intro">1.6 Introduction</h2>
 			<p>
 		  The purpose of equivalence in <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-based evaluations is to find a balance between evaluation rigor and commercial practicability—to 
 		  ensure that evaluations meet customer expectations while recognizing that there is little to be gained from requiring that every 
@@ -831,7 +862,7 @@ The following sections list Common Criteria and technology terms used in this do
 		  run on different platforms. Equivalency can be used to reduce the testing required across claimed evaluated configurations. It can 
 		  also be used during Assurance Maintenance to reduce testing needed to add more evaluated configurations to a certification.
 			</p><p>
-		  These equivalency guidelines do not replace Assurance Maintenance requirements or <abbr class="dyn-abbr"><a href="#abbr_NIAP">NIAP</a></abbr> Policy #5 requirements for CAVP certificates. 
+		  These equivalency guidelines do not replace Assurance Maintenance requirements or NIAP Policy #5 requirements for CAVP certificates. 
 		  Nor may equivalency be used to leverage evaluations with expired certifications.
 			</p><p>
 		  These Equivalency Guidelines represent a shift from complete testing of all product instances to more of a risk-based approach. 
@@ -880,15 +911,62 @@ The following sections list Common Criteria and technology terms used in this do
 					any Protection Profile.
 				</dd><p></p><dd>The following <abbr class="dyn-abbr"><a href="#abbr_PP">PPs</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-Modules are allowed to be specified in a 
 					<abbr class="dyn-abbr"><a href="#abbr_PP-Configuration">PP-Configuration</a></abbr> with this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>:
-					<ul><li>collaborative Protection Profile Module for Stateful Traffic Filter Firewalls v1.4 + Errata 20200625</li><li><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> for Intrusion Protection Systems, v1.1</li></ul></dd><dt>Package Claim</dt><p></p><dd>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is not conformant to any 
+					<ul><li><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> for Stateful Traffic Filter Firewalls, Version 1.4e</li><li><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> for Virtual Private Network (VPN) Gateways, Version 1.1</li></ul></dd><dt>Package Claim</dt><p></p><dd>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is not conformant to any 
 						Functional or Assurance Packages.</dd></dl>
     <h1 class="indexable" data-level="1" id="Security_Problem_Definition">3 Security Problem Definition</h1>
+  <span style="" class="comment " id="Comment-2-">Switched Security Problem Description(old) to Security_Problem_Definition</span>
   
     
-	The security problem is described in terms of the threats that the <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> is expected to address, 
-	assumptions about the operational environment, and any organizational security policies that the <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr>
-    is expected to enforce.
+  	<p>
+	The security problem is described in terms of the threats that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is expected to address, assumptions
+	about its operational environment, and any organizational security policies that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is expected to
+	enforce.
+  	</p>
+  	<p>
+	<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> devices address a range of security threats related to detection of and reaction to potentially
+	malicious traffic on monitored networks, to which the security policies will be enforced on applicable
+	network traffic. The malicious traffic may pose a threat to one or more endpoints on the monitored
+	networks, to the network infrastructure, or to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> itself. The term ‘monitored networks’ is used here
+	to represent any network to which the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is directly connected, as well as network segments/subnets
+	that have had their traffic forwarded (redirected or copied) to the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> for analysis.
 
+  	</p><p>
+	The term ‘<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> Data’ will be used throughout this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> and includes any or all of: 
+	the data extracted from network traffic and stored on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>; the results of analysis performed by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>; and messages
+	that indicate the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s reaction to that analysis. This ‘<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> Data’ described in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> refers to the
+	network traffic collected by the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> and the resulting audit records related to analysis of that network
+	traffic, all of which is separate from the ‘audit data’ as defined in FAU_GEN from the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>, such as
+	audit records related to authentication of administrators and establishment/termination of trusted
+	channels.
+  	</p>
+  	<p>
+	A site is responsible for developing its security policy and configuring a rule set that the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> will enforce
+	and provide an appropriate response to meet their needs, relative to their own risk analysis and their
+	perceived threats. Threats mitigated by the conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> can include attempts to:
+	</p>
+	<p>
+		<ul>
+			<li>Perform network-based reconnaissance (probing for information about a monitored network or its endpoints), such as through use of various scanning or mapping techniques. </li>
+			<li>Obstruct the normal function of monitored networks, endpoints, or services, such as through denial of service attacks</li>
+			<li>Gain inappropriate access to one or more networks, endpoints, or services, such as through brute
+			force password guessing attacks, or by transmitting malicious executable code, scripts, or
+			commands. </li>
+			<li>Disclose/transmit information in violation of policy, such as sending credit card numbers. Note,
+			relative to the data, it does not matter where the threat agent is located. Example: data exfiltration
+			means that data was removed without proper authorization to remove it. This may be a pull or a
+			push. It can result from intrusion from the outside or by the actions of the insider. </li>
+		</ul>
+	</p>
+  	<p>Note that this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not repeat the threats identified in the NDcPP, though they all apply given
+	the conformance and hence dependence of this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> on the NDcPP. Additionally, this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>
+	describes <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> functionality (such as security management functions) that are subject to the same threats
+	as those that are defined in the NDcPP. A full mapping between threats and objectives is provided in
+	Section 4.3 of this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
+	</p>
+  	<p>The NDcPP contains only threats to the ability of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to provide its own functions. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>
+	defines threats to resources in the operational environment that will be met by an <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. Together,
+	the threats of the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> and those defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> define the comprehensive set of security
+	threats addressed by an <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.</p>
 
     <h2 class="indexable" data-level="2" id="sec-threats">3.1 Threats</h2>
 	
@@ -896,13 +974,19 @@ The following sections list Common Criteria and technology terms used in this do
 		
 		
 		
+		The following threats defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> extend the threats defined by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.
 
-      <dl><dt class="threat defined" id="T.NETWORK_ATTACK">T.NETWORK_ATTACK</dt><dd><span class="description"> An attacker is positioned on a communications channel or elsewhere on the
-            network infrastructure. Attackers may engage in communications with applications and
-            services running on or part of the <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> with the intent of compromise. Engagement may
-            consist of altering existing legitimate communications.</span></dd><dt class="threat defined" id="T.NETWORK_EAVESDROP">T.NETWORK_EAVESDROP</dt><dd><span class="description"> An attacker is positioned on a communications channel or elsewhere on the
-            network infrastructure. Attackers may monitor and gain access to data exchanged between
-            applications and services that are running on or part of the <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr>. </span></dd></dl>
+      <dl><dt class="threat defined" id="T.NETWORK_ACCESS">T.NETWORK_ACCESS</dt><dd><span class="description"> Unauthorized access may be achieved to services on a protected network from outside that network, or
+			alternately services outside a protected network from inside the protected network. If malicious external
+			devices are able to communicate with devices on the protected network via a backdoor then those devices
+			may be susceptible to the unauthorized disclosure of information.</span></dd><dt class="threat defined" id="T.NETWORK_DISCLOSURE">T.NETWORK_DISCLOSURE</dt><dd><span class="description"> Sensitive information on a protected network might be disclosed resulting from ingress- or egress-based
+	  	  actions. </span></dd><dt class="threat defined" id="T.NETWORK_DOS">T.NETWORK_DOS</dt><dd><span class="description"> Attacks against services inside a protected network, or indirectly by virtue of access to malicious agents
+		  from within a protected network, might lead to denial of services otherwise available within a protected
+		  network. </span></dd><dt class="threat defined" id="T.NETWORK_MISUSE">T.NETWORK_MISUSE</dt><dd><span class="description"> Access to services made available by a protected network might be used counter to operational
+		  environment policies. Devices located outside the protected network may attempt to conduct
+		  inappropriate activities while communicating with allowed public services (e.g. manipulation of resident
+		  tools, <abbr class="dyn-abbr"><a href="#abbr_SQL">SQL</a></abbr> injection, phishing, forced resets, malicious zip files, disguised executables, privilege escalation
+		  tools, and botnets). </span></dd></dl>
       
 	
 	
@@ -914,11 +998,18 @@ security functionality specified in the <abbr class="dyn-abbr"><a href="#abbr_PP
 If the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is placed in an <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> that does not meet these assumptions, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may no longer be able to
 provide all of its security functionality.
       
-      <dl><dt class="assumption defined" id="A.PLATFORM">A.PLATFORM</dt><dd><span class="description"> The <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> relies upon a trustworthy computing platform for
-            its execution. This underlying platform is out of scope of this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>. </span></dd><dt class="assumption defined" id="A.PROPER_USER">A.PROPER_USER</dt><dd><span class="description"> The user of the <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> is not willfully negligent or hostile, and uses the
-            software in compliance with the applied enterprise security policy. At the same time,
-            malicious software could act <i>as</i> the user, so requirements which
-            confine malicious subjects are still in scope.</span></dd></dl>
+		<p>
+		All assumptions for the operational environment of the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> also apply to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
+		A.NO_THRU_TRAFFIC_PROTECTION is still operative, but only for the interfaces in the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that are
+		defined by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> and not the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
+		</p><p>
+		The following additional assumption is made on the operational environment in order to be able to
+		ensure that the security functionality specified in the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> can be provided by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. If the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
+		is placed in an operational environment that does not meet this assumption, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may no longer be
+		able to provide all of its security functionality.
+		</p>
+
+      <dl><dt class="assumption defined" id="A.CONNECTIONS">A.CONNECTIONS</dt><dd><span class="description"> It is assumed that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is connected to distinct networks in a manner that ensures that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> security policies will be enforced on all applicable network traffic flowing among the attached networks. </span></dd></dl>
       
 	
 	
@@ -926,34 +1017,38 @@ provide all of its security functionality.
     <h2 class="indexable" data-level="2" id="Organizational_Security_Policies">3.3 Organizational Security Policies</h2><p>An organization deploying the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is
       expected to satisfy the organizational security policy listed below in addition to all
       organizational security policies defined by the claimed <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>. </p>
-      
-      This document does not define any additional OSPs.
+
+      <dl><dt class="OSP defined" id="P.ANALYZE">P.ANALYZE</dt><dd><span class="description">Analytical processes and information to derive conclusions about potential intrusions must be applied to <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data and appropriate response actions taken.</span></dd></dl>
     
-    
-  <h1 class="indexable" data-level="1" id="Security_Objectives">4 Security Objectives</h1>  
-  &gt;
+  <h1 class="indexable" data-level="1" id="Security_Objectives">4 Security Objectives</h1>
 
 	
     <h2 class="indexable" data-level="2" id="Security_Objectives_for_the_Operational_Environment">4.1 Security Objectives for the Operational Environment</h2>
-	  <dl><dt class="SOE defined" id="OE.PLATFORM">OE.PLATFORM</dt><dd><span class="description">The <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> relies on being installed on trusted
-            hardware.</span></dd><dt class="SOE defined" id="OE.PROPER_USER">OE.PROPER_USER</dt><dd><span class="description"> The user of the <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> is not willfully negligent or hostile,
-            and uses the software within compliance of the applied enterprise security policy.
-            Standard user accounts are provisioned in accordance with the least privilege model.
-            Users requiring higher levels of access should have a separate account dedicated for
-            that use. </span></dd><dt class="SOE defined" id="OE.PROPER_ADMIN">OE.PROPER_ADMIN</dt><dd><span class="description"> The administrator of the <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> is not careless, willfully
-            negligent or hostile, and administers the <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> within compliance of the applied enterprise
-            security policy. </span></dd></dl>
+		<p>
+		All objectives for the operational environment of the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> also apply to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
+		<abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr>.NO_THRU_TRAFFIC_PROTECTION is still operative, but only for the interfaces in the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that are
+		defined by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> and not the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
+
+		</p>
+		<p>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> defines the following additional environmental security objectives, which extend those
+		defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.</p>
+
+	  <dl><dt class="SOE defined" id="OE.CONNECTIONS">OE.CONNECTIONS</dt><dd><span class="description"><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> administrators will ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is installed in a manner that will allow the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to effectively
+enforce its policies on network traffic of monitored networks.</span></dd></dl>
         
 
 	
     <h2 id="sec-sor" class="indexable,h2" data-level="2">4.2 Security Objectives Rationale</h2>   
 		This section describes how the assumptions and organizational 
 		security policies map to operational environment security objectives.
-	<table><caption><span class="ctr" data-myid="t-sec-obj-rat" data-counter-type="ct-Table" id="t-sec-obj-rat">Table <span class="counter">1</span></span>: Security Objectives Rationale</caption><tr class="header"><td>Assumption or OSP</td><td>Security Objectives</td><td>Rationale</td></tr><tr class="major-row"><td rowspan="1"><a href="#A.PLATFORM">A.PLATFORM</a></td><td><a href="#OE.PLATFORM">OE.PLATFORM</a></td><td> The operational environment objective <a href="#OE.PLATFORM">OE.PLATFORM</a> is realized through
-              <a href="#A.PLATFORM">A.PLATFORM</a>. </td></tr><tr class="major-row"><td rowspan="1"><a href="#A.PROPER_USER">A.PROPER_​USER</a></td><td><a href="#OE.PROPER_USER">OE.PROPER_​USER</a></td><td>The operational environment objective <a href="#OE.PROPER_USER">OE.PROPER_USER</a> is realized through
-              <a href="#A.PROPER_USER">A.PROPER_USER</a>.</td></tr><tr class="major-row"><td rowspan="1">P.PLACEHOLDER
-	    (from )
-	</td><td><abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr>.PLACEHOLDER</td><td>placeholder</td></tr></table>
+	<table><caption><span class="ctr" data-myid="t-sec-obj-rat" data-counter-type="ct-Table" id="t-sec-obj-rat">Table <span class="counter">1</span></span>: Security Objectives Rationale</caption><tr class="header"><td>Assumption or OSP</td><td>Security Objectives</td><td>Rationale</td></tr><tr class="major-row"><td rowspan="1"><a href="#A.CONNECTIONS">A.CONNECTIONS</a></td><td><a href="#OE.CONNECTIONS">OE.CONNECTIONS</a></td><td> The objective supports the
+			assumption by setting the
+			expectation that
+			administrators will deploy the
+			<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> in such a manner that
+			there is no network path that
+			will be exempt from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s
+			inspection capabilities. </td></tr><tr class="major-row"><td rowspan="1"><a href="#P.ANALYZE">P.ANALYZE</a></td><td><a href="#OE.CONNECTIONS">OE.CONNECTIONS</a></td><td>The operational environment's ability to facilitate network connections is necessary for the policy to analyze the network traffic associated with these connections.</td></tr></table>
 
   <h1 id="Security_Requirements" class="indexable" data-level="1">5 Security Requirements</h1>
       This chapter describes the security requirements which have to be fulfilled by the product under evaluation.
@@ -983,7 +1078,12 @@ provide all of its security functionality.
     Protection Profile for Network Devices
        Security Functional Requirements Direction
     </h2> 
-        QQQQQ
+        In a <abbr class="dyn-abbr"><a href="#abbr_PP-Configuration">PP-Configuration</a></abbr> that includes the NDcPP, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is expected to rely on some of the security
+		functions implemented by the network device as a whole and evaluated against the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>. However,
+		this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not change how any of the NDcPP functions are implemented so there is no
+		modification to the NDcPP <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> used with this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>. Note in particular that requirements that apply
+		to distributed <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr> (e.g. FCO_CPC_EXT.1, FPT_ITT.1) remain optional as this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> supports but does
+		not mandate a distributed deployment.
       <h3 id="modsfr-ND" class="indexable" data-level="3">5.1.1  Modified SFRs </h3>
       This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not modify any <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> defined by the NDcPP.
     <h2 id="man-sfrs" class="indexable" data-level="2">5.2 TOE Security Functional Requirements</h2>
@@ -994,11 +1094,11 @@ provide all of its security functionality.
 
 		
 	  <h3 class="indexable" data-level="3" id="ss-audit-table">5.2.1 Auditable Events for Mandatory SFRs</h3>
-	    <table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="mandatory-audit-events" data-counter-type="ct-Table" id="mandatory-audit-events">Table <span class="counter">2</span></span>: Auditable Events for Mandatory Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr><tr data-sortkey="FCS_COP_EXT.1/SKC"><td rowspan="2"><a href="#FCS_COP_EXT.1/SKC">FCS_COP_EXT.1/SKC</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FCS_COP_EXT.1/SKC#"><td></td></tr><tr data-sortkey="FCS_COP_EXT.1/SKC.6"><td>Failure to establish a <abbr class="dyn-abbr"><a href="#abbr_HTTPS">HTTPS</a></abbr> Session.</td><td><ul><li>Reason for failure.</li><li>Non-TOE endpoint of connection (<abbr class="dyn-abbr"><a href="#abbr_IP">IP</a></abbr> address) for failures.</li></ul></td></tr><tr data-sortkey="FCS_YAR.1"><td rowspan="2"><a href="#FCS_YAR.1">FCS_YAR.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FCS_YAR.1#"><td></td></tr><tr data-sortkey="FCS_YAR.1.1"><td>Failure to do the important thing.</td><td>Reason for failure.</td></tr></table>
+	    <table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="mandatory-audit-events" data-counter-type="ct-Table" id="mandatory-audit-events">Table <span class="counter">2</span></span>: Auditable Events for Mandatory Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr></table>
 	  
 
 		
-		<h3 id="sec-fcs" class="indexable" data-level="3">5.2.2 Class: Cryptologic Support (FCS)</h3>
+		
 		
 			
 			
@@ -1012,81 +1112,347 @@ provide all of its security functionality.
 			
 			
 			
-			<div class="comp" id="FCS_COP_EXT.1/SKC"><h4>FCS_COP_EXT.1/SKC Cryptographic Operation: Symmetric Key Cryptography</h4>              
-		
+			<h3 id="m-fau" class="indexable" data-level="3">5.2.2 Security Audit (FAU)</h3>
+			<div class="comp" id="FAU_GEN.1/IPS"><h4>FAU_GEN.1/IPS Audit Data Generation (IPS)</h4>
+				<div class="element"><div class="reqid" id="FAU_GEN.1.1/IPS"><a href="#FAU_GEN.1.1/IPS" class="abbr">FAU_GEN.1.1/IPS</a></div><div class="reqdesc">
+				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to generate an <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr></b> audit record of the following <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr></b>
+				auditable events: <ol type="a">
+					<li>Start-up and shut-down of the <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr></b> functions;</li>
+					<li>All <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr></b> auditable events for the [<i>not specified</i>] level of audit; and</li>
+					<li>[<i>All dissimilar <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> events;</i></li>
+					<li><i>All dissimilar <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> reactions;</i></li>
+					<li><i>Totals of similar events occurring within a specified time period;</i></li>
+					<li><i>Totals of similar reactions occurring within a specified time period;</i></li>
+					<li><i>The events in the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> Events table. </i></li>
+					<li>[<b>selection</b>: <span class="selectable-content" id="_s_1"><i>no other auditable events, </i></span>, <span class="selectable-content" id="_s_2">
+								[<b>assignment</b>: 
+     <span class="assignable-content"><i>other auditable events</i></span>]
+							</span>]
+						
+					</li>
 				
-				 
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
+					</ol>
+				<div class="appnote"><span class="note-header">Application
+      Note:
+    </span><span class="note">
+					<p><i>
+					This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> exists in addition to the FAU_GEN.1 <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>. All required
+					auditable events from the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> still apply. As the data that this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> addresses
+					is still considered to be “audit data,” the requirement for secure remote
+					transmission per FAU_STG_EXT.1 applies to this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in the same manner as the
+					<abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>’s iteration of FAU_GEN.1.
+					</i></p><p><i>
+					The <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author is not limited to the list presented and should update the list of
+					auditable events with any additional information generated. The <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> Author
+					should use FAU_GEN.1 as defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> for standard (non-IPS data)
+					audit functions.
+					</i></p><p><i>
+					For all requirements marked as optional, it is expected that if the requirement is
+					claimed, the corresponding <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> events should be generated by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>; if the
+					requirement is not claimed, then the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author may also omit these events.
+					</i></p><p><i>
+					With regards to ‘similar’ and ‘dissimilar’ type events, dissimilar events are those
+					whose characteristics differ from other events by something other than merely a
+					timestamp, whereas ‘similar’ events are multiple occurrences of the same
+					auditable event within some time period where the only significant difference
+					between these events is the timestamp. For example, it is not expected that the
+					<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> generate an individual audit message for every event of the same kind that
+					occurs within a reasonable time period (e.g. the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> need only generate one audit
+					message for an event that repeated X times during Y seconds).
+					</i></p>
+				</span></div></div></div>
+				<div class="element"><div class="reqid" id="FAU_GEN.1.2/IPS"><a href="#FAU_GEN.1.2/IPS" class="abbr">FAU_GEN.1.2/IPS</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall record within each <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> auditable event</b> record at least the following information: <ol type="a">
+						<li>Date and time of the event, type of event <b>and/or reaction,</b> <s>subject identity, and the outcome (success or failure) of the event; and;</s></li>
+						<li>For each <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> auditable event</b> type, based on the auditable event definitions of the functional components included in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><s>/<abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></s>, [<i>information specified in column three of the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> Events table].</i></li>
+						<span style="" class="comment " id="Comment-3-">Update the second selection to properly have UPS Auidtable evet bolded, just like the first one.</span>
+					</ol>
 
-				
-				<div class="element"><div class="reqid" id="FCS_COP_EXT.1.1/SKC"><a href="#FCS_COP_EXT.1.1/SKC" class="abbr">FCS_COP_EXT.1.1/SKC</a></div><div class="reqdesc">
-						The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to transfer generated audit data to an external <abbr class="dyn-abbr"><a href="#abbr_IT">IT</a></abbr> entity
-						using 
-						[<b>selection</b>: <ul><li style=""><span class="selectable-content" id="sel-fau-itc">a trusted channel as specified in FTP_ITC_EXT.1</span></li><li style=""><span class="selectable-content" id="_s_2">removable media requiring physical access to the platform</span></li></ul>].
 					<div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note">
-						Instructions for the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> Author on how to fill in the selections and assignments.
+					<p><i> For IPS_SBD_EXT.1 and IPS_ABD_EXT.1 there may be several circumstances in
+					which it would not be necessary to explicitly identify the action within the audit
+					messages. For example, if the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s action is implied within the policy definition
+					or if the default action is to allow traffic, then the absence of ‘blocked’ would
+					imply the traffic was allowed.
+					</i></p><p><i>
+					For IPS_SBD_EXT.1, if certain header fields are inspected and dropped or modified
+					by default (e.g., packets with bad checksum, reserved bits set to zero), this logging
+					requirement is not applicable.
+					</i></p><p><i>
+					The <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author should update <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> Events table below with any additional
+					information generated such as source and destination addresses, IP, signature
+					that trigged event, port, etc.</i></p>
 					</span></div></div></div>
-
-				
-				
-				
-			</div>	
-	
+			</div>
 			
-			<div class="comp" id="FCS_YAR.1"><h4>FCS_YAR.1 Yet Another Requirement</h4>              
-		
-				
-				<div class="element"><div class="reqid" id="FCS_YAR.1.1"><a href="#FCS_YAR.1.1" class="abbr">FCS_YAR.1.1</a></div><div class="reqdesc">
-						The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to do something important.
+			
+			<h3 id="m-fmt" class="indexable" data-level="3">5.2.3 Security Management (FMT)</h3>
+			<div class="comp" id="FMT_SMF.1/IPS"><h4>FMT_SMF.1/IPS Specification of Management Functions (IPS)</h4>
+				<div class="element"><div class="reqid" id="FMT_SMF.1.1/IPS"><a href="#FMT_SMF.1.1/IPS" class="abbr">FMT_SMF.1.1/IPS</a></div><div class="reqdesc">
+				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be capable of performing the following management functions: [
+					<i><ul>
+					<li>Enable, disable signatures applied to sensor interfaces, and determine the behavior of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality</li>
+					<li>Modify these parameters that define the network traffic to be collected and analyzed:</li>
+					<ul>
+						<li>Source IP addresses (host address and network address)</li>
+						<li>Destination IP addresses (host address and network address)</li>
+						<li>Source port (<abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr>)</li>
+						<li>Destination port (<abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr>)</li>
+						<li>Protocol (IPv4 and IPv6)</li>
+						<li><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> type and code</li>
+					</ul>
+					<li>Update (import) signatures</li>
+					<li>Create custom signatures</li>
+					<li>Configure anomaly detection</li>
+					<li>Enable and disable actions to be taken when signature or anomaly matches are detected</li>
+					<li>Modify thresholds that trigger <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> reactions</li>
+					<li>Modify the duration of traffic blocking actions</li>
+					<li>Modify the known-good and known-bad lists (of IP addresses or address ranges)</li>
+					<li>Configure the known-good and known-bad lists to override signaturebased <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies</li>
+					</ul></i>
+					].
+				</div></div>
+				</div>
+			
+			
+						<h3 id="ips" class="indexable" data-level="3">5.2.4 Intrusion Prevention (IPS)</h3>
+			<div class="comp" id="FIP_ABD_EXT.1"><h4>FIP_ABD_EXT.1 Anomaly-Based IPS Functionality</h4>
+				<div class="element"><div class="reqid" id="FIP_ABD_EXT.1.1"><a href="#FIP_ABD_EXT.1.1" class="abbr">FIP_ABD_EXT.1.1</a></div><div class="reqdesc">
+				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support the definition of [<b>selection</b>: <span class="selectable-content" id="_s_3">baselines (‘expected and approved’)</span>, <span class="selectable-content" id="_s_4">anomaly (‘unexpected’) traffic patterns</span>, <span class="selectable-content" id="_s_5"></span>] including the specification of [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_6">throughput ([<b>assignment</b>: 
+     <span class="assignable-content"> data elements (e.g. bytes, packets, etc.) per time period (e.g. minutes, hours, days)</span>]) </span></li><li style=""><span class="selectable-content" id="_s_7">time of day;</span></li><li style=""><span class="selectable-content" id="_s_8">frequency;</span></li><li style=""><span class="selectable-content" id="_s_9">thresholds;</span></li><li style=""><span class="selectable-content" id="_s_10">[ [<b>assignment</b>: 
+     <span class="assignable-content">other methods</span>] ]</span></li></ul>]
+					and the following network protocol fields:
+					<ul>
+						<li>[<b>selection</b>: <span class="selectable-content" id="_s_11"> all packet header and data elements defined in IPS_SBD_EXT.1;</span>, <span class="selectable-content" id="_s_12">[<b>assignment</b>: 
+     <span class="assignable-content"> subset list of packet header and data elements from IPS_SBD_EXT.1 </span>]</span>]</li>
+					</ul>
+				<div class="appnote"><span class="note-header">Application
+      Note:
+    </span><span class="note">
+					Baselines are the definition of known-good traffic (to be allowed per
+					IPS_ABD_EXT.1.3) whilst anomaly traffic is definition of (‘offending’) traffic that is
+					to be handled per other actions defined in IPS_ABD_EXT.1.3. Frequency can be
+					defined as a number of occurrences of an event (such as detection of packets
+					matching a signature) over a defined period of time, such as the number of new
+					<abbr class="dyn-abbr"><a href="#abbr_FTP">FTP</a></abbr> sessions established during 1 hour. Thresholds can be defined as an amount
+					or percentage of deviation from expected levels or limits, such as a number of
+					megabytes of data transferred via <abbr class="dyn-abbr"><a href="#abbr_FTP">FTP</a></abbr> per hour. 
+					</span></div></div></div>
+				<div class="element"><div class="reqid" id="FIP_ABD_EXT.1.2"><a href="#FIP_ABD_EXT.1.2" class="abbr">FIP_ABD_EXT.1.2</a></div><div class="reqdesc">
+				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support the definition of anomaly activity through [<b>selection</b>: <span class="selectable-content" id="_s_13">manual configuration by administrators</span>, <span class="selectable-content" id="_s_14">automated configuration</span>]
+				<div class="appnote"><span class="note-header">Application
+      Note:
+    </span><span class="note">
+				The “baseline” and “anomaly” can be something manually defined/configured
+				by a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> administrator (or importing definitions), or something that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is
+				able to automatically define/create by inspecting network traffic over a period
+				of time (a.k.a. “profiling”). It is not essential for the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to have a capability
+				of “profiling” a network to dynamically defining a baseline or rule; if the product
+				has this functionality, it is outside the scope of this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
+				</span></div></div></div>
+				<div class="element"><div class="reqid" id="FIP_ABD_EXT.1.3"><a href="#FIP_ABD_EXT.1.3" class="abbr">FIP_ABD_EXT.1.3</a></div><div class="reqdesc">
+				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow the following operations to be associated with anomalybased <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies:
+				<ul>
+					<li>In any mode, for any sensor interface: [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_15">allow the traffic flow</span></li><li style=""><span class="selectable-content" id="_s_16">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the source address of the offending traffic</span></li><li style=""><span class="selectable-content" id="_s_17">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the destination address of the offending traffic</span></li><li style=""><span class="selectable-content" id="_s_18">send an <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>
+								[<b>selection</b>: <span class="selectable-content" id="_s_19">host</span>, <span class="selectable-content" id="_s_20">destination</span>, <span class="selectable-content" id="_s_21">port</span>]
+								unreachable message
+								</span></li><li style=""><span class="selectable-content" id="_s_22">trigger a non-TOE network device to block the offending traffic pattern</span></li></ul>]</li>
+					In inline mode:
+						<ul>
+							<li><i>[allow the traffic flow</i></li>
+							<li><i>block/drop the traffic flow</i></li>
+							<li><i>and</i> 
+									[<b>selection</b>: <span class="selectable-content" id="_s_23">modify and forward packets before they pass through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>, <span class="selectable-content" id="_s_24">no other actions</span>]</li>
+						</ul>
+					
+				</ul>
+				</div></div>
+				</div>
+				<div class="comp" id="FIP_IPB_EXT.1"><h4>FIP_IPB_EXT.1 IP Blocking</h4>
+				<div class="element"><div class="reqid" id="FIP_IPB_EXT.1.1"><a href="#FIP_IPB_EXT.1.1" class="abbr">FIP_IPB_EXT.1.1</a></div><div class="reqdesc">
+					The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support configuration and implementation of known-good and known-bad lists of [<b>selection</b>: <span class="selectable-content" id="_s_25">source</span>, <span class="selectable-content" id="_s_26">destination</span>] IP addresses and [<b>selection</b>: <span class="selectable-content" id="_s_27">no additional address types</span>, <span class="selectable-content" id="_s_28">
+							[<b>assignment</b>: 
+     <span class="assignable-content">list of address types</span>]
+							</span>]
+
 					<div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note">
-						Instructions for the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> Author on how to fill in the selections and assignments.
+						The address types defined in this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> are limited to IP addresses (e.g. a single IP
+						address or a range of IP addresses) because this <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is limited to
+						inspection of IP traffic. <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr> are not prohibited from enabling functionality
+						that would allow/prohibit traffic flow based on other address types, such as
+						<abbr class="dyn-abbr"><a href="#abbr_MAC">MAC</a></abbr> addresses.
+					</span></div></div></div>
+				<div class="element"><div class="reqid" id="FIP_IPB_EXT.1.2"><a href="#FIP_IPB_EXT.1.2" class="abbr">FIP_IPB_EXT.1.2</a></div><div class="reqdesc">
+					The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow [Security Administrators] to configure the following <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements: [<b>selection</b>: <span class="selectable-content" id="_s_29">known-good list rules</span>, <span class="selectable-content" id="_s_30">known-bad list rules</span>, <span class="selectable-content" id="_s_31">IP addresses</span>, <span class="selectable-content" id="_s_32"> [<b>assignment</b>: 
+     <span class="assignable-content">other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements </span>]</span>, <span class="selectable-content" id="_s_33">no other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements</span>].
+					</div></div>
+				</div>
+				<div class="comp" id="FIP_NTA_EXT.1"><h4>FIP_NTA_EXT.1 I Network Traffic Analysis</h4>
+				<div class="element"><div class="reqid" id="FIP_NTA_EXT.1.1"><a href="#FIP_NTA_EXT.1.1" class="abbr">FIP_NTA_EXT.1.1</a></div><div class="reqdesc">
+					The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall perform analysis of IP-based network traffic forwarded to the
+					<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s sensor interfaces, and detect violations of administratively-defined <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr>
+					policies.
+
+					<div class="appnote"><span class="note-header">Application
+      Note:
+    </span><span class="note">
+						Though it might be the case in some <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr> that any <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface can be a sensor
+						interface, that capability is not a requirement. This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> uses the term “sensor
+						interface” to refer to any <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface to which one or more <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy has been
+						applied. An administratively-defined <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy is any set of rules for traffic
+						analysis, traffic blocking, signature detection, and/or anomaly detection applied
+						to one or more <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interfaces. The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may be capable of allowing the
+						administrator to configure the precedence of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements (known-good
+						lists, known-bad lists, signature-based rules, and anomaly- based rules), but any
+						such configurability is not required by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
+					</span></div></div></div>
+				<div class="element"><div class="reqid" id="FIP_NTA_EXT.1.2"><a href="#FIP_NTA_EXT.1.2" class="abbr">FIP_NTA_EXT.1.2</a></div><div class="reqdesc">
+					The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall process (be capable of inspecting) the following network traffic protocols:	
+					<ul>
+					<li>[Internet Protocol version 4 (IPv4), <abbr class="dyn-abbr"><a href="#abbr_RFC">RFC</a></abbr> 791</li>
+					<li>Internet Protocol version 6 (IPv6), <abbr class="dyn-abbr"><a href="#abbr_RFC">RFC</a></abbr> 2460</li>
+					<li>Internet control message protocol version 4 (ICMPv4), <abbr class="dyn-abbr"><a href="#abbr_RFC">RFC</a></abbr> 792</li>
+					<li>Internet control message protocol version 6 (ICMPv6), <abbr class="dyn-abbr"><a href="#abbr_RFC">RFC</a></abbr> 2463</li>
+					<li>Transmission Control Protocol (<abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr>), <abbr class="dyn-abbr"><a href="#abbr_RFC">RFC</a></abbr> 793</li>
+					<li>User Data Protocol (<abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr>), <abbr class="dyn-abbr"><a href="#abbr_RFC">RFC</a></abbr> 768].</li>
+
+
+					</ul>
+					<div class="appnote"><span class="note-header">Application
+      Note:
+    </span><span class="note">The identification of protocol RFCs does not imply that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must ensure all
+							packets are conformant to the identified protocol RFCs at all times, nor does it
+							imply that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> would be able to enforce full conformance with the RFCs for
+							any traffic flow at any time. The identification of RFCs provides a frame of
+							reference for understanding the packet contents (headers, fields, states,
+							commands, etc.) identified else in this and other <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr>. The implication is that the
+							<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must be capable of understanding the <abbr class="dyn-abbr"><a href="#abbr_RFC">RFC</a></abbr> implementation to the extent the
+							<abbr class="dyn-abbr"><a href="#abbr_RFC">RFC</a></abbr> parameters are identified throughout the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr>.
+						</span></div></div></div>
+				<div class="element"><div class="reqid" id="FIP_NTA_EXT.1.3"><a href="#FIP_NTA_EXT.1.3" class="abbr">FIP_NTA_EXT.1.3</a></div><div class="reqdesc">
+					The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow the signatures to be assigned to sensor interfaces configured
+					for promiscuous mode, and to interfaces configured for inline mode, and
+					support designation of one or more interfaces as ‘management’ for communication between the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and external entities without simultaneously
+					being sensor interfaces.
+					<ul>
+					<li>Promiscuous (listen-only) mode: [<b>assignment</b>: 
+     <span class="assignable-content">list of interface types</span>]</li>
+					<li>Inline (data pass-through) mode: [<b>assignment</b>: 
+     <span class="assignable-content">list of interface types</span>]</li>
+					<li>Management mode:[<b>assignment</b>: 
+     <span class="assignable-content">list of interface types</span>]</li>
+					<li>[<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_34">[Session-reset-capable interfaces:[<b>assignment</b>: 
+     <span class="assignable-content">list of session-reset-capable interfaces</span>]</span></li><li style=""><span class="selectable-content" id="_s_35">[<b>assignment</b>: 
+     <span class="assignable-content">other interface types</span>]]</span></li><li style=""><span class="selectable-content" id="_s_36">no other interface types</span></li></ul>].</li>
+					</ul>
+					<div class="appnote"><span class="note-header">Application
+      Note:
+    </span><span class="note">
+					<p>
+					Interface types may be Ethernet, Gigabit Ethernet, etc. Promiscuous interfaces
+					are ones that listen to network traffic for the sole purpose of inspecting the
+					traffic, but do not provide any <abbr class="dyn-abbr"><a href="#abbr_OSI">OSI</a></abbr> Layer 2, Layer 3, or higher layer functionality,
+					so network services are not listening on the interface, and no IP protocol stack
+					enabled on the interface so no IP address is assigned to the interface. Inline
+					interfaces are interface pairings that provide a path for network traffic to
+					traverse the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> such that traffic flows can be blocked or modified by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> in
+					real-time. Like promiscuous interfaces, inline interfaces typically do not support
+					<abbr class="dyn-abbr"><a href="#abbr_OSI">OSI</a></abbr> Layer 3 and higher functionality, though they may provide <abbr class="dyn-abbr"><a href="#abbr_OSI">OSI</a></abbr> Layer 2
+					functionality (with <abbr class="dyn-abbr"><a href="#abbr_MAC">MAC</a></abbr> address assigned to the interfaces) to allow adjacent
+					network devices to forward traffic to/through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.
+					</p>
+					<p>The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may support separate interfaces to be used for
+					administration/management purposes that can be configured as <abbr class="dyn-abbr"><a href="#abbr_OSI">OSI</a></abbr> Layer 3
+					interfaces for communication between the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and remote entities including all
+					entities defined in FTP_ITC, and FTP_TRP. The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may optionally support
+					additional interface types. Session-reset interfaces can be the same as any of the
+					promiscuous, inline, management, or other interfaces, or can be separate
+					interfaces. Session-reset functionality is not mandatory functionality for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>,
+					but is a selectable option within the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>.
+					</p>
+					<p>As mentioned in the application note for IPS_NTA_EXT.1.1, it’s not necessary for
+					the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to have multiple single-purpose interfaces (e.g. “sensor” interface,
+					“management” interface, etc.), though it is expected that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> be able to
+					enable specific ports to serve one or more specific interface functions.
+					</p>
 					</span></div></div></div>
 
+
+
+
+
+
+
 				
-				
-				
-			</div>	
-	
+				</div>
 			
 
-		 
-		
-		
-		
-		
+
+	
 	<h2 id="obj-req-map" class="indexable" data-level="2">5.3 TOE Security Functional Requirements Rationale</h2><p>The following rationale provides justification for each <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, 
     showing that the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> are suitable to address the specified threats:<br/><table><caption><span class="ctr" data-myid="t-obj_map" data-counter-type="ct-Table" id="t-obj_map">Table <span class="counter">3</span></span>: <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> Rationale</caption><tr><th>Threat</th><th>Addressed by</th><th>Rationale</th></tr></table></p><h1 id="mod-conrat" class="indexable" data-level="1">6 Consistency Rationale</h1><h2 id="conrat-ND" class="indexable" data-level="2">6.1 Collaborative 
     Protection Profile for Network Devices</h2><h3 id="contoe-ND" class="indexable" data-level="3">6.1.1 
 	Consistency of TOE Type
       </h3>
-        QQQQQQ
+        When this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is used to extend the NDcPP, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> type for the overall <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is still a network
+		device. The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> boundary is simply extended to include <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality that is provided by the network
+		device.
       <h3 id="consecprob-ND" class="indexable" data-level="3">6.1.2 
 	Consistency of Security Problem Definition
-      </h3><table><caption><span class="ctr" data-myid="t-con-sec-prob-def" data-counter-type="ct-Table" id="t-con-sec-prob-def">Table <span class="counter">4</span></span>: Consistency of Security Problem Definition (NDcPP base)
-		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> Threat, Assumption, OSP</th><th>Consistency Rationale</th></tr><tr><td><a href="#T.NETWORK_ATTACK">T.NETWORK_ATTACK</a></td><td></td></tr><tr><td><a href="#T.NETWORK_EAVESDROP">T.NETWORK_EAVESDROP</a></td><td></td></tr><tr><td><a href="#A.PLATFORM">A.PLATFORM</a></td><td></td></tr><tr><td><a href="#A.PROPER_USER">A.PROPER_USER</a></td><td></td></tr></table><h3 id="conobj-ND" class="indexable" data-level="3">6.1.3 
+      </h3>
+	  The threats defined by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> (see section 3.1) supplement those defined in the NDcPP as follows:
+	  <table><caption><span class="ctr" data-myid="t-con-sec-prob-def" data-counter-type="ct-Table" id="t-con-sec-prob-def">Table <span class="counter">4</span></span>: Consistency of Security Problem Definition (NDcPP base)
+		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> Threat, Assumption, OSP</th><th>Consistency Rationale</th></tr><tr><td><a href="#T.NETWORK_ACCESS">T.NETWORK_ACCESS</a></td><td>
+	  The NDcPP only defines a security problem that relates to network traffic
+	bound to or originating from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> expands the security
+	problem to include a logical interface for network traffic between two nonTOE endpoints that is intercepted (inline) or observed (promiscuous) by the
+	<abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>. This is not inconsistent because the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> introduces a new logical
+	interface for this functionality that is beyond the scope of the NDcPP.
+	  </td></tr><tr><td><a href="#T.NETWORK_DISCLOSURE">T.NETWORK_DISCLOSURE</a></td><td>
+	  The NDcPP only defines a security problem that relates to network traffic
+	  bound to or originating from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> expands the security
+	  problem to include a logical interface for network traffic between two nonTOE endpoints that is intercepted (inline) or observed (promiscuous) by the
+	  <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>. This is not inconsistent because the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> introduces a new logical
+	  interface for this functionality that is beyond the scope of the NDcPP.
+	  </td></tr><tr><td><a href="#T.NETWORK_DOS">T.NETWORK_DOS</a></td><td>
+	  The NDcPP only defines a security problem that relates to network traffic
+		bound to or originating from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> expands the security
+		problem to include a logical interface for network traffic between two nonTOE endpoints that is intercepted (inline) or observed (promiscuous) by the
+		<abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>. This is not inconsistent because the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> introduces a new logical
+		interface for this functionality that is beyond the scope of the NDcPP.
+	  </td></tr><tr><td><a href="#T.NETWORK_MISUSE">T.NETWORK_MISUSE</a></td><td>
+	  The NDcPP only defines a security problem that relates to network traffic
+		bound to or originating from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> expands the security
+		problem to include a logical interface for network traffic between two nonTOE endpoints that is intercepted (inline) or observed (promiscuous) by the
+		<abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>. This is not inconsistent because the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> introduces a new logical
+		interface for this functionality that is beyond the scope of the NDcPP.
+	  
+	  The NDcPP only defines a security problem that relates to network traffic
+  	  bound to or originating from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> expands the security
+	  problem to include a logical interface for network traffic between two nonTOE endpoints that is intercepted (inline) or observed(promiscuous) by the
+	  <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>. This is not inconsistent because the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> introduces a new logical
+	  interface for this functionality that is beyond the scope of the NDcPP.
+	  </td></tr><tr><td><a href="#A.CONNECTIONS">A.CONNECTIONS</a></td><td>
+	  This assumption requires a specific network configuration to ensure that
+		network traffic cannot be routed in a way that allows it to bypass the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s
+		inspection interfaces. This does not interfere with any of the assumptions in the NDcPP because the NDcPP doesn’t make any assumptions about the
+		<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s position in a network architecture. 
+	  </td></tr><tr><td><a href="#P.ANALYZE">P.ANALYZE</a></td><td>
+	  This organizational security policy does not conflict with the NDcPP because
+		it sets expectations for administrative use of the data that is specifically
+		collected by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> function.
+	  </td></tr></table><h3 id="conobj-ND" class="indexable" data-level="3">6.1.3 
 			Consistency of OE Objectives
-		</h3><p><table><caption><span class="ctr" data-myid="t-con-oe-objs" data-counter-type="ct-Table" id="t-con-oe-objs">Table <span class="counter">5</span></span>: Consistency of <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objectives (NDcPP base)
-		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objective</th><th>Consistency Rationale</th></tr><tr><td><a href="#OE.PLATFORM">OE.PLATFORM</a></td><td></td></tr><tr><td><a href="#OE.PROPER_USER">OE.PROPER_USER</a></td><td></td></tr><tr><td><a href="#OE.PROPER_ADMIN">OE.PROPER_ADMIN</a></td><td></td></tr></table></p><h3 id="conreq-ND" class="indexable" data-level="3">6.1.4 
+		</h3><p>The objectives for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s operational environment are consistent with the NDcPP based on the following rationale: <table><caption><span class="ctr" data-myid="t-con-oe-objs" data-counter-type="ct-Table" id="t-con-oe-objs">Table <span class="counter">5</span></span>: Consistency of <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objectives (NDcPP base)
+		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objective</th><th>Consistency Rationale</th></tr><tr><td><a href="#OE.CONNECTIONS">OE.CONNECTIONS</a></td><td></td></tr></table></p><h3 id="conreq-ND" class="indexable" data-level="3">6.1.4 
 	Consistency of Requirements
       </h3>
       This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> identifies several <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> from the
       NDcPP that are needed to support
-      IPS functionality.
+      <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality.
       This is considered to be consistent because the functionality provided by the
       NDcPP is being used for its intended purpose.
       
@@ -1100,7 +1466,7 @@ provide all of its security functionality.
 		  </td></tr><tr><th colspan="2"> Additional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th></tr><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not add any requirements when the
 	      NDcPP is the base.
-	    </td></tr><tr><th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FCS_COP_EXT.1/SKC">FCS_COP_EXT.1/SKC</a></td><td></td></tr><tr><td><a href="#FCS_YAR.1">FCS_YAR.1</a></td><td></td></tr></tr><tr><th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
+	    </td></tr><tr><th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a></td><td></td></tr><tr><td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td></td></tr><tr><td><a href="#FIP_ABD_EXT.1">FIP_ABD_EXT.1</a></td><td></td></tr><tr><td><a href="#FIP_IPB_EXT.1">FIP_IPB_EXT.1</a></td><td></td></tr><tr><td><a href="#FIP_NTA_EXT.1">FIP_NTA_EXT.1</a></td><td></td></tr></tr><tr><th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Optional requirements.
 	    </td></tr></tr><tr><th colspan="2"> Objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Objective requirements.
@@ -1136,7 +1502,7 @@ provide all of its security functionality.
 			<tr>
 				<td>FIA_UAU.1 - Timing of authentication</td>
 				<td>
-				  FIA_AFL.1 implicitly requires that the <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> perform all necessary actions, 
+				  FIA_AFL.1 implicitly requires that the OS perform all necessary actions, 
 				  including those on behalf of the user who has not been authenticated, 
 				  in order to authenticate;
 				  therefore it is duplicative to include these actions as a 
@@ -1146,7 +1512,7 @@ provide all of its security functionality.
 			<tr>
 				<td>FIA_UID.1 - Timing of identification</td>
 				<td>
-				  FIA_AFL.1 implicitly requires that the <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> perform all necessary actions, 
+				  FIA_AFL.1 implicitly requires that the OS perform all necessary actions, 
 				  including those on behalf of the user who has not been identified, 
 				  in order to authenticate;
 				  therefore it is duplicative to include these actions as a 
@@ -1164,7 +1530,7 @@ provide all of its security functionality.
 			<tr>
 				<td>FPT_STM.1 - Reliable time stamps</td>
 				<td>
-				  FAU_GEN.1.2 explicitly requires that the <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> associate timestamps with audit records;
+				  FAU_GEN.1.2 explicitly requires that the OS associate timestamps with audit records;
 				  therefore it is duplicative to include a separate timestamp requirement.
 				</td>
 			</tr>
@@ -1192,7 +1558,7 @@ provide all of its security functionality.
 			<tr>
 				<td>FAU_GEN.2 - User identity association</td>
 				<td>
-				  FAU_GEN.1.2 explicitly requires that the <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> record
+				  FAU_GEN.1.2 explicitly requires that the OS record
 				  any user account associated with each event; therefore, it is duplicative
 				  to include a separate requirement to associate a user account with each
 				  event.
@@ -1232,7 +1598,7 @@ provide all of its security functionality.
 		  obtained from within the entropy source for testing purposes. The documentation
 		  should walk through the entropy source design indicating where the entropy
 		  comes from, where the entropy output is passed next, any post-processing
-		  of the raw outputs (hash, <abbr class="dyn-abbr"><a href="#abbr_XOR">XOR</a></abbr>, etc.), if/where it is stored, and finally,
+		  of the raw outputs (hash, XOR, etc.), if/where it is stored, and finally,
 		  how it is output from the entropy source. Any conditions placed on the
 		  process (e.g., blocking) should also be described in the entropy source
 		  design. Diagrams and examples are encouraged. 
@@ -1243,8 +1609,8 @@ provide all of its security functionality.
 		  cannot affect the entropy rate.
 			</p><p>
 		  If implemented, the design description shall include a description
-		  of how third-party applications can add entropy to the <abbr class="dyn-abbr"><a href="#abbr_RBG">RBG</a></abbr>. A
-		  description of any <abbr class="dyn-abbr"><a href="#abbr_RBG">RBG</a></abbr> state saving between power-off and
+		  of how third-party applications can add entropy to the RBG. A
+		  description of any RBG state saving between power-off and
 		  power-on shall be included.
 			</p>
 		
@@ -1253,7 +1619,7 @@ provide all of its security functionality.
 			<p>
 		  There should be a technical argument for where the unpredictability in
 		  the source comes from and why there is confidence in the entropy source
-		  delivering sufficient entropy for the uses made of the <abbr class="dyn-abbr"><a href="#abbr_RBG">RBG</a></abbr> output
+		  delivering sufficient entropy for the uses made of the RBG output
 		  (by this particular <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>). This argument will include a description of
 		  the expected min-entropy rate (i.e. the minimum entropy (in bits) per
 		  bit or byte of source data) and explain that sufficient entropy is
@@ -1283,12 +1649,12 @@ provide all of its security functionality.
 		  in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>.
 			</p><p>
 		  Regardless of type of entropy source, the justification will also
-		  include how the <abbr class="dyn-abbr"><a href="#abbr_DRBG">DRBG</a></abbr> is initialized with the entropy stated in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>,
+		  include how the DRBG is initialized with the entropy stated in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>,
 		  for example by verifying that the min-entropy rate is multiplied by the
-		  amount of source data used to seed the <abbr class="dyn-abbr"><a href="#abbr_DRBG">DRBG</a></abbr> or that the rate of entropy
+		  amount of source data used to seed the DRBG or that the rate of entropy
 		  expected based on the amount of source data is explicitly stated and
 		  compared to the statistical rate. If the amount of source data used to
-		  seed the <abbr class="dyn-abbr"><a href="#abbr_DRBG">DRBG</a></abbr> is not clear or the calculated rate is not explicitly
+		  seed the DRBG is not clear or the calculated rate is not explicitly
 		  related to the seed, the documentation will not be considered complete.
 			</p><p>
 		  The entropy justification shall not include any data added from
@@ -1335,7 +1701,7 @@ provide all of its security functionality.
 		  run on different platforms. Equivalency can be used to reduce the testing required across claimed evaluated configurations. It can 
 		  also be used during Assurance Maintenance to reduce testing needed to add more evaluated configurations to a certification.
 			</p><p>
-		  These equivalency guidelines do not replace Assurance Maintenance requirements or <abbr class="dyn-abbr"><a href="#abbr_NIAP">NIAP</a></abbr> Policy #5 requirements for CAVP certificates. 
+		  These equivalency guidelines do not replace Assurance Maintenance requirements or NIAP Policy #5 requirements for CAVP certificates. 
 		  Nor may equivalency be used to leverage evaluations with expired certifications.
 			</p><p>
 		  These Equivalency Guidelines represent a shift from complete testing of all product instances to more of a risk-based approach. 
@@ -1498,10 +1864,10 @@ provide all of its security functionality.
 			disqualified from being equivalent for purposes of an App evaluation. If the application takes the same 
 			code paths when executing <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality on different processors of the same family, 
 			then the processors can be considered equivalent with respect to that application.
-			For example, if an application follows one code path on platforms that support the <abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-NI instruction 
+			For example, if an application follows one code path on platforms that support the AES-NI instruction 
 			and another on platforms that do not, then those two platforms are not equivalent with respect to that 
 			application functionality. But if the application follows the same code path whether or not the platform 
-			supports <abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-NI, then the platforms are equivalent with respect to that functionality.
+			supports AES-NI, then the platforms are equivalent with respect to that functionality.
 		  </p><p>
 			The platforms are equivalent with respect to the application if the platforms are equivalent with respect to all <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified
 			security functionality.
@@ -1530,7 +1896,7 @@ provide all of its security functionality.
 			<p>
 			For traditional applications that are built for and run on operating systems, platform equivalence is 
 			determined by the interfaces between the application and the operating system that are relevant to <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified 
-			security functionality. Generally, these are the processor interface, device interfaces, and <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> APIs. The following 
+			security functionality. Generally, these are the processor interface, device interfaces, and OS APIs. The following 
 			factors applied in order:
 			
 			<table border="1">
@@ -1558,20 +1924,20 @@ provide all of its security functionality.
 				<td valign="top">Platform Interfaces</td>
 				<td valign="top">Different</td>
 				<td valign="top">Platforms from the same vendor and major version are not equivalent if there are
-				  differences in device interfaces and <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> APIs that are relevant to the way the platform provides <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified 
+				  differences in device interfaces and OS APIs that are relevant to the way the platform provides <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified 
 				  security functionality to the application. </td>
 			  </tr>
 			  <tr valign="top">
 				<td valign="top">Platform Interfaces</td>
 				<td valign="top">Same</td>
 				<td valign="top">Platforms from the same vendor and major version are equivalent if there are 
-				  no differences in device interfaces and <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> APIs that are relevant to the way the platform 
+				  no differences in device interfaces and OS APIs that are relevant to the way the platform 
 				  provides <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality to the application, or if the Platform does 
 				  not provide such functionality to the application.</td>
 			  </tr>
 			  
 			</table>
-			<b>Table 4. Factors for Determining <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr>/VS Platform Equivalence</b>
+			<b>Table 4. Factors for Determining OS/VS Platform Equivalence</b>
 			</p>
 		
 		  
@@ -1579,7 +1945,7 @@ provide all of its security functionality.
 			<p>
 			If an Application is built for and runs in a non-OS software-based execution environment, such as a Container or 
 			Java Runtime, then the below criteria must be used to determine platform equivalence. The key point is that the 
-			underlying hardware (virtual or physical) and <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> is not relevant to platform equivalence. This allows applications 
+			underlying hardware (virtual or physical) and OS is not relevant to platform equivalence. This allows applications 
 			to be tested and run on software-based execution environments on any hardware—as in cloud deployments.
 			
 			<table border="1">
@@ -1638,7 +2004,7 @@ provide all of its security functionality.
 		  configuration must describe the platform down to the specific virtualization system version. The Vendor must describe the 
 		  differences in the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> with respect to <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality and how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> functions differently to leverage
 		  platform differences in the tested configuration versus the claimed equivalent configuration. Relevant platform differences 
-		  could include instruction sets, device interfaces, and <abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr> APIs invoked by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to implement <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security 
+		  could include instruction sets, device interfaces, and OS APIs invoked by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to implement <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security 
 		  functionality.
 			</p><p>
 		  <b>Software-Based Execution Environments</b>
@@ -1651,83 +2017,47 @@ provide all of its security functionality.
 			</p>
 		
 	<h1 id="acronyms" class="indexable" data-level="A">Appendix F -  Acronyms</h1><table><caption><span class="ctr" data-myid="t-acronyms" data-counter-type="ct-Table" id="t-acronyms">Table <span class="counter">7</span></span>: Acronyms
-		</caption><tr class="header"><th>Acronym</th><th>Meaning</th></tr><tr><td><span class="term" id="abbr_AES"><abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr></span></td><td><span id="long_abbr_AES">Advanced Encryption Standard</span></td></tr>
-<tr><td><span class="term" id="abbr_API"><abbr class="dyn-abbr"><a href="#abbr_API">API</a></abbr></span></td><td><span id="long_abbr_API">Application Programming Interface</span></td></tr>
-<tr><td><span class="term" id="abbr_API"><abbr class="dyn-abbr"><a href="#abbr_API">API</a></abbr></span></td><td><span id="long_abbr_API">Application Programming Interface</span></td></tr>
-<tr><td><span class="term" id="abbr_app"><abbr class="dyn-abbr"><a href="#abbr_app">app</a></abbr></span></td><td><span id="long_abbr_app">Application</span></td></tr>
-<tr><td><span class="term" id="abbr_ASLR"><abbr class="dyn-abbr"><a href="#abbr_ASLR">ASLR</a></abbr></span></td><td><span id="long_abbr_ASLR">Address Space Layout Randomization</span></td></tr>
-<tr><td><span class="term" id="abbr_Base-PP" data-plural="Base-PPs"><abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr></span></td><td><span id="long_abbr_Base-PP">Base Protection Profile</span></td></tr>
+		</caption><tr class="header"><th>Acronym</th><th>Meaning</th></tr><tr><td><span class="term" id="abbr_Base-PP" data-plural="Base-PPs"><abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr></span></td><td><span id="long_abbr_Base-PP">Base Protection Profile</span></td></tr>
 <tr><td><span class="term" id="abbr_CC"><abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr></span></td><td><span id="long_abbr_CC">Common Criteria</span></td></tr>
 <tr><td><span class="term" id="abbr_CEM"><abbr class="dyn-abbr"><a href="#abbr_CEM">CEM</a></abbr></span></td><td><span id="long_abbr_CEM">Common Evaluation Methodology</span></td></tr>
-<tr><td><span class="term" id="abbr_CESG"><abbr class="dyn-abbr"><a href="#abbr_CESG">CESG</a></abbr></span></td><td><span id="long_abbr_CESG">Communications-Electronics Security Group</span></td></tr>
-<tr><td><span class="term" id="abbr_CMC"><abbr class="dyn-abbr"><a href="#abbr_CMC">CMC</a></abbr></span></td><td><span id="long_abbr_CMC">Certificate Management over <abbr class="dyn-abbr"><a href="#abbr_CMS">CMS</a></abbr></span></td></tr>
-<tr><td><span class="term" id="abbr_CMS"><abbr class="dyn-abbr"><a href="#abbr_CMS">CMS</a></abbr></span></td><td><span id="long_abbr_CMS">Cryptographic Message Syntax</span></td></tr>
-<tr><td><span class="term" id="abbr_CN"><abbr class="dyn-abbr"><a href="#abbr_CN">CN</a></abbr></span></td><td><span id="long_abbr_CN">Common Names</span></td></tr>
 <tr><td><span class="term" id="abbr_cPP" data-plural="cPPs"><abbr class="dyn-abbr"><a href="#abbr_cPP">cPP</a></abbr></span></td><td><span id="long_abbr_cPP">Collaborative Protection Profile</span></td></tr>
-<tr><td><span class="term" id="abbr_CRL"><abbr class="dyn-abbr"><a href="#abbr_CRL">CRL</a></abbr></span></td><td><span id="long_abbr_CRL">Certificate Revocation List</span></td></tr>
-<tr><td><span class="term" id="abbr_CSA"><abbr class="dyn-abbr"><a href="#abbr_CSA">CSA</a></abbr></span></td><td><span id="long_abbr_CSA">Computer Security Act</span></td></tr>
-<tr><td><span class="term" id="abbr_CSP"><abbr class="dyn-abbr"><a href="#abbr_CSP">CSP</a></abbr></span></td><td><span id="long_abbr_CSP">Critical Security Parameters</span></td></tr>
-<tr><td><span class="term" id="abbr_DAR"><abbr class="dyn-abbr"><a href="#abbr_DAR">DAR</a></abbr></span></td><td><span id="long_abbr_DAR">Data At Rest</span></td></tr>
-<tr><td><span class="term" id="abbr_DEP"><abbr class="dyn-abbr"><a href="#abbr_DEP">DEP</a></abbr></span></td><td><span id="long_abbr_DEP">Data Execution Prevention</span></td></tr>
-<tr><td><span class="term" id="abbr_DES"><abbr class="dyn-abbr"><a href="#abbr_DES">DES</a></abbr></span></td><td><span id="long_abbr_DES">Data Encryption Standard</span></td></tr>
-<tr><td><span class="term" id="abbr_DHE"><abbr class="dyn-abbr"><a href="#abbr_DHE">DHE</a></abbr></span></td><td><span id="long_abbr_DHE">Diffie-Hellman Ephemeral</span></td></tr>
-<tr><td><span class="term" id="abbr_DNS"><abbr class="dyn-abbr"><a href="#abbr_DNS">DNS</a></abbr></span></td><td><span id="long_abbr_DNS">Domain Name System</span></td></tr>
-<tr><td><span class="term" id="abbr_DRBG"><abbr class="dyn-abbr"><a href="#abbr_DRBG">DRBG</a></abbr></span></td><td><span id="long_abbr_DRBG">Deterministic Random Bit Generator</span></td></tr>
-<tr><td><span class="term" id="abbr_DSS"><abbr class="dyn-abbr"><a href="#abbr_DSS">DSS</a></abbr></span></td><td><span id="long_abbr_DSS">Digital Signature Standard</span></td></tr>
-<tr><td><span class="term" id="abbr_DSS"><abbr class="dyn-abbr"><a href="#abbr_DSS">DSS</a></abbr></span></td><td><span id="long_abbr_DSS">Digital Signature Standard</span></td></tr>
-<tr><td><span class="term" id="abbr_DT"><abbr class="dyn-abbr"><a href="#abbr_DT">DT</a></abbr></span></td><td><span id="long_abbr_DT">Date/Time Vector</span></td></tr>
-<tr><td><span class="term" id="abbr_DTLS"><abbr class="dyn-abbr"><a href="#abbr_DTLS">DTLS</a></abbr></span></td><td><span id="long_abbr_DTLS">Datagram Transport Layer Security</span></td></tr>
-<tr><td><span class="term" id="abbr_EAP"><abbr class="dyn-abbr"><a href="#abbr_EAP">EAP</a></abbr></span></td><td><span id="long_abbr_EAP">Extensible Authentication Protocol</span></td></tr>
-<tr><td><span class="term" id="abbr_ECDHE"><abbr class="dyn-abbr"><a href="#abbr_ECDHE">ECDHE</a></abbr></span></td><td><span id="long_abbr_ECDHE">Elliptic Curve Diffie-Hellman Ephemeral</span></td></tr>
-<tr><td><span class="term" id="abbr_ECDSA"><abbr class="dyn-abbr"><a href="#abbr_ECDSA">ECDSA</a></abbr></span></td><td><span id="long_abbr_ECDSA">Elliptic Curve Digital Signature Algorithm</span></td></tr>
-<tr><td><span class="term" id="abbr_EP"><abbr class="dyn-abbr"><a href="#abbr_EP">EP</a></abbr></span></td><td><span id="long_abbr_EP">Extended Package</span></td></tr>
-<tr><td><span class="term" id="abbr_EST"><abbr class="dyn-abbr"><a href="#abbr_EST">EST</a></abbr></span></td><td><span id="long_abbr_EST">Enrollment over Secure Transport</span></td></tr>
-<tr><td><span class="term" id="abbr_FIPS"><abbr class="dyn-abbr"><a href="#abbr_FIPS">FIPS</a></abbr></span></td><td><span id="long_abbr_FIPS">Federal Information Processing Standards</span></td></tr>
+<tr><td><span class="term" id="abbr_DDoS"><abbr class="dyn-abbr"><a href="#abbr_DDoS">DDoS</a></abbr></span></td><td><span id="long_abbr_DDoS">Distributed Denial of Service</span></td></tr>
+<tr><td><span class="term" id="abbr_DoS"><abbr class="dyn-abbr"><a href="#abbr_DoS">DoS</a></abbr></span></td><td><span id="long_abbr_DoS">Denial of Service</span></td></tr>
 <tr><td><span class="term" id="abbr_FP"><abbr class="dyn-abbr"><a href="#abbr_FP">FP</a></abbr></span></td><td><span id="long_abbr_FP">Functional Package</span></td></tr>
-<tr><td><span class="term" id="abbr_HMAC"><abbr class="dyn-abbr"><a href="#abbr_HMAC">HMAC</a></abbr></span></td><td><span id="long_abbr_HMAC">Hash-based Message Authentication Code</span></td></tr>
-<tr><td><span class="term" id="abbr_HTTP"><abbr class="dyn-abbr"><a href="#abbr_HTTP">HTTP</a></abbr></span></td><td><span id="long_abbr_HTTP">Hypertext Transfer Protocol</span></td></tr>
-<tr><td><span class="term" id="abbr_HTTPS"><abbr class="dyn-abbr"><a href="#abbr_HTTPS">HTTPS</a></abbr></span></td><td><span id="long_abbr_HTTPS">Hypertext Transfer Protocol Secure</span></td></tr>
-<tr><td><span class="term" id="abbr_IETF"><abbr class="dyn-abbr"><a href="#abbr_IETF">IETF</a></abbr></span></td><td><span id="long_abbr_IETF">Internet Engineering Task Force</span></td></tr>
-<tr><td><span class="term" id="abbr_IP"><abbr class="dyn-abbr"><a href="#abbr_IP">IP</a></abbr></span></td><td><span id="long_abbr_IP">Internet Protocol</span></td></tr>
-<tr><td><span class="term" id="abbr_ISO"><abbr class="dyn-abbr"><a href="#abbr_ISO">ISO</a></abbr></span></td><td><span id="long_abbr_ISO">International Organization for Standardization</span></td></tr>
-<tr><td><span class="term" id="abbr_IT"><abbr class="dyn-abbr"><a href="#abbr_IT">IT</a></abbr></span></td><td><span id="long_abbr_IT">Information Technology</span></td></tr>
-<tr><td><span class="term" id="abbr_ITSEF"><abbr class="dyn-abbr"><a href="#abbr_ITSEF">ITSEF</a></abbr></span></td><td><span id="long_abbr_ITSEF">Information Technology Security Evaluation Facility</span></td></tr>
-<tr><td><span class="term" id="abbr_NIAP"><abbr class="dyn-abbr"><a href="#abbr_NIAP">NIAP</a></abbr></span></td><td><span id="long_abbr_NIAP">National Information Assurance Partnership</span></td></tr>
-<tr><td><span class="term" id="abbr_NIST"><abbr class="dyn-abbr"><a href="#abbr_NIST">NIST</a></abbr></span></td><td><span id="long_abbr_NIST">National Institute of Standards and Technology</span></td></tr>
-<tr><td><span class="term" id="abbr_OCSP"><abbr class="dyn-abbr"><a href="#abbr_OCSP">OCSP</a></abbr></span></td><td><span id="long_abbr_OCSP">Online Certificate Status Protocol</span></td></tr>
+<tr><td><span class="term" id="abbr_FTP"><abbr class="dyn-abbr"><a href="#abbr_FTP">FTP</a></abbr></span></td><td><span id="long_abbr_FTP">File Transfer Protocol</span></td></tr>
+<tr><td><span class="term" id="abbr_GRE"><abbr class="dyn-abbr"><a href="#abbr_GRE">GRE</a></abbr></span></td><td><span id="long_abbr_GRE">Generic Route Encapsulation</span></td></tr>
+<tr><td><span class="term" id="abbr_HTTP"><abbr class="dyn-abbr"><a href="#abbr_HTTP">HTTP</a></abbr></span></td><td><span id="long_abbr_HTTP">Hypertext transfer protoco</span></td></tr>
+<tr><td><span class="term" id="abbr_ICMP"><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr></span></td><td><span id="long_abbr_ICMP">Internet Control Message Protocol</span></td></tr>
+<tr><td><span class="term" id="abbr_IDS"><abbr class="dyn-abbr"><a href="#abbr_IDS">IDS</a></abbr></span></td><td><span id="long_abbr_IDS">Intrusion Detection System</span></td></tr>
+<tr><td><span class="term" id="abbr_IPS"><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr></span></td><td><span id="long_abbr_IPS">Intrusion Prevention System</span></td></tr>
+<tr><td><span class="term" id="abbr_MAC"><abbr class="dyn-abbr"><a href="#abbr_MAC">MAC</a></abbr></span></td><td><span id="long_abbr_MAC"><abbr class="dyn-abbr"><a href="#abbr_MAC">MAC</a></abbr> Media Access Control</span></td></tr>
+<tr><td><span class="term" id="abbr_MPLS"><abbr class="dyn-abbr"><a href="#abbr_MPLS">MPLS</a></abbr></span></td><td><span id="long_abbr_MPLS"><abbr class="dyn-abbr"><a href="#abbr_MPLS">MPLS</a></abbr> Multiprotocol Label Switching</span></td></tr>
 <tr><td><span class="term" id="abbr_OE"><abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr></span></td><td><span id="long_abbr_OE">Operational Environment</span></td></tr>
-<tr><td><span class="term" id="abbr_OID"><abbr class="dyn-abbr"><a href="#abbr_OID">OID</a></abbr></span></td><td><span id="long_abbr_OID">Object Identifier</span></td></tr>
-<tr><td><span class="term" id="abbr_OMB"><abbr class="dyn-abbr"><a href="#abbr_OMB">OMB</a></abbr></span></td><td><span id="long_abbr_OMB">Office of Management and Budget</span></td></tr>
-<tr><td><span class="term" id="abbr_OS" data-plural="OSes"><abbr class="dyn-abbr"><a href="#abbr_OS">OS</a></abbr></span></td><td><span id="long_abbr_OS">Operating System</span></td></tr>
-<tr><td><span class="term" id="abbr_PII"><abbr class="dyn-abbr"><a href="#abbr_PII">PII</a></abbr></span></td><td><span id="long_abbr_PII">Personally Identifiable Information</span></td></tr>
-<tr><td><span class="term" id="abbr_PKI"><abbr class="dyn-abbr"><a href="#abbr_PKI">PKI</a></abbr></span></td><td><span id="long_abbr_PKI">Public Key Infrastructure</span></td></tr>
+<tr><td><span class="term" id="abbr_OSI"><abbr class="dyn-abbr"><a href="#abbr_OSI">OSI</a></abbr></span></td><td><span id="long_abbr_OSI">Open Systems Interconnection</span></td></tr>
 <tr><td><span class="term" id="abbr_PP"><abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr></span></td><td><span id="long_abbr_PP">Protection Profile</span></td></tr>
 <tr><td><span class="term" id="abbr_PP" data-plural="PPs"><abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr></span></td><td><span id="long_abbr_PP">Protection Profile</span></td></tr>
 <tr><td><span class="term" id="abbr_PP-Configuration"><abbr class="dyn-abbr"><a href="#abbr_PP-Configuration">PP-Configuration</a></abbr></span></td><td><span id="long_abbr_PP-Configuration">Protection Profile Configuration</span></td></tr>
 <tr><td><span class="term" id="abbr_PP-Module"><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr></span></td><td><span id="long_abbr_PP-Module">Protection Profile Module</span></td></tr>
-<tr><td><span class="term" id="abbr_RBG"><abbr class="dyn-abbr"><a href="#abbr_RBG">RBG</a></abbr></span></td><td><span id="long_abbr_RBG">Random Bit Generator</span></td></tr>
+<tr><td><span class="term" id="abbr_PPTP"><abbr class="dyn-abbr"><a href="#abbr_PPTP">PPTP</a></abbr></span></td><td><span id="long_abbr_PPTP">Point to Point Tunneling Protocol</span></td></tr>
 <tr><td><span class="term" id="abbr_RFC"><abbr class="dyn-abbr"><a href="#abbr_RFC">RFC</a></abbr></span></td><td><span id="long_abbr_RFC">Request for Comment</span></td></tr>
-<tr><td><span class="term" id="abbr_RNG"><abbr class="dyn-abbr"><a href="#abbr_RNG">RNG</a></abbr></span></td><td><span id="long_abbr_RNG">Random Number Generator</span></td></tr>
-<tr><td><span class="term" id="abbr_RNGVS"><abbr class="dyn-abbr"><a href="#abbr_RNGVS">RNGVS</a></abbr></span></td><td><span id="long_abbr_RNGVS">Random Number Generator Validation System</span></td></tr>
-<tr><td><span class="term" id="abbr_S/MIME"><abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr></span></td><td><span id="long_abbr_S/MIME">Secure/Multi-purpose Internet Mail Extensions</span></td></tr>
-<tr><td><span class="term" id="abbr_SAN"><abbr class="dyn-abbr"><a href="#abbr_SAN">SAN</a></abbr></span></td><td><span id="long_abbr_SAN">Subject Alternative Name</span></td></tr>
+<tr><td><span class="term" id="abbr_SAR"><abbr class="dyn-abbr"><a href="#abbr_SAR">SAR</a></abbr></span></td><td><span id="long_abbr_SAR">Security Assurance Requirement</span></td></tr>
 <tr><td><span class="term" id="abbr_SAR" data-plural="SARs"><abbr class="dyn-abbr"><a href="#abbr_SAR">SAR</a></abbr></span></td><td><span id="long_abbr_SAR">Security Assurance Requirement</span></td></tr>
+<tr><td><span class="term" id="abbr_SFR"><abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr></span></td><td><span id="long_abbr_SFR">Security Functional Requirement</span></td></tr>
 <tr><td><span class="term" id="abbr_SFR" data-plural="SFRs"><abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr></span></td><td><span id="long_abbr_SFR">Security Functional Requirement</span></td></tr>
-<tr><td><span class="term" id="abbr_SHA"><abbr class="dyn-abbr"><a href="#abbr_SHA">SHA</a></abbr></span></td><td><span id="long_abbr_SHA">Secure Hash Algorithm</span></td></tr>
-<tr><td><span class="term" id="abbr_SIP"><abbr class="dyn-abbr"><a href="#abbr_SIP">SIP</a></abbr></span></td><td><span id="long_abbr_SIP">Session Initiation Protocol</span></td></tr>
+<tr><td><span class="term" id="abbr_SMTP"><abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr></span></td><td><span id="long_abbr_SMTP">Simple Mail Transfer Protocol</span></td></tr>
+<tr><td><span class="term" id="abbr_SQL"><abbr class="dyn-abbr"><a href="#abbr_SQL">SQL</a></abbr></span></td><td><span id="long_abbr_SQL">Structured Query Language</span></td></tr>
+<tr><td><span class="term" id="abbr_ST"><abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></span></td><td><span id="long_abbr_ST">Security Target</span></td></tr>
 <tr><td><span class="term" id="abbr_ST" data-plural="STs"><abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></span></td><td><span id="long_abbr_ST">Security Target</span></td></tr>
-<tr><td><span class="term" id="abbr_SWID"><abbr class="dyn-abbr"><a href="#abbr_SWID">SWID</a></abbr></span></td><td><span id="long_abbr_SWID">Software Identification</span></td></tr>
-<tr><td><span class="term" id="abbr_TLS"><abbr class="dyn-abbr"><a href="#abbr_TLS">TLS</a></abbr></span></td><td><span id="long_abbr_TLS">Transport Layer Security</span></td></tr>
+<tr><td><span class="term" id="abbr_TCP"><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr></span></td><td><span id="long_abbr_TCP">Transmission Control Protocol</span></td></tr>
+<tr><td><span class="term" id="abbr_TOE"><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span></td><td><span id="long_abbr_TOE">Target of Evaluation</span></td></tr>
 <tr><td><span class="term" id="abbr_TOE" data-plural="TOEs"><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span></td><td><span id="long_abbr_TOE">Target of Evaluation</span></td></tr>
+<tr><td><span class="term" id="abbr_ToS"><abbr class="dyn-abbr"><a href="#abbr_ToS">ToS</a></abbr></span></td><td><span id="long_abbr_ToS">Type of Service</span></td></tr>
+<tr><td><span class="term" id="abbr_TSF"><abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr></span></td><td><span id="long_abbr_TSF"><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Security Functionality</span></td></tr>
 <tr><td><span class="term" id="abbr_TSF"><abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr></span></td><td><span id="long_abbr_TSF"><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Security Functionality</span></td></tr>
 <tr><td><span class="term" id="abbr_TSFI" data-plural="TSFIs"><abbr class="dyn-abbr"><a href="#abbr_TSFI">TSFI</a></abbr></span></td><td><span id="long_abbr_TSFI"><abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> Interface</span></td></tr>
 <tr><td><span class="term" id="abbr_TSS"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></span></td><td><span id="long_abbr_TSS"><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Summary Specification</span></td></tr>
-<tr><td><span class="term" id="abbr_URI"><abbr class="dyn-abbr"><a href="#abbr_URI">URI</a></abbr></span></td><td><span id="long_abbr_URI">Uniform Resource Identifier</span></td></tr>
-<tr><td><span class="term" id="abbr_URL"><abbr class="dyn-abbr"><a href="#abbr_URL">URL</a></abbr></span></td><td><span id="long_abbr_URL">Uniform Resource Locator</span></td></tr>
-<tr><td><span class="term" id="abbr_USB"><abbr class="dyn-abbr"><a href="#abbr_USB">USB</a></abbr></span></td><td><span id="long_abbr_USB">Universal Serial Bus</span></td></tr>
-<tr><td><span class="term" id="abbr_VM"><abbr class="dyn-abbr"><a href="#abbr_VM">VM</a></abbr></span></td><td><span id="long_abbr_VM">Virtual Machine</span></td></tr>
-<tr><td><span class="term" id="abbr_XCCDF"><abbr class="dyn-abbr"><a href="#abbr_XCCDF">XCCDF</a></abbr></span></td><td><span id="long_abbr_XCCDF">eXtensible Configuration Checklist Description Format</span></td></tr>
-<tr><td><span class="term" id="abbr_XOR"><abbr class="dyn-abbr"><a href="#abbr_XOR">XOR</a></abbr></span></td><td><span id="long_abbr_XOR">Exclusive Or</span></td></tr>
+<tr><td><span class="term" id="abbr_TTL"><abbr class="dyn-abbr"><a href="#abbr_TTL">TTL</a></abbr></span></td><td><span id="long_abbr_TTL">Time to Live</span></td></tr>
+<tr><td><span class="term" id="abbr_UDP"><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr></span></td><td><span id="long_abbr_UDP">User Datagram Protocol</span></td></tr>
 </table><h1 id="appendix-bibliography" class="indexable" data-level="A">Appendix G -  Bibliography</h1><table><caption><span class="ctr" data-myid="t-biblio" data-counter-type="ct-Table" id="t-biblio">Table <span class="counter">8</span></span>: Bibliography</caption><tr class="header"><th>Identifier</th><th>Title</th></tr><tr><td><span id="bibCC">[<abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>]</span></td><td><span class="description">Common Criteria for Information Technology Security Evaluation - <ul>
             <li><a href="https://www.commoncriteriaportal.org/files/ccfiles/CC2022PART1R1.pdf">Part 1: 
 				Introduction and general model</a>, CCMB-2022-11-001, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022.</li>
@@ -1742,10 +2072,10 @@ provide all of its security functionality.
           </ul></span></td></tr><tr><td><span id="bibCEM">[<abbr class="dyn-abbr"><a href="#abbr_CEM">CEM</a></abbr>]</span></td><td><span class="description">Common Methodology for Information Technology Security Evaluation - <ul>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CEM2022R1.pdf">
                  Evaluation methodology</a>, CCMB-2022-11-006, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022.</li>
-          </ul></span></td></tr><tr><td><span id="bibCESG">[<abbr class="dyn-abbr"><a href="#abbr_CESG">CESG</a></abbr>]</span></td><td><span class="description"><abbr class="dyn-abbr"><a href="#abbr_CESG">CESG</a></abbr> - <a href="https://www.gov.uk/government/collections/end-user-devices-security-guidance"> End
-            User Devices Security and Configuration Guidance</a></span></td></tr><tr><td><span id="bibCSA">[<abbr class="dyn-abbr"><a href="#abbr_CSA">CSA</a></abbr>]</span></td><td><span class="description">
+          </ul></span></td></tr><tr><td><span id="bibCESG">[CESG]</span></td><td><span class="description">CESG - <a href="https://www.gov.uk/government/collections/end-user-devices-security-guidance"> End
+            User Devices Security and Configuration Guidance</a></span></td></tr><tr><td><span id="bibCSA">[CSA]</span></td><td><span class="description">
           <a href="http://csrc.nist.gov/groups/SMA/ispab/documents/csa_87.txt">Computer Security Act
-            of 1987</a>, H.R. 145, June 11, 1987. </span></td></tr><tr><td><span id="bibOMB">[<abbr class="dyn-abbr"><a href="#abbr_OMB">OMB</a></abbr>]</span></td><td><span class="description">
+            of 1987</a>, H.R. 145, June 11, 1987. </span></td></tr><tr><td><span id="bibOMB">[OMB]</span></td><td><span class="description">
           <a href="http://www.whitehouse.gov/sites/default/files/omb/memoranda/fy2006/m06-19.pdf">Reporting Incidents Involving Personally Identifiable Information and Incorporating the
-            Cost for Security in Agency Information Technology Investments</a>, <abbr class="dyn-abbr"><a href="#abbr_OMB">OMB</a></abbr> M-06-19, July
+            Cost for Security in Agency Information Technology Investments</a>, OMB M-06-19, July
           12, 2006. </span></td></tr></table></body></html>
