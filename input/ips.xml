@@ -281,10 +281,9 @@
           </description>
         </usecase>
       </usecases>
-      <h:p>This PP-Module also defines optional and objective requirements for functionality including separation of
+	  This PP-Module also defines optional and objective requirements for functionality including separation of
 	  management roles and ability to use the TSF to review collected IPS data. These functions are not
- 	  dependent on a particular use case being chosen.</h:p>
-
+ 	  dependent on a particular use case being chosen.
     </sec:Use_Cases> 
     
  
@@ -367,7 +366,7 @@
 			<h:li>Obstruct the normal function of monitored networks, endpoints, or services, such as through denial of service attacks</h:li>
 			<h:li>Gain inappropriate access to one or more networks, endpoints, or services, such as through brute
 			force password guessing attacks, or by transmitting malicious executable code, scripts, or
-			commands. </h:li><
+			commands. </h:li>
 			<h:li>Disclose/transmit information in violation of policy, such as sending credit card numbers. Note,
 			relative to the data, it does not matter where the threat agent is located. Example: data exfiltration
 			means that data was removed without proper authorization to remove it. This may be a pull or a
