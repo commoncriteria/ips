@@ -717,6 +717,7 @@ enforce its policies on network traffic of monitored networks.</description>
 			</f-component>
 			</section>
 			
+			
 			<section title="Security Management (FMT)" id="m-fmt">
 			<f-component name="Specification of Management Functions (IPS)" cc-id="fmt_smf.1" iteration="IPS" id="fmt-smf-1">
 				<f-element id="fmt-smf-1-1-ips">
