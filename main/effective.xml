@@ -1111,7 +1111,7 @@ enforce its policies on network traffic of monitored networks.</description>
 				<f-element id="ips-sbd-ext-1e5">
                 <title>
 				The TSF shall allow the following operations to be associated with signaturebased IPS policies:
-				<h:ol>
+				<h:ul>
 					<h:li>In any mode, for any sensor interface:<selectables linebreak="yes">
 						<selectable>allow the traffic flow;</selectable>
 						<selectable>send a TCP reset to the source address of the offending traffic;</selectable>
@@ -1130,7 +1130,7 @@ enforce its policies on network traffic of monitored networks.</description>
 								<selectable>allow the traffic flow with following exceptions:<assignable>malicious traffic such as but not limited to IPS_EXT.1.3 and IPS_EXT.1.4 if always dropped</assignable>;</selectable> <selectable>modify and forward packets before they pass through the TOE</selectable></selectables>.</h:li>
 						</h:ul>
 					</h:li>
-				</h:ol>
+				</h:ul>
                 </title>
 				<note role="application">The term “trigger” is used to allow for multiple types of interactions, including:
 				one in which the TOE initiates a authenticated connection to the remote device
