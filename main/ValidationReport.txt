@@ -4,6 +4,5 @@
 /home/runner/work/ips/ips/input/ips.xml:1501:95: error: value of attribute "cc-id" is invalid; must be a string matching the regular expression "f[a-z]{2}_[a-z0-9^]{2,10}(_ext)?\.[0-9]"
 /home/runner/work/ips/ips/input/ips.xml:1518:95: error: value of attribute "cc-id" is invalid; must be a string matching the regular expression "f[a-z]{2}_[a-z0-9^]{2,10}(_ext)?\.[0-9]"
 /home/runner/work/ips/ips/input/ips.xml:1582:82: error: value of attribute "cc-id" is invalid; must be a string matching the regular expression "f[a-z]{2}_[a-z0-9^]{2,10}(_ext)?\.[0-9]"
-/home/runner/work/ips/ips/input/ips.xml:1596:15: error: element "audit-event" not allowed here; expected the element end-tag or element "aactivity" or "rule"
-/home/runner/work/ips/ips/input/ips.xml:1620:16: error: element "audit-event" not allowed here; expected the element end-tag or element "aactivity" or "rule"
-/home/runner/work/ips/ips/input/ips.xml:1653:16: error: element "audit-event" not allowed here; expected the element end-tag or element "aactivity" or "rule"
+/home/runner/work/ips/ips/input/ips.xml:1602:34: error: element "f-element" not allowed here; expected the element end-tag or element "audit-event"
+/home/runner/work/ips/ips/input/ips.xml:1627:34: error: element "f-element" not allowed here; expected the element end-tag or element "audit-event"
