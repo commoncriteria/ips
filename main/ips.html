@@ -1184,15 +1184,50 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 					information generated such as source and destination addresses, IP, signature
 					that trigged event, port, etc.</i></p>
 					</span></div></div></div>
+				      
+   						
+						The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> describes how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> can be configured to log <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data associated with applicable policies.
+						<br/>
+						The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> describes what (similar) <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> event types the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> will combine into a single audit record along with the conditions (e.g., thresholds and time periods) for so doing. The <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> shall also describe to what extent (if any) that may be configurable.
+						<br/>
+						For IPS_SBD_EXT.1, for each field, the evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> describes how the field is inspected and if logging is not applicable, any other mechanism such as counting that is deployed.
+						
+						
+						The evaluator shall verify that the operational guidance describes how to configure the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to result in applicable <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data logging.
+						
+						
+						The evaluator shall test that the interfaces used to configure the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> polices yield expected <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data in association with the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies. A number of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy combination and ordering scenarios need to be configured and tested by attempting to pass both allowed and anomalous network traffic matching configured <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies in order to trigger all required <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> events.
+						<br/>
+						Note the following:<ul><li>This activity should have been addressed with a combination of the Test EAs for the other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> requirements</li>
+						<li>As part of testing this activity, the evaluator shall also ensure that the audit data generated to address this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> can be handled in the manner that FAU_STG_EXT.1 requires for all audit data.</li></ul>
+						
+					
 			<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a></div>      
    						
 		TODO: You need to explain the lack of EAs for this component!!!!
-	   
+	
 					      
    						
 		TODO: You need to explain the lack of EAs for this component!!!!
-	   
-					</div></div></div>
+	
+					      
+   						
+						
+						
+					<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">
+						The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> describes how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> can be configured to log <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data associated with applicable policies.
+						<br/>
+						The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> describes what (similar) <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> event types the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> will combine into a single audit record along with the conditions (e.g., thresholds and time periods) for so doing. The <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> shall also describe to what extent (if any) that may be configurable.
+						<br/>
+						For IPS_SBD_EXT.1, for each field, the evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> describes how the field is inspected and if logging is not applicable, any other mechanism such as counting that is deployed.
+						</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
+						The evaluator shall verify that the operational guidance describes how to configure the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to result in applicable <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data logging.
+						</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
+						The evaluator shall test that the interfaces used to configure the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> polices yield expected <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data in association with the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies. A number of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy combination and ordering scenarios need to be configured and tested by attempting to pass both allowed and anomalous network traffic matching configured <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies in order to trigger all required <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> events.
+						<br/>
+						Note the following:<ul><li>This activity should have been addressed with a combination of the Test EAs for the other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> requirements</li>
+						<li>As part of testing this activity, the evaluator shall also ensure that the audit data generated to address this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> can be handled in the manner that FAU_STG_EXT.1 requires for all audit data.</li></ul>
+						</div></div></div></div></div>
 			
 			
 			

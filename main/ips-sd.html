@@ -418,12 +418,29 @@ The following sections list Common Criteria and technology terms used in this do
 	<h2 class="indexable" data-level="1" id="man-sfrs">2.2 TOE SFR Evaluation Activities</h2><h2 class="indexable" data-level="2" id="m-fau">2.2.1 Security Audit (FAU)</h2><div class="comp" id="FAU-GEN-1-IPS"><h4>FAU_GEN.1/IPS Audit Data Generation (IPS)</h4><span class="activity_pane_body"><div class="component-activity-header">FAU_GEN.1/IPS</div>      
    						
 		TODO: You need to explain the lack of EAs for this component!!!!
-	   
+	
 					      
    						
 		TODO: You need to explain the lack of EAs for this component!!!!
-	   
-					</span></div><h2 class="indexable" data-level="2" id="m-fmt">2.2.2 Security Management (FMT)</h2><div class="comp" id="FMT-SMF-1"><h4>FMT_SMF.1/IPS Specification of Management Functions (IPS)</h4><span class="activity_pane_body"><div class="component-activity-header">FMT_SMF.1/IPS</div>      
+	
+					      
+   						
+						
+						
+					<div class="eacategory">TSS</div><div class="ea"><div class="ea">
+						The evaluator shall verify that the TSS describes how the TOE can be configured to log IPS data associated with applicable policies.
+						<br/>
+						The evaluator shall verify that the TSS describes what (similar) IPS event types the TOE will combine into a single audit record along with the conditions (e.g., thresholds and time periods) for so doing. The TSS shall also describe to what extent (if any) that may be configurable.
+						<br/>
+						For IPS_SBD_EXT.1, for each field, the evaluator shall verify that the TSS describes how the field is inspected and if logging is not applicable, any other mechanism such as counting that is deployed.
+						</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
+						The evaluator shall verify that the operational guidance describes how to configure the TOE to result in applicable IPS data logging.
+						</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
+						The evaluator shall test that the interfaces used to configure the IPS polices yield expected IPS data in association with the IPS policies. A number of IPS policy combination and ordering scenarios need to be configured and tested by attempting to pass both allowed and anomalous network traffic matching configured IPS policies in order to trigger all required IPS events.
+						<br/>
+						Note the following:<ul><li>This activity should have been addressed with a combination of the Test EAs for the other IPS requirements</li>
+						<li>As part of testing this activity, the evaluator shall also ensure that the audit data generated to address this SFR can be handled in the manner that FAU_STG_EXT.1 requires for all audit data.</li></ul>
+						</div></div></span></div><h2 class="indexable" data-level="2" id="m-fmt">2.2.2 Security Management (FMT)</h2><div class="comp" id="FMT-SMF-1"><h4>FMT_SMF.1/IPS Specification of Management Functions (IPS)</h4><span class="activity_pane_body"><div class="component-activity-header">FMT_SMF.1/IPS</div>      
    						
 		TODO: You need to explain the lack of EAs for this component!!!!
 	   

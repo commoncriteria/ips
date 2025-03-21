@@ -153,6 +153,7 @@ output/ips-sd.html: 0e
 output/ips-sd.html: AGD
 output/ips-sd.html: CEM
 output/ips-sd.html: NDcPP
+output/ips-sd.html: SBD
 output/ips-sd.html: TDs
 output/ips-sd.html: TODO
 output/ips-sd.html: defination
