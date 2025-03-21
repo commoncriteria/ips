@@ -1495,7 +1495,7 @@ enforce its policies on network traffic of monitored networks.</description>
 	</man-sfrs>  <!-- SFRs -->
     
     <opt-sfrs>
-	<section title="Security Audit" id="fau">
+	<section title="Protected Audit Trail Storage" cc-id="fau_stg.1/ips" id="fau-stg.1-ips">
 	<comment>^this is something that I added, the original IPS pp did not have this entry</comment>
 			<f-component name="Protected Audit Trail Storage" cc-id="fau_stg.1/ips" id="fau-stg.1-ips">
 			<f-element id='fau-stg-1e1-ips'>
@@ -1520,7 +1520,7 @@ enforce its policies on network traffic of monitored networks.</description>
 					<selectable>prevent audited <h:b>IPS</h:b> events</selectable>
 					<selectable><h:s>except those taken by the authorized user with special rights</h:s></selectable>
 					<selectable>overwrite the oldest stored <h:s>audit records</h:s> IPS data</selectable>
-				</selectables>, and [no other actions] if the <h:s>audit</h:s> <h:b>IPS data</h:b> trail is full.
+				</selectables>, and [<h:i>no other actions</h:i>] if the <h:s>audit</h:s> <h:b>IPS data</h:b> trail is full.
 			
 			</title>
 			<aactivity>
