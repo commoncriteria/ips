@@ -1021,10 +1021,9 @@ enforce its policies on network traffic of monitored networks.</description>
 								<selectable><assignable>other types of TCP payload inspection</assignable></selectable>
 								<selectable>no other types of TCP payload inspection</selectable>
 							</selectables></h:li>
-						</h:ol></h:i>
+						</h:ol></h:i></h:li>
 					<h:li><h:i>UDP data: characters beyond the first 8 bytes of the UDP header;</h:i></h:li>
-					<h:li><assignable>other types of packet payload inspection</assignable>].</h:li>
-				
+					<h:li><assignable>other types of packet payload inspection</assignable>].</h:li>				
 				</h:ul>
 				</title>
 				<aactivity>
@@ -1144,6 +1143,22 @@ enforce its policies on network traffic of monitored networks.</description>
 					</h:li>
 				</h:ol>
                 </title>
+				<note role="application">The term “trigger” is used to allow for multiple types of interactions, including:
+				one in which the TOE initiates a authenticated connection to the remote device
+				across an IP network and uses a remote administration interface of the remote
+				device to modify the active configuration on that device; or one in which the
+				connection between the TOE and the non-TOE network device does not traverse
+				an IP network. If the ST author selects “trigger a non-TOE network device…” and
+				the connection between the TOE and the non-TOE network device traverses an
+				IP network, the ST author must ensure that the non- TOE device type is identified
+				within FTP_ITC.1.3 (of the base), and the connection between the TOE and the
+				remote device must be secured in accordance with FTP_ITC.1. In the last bullet
+				of the SFR, “modify and forward packets before they pass through the TOE,”
+				could include such actions as removing from packet data character strings that
+				match regular expression (regex) conditions that violate policies, such as
+				transmitting personally identifiable information or other private data (phone
+				numbers, credit-card numbers, etc.).</note>
+
                 <aactivity>
 				<no-tests/>   
                  </aactivity>
