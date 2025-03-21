@@ -483,6 +483,90 @@
             <tr data-sortkey="#1">
                 <th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th>
             </tr>
+            <tr data-sortkey="FIP_ABD_EXT.1">
+                <td rowspan="2"><a href="#FIP_ABD_EXT.1">FIP_ABD_EXT.1</a></td><td style="display:none"></td>
+            </tr>
+            <tr style="display:none;" data-sortkey="FIP_ABD_EXT.1#">
+                <td></td>
+            </tr>
+            <tr data-sortkey="FIP_ABD_EXT.1.3">
+                <td>Inspected traffic matches an anomaly-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy.</td><td>
+                    <ul>
+                        <li>Source and destination IP addresses.</li>
+                        <li>The content of the header fields that were determined to match the policy.</li>
+                        <li>
+                            <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface that received the packet.
+                        </li>
+                        <li>
+                            Aspect of the anomaly-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy rule that triggered the event (e.g. throughput, time of day, frequency, etc.).
+                        </li>
+                        <li>
+                            Network-based action by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> (e.g. allowed, blocked, sent reset to source IP, sent blocking notification to firewall). 
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr data-sortkey="IPS_IPB_EXT.1">
+                <td rowspan="2"><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td style="display:none"></td>
+            </tr>
+            <tr style="display:none;" data-sortkey="IPS_IPB_EXT.1#">
+                <td></td>
+            </tr>
+            <tr data-sortkey="IPS_IPB_EXT.1.2">
+                <td>Inspected traffic matches a list of known-good or known-bad addresses applied to an <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy.</td><td>
+                    <ul>
+                        <li>Source and destination IP addresses (and, if applicable, indication of whether the source and/or destination address matched the list).</li>
+                        <li>
+                            <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface that received the packet.
+                        </li>
+                        <li>
+                            Network-based action by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> (e.g. allowed, blocked, sent reset).
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr data-sortkey="IPS_NTA_EXT.1">
+                <td rowspan="4"><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td style="display:none"></td>
+            </tr>
+            <tr style="display:none;" data-sortkey="IPS_NTA_EXT.1#">
+                <td></td>
+            </tr>
+            <tr data-sortkey="IPS_NTA_EXT.1.3">
+                <td>Modification of which <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies are active on a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface</td><td>
+                    <ul>
+                        <li>
+                            Identification of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface. 
+                        </li>
+                        <li>
+                            The <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy and interface mode (if applicable). 
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr data-sortkey="IPS_NTA_EXT.1.4">
+                <td>Enabling/disabling a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface with <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies applied. </td><td>
+                    <ul>
+                        <li>
+                            Identification of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface. 
+                        </li>
+                        <li>
+                            The <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy and interface mode (if applicable). 
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr data-sortkey="IPS_NTA_EXT.1.5">
+                <td>Modification of which mode(s) is/are active on a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface. </td><td>
+                    <ul>
+                        <li>
+                            Identification of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface. 
+                        </li>
+                        <li>
+                            The <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy and interface mode (if applicable). 
+                        </li>
+                    </ul>
+                </td>
+            </tr>
         </table>
         <h3 id="m-fau" class="indexable" data-level="3">5.2.2 Security Audit (FAU)</h3>
         <div class="comp" id="FAU_GEN.1/IPS">

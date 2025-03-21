@@ -893,6 +893,14 @@ enforce its policies on network traffic of monitored networks.</description>
    					<no-tests/>   <!-- use this inside the aactivity tag to specify that there are no EAs for the SFR (if just doing <aactivity/> doesn't work) -->
 				</aactivity>
 				</f-element>
+				<audit-event>
+					<audit-event-descr>Inspected traffic matches an anomaly-based IPS policy.</audit-event-descr>
+					<audit-event-info>Source and destination IP addresses.</audit-event-info>
+					<audit-event-info>The content of the header fields that were determined to match the policy.</audit-event-info>
+					<audit-event-info>TOE interface that received the packet.</audit-event-info>
+					<audit-event-info>Aspect of the anomaly-based IPS policy rule that triggered the event (e.g. throughput, time of day, frequency, etc.).</audit-event-info>
+					<audit-event-info>Network-based action by the TOE (e.g. allowed, blocked, sent reset to source IP, sent blocking notification to firewall). </audit-event-info>
+				</audit-event>
 				</f-component>
 				<f-component name="IP Blocking" cc-id="ips_ipb_ext.1" id="ips-ipb-ext-1-ips">
 				<f-element id="ips-ipb-ext-1e1">
@@ -915,7 +923,40 @@ enforce its policies on network traffic of monitored networks.</description>
 						MAC addresses.
 					</note>
 				<aactivity>      <!-- at minimum, only the last f-element in the f-component needs to have this -->
-   					<no-tests/>   <!-- use this inside the aactivity tag to specify that there are no EAs for the SFR (if just doing <aactivity/> doesn't work) -->
+   					<TSS>The evaluator shall verify how good/bad lists affect the way in which traffic is analyzed with respect to processing packets. The evaluator shall also very that the TSS provides details for the attributes that create a known good list, a known bad list, and their associated rules, including how to define the source or destination IP address (e.g. a single IP address or a range of IP addresses).
+					<h:br/>
+					If the TSF uses address types other than a single IP or a range of IP addresses (e.g. MAC addresses), the
+					evaluator shall check that the TSS explains what configurations would cause non-IP lists of known-good
+					and known-bad addresses to take precedence over IP-based address lists.
+					<h:br/>
+					The evaluator shall also verify that the TSS identifies all the roles and level of access for each of those roles that have been specified in the requirement.
+					</TSS>
+					<Guidance>
+					The evaluator shall verify that the administrative guidance provides instructions with how each role
+					specified in the requirement can create, modify and delete the attributes of a known good and known
+					bad lists.
+					<h:br/>
+					If the TSF uses address types other than a single IP or a range of IP addresses (e.g. MAC addresses), the
+					evaluator shall check that the operational guidance includes instructions for any configurations that would
+					cause non-IP lists of known-good and known-bad addresses to take precedence over IP-based address
+					lists.
+					</Guidance>
+					<Tests>
+					The evaluator shall perform the following tests:
+					<testlist>
+						<test>The evaluator shall use the instructions in the operational guidance to create a known-bad address
+						list. Using a single IP address, a list of addresses or a range of addresses from that list, the evaluator shall
+						attempt to send traffic through the TOE that would otherwise be allowed by the TOE and observe the TOE
+						automatically drops that traffic.</test>
+						<test>The evaluator shall use the instructions in the operational guidance to create a known-good
+						address list. Using a single IP address, a list of addresses or a range of addresses from that list, the
+						evaluator shall attempt to send traffic that would otherwise be denied by the TOE and observe the TOE
+						automatically allowing traffic.</test>
+						<test>The evaluator shall add conflicting IP addresses to each list and ensure that the TOE handles
+						conflicting traffic in a manner consistent with the precedence in IPS_NTA_EXT.1.1.
+						</test>
+					</testlist>
+					</Tests>
 				</aactivity>
 				</f-element>
 				<f-element id="ips-ipb-ext-1e2">
@@ -932,6 +973,12 @@ enforce its policies on network traffic of monitored networks.</description>
    					<no-tests/>   <!-- use this inside the aactivity tag to specify that there are no EAs for the SFR (if just doing <aactivity/> doesn't work) -->
 					</aactivity>
 				</f-element>
+				<audit-event>
+				<audit-event-descr>Inspected traffic matches a list of known-good or known-bad addresses applied to an IPS policy.</audit-event-descr>
+				<audit-event-info>Source and destination IP addresses (and, if applicable, indication of whether the source and/or destination address matched the list).</audit-event-info>
+				<audit-event-info>TOE interface that received the packet.</audit-event-info>
+				<audit-event-info>Network-based action by the TOE (e.g. allowed, blocked, sent reset).</audit-event-info>
+				</audit-event>
 				</f-component>
 				<f-component name="Network Traffic Analysis" cc-id="ips_nta_ext.1" id="ips-nta-ext-1-ips">
 				<f-element id="ips-nta-ext-1e1">
@@ -953,7 +1000,22 @@ enforce its policies on network traffic of monitored networks.</description>
 						such configurability is not required by this PP-Module.
 					</note>
 					<aactivity>      <!-- at minimum, only the last f-element in the f-component needs to have this -->
-						<no-tests/>   <!-- use this inside the aactivity tag to specify that there are no EAs for the SFR (if just doing <aactivity/> doesn't work) -->
+						<TSS>
+						The evaluator shall verify that the TSS explains the TOE’s capability of analyzing IP traffic in terms of the
+						TOE’s policy hierarchy (precedence). The TSS should identify if the TOE’s policy hierarchy order is
+						configurable by the administrator for IPS policy elements (known-good lists, known-bad lists, signaturebased rules, and anomaly-based rules).
+						<h:br/>
+						Regardless of whether the precedence is configurable, the evaluator shall verify that the TSS describes
+						the default precedence as well as the IP analyzing functions supported by the TOE.
+						</TSS>
+						<Guidance>
+						The evaluator shall verify that the guidance describes the default precedence.
+						<h:br/>
+						If the precedence is configurable, the evaluator shall verify that the guidance explains how to configure the precedence.
+						</Guidance>
+						<Tests>
+						There are no test EAs for this element.
+						</Tests>
 					</aactivity>
 				</f-element>
 				<f-element id="ips-nta-ext-1e2">
@@ -981,7 +1043,26 @@ enforce its policies on network traffic of monitored networks.</description>
 						</note>					
 					
 					<aactivity>      <!-- at minimum, only the last f-element in the f-component needs to have this -->
-						<no-tests/>   <!-- use this inside the aactivity tag to specify that there are no EAs for the SFR (if just doing <aactivity/> doesn't work) -->
+						<TSS>
+						The evaluator shall verify that the TSS indicates that the following protocols are supported:
+						<h:ul>
+							<h:li>IPv4</h:li>
+							<h:li>IPv6</h:li>
+							<h:li>ICMPv4</h:li>
+							<h:li>ICMPv6</h:li>
+							<h:li>TCP</h:li>
+							<h:li>UDP</h:li>
+						</h:ul>						
+						The evaluator shall verify that the TSS describes how conformance with the identified protocols has been
+						determined by the TOE developer (e.g., third party interoperability testing, protocol compliance testing).
+												
+						</TSS>
+						<Guidance>
+						There are no guidance EAs for this element.
+						</Guidance>
+						<Tests>
+						There are no test EAs for this element.
+						</Tests>
 					</aactivity>
 				</f-element>
 				<f-element id="ips-nta-ext-1e3">
@@ -1029,7 +1110,57 @@ enforce its policies on network traffic of monitored networks.</description>
 					enable specific ports to serve one or more specific interface functions.
 					</h:p>
 					</note>
+					<aactivity>
+						<TSS>
+						The evaluator shall verify that the TSS identifies all interface types capable of being deployed in the modes of promiscuous, and or inline mode as well as the interfaces necessary to facilitate each deployment mode
+						(at a minimum, the interfaces need to support inline mode). The evaluator shall also check that the TSS
+						provides a description for how the management interface is logically distinct from any sensor interfaces.
+						</TSS>
+						<Guidance>
+						The evaluator shall verify that the operational guidance provides instructions on how to deploy each of
+						the deployment methods outlined in the TSS. The evaluator shall also verify that the operational guidance
+						provides instructions of applying IPS policies to interfaces for each deployment mode. If the management
+						interface is configurable, the evaluator shall verify that the operational guidance explains how to
+						configure the interface as a management interface.<h:br/>
+						The evaluator shall verify that the operational guidance explains how the TOE sends commands to remote
+						traffic filtering devices if this functionality is supported.
+
+						</Guidance>
+						<Tests>
+						Testing for this element is performed in conjunction with testing where promiscuous and inline interfaces are tested. 
+						</Tests>
+					</aactivity>
 				</f-element>
+				<audit-event>
+				<audit-event-descr>Modification of which IPS policies
+				are active on a TOE interface</audit-event-descr>
+				<audit-event-info>Identification of the TOE interface.
+				</audit-event-info>
+				<audit-event-info>The IPS policy and interface mode (if
+				applicable).
+				</audit-event-info>
+				</audit-event>
+				<audit-event>
+				<audit-event-descr>Enabling/disabling a TOE
+				interface with IPS policies
+				applied.
+				</audit-event-descr>
+				<audit-event-info>Identification of the TOE interface.
+				</audit-event-info>
+				<audit-event-info>The IPS policy and interface mode (if
+				applicable).
+				</audit-event-info>
+				</audit-event>
+				<audit-event>
+				<audit-event-descr>Modification of which mode(s)
+				is/are active on a TOE interface.
+				</audit-event-descr>
+				<audit-event-info>Identification of the TOE interface.
+				</audit-event-info>
+				<audit-event-info>The IPS policy and interface mode (if
+				applicable).
+				</audit-event-info>
+				</audit-event>
 				</f-component>
 				<f-component name="Signature-Based IPS Functionality" cc-id="ips_sdb_ext.1" id="ips-sdb-ext.1-ips">
 				<f-element id="ips-sbd-ext-1e1">
@@ -1057,8 +1188,50 @@ enforce its policies on network traffic of monitored networks.</description>
 					</h:ul>
 				</title>
 				<aactivity>      <!-- at minimum, only the last f-element in the f-component needs to have this -->
-						<no-tests/>   <!-- use this inside the aactivity tag to specify that there are no EAs for the SFR (if just doing <aactivity/> doesn't work) -->
-					</aactivity>
+					<TSS>
+					The evaluator shall verify that the TSS describes what is comprised within a signature rule.
+					<h:br/>
+					The evaluator shall verify that each signature can be associated with a reaction specified in IPS_SBD_EXT.1.5.
+					<h:br/>
+					The evaluator shall verify that the TSS identifies all interface types that are capable of applying signatures
+					and explains how rules are associated with distinct network interfaces. Where interfaces can be grouped
+					into a common interface type (e.g., where the same internal logical path is used, perhaps where a
+					common device driver is used) they can be treated collectively as a distinct network interface.
+					</TSS>
+					<Guidance>
+					The evaluator shall verify that the operational guidance provides instructions with how to create and/or configure rules using the following protocols and header inspection fields:
+					<h:ul>
+						<h:li>IPv4: version; header length; packet length; ID; IP flags; fragment offset; time to live (TTL); protocol; header checksum; source address; destination address; and IP options.</h:li>
+						<h:li>IPv6: Version; traffic class; flow label; payload length; next header; hop limit; source address; destination address; routing header; home address options</h:li>
+						<h:li>ICMP: type; code; header checksum; and rest of header (varies based on the ICMP type and code).</h:li>
+						<h:li>ICMPv6: type; code; and header checksum.</h:li>
+						<h:li>TCP: Source port; destination port; sequence number; acknowledgement number; offset; reserved; TCP flags; window; checksum; urgent pointer; and TCP options.</h:li>
+						<h:li>UDP: source port; destination port; length; and UDP checksum.</h:li>
+					</h:ul>
+					The evaluator shall verify that the operational guidance provides instructions with how to select and/or configure reactions specified in IPS_SBD_EXT.1.5 in the signature rules.
+
+					</Guidance>
+					<Tests>
+					The evaluator shall perform the following tests:
+					<testlist>
+						<test>The evaluator shall use the instructions in the operational guidance to test that packet header
+							signatures can be created and/or configured with the selected and/or configured reactions specified in
+							IPS_SBD_EXT.1.5 for each of the attributes listed below. Each attribute shall be individually assigned to its
+							own unique signature:
+							<h:ul>
+							<h:li>IPv4: Version; Header Length; Packet Length; ID; IP Flags; Fragment Offset; Time to Live (TTL); Protocol; Header Checksum; Source Address; Destination Address; and IP Options</h:li>
+							<h:li>IPv6: Version; traffic class; flow label; payload length; next header; hop limit; source address; destination address; routing header; home address options.</h:li>
+							<h:li>ICMP: Type; Code; Header Checksum; and Rest of Header (varies based on the ICMP type and code). </h:li>
+							<h:li>ICMPv6: Type; Code; and Header Checksum.</h:li>
+							<h:li>TCP: Source port; destination port; sequence number; acknowledgement number; offset; reserved; TCP flags; window; checksum; urgent pointer; and TCP options.</h:li>
+							<h:li>UDP: Source port; destination port; length; and UDP checksum.</h:li>
+							
+							</h:ul>
+							The evaluator shall generate traffic to trigger a signature and shall then use a packet sniffer to capture traffic that ensures the reactions of each rule are performed as expected.</test>
+							<test>The evaluator shall repeat the test above to ensure that signature-based IPS policies can be defined for each distinct network interface type capable of applying signatures as supported by the TOE.</test>
+						</testlist>
+					</Tests>
+				</aactivity>
 				</f-element>
 				<f-element id="ips-sbd-ext-1e2">
 				<title>
@@ -1081,7 +1254,51 @@ enforce its policies on network traffic of monitored networks.</description>
 				</h:ul>
 				</title>
 				<aactivity>
-				<no-tests/>   
+				<TSS>
+					The evaluator shall verify that the TSS describes what is comprised within a string-based detection
+					signature.<h:br/>
+					The evaluator shall verify that each packet payload string-based detection signature can be associated
+					with a reaction specified in IPS_SBD_EXT.1.5.
+					</TSS>
+					<Guidance>The evaluator shall verify that the operational guidance provides instructions with how to configure rules using the packet payload string-based detection fields defined in IPS_SBD_EXT.1.2.<h:br/>
+					The evaluator shall verify that the operational guidance provides instructions with how to configure reactions specified in IPS_SBD_EXT.1.5 for each string-based detection signature.<h:br/>
+					The evaluator shall verify that the operational guidance provides instructions with how rules are associated with distinct network interfaces that are capable of being associated with signatures.
+					</Guidance>
+					<Tests>
+					The evaluator shall perform the following tests:<testlist>
+					<test>The evaluator shall use the instructions in the operational guidance to test that packet payload
+					string-based detection rules can be assigned to the reactions specified in IPS_SBD_EXT.1.5 using the
+					attributes specified in IPS_SBD_EXT.1.2. However it is not required (nor is it feasible) to test all possible
+					strings of protocol data, the evaluator shall ensure that a selection of strings in the requirement is selected
+					to be tested. At a minimum at least one string using each of the following attributes from IPS_SBD_EXT.1.2
+					should be tested for each protocol. The evaluator shall generate packets that match the string in the rule
+					and observe the corresponding reaction is as configured.
+					<h:ul>
+					<h:li>Test at least one string of characters for ICMPv4 data: beyond the first 4 bytes of the ICMP header.</h:li>
+					<h:li>Test at least one string of characters for ICMPv6 data: beyond the first 4 bytes of the ICMP
+					header</h:li>
+					<h:li> TCP data (characters beyond the 20 byte TCP header):
+						<h:ol type="i">
+							<h:li>Test at least one FTP (file transfer) command: help, noop, stat, syst, user, abort, acct, allo,
+							appe, cdup, cwd, dele, list, mkd, mode, nlst, pass, pasv, port, pass, quit, rein, rest, retr, rmd,
+							rnfr, rnto, site, smnt, stor, stou, stru, and type.</h:li>
+							<h:li> HTTP (web) commands and content:
+							<h:ol>
+								<h:li>Test both GET and POST commands</h:li>
+								<h:li>Test at least one administrator-defined strings to match URLs/URIs, and web pagecontent.</h:li>
+							</h:ol></h:li>
+							<h:li>Test at least one SMTP (email) state: start state, SMTP commands state, mail header state, mail body state, abort state.</h:li>
+							<h:li>Test at least one string in any additional attribute type defined within the “other types of
+							TCP payload inspection” assignment, if any other types are specified.
+							</h:li>
+						</h:ol></h:li>
+					<h:li>Test at least one string of UDP data: characters beyond the first 8 bytes of the UDP header;</h:li>
+					<h:li>Test at least one string for each additional attribute type defined in the “other types of packet
+					payload inspection” assignment, if any other types are specified.</h:li>
+					</h:ul></test>
+					<test>The evaluator shall repeat Test 1 above to ensure that signature-based IPS policies can be defined for each distinct network interface type capable of applying signatures as supported by the TOE.</test>
+					</testlist>
+					</Tests>    
                  </aactivity>
 				</f-element>
 				<f-element id="ips-sbd-ext-1e3">
@@ -1117,7 +1334,15 @@ enforce its policies on network traffic of monitored networks.</description>
 				</h:ol>
                 </title>
                 <aactivity>
-				<no-tests/>   
+					<TSS>The evaluator shall verify that the TSS describes how the attacks defined in IPS_SBD_EXT.1.3 are processed by the TOE and what reaction is triggered when these attacks are identified.</TSS>
+					<Guidance>The evaluator shall verify that the operational guidance provides instructions with configuring rules to identify the attacks defined in IPS_SBD_EXT.1.3 as well as the reactions to these attacks as specified in IPS_SBD_EXT.1.5.</Guidance>
+					<Tests>The evaluator shall create and/or configure rules for each attack signature in IPS_SBD_EXT.1.3. For each
+					attack, the TOE should apply its corresponding signature and enable it to each distinct network interface
+					type capable of applying the signatures. The evaluator shall use packet captures to ensure that the attack
+					traffic is detected by the TOE and a reaction specified in IPS_SBD_EXT.1.5 is triggered and stops the attack.
+					Each attack should be performed one after another so as to ensure that its corresponding signature
+					successfully identified and appropriately reacted to a particular attack.
+					</Tests>
                  </aactivity>
                 </f-element>
 				<f-element id="ips-sbd-ext-1e4">
@@ -1170,8 +1395,20 @@ enforce its policies on network traffic of monitored networks.</description>
 					</h:p><h:p>An IPS sensor interface refers to any TOE interface to which an IPS policy is currently applied.</h:p>
 				</note>
                 <aactivity>
-				<no-tests/>   
-                 </aactivity>
+					<TSS>The evaluator shall verify that the TSS describes how the attacks defined in IPS_SBD_EXT.1.4 are processed by the TOE and what reaction is triggered when these attacks are identified.
+
+					</TSS>
+					<Guidance>
+					The evaluator shall verify that the operational guidance provides instructions with configuring rules to identify the attacks defined in IPS_SBD_EXT.1.4 as well as the reactions to these attacks as specified in IPS_SBD_EXT.1.5.
+					</Guidance>
+					<Tests>The evaluator shall configure individual signatures for each attack in IPS_SBD_EXT.1.4. For each attack,
+					the TOE should apply its corresponding signature and enable it to each distinct network interface type
+					capable of applying signatures. The evaluator shall use packet captures to ensure that the attack traffic is
+					detected by the TOE and a reaction specified in IPS_SBD_EXT.1.5 is triggered and stops the attack. Each
+					attack should be performed one after another so as to ensure that its corresponding signature successfully
+					identified and appropriately reacted to a particular attack.
+					</Tests>
+                </aactivity>
                 </f-element>
 				<f-element id="ips-sbd-ext-1e5">
                 <title>
@@ -1214,16 +1451,20 @@ enforce its policies on network traffic of monitored networks.</description>
 				numbers, credit-card numbers, etc.).</note>
 
                 <aactivity>
-				<no-tests/>   
+				<TSS>There are no TSS EAs for this element</TSS>
+				<Guidance>The guidance EAs for this element are performed in conjunction with IPS_SBD_EXT.1.1, IPS_SBD_EXT.1.3, and IPS_SBD_EXT.1.4.</Guidance>
+				<Tests>The test EAs for this element are performed in conjunction with those for IPS_SBD_EXT.1.1, IPS_SBD_EXT.1.2, IPS_SBD_EXT.1.3, and IPS_SBD_EXT.1.4.</Tests>
                  </aactivity>
                 </f-element>
-				<f-element id="ips-sbd-ext-1e">
+				<f-element id="ips-sbd-ext-1e6">
                 <title>
 				The TSF shall support stream reassembly or equivalent to detect malicious payload even if it is split across multiple non-fragmented packets.
 
                 </title>
                 <aactivity>
-				<no-tests/>   
+					<TSS>There are no TSS EAs for this element.</TSS>
+					<Guidance>The evaluator shall verify that the operational guidance provides configuration instructions, if needed, to detect payload across multiple packets.</Guidance>
+					<Tests>The evaluator shall repeat one of the tests in IPS_SBD_EXT.1.2 Test 1 but generate multiple nonfragmented packets that contain the string in the rule defined. The evaluator shall verify that the malicious traffic is still detected when split across multiple non-fragmented packets.</Tests>
                  </aactivity>
                 </f-element>
 				</f-component>
