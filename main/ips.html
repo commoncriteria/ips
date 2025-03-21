@@ -1188,7 +1188,7 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
    						
 						
 						
-					      
+				      
    						
 						
 						
@@ -1237,12 +1237,30 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 					<li>Configure the known-good and known-bad lists to override signaturebased <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies</li>
 					</ul></i>
 					].
-				</div></div>
+				</div></div>	
+
 				<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></div>      
-   						
-		TODO: You need to explain the lack of EAs for this component!!!!
-	   
-					</div></div></div>
+   					
+					
+					
+            	<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">
+					The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> describes how the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data analysis and reactions can be configured.This may be performed in conjunction with the evaluation of IPS_ABD_EXT.1, <a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a>, and IPS_SBD_EXT.1.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
+					The evaluator shall verify that the operational guidance describes the instructions for each function
+					defined in the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>, describes how to configure the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data analysis and reactions, including how to set
+					any configurable defaults and how to configure each of the applicable analysis pattern matching methods
+					and reaction modes.
+					</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
+					The evaluator shall perform the following tests:
+					<span class="testlist-"><ul>
+						<li class="test-"><a id="_t_1" class="defined" href="#_t_1">Test FMT_SMF.1/IPS:1</a>:
+      The evaluator shall use the operational guidance to create a signature and enable it on an interface. The evaluator shall then generate traffic that would be successfully triggered by the signature. The evaluator should observe the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> applying the corresponding reaction in the signature.</li>
+						<li class="test-"><a id="_t_2" class="defined" href="#_t_2">Test FMT_SMF.1/IPS:2</a>:
+      The evaluator shall then disable the signature and attempt to regenerate the same traffic and ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> allows the traffic to pass with no reaction.</li>
+						<li class="test-"><a id="_t_3" class="defined" href="#_t_3">Test FMT_SMF.1/IPS:3</a>:
+       The evaluator shall use the operational guidance to import signatures and repeat the test conducted in Test 1.</li>
+						</ul></span>
+						Other testing for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is performed in conjunction with the EAs for IPS_ABD_EXT.1 and IPS_SBD_EXT.1.
+					</div></div></div></div></div>
 			
 			
 						<h3 id="ips" class="indexable" data-level="3">5.2.4 Intrusion Prevention (IPS)</h3>
@@ -1299,13 +1317,41 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 				</div></div>
 				<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FIP_ABD_EXT.1">FIP_ABD_EXT.1</a></div>      
    						
-		TODO: You need to explain the lack of EAs for this component!!!!
-	   
-					      
+						
+						
+				      
    					
 		TODO: You need to explain the lack of EAs for this component!!!!
 	   
-				</div></div></div>
+				<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> describes the composition, construction, and application of baselines or anomaly-based attributes specified in IPS_ABD_EXT.1.1.
+						<br/>
+						If ‘frequency’ is selected in IPS_ABD_EXT.1.1, the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> shall include an explanation of how frequencies can be defined on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.
+						<br/>
+						If ‘thresholds’ is selected in IPS_ABD_EXT.1.1, the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> shall include an explanation of how the thresholds can be defined on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.
+						<br/>
+						The evaluator shall verify that each baseline or anomaly-based rule can be associated with a reaction specified in IPS_ABD_EXT.1.3.
+						<br/>
+						The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> identifies all interface types capable of applying baseline or
+						anomaly-based rules and explains how they are associated with distinct network interfaces. Where
+						interfaces can be grouped into a common interface type (e.g., where the same internal logical path is
+						used, perhaps where a common device driver is used) they can be treated collectively as a distinct network
+						interface.
+						</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
+						The evaluator shall verify that the operational guidance provides instructions to manually create baselines
+						or anomaly-based rules according to the selections made in IPS_ABD_EXT.1.1. Note that dynamic
+						“profiling” of a network to establish a baseline is outside the scope of the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>
+						<br/>
+						The evaluator shall verify that the operational guidance provides instructions to associate reactions specified in IPS_ABD_EXT.1.3 with baselines or anomaly-based rules.
+						<br/>
+						The evaluator shall verify that the operational guidance provides instructions to associate the different policies with distinct network interfaces.
+						</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
+						The evaluator shall perform the following tests:<span class="testlist-"><ul>
+						<li class="test-"><a id="_t_4" class="defined" href="#_t_4">Test FIP_ABD_EXT.1:1</a>:
+      The evaluator shall use the instructions in the operational guidance to configure baselines or anomaly-based rules for each attributes specified in IPS_ABD_EXT.1.1. The evaluator shall send traffic that does not match the baseline or matches the anomaly- based rule and verify the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> applies the configured reaction. This shall be performed for each attribute in IPS_ABD_EXT.1.1.</li>
+						<li class="test-"><a id="_t_5" class="defined" href="#_t_5">Test FIP_ABD_EXT.1:2</a>:
+      The evaluator shall repeat the test above to ensure that baselines or anomaly- based rules can be defined for each distinct network interface type supported by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.</li>
+						</ul></span>
+						</div></div></div></div></div>
 				<div class="comp" id="IPS_IPB_EXT.1"><h4>IPS_IPB_EXT.1 IP Blocking</h4>
 				<div class="element"><div class="reqid" id="IPS_IPB_EXT.1.1"><a href="#IPS_IPB_EXT.1.1" class="abbr">IPS_IPB_EXT.1.1</a></div><div class="reqdesc">
 					The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support configuration and implementation of known-good and known-bad lists of [<b>selection</b>: <span class="selectable-content" id="_s_25">source</span>, <span class="selectable-content" id="_s_26">destination</span>] IP addresses and [<b>selection</b>: <span class="selectable-content" id="_s_27">no additional address types</span>, <span class="selectable-content" id="_s_28">

@@ -159,8 +159,10 @@ output/ips-sd.html: TODO
 output/ips-sd.html: defination
 output/ips-sd.html: evaluator’s
 output/ips-sd.html: fail’
+output/ips-sd.html: frequency’
 output/ips-sd.html: pass’
 output/ips-sd.html: subnet
+output/ips-sd.html: thresholds’
 output/ips.html: 0E
 output/ips.html: 4e
 output/ips.html: AFL
@@ -213,6 +215,7 @@ output/ips.html: dissimilar’
 output/ips.html: duplicative
 output/ips.html: evet
 output/ips.html: exfiltration
+output/ips.html: frequency’
 output/ips.html: known’
 output/ips.html: management’
 output/ips.html: manager’
@@ -240,6 +243,7 @@ output/ips.html: stru
 output/ips.html: subnet
 output/ips.html: subnets
 output/ips.html: supersets
+output/ips.html: thresholds’
 output/ips.html: trigged
 output/ips.html: typical’
 output/ips.html: unexpected’

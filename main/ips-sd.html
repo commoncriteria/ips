@@ -419,7 +419,7 @@ The following sections list Common Criteria and technology terms used in this do
    						
 						
 						
-					      
+				      
    						
 						
 						
@@ -440,18 +440,63 @@ The following sections list Common Criteria and technology terms used in this do
 						<li>As part of testing this activity, the evaluator shall also ensure that the audit data generated to address this SFR can be handled in the manner that FAU_STG_EXT.1 requires for all audit data.</li></ul>
 						</div><div class="ea">
 						</div></div></span></div><h2 class="indexable" data-level="2" id="m-fmt">2.2.2 Security Management (FMT)</h2><div class="comp" id="FMT-SMF-1"><h4>FMT_SMF.1/IPS Specification of Management Functions (IPS)</h4><span class="activity_pane_body"><div class="component-activity-header">FMT_SMF.1/IPS</div>      
+   					
+					
+					
+            	<div class="eacategory">TSS</div><div class="ea"><div class="ea">
+					The evaluator shall verify that the TSS describes how the IPS data analysis and reactions can be configured.This may be performed in conjunction with the evaluation of IPS_ABD_EXT.1, IPS_IPB_EXT.1, and IPS_SBD_EXT.1.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
+					The evaluator shall verify that the operational guidance describes the instructions for each function
+					defined in the SFR, describes how to configure the IPS data analysis and reactions, including how to set
+					any configurable defaults and how to configure each of the applicable analysis pattern matching methods
+					and reaction modes.
+					</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
+					The evaluator shall perform the following tests:
+					<span class="testlist-"><ul>
+						<li class="test-"><a id="_t_1" class="defined" href="#_t_1">Test FMT_SMF.1/IPS:1</a>:
+      The evaluator shall use the operational guidance to create a signature and enable it on an interface. The evaluator shall then generate traffic that would be successfully triggered by the signature. The evaluator should observe the TOE applying the corresponding reaction in the signature.</li>
+						<li class="test-"><a id="_t_2" class="defined" href="#_t_2">Test FMT_SMF.1/IPS:2</a>:
+      The evaluator shall then disable the signature and attempt to regenerate the same traffic and ensure that the TOE allows the traffic to pass with no reaction.</li>
+						<li class="test-"><a id="_t_3" class="defined" href="#_t_3">Test FMT_SMF.1/IPS:3</a>:
+       The evaluator shall use the operational guidance to import signatures and repeat the test conducted in Test 1.</li>
+						</ul></span>
+						Other testing for this SFR is performed in conjunction with the EAs for IPS_ABD_EXT.1 and IPS_SBD_EXT.1.
+					</div></div></span></div><h2 class="indexable" data-level="2" id="ips">2.2.3 Intrusion Prevention (IPS)</h2><div class="comp" id="IPS-ADB-EXT-1-IPS"><h4>FIP_ABD_EXT.1 Anomaly-Based IPS Functionality</h4><span class="activity_pane_body"><div class="component-activity-header">FIP_ABD_EXT.1</div>      
    						
-		TODO: You need to explain the lack of EAs for this component!!!!
-	   
-					</span></div><h2 class="indexable" data-level="2" id="ips">2.2.3 Intrusion Prevention (IPS)</h2><div class="comp" id="IPS-ADB-EXT-1-IPS"><h4>FIP_ABD_EXT.1 Anomaly-Based IPS Functionality</h4><span class="activity_pane_body"><div class="component-activity-header">FIP_ABD_EXT.1</div>      
-   						
-		TODO: You need to explain the lack of EAs for this component!!!!
-	   
-					      
+						
+						
+				      
    					
 		TODO: You need to explain the lack of EAs for this component!!!!
 	   
-				</span></div><div class="comp" id="IPS-IPB-EXT-1-IPS"><h4>IPS_IPB_EXT.1 IP Blocking</h4><span class="activity_pane_body"><div class="component-activity-header">IPS_IPB_EXT.1</div>      
+				<div class="eacategory">TSS</div><div class="ea"><div class="ea">The evaluator shall verify that the TSS describes the composition, construction, and application of baselines or anomaly-based attributes specified in IPS_ABD_EXT.1.1.
+						<br/>
+						If ‘frequency’ is selected in IPS_ABD_EXT.1.1, the TSS shall include an explanation of how frequencies can be defined on the TOE.
+						<br/>
+						If ‘thresholds’ is selected in IPS_ABD_EXT.1.1, the TSS shall include an explanation of how the thresholds can be defined on the TOE.
+						<br/>
+						The evaluator shall verify that each baseline or anomaly-based rule can be associated with a reaction specified in IPS_ABD_EXT.1.3.
+						<br/>
+						The evaluator shall verify that the TSS identifies all interface types capable of applying baseline or
+						anomaly-based rules and explains how they are associated with distinct network interfaces. Where
+						interfaces can be grouped into a common interface type (e.g., where the same internal logical path is
+						used, perhaps where a common device driver is used) they can be treated collectively as a distinct network
+						interface.
+						</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
+						The evaluator shall verify that the operational guidance provides instructions to manually create baselines
+						or anomaly-based rules according to the selections made in IPS_ABD_EXT.1.1. Note that dynamic
+						“profiling” of a network to establish a baseline is outside the scope of the PP-Module
+						<br/>
+						The evaluator shall verify that the operational guidance provides instructions to associate reactions specified in IPS_ABD_EXT.1.3 with baselines or anomaly-based rules.
+						<br/>
+						The evaluator shall verify that the operational guidance provides instructions to associate the different policies with distinct network interfaces.
+						</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
+						The evaluator shall perform the following tests:<span class="testlist-"><ul>
+						<li class="test-"><a id="_t_4" class="defined" href="#_t_4">Test FIP_ABD_EXT.1:1</a>:
+      The evaluator shall use the instructions in the operational guidance to configure baselines or anomaly-based rules for each attributes specified in IPS_ABD_EXT.1.1. The evaluator shall send traffic that does not match the baseline or matches the anomaly- based rule and verify the TOE applies the configured reaction. This shall be performed for each attribute in IPS_ABD_EXT.1.1.</li>
+						<li class="test-"><a id="_t_5" class="defined" href="#_t_5">Test FIP_ABD_EXT.1:2</a>:
+      The evaluator shall repeat the test above to ensure that baselines or anomaly- based rules can be defined for each distinct network interface type supported by the TOE.</li>
+						</ul></span>
+						</div></div></span></div><div class="comp" id="IPS-IPB-EXT-1-IPS"><h4>IPS_IPB_EXT.1 IP Blocking</h4><span class="activity_pane_body"><div class="component-activity-header">IPS_IPB_EXT.1</div>      
    					
 		TODO: You need to explain the lack of EAs for this component!!!!
 	   
