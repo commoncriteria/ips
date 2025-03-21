@@ -1035,8 +1035,27 @@ enforce its policies on network traffic of monitored networks.</description>
 				<f-element id="ips-sbd-ext-1e3">
                 <title>
 				The TSF shall be able to detect the following header-based signatures (using fields identified in IPS_SBD_EXT.1.1) at IPS sensor interfaces: [
-				<h:ol type='A'>
-					<h:li><h:i</h:li>
+				<h:ol type='a'>
+					<h:li><h:i>IP Attacks
+						<h:ol type='i'>
+							<h:li></h:li>
+						</h:ol>
+					</h:i></h:li>
+					<h:li><h:i>
+						<h:ol type='i'>
+							<h:li></h:li>
+						</h:ol>
+					</h:i></h:li>
+					<h:li><h:i>
+						<h:ol type='i'>
+							<h:li></h:li>
+						</h:ol>
+					</h:i></h:li>
+					<h:li><h:i>
+						<h:ol type='i'>
+							<h:li></h:li>
+						</h:ol>
+					</h:i></h:li>
 				</h:ol>
                 </title>
                 <aactivity>
