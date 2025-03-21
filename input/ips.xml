@@ -1495,7 +1495,7 @@ enforce its policies on network traffic of monitored networks.</description>
 	</man-sfrs>  <!-- SFRs -->
     
     <opt-sfrs>
-	<section title="Security Audit" id="fau">
+	<section title="Security Audit(FAU)" id="fau">
 	<comment>^this is something that I added, the original IPS pp did not have this entry</comment>
 			<f-component name="Protected Audit Trail Storage" cc-id="fau_stg.1/ips" id="fau-stg.1-ips">
 			<f-element id='fau-stg-1e1-ips'>
@@ -1569,6 +1569,20 @@ encapsulation methods</assignable></selectable></selectables>.
 
 
 	</selectables>.</title>
+	<aactivity><no-tests/></aactivity>
+	</f-element>
+	<f-element id='ips-sbd-ext-2e3'>
+	<title>The TSF shall be able to perform TCP normalization for traffic flows through the TOE when the TOE is deployed in inline mode, and prohibit forwarding of:<selections linebreak='yes'>
+		<selectable>duplicate packets;</selectable>
+		<selectable>changed packets;</selectable>
+		<selectable>out-of-sequence packets;</selectable>
+		<selectable>
+			<selectables><selectable><assignable>other packet types that should not be
+forwarded</assignable></selectable>
+			<selectable>no other packets</selectable>
+			</selectables>
+			<selectables>
+		</selectables></selectable></selections></title>
 	<aactivity><no-tests/></aactivity>
 	</f-element>
 	</f-component>
