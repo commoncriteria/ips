@@ -1038,24 +1038,30 @@ enforce its policies on network traffic of monitored networks.</description>
 				<h:ol type='a'>
 					<h:li><h:i>IP Attacks
 						<h:ol type='i'>
-							<h:li></h:li>
+							<h:li>IP Fragments Overlap (Teardrop attack, Bonk attack, or Boink attack)</h:li>
+							<h:li>IP source address equal to the IP destination (Land attack)</h:li>
 						</h:ol>
 					</h:i></h:li>
-					<h:li><h:i>
+					<h:li><h:i>ICMP Attacks
 						<h:ol type='i'>
-							<h:li></h:li>
+							<h:li>Fragmented ICMP Traffic (e.g. Nuke attack)</h:li>
+							<h:li>Large ICMP Traffic (Ping of Death attack)</h:li>
 						</h:ol>
 					</h:i></h:li>
-					<h:li><h:i>
+					<h:li><h:i>TCP Attacks
 						<h:ol type='i'>
-							<h:li></h:li>
+							<h:li>TCP NULL flags</h:li>
+							<h:li>TCP SYN+FIN flags</h:li>
+							<h:li>TCP FIN only flags</h:li>
+							<h:li>TCP SYN+RST flags</h:li>
 						</h:ol>
 					</h:i></h:li>
-					<h:li><h:i>
+					<h:li><h:i>UDP Attacks</h:i>
 						<h:ol type='i'>
-							<h:li></h:li>
+							<h:li><h:i>UDP Bomb Attack</h:i></h:li>
+							<h:li><h:i>UDP Chargen DDoS Attack</h:i>].</h:li>
 						</h:ol>
-					</h:i></h:li>
+					</h:li>
 				</h:ol>
                 </title>
                 <aactivity>
