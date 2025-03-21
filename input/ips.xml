@@ -1593,12 +1593,12 @@ encapsulation methods</assignable></selectable></selectables>.
 		it and respond in the configured manner. The evaluator shall repeat this test for each type of encapsulated
 		traffic supported by the TSF.</Tests>
 	</aactivity>
+
+	</f-element>
 	<audit-event>
 	<audit-event-descr>Inspection of encapsulated packets.</audit-event-descr>
 	<audit-event-info>Indication of the encapsulation method.</audit-event-info>
 	</audit-event>
-	</f-element>
-
 	<f-element id='ips-sbd-ext-2e2'>
 	<title>The TSF shall be able to perform IP normalization to reassemble fragmented packets for inspection, and: <selectables linebreak='yes'>
 	<selectable>For data collected at promiscuous interfaces: generate an alert if the packet cannot be reassembled;</selectable>
@@ -1617,12 +1617,13 @@ encapsulation methods</assignable></selectable></selectables>.
 		<test>The evaluator shall generate packets that can be reassembled after fragmentation; the evaluator shall ensure audit events are generated for all instances of IP normalization.</test>
 		</testlist></Tests>
 		</aactivity>
-		<audit-event>
+		
+	</f-element>
+	<audit-event>
 		<audit-event-descr>Failure to re-assemble a fragmented packet.</audit-event-descr>
 		<audit-event-info>Source and destination IP addresses.</audit-event-info>
 		<audit-event-info>TOE interface that received the fragment(s).</audit-event-info>
 		</audit-event>
-	</f-element>
 	<f-element id='ips-sbd-ext-2e3'>
 	<title>The TSF shall be able to perform TCP normalization for traffic flows through the TOE when the TOE is deployed in inline mode, and prohibit forwarding of: <selectables linebreak='yes'>
 		<selectable>duplicate packets;</selectable>
@@ -1650,12 +1651,13 @@ forwarded</assignable></selectable>
 		</h:ul>
 </Tests>
 		</aactivity>
-		<audit-event>
+		
+	</f-element>
+	<audit-event>
 		<audit-event-descr>Normalization of traffic by the TOE.</audit-event-descr>
 		<audit-event-info>Source and destination IP addresses of discarded packet(s).</audit-event-info>
 		<audit-event-info>TOE interface that received the packet(s)</audit-event-info>
 		</audit-event>
-	</f-element>
 	</f-component>
 	</section>
 	</opt-sfrs>		
