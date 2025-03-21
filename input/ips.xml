@@ -682,7 +682,7 @@ enforce its policies on network traffic of monitored networks.</description>
 					message for an event that repeated X times during Y seconds).
 					</h:i></h:p>
 				</note>
-					<aactivity>      <!-- at minimum, only the last f-element in the f-component needs to have this -->
+				<aactivity>      <!-- at minimum, only the last f-element in the f-component needs to have this -->
    						<TSS>
 						The evaluator shall verify that the TSS describes how the TOE can be configured to log IPS data associated with applicable policies.
 						<h:br/>
@@ -699,7 +699,7 @@ enforce its policies on network traffic of monitored networks.</description>
 						Note the following:<h:ul><h:li>This activity should have been addressed with a combination of the Test EAs for the other IPS requirements</h:li>
 						<h:li>As part of testing this activity, the evaluator shall also ensure that the audit data generated to address this SFR can be handled in the manner that FAU_STG_EXT.1 requires for all audit data.</h:li></h:ul>
 						</Tests>
-					</aactivity>
+				</aactivity>
 
 				</f-element>
 				<f-element id="fau-gen-1e2-ips">
@@ -766,9 +766,26 @@ enforce its policies on network traffic of monitored networks.</description>
 					].
 				</title>            
 				<aactivity>      <!-- at minimum, only the last f-element in the f-component needs to have this -->
-   						<no-tests/>   <!-- use this inside the aactivity tag to specify that there are no EAs for the SFR (if just doing <aactivity/> doesn't work) -->
-					</aactivity>
-				</f-element>
+   					<TSS>
+					The evaluator shall verify that the TSS describes how the IPS data analysis and reactions can be configured.This may be performed in conjunction with the evaluation of IPS_ABD_EXT.1, IPS_IPB_EXT.1, and IPS_SBD_EXT.1.</TSS>
+					<Guidance>
+					The evaluator shall verify that the operational guidance describes the instructions for each function
+					defined in the SFR, describes how to configure the IPS data analysis and reactions, including how to set
+					any configurable defaults and how to configure each of the applicable analysis pattern matching methods
+					and reaction modes.
+					</Guidance>
+					<Tests>
+					The evaluator shall perform the following tests:
+					<testlist>
+						<test>The evaluator shall use the operational guidance to create a signature and enable it on an interface. The evaluator shall then generate traffic that would be successfully triggered by the signature. The evaluator should observe the TOE applying the corresponding reaction in the signature.</test>
+						<test>The evaluator shall then disable the signature and attempt to regenerate the same traffic and ensure that the TOE allows the traffic to pass with no reaction.</test>
+						<test> The evaluator shall use the operational guidance to import signatures and repeat the test conducted in Test 1.</test>
+						</testlist>
+						Other testing for this SFR is performed in conjunction with the EAs for IPS_ABD_EXT.1 and IPS_SBD_EXT.1.
+					</Tests>
+            	</aactivity>
+                </f-element>	
+
 				</f-component>
 			</section>
 			<!-- NEW SFR-->
@@ -807,8 +824,36 @@ enforce its policies on network traffic of monitored networks.</description>
 					</note>
 	          
 				<aactivity>      <!-- at minimum, only the last f-element in the f-component needs to have this -->
-   						<no-tests/>   <!-- use this inside the aactivity tag to specify that there are no EAs for the SFR (if just doing <aactivity/> doesn't work) -->
-					</aactivity>
+   						<TSS>The evaluator shall verify that the TSS describes the composition, construction, and application of baselines or anomaly-based attributes specified in IPS_ABD_EXT.1.1.
+						<h:br/>
+						If ‘frequency’ is selected in IPS_ABD_EXT.1.1, the TSS shall include an explanation of how frequencies can be defined on the TOE.
+						<h:br/>
+						If ‘thresholds’ is selected in IPS_ABD_EXT.1.1, the TSS shall include an explanation of how the thresholds can be defined on the TOE.
+						<h:br/>
+						The evaluator shall verify that each baseline or anomaly-based rule can be associated with a reaction specified in IPS_ABD_EXT.1.3.
+						<h:br/>
+						The evaluator shall verify that the TSS identifies all interface types capable of applying baseline or
+						anomaly-based rules and explains how they are associated with distinct network interfaces. Where
+						interfaces can be grouped into a common interface type (e.g., where the same internal logical path is
+						used, perhaps where a common device driver is used) they can be treated collectively as a distinct network
+						interface.
+						</TSS>
+						<Guidance>
+						The evaluator shall verify that the operational guidance provides instructions to manually create baselines
+						or anomaly-based rules according to the selections made in IPS_ABD_EXT.1.1. Note that dynamic
+						“profiling” of a network to establish a baseline is outside the scope of the PP-Module
+						<h:br/>
+						The evaluator shall verify that the operational guidance provides instructions to associate reactions specified in IPS_ABD_EXT.1.3 with baselines or anomaly-based rules.
+						<h:br/>
+						The evaluator shall verify that the operational guidance provides instructions to associate the different policies with distinct network interfaces.
+						</Guidance>
+						<Tests>
+						The evaluator shall perform the following tests:<testlist>
+						<test>The evaluator shall use the instructions in the operational guidance to configure baselines or anomaly-based rules for each attributes specified in IPS_ABD_EXT.1.1. The evaluator shall send traffic that does not match the baseline or matches the anomaly- based rule and verify the TOE applies the configured reaction. This shall be performed for each attribute in IPS_ABD_EXT.1.1.</test>
+						<test>The evaluator shall repeat the test above to ensure that baselines or anomaly- based rules can be defined for each distinct network interface type supported by the TOE.</test>
+						</testlist>
+						</Tests>
+				</aactivity>
 				</f-element>
 				<f-element id="ips-adb-ext-1e2">
 				<title>
