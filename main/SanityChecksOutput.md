@@ -1,6 +1,12 @@
+* Error: f-element FPT_FLS.1.1  appears not to have an associated evaluation activity.:
+        /Module[1]""/sec:Security_Requirements[1]""/opt-sfrs[1]""/section[2]""/f-component[1]""/f-element[1]""
 * Warning: This document still has at least one comment.
 * Error: Detected dangling id-reference to fcs-eap-ext-1 from attribute
         on/Module[1]""/include-pkg[2]""/depends[1]""/on[1]""
+* Error: Detected multiple elements with an id of 'ips'.
+* Error: Detected multiple elements with an id of 'ips'.
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Introduction[1]""/sec:Compliant_Targets_of_Evaluation[1]""/h:p[7]""
 * Warning: fau_stg.1/ips in opt-sfrs section is missing a _depends_/_optional_ sub tree (We're transitioning to using depends and not sections). /Module[1]""/sec:Security_Requirements[1]""/opt-sfrs[1]""/section[1]""/f-component[1]""
 * Warning: fau_stg.4/ips in opt-sfrs section is missing a _depends_/_optional_ sub tree (We're transitioning to using depends and not sections). /Module[1]""/sec:Security_Requirements[1]""/opt-sfrs[1]""/section[1]""/f-component[2]""
+* Warning: fpt_fls.1 in opt-sfrs section is missing a _depends_/_optional_ sub tree (We're transitioning to using depends and not sections). /Module[1]""/sec:Security_Requirements[1]""/opt-sfrs[1]""/section[2]""/f-component[1]""
+* Warning: ips_sbd_ext.2 in opt-sfrs section is missing a _depends_/_optional_ sub tree (We're transitioning to using depends and not sections). /Module[1]""/sec:Security_Requirements[1]""/opt-sfrs[1]""/section[3]""/f-component[1]""
