@@ -1152,6 +1152,15 @@ enforce its policies on network traffic of monitored networks.</description>
 				<no-tests/>   
                  </aactivity>
                 </f-element>
+				<f-element id="ips-sbd-ext-1e">
+                <title>
+				The TSF shall support stream reassembly or equivalent to detect malicious payload even if it is split across multiple non-fragmented packets.
+
+                </title>
+                <aactivity>
+				<no-tests/>   
+                 </aactivity>
+                </f-element>
 				</f-component>
 			</section>
 
