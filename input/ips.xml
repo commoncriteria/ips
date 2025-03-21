@@ -602,8 +602,9 @@ enforce its policies on network traffic of monitored networks.</description>
 	    <audit-table table="mandatory" id="mandatory-audit-events">
 	      <h:br/><h:b><ctr ctr-type="Table" pre="Table " id="atref-mandatory">: Auditable Events for Mandatory SFRs</ctr></h:b>
 	    </audit-table>
+		<comment>some audits end without completing the sentence.</comment>
 	  </section>
-<comment>some audits end without completing the sentence.</comment>
+
 		<!-- Section for SFR Class -->
 		
 		
@@ -1593,7 +1594,7 @@ encapsulation methods</assignable></selectable></selectables>.
 		traffic supported by the TSF.</Tests>
 	</aactivity>
 	</f-element>
-	
+
 	<f-element id='ips-sbd-ext-2e2'>
 	<title>The TSF shall be able to perform IP normalization to reassemble fragmented packets for inspection, and: <selectables linebreak='yes'>
 	<selectable>For data collected at promiscuous interfaces: generate an alert if the packet cannot be reassembled;</selectable>
@@ -1632,7 +1633,7 @@ forwarded</assignable></selectable>
 	<h:li>other packet types claimed in the requirement, if any</h:li>
 	</h:ul></TSS>
 	<Guidance>There are no guidance EAs for this element.</Guidance>
-	<Tests>The evaluator shall generate the following types of packets and observe that they are discarded by the TSF: <h:ul><h:li>duplicate packets</h:li><
+	<Tests>The evaluator shall generate the following types of packets and observe that they are discarded by the TSF: <h:ul><h:li>duplicate packets</h:li>
 		<h:li>duplicate packets</h:li>
 		<h:li>changed packets</h:li>
 		<h:li>out of sequence packets</h:li>
