@@ -1015,8 +1015,15 @@ enforce its policies on network traffic of monitored networks.</description>
 					<h:li><h:i>TCP data (characters beyond the 20 byte TCP header), with support for detection of:
 					<h:ol type="i">
 						<h:li>FTP (file transfer) commands: help, noop, stat, syst, user, abort, acct, allo, appe, cdup, cwd, dele, list, mkd, mode, nlst, pass, pasv, port, pass, quit, rein, rest, retr, rmd, rnfr, rnto, site, smnt, stor, stou, stru, and type.</h:li>
+						<h:li>HTTP (web) commands and content: commands including GET and POST, and administrator- defined strings to match URLs/URIs, and web page content.</h:li>
+						<h:li>SMTP (email) states: start state, SMTP commands state, mail header state, mail body state, abort state</h:li>
+						<h:li><selectables>
+						<selectable><assignable>other types of TCP payload inspection</assignable></selectable>
+						<selectable>no other types of TCP payload inspection</selectable>
+						</selectables></h:li>
 					</h:ol>
-					
+					<h:li><h:li>UDP data: characters beyond the first 8 bytes of the UDP header;</h:li></h:li>
+					<h:li><assignable>other types of packet payload inspection</assignable>]</h:li>
 					</h:i></h:li>
 
 				</h:ul>
