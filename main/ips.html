@@ -1457,24 +1457,30 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 				<ol type="a">
 					<li><i>IP Attacks
 						<ol type="i">
-							<li></li>
+							<li>IP Fragments Overlap (Teardrop attack, Bonk attack, or Boink attack)</li>
+							<li>IP source address equal to the IP destination (Land attack)</li>
 						</ol>
 					</i></li>
-					<li><i>
+					<li><i><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> Attacks
 						<ol type="i">
-							<li></li>
+							<li>Fragmented <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> Traffic (e.g. Nuke attack)</li>
+							<li>Large <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> Traffic (Ping of Death attack)</li>
 						</ol>
 					</i></li>
-					<li><i>
+					<li><i><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> Attacks
 						<ol type="i">
-							<li></li>
+							<li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> NULL flags</li>
+							<li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> SYN+FIN flags</li>
+							<li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> FIN only flags</li>
+							<li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> SYN+RST flags</li>
 						</ol>
 					</i></li>
-					<li><i>
+					<li><i><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> Attacks</i>
 						<ol type="i">
-							<li></li>
+							<li><i><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> Bomb Attack</i></li>
+							<li><i><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> Chargen <abbr class="dyn-abbr"><a href="#abbr_DDoS">DDoS</a></abbr> Attack</i>].</li>
 						</ol>
-					</i></li>
+					</li>
 				</ol>
                 </div></div>
 				

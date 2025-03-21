@@ -6,6 +6,7 @@ output/ips-release-linkable.html: Auidtable
 output/ips-release-linkable.html: CAVP
 output/ips-release-linkable.html: CEM
 output/ips-release-linkable.html: CPC
+output/ips-release-linkable.html: Chargen
 output/ips-release-linkable.html: CoreOS
 output/ips-release-linkable.html: FCO
 output/ips-release-linkable.html: FIA
@@ -17,6 +18,7 @@ output/ips-release-linkable.html: ITT
 output/ips-release-linkable.html: MOF
 output/ips-release-linkable.html: Multiprotocol
 output/ips-release-linkable.html: NDcPP
+output/ips-release-linkable.html: RST
 output/ips-release-linkable.html: SBD
 output/ips-release-linkable.html: SMR
 output/ips-release-linkable.html: STM
@@ -71,6 +73,7 @@ output/ips-release.html: Auidtable
 output/ips-release.html: CAVP
 output/ips-release.html: CEM
 output/ips-release.html: CPC
+output/ips-release.html: Chargen
 output/ips-release.html: CoreOS
 output/ips-release.html: Data’
 output/ips-release.html: FCO
@@ -83,6 +86,7 @@ output/ips-release.html: ITT
 output/ips-release.html: MOF
 output/ips-release.html: Multiprotocol
 output/ips-release.html: NDcPP
+output/ips-release.html: RST
 output/ips-release.html: SBD
 output/ips-release.html: SMR
 output/ips-release.html: STM
@@ -164,6 +168,7 @@ output/ips.html: Auidtable
 output/ips.html: CAVP
 output/ips.html: CEM
 output/ips.html: CPC
+output/ips.html: Chargen
 output/ips.html: CoreOS
 output/ips.html: Data’
 output/ips.html: FCO
@@ -176,6 +181,7 @@ output/ips.html: ITT
 output/ips.html: MOF
 output/ips.html: Multiprotocol
 output/ips.html: NDcPP
+output/ips.html: RST
 output/ips.html: SBD
 output/ips.html: SMR
 output/ips.html: STM
