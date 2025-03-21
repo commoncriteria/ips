@@ -67,6 +67,7 @@ output/ips-release-linkable.html: subnets
 output/ips-release-linkable.html: supersets
 output/ips-release-linkable.html: trigged
 output/ips-release-linkable.html: virtualized
+output/ips-release-linkable.html: weredetermined
 output/ips-release.html: 0E
 output/ips-release.html: 4e
 output/ips-release.html: AFL
@@ -150,6 +151,7 @@ output/ips-release.html: typical’
 output/ips-release.html: unexpected’
 output/ips-release.html: unknown’
 output/ips-release.html: virtualized
+output/ips-release.html: weredetermined
 output/ips-release.html: ’
 output/ips-sd.html: 0e
 output/ips-sd.html: AGD
@@ -275,4 +277,5 @@ output/ips.html: typical’
 output/ips.html: unexpected’
 output/ips.html: unknown’
 output/ips.html: virtualized
+output/ips.html: weredetermined
 output/ips.html: ’

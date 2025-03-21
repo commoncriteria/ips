@@ -1467,6 +1467,15 @@ enforce its policies on network traffic of monitored networks.</description>
 					<Tests>The evaluator shall repeat one of the tests in IPS_SBD_EXT.1.2 Test 1 but generate multiple nonfragmented packets that contain the string in the rule defined. The evaluator shall verify that the malicious traffic is still detected when split across multiple non-fragmented packets.</Tests>
                  </aactivity>
                 </f-element>
+				<audit-event>
+				<audit-event-descr>Inspected traffic matches a signature-based IPS rule with logging enabled.</audit-event-descr>
+				<audit-event-info>Name or identifier of the matched signature.</audit-event-info>
+				<audit-event-info>Source and destination IP addresses.</audit-event-info>
+				<audit-event-info>The content of the header fields that weredetermined to match the signature.</audit-event-info>
+				<audit-event-info>TOE interface that received the packet.</audit-event-info>
+				<audit-event-info>Network-based action by the TOE (e.g. allowed, blocked, sent reset).</audit-event-info>
+				
+				</audit-event>
 				</f-component>
 			</section>
 
@@ -1474,7 +1483,22 @@ enforce its policies on network traffic of monitored networks.</description>
 	
 	</man-sfrs>  <!-- SFRs -->
     
-    <opt-sfrs/>
+    <opt-sfrs>
+	<section title="Security Audit" id="fau">
+	<comment>^this is something that I added, the original IPS pp did not have this entry</comment>
+			<f-component name=" Protected Audit Trail Storage" cc-id="fau_stg.1.1/ips" id="fau-stg.1-ips">
+			<f-element id="fau-stg-1e1-ips">
+				<title>The TSF shall protect the stored <h:s>audit records </h:s><h:b>IPS data</h:b> from unauthorized deletion.</title>
+				<aactivity>
+				<no-tests/>
+				</aactivity>
+			</f-element>
+			</f-component>
+	</section>
+
+
+
+	</opt-sfrs>		
     <sel-sfrs/>
     <obj-sfrs/>
     <impl-dep-sfrs/>

@@ -629,7 +629,7 @@ function showTarget(id){
 	            img[src="images/collapsed.png"] { display:none;}
 
           }
-    </style></head><body onLoad="init()"><div id="commmentbox-"><a href="#Comment-1-">Comment: Comment-1-</a><br/><a href="#Comment-2-">Comment: Comment-2-</a><br/><a href="#Comment-3-">Comment: Comment-3-</a><br/></div><h1 class="title" style="page-break-before:auto;">PP-Module for IPS</h1><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><div class="center"><img src="images/niaplogo.png" alt="NIAP Logo"></img><br/>
+    </style></head><body onLoad="init()"><div id="commmentbox-"><a href="#Comment-1-">Comment: Comment-1-</a><br/><a href="#Comment-2-">Comment: Comment-2-</a><br/><a href="#Comment-3-">Comment: Comment-3-</a><br/><a href="#Comment-4-">Comment: Comment-4-</a><br/></div><h1 class="title" style="page-break-before:auto;">PP-Module for IPS</h1><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><div class="center"><img src="images/niaplogo.png" alt="NIAP Logo"></img><br/>
       Version: 1.1<br/>2025-03-21<br/><b>National Information Assurance Partnership</b><br/></div><h2 style="page-break-before:always;">Revision History</h2><table><tr class="header"><th>Version</th><th>Date</th><th>Comment</th></tr><tr><td>1.1</td><td>2025-03-21</td><td><abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022 updates, incorporation of TDs</td></tr>
 <tr><td>1.0</td><td>2021-05-11</td><td>Initial publication</td></tr>
 </table><h2>Contents</h2><div class="toc" id="toc"><a href="#Introduction" style="text-indent:0px">1<span>Introduction</span></a><a href="#Overview" style="text-indent:10px">1.1<span>Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#Compliant_Targets_of_Evaluation" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOE_Boundary" style="text-indent:10px">1.4<span>TOE Boundary</span></a><a href="#Use_Cases" style="text-indent:10px">1.5<span>Use Cases</span></a><a href="#app-intro" style="text-indent:10px">1.6<span>Introduction</span></a><a href="#ConformanceClaims" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#Security_Problem_Definition" style="text-indent:0px">3<span>Security Problem Definition</span></a><a href="#sec-threats" style="text-indent:10px">3.1<span>Threats</span></a><a href="#Assumptions" style="text-indent:10px">3.2<span>Assumptions</span></a><a href="#Organizational_Security_Policies" style="text-indent:10px">3.3<span>Organizational Security Policies</span></a><a href="#Security_Objectives" style="text-indent:0px">4<span>Security Objectives</span></a><a href="#Security_Objectives_for_the_Operational_Environment" style="text-indent:10px">4.1<span>Security Objectives for the Operational Environment</span></a><a href="#sec-sor" style="text-indent:10px">4.2<span>Security Objectives Rationale</span></a><a href="#Security_Requirements" style="text-indent:0px">5<span>Security Requirements</span></a><a href="#secreq-ND" style="text-indent:10px">5.1<span>Collaborative 
@@ -645,7 +645,7 @@ function showTarget(id){
 		</span></a><a href="#conreq-ND" style="text-indent:20px">6.1.4<span>
 	Consistency of Requirements
       </span></a><a href="#opt-sfrs" style="text-indent:0px">Appendix A - <span>Optional SFRs</span></a><a href="#opt-sfrs" style="text-indent:10px">A.1<span>Strictly Optional Requirements
-    </span></a><a href="#obj-sfrs" style="text-indent:10px">A.2<span>Objective Requirements
+    </span></a><a href="#fau" style="text-indent:20px">A.1.1<span>Security Audit</span></a><a href="#obj-sfrs" style="text-indent:10px">A.2<span>Objective Requirements
     </span></a><a href="#impl-dep-sfrs" style="text-indent:10px">A.3<span>Implementation-dependent Requirements
     </span></a><a href="#sel-sfrs" style="text-indent:0px">Appendix B - <span>Selection-based Requirements
     </span></a><a href="#satisfiedreqs" style="text-indent:0px">Appendix C - <span>Inherently Satisfied Requirements</span></a><a href="#entropyappendix" style="text-indent:0px">Appendix D - <span>Entropy Documentation and Assessment</span></a><a href="#entropydesign" style="text-indent:10px">D.1<span>Design Description</span></a><a href="#entropyjustification" style="text-indent:10px">D.2<span>Entropy Justification</span></a><a href="#entropyoperatingconditions" style="text-indent:10px">D.3<span>Operating Conditions</span></a><a href="#entropyhealthtesting" style="text-indent:10px">D.4<span>Health Testing</span></a><a href="#apndx-equiv" style="text-indent:0px">Appendix E - <span>Application Software Equivalency Guidelines</span></a><a href="#app-intro" style="text-indent:10px">E.1<span>Introduction</span></a><a href="#approach" style="text-indent:10px">E.2<span>Approach to Equivalency Analysis</span></a><a href="#modelequiv" style="text-indent:10px">E.3<span>Specific Guidance for Determining Product Model Equivalence</span></a><a href="#versionequiv" style="text-indent:10px">E.4<span>Specific Guidance for Determining Product Version Equivalence</span></a><a href="#platformequiv" style="text-indent:10px">E.5<span>Specific Guidance for Determining Platform Equivalence</span></a><a href="#hardware-equiv" style="text-indent:20px">E.5.1<span>Platform Equivalence—Hardware/Virtual Hardware Platforms</span></a><a href="#os-equiv" style="text-indent:20px">E.5.2<span>Platform Equivalence—OS Platforms</span></a><a href="#software-equiv" style="text-indent:20px">E.5.3<span>Software-based Execution Environment Platform Equivalence</span></a><a href="#specificity" style="text-indent:10px">E.6<span>Level of Specificity for Tested Configurations and Claimed Equivalent Configurations</span></a><a href="#acronyms" style="text-indent:0px">Appendix F - <span>Acronyms</span></a><a href="#appendix-bibliography" style="text-indent:0px">Appendix G - <span>Bibliography</span></a></div><h1 class="indexable" data-level="1" id="Introduction">1 Introduction</h1>
@@ -1109,7 +1109,7 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 				</td><td><ul><li>Identification of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface.
 				</li><li>The <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy and interface mode (if
 				applicable).
-				</li></ul></td></tr></table>
+				</li></ul></td></tr><tr data-sortkey="IPS_SDB_EXT.1"><td rowspan="2"><a href="#IPS_SDB_EXT.1">IPS_SDB_EXT.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="IPS_SDB_EXT.1#"><td></td></tr><tr data-sortkey="IPS_SDB_EXT.1.6"><td>Inspected traffic matches a signature-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> rule with logging enabled.</td><td><ul><li>Name or identifier of the matched signature.</li><li>Source and destination IP addresses.</li><li>The content of the header fields that weredetermined to match the signature.</li><li><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface that received the packet.</li><li>Network-based action by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> (e.g. allowed, blocked, sent reset).</li></ul></td></tr></table>
 	  
 
 		
@@ -1548,6 +1548,7 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support stream reassembly or equivalent to detect malicious payload even if it is split across multiple non-fragmented packets.
 
                 </div></div>
+				
 				</div>
 			
 
@@ -1627,17 +1628,24 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 		  </td></tr><tr><th colspan="2"> Additional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th></tr><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not add any requirements when the
 	      NDcPP is the base.
-	    </td></tr><tr><th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a></td><td></td></tr><tr><td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td></td></tr><tr><td><a href="#FIP_ABD_EXT.1">FIP_ABD_EXT.1</a></td><td></td></tr><tr><td><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td></td></tr><tr><td><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td></td></tr><tr><td><a href="#IPS_SDB_EXT.1">IPS_SDB_EXT.1</a></td><td></td></tr></tr><tr><th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
-	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Optional requirements.
-	    </td></tr></tr><tr><th colspan="2"> Objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
+	    </td></tr><tr><th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a></td><td></td></tr><tr><td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td></td></tr><tr><td><a href="#FIP_ABD_EXT.1">FIP_ABD_EXT.1</a></td><td></td></tr><tr><td><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td></td></tr><tr><td><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td></td></tr><tr><td><a href="#IPS_SDB_EXT.1">IPS_SDB_EXT.1</a></td><td></td></tr></tr><tr><th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_STG.1.1/IPS">FAU_STG.1.1/IPS</a></td><td></td></tr></tr><tr><th colspan="2"> Objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Objective requirements.
 	    </td></tr></tr><tr><th colspan="2"> Implementation-dependent <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Implementation-dependent requirements.
 	    </td></tr></tr><tr><th colspan="2"> Selection-based <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Selection-based requirements.
 	    </td></tr></tr></table><h1 id="opt-sfrs" class="indexable" data-level="A">Appendix A -  Optional SFRs</h1><h2 id="opt-sfrs" class="indexable" data-level="2">A.1 Strictly Optional Requirements
-    </h2><p>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any 
-       Strictly Optional        <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> or <abbr class="dyn-abbr"><a href="#abbr_SAR">SARs</a></abbr>.</p><h2 id="obj-sfrs" class="indexable" data-level="2">A.2 Objective Requirements
+    </h2>
+	<h3 id="fau" class="indexable" data-level="3">A.1.1 Security Audit</h3>
+	<span style="" class="comment " id="Comment-4-">^this is something that I added, the original <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> pp did not have this entry</span>
+			<div class="comp" id="FAU_STG.1.1/IPS"><h4>FAU_STG.1.1/IPS  Protected Audit Trail Storage</h4>
+			<div class="element"><div class="reqid" id="FAU_STG.1.1/IPS.1"><a href="#FAU_STG.1.1/IPS.1" class="abbr">FAU_STG.1.1/IPS.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall protect the stored <s>audit records </s><b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b> from unauthorized deletion.</div></div>
+			</div>
+	
+
+
+
+	<h2 id="obj-sfrs" class="indexable" data-level="2">A.2 Objective Requirements
     </h2><p>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any 
        Objective       <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr>.</p><h2 id="impl-dep-sfrs" class="indexable" data-level="2">A.3 Implementation-dependent Requirements
     </h2><p>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any 
