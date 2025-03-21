@@ -683,7 +683,7 @@ enforce its policies on network traffic of monitored networks.</description>
 					</h:i></h:p>
 				</note>
 					<aactivity>      <!-- at minimum, only the last f-element in the f-component needs to have this -->
-   						<no-tests/>   <!-- use this inside the aactivity tag to specify that there are no EAs for the SFR (if just doing <aactivity/> doesn't work) -->
+   						<no-tests/>
 					</aactivity>
 
 				</f-element>
@@ -711,9 +711,27 @@ enforce its policies on network traffic of monitored networks.</description>
 					that trigged event, port, etc.</h:i></h:p>
 					</note>
 					<aactivity>      <!-- at minimum, only the last f-element in the f-component needs to have this -->
-   						<no-tests/>   <!-- use this inside the aactivity tag to specify that there are no EAs for the SFR (if just doing <aactivity/> doesn't work) -->
+   						<no-tests/>
 					</aactivity>
 				</f-element>
+				<aactivity>      <!-- at minimum, only the last f-element in the f-component needs to have this -->
+   						<TSS>
+						The evaluator shall verify that the TSS describes how the TOE can be configured to log IPS data associated with applicable policies.
+						<h:br/>
+						The evaluator shall verify that the TSS describes what (similar) IPS event types the TOE will combine into a single audit record along with the conditions (e.g., thresholds and time periods) for so doing. The TSS shall also describe to what extent (if any) that may be configurable.
+						<h:br/>
+						For IPS_SBD_EXT.1, for each field, the evaluator shall verify that the TSS describes how the field is inspected and if logging is not applicable, any other mechanism such as counting that is deployed.
+						</TSS>
+						<Guidance>
+						The evaluator shall verify that the operational guidance describes how to configure the TOE to result in applicable IPS data logging.
+						</Guidance>
+						<Tests>
+						The evaluator shall test that the interfaces used to configure the IPS polices yield expected IPS data in association with the IPS policies. A number of IPS policy combination and ordering scenarios need to be configured and tested by attempting to pass both allowed and anomalous network traffic matching configured IPS policies in order to trigger all required IPS events.
+						<h:br/>
+						Note the following:<h:ul><h:li>This activity should have been addressed with a combination of the Test EAs for the other IPS requirements</h:li>
+						<h:li>As part of testing this activity, the evaluator shall also ensure that the audit data generated to address this SFR can be handled in the manner that FAU_STG_EXT.1 requires for all audit data.</h:li></h:ul>
+						</Tests>
+					</aactivity>
 			</f-component>
 			</section>
 			
