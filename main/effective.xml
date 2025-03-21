@@ -974,24 +974,43 @@ enforce its policies on network traffic of monitored networks.</description>
 					<h:li><h:i>IPv4: version; header length; packet length; ID; IP flags; fragment offset;time to live (TTL); protocol; header checksum; source address; destination address; IP options; and<selectables>
 						<selectable>type of service (ToS)</selectable>
 						<selectable>no other field</selectable></selectables>.</h:i></h:li>
-					<h:li><h:i>IPv6: version; payload length; next header; hop limit; source address; destination address; routing header; and</h:i><selectables>
+					<h:li><h:i>IPv6: version; payload length; next header; hop limit; source address; destination address; routing header; and </h:i><selectables>
 						<selectable>traffic class</selectable>
 						<selectable>flow label</selectable>
 						<selectable>no other field</selectable>
-					</selectables>
+						</selectables>
 					</h:li>
-					<h:li><h:i>ICMP: type; code; header checksum; and</h:i></h:li>
-					<h:li><h:i/></h:li>
-					<h:li><h:i/></h:li>
-					<h:li><h:i/></h:li>
-					<h:li><h:i/></h:li>
+					<h:li><h:i>ICMP: type; code; header checksum; and </h:i><selectables>
+						<selectable>ID</selectable>
+						<selectable>sequence number</selectable>
+						<selectable><assignable>other field in the ICMP header</assignable></selectable>
+					</selectables>					
+						</h:li>
+					<h:li><h:i>ICMPv6: type; code; and header checksum.</h:i></h:li>
+					<h:li><h:i>TCP: source port; destination port; sequence number; acknowledgement number; offset; reserved; TCP flags; window; checksum; urgent pointer; and TCP options.</h:i></h:li>
+					<h:li><h:i>UDP: source port; destination port; length; and UDP checksum</h:i>].</h:li>
 					</h:ul>
 				</title>
 				<aactivity>      <!-- at minimum, only the last f-element in the f-component needs to have this -->
 						<no-tests/>   <!-- use this inside the aactivity tag to specify that there are no EAs for the SFR (if just doing <aactivity/> doesn't work) -->
 					</aactivity>
 				</f-element>
-				
+				<f-element id="ips-sbd-ext-1e2">
+				<title>
+				The TSF shall support inspection of packet payload data and be able to inspect at least the following data elements to perform string-based patternmatching: [
+				<h:ul>
+					<h:li><h:i>ICMPv4 data: characters beyond the first 4 bytes of the ICMP header.</h:i></h:li>
+					<h:li><h:i>ICMPv6 data: characters beyond the first 4 bytes of the ICMP header.</h:i></h:li>
+					<h:li><h:i>TCP data (characters beyond the 20 byte TCP header), with support for detection of:
+					<h:ol type="i">
+						<h:li>FTP (file transfer) commands: help, noop, stat, syst, user, abort, acct, allo, appe, cdup, cwd, dele, list, mkd, mode, nlst, pass, pasv, port, pass, quit, rein, rest, retr, rmd, rnfr, rnto, site, smnt, stor, stou, stru, and type.</h:li>
+					</h:ol>
+					
+					</h:i></h:li>
+
+				</h:ul>
+				</title>
+				</f-element>
 				
 				
 				</f-component>

@@ -1386,16 +1386,30 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 					The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support inspection of packet header contents and be able to inspect at least the following header fields: [
 					<ul>
 					<li><i>IPv4: version; header length; packet length; ID; IP flags; fragment offset;time to live (<abbr class="dyn-abbr"><a href="#abbr_TTL">TTL</a></abbr>); protocol; header checksum; source address; destination address; IP options; and[<b>selection</b>: <span class="selectable-content" id="_s_37">type of service (<abbr class="dyn-abbr"><a href="#abbr_ToS">ToS</a></abbr>)</span>, <span class="selectable-content" id="_s_38">no other field</span>].</i></li>
-					<li><i>IPv6: version; payload length; next header; hop limit; source address; destination address; routing header; and</i>[<b>selection</b>: <span class="selectable-content" id="_s_39">traffic class</span>, <span class="selectable-content" id="_s_40">flow label</span>, <span class="selectable-content" id="_s_41">no other field</span>]
+					<li><i>IPv6: version; payload length; next header; hop limit; source address; destination address; routing header; and </i>[<b>selection</b>: <span class="selectable-content" id="_s_39">traffic class</span>, <span class="selectable-content" id="_s_40">flow label</span>, <span class="selectable-content" id="_s_41">no other field</span>]
 					</li>
-					<li><i><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>: type; code; header checksum; and</i></li>
-					<li><i></i></li>
-					<li><i></i></li>
-					<li><i></i></li>
-					<li><i></i></li>
+					<li><i><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>: type; code; header checksum; and </i>[<b>selection</b>: <span class="selectable-content" id="_s_42">ID</span>, <span class="selectable-content" id="_s_43">sequence number</span>, <span class="selectable-content" id="_s_44">[<b>assignment</b>: 
+     <span class="assignable-content">other field in the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> header</span>]</span>]					
+						</li>
+					<li><i>ICMPv6: type; code; and header checksum.</i></li>
+					<li><i><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr>: source port; destination port; sequence number; acknowledgement number; offset; reserved; <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> flags; window; checksum; urgent pointer; and <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> options.</i></li>
+					<li><i><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr>: source port; destination port; length; and <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> checksum</i>].</li>
 					</ul>
 				</div></div>
-				
+				<div class="element"><div class="reqid" id="IPS_SDB_EXT.1.2"><a href="#IPS_SDB_EXT.1.2" class="abbr">IPS_SDB_EXT.1.2</a></div><div class="reqdesc">
+				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support inspection of packet payload data and be able to inspect at least the following data elements to perform string-based patternmatching: [
+				<ul>
+					<li><i>ICMPv4 data: characters beyond the first 4 bytes of the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> header.</i></li>
+					<li><i>ICMPv6 data: characters beyond the first 4 bytes of the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> header.</i></li>
+					<li><i><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> data (characters beyond the 20 byte <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> header), with support for detection of:
+					<ol type="i">
+						<li><abbr class="dyn-abbr"><a href="#abbr_FTP">FTP</a></abbr> (file transfer) commands: help, noop, stat, syst, user, abort, acct, allo, appe, cdup, cwd, dele, list, mkd, mode, nlst, pass, pasv, port, pass, quit, rein, rest, retr, rmd, rnfr, rnto, site, smnt, stor, stou, stru, and type.</li>
+					</ol>
+					
+					</i></li>
+
+				</ul>
+				</div></div>
 				
 				
 				</div>
