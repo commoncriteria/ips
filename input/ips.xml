@@ -1018,11 +1018,11 @@ enforce its policies on network traffic of monitored networks.</description>
 						<h:li>HTTP (web) commands and content: commands including GET and POST, and administrator- defined strings to match URLs/URIs, and web page content.</h:li>
 						<h:li>SMTP (email) states: start state, SMTP commands state, mail header state, mail body state, abort state</h:li>
 						<h:li><selectables>
-						<selectable><assignable>other types of TCP payload inspection</assignable></selectable>
-						<selectable>no other types of TCP payload inspection</selectable>
+							<selectable><assignable>other types of TCP payload inspection</assignable></selectable>
+							<selectable>no other types of TCP payload inspection</selectable>
 						</selectables></h:li>
 					</h:ol>
-					<h:li><h:li>UDP data: characters beyond the first 8 bytes of the UDP header;</h:li></h:li>
+					<h:li>UDP data: characters beyond the first 8 bytes of the UDP header;</h:li>
 					<h:li><assignable>other types of packet payload inspection</assignable>]</h:li>
 					</h:i></h:li>
 
@@ -1032,7 +1032,17 @@ enforce its policies on network traffic of monitored networks.</description>
 				<no-tests/>   
                  </aactivity>
 				</f-element>
-				
+				<f-element id="ips-sbd-ext-1e3">
+                <title>
+				The TSF shall be able to detect the following header-based signatures (using fields identified in IPS_SBD_EXT.1.1) at IPS sensor interfaces: [
+				<h:ol type='A'>
+					<h:li><h:i</h:li>
+				</h:ol>
+                </title>
+                <aactivity>
+				<no-tests/>   
+                 </aactivity>
+                </f-element>
 				
 				</f-component>
 			</section>
