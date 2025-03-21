@@ -1528,7 +1528,50 @@ enforce its policies on network traffic of monitored networks.</description>
 				</aactivity>
 			</f-element>
 			</f-component>
-			
+	</section>
+	<section title='Protection of the TSF (FPT)' id='fpt'>
+	<f-component name='Failure with Preservation of Secure State' cc-id="fpt_fls.1" id='fpt-fls.1'>
+	<f-element id='fpt-fls-1'>
+	<title>The TSF shall <h:br>be able to</h:br> preserve a secure state <h:br>for inline interfaces</h:br> when the following types of failures occur: <assignable>list of types of failures in the TSF</assignable></title>
+	<note role='application'>
+	The intent of this SFR is to allow the ST author to define the types of failures
+	that can occur on the TOE which could result in failure to effectively detect and
+	react to IPS policy violations for traffic traversing inline interface, and to not
+	allow traffic to traverse those interfaces. The first refinement “to be able” is
+	included to allow the TOE administrator to configure the TOE to allow traffic to
+	traverse inline interfaces when the TOE is in a partially of fully failed state, but
+	to provide assurance that the TOE is capable of blocking traffic if it has been
+	configured to do so. The purpose of this SFR, as stated in CC Part 2, is to “ensure
+	that the TOE will always enforce its SFRs in the event of identified categories of
+	failures in the TSF.” Since some of the SFRs require inspection of data, and that inspection cannot occur when a network interface fails, it will not always be
+	true that “all” the SFRs will continue to be enforced in the event of failure of
+	certain components. The intent here is to ensure that if network traffic is not
+	capable of being inspected by the TSF, then it should automatically be treated
+	as untrusted.
+	</note>
+	</f-element>
+	</f-component>
+	</section>
+	<section title="Intrusion Prevention (IPS)" id='ips'>
+	<f-component name ="Traffic Normalization" cc-id='ips_sbd_ext.2' id='ips-sbd.2'>
+	<f-element id='ips-sbd-2e1'>
+	<title>The TSF shall be able to inspect packets encapsulated through the following means: <selectables><selectable>GRE</selectable><selectable>IP-in-IP</selectable><selectable>IPv4-in-IPv6</selectable><selectable>MPLS</selectable><selectable> PPTP</selectable><selectable><assignable>other
+encapsulation methods</assignable></selectable></selectables>.
+	</title>
+	<aactivity>
+		<no-tests/>
+	</aactivity>
+	</f-element>
+	<f-element id='ips-sbd-ext-2e2'>
+	<title>The TSF shall be able to perform IP normalization to reassemble fragmented packets for inspection, and: <selectables linebreak='yes'>
+	<selectable>For data collected at promiscuous interfaces: generate an alert if the packet cannot be reassembled;</selectable>
+	<selectable>For data collected at inline interfaces: do not forward any packet fragments and generate an alert if the TSF cannot reassemble the entire packet</selectable>
+
+
+	</selectables>.</title>
+	<aactivity><no-tests/></aactivity>
+	</f-element>
+	</f-component>
 	</section>
 
 
