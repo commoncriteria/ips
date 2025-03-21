@@ -629,7 +629,7 @@ function showTarget(id){
 	            img[src="images/collapsed.png"] { display:none;}
 
           }
-    </style></head><body onLoad="init()"><div id="commmentbox-"><a href="#Comment-1-">Comment: Comment-1-</a><br/><a href="#Comment-2-">Comment: Comment-2-</a><br/><a href="#Comment-3-">Comment: Comment-3-</a><br/><a href="#Comment-4-">Comment: Comment-4-</a><br/></div><h1 class="title" style="page-break-before:auto;">PP-Module for IPS</h1><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><div class="center"><img src="images/niaplogo.png" alt="NIAP Logo"></img><br/>
+    </style></head><body onLoad="init()"><div id="commmentbox-"><a href="#Comment-1-">Comment: Comment-1-</a><br/><a href="#Comment-2-">Comment: Comment-2-</a><br/><a href="#Comment-3-">Comment: Comment-3-</a><br/><a href="#Comment-4-">Comment: Comment-4-</a><br/><a href="#Comment-5-">Comment: Comment-5-</a><br/></div><h1 class="title" style="page-break-before:auto;">PP-Module for IPS</h1><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><div class="center"><img src="images/niaplogo.png" alt="NIAP Logo"></img><br/>
       Version: 1.1<br/>2025-03-21<br/><b>National Information Assurance Partnership</b><br/></div><h2 style="page-break-before:always;">Revision History</h2><table><tr class="header"><th>Version</th><th>Date</th><th>Comment</th></tr><tr><td>1.1</td><td>2025-03-21</td><td><abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022 updates, incorporation of TDs</td></tr>
 <tr><td>1.0</td><td>2021-05-11</td><td>Initial publication</td></tr>
 </table><h2>Contents</h2><div class="toc" id="toc"><a href="#Introduction" style="text-indent:0px">1<span>Introduction</span></a><a href="#Overview" style="text-indent:10px">1.1<span>Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#Compliant_Targets_of_Evaluation" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOE_Boundary" style="text-indent:10px">1.4<span>TOE Boundary</span></a><a href="#Use_Cases" style="text-indent:10px">1.5<span>Use Cases</span></a><a href="#app-intro" style="text-indent:10px">1.6<span>Introduction</span></a><a href="#ConformanceClaims" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#Security_Problem_Definition" style="text-indent:0px">3<span>Security Problem Definition</span></a><a href="#sec-threats" style="text-indent:10px">3.1<span>Threats</span></a><a href="#Assumptions" style="text-indent:10px">3.2<span>Assumptions</span></a><a href="#Organizational_Security_Policies" style="text-indent:10px">3.3<span>Organizational Security Policies</span></a><a href="#Security_Objectives" style="text-indent:0px">4<span>Security Objectives</span></a><a href="#Security_Objectives_for_the_Operational_Environment" style="text-indent:10px">4.1<span>Security Objectives for the Operational Environment</span></a><a href="#sec-sor" style="text-indent:10px">4.2<span>Security Objectives Rationale</span></a><a href="#Security_Requirements" style="text-indent:0px">5<span>Security Requirements</span></a><a href="#secreq-ND" style="text-indent:10px">5.1<span>Collaborative 
@@ -1110,6 +1110,7 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 				</li><li>The <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy and interface mode (if
 				applicable).
 				</li></ul></td></tr><tr data-sortkey="IPS_SDB_EXT.1"><td rowspan="2"><a href="#IPS_SDB_EXT.1">IPS_SDB_EXT.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="IPS_SDB_EXT.1#"><td></td></tr><tr data-sortkey="IPS_SDB_EXT.1.6"><td>Inspected traffic matches a signature-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> rule with logging enabled.</td><td><ul><li>Name or identifier of the matched signature.</li><li>Source and destination IP addresses.</li><li>The content of the header fields that weredetermined to match the signature.</li><li><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface that received the packet.</li><li>Network-based action by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> (e.g. allowed, blocked, sent reset).</li></ul></td></tr></table>
+		<span style="" class="comment " id="Comment-3-">some audits end without completing the sentence.</span>
 	  
 
 		
@@ -1179,7 +1180,7 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 				<div class="element"><div class="reqid" id="FAU_GEN.1.2/IPS"><a href="#FAU_GEN.1.2/IPS" class="abbr">FAU_GEN.1.2/IPS</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall record within each <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> auditable event</b> record at least the following information: <ol type="a">
 						<li>Date and time of the event, type of event <b>and/or reaction,</b> <s>subject identity, and the outcome (success or failure) of the event; and;</s></li>
 						<li>For each <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> auditable event</b> type, based on the auditable event definitions of the functional components included in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><s>/<abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></s>, [<i>information specified in column three of the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> Events table].</i></li>
-						<span style="" class="comment " id="Comment-3-">Update the second selection to properly have UPS Auidtable evet bolded, just like the first one.</span>
+						<span style="" class="comment " id="Comment-4-">Update the second selection to properly have UPS Auidtable evet bolded, just like the first one.</span>
 					</ol>
 
 					<div class="appnote"><span class="note-header">Application
@@ -1943,30 +1944,32 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 	    </td></tr></tr></table><h1 id="opt-sfrs" class="indexable" data-level="A">Appendix A -  Optional SFRs</h1><h2 id="opt-sfrs" class="indexable" data-level="2">A.1 Strictly Optional Requirements
     </h2>
 	<h3 id="fau" class="indexable" data-level="3">A.1.1 Security Audit(FAU)</h3>
-	<span style="" class="comment " id="Comment-4-">^this is something that I added, the original <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> pp did not have this entry</span>
+	<span style="" class="comment " id="Comment-5-">^this is something that I added, the original <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> pp did not have this entry</span>
 			<div class="comp" id="FAU_STG.1/IPS"><h4>FAU_STG.1/IPS Protected Audit Trail Storage</h4>
 			<div class="element"><div class="reqid" id="FAU_STG.1/IPS.1"><a href="#FAU_STG.1/IPS.1" class="abbr">FAU_STG.1/IPS.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall protect the stored <s>audit records </s><b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b> from unauthorized deletion.</div></div>
 			<div class="element"><div class="reqid" id="FAU_STG.1/IPS.2"><a href="#FAU_STG.1/IPS.2" class="abbr">FAU_STG.1/IPS.2</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to [<i>prevent</i>] unauthorized modifications to the <s>stored audit records</s> <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b> <s>in the audit trail</s>.</div></div>
+			
 			<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FAU_STG.1/IPS">FAU_STG.1/IPS</a></div>
 				
 		TODO: You need to explain the lack of EAs for this component!!!!
 	
 				
 				
-		TODO: You need to explain the lack of EAs for this component!!!!
-	
-				</div></div></div>
+				
+				
+			<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">The evaluator shall ensure that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> identifies how <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data is protected from unauthorized modification and deletion.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall confirm the guidance documentation describes how to protect <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data from unauthorized modification and deletion.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall devise tests that demonstrate that <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data can be protected from unauthorized modification and deletion.</div></div></div></div></div>
 			<div class="comp" id="FAU_STG.4/IPS"><h4>FAU_STG.4/IPS Prevention of Audit Data Loss</h4>
 			<div class="element"><div class="reqid" id="FAU_STG.4/IPS.1"><a href="#FAU_STG.4/IPS.1" class="abbr">FAU_STG.4/IPS.1</a></div><div class="reqdesc">
 			The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall <b>be able to</b>
 				[<b>selection</b>: <span class="selectable-content" id="_s_58">ignore <s>audited</s> <b>generation of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr></b> events <b>that would otherwise be generated</b></span>, <span class="selectable-content" id="_s_59">prevent audited <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr></b> events</span>, <span class="selectable-content" id="_s_60"><s>except those taken by the authorized user with special rights</s></span>, <span class="selectable-content" id="_s_61">overwrite the oldest stored <s>audit records</s> <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</span>], and [<i>no other actions</i>] if the <s>audit</s> <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b> trail is full.
 			
 			</div></div>
+			
 			<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FAU_STG.4/IPS">FAU_STG.4/IPS</a></div>
 				
-		TODO: You need to explain the lack of EAs for this component!!!!
-	
-				</div></div></div>
+				
+				
+				<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">The evaluator shall ensure that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> identifies how <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data logging is handled once the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data trail is full.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall confirm the guidance documentation describes any steps involved to manage <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data logging when the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> audit trail is full.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">There are no test EAs for this component.</div></div></div></div></div>
 	
 	<h3 id="fpt" class="indexable" data-level="3">A.1.2 Protection of the TSF (FPT)</h3>
 	<div class="comp" id="FPT_FLS.1"><h4>FPT_FLS.1 Failure with Preservation of Secure State</h4>
@@ -1989,7 +1992,21 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 	capable of being inspected by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>, then it should automatically be treated
 	as untrusted.
 	</span></div></div></div>
-	</div>
+	
+	<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FPT_FLS.1">FPT_FLS.1</a></div>
+	
+	<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">The evaluator shall examine the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> section to determine that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s implementation of the fail secure
+	functionality is documented. The evaluator shall ensure that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> identifies all failures that will result
+	in the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> preserving a secure state if triggered. The evaluator shall then ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> will attain
+	a secure state after inserting each specified failure mode type. The evaluator shall also examine the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr>
+	to determine whether the fail-secure functionality is configurable.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">There are no operational guidance EAs for this component.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">For each type of failure listed in the assignment, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> vendor must provide the evaluator with the
+	means to trigger the failure, and the evaluator shall reproduce each type of failure to ensure that an applied <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy remains enforced during the failure. For example, various causes including temporary
+	loss of power could result in a reboot of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. If the active <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy at the time of the failure (e.g.
+	reboot) ensured that <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> echo packets were dropped by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, the evaluator shall confirm that at no
+	point during the shutdown or restart of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is any <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> echo packet allowed through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> (though
+	in this example, it should be understood that there will be a period at which <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> events are not audited
+	while the audit mechanism is pending restart).
+	</div></div></div></div></div>
 	
 	<h3 id="ips" class="indexable" data-level="3">A.1.3 Intrusion Prevention (IPS)</h3>
 	<div class="comp" id="IPS_SBD_EXT.2"><h4>IPS_SBD_EXT.2 Traffic Normalization</h4>
@@ -1997,25 +2014,51 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
      <span class="assignable-content">other
 encapsulation methods</span>]</span>].
 	</div></div>
+
 	<div class="element"><div class="reqid" id="IPS_SBD_EXT.2.2"><a href="#IPS_SBD_EXT.2.2" class="abbr">IPS_SBD_EXT.2.2</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to perform IP normalization to reassemble fragmented packets for inspection, and: [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_68">For data collected at promiscuous interfaces: generate an alert if the packet cannot be reassembled;</span></li><li style=""><span class="selectable-content" id="_s_69">For data collected at inline interfaces: do not forward any packet fragments and generate an alert if the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> cannot reassemble the entire packet</span></li></ul>].</div></div>
-	<div class="element"><div class="reqid" id="IPS_SBD_EXT.2.3"><a href="#IPS_SBD_EXT.2.3" class="abbr">IPS_SBD_EXT.2.3</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to perform <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> normalization for traffic flows through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> when the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is deployed in inline mode, and prohibit forwarding of:[<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_70">duplicate packets;</span></li><li style=""><span class="selectable-content" id="_s_71">changed packets;</span></li><li style=""><span class="selectable-content" id="_s_72">out-of-sequence packets;</span></li><li style=""><span class="selectable-content" id="_s_73">
+	<div class="element"><div class="reqid" id="IPS_SBD_EXT.2.3"><a href="#IPS_SBD_EXT.2.3" class="abbr">IPS_SBD_EXT.2.3</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to perform <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> normalization for traffic flows through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> when the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is deployed in inline mode, and prohibit forwarding of: [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_70">duplicate packets;</span></li><li style=""><span class="selectable-content" id="_s_71">changed packets;</span></li><li style=""><span class="selectable-content" id="_s_72">out-of-sequence packets;</span></li><li style=""><span class="selectable-content" id="_s_73">
 			[<b>selection</b>: <span class="selectable-content" id="_s_74">[<b>assignment</b>: 
      <span class="assignable-content">other packet types that should not be
 forwarded</span>]</span>, <span class="selectable-content" id="_s_75">no other packets</span>]
 			</span></li></ul>]</div></div>
 	<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#IPS_SBD_EXT.2">IPS_SBD_EXT.2</a></div>
 		
-		TODO: You need to explain the lack of EAs for this component!!!!
+		
+		
+	
+		
+		
+		
+		
 	
 	
-		TODO: You need to explain the lack of EAs for this component!!!!
 	
-		TODO: You need to explain the lack of EAs for this component!!!!
-	</div></div></div>
+		<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> describes how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is able to inspect traffic inside the encapsulation protocols claimed in the requirement.</div><div class="ea">The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> describes how audit records are generated when packets cannot
+		be reassembled after fragmentation. Also, for inline mode, the evaluator shall examine the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> to ensure
+		packets are dropped.</div><div class="ea">The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> describes that packets are automatically dropped for the following normalization:<ul>
+	<li>duplicate packets</li>
+	<li>changed packets</li>
+	<li>out of sequence packets</li>
+	<li>other packet types claimed in the requirement, if any</li>
+	</ul></div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall examine the operational guidance to determine that it contains instructions for inspecting tunneled packets through the encapsulation methods identified in the requirement.</div><div class="ea">There are no guidance EAs for this element.</div><div class="ea">There are no guidance EAs for this element.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall set up the conditions necessary to execute testing from IPS_SBD_EXT.1 except that
+		the traffic to be inspected is encapsulated in one of the tunneling protocols that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is capable of
+		inspecting. The evaluator shall transmit the encapsulated traffic and observe that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> is able to inspect
+		it and respond in the configured manner. The evaluator shall repeat this test for each type of encapsulated
+		traffic supported by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>.</div><div class="ea">The evaluator shall perform the following tests:<span class="testlist-"><ul>
+		<li class="test-"><a id="_t_13" class="defined" href="#_t_13">Test IPS_SBD_EXT.2:1</a>:
+      The evaluator shall generate packets that cannot be reassembled after fragmentation; the evaluator shall ensure audit events are generated for all instances of IP normalization.</li>
+		<li class="test-"><a id="_t_14" class="defined" href="#_t_14">Test IPS_SBD_EXT.2:2</a>:
+      For inline mode: The evaluator shall test for automatic packet rejection for when packets cannot be reassembled after fragmentation. The evaluator shall use packet captures to ensure that the IP traffic is detected by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and packets are dropped.</li>
+		<li class="test-"><a id="_t_15" class="defined" href="#_t_15">Test IPS_SBD_EXT.2:3</a>:
+      The evaluator shall generate packets that can be reassembled after fragmentation; the evaluator shall ensure audit events are generated for all instances of IP normalization.</li>
+		</ul></span></div><div class="ea">The evaluator shall generate the following types of packets and observe that they are discarded by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>: <ul><li>duplicate packets</li>
+		<li>duplicate packets</li>
+		<li>changed packets</li>
+		<li>out of sequence packets</li>
+		<li>other packet types claimed in the requirement, if any</li>
+		</ul>
+</div></div></div></div></div>
 	
-
-
-
 	<h2 id="obj-sfrs" class="indexable" data-level="2">A.2 Objective Requirements
     </h2><p>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any 
        Objective       <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr>.</p><h2 id="impl-dep-sfrs" class="indexable" data-level="2">A.3 Implementation-dependent Requirements

@@ -727,21 +727,62 @@ The following sections list Common Criteria and technology terms used in this do
 	
 				
 				
-		TODO: You need to explain the lack of EAs for this component!!!!
-	
-				</span></div><div class="comp" id="FAU-STG.4-IPS"><h4>FAU_STG.4/IPS Prevention of Audit Data Loss</h4><span class="activity_pane_body"><div class="component-activity-header">FAU_STG.4/IPS</div>
 				
-		TODO: You need to explain the lack of EAs for this component!!!!
+				
+			<div class="eacategory">TSS</div><div class="ea"><div class="ea">The evaluator shall ensure that the TSS identifies how IPS data is protected from unauthorized modification and deletion.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall confirm the guidance documentation describes how to protect IPS data from unauthorized modification and deletion.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall devise tests that demonstrate that IPS data can be protected from unauthorized modification and deletion.</div></div></span></div><div class="comp" id="FAU-STG.4-IPS"><h4>FAU_STG.4/IPS Prevention of Audit Data Loss</h4><span class="activity_pane_body"><div class="component-activity-header">FAU_STG.4/IPS</div>
+				
+				
+				
+				<div class="eacategory">TSS</div><div class="ea"><div class="ea">The evaluator shall ensure that the TSS identifies how IPS data logging is handled once the IPS data trail is full.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall confirm the guidance documentation describes any steps involved to manage IPS data logging when the IPS audit trail is full.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">There are no test EAs for this component.</div></div></span></div><h2 class="indexable" data-level="2" id="fpt">2.3.2 Protection of the TSF (FPT)</h2><div class="comp" id="FPT-FLS.1"><h4>FPT_FLS.1 Failure with Preservation of Secure State</h4><span class="activity_pane_body"><div class="component-activity-header">FPT_FLS.1</div>
 	
-				</span></div><h2 class="indexable" data-level="2" id="fpt">2.3.2 Protection of the TSF (FPT)</h2><div class="comp" id="FPT-FLS.1"><h4>FPT_FLS.1 Failure with Preservation of Secure State</h4><span class="activity_pane_body"></span></div><h2 class="indexable" data-level="2" id="ips">2.3.3 Intrusion Prevention (IPS)</h2><div class="comp" id="IPS-SBD.2"><h4>IPS_SBD_EXT.2 Traffic Normalization</h4><span class="activity_pane_body"><div class="component-activity-header">IPS_SBD_EXT.2</div>
+	<div class="eacategory">TSS</div><div class="ea"><div class="ea">The evaluator shall examine the TSS section to determine that the TOE’s implementation of the fail secure
+	functionality is documented. The evaluator shall ensure that the TSS identifies all failures that will result
+	in the TOE preserving a secure state if triggered. The evaluator shall then ensure that the TOE will attain
+	a secure state after inserting each specified failure mode type. The evaluator shall also examine the TSS
+	to determine whether the fail-secure functionality is configurable.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">There are no operational guidance EAs for this component.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">For each type of failure listed in the assignment, the TOE vendor must provide the evaluator with the
+	means to trigger the failure, and the evaluator shall reproduce each type of failure to ensure that an applied IPS policy remains enforced during the failure. For example, various causes including temporary
+	loss of power could result in a reboot of the TOE. If the active IPS policy at the time of the failure (e.g.
+	reboot) ensured that ICMP echo packets were dropped by the TOE, the evaluator shall confirm that at no
+	point during the shutdown or restart of the TOE is any ICMP echo packet allowed through the TOE (though
+	in this example, it should be understood that there will be a period at which IPS events are not audited
+	while the audit mechanism is pending restart).
+	</div></div></span></div><h2 class="indexable" data-level="2" id="ips">2.3.3 Intrusion Prevention (IPS)</h2><div class="comp" id="IPS-SBD.2"><h4>IPS_SBD_EXT.2 Traffic Normalization</h4><span class="activity_pane_body"><div class="component-activity-header">IPS_SBD_EXT.2</div>
 		
-		TODO: You need to explain the lack of EAs for this component!!!!
+		
+		
+	
+		
+		
+		
+		
 	
 	
-		TODO: You need to explain the lack of EAs for this component!!!!
 	
-		TODO: You need to explain the lack of EAs for this component!!!!
-	</span></div><h2 class="indexable" data-level="1" id="sel-sfrs">2.4 Evaluation Activities for Selection-Based SFRs</h2>The PP-Module does not define any selection-based requirements.<h2 class="indexable" data-level="1" id="obj-sfrs">2.5 Evaluation Activities for Objective SFRs</h2>The PP-Module does not define any objective requirements.<h2 class="indexable" data-level="1" id="impl-sfrs-">2.6 Evaluation Activities for Implementation-dependent SFRs</h2>The PP-Module does not define any implementation-dependent requirements.<h1 id="sar_aas" class="indexable" data-level="0">3 Evaluation Activities for SARs</h1><p>The PP-Module does not define any SARs beyond those defined within the
+		<div class="eacategory">TSS</div><div class="ea"><div class="ea">The evaluator shall verify that the TSS describes how the TOE is able to inspect traffic inside the encapsulation protocols claimed in the requirement.</div><div class="ea">The evaluator shall verify that the TSS describes how audit records are generated when packets cannot
+		be reassembled after fragmentation. Also, for inline mode, the evaluator shall examine the TSS to ensure
+		packets are dropped.</div><div class="ea">The evaluator shall verify that the TSS describes that packets are automatically dropped for the following normalization:<ul>
+	<li>duplicate packets</li>
+	<li>changed packets</li>
+	<li>out of sequence packets</li>
+	<li>other packet types claimed in the requirement, if any</li>
+	</ul></div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall examine the operational guidance to determine that it contains instructions for inspecting tunneled packets through the encapsulation methods identified in the requirement.</div><div class="ea">There are no guidance EAs for this element.</div><div class="ea">There are no guidance EAs for this element.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall set up the conditions necessary to execute testing from IPS_SBD_EXT.1 except that
+		the traffic to be inspected is encapsulated in one of the tunneling protocols that the TOE is capable of
+		inspecting. The evaluator shall transmit the encapsulated traffic and observe that the TSF is able to inspect
+		it and respond in the configured manner. The evaluator shall repeat this test for each type of encapsulated
+		traffic supported by the TSF.</div><div class="ea">The evaluator shall perform the following tests:<span class="testlist-"><ul>
+		<li class="test-"><a id="_t_13" class="defined" href="#_t_13">Test IPS_SBD_EXT.2:1</a>:
+      The evaluator shall generate packets that cannot be reassembled after fragmentation; the evaluator shall ensure audit events are generated for all instances of IP normalization.</li>
+		<li class="test-"><a id="_t_14" class="defined" href="#_t_14">Test IPS_SBD_EXT.2:2</a>:
+      For inline mode: The evaluator shall test for automatic packet rejection for when packets cannot be reassembled after fragmentation. The evaluator shall use packet captures to ensure that the IP traffic is detected by the TOE and packets are dropped.</li>
+		<li class="test-"><a id="_t_15" class="defined" href="#_t_15">Test IPS_SBD_EXT.2:3</a>:
+      The evaluator shall generate packets that can be reassembled after fragmentation; the evaluator shall ensure audit events are generated for all instances of IP normalization.</li>
+		</ul></span></div><div class="ea">The evaluator shall generate the following types of packets and observe that they are discarded by the TSF: <ul><li>duplicate packets</li>
+		<li>duplicate packets</li>
+		<li>changed packets</li>
+		<li>out of sequence packets</li>
+		<li>other packet types claimed in the requirement, if any</li>
+		</ul>
+</div></div></span></div><h2 class="indexable" data-level="1" id="sel-sfrs">2.4 Evaluation Activities for Selection-Based SFRs</h2>The PP-Module does not define any selection-based requirements.<h2 class="indexable" data-level="1" id="obj-sfrs">2.5 Evaluation Activities for Objective SFRs</h2>The PP-Module does not define any objective requirements.<h2 class="indexable" data-level="1" id="impl-sfrs-">2.6 Evaluation Activities for Implementation-dependent SFRs</h2>The PP-Module does not define any implementation-dependent requirements.<h1 id="sar_aas" class="indexable" data-level="0">3 Evaluation Activities for SARs</h1><p>The PP-Module does not define any SARs beyond those defined within the
     
 	base NDcPP to which it must claim conformance.
 	It is important to note that a TOE that is evaluated against the PP-Module is

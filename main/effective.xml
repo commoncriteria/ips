@@ -591,6 +591,7 @@ enforce its policies on network traffic of monitored networks.</description>
 	    <audit-table table="mandatory" id="mandatory-audit-events">
 	      <h:br/><h:b><ctr ctr-type="Table" pre="Table " id="atref-mandatory">: Auditable Events for Mandatory SFRs</ctr></h:b>
 	    </audit-table>
+		<comment>some audits end without completing the sentence.</comment>
 	  </section>
 
 		<!-- Section for SFR Class -->
@@ -1496,9 +1497,12 @@ enforce its policies on network traffic of monitored networks.</description>
 			<f-element id="fau-stg-1e2">
 				<title>The TSF shall be able to [<h:i>prevent</h:i>] unauthorized modifications to the <h:s>stored audit records</h:s> <h:b>IPS data</h:b> <h:s>in the audit trail</h:s>.</title>
 				<aactivity>
-				<no-tests/>
-				</aactivity>
+				<TSS>The evaluator shall ensure that the TSS identifies how IPS data is protected from unauthorized modification and deletion.</TSS>
+				<Guidance>The evaluator shall confirm the guidance documentation describes how to protect IPS data from unauthorized modification and deletion.</Guidance>
+				<Tests>The evaluator shall devise tests that demonstrate that IPS data can be protected from unauthorized modification and deletion.</Tests>
+			</aactivity>
 			</f-element>
+			
 			</f-component>
 			<f-component name="Prevention of Audit Data Loss" cc-id="fau_stg.4/ips" id="fau-stg.4-ips">
 			<f-element id="fau-stg-4e1">
@@ -1513,9 +1517,14 @@ enforce its policies on network traffic of monitored networks.</description>
 			
 			</title>
 			<aactivity>
-				<no-tests/>
+				<TSS>The evaluator shall ensure that the TSS identifies how IPS data logging is handled once the IPS data trail is full.</TSS>
+				<Guidance>The evaluator shall confirm the guidance documentation describes any steps involved to manage IPS data logging when the IPS audit trail is full.</Guidance>
+				<Tests>There are no test EAs for this component.</Tests>
 				</aactivity>
 			</f-element>
+			<audit-event>
+			<audit-event-descr>A local audit store reaches its storage limit.</audit-event-descr>
+			<audit-event-info>Indication that the audit store is full, and (if configurable) how the TOE is responding (e.g. failing to audit new auditable events, or </audit-event-info></audit-event>
 			</f-component>
 	</section>
 	<section title="Protection of the TSF (FPT)" id="fpt">
@@ -1538,7 +1547,24 @@ enforce its policies on network traffic of monitored networks.</description>
 	capable of being inspected by the TSF, then it should automatically be treated
 	as untrusted.
 	</note>
+	<aactivity><TSS>The evaluator shall examine the TSS section to determine that the TOE’s implementation of the fail secure
+	functionality is documented. The evaluator shall ensure that the TSS identifies all failures that will result
+	in the TOE preserving a secure state if triggered. The evaluator shall then ensure that the TOE will attain
+	a secure state after inserting each specified failure mode type. The evaluator shall also examine the TSS
+	to determine whether the fail-secure functionality is configurable.</TSS>
+	<Guidance>There are no operational guidance EAs for this component.</Guidance>
+	<Tests>For each type of failure listed in the assignment, the TOE vendor must provide the evaluator with the
+	means to trigger the failure, and the evaluator shall reproduce each type of failure to ensure that an applied IPS policy remains enforced during the failure. For example, various causes including temporary
+	loss of power could result in a reboot of the TOE. If the active IPS policy at the time of the failure (e.g.
+	reboot) ensured that ICMP echo packets were dropped by the TOE, the evaluator shall confirm that at no
+	point during the shutdown or restart of the TOE is any ICMP echo packet allowed through the TOE (though
+	in this example, it should be understood that there will be a period at which IPS events are not audited
+	while the audit mechanism is pending restart).
+	</Tests></aactivity>
 	</f-element>
+	<audit-event>
+	<audit-event-descr>A local audit store reaches its storage limit.</audit-event-descr>
+	<audit-event-info>Indication that the audit store is full, and (if configurable) how the TOE is responding (e.g. failing to audit new auditable events, or </audit-event-info></audit-event>
 	</f-component>
 	</section>
 	<section title="Intrusion Prevention (IPS)" id="ips">
@@ -1548,9 +1574,16 @@ enforce its policies on network traffic of monitored networks.</description>
 encapsulation methods</assignable></selectable></selectables>.
 	</title>
 	<aactivity>
-		<no-tests/>
+		<TSS>The evaluator shall verify that the TSS describes how the TOE is able to inspect traffic inside the encapsulation protocols claimed in the requirement.</TSS>
+		<Guidance>The evaluator shall examine the operational guidance to determine that it contains instructions for inspecting tunneled packets through the encapsulation methods identified in the requirement.</Guidance>
+		<Tests>The evaluator shall set up the conditions necessary to execute testing from IPS_SBD_EXT.1 except that
+		the traffic to be inspected is encapsulated in one of the tunneling protocols that the TOE is capable of
+		inspecting. The evaluator shall transmit the encapsulated traffic and observe that the TSF is able to inspect
+		it and respond in the configured manner. The evaluator shall repeat this test for each type of encapsulated
+		traffic supported by the TSF.</Tests>
 	</aactivity>
 	</f-element>
+
 	<f-element id="ips-sbd-ext-2e2">
 	<title>The TSF shall be able to perform IP normalization to reassemble fragmented packets for inspection, and: <selectables linebreak="yes">
 	<selectable>For data collected at promiscuous interfaces: generate an alert if the packet cannot be reassembled;</selectable>
@@ -1558,10 +1591,20 @@ encapsulation methods</assignable></selectable></selectables>.
 
 
 	</selectables>.</title>
-	<aactivity><no-tests/></aactivity>
+	<aactivity>
+		<TSS>The evaluator shall verify that the TSS describes how audit records are generated when packets cannot
+		be reassembled after fragmentation. Also, for inline mode, the evaluator shall examine the TSS to ensure
+		packets are dropped.</TSS>
+		<Guidance>There are no guidance EAs for this element.</Guidance>
+		<Tests>The evaluator shall perform the following tests:<testlist>
+		<test>The evaluator shall generate packets that cannot be reassembled after fragmentation; the evaluator shall ensure audit events are generated for all instances of IP normalization.</test>
+		<test>For inline mode: The evaluator shall test for automatic packet rejection for when packets cannot be reassembled after fragmentation. The evaluator shall use packet captures to ensure that the IP traffic is detected by the TOE and packets are dropped.</test>
+		<test>The evaluator shall generate packets that can be reassembled after fragmentation; the evaluator shall ensure audit events are generated for all instances of IP normalization.</test>
+		</testlist></Tests>
+		</aactivity>
 	</f-element>
 	<f-element id="ips-sbd-ext-2e3">
-	<title>The TSF shall be able to perform TCP normalization for traffic flows through the TOE when the TOE is deployed in inline mode, and prohibit forwarding of:<selectables linebreak="yes">
+	<title>The TSF shall be able to perform TCP normalization for traffic flows through the TOE when the TOE is deployed in inline mode, and prohibit forwarding of: <selectables linebreak="yes">
 		<selectable>duplicate packets;</selectable>
 		<selectable>changed packets;</selectable>
 		<selectable>out-of-sequence packets;</selectable>
@@ -1571,13 +1614,25 @@ forwarded</assignable></selectable>
 			<selectable>no other packets</selectable>
 			</selectables>
 			</selectable></selectables></title>
-	<aactivity><no-tests/></aactivity>
+	<aactivity>
+	<TSS>The evaluator shall verify that the TSS describes that packets are automatically dropped for the following normalization:<h:ul>
+	<h:li>duplicate packets</h:li>
+	<h:li>changed packets</h:li>
+	<h:li>out of sequence packets</h:li>
+	<h:li>other packet types claimed in the requirement, if any</h:li>
+	</h:ul></TSS>
+	<Guidance>There are no guidance EAs for this element.</Guidance>
+	<Tests>The evaluator shall generate the following types of packets and observe that they are discarded by the TSF: <h:ul><h:li>duplicate packets</h:li>
+		<h:li>duplicate packets</h:li>
+		<h:li>changed packets</h:li>
+		<h:li>out of sequence packets</h:li>
+		<h:li>other packet types claimed in the requirement, if any</h:li>
+		</h:ul>
+</Tests>
+		</aactivity>
 	</f-element>
 	</f-component>
 	</section>
-
-
-
 	</opt-sfrs>		
     <sel-sfrs/>
     <obj-sfrs/>

@@ -1,5 +1,3 @@
-* Error: f-element FPT_FLS.1.1  appears not to have an associated evaluation activity.:
-        /Module[1]""/sec:Security_Requirements[1]""/opt-sfrs[1]""/section[2]""/f-component[1]""/f-element[1]""
 * Warning: This document still has at least one comment.
 * Error: Detected dangling id-reference to fcs-eap-ext-1 from attribute
         on/Module[1]""/include-pkg[2]""/depends[1]""/on[1]""
