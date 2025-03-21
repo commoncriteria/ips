@@ -1120,6 +1120,22 @@ enforce its policies on network traffic of monitored networks.</description>
 				<no-tests/>   
                  </aactivity>
                 </f-element>
+				<f-element id="ips-sbd-ext-1e5">
+                <title>
+				The TSF shall allow the following operations to be associated with signaturebased IPS policies:
+				<h:ol>
+					<h:li>In any mode, for any sensor interface: <selectables linebreak='yes'>
+						<selectable>allow the traffic flow;</selectable>
+						<selectable>send a TCP reset to the source address of the offending traffic;</selectable>
+						<selectable>send a TCP reset to the destination address of the offending traffic;</selectable>
+						<selectable>send an ICMP<selectables><selectable>host</selectable><selectable>destination</selectable><selectable>port</selectable></selectables>unreachable message;</selectable>
+						</selectables></h:li>
+				</h:ol>
+                </title>
+                <aactivity>
+				<no-tests/>   
+                 </aactivity>
+                </f-element>
 				</f-component>
 			</section>
 
