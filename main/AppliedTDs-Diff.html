@@ -242,7 +242,7 @@
             The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may be a distributed <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> in which some <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> or elements of <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> are enforced by separate <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> components distributed across an IP network. In such cases, the NDcPP guidance on the handling of distributed <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr> applies. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not mandate that specific <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> be assigned to specific components in a distributed <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>; however, it is expected that any <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> component that enforces any <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> function must enforce all dependent functionality for management and audit at minimum
         </p>
         <p>
-            Deployment scenarios supported by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> include those shown in Figure 1, which includes a number of possible deployments or use cases for <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality within a single network. Note that this is just an example of an <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> deployment where individual devices implement specific <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality differently; per the requirements in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> (specifically IPS_NTA_EXT.1), a conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must implement both promiscuous and inline mode interfaces, though it is not a requirement for every <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> component to implement both modes.
+            Deployment scenarios supported by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> include those shown in Figure 1, which includes a number of possible deployments or use cases for <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality within a single network. Note that this is just an example of an <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> deployment where individual devices implement specific <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality differently; per the requirements in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> (specifically <a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a>), a conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must implement both promiscuous and inline mode interfaces, though it is not a requirement for every <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> component to implement both modes.
         </p>
         <ul>
             <li>
@@ -705,11 +705,11 @@
                 </div>
             </div>
         </div>
-        <div class="comp" id="FIP_IPB_EXT.1">
-            <h4>FIP_IPB_EXT.1 IP Blocking</h4>
+        <div class="comp" id="IPS_IPB_EXT.1">
+            <h4>IPS_IPB_EXT.1 IP Blocking</h4>
             <div class="element">
-                <div class="reqid" id="FIP_IPB_EXT.1.1">
-                    <a href="#FIP_IPB_EXT.1.1" class="abbr">FIP_IPB_EXT.1.1</a>
+                <div class="reqid" id="IPS_IPB_EXT.1.1">
+                    <a href="#IPS_IPB_EXT.1.1" class="abbr">IPS_IPB_EXT.1.1</a>
                 </div>
                 <div class="reqdesc">
                      The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support configuration and implementation of known-good and known-bad lists of [<b>selection</b>: <span class="selectable-content" id="_s_25">source</span>, <span class="selectable-content" id="_s_26">destination</span>] IP addresses and [<b>selection</b>: <span class="selectable-content" id="_s_27">no additional address types</span>, <span class="selectable-content" id="_s_28"> [<b>assignment</b>: <span class="assignable-content">list of address types</span>] </span>] 
@@ -719,19 +719,19 @@
                 </div>
             </div>
             <div class="element">
-                <div class="reqid" id="FIP_IPB_EXT.1.2">
-                    <a href="#FIP_IPB_EXT.1.2" class="abbr">FIP_IPB_EXT.1.2</a>
+                <div class="reqid" id="IPS_IPB_EXT.1.2">
+                    <a href="#IPS_IPB_EXT.1.2" class="abbr">IPS_IPB_EXT.1.2</a>
                 </div>
                 <div class="reqdesc">
                      The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow [Security Administrators] to configure the following <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements: [<b>selection</b>: <span class="selectable-content" id="_s_29">known-good list rules</span>, <span class="selectable-content" id="_s_30">known-bad list rules</span>, <span class="selectable-content" id="_s_31">IP addresses</span>, <span class="selectable-content" id="_s_32"> [<b>assignment</b>: <span class="assignable-content">other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements </span>]</span>, <span class="selectable-content" id="_s_33">no other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements</span>]. 
                 </div>
             </div>
         </div>
-        <div class="comp" id="FIP_NTA_EXT.1">
-            <h4>FIP_NTA_EXT.1 I Network Traffic Analysis</h4>
+        <div class="comp" id="IPS_NTA_EXT.1">
+            <h4>IPS_NTA_EXT.1 Network Traffic Analysis</h4>
             <div class="element">
-                <div class="reqid" id="FIP_NTA_EXT.1.1">
-                    <a href="#FIP_NTA_EXT.1.1" class="abbr">FIP_NTA_EXT.1.1</a>
+                <div class="reqid" id="IPS_NTA_EXT.1.1">
+                    <a href="#IPS_NTA_EXT.1.1" class="abbr">IPS_NTA_EXT.1.1</a>
                 </div>
                 <div class="reqdesc">
                      The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall perform analysis of IP-based network traffic forwarded to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&rsquo;s sensor interfaces, and detect violations of administratively-defined <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies. 
@@ -741,8 +741,8 @@
                 </div>
             </div>
             <div class="element">
-                <div class="reqid" id="FIP_NTA_EXT.1.2">
-                    <a href="#FIP_NTA_EXT.1.2" class="abbr">FIP_NTA_EXT.1.2</a>
+                <div class="reqid" id="IPS_NTA_EXT.1.2">
+                    <a href="#IPS_NTA_EXT.1.2" class="abbr">IPS_NTA_EXT.1.2</a>
                 </div>
                 <div class="reqdesc">
                      The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall process (be capable of inspecting) the following network traffic protocols: 
@@ -772,8 +772,8 @@
                 </div>
             </div>
             <div class="element">
-                <div class="reqid" id="FIP_NTA_EXT.1.3">
-                    <a href="#FIP_NTA_EXT.1.3" class="abbr">FIP_NTA_EXT.1.3</a>
+                <div class="reqid" id="IPS_NTA_EXT.1.3">
+                    <a href="#IPS_NTA_EXT.1.3" class="abbr">IPS_NTA_EXT.1.3</a>
                 </div>
                 <div class="reqdesc">
                      The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow the signatures to be assigned to sensor interfaces configured for promiscuous mode, and to interfaces configured for inline mode, and support designation of one or more interfaces as &lsquo;management&rsquo; for communication between the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and external entities without simultaneously being sensor interfaces. 
@@ -812,10 +812,44 @@
                                 The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may support separate interfaces to be used for administration/management purposes that can be configured as <abbr class="dyn-abbr"><a href="#abbr_OSI">OSI</a></abbr> Layer 3 interfaces for communication between the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and remote entities including all entities defined in FTP_ITC, and FTP_TRP. The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may optionally support additional interface types. Session-reset interfaces can be the same as any of the promiscuous, inline, management, or other interfaces, or can be separate interfaces. Session-reset functionality is not mandatory functionality for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, but is a selectable option within the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>. 
                             </p>
                             <p>
-                                As mentioned in the application note for IPS_NTA_EXT.1.1, it&rsquo;s not necessary for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to have multiple single-purpose interfaces (e.g. &ldquo;sensor&rdquo; interface, &ldquo;management&rdquo; interface, etc.), though it is expected that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> be able to enable specific ports to serve one or more specific interface functions. 
+                                As mentioned in the application note for <a href="#IPS_NTA_EXT.1.1">IPS_NTA_EXT.1.1</a>, it&rsquo;s not necessary for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to have multiple single-purpose interfaces (e.g. &ldquo;sensor&rdquo; interface, &ldquo;management&rdquo; interface, etc.), though it is expected that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> be able to enable specific ports to serve one or more specific interface functions. 
                             </p>
                         </span>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="comp" id="IPS_SDB_EXT.1">
+            <h4>IPS_SDB_EXT.1 Signature-Based IPS Functionality</h4>
+            <div class="element">
+                <div class="reqid" id="IPS_SDB_EXT.1.1">
+                    <a href="#IPS_SDB_EXT.1.1" class="abbr">IPS_SDB_EXT.1.1</a>
+                </div>
+                <div class="reqdesc">
+                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support inspection of packet header contents and be able to inspect at least the following header fields: [ 
+                    <ul>
+                        <li>
+                            <i>IPv4: version; header length; packet length; ID; IP flags; fragment offset;time to live (<abbr class="dyn-abbr"><a href="#abbr_TTL">TTL</a></abbr>); protocol; header checksum; source address; destination address; IP options; and[<b>selection</b>: <span class="selectable-content" id="_s_37">type of service (<abbr class="dyn-abbr"><a href="#abbr_ToS">ToS</a></abbr>)</span>, <span class="selectable-content" id="_s_38">no other field</span>].</i>
+                        </li>
+                        <li>
+                            <i>IPv6: version; payload length; next header; hop limit; source address; destination address; routing header; and</i>[<b>selection</b>: <span class="selectable-content" id="_s_39">traffic class</span>, <span class="selectable-content" id="_s_40">flow label</span>, <span class="selectable-content" id="_s_41">no other field</span>] 
+                        </li>
+                        <li>
+                            <i><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>: type; code; header checksum; and</i>
+                        </li>
+                        <li>
+                            <i></i>
+                        </li>
+                        <li>
+                            <i></i>
+                        </li>
+                        <li>
+                            <i></i>
+                        </li>
+                        <li>
+                            <i></i>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -913,10 +947,13 @@
                 <td><a href="#FIP_ABD_EXT.1">FIP_ABD_EXT.1</a></td><td></td>
             </tr>
             <tr>
-                <td><a href="#FIP_IPB_EXT.1">FIP_IPB_EXT.1</a></td><td></td>
+                <td><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td></td>
             </tr>
             <tr>
-                <td><a href="#FIP_NTA_EXT.1">FIP_NTA_EXT.1</a></td><td></td>
+                <td><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td></td>
+            </tr>
+            <tr>
+                <td><a href="#IPS_SDB_EXT.1">IPS_SDB_EXT.1</a></td><td></td>
             </tr>
             <tr>
                 <th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th>

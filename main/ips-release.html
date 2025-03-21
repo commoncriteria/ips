@@ -792,7 +792,7 @@ The following sections list Common Criteria and technology terms used in this do
 		<p>Deployment scenarios supported by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> include those shown in Figure 1, which includes a number of
 		possible deployments or use cases for <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality within a single network. Note that this is just an
 		example of an <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> deployment where individual devices implement specific <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality differently;
-		per the requirements in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> (specifically IPS_NTA_EXT.1), a conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must implement
+		per the requirements in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> (specifically <a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a>), a conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must implement
 		both promiscuous and inline mode interfaces, though it is not a requirement for every <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> component to
 		implement both modes.</p>
 			<ul>
@@ -1270,8 +1270,8 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 				</ul>
 				</div></div>
 				</div>
-				<div class="comp" id="FIP_IPB_EXT.1"><h4>FIP_IPB_EXT.1 IP Blocking</h4>
-				<div class="element"><div class="reqid" id="FIP_IPB_EXT.1.1"><a href="#FIP_IPB_EXT.1.1" class="abbr">FIP_IPB_EXT.1.1</a></div><div class="reqdesc">
+				<div class="comp" id="IPS_IPB_EXT.1"><h4>IPS_IPB_EXT.1 IP Blocking</h4>
+				<div class="element"><div class="reqid" id="IPS_IPB_EXT.1.1"><a href="#IPS_IPB_EXT.1.1" class="abbr">IPS_IPB_EXT.1.1</a></div><div class="reqdesc">
 					The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support configuration and implementation of known-good and known-bad lists of [<b>selection</b>: <span class="selectable-content" id="_s_25">source</span>, <span class="selectable-content" id="_s_26">destination</span>] IP addresses and [<b>selection</b>: <span class="selectable-content" id="_s_27">no additional address types</span>, <span class="selectable-content" id="_s_28">
 							[<b>assignment</b>: 
      <span class="assignable-content">list of address types</span>]
@@ -1286,13 +1286,13 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 						that would allow/prohibit traffic flow based on other address types, such as
 						<abbr class="dyn-abbr"><a href="#abbr_MAC">MAC</a></abbr> addresses.
 					</span></div></div></div>
-				<div class="element"><div class="reqid" id="FIP_IPB_EXT.1.2"><a href="#FIP_IPB_EXT.1.2" class="abbr">FIP_IPB_EXT.1.2</a></div><div class="reqdesc">
+				<div class="element"><div class="reqid" id="IPS_IPB_EXT.1.2"><a href="#IPS_IPB_EXT.1.2" class="abbr">IPS_IPB_EXT.1.2</a></div><div class="reqdesc">
 					The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow [Security Administrators] to configure the following <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements: [<b>selection</b>: <span class="selectable-content" id="_s_29">known-good list rules</span>, <span class="selectable-content" id="_s_30">known-bad list rules</span>, <span class="selectable-content" id="_s_31">IP addresses</span>, <span class="selectable-content" id="_s_32"> [<b>assignment</b>: 
      <span class="assignable-content">other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements </span>]</span>, <span class="selectable-content" id="_s_33">no other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements</span>].
 					</div></div>
 				</div>
-				<div class="comp" id="FIP_NTA_EXT.1"><h4>FIP_NTA_EXT.1 I Network Traffic Analysis</h4>
-				<div class="element"><div class="reqid" id="FIP_NTA_EXT.1.1"><a href="#FIP_NTA_EXT.1.1" class="abbr">FIP_NTA_EXT.1.1</a></div><div class="reqdesc">
+				<div class="comp" id="IPS_NTA_EXT.1"><h4>IPS_NTA_EXT.1 Network Traffic Analysis</h4>
+				<div class="element"><div class="reqid" id="IPS_NTA_EXT.1.1"><a href="#IPS_NTA_EXT.1.1" class="abbr">IPS_NTA_EXT.1.1</a></div><div class="reqdesc">
 					The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall perform analysis of IP-based network traffic forwarded to the
 					<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s sensor interfaces, and detect violations of administratively-defined <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr>
 					policies.
@@ -1310,7 +1310,7 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 						lists, known-bad lists, signature-based rules, and anomaly- based rules), but any
 						such configurability is not required by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
 					</span></div></div></div>
-				<div class="element"><div class="reqid" id="FIP_NTA_EXT.1.2"><a href="#FIP_NTA_EXT.1.2" class="abbr">FIP_NTA_EXT.1.2</a></div><div class="reqdesc">
+				<div class="element"><div class="reqid" id="IPS_NTA_EXT.1.2"><a href="#IPS_NTA_EXT.1.2" class="abbr">IPS_NTA_EXT.1.2</a></div><div class="reqdesc">
 					The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall process (be capable of inspecting) the following network traffic protocols:	
 					<ul>
 					<li>[Internet Protocol version 4 (IPv4), <abbr class="dyn-abbr"><a href="#abbr_RFC">RFC</a></abbr> 791</li>
@@ -1333,7 +1333,7 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 							<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must be capable of understanding the <abbr class="dyn-abbr"><a href="#abbr_RFC">RFC</a></abbr> implementation to the extent the
 							<abbr class="dyn-abbr"><a href="#abbr_RFC">RFC</a></abbr> parameters are identified throughout the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr>.
 						</span></div></div></div>
-				<div class="element"><div class="reqid" id="FIP_NTA_EXT.1.3"><a href="#FIP_NTA_EXT.1.3" class="abbr">FIP_NTA_EXT.1.3</a></div><div class="reqdesc">
+				<div class="element"><div class="reqid" id="IPS_NTA_EXT.1.3"><a href="#IPS_NTA_EXT.1.3" class="abbr">IPS_NTA_EXT.1.3</a></div><div class="reqdesc">
 					The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow the signatures to be assigned to sensor interfaces configured
 					for promiscuous mode, and to interfaces configured for inline mode, and
 					support designation of one or more interfaces as ‘management’ for communication between the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and external entities without simultaneously
@@ -1374,19 +1374,29 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 					interfaces. Session-reset functionality is not mandatory functionality for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>,
 					but is a selectable option within the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>.
 					</p>
-					<p>As mentioned in the application note for IPS_NTA_EXT.1.1, it’s not necessary for
+					<p>As mentioned in the application note for <a href="#IPS_NTA_EXT.1.1">IPS_NTA_EXT.1.1</a>, it’s not necessary for
 					the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to have multiple single-purpose interfaces (e.g. “sensor” interface,
 					“management” interface, etc.), though it is expected that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> be able to
 					enable specific ports to serve one or more specific interface functions.
 					</p>
 					</span></div></div></div>
-
-
-
-
-
-
-
+				</div>
+				<div class="comp" id="IPS_SDB_EXT.1"><h4>IPS_SDB_EXT.1 Signature-Based IPS Functionality</h4>
+				<div class="element"><div class="reqid" id="IPS_SDB_EXT.1.1"><a href="#IPS_SDB_EXT.1.1" class="abbr">IPS_SDB_EXT.1.1</a></div><div class="reqdesc">
+					The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support inspection of packet header contents and be able to inspect at least the following header fields: [
+					<ul>
+					<li><i>IPv4: version; header length; packet length; ID; IP flags; fragment offset;time to live (<abbr class="dyn-abbr"><a href="#abbr_TTL">TTL</a></abbr>); protocol; header checksum; source address; destination address; IP options; and[<b>selection</b>: <span class="selectable-content" id="_s_37">type of service (<abbr class="dyn-abbr"><a href="#abbr_ToS">ToS</a></abbr>)</span>, <span class="selectable-content" id="_s_38">no other field</span>].</i></li>
+					<li><i>IPv6: version; payload length; next header; hop limit; source address; destination address; routing header; and</i>[<b>selection</b>: <span class="selectable-content" id="_s_39">traffic class</span>, <span class="selectable-content" id="_s_40">flow label</span>, <span class="selectable-content" id="_s_41">no other field</span>]
+					</li>
+					<li><i><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>: type; code; header checksum; and</i></li>
+					<li><i></i></li>
+					<li><i></i></li>
+					<li><i></i></li>
+					<li><i></i></li>
+					</ul>
+				</div></div>
+				
+				
 				
 				</div>
 			
@@ -1467,7 +1477,7 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 		  </td></tr><tr><th colspan="2"> Additional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th></tr><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not add any requirements when the
 	      NDcPP is the base.
-	    </td></tr><tr><th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a></td><td></td></tr><tr><td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td></td></tr><tr><td><a href="#FIP_ABD_EXT.1">FIP_ABD_EXT.1</a></td><td></td></tr><tr><td><a href="#FIP_IPB_EXT.1">FIP_IPB_EXT.1</a></td><td></td></tr><tr><td><a href="#FIP_NTA_EXT.1">FIP_NTA_EXT.1</a></td><td></td></tr></tr><tr><th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
+	    </td></tr><tr><th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a></td><td></td></tr><tr><td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td></td></tr><tr><td><a href="#FIP_ABD_EXT.1">FIP_ABD_EXT.1</a></td><td></td></tr><tr><td><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td></td></tr><tr><td><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td></td></tr><tr><td><a href="#IPS_SDB_EXT.1">IPS_SDB_EXT.1</a></td><td></td></tr></tr><tr><th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Optional requirements.
 	    </td></tr></tr><tr><th colspan="2"> Objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Objective requirements.
