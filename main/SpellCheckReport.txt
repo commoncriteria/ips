@@ -26,6 +26,7 @@ output/ips-release-linkable.html: TODO
 output/ips-release-linkable.html: TRP
 output/ips-release-linkable.html: UAU
 output/ips-release-linkable.html: UID
+output/ips-release-linkable.html: URIs
 output/ips-release-linkable.html: Validator
 output/ips-release-linkable.html: acknowledgement
 output/ips-release-linkable.html: allo
@@ -90,6 +91,7 @@ output/ips-release.html: TDs
 output/ips-release.html: TRP
 output/ips-release.html: UAU
 output/ips-release.html: UID
+output/ips-release.html: URIs
 output/ips-release.html: Validator
 output/ips-release.html: acknowledgement
 output/ips-release.html: allo
@@ -183,6 +185,7 @@ output/ips.html: TODO
 output/ips.html: TRP
 output/ips.html: UAU
 output/ips.html: UID
+output/ips.html: URIs
 output/ips.html: Validator
 output/ips.html: acknowledgement
 output/ips.html: allo

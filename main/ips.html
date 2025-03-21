@@ -1440,8 +1440,14 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 					<li><i><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> data (characters beyond the 20 byte <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> header), with support for detection of:
 					<ol type="i">
 						<li><abbr class="dyn-abbr"><a href="#abbr_FTP">FTP</a></abbr> (file transfer) commands: help, noop, stat, syst, user, abort, acct, allo, appe, cdup, cwd, dele, list, mkd, mode, nlst, pass, pasv, port, pass, quit, rein, rest, retr, rmd, rnfr, rnto, site, smnt, stor, stou, stru, and type.</li>
+						<li><abbr class="dyn-abbr"><a href="#abbr_HTTP">HTTP</a></abbr> (web) commands and content: commands including GET and POST, and administrator- defined strings to match URLs/URIs, and web page content.</li>
+						<li><abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> (email) states: start state, <abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> commands state, mail header state, mail body state, abort state</li>
+						<li>[<b>selection</b>: <span class="selectable-content" id="_s_45">[<b>assignment</b>: 
+     <span class="assignable-content">other types of <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> payload inspection</span>]</span>, <span class="selectable-content" id="_s_46">no other types of <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> payload inspection</span>]</li>
 					</ol>
-					
+					<li><li><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> data: characters beyond the first 8 bytes of the <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> header;</li></li>
+					<li>[<b>assignment</b>: 
+     <span class="assignable-content">other types of packet payload inspection</span>]]</li>
 					</i></li>
 
 				</ul>
