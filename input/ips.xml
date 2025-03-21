@@ -840,7 +840,7 @@ enforce its policies on network traffic of monitored networks.</description>
 				</aactivity>
 				</f-element>
 				</f-component>
-				<f-component name="IP Blocking" cc-id="fip_ipb_ext.1" id="ips-ipb-ext-1-ips">
+				<f-component name="IP Blocking" cc-id="ips_ipb_ext.1" id="ips-ipb-ext-1-ips">
 				<f-element id="ips-ipb-ext-1e1">
 					<title>
 					The TSF shall support configuration and implementation of known-good and known-bad lists of <selectables>
@@ -879,7 +879,7 @@ enforce its policies on network traffic of monitored networks.</description>
 					</aactivity>
 				</f-element>
 				</f-component>
-				<f-component name="I Network Traffic Analysis" cc-id="fip_nta_ext.1" id="ips-nta-ext-1-ips">
+				<f-component name="Network Traffic Analysis" cc-id="ips_nta_ext.1" id="ips-nta-ext-1-ips">
 				<f-element id="ips-nta-ext-1e1">
 					<title>
 					The TSF shall perform analysis of IP-based network traffic forwarded to the
@@ -975,15 +975,35 @@ enforce its policies on network traffic of monitored networks.</description>
 					enable specific ports to serve one or more specific interface functions.
 					</h:p>
 					</note>
-					
 				</f-element>
-
-
-
-
-
-
-
+				</f-component>
+				<f-component name="Signature-Based IPS Functionality" cc-id="ips_sdb_ext.1" id="ips-sdb-ext.1-ips">
+				<f-element id="ips-sbd-ext-1e1">
+				<title>
+					The TSF shall support inspection of packet header contents and be able to inspect at least the following header fields: [
+					<h:ul>
+					<h:li><h:i>IPv4: version; header length; packet length; ID; IP flags; fragment offset;time to live (TTL); protocol; header checksum; source address; destination address; IP options; and<selectables>
+						<selectable>type of service (ToS)</selectable>
+						<selectable>no other field</selectable></selectables>.</h:i></h:li>
+					<h:li><h:i>IPv6: version; payload length; next header; hop limit; source address; destination address; routing header; and</h:i><selectables>
+						<selectable>traffic class</selectable>
+						<selectable>flow label</selectable>
+						<selectable>no other field</selectable>
+					</selectables>
+					</h:li>
+					<h:li><h:i>ICMP: type; code; header checksum; and</h:i></h:li>
+					<h:li><h:i></h:i></h:li>
+					<h:li><h:i></h:i></h:li>
+					<h:li><h:i></h:i></h:li>
+					<h:li><h:i></h:i></h:li>
+					</h:ul>
+				</title>
+				<aactivity>      <!-- at minimum, only the last f-element in the f-component needs to have this -->
+						<no-tests/>   <!-- use this inside the aactivity tag to specify that there are no EAs for the SFR (if just doing <aactivity/> doesn't work) -->
+					</aactivity>
+				</f-element>
+				
+				
 				
 				</f-component>
 			</section>
