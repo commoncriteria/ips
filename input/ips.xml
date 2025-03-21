@@ -1023,9 +1023,8 @@ enforce its policies on network traffic of monitored networks.</description>
 							</selectables></h:li>
 						</h:ol>
 					<h:li><h:i>UDP data: characters beyond the first 8 bytes of the UDP header;</h:i></h:li>
-					<h:li><assignable>other types of packet payload inspection</assignable>]</h:li>
-					
-
+					<h:li><assignable>other types of packet payload inspection</assignable>].</h:li>
+				
 				</h:ul>
 				</title>
 				<aactivity>
@@ -1068,7 +1067,59 @@ enforce its policies on network traffic of monitored networks.</description>
 				<no-tests/>   
                  </aactivity>
                 </f-element>
-				
+				<f-element id="ips-sbd-ext-1e4">
+                <title>The TSF shall be able to detect all the following traffic-pattern detection signatures, and to have these signatures applied to IPS sensor interfaces: [
+					<h:ol type='a'>
+						<h:li><h:i>Flooding a host (DoS attack)
+							<h:ol type='i'>
+								<h:li>ICMP flooding (Smurf attack, and ping flood)</h:li>
+								<h:li>TCP flooding (e.g. SYN flood)</h:li>
+							</h:ol></h:i></h:li>
+						<h:li><h:i>Flooding a network (DoS attack)</h:i></h:li>
+						<h:li><h:i>Protocol and port scanning</h:i>
+							<h:ol type='i'>
+								<h:li><h:i>IP protocol scanning</h:i></h:li>
+								<h:li><h:i>TCP port scanning</h:i></h:li>
+								<h:li><h:i>UDP port scanning</h:i></h:li>
+								<h:li><h:i>ICMP scanning</h:i>].</h:li>
+							</h:ol></h:li>
+					</h:ol>
+                </title>
+				<note role="application">
+				<h:p>This SFR defines the minimum set of packet header fields, packet payload strings,
+					signature types, and potentially malicious traffic patterns (e.g. flooding and
+					scanning) that the TOE must be able to detect. Valid signatures can be comprised
+					of one, some, or all attributes listed in this SFR, and IPS TOEs may support
+					inspection of additional attributes not listed in this SFR, but only those listed in
+					the SFR will be tested by the evaluators. The set of signature types, traffic
+					patterns, etc. identified in this SFR are not intended to be an exhaustive or
+					completely representative list of malicious activity, nor is it meant to address
+					DDoS attacks – the intent of this SFR is addressing attacks form a single source
+					IP.</h:p><h:p>
+					Protocol and port scanning refers to reconnaissance attacks that scan target IP
+					addresses for open/listening/responsive services by targeting multiple
+					protocols/ports on one or more target IP address using obvious (sequentially
+					numbered) patterns of target protocol/port numbers or by randomizing the
+					protocol/port numbers and/or randomizing the time delays between
+					transmissions.
+					</h:p><h:p>
+					It is understood and expected that IPS product vendors will support pre-defined
+					signatures, but inspection of the efficacy of the pre-defined signatures
+					themselves is not objective of this PP-Module. Instead, this PP-Module focuses
+					on the ability of the TOE to perform detailed analysis of network traffic, and
+					those pre-defined signatures may be used during evaluation, the evaluation
+					team is expected to make use of custom-made signatures as well. This set of
+					signature types, traffic patterns, etc. has been selected to: 1) place reasonable
+					boundaries around the scope of testing; and 2) provide a sufficient sampling of
+					packet contents, and traffic patterns to demonstrate the TOE’s ability to inspect
+					packet contents, to collect traffic pattern statistics over a period of time, and to
+					correlate collected data.
+					</h:p><h:p>An IPS sensor interface refers to any TOE interface to which an IPS policy is currently applied.</h:p>
+				</note>
+                <aactivity>
+				<no-tests/>   
+                 </aactivity>
+                </f-element>
 				</f-component>
 			</section>
 
