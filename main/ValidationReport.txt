@@ -1,4 +1,5 @@
 /home/runner/work/ips/ips/input/ips.xml:916:82: error: value of attribute "cc-id" is invalid; must be a string matching the regular expression "f[a-z]{2}_[a-z0-9^]{2,10}(_ext)?\.[0-9]"
 /home/runner/work/ips/ips/input/ips.xml:994:95: error: value of attribute "cc-id" is invalid; must be a string matching the regular expression "f[a-z]{2}_[a-z0-9^]{2,10}(_ext)?\.[0-9]"
 /home/runner/work/ips/ips/input/ips.xml:1176:104: error: value of attribute "cc-id" is invalid; must be a string matching the regular expression "f[a-z]{2}_[a-z0-9^]{2,10}(_ext)?\.[0-9]"
-/home/runner/work/ips/ips/input/ips.xml:1500:98: error: value of attribute "cc-id" is invalid; must be a string matching the regular expression "f[a-z]{2}_[a-z0-9^]{2,10}(_ext)?\.[0-9]"
+/home/runner/work/ips/ips/input/ips.xml:1500:95: error: value of attribute "cc-id" is invalid; must be a string matching the regular expression "f[a-z]{2}_[a-z0-9^]{2,10}(_ext)?\.[0-9]"
+/home/runner/work/ips/ips/input/ips.xml:1514:95: error: value of attribute "cc-id" is invalid; must be a string matching the regular expression "f[a-z]{2}_[a-z0-9^]{2,10}(_ext)?\.[0-9]"

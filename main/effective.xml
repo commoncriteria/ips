@@ -1486,14 +1486,38 @@ enforce its policies on network traffic of monitored networks.</description>
     <opt-sfrs>
 	<section title="Security Audit" id="fau">
 	<comment>^this is something that I added, the original IPS pp did not have this entry</comment>
-			<f-component name=" Protected Audit Trail Storage" cc-id="fau_stg.1.1/ips" id="fau-stg.1-ips">
+			<f-component name="Protected Audit Trail Storage" cc-id="fau_stg.1/ips" id="fau-stg.1-ips">
 			<f-element id="fau-stg-1e1-ips">
 				<title>The TSF shall protect the stored <h:s>audit records </h:s><h:b>IPS data</h:b> from unauthorized deletion.</title>
 				<aactivity>
 				<no-tests/>
 				</aactivity>
 			</f-element>
+			<f-element id="fau-stg-1e2">
+				<title>The TSF shall be able to [<h:i>prevent</h:i>] unauthorized modifications to the <h:s>stored audit records</h:s> <h:b>IPS data</h:b> <h:s>in the audit trail</h:s>.</title>
+				<aactivity>
+				<no-tests/>
+				</aactivity>
+			</f-element>
 			</f-component>
+			<f-component name="Prevention of Audit Data Loss" cc-id="fau_stg.4/ips" id="fau-stg.4-ips">
+			<f-element id="fau-stg-4e1">
+			<title>
+			The TSF shall <h:b>be able to</h:b>
+				<selectables>
+					<selectable>ignore <h:s>audited</h:s> <h:b>generation of IPS</h:b> events <h:b>that would otherwise be generated</h:b></selectable>
+					<selectable>prevent audited <h:b>IPS</h:b> events</selectable>
+					<selectable><h:s>except those taken by the authorized user with special rights</h:s></selectable>
+					<selectable>overwrite the oldest stored <h:s>audit records</h:s> IPS data</selectable>
+				</selectables>, and [no other actions] if the <h:s>audit</h:s> <h:b>IPS data</h:b> trail is full.
+			
+			</title>
+			<aactivity>
+				<no-tests/>
+				</aactivity>
+			</f-element>
+			</f-component>
+			
 	</section>
 
 

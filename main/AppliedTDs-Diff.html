@@ -1281,7 +1281,10 @@
                 <th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th>
             </tr>
             <tr>
-                <td><a href="#FAU_STG.1.1/IPS">FAU_STG.1.1/IPS</a></td><td></td>
+                <td><a href="#FAU_STG.1/IPS">FAU_STG.1/IPS</a></td><td></td>
+            </tr>
+            <tr>
+                <td><a href="#FAU_STG.4/IPS">FAU_STG.4/IPS</a></td><td></td>
             </tr>
             <tr>
                 <th colspan="2"> Objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th>
@@ -1306,14 +1309,33 @@
         <h2 id="opt-sfrs" class="indexable" data-level="2">A.1 Strictly Optional Requirements </h2>
         <h3 id="fau" class="indexable" data-level="3">A.1.1 Security Audit</h3>
          <span style="" class="comment " id="Comment-4-">^this is something that I added, the original <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> pp did not have this entry</span> 
-        <div class="comp" id="FAU_STG.1.1/IPS">
-            <h4>FAU_STG.1.1/IPS Protected Audit Trail Storage</h4>
+        <div class="comp" id="FAU_STG.1/IPS">
+            <h4>FAU_STG.1/IPS Protected Audit Trail Storage</h4>
             <div class="element">
-                <div class="reqid" id="FAU_STG.1.1/IPS.1">
-                    <a href="#FAU_STG.1.1/IPS.1" class="abbr">FAU_STG.1.1/IPS.1</a>
+                <div class="reqid" id="FAU_STG.1/IPS.1">
+                    <a href="#FAU_STG.1/IPS.1" class="abbr">FAU_STG.1/IPS.1</a>
                 </div>
                 <div class="reqdesc">
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall protect the stored <s>audit records </s><b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b> from unauthorized deletion.
+                </div>
+            </div>
+            <div class="element">
+                <div class="reqid" id="FAU_STG.1/IPS.2">
+                    <a href="#FAU_STG.1/IPS.2" class="abbr">FAU_STG.1/IPS.2</a>
+                </div>
+                <div class="reqdesc">
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to [<i>prevent</i>] unauthorized modifications to the <s>stored audit records</s> <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b> <s>in the audit trail</s>.
+                </div>
+            </div>
+        </div>
+        <div class="comp" id="FAU_STG.4/IPS">
+            <h4>FAU_STG.4/IPS Prevention of Audit Data Loss</h4>
+            <div class="element">
+                <div class="reqid" id="FAU_STG.4/IPS.1">
+                    <a href="#FAU_STG.4/IPS.1" class="abbr">FAU_STG.4/IPS.1</a>
+                </div>
+                <div class="reqdesc">
+                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall <b>be able to</b> [<b>selection</b>: <span class="selectable-content" id="_s_58">ignore <s>audited</s> <b>generation of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr></b> events <b>that would otherwise be generated</b></span>, <span class="selectable-content" id="_s_59">prevent audited <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr></b> events</span>, <span class="selectable-content" id="_s_60"><s>except those taken by the authorized user with special rights</s></span>, <span class="selectable-content" id="_s_61">overwrite the oldest stored <s>audit records</s> <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</span>], and [no other actions] if the <s>audit</s> <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b> trail is full. 
                 </div>
             </div>
         </div>
