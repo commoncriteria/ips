@@ -1514,11 +1514,13 @@ enforce its policies on network traffic of monitored networks.</description>
 			<f-component name="Prevention of Audit Data Loss" cc-id="fau_stg.4/ips" id="fau-stg.4-ips">
 			<f-element id='fau-stg-4e1'>
 			<title>
-			The TSF shall <h:b>be able to</h:b><selectables>
-			<selectable>ignore <h:s>audited</h:s> <h:b>generation of IPS</h:b> events <h:b>that would otherwise be generated</h:b></selectable>
-			<selectable>prevent audited <h:b>IPS</h:b> events</selectable>
-			<selectable></h:s>except those taken by the authorized user with special rights</h:s></selectable>
-			<selectable>overwrite the oldest stored <h:s>audit records</h:s> IPS data</selectable></selectables>, and [no other actions] if the <h:s>audit</h:s> <h:b>IPS data</h:b> trail is full.
+			The TSF shall <h:b>be able to</h:b>
+				<selectables>
+					<selectable>ignore <h:s>audited</h:s> <h:b>generation of IPS</h:b> events <h:b>that would otherwise be generated</h:b></selectable>
+					<selectable>prevent audited <h:b>IPS</h:b> events</selectable>
+					<selectable><h:s>except those taken by the authorized user with special rights</h:s></selectable>
+					<selectable>overwrite the oldest stored <h:s>audit records</h:s> IPS data</selectable>
+				</selectables>, and [no other actions] if the <h:s>audit</h:s> <h:b>IPS data</h:b> trail is full.
 			
 			</title>
 			<aactivity>
