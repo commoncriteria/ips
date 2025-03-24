@@ -243,7 +243,7 @@
 				<h:li>IPS 3 is operating in a combination of promiscuous mode and inline mode. The IPS has at least one pair of interfaces creating a bridge or routing across the TOE, and is analyzing and filtering traffic in real-time as traffic traverses the TOE. The same IPS has one or more promiscuous interfaces collecting and analyzing traffic traversing within each separate network, and reacting to anomalous activity, worms, or otherwise unapproved activity.</h:li>
 			</h:ul>
 		<h:p/>
-		<figure entity="images/deployment_diagram.PNG" title="Figure 1: TOE Deployment Scenario Diagram" id="OperEnv"/>
+		<figure entity="images/deployment_diagram.png" title="Figure 1: TOE Deployment Scenario Diagram" id="OperEnv"/>
 	</sec:Compliant_Targets_of_Evaluation>
 	<!-- 1.4 TOE_Boundary -->
     <sec:TOE_Boundary>
@@ -330,6 +330,7 @@
         </cc-pp-config-with>
         <cc-pkg-claim/>
       </CClaimsInfo>
+	  <comment>Please review</comment>
     </section>  <!-- Conformance Claims -->
   
 
@@ -444,6 +445,7 @@
 	<!-- the document uses standard or direct rationale. -->
 	
     <sec:Assumptions>
+		<comment>Note the runner added "These assumptions are made on the Operational Environment (OE) in*"</comment>
 		<h:p>
 		All assumptions for the operational environment of the Base-PP also apply to this PP-Module.
 		A.NO_THRU_TRAFFIC_PROTECTION is still operative, but only for the interfaces in the TOE that are
@@ -598,12 +600,6 @@ enforce its policies on network traffic of monitored networks.</description>
     
 
 		<!-- Audit table for Mandatory SFRs -->
-	  <section id="ss-audit-table" title="Auditable Events for Mandatory SFRs">
-	    <audit-table table="mandatory" id="mandatory-audit-events">
-	      <h:br/><h:b><ctr ctr-type="Table" pre="Table " id="atref-mandatory">: Auditable Events for Mandatory SFRs</ctr></h:b>
-	    </audit-table>
-		<comment>some audits end without completing the sentence.</comment>
-	  </section>
 
 		<!-- Section for SFR Class -->
 		
@@ -736,6 +732,12 @@ enforce its policies on network traffic of monitored networks.</description>
 					</aactivity>
 				</f-element>
 			</f-component>
+			<section id="ss-audit-table" title="Auditable Events for Mandatory SFRs">
+	    <audit-table table="mandatory" id="mandatory-audit-events">
+	      <h:br/><h:b><ctr ctr-type="Table" pre="Table " id="atref-mandatory">: Auditable Events for Mandatory SFRs</ctr></h:b>
+	    </audit-table>
+		<comment>some audits end without completing the sentence.</comment>
+	  </section>
 			</section>
 			
 			
