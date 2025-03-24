@@ -1757,7 +1757,7 @@ forwarded</assignable></selectable>
 	destination IP address and </h:i><selectables>
 		<selectable><assignable> other filtering parameters</assignable></selectable>
 		<selectable>No other filtering parameters</selectable></selectables><h:i>; and sorting parameters: event ID, event type, time,
-signature ID, IPS actions performed, and <h:i></h:i><selectables>
+signature ID, IPS actions performed, and </h:i><selectables>
 		<selectable><assignable>other sorting parameters</assignable></selectable>
 		<selectable>no other sorting parameters</selectable></selectables>.
 		<comment>please review </comment>
