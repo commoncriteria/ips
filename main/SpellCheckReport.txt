@@ -1,4 +1,5 @@
 output/ips-release-linkable.html: 0E
+output/ips-release-linkable.html: 0e
 output/ips-release-linkable.html: 4e
 output/ips-release-linkable.html: AFL
 output/ips-release-linkable.html: AppPP
@@ -74,6 +75,7 @@ output/ips-release-linkable.html: uninspected
 output/ips-release-linkable.html: virtualized
 output/ips-release-linkable.html: weredetermined
 output/ips-release.html: 0E
+output/ips-release.html: 0e
 output/ips-release.html: 4e
 output/ips-release.html: AFL
 output/ips-release.html: AppPP
@@ -202,6 +204,7 @@ output/ips-sd.html: stru
 output/ips-sd.html: subnet
 output/ips-sd.html: thresholds’
 output/ips.html: 0E
+output/ips.html: 0e
 output/ips.html: 4e
 output/ips.html: AFL
 output/ips.html: AppPP
