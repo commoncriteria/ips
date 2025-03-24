@@ -647,7 +647,7 @@ function showTarget(id){
       </span></a><a href="#opt-sfrs" style="text-indent:0px">Appendix A - <span>Optional SFRs</span></a><a href="#opt-sfrs" style="text-indent:10px">A.1<span>Strictly Optional Requirements
     </span></a><a href="#sec-opt-audit-table" style="text-indent:20px">A.1.1<span>Auditable Events for Optional SFRs</span></a><a href="#fau-ops" style="text-indent:20px">A.1.2<span>Security Audit(FAU)</span></a><a href="#fpt" style="text-indent:20px">A.1.3<span>Protection of the TSF (FPT)</span></a><a href="#ips" style="text-indent:20px">A.1.4<span>Intrusion Prevention (IPS)</span></a><a href="#obj-sfrs" style="text-indent:10px">A.2<span>Objective Requirements
     </span></a><a href="#_sec_12" style="text-indent:20px">A.2.1<span>Auditable Events for Objective SFRs</span></a><a href="#fau-obj" style="text-indent:20px">A.2.2<span>Security Audit (FAU)</span></a><a href="#impl-dep-sfrs" style="text-indent:10px">A.3<span>Implementation-dependent Requirements
-    </span></a><a href="#sel-sfrs" style="text-indent:0px">Appendix B - <span>Selection-based Requirements
+    </span></a><a href="#fru-imp_dep" style="text-indent:20px">A.3.1<span>Resource Utilization</span></a><a href="#sel-sfrs" style="text-indent:0px">Appendix B - <span>Selection-based Requirements
     </span></a><a href="#satisfiedreqs" style="text-indent:0px">Appendix C - <span>Inherently Satisfied Requirements</span></a><a href="#entropyappendix" style="text-indent:0px">Appendix D - <span>Entropy Documentation and Assessment</span></a><a href="#entropydesign" style="text-indent:10px">D.1<span>Design Description</span></a><a href="#entropyjustification" style="text-indent:10px">D.2<span>Entropy Justification</span></a><a href="#entropyoperatingconditions" style="text-indent:10px">D.3<span>Operating Conditions</span></a><a href="#entropyhealthtesting" style="text-indent:10px">D.4<span>Health Testing</span></a><a href="#apndx-equiv" style="text-indent:0px">Appendix E - <span>Application Software Equivalency Guidelines</span></a><a href="#app-intro" style="text-indent:10px">E.1<span>Introduction</span></a><a href="#approach" style="text-indent:10px">E.2<span>Approach to Equivalency Analysis</span></a><a href="#modelequiv" style="text-indent:10px">E.3<span>Specific Guidance for Determining Product Model Equivalence</span></a><a href="#versionequiv" style="text-indent:10px">E.4<span>Specific Guidance for Determining Product Version Equivalence</span></a><a href="#platformequiv" style="text-indent:10px">E.5<span>Specific Guidance for Determining Platform Equivalence</span></a><a href="#hardware-equiv" style="text-indent:20px">E.5.1<span>Platform Equivalence—Hardware/Virtual Hardware Platforms</span></a><a href="#os-equiv" style="text-indent:20px">E.5.2<span>Platform Equivalence—OS Platforms</span></a><a href="#software-equiv" style="text-indent:20px">E.5.3<span>Software-based Execution Environment Platform Equivalence</span></a><a href="#specificity" style="text-indent:10px">E.6<span>Level of Specificity for Tested Configurations and Claimed Equivalent Configurations</span></a><a href="#acronyms" style="text-indent:0px">Appendix F - <span>Acronyms</span></a><a href="#appendix-bibliography" style="text-indent:0px">Appendix G - <span>Bibliography</span></a></div><h1 class="indexable" data-level="1" id="Introduction">1 Introduction</h1>
     
      
@@ -1933,9 +1933,7 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 		  </td></tr><tr><th colspan="2"> Additional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th></tr><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not add any requirements when the
 	      NDcPP is the base.
-	    </td></tr><tr><th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a></td><td></td></tr><tr><td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td></td></tr><tr><td><a href="#FIP_ABD_EXT.1">FIP_ABD_EXT.1</a></td><td></td></tr><tr><td><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td></td></tr><tr><td><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td></td></tr><tr><td><a href="#IPS_SDB_EXT.1">IPS_SDB_EXT.1</a></td><td></td></tr></tr><tr><th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_STG.1/IPS">FAU_STG.1/IPS</a></td><td></td></tr><tr><td><a href="#FAU_STG.4/IPS">FAU_STG.4/IPS</a></td><td></td></tr><tr><td><a href="#FPT_FLS.1">FPT_FLS.1</a></td><td></td></tr><tr><td><a href="#IPS_SBD_EXT.2">IPS_SBD_EXT.2</a></td><td></td></tr></tr><tr><th colspan="2"> Objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_ARP.1">FAU_ARP.1</a></td><td></td></tr><tr><td><a href="#FAU_SAR.1">FAU_SAR.1</a></td><td></td></tr><tr><td><a href="#FAU_SAR.2">FAU_SAR.2</a></td><td></td></tr></tr><tr><th colspan="2"> Implementation-dependent <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
-	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Implementation-dependent requirements.
-	    </td></tr></tr><tr><th colspan="2"> Selection-based <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
+	    </td></tr><tr><th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a></td><td></td></tr><tr><td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td></td></tr><tr><td><a href="#FIP_ABD_EXT.1">FIP_ABD_EXT.1</a></td><td></td></tr><tr><td><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td></td></tr><tr><td><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td></td></tr><tr><td><a href="#IPS_SDB_EXT.1">IPS_SDB_EXT.1</a></td><td></td></tr></tr><tr><th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_STG.1/IPS">FAU_STG.1/IPS</a></td><td></td></tr><tr><td><a href="#FAU_STG.4/IPS">FAU_STG.4/IPS</a></td><td></td></tr><tr><td><a href="#FPT_FLS.1">FPT_FLS.1</a></td><td></td></tr><tr><td><a href="#IPS_SBD_EXT.2">IPS_SBD_EXT.2</a></td><td></td></tr></tr><tr><th colspan="2"> Objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_ARP.1">FAU_ARP.1</a></td><td></td></tr><tr><td><a href="#FAU_SAR.1">FAU_SAR.1</a></td><td></td></tr><tr><td><a href="#FAU_SAR.2">FAU_SAR.2</a></td><td></td></tr><tr><td><a href="#FAU_SAR.3">FAU_SAR.3</a></td><td></td></tr></tr><tr><th colspan="2"> Implementation-dependent <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FRU_RSA.1">FRU_RSA.1</a></td><td></td></tr></tr><tr><th colspan="2"> Selection-based <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Selection-based requirements.
 	    </td></tr></tr></table><h1 id="opt-sfrs" class="indexable" data-level="A">Appendix A -  Optional SFRs</h1><h2 id="opt-sfrs" class="indexable" data-level="2">A.1 Strictly Optional Requirements
     </h2>
@@ -2078,7 +2076,7 @@ forwarded</span>]</span>, <span class="selectable-content" id="_s_76">no other p
     </span><span class="note"><i>
 	<p>At minimum, the set of potential security violations must include network traffic
 		in excess of maximum quotas. Therefore, when this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is included, the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author
-		must also include FRU_RSA.1.</p><p>In <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr> Part 2, FAU_ARP is intended to depend on FAU_SAA to define a potential
+		must also include <a href="#FRU_RSA.1">FRU_RSA.1</a>.</p><p>In <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr> Part 2, FAU_ARP is intended to depend on FAU_SAA to define a potential
 		violation of the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr>. FAU_SAA is not included in this <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> EP; FRU_RSA and the
 		various <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> class requirements are used instead to define the “potential security
 		violation” relevant to FAU_ARP, namely that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> has detected potential
@@ -2100,8 +2098,21 @@ forwarded</span>]</span>, <span class="selectable-content" id="_s_76">no other p
 		no additional auditable <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> events that need to be included in <a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a>.
 		</p></i></span></div></div></div>
 	<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FAU_ARP.1">FAU_ARP.1</a></div>
-		TODO: You need to explain the lack of EAs for this component!!!!
-	</div></div></div>
+		
+		
+		
+		<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> includes a description of the alerts specified in the requirement and
+			the events that may trigger these alerts to be generated. The evaluator shall also verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> states
+			that audit data cannot be transmitted through the security alarms interface.
+
+		</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall verify that the guidance explains how to enable alerts specified in the requirement
+		based on the events that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> identifies as potential security violations.
+		</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
+		For each action that can be taken by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> upon detection of a potential security violation, the evaluator
+		shall configure the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to take that action when a particular event occurs. The evaluator shall then
+		perform some action to trigger the event (e.g. by transmitting network traffic that represents the event
+		to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s sensor interfaces) and observe that the configured action occurs in response.
+		</div></div></div></div></div>
 	<div class="comp" id="FAU_SAR.1"><h4>FAU_SAR.1 Audit Review</h4>
 	<div class="element"><div class="reqid" id="FAU_SAR.1.1"><a href="#FAU_SAR.1.1" class="abbr">FAU_SAR.1.1</a></div><div class="reqdesc">
 	The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide [<i>authorized administrators</i>] with the capability to read [<i><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</i>] from the <s>audit records</s> <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> events</b>.
@@ -2139,11 +2150,19 @@ forwarded</span>]</span>, <span class="selectable-content" id="_s_76">no other p
 	<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FAU_SAR.1">FAU_SAR.1</a></div>
 		TODO: You need to explain the lack of EAs for this component!!!!
 	
-		TODO: You need to explain the lack of EAs for this component!!!!
-	</div></div></div>
-	<div class="comp" id="FAU_SAR.2"><h4>FAU_SAR.2 Audit Review</h4>
+	
+	
+	
+	<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">The evaluator shall examine the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> to verify that it describes the ability of administrators to view <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data from the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> events, the format in which this <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data is displayed, and how an administrator is authorized to view this data.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall examine the operational guidance to verify that it provides instructions on how to access and interpret <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> events using the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s management interface.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall devise tests that demonstrate that <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data (generated as defined in <a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a>) can be interpreted by authorized administrators from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s management interface.</div></div></div></div></div>
+	<div class="comp" id="FAU_SAR.2"><h4>FAU_SAR.2 Restricted Audit Review</h4>
 	<div class="element"><div class="reqid" id="FAU_SAR.2.1"><a href="#FAU_SAR.2.1" class="abbr">FAU_SAR.2.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall prohibit all <s>users</s> <b>administrators</b> read access to the <s>audit records</s> <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b>, except those that have been granted explicit read-access.</div></div>
-	<div class="element"><div class="reqid" id="FAU_SAR.2.2"><a href="#FAU_SAR.2.2" class="abbr">FAU_SAR.2.2</a></div><div class="reqdesc">
+	<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FAU_SAR.2">FAU_SAR.2</a></div>
+	
+	
+	
+	<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">The evaluator shall examine the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> to determine that it identifies what group of users is considered to be ‘administrators’ for the purpose of being granted access to view <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall examine the operational guidance to determine what actions are needed to grant or revoke a user’s ability to view <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall log on to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> as various users to confirm that only those users that are intended to be granted read access to <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data are able to view it.</div></div></div></div></div>
+	<div class="comp" id="FAU_SAR.3"><h4>FAU_SAR.3 Selectable Audit Review</h4>
+	<div class="element"><div class="reqid" id="FAU_SAR.3.1"><a href="#FAU_SAR.3.1" class="abbr">FAU_SAR.3.1</a></div><div class="reqdesc">
 	The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide the ability to apply [<i>filtering and sorting</i>] of audit <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data
 	based on [<i>filtering parameters: risk rating, time period, source IP address,
 	destination IP address and </i>[<b>selection</b>: <span class="selectable-content" id="_s_77">[<b>assignment</b>: 
@@ -2154,16 +2173,75 @@ signature ID, <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> actions 
 
 
 	</div></div>
-	<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FAU_SAR.2">FAU_SAR.2</a></div>
-		TODO: You need to explain the lack of EAs for this component!!!!
+	<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FAU_SAR.3">FAU_SAR.3</a></div>
 	
-		TODO: You need to explain the lack of EAs for this component!!!!
-	</div></div></div>
+	
+	<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> includes a description of how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> has the ability to apply filtering and sorting of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data using the parameters listed in the requirement.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall review the operational guidance to ensure that the guidance itemizes all event types,
+	as well as describes all attributes that are to be selectable in accordance with the requirement, to include
+	those attributes listed in the assignment. The administrative guidance shall also contain instructions on
+	how to set the pre- selection, as well as explain the syntax (if present) for multi-value pre-selection. The
+	administrative guidance shall also identify those audit records that are always recorded, regardless of the
+	selection criteria currently being enforced.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall perform the following tests:
+		<span class="testlist-"><ul>
+		<li class="test-"><a id="_t_16" class="defined" href="#_t_16">Test FAU_SAR.3:1</a>:
+      For each attribute listed in the requirement, the evaluator shall devise a test to show that selecting
+the attribute causes only audit events with that attribute (or those that are always recorded, as identified
+in the administrative guidance) to be recorded. </li> 
+<li class="test-"><a id="_t_17" class="defined" href="#_t_17">Test FAU_SAR.3:2</a>:
+       [conditional]: If the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> supports specification of more complex audit pre-selection criteria (e.g.,
+multiple attributes, logical expressions using attributes) then the evaluator shall devise tests showing that
+this capability is correctly implemented. The evaluator shall also, in the test plan, provide a short narrative
+justifying the set of tests as representative and sufficient to exercise the capability.</li></ul></span>
+		</div></div></div></div></div>
 	
 
 	<h2 id="impl-dep-sfrs" class="indexable" data-level="2">A.3 Implementation-dependent Requirements
-    </h2><p>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any 
-       Implementation-dependent       <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr>.</p><h1 id="sel-sfrs" class="indexable" data-level="1">Appendix B -  Selection-based Requirements
+    </h2>
+	<h3 id="fru-imp_dep" class="indexable" data-level="3">A.3.1 Resource Utilization</h3>
+		
+		
+		<div class="comp" id="FRU_RSA.1"><h4>FRU_RSA.1 Maximum Quotas</h4>
+		<div class="element"><div class="reqid" id="FRU_RSA.1.1"><a href="#FRU_RSA.1.1" class="abbr">FRU_RSA.1.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall enforce maximum quotas of the following resources: [<i>resources
+supporting inspection of network traffic</i>] that [<i>subjects</i>] can use [<i>simultaneously</i>].
+		<div class="appnote"><span class="note-header">Application
+      Note:
+    </span><span class="note">
+		<i><p>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is optional but the behavior specified by <a href="#FAU_ARP.1">FAU_ARP.1</a> requires this function
+		to be implemented. Therefore, this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is implementation-dependent on the
+		condition that it be claimed if <a href="#FAU_ARP.1">FAU_ARP.1</a> is claimed. If <a href="#FAU_ARP.1">FAU_ARP.1</a> is not claimed
+		this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> should also not be claimed because effective enforcement of maximum
+		quotas requires an alert mechanism when quotas are exceeded. Otherwise it is
+		not possible for an administrator to determine whether a lack of potential security
+		violations is caused by an absence of potential malicious activity or by the inability
+		of the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to detect such activity due to an inability to process the volume of traffic
+		being received</p><p>Conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr> will impose quotas on exhaustible resources used to support
+		inspection of network traffic that ‘subjects’ (inspected network traffic flows) can
+		use simultaneously. The intent of this requirement is to ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is not
+		deployed in such a way that the flow of data across its sensor interfaces can
+		exceed the amount of traffic that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is capable of inspecting. If the flow
+		(volume/speed) of data to be inspected exceeds the defined quota, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> should
+		trigger an alert signifying effect of the exceeded quota. For example, when the
+		<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is deployed inline, exceeding the quota may result in the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> dropping (not
+		forwarding) and failing to inspect network traffic; or when the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is not deployed
+		inline, exceeding the quota may result in traffic having been forwarded without
+		inspection. In any case, exceeding the maximum quota results in a “potential
+		security violation” relevant to <a href="#FAU_ARP.1">FAU_ARP.1</a> in that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> may have failed to
+		inspect some network traffic.</p></i>
+		</span></div></div></div>
+		<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FRU_RSA.1">FRU_RSA.1</a></div>
+			
+			
+			<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">The evaluator shall examine the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> to ensure that it identifies all resources controlled through the quota
+			mechanism, and that this list contains those resources used to support traffic inspection. The evaluator
+			shall ensure that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> describes how each resource is counted as “used” and how a maximum quota
+			or use is determined, as well as the action taken when the quota is reached.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall examine the operational guidance to determine that it contains instructions for
+			establishing quotas (if they are configurable) and that it describes any actions administrators can or should
+			take in response to a quota being reached.
+			</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall follow the operational guidance to configure quotas for the resource (if such a
+			capability is provided). The evaluator then causes the resource quota to be reached, and observes that
+			the action specified in the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> occurs.</div></div></div></div></div>
+		
+	<h1 id="sel-sfrs" class="indexable" data-level="1">Appendix B -  Selection-based Requirements
     </h1><p>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any 
        Selection-based       <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr>.</p><h1 id="satisfiedreqs" class="indexable" data-level="A">Appendix C -  Inherently Satisfied Requirements</h1> 
 		This appendix lists requirements that should be considered satisfied by products

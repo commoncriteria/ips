@@ -294,7 +294,7 @@
       Technical Community members, with representatives from industry, government 
       agencies, Common Criteria Test Laboratories, and members of academia.
       </p></div><h1>Table of Contents</h1><div id="toc"><a href="#introduction" style="text-indent:0px">1<span>Introduction</span></a><a href="#scope" style="text-indent:10px">1.1<span>Technology Area and Scope of Supporting Document</span></a><a href="#structure" style="text-indent:10px">1.2<span>Structure of the Document</span></a><a href="#glossary" style="text-indent:10px">1.3<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.3.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.3.2<span>Technical Terms</span></a><a href="#sfr" style="text-indent:0px">2<span>Evaluation Activities for SFRs</span></a><a href="#aa-ND" style="text-indent:10px">2.1<span>Network Device</span></a><a href="#qq-sfrs-ND-Modified" style="text-indent:20px">2.1.1<span>Modified SFRs
-        </span></a><a href="#man-sfrs" style="text-indent:10px">2.2<span>TOE SFR Evaluation Activities</span></a><a href="#m-fau" style="text-indent:20px">2.2.1<span>Security Audit (FAU)</span></a><a href="#m-fmt" style="text-indent:20px">2.2.2<span>Security Management (FMT)</span></a><a href="#ips" style="text-indent:20px">2.2.3<span>Intrusion Prevention (IPS)</span></a><a href="#opt-sfrs" style="text-indent:10px">2.3<span>Evaluation Activities for Optional SFRs</span></a><a href="#fau-ops" style="text-indent:20px">2.3.1<span>Security Audit(FAU)</span></a><a href="#fpt" style="text-indent:20px">2.3.2<span>Protection of the TSF (FPT)</span></a><a href="#ips" style="text-indent:20px">2.3.3<span>Intrusion Prevention (IPS)</span></a><a href="#sel-sfrs" style="text-indent:10px">2.4<span>Evaluation Activities for Selection-Based SFRs</span></a><a href="#obj-sfrs" style="text-indent:10px">2.5<span>Evaluation Activities for Objective SFRs</span></a><a href="#fau-obj" style="text-indent:20px">2.5.1<span>Security Audit (FAU)</span></a><a href="#impl-sfrs-" style="text-indent:10px">2.6<span>Evaluation Activities for Implementation-dependent SFRs</span></a><a href="#sar_aas" style="text-indent:0px">3<span>Evaluation Activities for SARs</span></a><a href="#sup-info" style="text-indent:0px">4<span>Required Supplementary Information</span></a><a href="#biblio" style="text-indent:0px">Appendix A - <span>References</span></a></div><h1 id="introduction" class="indexable" data-level="0">1 Introduction</h1><h2 id="scope" class="indexable" data-level="1">1.1 Technology Area and Scope of Supporting Document</h2><p>The scope of the 
+        </span></a><a href="#man-sfrs" style="text-indent:10px">2.2<span>TOE SFR Evaluation Activities</span></a><a href="#m-fau" style="text-indent:20px">2.2.1<span>Security Audit (FAU)</span></a><a href="#m-fmt" style="text-indent:20px">2.2.2<span>Security Management (FMT)</span></a><a href="#ips" style="text-indent:20px">2.2.3<span>Intrusion Prevention (IPS)</span></a><a href="#opt-sfrs" style="text-indent:10px">2.3<span>Evaluation Activities for Optional SFRs</span></a><a href="#fau-ops" style="text-indent:20px">2.3.1<span>Security Audit(FAU)</span></a><a href="#fpt" style="text-indent:20px">2.3.2<span>Protection of the TSF (FPT)</span></a><a href="#ips" style="text-indent:20px">2.3.3<span>Intrusion Prevention (IPS)</span></a><a href="#sel-sfrs" style="text-indent:10px">2.4<span>Evaluation Activities for Selection-Based SFRs</span></a><a href="#obj-sfrs" style="text-indent:10px">2.5<span>Evaluation Activities for Objective SFRs</span></a><a href="#fau-obj" style="text-indent:20px">2.5.1<span>Security Audit (FAU)</span></a><a href="#impl-sfrs-" style="text-indent:10px">2.6<span>Evaluation Activities for Implementation-dependent SFRs</span></a><a href="#fru-imp_dep" style="text-indent:20px">2.6.1<span>Resource Utilization</span></a><a href="#sar_aas" style="text-indent:0px">3<span>Evaluation Activities for SARs</span></a><a href="#sup-info" style="text-indent:0px">4<span>Required Supplementary Information</span></a><a href="#biblio" style="text-indent:0px">Appendix A - <span>References</span></a></div><h1 id="introduction" class="indexable" data-level="0">1 Introduction</h1><h2 id="scope" class="indexable" data-level="1">1.1 Technology Area and Scope of Supporting Document</h2><p>The scope of the 
     PP-Module for IPS is
     to describe the security functionality of 
     IPS
@@ -783,16 +783,61 @@ The following sections list Common Criteria and technology terms used in this do
 		<li>other packet types claimed in the requirement, if any</li>
 		</ul>
 </div></div></span></div><h2 class="indexable" data-level="1" id="sel-sfrs">2.4 Evaluation Activities for Selection-Based SFRs</h2>The PP-Module does not define any selection-based requirements.<h2 class="indexable" data-level="1" id="obj-sfrs">2.5 Evaluation Activities for Objective SFRs</h2><h2 class="indexable" data-level="2" id="fau-obj">2.5.1 Security Audit (FAU)</h2><div class="comp" id="FAU-ARP.1"><h4>FAU_ARP.1 Security Alarms</h4><span class="activity_pane_body"><div class="component-activity-header">FAU_ARP.1</div>
-		TODO: You need to explain the lack of EAs for this component!!!!
-	</span></div><div class="comp" id="FAU-SAR.1"><h4>FAU_SAR.1 Audit Review</h4><span class="activity_pane_body"><div class="component-activity-header">FAU_SAR.1</div>
+		
+		
+		
+		<div class="eacategory">TSS</div><div class="ea"><div class="ea">The evaluator shall verify that the TSS includes a description of the alerts specified in the requirement and
+			the events that may trigger these alerts to be generated. The evaluator shall also verify that the TSS states
+			that audit data cannot be transmitted through the security alarms interface.
+
+		</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall verify that the guidance explains how to enable alerts specified in the requirement
+		based on the events that the TSS identifies as potential security violations.
+		</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
+		For each action that can be taken by the TSF upon detection of a potential security violation, the evaluator
+		shall configure the TOE to take that action when a particular event occurs. The evaluator shall then
+		perform some action to trigger the event (e.g. by transmitting network traffic that represents the event
+		to the TOE’s sensor interfaces) and observe that the configured action occurs in response.
+		</div></div></span></div><div class="comp" id="FAU-SAR.1"><h4>FAU_SAR.1 Audit Review</h4><span class="activity_pane_body"><div class="component-activity-header">FAU_SAR.1</div>
 		TODO: You need to explain the lack of EAs for this component!!!!
 	
-		TODO: You need to explain the lack of EAs for this component!!!!
-	</span></div><div class="comp" id="FAU-SAR.2"><h4>FAU_SAR.2 Audit Review</h4><span class="activity_pane_body"><div class="component-activity-header">FAU_SAR.2</div>
-		TODO: You need to explain the lack of EAs for this component!!!!
 	
-		TODO: You need to explain the lack of EAs for this component!!!!
-	</span></div><h2 class="indexable" data-level="1" id="impl-sfrs-">2.6 Evaluation Activities for Implementation-dependent SFRs</h2>The PP-Module does not define any implementation-dependent requirements.<h1 id="sar_aas" class="indexable" data-level="0">3 Evaluation Activities for SARs</h1><p>The PP-Module does not define any SARs beyond those defined within the
+	
+	
+	<div class="eacategory">TSS</div><div class="ea"><div class="ea">The evaluator shall examine the TSS to verify that it describes the ability of administrators to view IPS data from the IPS events, the format in which this IPS data is displayed, and how an administrator is authorized to view this data.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall examine the operational guidance to verify that it provides instructions on how to access and interpret IPS events using the TOE’s management interface.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall devise tests that demonstrate that IPS data (generated as defined in FAU_GEN.1/IPS) can be interpreted by authorized administrators from the TOE’s management interface.</div></div></span></div><div class="comp" id="FAU-SAR.2"><h4>FAU_SAR.2 Restricted Audit Review</h4><span class="activity_pane_body"><div class="component-activity-header">FAU_SAR.2</div>
+	
+	
+	
+	<div class="eacategory">TSS</div><div class="ea"><div class="ea">The evaluator shall examine the TSS to determine that it identifies what group of users is considered to be ‘administrators’ for the purpose of being granted access to view IPS data.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall examine the operational guidance to determine what actions are needed to grant or revoke a user’s ability to view IPS data.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall log on to the TOE as various users to confirm that only those users that are intended to be granted read access to IPS data are able to view it.</div></div></span></div><div class="comp" id="FAU-SAR.3"><h4>FAU_SAR.3 Selectable Audit Review</h4><span class="activity_pane_body"><div class="component-activity-header">FAU_SAR.3</div>
+	
+	
+	<div class="eacategory">TSS</div><div class="ea"><div class="ea">The evaluator shall verify that the TSS includes a description of how the TOE has the ability to apply filtering and sorting of IPS data using the parameters listed in the requirement.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall review the operational guidance to ensure that the guidance itemizes all event types,
+	as well as describes all attributes that are to be selectable in accordance with the requirement, to include
+	those attributes listed in the assignment. The administrative guidance shall also contain instructions on
+	how to set the pre- selection, as well as explain the syntax (if present) for multi-value pre-selection. The
+	administrative guidance shall also identify those audit records that are always recorded, regardless of the
+	selection criteria currently being enforced.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall perform the following tests:
+		<span class="testlist-"><ul>
+		<li class="test-"><a id="_t_16" class="defined" href="#_t_16">Test FAU_SAR.3:1</a>:
+      For each attribute listed in the requirement, the evaluator shall devise a test to show that selecting
+the attribute causes only audit events with that attribute (or those that are always recorded, as identified
+in the administrative guidance) to be recorded. </li> 
+<li class="test-"><a id="_t_17" class="defined" href="#_t_17">Test FAU_SAR.3:2</a>:
+       [conditional]: If the TSF supports specification of more complex audit pre-selection criteria (e.g.,
+multiple attributes, logical expressions using attributes) then the evaluator shall devise tests showing that
+this capability is correctly implemented. The evaluator shall also, in the test plan, provide a short narrative
+justifying the set of tests as representative and sufficient to exercise the capability.</li></ul></span>
+		</div></div></span></div><h2 class="indexable" data-level="1" id="impl-sfrs-">2.6 Evaluation Activities for Implementation-dependent SFRs</h2><h2 class="indexable" data-level="2" id="fru-imp_dep">2.6.1 Resource Utilization</h2><div class="comp" id="FRU-RSA.1"><h4>FRU_RSA.1 Maximum Quotas</h4><span class="activity_pane_body"><div class="component-activity-header">FRU_RSA.1</div>
+			
+			
+			<div class="eacategory">TSS</div><div class="ea"><div class="ea">The evaluator shall examine the TSS to ensure that it identifies all resources controlled through the quota
+			mechanism, and that this list contains those resources used to support traffic inspection. The evaluator
+			shall ensure that the TSS describes how each resource is counted as “used” and how a maximum quota
+			or use is determined, as well as the action taken when the quota is reached.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall examine the operational guidance to determine that it contains instructions for
+			establishing quotas (if they are configurable) and that it describes any actions administrators can or should
+			take in response to a quota being reached.
+			</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall follow the operational guidance to configure quotas for the resource (if such a
+			capability is provided). The evaluator then causes the resource quota to be reached, and observes that
+			the action specified in the TSS occurs.</div></div></span></div><h1 id="sar_aas" class="indexable" data-level="0">3 Evaluation Activities for SARs</h1><p>The PP-Module does not define any SARs beyond those defined within the
     
 	base NDcPP to which it must claim conformance.
 	It is important to note that a TOE that is evaluated against the PP-Module is

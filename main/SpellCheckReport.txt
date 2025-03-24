@@ -10,7 +10,6 @@ output/ips-release-linkable.html: Chargen
 output/ips-release-linkable.html: CoreOS
 output/ips-release-linkable.html: FCO
 output/ips-release-linkable.html: FIA
-output/ips-release-linkable.html: FRU
 output/ips-release-linkable.html: FTA
 output/ips-release-linkable.html: ICMPv4
 output/ips-release-linkable.html: ICMPv6
@@ -88,7 +87,6 @@ output/ips-release.html: CoreOS
 output/ips-release.html: Data’
 output/ips-release.html: FCO
 output/ips-release.html: FIA
-output/ips-release.html: FRU
 output/ips-release.html: FTA
 output/ips-release.html: ICMPv4
 output/ips-release.html: ICMPv6
@@ -155,6 +153,7 @@ output/ips-release.html: similar’
 output/ips-release.html: smnt
 output/ips-release.html: stou
 output/ips-release.html: stru
+output/ips-release.html: subjects’
 output/ips-release.html: subnet
 output/ips-release.html: subnets
 output/ips-release.html: supersets
@@ -177,6 +176,7 @@ output/ips-sd.html: TDs
 output/ips-sd.html: TODO
 output/ips-sd.html: URIs
 output/ips-sd.html: acknowledgement
+output/ips-sd.html: administrators’
 output/ips-sd.html: allo
 output/ips-sd.html: appe
 output/ips-sd.html: cdup
@@ -215,7 +215,6 @@ output/ips.html: CoreOS
 output/ips.html: Data’
 output/ips.html: FCO
 output/ips.html: FIA
-output/ips.html: FRU
 output/ips.html: FTA
 output/ips.html: ICMPv4
 output/ips.html: ICMPv6
@@ -238,6 +237,7 @@ output/ips.html: UID
 output/ips.html: URIs
 output/ips.html: Validator
 output/ips.html: acknowledgement
+output/ips.html: administrators’
 output/ips.html: allo
 output/ips.html: anomalous’
 output/ips.html: anomalybased
@@ -286,6 +286,7 @@ output/ips.html: similar’
 output/ips.html: smnt
 output/ips.html: stou
 output/ips.html: stru
+output/ips.html: subjects’
 output/ips.html: subnet
 output/ips.html: subnets
 output/ips.html: supersets
