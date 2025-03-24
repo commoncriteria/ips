@@ -13,3 +13,4 @@
 /home/runner/work/ips/ips/input/ips.xml:1770:30: error: value of attribute "id" is invalid; must be a string matching the regular expression "[a-zA-Z][\-0-9a-zA-Z_]+"
 /home/runner/work/ips/ips/input/ips.xml:1780:30: error: value of attribute "id" is invalid; must be a string matching the regular expression "[a-zA-Z][\-0-9a-zA-Z_]+"
 /home/runner/work/ips/ips/input/ips.xml:1817:15: error: element "sel-sfrs" not allowed here; expected element "impl-dep-sfrs"
+/home/runner/work/ips/ips/input/ips.xml:1866:17: error: element "audit-event" not allowed here; expected the element end-tag or element "aactivity" or "rule"

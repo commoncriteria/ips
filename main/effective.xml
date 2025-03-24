@@ -1852,12 +1852,12 @@ supporting inspection of network traffic</h:i>] that [<h:i>subjects</h:i>] can u
 			<Tests>The evaluator shall follow the operational guidance to configure quotas for the resource (if such a
 			capability is provided). The evaluator then causes the resource quota to be reached, and observes that
 			the action specified in the TSS occurs.</Tests></aactivity>
-			</f-element>
 			<audit-event>
-				<audit-event-descr>Traffic flow volume exceeds the maximum quota.
-				</audit-event-descr>
+				<audit-event-descr>Traffic flow volume exceeds the maximum quota.</audit-event-descr>
 				<audit-event-info>Identification of the TOE interface at which the quota was exceeded.</audit-event-info>
 			</audit-event>
+			</f-element>
+			
 		</f-component>
 		</section>
 	</impl-dep-sfrs>
