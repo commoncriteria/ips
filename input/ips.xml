@@ -645,13 +645,13 @@ enforce its policies on network traffic of monitored networks.</description>
 					<h:li><h:i>Totals of similar reactions occurring within a specified time period;</h:i></h:li>
 					<h:li><h:i>The events in the IPS Events table. </h:i></h:li>
 					<h:li><selectables>
-						<selectable><h:i>no other auditable events, </h:i></selectable>
+						<selectable>no other auditable events</selectable>
 						 <selectable>Auditable events listed in the Auditable Events for Optional SFRs table (<xref to="at-optional"/>) for SFRs that are present in the ST</selectable>
                   		<selectable>Auditable events listed in the Auditable Events for Objective SFRs table (<xref to="at-objective"/>) for SFRs that are present in the ST</selectable>
-						<comment>Review</comment>
+						
 			
 						</selectables>
-						
+						<comment>Review</comment>
 					</h:li>
 				
 					</h:ol>
@@ -1701,7 +1701,7 @@ forwarded</assignable></selectable>
 		within trusted channels (as defined by FTP_ITC.1), the ST author can choose to
 		list these messaging methods within FTP_ITC.1 and/or within this SFR. There are
 		no additional auditable IPS events that need to be included in FAU_GEN.1/IPS.
-		</h:p></h:i>/note>
+		</h:p></h:i></note>
 		<aactivity><no-tests/></aactivity>
 	</f-element>
 	</f-component>
@@ -1741,6 +1741,11 @@ forwarded</assignable></selectable>
 		</h:table>
 	<aactivity><no-tests/></aactivity>
 	</f-element>
+	</f-component>
+	<f-component
+	<f-component name="Audit Review" cc-id='fau_sar.2' id='fau-sar.2'></f-component>
+	<f-element id="fau-sar.1e1">
+	<f-element
 	</f-component>
 	</section>
 
