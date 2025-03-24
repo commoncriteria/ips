@@ -2,8 +2,6 @@
 * Error: Detected dangling id-reference to fcs-eap-ext-1 from attribute
         on/Module[1]""/include-pkg[2]""/depends[1]""/on[1]""
 * Error: Detected multiple elements with an id of 'ss-audit-table'.
-* Error: Detected multiple elements with an id of 'ips'.
-* Error: Detected multiple elements with an id of 'ips'.
 * Error: Detected multiple elements with an id of 'fau-arp.1'.
 * Error: Detected multiple elements with an id of 'fau-arp.1'.
 * Error: Detected multiple elements with an id of 'ss-audit-table'.

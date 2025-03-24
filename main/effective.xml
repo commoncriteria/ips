@@ -781,7 +781,7 @@ enforce its policies on network traffic of monitored networks.</description>
 				</f-component>
 			</section>
 			<!-- NEW SFR-->
-						<section title="Intrusion Prevention (IPS)" id="ips">
+						<section title="Intrusion Prevention (IPS)" id="m-ips">
 			<f-component name="Anomaly-Based IPS Functionality" cc-id="fip_abd_ext.1" id="ips-adb-ext-1-ips">
 				<f-element id="ips-adb-ext-1e1">
 				<title>
@@ -1810,6 +1810,7 @@ justifying the set of tests as representative and sufficient to exercise the cap
 	    <audit-table table="impl-dep-sfrs" id="Implementation-audit-events">
 	      <h:br/><h:b><ctr ctr-type="Table" pre="Table " id="atref-imp-dep-sfr">: Auditable Events for Mandatory SFRs</ctr></h:b>
 	    </audit-table></section>
+		<comment>for some reason the audit parameter is not being populated</comment>
 
 	<section title="Resource Utilization" id="fru-imp_dep">
 		<f-component name="Maximum Quotas" cc-id="fru_rsa.1" id="fru-rsa.1">
@@ -1852,12 +1853,12 @@ supporting inspection of network traffic</h:i>] that [<h:i>subjects</h:i>] can u
 			<Tests>The evaluator shall follow the operational guidance to configure quotas for the resource (if such a
 			capability is provided). The evaluator then causes the resource quota to be reached, and observes that
 			the action specified in the TSS occurs.</Tests></aactivity>
+			
+			</f-element>
 			<audit-event>
 				<audit-event-descr>Traffic flow volume exceeds the maximum quota.</audit-event-descr>
 				<audit-event-info>Identification of the TOE interface at which the quota was exceeded.</audit-event-info>
 			</audit-event>
-			</f-element>
-			
 		</f-component>
 		</section>
 	</impl-dep-sfrs>
@@ -1865,7 +1866,16 @@ supporting inspection of network traffic</h:i>] that [<h:i>subjects</h:i>] can u
 
 
     </sec:Security_Requirements> <!-- Security Requirements  -->
-
+<bibliography>
+	  <cc-entry/>
+      <entry id="bibndcpp3">
+        <tag>NDcPP</tag>
+        <description>NDcPP  - <h:a href="https://www.niap-ccevs.org/protectionprofiles/482"> End
+            Collaborative Protection Profile for Network Devices, Version 3, March 23, 2020</h:a></description>
+			<comment>The pdf filds do not have a direct link.</comment>
+	  </entry>
+	  
+</bibliography>
 <?modules <!-- Security Reuirements Section for Modules -->
 	<section title="Security Requirements" id="sec-reqs">
 

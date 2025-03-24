@@ -17,7 +17,6 @@ output/ips-release-linkable.html: IPSs
 output/ips-release-linkable.html: ITT
 output/ips-release-linkable.html: MOF
 output/ips-release-linkable.html: Multiprotocol
-output/ips-release-linkable.html: NDcPP
 output/ips-release-linkable.html: RST
 output/ips-release-linkable.html: SAA
 output/ips-release-linkable.html: SMR
@@ -94,7 +93,6 @@ output/ips-release.html: IPSs
 output/ips-release.html: ITT
 output/ips-release.html: MOF
 output/ips-release.html: Multiprotocol
-output/ips-release.html: NDcPP
 output/ips-release.html: RST
 output/ips-release.html: SAA
 output/ips-release.html: SMR
@@ -171,7 +169,6 @@ output/ips-sd.html: AGD
 output/ips-sd.html: CEM
 output/ips-sd.html: ICMPv4
 output/ips-sd.html: ICMPv6
-output/ips-sd.html: NDcPP
 output/ips-sd.html: TDs
 output/ips-sd.html: TODO
 output/ips-sd.html: URIs
@@ -184,6 +181,7 @@ output/ips-sd.html: cwd
 output/ips-sd.html: defination
 output/ips-sd.html: evaluator’s
 output/ips-sd.html: fail’
+output/ips-sd.html: filds
 output/ips-sd.html: frequency’
 output/ips-sd.html: mkd
 output/ips-sd.html: nlst
@@ -192,6 +190,7 @@ output/ips-sd.html: noop
 output/ips-sd.html: pagecontent
 output/ips-sd.html: pass’
 output/ips-sd.html: pasv
+output/ips-sd.html: pdf
 output/ips-sd.html: retr
 output/ips-sd.html: rmd
 output/ips-sd.html: rnfr
@@ -222,7 +221,6 @@ output/ips.html: IPSs
 output/ips.html: ITT
 output/ips.html: MOF
 output/ips.html: Multiprotocol
-output/ips.html: NDcPP
 output/ips.html: RST
 output/ips.html: SAA
 output/ips.html: SMR

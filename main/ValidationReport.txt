@@ -13,4 +13,9 @@
 /home/runner/work/ips/ips/input/ips.xml:1770:30: error: value of attribute "id" is invalid; must be a string matching the regular expression "[a-zA-Z][\-0-9a-zA-Z_]+"
 /home/runner/work/ips/ips/input/ips.xml:1780:30: error: value of attribute "id" is invalid; must be a string matching the regular expression "[a-zA-Z][\-0-9a-zA-Z_]+"
 /home/runner/work/ips/ips/input/ips.xml:1817:15: error: element "sel-sfrs" not allowed here; expected element "impl-dep-sfrs"
-/home/runner/work/ips/ips/input/ips.xml:1866:17: error: element "audit-event" not allowed here; expected the element end-tag or element "aactivity" or "rule"
+/home/runner/work/ips/ips/input/ips.xml:1824:12: error: element "comment" not allowed here; expected the element end-tag, element "section" or an element from another namespace
+/home/runner/work/ips/ips/input/ips.xml:1887:13: error: element "comment" not allowed here; expected the element end-tag
+/home/runner/work/ips/ips/input/ips.xml:2109:73: error: element "appendix" not allowed here; expected the element end-tag
+/home/runner/work/ips/ips/input/ips.xml:2204:78: error: element "appendix" not allowed here; expected the element end-tag
+/home/runner/work/ips/ips/input/ips.xml:2319:81: error: element "appendix" not allowed here; expected the element end-tag
+/home/runner/work/ips/ips/input/ips.xml:2654:16: error: element "bibliography" not allowed here; expected the element end-tag
