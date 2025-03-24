@@ -595,27 +595,8 @@ The following sections list Common Criteria and technology terms used in this do
 						There are no test EAs for this element.
 						</div><div class="ea">
 						Testing for this element is performed in conjunction with testing where promiscuous and inline interfaces are tested. 
-						</div></div></span></div><div class="comp" id="IPS-SDB-EXT.1-IPS"><h4>IPS_SDB_EXT.1 Signature-Based IPS Functionality</h4><span class="activity_pane_body"><div class="component-activity-header">IPS_SDB_EXT.1</div>      
-					
-					
-					
-				
-				
-					
-					    
-                 
-					
-					
-					
-                 
-					
-					
-					
-                
-				
-				
-				
-                 <div class="eacategory">TSS</div><div class="ea"><div class="ea">
+						</div></div></span></div><div class="comp" id="IPS-SDB-EXT.1-IPS"><h4>IPS_SDB_EXT.1 Signature-Based IPS Functionality</h4><span class="activity_pane_body"><div class="element-activity-header">IPS_SDB_EXT.1.1</div>      
+					<div class="eacategory">TSS</div><div class="ea">
 					The evaluator shall verify that the TSS describes what is comprised within a signature rule.
 					<br/>
 					The evaluator shall verify that each signature can be associated with a reaction specified in IPS_SBD_EXT.1.5.
@@ -624,14 +605,8 @@ The following sections list Common Criteria and technology terms used in this do
 					and explains how rules are associated with distinct network interfaces. Where interfaces can be grouped
 					into a common interface type (e.g., where the same internal logical path is used, perhaps where a
 					common device driver is used) they can be treated collectively as a distinct network interface.
-					</div><div class="ea">
-					The evaluator shall verify that the TSS describes what is comprised within a string-based detection
-					signature.<br/>
-					The evaluator shall verify that each packet payload string-based detection signature can be associated
-					with a reaction specified in IPS_SBD_EXT.1.5.
-					</div><div class="ea">The evaluator shall verify that the TSS describes how the attacks defined in IPS_SBD_EXT.1.3 are processed by the TOE and what reaction is triggered when these attacks are identified.</div><div class="ea">The evaluator shall verify that the TSS describes how the attacks defined in IPS_SBD_EXT.1.4 are processed by the TOE and what reaction is triggered when these attacks are identified.
-
-					</div><div class="ea">There are no TSS EAs for this element</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
+					</div>
+					<div class="eacategory">Guidance</div><div class="ea">
 					The evaluator shall verify that the operational guidance provides instructions with how to create and/or configure rules using the following protocols and header inspection fields:
 					<ul>
 						<li>IPv4: version; header length; packet length; ID; IP flags; fragment offset; time to live (TTL); protocol; header checksum; source address; destination address; and IP options.</li>
@@ -643,15 +618,11 @@ The following sections list Common Criteria and technology terms used in this do
 					</ul>
 					The evaluator shall verify that the operational guidance provides instructions with how to select and/or configure reactions specified in IPS_SBD_EXT.1.5 in the signature rules.
 
-					</div><div class="ea">The evaluator shall verify that the operational guidance provides instructions with how to configure rules using the packet payload string-based detection fields defined in IPS_SBD_EXT.1.2.<br/>
-					The evaluator shall verify that the operational guidance provides instructions with how to configure reactions specified in IPS_SBD_EXT.1.5 for each string-based detection signature.<br/>
-					The evaluator shall verify that the operational guidance provides instructions with how rules are associated with distinct network interfaces that are capable of being associated with signatures.
-					</div><div class="ea">The evaluator shall verify that the operational guidance provides instructions with configuring rules to identify the attacks defined in IPS_SBD_EXT.1.3 as well as the reactions to these attacks as specified in IPS_SBD_EXT.1.5.</div><div class="ea">
-					The evaluator shall verify that the operational guidance provides instructions with configuring rules to identify the attacks defined in IPS_SBD_EXT.1.4 as well as the reactions to these attacks as specified in IPS_SBD_EXT.1.5.
-					</div><div class="ea">The guidance EAs for this element are performed in conjunction with IPS_SBD_EXT.1.1, IPS_SBD_EXT.1.3, and IPS_SBD_EXT.1.4.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
+					</div>
+					<div class="eacategory">Tests</div><div class="ea">
 					The evaluator shall perform the following tests:
 					<span class="testlist-"><ul>
-						<li class="test-"><a id="_t_9" class="defined" href="#_t_9">Test IPS_SDB_EXT.1:1</a>:
+						<li class="test-"><a id="_t_9" class="defined" href="#_t_9">Test IPS_SDB_EXT.1.1:1</a>:
       The evaluator shall use the instructions in the operational guidance to test that packet header
 							signatures can be created and/or configured with the selected and/or configured reactions specified in
 							IPS_SBD_EXT.1.5 for each of the attributes listed below. Each attribute shall be individually assigned to its
@@ -666,12 +637,24 @@ The following sections list Common Criteria and technology terms used in this do
 							
 							</ul>
 							The evaluator shall generate traffic to trigger a signature and shall then use a packet sniffer to capture traffic that ensures the reactions of each rule are performed as expected.</li>
-							<li class="test-"><a id="_t_10" class="defined" href="#_t_10">Test IPS_SDB_EXT.1:2</a>:
+							<li class="test-"><a id="_t_10" class="defined" href="#_t_10">Test IPS_SDB_EXT.1.1:2</a>:
       The evaluator shall repeat the test above to ensure that signature-based IPS policies can be defined for each distinct network interface type capable of applying signatures as supported by the TOE.</li>
 						</ul></span>
-					</div><div class="ea">
+					</div>
+				<div class="element-activity-header">IPS_SDB_EXT.1.2</div>
+				<div class="eacategory">TSS</div><div class="ea">
+					The evaluator shall verify that the TSS describes what is comprised within a string-based detection
+					signature.<br/>
+					The evaluator shall verify that each packet payload string-based detection signature can be associated
+					with a reaction specified in IPS_SBD_EXT.1.5.
+					</div>
+					<div class="eacategory">Guidance</div><div class="ea">The evaluator shall verify that the operational guidance provides instructions with how to configure rules using the packet payload string-based detection fields defined in IPS_SBD_EXT.1.2.<br/>
+					The evaluator shall verify that the operational guidance provides instructions with how to configure reactions specified in IPS_SBD_EXT.1.5 for each string-based detection signature.<br/>
+					The evaluator shall verify that the operational guidance provides instructions with how rules are associated with distinct network interfaces that are capable of being associated with signatures.
+					</div>
+					<div class="eacategory">Tests</div><div class="ea">
 					The evaluator shall perform the following tests:<span class="testlist-"><ul>
-					<li class="test-"><a id="_t_11" class="defined" href="#_t_11">Test IPS_SDB_EXT.1:3</a>:
+					<li class="test-"><a id="_t_11" class="defined" href="#_t_11">Test IPS_SDB_EXT.1.2:1</a>:
       The evaluator shall use the instructions in the operational guidance to test that packet payload
 					string-based detection rules can be assigned to the reactions specified in IPS_SBD_EXT.1.5 using the
 					attributes specified in IPS_SBD_EXT.1.2. However it is not required (nor is it feasible) to test all possible
@@ -702,22 +685,39 @@ The following sections list Common Criteria and technology terms used in this do
 					<li>Test at least one string for each additional attribute type defined in the “other types of packet
 					payload inspection” assignment, if any other types are specified.</li>
 					</ul></li>
-					<li class="test-"><a id="_t_12" class="defined" href="#_t_12">Test IPS_SDB_EXT.1:4</a>:
+					<li class="test-"><a id="_t_12" class="defined" href="#_t_12">Test IPS_SDB_EXT.1.2:2</a>:
       The evaluator shall repeat Test 1 above to ensure that signature-based IPS policies can be defined for each distinct network interface type capable of applying signatures as supported by the TOE.</li>
 					</ul></span>
-					</div><div class="ea">The evaluator shall create and/or configure rules for each attack signature in IPS_SBD_EXT.1.3. For each
+					</div>    
+                 <div class="element-activity-header">IPS_SDB_EXT.1.3</div>
+					<div class="eacategory">TSS</div><div class="ea">The evaluator shall verify that the TSS describes how the attacks defined in IPS_SBD_EXT.1.3 are processed by the TOE and what reaction is triggered when these attacks are identified.</div>
+					<div class="eacategory">Guidance</div><div class="ea">The evaluator shall verify that the operational guidance provides instructions with configuring rules to identify the attacks defined in IPS_SBD_EXT.1.3 as well as the reactions to these attacks as specified in IPS_SBD_EXT.1.5.</div>
+					<div class="eacategory">Tests</div><div class="ea">The evaluator shall create and/or configure rules for each attack signature in IPS_SBD_EXT.1.3. For each
 					attack, the TOE should apply its corresponding signature and enable it to each distinct network interface
 					type capable of applying the signatures. The evaluator shall use packet captures to ensure that the attack
 					traffic is detected by the TOE and a reaction specified in IPS_SBD_EXT.1.5 is triggered and stops the attack.
 					Each attack should be performed one after another so as to ensure that its corresponding signature
 					successfully identified and appropriately reacted to a particular attack.
-					</div><div class="ea">The evaluator shall configure individual signatures for each attack in IPS_SBD_EXT.1.4. For each attack,
+					</div>
+                 <div class="element-activity-header">IPS_SDB_EXT.1.4</div>
+					<div class="eacategory">TSS</div><div class="ea">The evaluator shall verify that the TSS describes how the attacks defined in IPS_SBD_EXT.1.4 are processed by the TOE and what reaction is triggered when these attacks are identified.
+
+					</div>
+					<div class="eacategory">Guidance</div><div class="ea">
+					The evaluator shall verify that the operational guidance provides instructions with configuring rules to identify the attacks defined in IPS_SBD_EXT.1.4 as well as the reactions to these attacks as specified in IPS_SBD_EXT.1.5.
+					</div>
+					<div class="eacategory">Tests</div><div class="ea">The evaluator shall configure individual signatures for each attack in IPS_SBD_EXT.1.4. For each attack,
 					the TOE should apply its corresponding signature and enable it to each distinct network interface type
 					capable of applying signatures. The evaluator shall use packet captures to ensure that the attack traffic is
 					detected by the TOE and a reaction specified in IPS_SBD_EXT.1.5 is triggered and stops the attack. Each
 					attack should be performed one after another so as to ensure that its corresponding signature successfully
 					identified and appropriately reacted to a particular attack.
-					</div><div class="ea">The test EAs for this element are performed in conjunction with those for IPS_SBD_EXT.1.1, IPS_SBD_EXT.1.2, IPS_SBD_EXT.1.3, and IPS_SBD_EXT.1.4.</div></div><div class="element-activity-header">IPS_SDB_EXT.1.6</div>
+					</div>
+                <div class="element-activity-header">IPS_SDB_EXT.1.5</div>
+				<div class="eacategory">TSS</div><div class="ea">There are no TSS EAs for this element</div>
+				<div class="eacategory">Guidance</div><div class="ea">The guidance EAs for this element are performed in conjunction with IPS_SBD_EXT.1.1, IPS_SBD_EXT.1.3, and IPS_SBD_EXT.1.4.</div>
+				<div class="eacategory">Tests</div><div class="ea">The test EAs for this element are performed in conjunction with those for IPS_SBD_EXT.1.1, IPS_SBD_EXT.1.2, IPS_SBD_EXT.1.3, and IPS_SBD_EXT.1.4.</div>
+                 <div class="element-activity-header">IPS_SDB_EXT.1.6</div>
 					<div class="eacategory">TSS</div><div class="ea">There are no TSS EAs for this element.</div>
 					<div class="eacategory">Guidance</div><div class="ea">The evaluator shall verify that the operational guidance provides configuration instructions, if needed, to detect payload across multiple packets.</div>
 					<div class="eacategory">Tests</div><div class="ea">The evaluator shall repeat one of the tests in IPS_SBD_EXT.1.2 Test 1 but generate multiple nonfragmented packets that contain the string in the rule defined. The evaluator shall verify that the malicious traffic is still detected when split across multiple non-fragmented packets.</div>
