@@ -1820,7 +1820,7 @@ justifying the set of tests as representative and sufficient to exercise the cap
 	<section id="ss-audit-table" title="Auditable Events for Implementation-Dependent SFRs">
 	    <audit-table table="impl-dep-sfrs" id="Implementation-audit-events">
 	      <h:br/><h:b><ctr ctr-type="Table" pre="Table " id="atref-imp-dep-sfr">: Auditable Events for Mandatory SFRs</ctr></h:b>
-	    </audit-table>
+	    </audit-table></section>
 
 	<section title="Resource Utilization" id="fru-imp_dep">
 		<f-component name='Maximum Quotas' cc-id='fru_rsa.1' id='fru-rsa.1'>
