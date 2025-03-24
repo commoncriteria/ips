@@ -627,7 +627,7 @@ function showTarget(id){
 	            img[src="images/collapsed.png"] { display:none;}
 
           }
-    </style></head><body onLoad="init()"><div id="commmentbox-"><a href="#Comment-1-">Comment: Comment-1-</a><br><a href="#Comment-2-">Comment: Comment-2-</a><br><a href="#Comment-3-">Comment: Comment-3-</a><br><a href="#Comment-4-">Comment: Comment-4-</a><br><a href="#Comment-5-">Comment: Comment-5-</a><br></div><h1 class="title" style="page-break-before:auto;">PP-Module for IPS</h1><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><div class="center"><img src="images/niaplogo.png" alt="NIAP Logo"><br>
+    </style></head><body onLoad="init()"><div id="commmentbox-"><a href="#Comment-1-">Comment: Comment-1-</a><br><a href="#Comment-2-">Comment: Comment-2-</a><br><a href="#Comment-3-">Comment: Comment-3-</a><br><a href="#Comment-4-">Comment: Comment-4-</a><br><a href="#Comment-5-">Comment: Comment-5-</a><br><a href="#Comment-6-">Comment: Comment-6-</a><br><a href="#Comment-7-">Comment: Comment-7-</a><br><a href="#Comment-8-">Comment: Comment-8-</a><br></div><h1 class="title" style="page-break-before:auto;">PP-Module for IPS</h1><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><div class="center"><img src="images/niaplogo.png" alt="NIAP Logo"><br>
       Version: 1.1<br>2025-03-21<br><b>National Information Assurance Partnership</b><br></div><h2 style="page-break-before:always;">Revision History</h2><table><tr class="header"><th>Version</th><th>Date</th><th>Comment</th></tr><tr><td>1.1</td><td>2025-03-21</td><td><abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022 updates, incorporation of TDs</td></tr>
 <tr><td>1.0</td><td>2021-05-11</td><td>Initial publication</td></tr>
 </table><h3>TDs Applied</h3><h2>Contents</h2><div class="toc" id="toc"><a href="#Introduction" style="text-indent:0px">1<span>Introduction</span></a><a href="#Overview" style="text-indent:10px">1.1<span>Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#Compliant_Targets_of_Evaluation" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOE_Boundary" style="text-indent:10px">1.4<span>TOE Boundary</span></a><a href="#Use_Cases" style="text-indent:10px">1.5<span>Use Cases</span></a><a href="#app-intro" style="text-indent:10px">1.6<span>Introduction</span></a><a href="#ConformanceClaims" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#Security_Problem_Definition" style="text-indent:0px">3<span>Security Problem Definition</span></a><a href="#sec-threats" style="text-indent:10px">3.1<span>Threats</span></a><a href="#Assumptions" style="text-indent:10px">3.2<span>Assumptions</span></a><a href="#Organizational_Security_Policies" style="text-indent:10px">3.3<span>Organizational Security Policies</span></a><a href="#Security_Objectives" style="text-indent:0px">4<span>Security Objectives</span></a><a href="#Security_Objectives_for_the_Operational_Environment" style="text-indent:10px">4.1<span>Security Objectives for the Operational Environment</span></a><a href="#sec-sor" style="text-indent:10px">4.2<span>Security Objectives Rationale</span></a><a href="#Security_Requirements" style="text-indent:0px">5<span>Security Requirements</span></a><a href="#secreq-ND" style="text-indent:10px">5.1<span>Collaborative 
@@ -643,8 +643,8 @@ function showTarget(id){
 		</span></a><a href="#conreq-ND" style="text-indent:20px">6.1.4<span>
 	Consistency of Requirements
       </span></a><a href="#opt-sfrs" style="text-indent:0px">Appendix A - <span>Optional SFRs</span></a><a href="#opt-sfrs" style="text-indent:10px">A.1<span>Strictly Optional Requirements
-    </span></a><a href="#fau" style="text-indent:20px">A.1.1<span>Security Audit(FAU)</span></a><a href="#fpt" style="text-indent:20px">A.1.2<span>Protection of the TSF (FPT)</span></a><a href="#ips" style="text-indent:20px">A.1.3<span>Intrusion Prevention (IPS)</span></a><a href="#obj-sfrs" style="text-indent:10px">A.2<span>Objective Requirements
-    </span></a><a href="#impl-dep-sfrs" style="text-indent:10px">A.3<span>Implementation-dependent Requirements
+    </span></a><a href="#sec-opt-audit-table" style="text-indent:20px">A.1.1<span>Auditable Events for Optional SFRs</span></a><a href="#fau-ops" style="text-indent:20px">A.1.2<span>Security Audit(FAU)</span></a><a href="#fpt" style="text-indent:20px">A.1.3<span>Protection of the TSF (FPT)</span></a><a href="#ips" style="text-indent:20px">A.1.4<span>Intrusion Prevention (IPS)</span></a><a href="#obj-sfrs" style="text-indent:10px">A.2<span>Objective Requirements
+    </span></a><a href="#_sec_12" style="text-indent:20px">A.2.1<span>Auditable Events for Objective SFRs</span></a><a href="#fau-obj" style="text-indent:20px">A.2.2<span>Security Audit (FAU)</span></a><a href="#impl-dep-sfrs" style="text-indent:10px">A.3<span>Implementation-dependent Requirements
     </span></a><a href="#sel-sfrs" style="text-indent:0px">Appendix B - <span>Selection-based Requirements
     </span></a><a href="#satisfiedreqs" style="text-indent:0px">Appendix C - <span>Inherently Satisfied Requirements</span></a><a href="#entropyappendix" style="text-indent:0px">Appendix D - <span>Entropy Documentation and Assessment</span></a><a href="#entropydesign" style="text-indent:10px">D.1<span>Design Description</span></a><a href="#entropyjustification" style="text-indent:10px">D.2<span>Entropy Justification</span></a><a href="#entropyoperatingconditions" style="text-indent:10px">D.3<span>Operating Conditions</span></a><a href="#entropyhealthtesting" style="text-indent:10px">D.4<span>Health Testing</span></a><a href="#apndx-equiv" style="text-indent:0px">Appendix E - <span>Application Software Equivalency Guidelines</span></a><a href="#app-intro" style="text-indent:10px">E.1<span>Introduction</span></a><a href="#approach" style="text-indent:10px">E.2<span>Approach to Equivalency Analysis</span></a><a href="#modelequiv" style="text-indent:10px">E.3<span>Specific Guidance for Determining Product Model Equivalence</span></a><a href="#versionequiv" style="text-indent:10px">E.4<span>Specific Guidance for Determining Product Version Equivalence</span></a><a href="#platformequiv" style="text-indent:10px">E.5<span>Specific Guidance for Determining Platform Equivalence</span></a><a href="#hardware-equiv" style="text-indent:20px">E.5.1<span>Platform Equivalence&#8212;Hardware/Virtual Hardware Platforms</span></a><a href="#os-equiv" style="text-indent:20px">E.5.2<span>Platform Equivalence&#8212;OS Platforms</span></a><a href="#software-equiv" style="text-indent:20px">E.5.3<span>Software-based Execution Environment Platform Equivalence</span></a><a href="#specificity" style="text-indent:10px">E.6<span>Level of Specificity for Tested Configurations and Claimed Equivalent Configurations</span></a><a href="#acronyms" style="text-indent:0px">Appendix F - <span>Acronyms</span></a><a href="#appendix-bibliography" style="text-indent:0px">Appendix G - <span>Bibliography</span></a></div><h1 class="indexable" data-level="1" id="Introduction">1 Introduction</h1>
     
@@ -1085,11 +1085,8 @@ enforce its policies on network traffic of monitored networks<a id="period_147" 
 					<li><i>Totals of similar events occurring within a specified time period;</i></li>
 					<li><i>Totals of similar reactions occurring within a specified time period;</i></li>
 					<li><i>The events in the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> Events table<a id="period_194" href="#period_194">. </a></i></li>
-					<li>[<b>selection</b>: <span class="selectable-content" id="_s_1"><i>no other auditable events, </i></span>, <span class="selectable-content" id="_s_2">
-								[<b>assignment</b>: 
-     <span class="assignable-content"><i>other auditable events</i></span>]
-							</span>]
-						
+					<li>[<b>selection</b>: <span class="selectable-content" id="_s_1">no other auditable events</span>, <span class="selectable-content" id="_s_2">Auditable events listed in the Auditable Events for Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> table (<a onclick="showTarget('at-optional')" href="#at-optional" class="at-optional-ref">Table  <span class="counter">7</span></a>) for <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are present in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></span>, <span class="selectable-content" id="_s_3">Auditable events listed in the Auditable Events for Objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> table (<a onclick="showTarget('at-objective')" href="#at-objective" class="at-objective-ref">Table  <span class="counter">8</span></a>) for <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are present in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></span>]
+						<span style="" class="comment " id="Comment-4-">Review</span>
 					</li>
 				
 					</ol>
@@ -1121,7 +1118,7 @@ enforce its policies on network traffic of monitored networks<a id="period_147" 
 				<div class="element"><div class="reqid" id="FAU_GEN.1.2/IPS"><a href="#FAU_GEN.1.2/IPS" class="abbr">FAU_GEN.1.2/IPS</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall record within each <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> auditable event</b> record at least the following information: <ol type="a">
 						<li>Date and time of the event, type of event <b>and/or reaction,</b> <s>subject identity, and the outcome (success or failure) of the event; and;</s></li>
 						<li>For each <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> auditable event</b> type, based on the auditable event definitions of the functional components included in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><s>/<abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></s>, [<i>information specified in column three of the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> Events table]<a id="period_204" href="#period_204">. </a></i></li>
-						<span style="" class="comment " id="Comment-4-">Update the second selection to properly have UPS Auidtable evet bolded, just like the first one<a id="period_205" href="#period_205">. </a></span>
+						<span style="" class="comment " id="Comment-5-">Update the second selection to properly have UPS Auidtable evet bolded, just like the first one<a id="period_205" href="#period_205">. </a></span>
 					</ol>
 
 					<div class="appnote"><span class="note-header">Application
@@ -1175,17 +1172,17 @@ enforce its policies on network traffic of monitored networks<a id="period_147" 
 						<h3 id="ips" class="indexable" data-level="3">5.2.4 Intrusion Prevention (IPS)</h3>
 			<div class="comp" id="FIP_ABD_EXT.1"><h4>FIP_ABD_EXT.1 Anomaly-Based IPS Functionality</h4>
 				<div class="element"><div class="reqid" id="FIP_ABD_EXT.1.1"><a href="#FIP_ABD_EXT.1.1" class="abbr">FIP_ABD_EXT.1.1</a></div><div class="reqdesc">
-				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support the definition of [<b>selection</b>: <span class="selectable-content" id="_s_3">baselines (&#8216;expected and approved&#8217;)</span>, <span class="selectable-content" id="_s_4">anomaly (&#8216;unexpected&#8217;) traffic patterns</span>, <span class="selectable-content" id="_s_5"></span>] including the specification of [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_6">throughput ([<b>assignment</b>: 
-     <span class="assignable-content"> data elements (e.g<a id="period_211" href="#period_211">. </a>bytes, packets, etc.) per time period (e.g<a id="period_212" href="#period_212">. </a>minutes, hours, days)</span>]) </span></li><li style=""><span class="selectable-content" id="_s_7">time of day;</span></li><li style=""><span class="selectable-content" id="_s_8">frequency;</span></li><li style=""><span class="selectable-content" id="_s_9">thresholds;</span></li><li style=""><span class="selectable-content" id="_s_10">[ [<b>assignment</b>: 
+				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support the definition of [<b>selection</b>: <span class="selectable-content" id="_s_4">baselines (&#8216;expected and approved&#8217;)</span>, <span class="selectable-content" id="_s_5">anomaly (&#8216;unexpected&#8217;) traffic patterns</span>, <span class="selectable-content" id="_s_6"></span>] including the specification of [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_7">throughput ([<b>assignment</b>: 
+     <span class="assignable-content"> data elements (e.g<a id="period_211" href="#period_211">. </a>bytes, packets, etc.) per time period (e.g<a id="period_212" href="#period_212">. </a>minutes, hours, days)</span>]) </span></li><li style=""><span class="selectable-content" id="_s_8">time of day;</span></li><li style=""><span class="selectable-content" id="_s_9">frequency;</span></li><li style=""><span class="selectable-content" id="_s_10">thresholds;</span></li><li style=""><span class="selectable-content" id="_s_11">[ [<b>assignment</b>: 
      <span class="assignable-content">other methods</span>] ]</span></li></ul>]
 					and the following network protocol fields:
 					<ul>
-						<li>[<b>selection</b>: <span class="selectable-content" id="_s_11"> all packet header and data elements defined in IPS_SBD_EXT.1;</span>, <span class="selectable-content" id="_s_12">[<b>assignment</b>: 
+						<li>[<b>selection</b>: <span class="selectable-content" id="_s_12"> all packet header and data elements defined in IPS_SBD_EXT.1;</span>, <span class="selectable-content" id="_s_13">[<b>assignment</b>: 
      <span class="assignable-content"> subset list of packet header and data elements from IPS_SBD_EXT.1 </span>]</span>]</li>
 					</ul>
 				<div class="appnote"><span class="note-header">Application
       Note:
-    </span><span class="note">
+    </span><span class="note"><i>
 					Baselines are the definition of known-good traffic (to be allowed per
 					IPS_ABD_EXT.1.3) whilst anomaly traffic is definition of (&#8216;offending&#8217;) traffic that is
 					to be handled per other actions defined in IPS_ABD_EXT.1.3<a id="period_213" href="#period_213">. </a>Frequency can be
@@ -1194,9 +1191,9 @@ enforce its policies on network traffic of monitored networks<a id="period_147" 
 					<abbr class="dyn-abbr"><a href="#abbr_FTP">FTP</a></abbr> sessions established during 1 hour<a id="period_214" href="#period_214">. </a>Thresholds can be defined as an amount
 					or percentage of deviation from expected levels or limits, such as a number of
 					megabytes of data transferred via <abbr class="dyn-abbr"><a href="#abbr_FTP">FTP</a></abbr> per hour<a id="period_215" href="#period_215">. </a>
-					</span></div></div></div>
+					</i></span></div></div></div>
 				<div class="element"><div class="reqid" id="FIP_ABD_EXT.1.2"><a href="#FIP_ABD_EXT.1.2" class="abbr">FIP_ABD_EXT.1.2</a></div><div class="reqdesc">
-				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support the definition of anomaly activity through [<b>selection</b>: <span class="selectable-content" id="_s_13">manual configuration by administrators</span>, <span class="selectable-content" id="_s_14">automated configuration</span>]
+				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support the definition of anomaly activity through [<b>selection</b>: <span class="selectable-content" id="_s_14">manual configuration by administrators</span>, <span class="selectable-content" id="_s_15">automated configuration</span>]
 				<div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note">
@@ -1209,16 +1206,16 @@ enforce its policies on network traffic of monitored networks<a id="period_147" 
 				<div class="element"><div class="reqid" id="FIP_ABD_EXT.1.3"><a href="#FIP_ABD_EXT.1.3" class="abbr">FIP_ABD_EXT.1.3</a></div><div class="reqdesc">
 				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow the following operations to be associated with anomalybased <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies:
 				<ul>
-					<li>In any mode, for any sensor interface: [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_15">allow the traffic flow</span></li><li style=""><span class="selectable-content" id="_s_16">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the source address of the offending traffic</span></li><li style=""><span class="selectable-content" id="_s_17">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the destination address of the offending traffic</span></li><li style=""><span class="selectable-content" id="_s_18">send an <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>
-								[<b>selection</b>: <span class="selectable-content" id="_s_19">host</span>, <span class="selectable-content" id="_s_20">destination</span>, <span class="selectable-content" id="_s_21">port</span>]
+					<li>In any mode, for any sensor interface: [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_16">allow the traffic flow</span></li><li style=""><span class="selectable-content" id="_s_17">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the source address of the offending traffic</span></li><li style=""><span class="selectable-content" id="_s_18">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the destination address of the offending traffic</span></li><li style=""><span class="selectable-content" id="_s_19">send an <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>
+								[<b>selection</b>: <span class="selectable-content" id="_s_20">host</span>, <span class="selectable-content" id="_s_21">destination</span>, <span class="selectable-content" id="_s_22">port</span>]
 								unreachable message
-								</span></li><li style=""><span class="selectable-content" id="_s_22">trigger a non-TOE network device to block the offending traffic pattern</span></li></ul>]</li>
+								</span></li><li style=""><span class="selectable-content" id="_s_23">trigger a non-TOE network device to block the offending traffic pattern</span></li></ul>]</li>
 					In inline mode:
 						<ul>
 							<li><i>[allow the traffic flow</i></li>
 							<li><i>block/drop the traffic flow</i></li>
 							<li><i>and</i> 
-									[<b>selection</b>: <span class="selectable-content" id="_s_23">modify and forward packets before they pass through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>, <span class="selectable-content" id="_s_24">no other actions</span>]</li>
+									[<b>selection</b>: <span class="selectable-content" id="_s_24">modify and forward packets before they pass through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>, <span class="selectable-content" id="_s_25">no other actions</span>]</li>
 						</ul>
 					
 				</ul>
@@ -1227,7 +1224,7 @@ enforce its policies on network traffic of monitored networks<a id="period_147" 
 				</div>
 				<div class="comp" id="IPS_IPB_EXT.1"><h4>IPS_IPB_EXT.1 IP Blocking</h4>
 				<div class="element"><div class="reqid" id="IPS_IPB_EXT.1.1"><a href="#IPS_IPB_EXT.1.1" class="abbr">IPS_IPB_EXT.1.1</a></div><div class="reqdesc">
-					The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support configuration and implementation of known-good and known-bad lists of [<b>selection</b>: <span class="selectable-content" id="_s_25">source</span>, <span class="selectable-content" id="_s_26">destination</span>] IP addresses and [<b>selection</b>: <span class="selectable-content" id="_s_27">no additional address types</span>, <span class="selectable-content" id="_s_28">
+					The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support configuration and implementation of known-good and known-bad lists of [<b>selection</b>: <span class="selectable-content" id="_s_26">source</span>, <span class="selectable-content" id="_s_27">destination</span>] IP addresses and [<b>selection</b>: <span class="selectable-content" id="_s_28">no additional address types</span>, <span class="selectable-content" id="_s_29">
 							[<b>assignment</b>: 
      <span class="assignable-content">list of address types</span>]
 							</span>]
@@ -1241,8 +1238,8 @@ enforce its policies on network traffic of monitored networks<a id="period_147" 
 						that would allow/prohibit traffic flow based on other address types, such as
 						<abbr class="dyn-abbr"><a href="#abbr_MAC">MAC</a></abbr> addresses<a id="period_221" href="#period_221">. </a>					</span></div></div></div>
 				<div class="element"><div class="reqid" id="IPS_IPB_EXT.1.2"><a href="#IPS_IPB_EXT.1.2" class="abbr">IPS_IPB_EXT.1.2</a></div><div class="reqdesc">
-					The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow [Security Administrators] to configure the following <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements: [<b>selection</b>: <span class="selectable-content" id="_s_29">known-good list rules</span>, <span class="selectable-content" id="_s_30">known-bad list rules</span>, <span class="selectable-content" id="_s_31">IP addresses</span>, <span class="selectable-content" id="_s_32"> [<b>assignment</b>: 
-     <span class="assignable-content">other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements </span>]</span>, <span class="selectable-content" id="_s_33">no other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements</span>]<a id="period_222" href="#period_222">. </a>					</div></div>
+					The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow [Security Administrators] to configure the following <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements: [<b>selection</b>: <span class="selectable-content" id="_s_30">known-good list rules</span>, <span class="selectable-content" id="_s_31">known-bad list rules</span>, <span class="selectable-content" id="_s_32">IP addresses</span>, <span class="selectable-content" id="_s_33"> [<b>assignment</b>: 
+     <span class="assignable-content">other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements </span>]</span>, <span class="selectable-content" id="_s_34">no other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements</span>]<a id="period_222" href="#period_222">. </a>					</div></div>
 				
 				</div>
 				<div class="comp" id="IPS_NTA_EXT.1"><h4>IPS_NTA_EXT.1 Network Traffic Analysis</h4>
@@ -1295,9 +1292,9 @@ enforce its policies on network traffic of monitored networks<a id="period_147" 
      <span class="assignable-content">list of interface types</span>]</li>
 					<li>Management mode:[<b>assignment</b>: 
      <span class="assignable-content">list of interface types</span>]</li>
-					<li>[<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_34">[Session-reset-capable interfaces:[<b>assignment</b>: 
-     <span class="assignable-content">list of session-reset-capable interfaces</span>]</span></li><li style=""><span class="selectable-content" id="_s_35">[<b>assignment</b>: 
-     <span class="assignable-content">other interface types</span>]]</span></li><li style=""><span class="selectable-content" id="_s_36">no other interface types</span></li></ul>]<a id="period_233" href="#period_233">. </a></li>
+					<li>[<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_35">[Session-reset-capable interfaces:[<b>assignment</b>: 
+     <span class="assignable-content">list of session-reset-capable interfaces</span>]</span></li><li style=""><span class="selectable-content" id="_s_36">[<b>assignment</b>: 
+     <span class="assignable-content">other interface types</span>]]</span></li><li style=""><span class="selectable-content" id="_s_37">no other interface types</span></li></ul>]<a id="period_233" href="#period_233">. </a></li>
 					</ul>
 					<div class="appnote"><span class="note-header">Application
       Note:
@@ -1335,10 +1332,10 @@ enforce its policies on network traffic of monitored networks<a id="period_147" 
 				<div class="element"><div class="reqid" id="IPS_SDB_EXT.1.1"><a href="#IPS_SDB_EXT.1.1" class="abbr">IPS_SDB_EXT.1.1</a></div><div class="reqdesc">
 					The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support inspection of packet header contents and be able to inspect at least the following header fields: [
 					<ul>
-					<li><i>IPv4: version; header length; packet length; ID; IP flags; fragment offset;time to live (<abbr class="dyn-abbr"><a href="#abbr_TTL">TTL</a></abbr>); protocol; header checksum; source address; destination address; IP options; and[<b>selection</b>: <span class="selectable-content" id="_s_37">type of service (<abbr class="dyn-abbr"><a href="#abbr_ToS">ToS</a></abbr>)</span>, <span class="selectable-content" id="_s_38">no other field</span>]<a id="period_244" href="#period_244">. </a></i></li>
-					<li><i>IPv6: version; payload length; next header; hop limit; source address; destination address; routing header; and </i>[<b>selection</b>: <span class="selectable-content" id="_s_39">traffic class</span>, <span class="selectable-content" id="_s_40">flow label</span>, <span class="selectable-content" id="_s_41">no other field</span>]
+					<li><i>IPv4: version; header length; packet length; ID; IP flags; fragment offset;time to live (<abbr class="dyn-abbr"><a href="#abbr_TTL">TTL</a></abbr>); protocol; header checksum; source address; destination address; IP options; and [<b>selection</b>: <span class="selectable-content" id="_s_38">type of service (<abbr class="dyn-abbr"><a href="#abbr_ToS">ToS</a></abbr>)</span>, <span class="selectable-content" id="_s_39">no other field</span>]<a id="period_244" href="#period_244">. </a></i></li>
+					<li><i>IPv6: version; payload length; next header; hop limit; source address; destination address; routing header; and </i>[<b>selection</b>: <span class="selectable-content" id="_s_40">traffic class</span>, <span class="selectable-content" id="_s_41">flow label</span>, <span class="selectable-content" id="_s_42">no other field</span>]
 					</li>
-					<li><i><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>: type; code; header checksum; and </i>[<b>selection</b>: <span class="selectable-content" id="_s_42">ID</span>, <span class="selectable-content" id="_s_43">sequence number</span>, <span class="selectable-content" id="_s_44">[<b>assignment</b>: 
+					<li><i><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>: type; code; header checksum; and </i>[<b>selection</b>: <span class="selectable-content" id="_s_43">ID</span>, <span class="selectable-content" id="_s_44">sequence number</span>, <span class="selectable-content" id="_s_45">[<b>assignment</b>: 
      <span class="assignable-content">other field in the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> header</span>]</span>]					
 						</li>
 					<li><i>ICMPv6: type; code; and header checksum<a id="period_245" href="#period_245">. </a></i></li>
@@ -1356,8 +1353,8 @@ enforce its policies on network traffic of monitored networks<a id="period_147" 
 							<li><abbr class="dyn-abbr"><a href="#abbr_FTP">FTP</a></abbr> (file transfer) commands: help, noop, stat, syst, user, abort, acct, allo, appe, cdup, cwd, dele, list, mkd, mode, nlst, pass, pasv, port, pass, quit, rein, rest, retr, rmd, rnfr, rnto, site, smnt, stor, stou, stru, and type<a id="period_250" href="#period_250">. </a></li>
 							<li><abbr class="dyn-abbr"><a href="#abbr_HTTP">HTTP</a></abbr> (web) commands and content: commands including GET and POST, and administrator- defined strings to match URLs/URIs, and web page content<a id="period_251" href="#period_251">. </a></li>
 							<li><abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> (email) states: start state, <abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> commands state, mail header state, mail body state, abort state</li>
-							<li>[<b>selection</b>: <span class="selectable-content" id="_s_45">[<b>assignment</b>: 
-     <span class="assignable-content">other types of <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> payload inspection</span>]</span>, <span class="selectable-content" id="_s_46">no other types of <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> payload inspection</span>]</li>
+							<li>[<b>selection</b>: <span class="selectable-content" id="_s_46">[<b>assignment</b>: 
+     <span class="assignable-content">other types of <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> payload inspection</span>]</span>, <span class="selectable-content" id="_s_47">no other types of <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> payload inspection</span>]</li>
 						</ol></i></li>
 					<li><i><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> data: characters beyond the first 8 bytes of the <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> header;</i></li>
 					<li>[<b>assignment</b>: 
@@ -1413,7 +1410,7 @@ enforce its policies on network traffic of monitored networks<a id="period_147" 
 					</ol>
                 <div class="appnote"><span class="note-header">Application
       Note:
-    </span><span class="note">
+    </span><span class="note"><i>
 				<p>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defines the minimum set of packet header fields, packet payload strings,
 					signature types, and potentially malicious traffic patterns (e.g<a id="period_257" href="#period_257">. </a>flooding and
 					scanning) that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must be able to detect<a id="period_258" href="#period_258">. </a>Valid signatures can be comprised
@@ -1441,22 +1438,23 @@ enforce its policies on network traffic of monitored networks<a id="period_147" 
 					packet contents, and traffic patterns to demonstrate the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&#8217;s ability to inspect
 					packet contents, to collect traffic pattern statistics over a period of time, and to
 					correlate collected data<a id="period_266" href="#period_266">. </a>					</p><p>An <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> sensor interface refers to any <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface to which an <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy is currently applied<a id="period_267" href="#period_267">. </a></p>
+					</i>
 				</span></div></div></div>
 				<div class="element"><div class="reqid" id="IPS_SDB_EXT.1.5"><a href="#IPS_SDB_EXT.1.5" class="abbr">IPS_SDB_EXT.1.5</a></div><div class="reqdesc">
 				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow the following operations to be associated with signaturebased <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies:
 				<ul>
-					<li>In any mode, for any sensor interface:[<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_47">allow the traffic flow;</span></li><li style=""><span class="selectable-content" id="_s_48">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the source address of the offending traffic;</span></li><li style=""><span class="selectable-content" id="_s_49">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the destination address of the offending traffic;</span></li><li style=""><span class="selectable-content" id="_s_50">send an <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>[<b>selection</b>: <span class="selectable-content" id="_s_51">host</span>, <span class="selectable-content" id="_s_52">destination</span>, <span class="selectable-content" id="_s_53">port</span>]unreachable message;</span></li><li style=""><span class="selectable-content" id="_s_54">trigger a non-TOE network device to block the offending traffic pattern</span></li></ul>]</li>
+					<li>In any mode, for any sensor interface:[<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_48">allow the traffic flow;</span></li><li style=""><span class="selectable-content" id="_s_49">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the source address of the offending traffic;</span></li><li style=""><span class="selectable-content" id="_s_50">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the destination address of the offending traffic;</span></li><li style=""><span class="selectable-content" id="_s_51">send an <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>[<b>selection</b>: <span class="selectable-content" id="_s_52">host</span>, <span class="selectable-content" id="_s_53">destination</span>, <span class="selectable-content" id="_s_54">port</span>]unreachable message;</span></li><li style=""><span class="selectable-content" id="_s_55">trigger a non-TOE network device to block the offending traffic pattern</span></li></ul>]</li>
 					<li>In inline mode:
 						<ul>
 							<li>block/drop the traffic flow;</li>
-							<li>and[<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_55">allow all traffic flow;</span></li><li style=""><span class="selectable-content" id="_s_56">allow the traffic flow with following exceptions:[<b>assignment</b>: 
-     <span class="assignable-content">malicious traffic such as but not limited to IPS_EXT.1.3 and IPS_EXT.1.4 if always dropped</span>];</span></li><li style=""><span class="selectable-content" id="_s_57">modify and forward packets before they pass through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span></li></ul>]<a id="period_268" href="#period_268">. </a></li>
+							<li>and[<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_56">allow all traffic flow;</span></li><li style=""><span class="selectable-content" id="_s_57">allow the traffic flow with following exceptions:[<b>assignment</b>: 
+     <span class="assignable-content">malicious traffic such as but not limited to IPS_EXT.1.3 and IPS_EXT.1.4 if always dropped</span>];</span></li><li style=""><span class="selectable-content" id="_s_58">modify and forward packets before they pass through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span></li></ul>]<a id="period_268" href="#period_268">. </a></li>
 						</ul>
 					</li>
 				</ul>
                 <div class="appnote"><span class="note-header">Application
       Note:
-    </span><span class="note">The term &#8220;trigger&#8221; is used to allow for multiple types of interactions, including:
+    </span><span class="note"><i>The term &#8220;trigger&#8221; is used to allow for multiple types of interactions, including:
 				one in which the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> initiates a authenticated connection to the remote device
 				across an IP network and uses a remote administration interface of the remote
 				device to modify the active configuration on that device; or one in which the
@@ -1470,7 +1468,7 @@ enforce its policies on network traffic of monitored networks<a id="period_147" 
 				could include such actions as removing from packet data character strings that
 				match regular expression (regex) conditions that violate policies, such as
 				transmitting personally identifiable information or other private data (phone
-				numbers, credit-card numbers, etc.)<a id="period_271" href="#period_271">. </a></span></div></div></div>
+				numbers, credit-card numbers, etc.)<a id="period_271" href="#period_271">. </a></i></span></div></div></div>
 				<div class="element"><div class="reqid" id="IPS_SDB_EXT.1.6"><a href="#IPS_SDB_EXT.1.6" class="abbr">IPS_SDB_EXT.1.6</a></div><div class="reqdesc">
 				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support stream reassembly or equivalent to detect malicious payload even if it is split across multiple non-fragmented packets<a id="period_272" href="#period_272">. </a>
                 </div></div>
@@ -1543,82 +1541,167 @@ enforce its policies on network traffic of monitored networks<a id="period_147" 
 			This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not modify any requirements when the
 			NDcPP is the base<a id="period_295" href="#period_295">. </a>		  </td></tr><tr><th colspan="2"> Additional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th></tr><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not add any requirements when the
-	      NDcPP is the base<a id="period_296" href="#period_296">. </a>	    </td></tr><tr><th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a></td><td></td></tr><tr><td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td></td></tr><tr><td><a href="#FIP_ABD_EXT.1">FIP_ABD_EXT.1</a></td><td></td></tr><tr><td><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td></td></tr><tr><td><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td></td></tr><tr><td><a href="#IPS_SDB_EXT.1">IPS_SDB_EXT.1</a></td><td></td></tr></tr><tr><th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_STG.1/IPS">FAU_STG.1/IPS</a></td><td></td></tr><tr><td><a href="#FAU_STG.4/IPS">FAU_STG.4/IPS</a></td><td></td></tr><tr><td><a href="#FPT_FLS.1">FPT_FLS.1</a></td><td></td></tr><tr><td><a href="#IPS_SBD_EXT.2">IPS_SBD_EXT.2</a></td><td></td></tr></tr><tr><th colspan="2"> Objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
-	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Objective requirements<a id="period_297" href="#period_297">. </a>	    </td></tr></tr><tr><th colspan="2"> Implementation-dependent <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
-	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Implementation-dependent requirements<a id="period_298" href="#period_298">. </a>	    </td></tr></tr><tr><th colspan="2"> Selection-based <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
-	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Selection-based requirements<a id="period_299" href="#period_299">. </a>	    </td></tr></tr></table><h1 id="opt-sfrs" class="indexable" data-level="A">Appendix A -  Optional SFRs</h1><h2 id="opt-sfrs" class="indexable" data-level="2">A.1 Strictly Optional Requirements
+	      NDcPP is the base<a id="period_296" href="#period_296">. </a>	    </td></tr><tr><th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a></td><td></td></tr><tr><td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td></td></tr><tr><td><a href="#FIP_ABD_EXT.1">FIP_ABD_EXT.1</a></td><td></td></tr><tr><td><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td></td></tr><tr><td><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td></td></tr><tr><td><a href="#IPS_SDB_EXT.1">IPS_SDB_EXT.1</a></td><td></td></tr></tr><tr><th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_STG.1/IPS">FAU_STG.1/IPS</a></td><td></td></tr><tr><td><a href="#FAU_STG.4/IPS">FAU_STG.4/IPS</a></td><td></td></tr><tr><td><a href="#FPT_FLS.1">FPT_FLS.1</a></td><td></td></tr><tr><td><a href="#IPS_SBD_EXT.2">IPS_SBD_EXT.2</a></td><td></td></tr></tr><tr><th colspan="2"> Objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_ARP.1">FAU_ARP.1</a></td><td></td></tr><tr><td><a href="#FAU_SAR.1">FAU_SAR.1</a></td><td></td></tr><tr><td><a href="#FAU_SAR.2">FAU_SAR.2</a></td><td></td></tr></tr><tr><th colspan="2"> Implementation-dependent <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
+	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Implementation-dependent requirements<a id="period_297" href="#period_297">. </a>	    </td></tr></tr><tr><th colspan="2"> Selection-based <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
+	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Selection-based requirements<a id="period_298" href="#period_298">. </a>	    </td></tr></tr></table><h1 id="opt-sfrs" class="indexable" data-level="A">Appendix A -  Optional SFRs</h1><h2 id="opt-sfrs" class="indexable" data-level="2">A.1 Strictly Optional Requirements
     </h2>
-	<h3 id="fau" class="indexable" data-level="3">A.1.1 Security Audit(FAU)</h3>
-	<span style="" class="comment " id="Comment-5-">^this is something that I added, the original <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> pp did not have this entry</span>
+		<h3 class="indexable" data-level="3" id="sec-opt-audit-table">A.1.1 Auditable Events for Optional SFRs</h3>
+        <table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="at-optional" data-counter-type="ct-Table" id="at-optional">Table <span class="counter">7</span></span>: Auditable Events for Strictly Optional Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr><tr data-sortkey="FAU_STG.4/IPS"><td rowspan="2"><a href="#FAU_STG.4/IPS">FAU_STG.4/IPS</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FAU_STG.4/IPS#"><td></td></tr><tr data-sortkey="FAU_STG.4/IPS.1"><td>A local audit store reaches its storage limit<a id="period_299" href="#period_299">. </a></td><td>Indication that the audit store is full, and (if configurable) how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is responding (e.g<a id="period_300" href="#period_300">. </a>failing to audit new auditable events, or </td></tr><tr data-sortkey="FPT_FLS.1"><td rowspan="2"><a href="#FPT_FLS.1">FPT_FLS.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FPT_FLS.1#"><td></td></tr><tr data-sortkey="FPT_FLS.1.1"><td>A local audit store reaches its storage limit<a id="period_301" href="#period_301">. </a></td><td>Indication that the audit store is full, and (if configurable) how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is responding (e.g<a id="period_302" href="#period_302">. </a>failing to audit new auditable events, or </td></tr><tr data-sortkey="IPS_SBD_EXT.2"><td rowspan="4"><a href="#IPS_SBD_EXT.2">IPS_SBD_EXT.2</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="IPS_SBD_EXT.2#"><td></td></tr><tr data-sortkey="IPS_SBD_EXT.2.3"><td>Inspection of encapsulated packets<a id="period_303" href="#period_303">. </a></td><td>Indication of the encapsulation method<a id="period_304" href="#period_304">. </a></td></tr><tr data-sortkey="IPS_SBD_EXT.2.4"><td>Failure to re-assemble a fragmented packet<a id="period_305" href="#period_305">. </a></td><td><ul><li>Source and destination IP addresses<a id="period_306" href="#period_306">. </a></li><li><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface that received the fragment(s)<a id="period_307" href="#period_307">. </a></li></ul></td></tr><tr data-sortkey="IPS_SBD_EXT.2.5"><td>Normalization of traffic by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_308" href="#period_308">. </a></td><td><ul><li>Source and destination IP addresses of discarded packet(s)<a id="period_309" href="#period_309">. </a></li><li><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface that received the packet(s)</li></ul></td></tr></table>
+      
+	<h3 id="fau-ops" class="indexable" data-level="3">A.1.2 Security Audit(FAU)</h3>
+	<span style="" class="comment " id="Comment-6-">^this is something that I added, the original <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> pp did not have this entry</span>
 			<div class="comp" id="FAU_STG.1/IPS"><h4>FAU_STG.1/IPS Protected Audit Trail Storage</h4>
-			<div class="element"><div class="reqid" id="FAU_STG.1/IPS.1"><a href="#FAU_STG.1/IPS.1" class="abbr">FAU_STG.1/IPS.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall protect the stored <s>audit records </s><b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b> from unauthorized deletion<a id="period_300" href="#period_300">. </a></div></div>
-			<div class="element"><div class="reqid" id="FAU_STG.1/IPS.2"><a href="#FAU_STG.1/IPS.2" class="abbr">FAU_STG.1/IPS.2</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to [<i>prevent</i>] unauthorized modifications to the <s>stored audit records</s> <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b> <s>in the audit trail</s><a id="period_301" href="#period_301">. </a></div></div>
+			<div class="element"><div class="reqid" id="FAU_STG.1/IPS.1"><a href="#FAU_STG.1/IPS.1" class="abbr">FAU_STG.1/IPS.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall protect the stored <s>audit records </s><b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b> from unauthorized deletion<a id="period_310" href="#period_310">. </a></div></div>
+			<div class="element"><div class="reqid" id="FAU_STG.1/IPS.2"><a href="#FAU_STG.1/IPS.2" class="abbr">FAU_STG.1/IPS.2</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to [<i>prevent</i>] unauthorized modifications to the <s>stored audit records</s> <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b> <s>in the audit trail</s><a id="period_311" href="#period_311">. </a></div></div>
 			
 			</div>
 			<div class="comp" id="FAU_STG.4/IPS"><h4>FAU_STG.4/IPS Prevention of Audit Data Loss</h4>
 			<div class="element"><div class="reqid" id="FAU_STG.4/IPS.1"><a href="#FAU_STG.4/IPS.1" class="abbr">FAU_STG.4/IPS.1</a></div><div class="reqdesc">
 			The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall <b>be able to</b>
-				[<b>selection</b>: <span class="selectable-content" id="_s_58">ignore <s>audited</s> <b>generation of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr></b> events <b>that would otherwise be generated</b></span>, <span class="selectable-content" id="_s_59">prevent audited <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr></b> events</span>, <span class="selectable-content" id="_s_60"><s>except those taken by the authorized user with special rights</s></span>, <span class="selectable-content" id="_s_61">overwrite the oldest stored <s>audit records</s> <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</span>], and [<i>no other actions</i>] if the <s>audit</s> <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b> trail is full<a id="period_302" href="#period_302">. </a>			
+				[<b>selection</b>: <span class="selectable-content" id="_s_59">ignore <s>audited</s> <b>generation of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr></b> events <b>that would otherwise be generated</b></span>, <span class="selectable-content" id="_s_60">prevent audited <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr></b> events</span>, <span class="selectable-content" id="_s_61"><s>except those taken by the authorized user with special rights</s></span>, <span class="selectable-content" id="_s_62">overwrite the oldest stored <s>audit records</s> <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</span>], and [<i>no other actions</i>] if the <s>audit</s> <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b> trail is full<a id="period_312" href="#period_312">. </a>			
 			</div></div>
 			
 			</div>
 	
-	<h3 id="fpt" class="indexable" data-level="3">A.1.2 Protection of the TSF (FPT)</h3>
+	<h3 id="fpt" class="indexable" data-level="3">A.1.3 Protection of the TSF (FPT)</h3>
 	<div class="comp" id="FPT_FLS.1"><h4>FPT_FLS.1 Failure with Preservation of Secure State</h4>
 	<div class="element"><div class="reqid" id="FPT_FLS.1.1"><a href="#FPT_FLS.1.1" class="abbr">FPT_FLS.1.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall <br> preserve a secure state <br> when the following types of failures occur: [<b>assignment</b>: 
      <span class="assignable-content">list of types of failures in the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr></span>]<div class="appnote"><span class="note-header">Application
       Note:
-    </span><span class="note">
+    </span><span class="note"><i>
 	The intent of this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is to allow the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author to define the types of failures
 	that can occur on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> which could result in failure to effectively detect and
 	react to <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy violations for traffic traversing inline interface, and to not
-	allow traffic to traverse those interfaces<a id="period_303" href="#period_303">. </a>The first refinement &#8220;to be able&#8221; is
+	allow traffic to traverse those interfaces<a id="period_313" href="#period_313">. </a>The first refinement &#8220;to be able&#8221; is
 	included to allow the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> administrator to configure the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to allow traffic to
 	traverse inline interfaces when the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is in a partially of fully failed state, but
 	to provide assurance that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is capable of blocking traffic if it has been
-	configured to do so<a id="period_304" href="#period_304">. </a>The purpose of this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>, as stated in <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr> Part 2, is to &#8220;ensure
+	configured to do so<a id="period_314" href="#period_314">. </a>The purpose of this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>, as stated in <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr> Part 2, is to &#8220;ensure
 	that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> will always enforce its <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> in the event of identified categories of
 	failures in the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>.&#8221; Since some of the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> require inspection of data, and that inspection cannot occur when a network interface fails, it will not always be
 	true that &#8220;all&#8221; the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> will continue to be enforced in the event of failure of
-	certain components<a id="period_305" href="#period_305">. </a>The intent here is to ensure that if network traffic is not
+	certain components<a id="period_315" href="#period_315">. </a>The intent here is to ensure that if network traffic is not
 	capable of being inspected by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>, then it should automatically be treated
-	as untrusted<a id="period_306" href="#period_306">. </a>	</span></div></div></div>
+	as untrusted<a id="period_316" href="#period_316">. </a></i>
+	</span></div></div></div>
 	
 	</div>
 	
-	<h3 id="ips" class="indexable" data-level="3">A.1.3 Intrusion Prevention (IPS)</h3>
+	<h3 id="ips" class="indexable" data-level="3">A.1.4 Intrusion Prevention (IPS)</h3>
 	<div class="comp" id="IPS_SBD_EXT.2"><h4>IPS_SBD_EXT.2 Traffic Normalization</h4>
-	<div class="element"><div class="reqid" id="IPS_SBD_EXT.2.1"><a href="#IPS_SBD_EXT.2.1" class="abbr">IPS_SBD_EXT.2.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to inspect packets encapsulated through the following means: [<b>selection</b>: <span class="selectable-content" id="_s_62"><abbr class="dyn-abbr"><a href="#abbr_GRE">GRE</a></abbr></span>, <span class="selectable-content" id="_s_63">IP-in-IP</span>, <span class="selectable-content" id="_s_64">IPv4-in-IPv6</span>, <span class="selectable-content" id="_s_65"><abbr class="dyn-abbr"><a href="#abbr_MPLS">MPLS</a></abbr></span>, <span class="selectable-content" id="_s_66"> <abbr class="dyn-abbr"><a href="#abbr_PPTP">PPTP</a></abbr></span>, <span class="selectable-content" id="_s_67">[<b>assignment</b>: 
+	<div class="element"><div class="reqid" id="IPS_SBD_EXT.2.1"><a href="#IPS_SBD_EXT.2.1" class="abbr">IPS_SBD_EXT.2.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to inspect packets encapsulated through the following means: [<b>selection</b>: <span class="selectable-content" id="_s_63"><abbr class="dyn-abbr"><a href="#abbr_GRE">GRE</a></abbr></span>, <span class="selectable-content" id="_s_64">IP-in-IP</span>, <span class="selectable-content" id="_s_65">IPv4-in-IPv6</span>, <span class="selectable-content" id="_s_66"><abbr class="dyn-abbr"><a href="#abbr_MPLS">MPLS</a></abbr></span>, <span class="selectable-content" id="_s_67"> <abbr class="dyn-abbr"><a href="#abbr_PPTP">PPTP</a></abbr></span>, <span class="selectable-content" id="_s_68">[<b>assignment</b>: 
      <span class="assignable-content">other
-encapsulation methods</span>]</span>]<a id="period_307" href="#period_307">. </a>	</div></div>
+encapsulation methods</span>]</span>]<a id="period_317" href="#period_317">. </a>	</div></div>
 	
-	<div class="element"><div class="reqid" id="IPS_SBD_EXT.2.2"><a href="#IPS_SBD_EXT.2.2" class="abbr">IPS_SBD_EXT.2.2</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to perform IP normalization to reassemble fragmented packets for inspection, and: [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_68">For data collected at promiscuous interfaces: generate an alert if the packet cannot be reassembled;</span></li><li style=""><span class="selectable-content" id="_s_69">For data collected at inline interfaces: do not forward any packet fragments and generate an alert if the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> cannot reassemble the entire packet</span></li></ul>]<a id="period_308" href="#period_308">. </a></div></div>
+	<div class="element"><div class="reqid" id="IPS_SBD_EXT.2.2"><a href="#IPS_SBD_EXT.2.2" class="abbr">IPS_SBD_EXT.2.2</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to perform IP normalization to reassemble fragmented packets for inspection, and: [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_69">For data collected at promiscuous interfaces: generate an alert if the packet cannot be reassembled;</span></li><li style=""><span class="selectable-content" id="_s_70">For data collected at inline interfaces: do not forward any packet fragments and generate an alert if the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> cannot reassemble the entire packet</span></li></ul>]<a id="period_318" href="#period_318">. </a></div></div>
 	
-	<div class="element"><div class="reqid" id="IPS_SBD_EXT.2.3"><a href="#IPS_SBD_EXT.2.3" class="abbr">IPS_SBD_EXT.2.3</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to perform <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> normalization for traffic flows through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> when the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is deployed in inline mode, and prohibit forwarding of: [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_70">duplicate packets;</span></li><li style=""><span class="selectable-content" id="_s_71">changed packets;</span></li><li style=""><span class="selectable-content" id="_s_72">out-of-sequence packets;</span></li><li style=""><span class="selectable-content" id="_s_73">
-			[<b>selection</b>: <span class="selectable-content" id="_s_74">[<b>assignment</b>: 
+	<div class="element"><div class="reqid" id="IPS_SBD_EXT.2.3"><a href="#IPS_SBD_EXT.2.3" class="abbr">IPS_SBD_EXT.2.3</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to perform <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> normalization for traffic flows through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> when the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is deployed in inline mode, and prohibit forwarding of: [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_71">duplicate packets;</span></li><li style=""><span class="selectable-content" id="_s_72">changed packets;</span></li><li style=""><span class="selectable-content" id="_s_73">out-of-sequence packets;</span></li><li style=""><span class="selectable-content" id="_s_74">
+			[<b>selection</b>: <span class="selectable-content" id="_s_75">[<b>assignment</b>: 
      <span class="assignable-content">other packet types that should not be
-forwarded</span>]</span>, <span class="selectable-content" id="_s_75">no other packets</span>]
+forwarded</span>]</span>, <span class="selectable-content" id="_s_76">no other packets</span>]
 			</span></li></ul>]</div></div>
+	
+	
 	
 	</div>
 	
 	<h2 id="obj-sfrs" class="indexable" data-level="2">A.2 Objective Requirements
+    </h2>
+	<h3 class="indexable" data-level="3" id="_sec_12">A.2.1 Auditable Events for Objective SFRs</h3>
+        <span style="" class="comment " id="Comment-7-">All objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> need a review to determine if they should change status with the new release of this module<a id="period_319" href="#period_319">. </a></span>
+        <table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="at-objective" data-counter-type="ct-Table" id="at-objective">Table <span class="counter">8</span></span>: Auditable Events for Objective Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr></table>
+      
+	<h3 id="fau-obj" class="indexable" data-level="3">A.2.2 Security Audit (FAU)</h3>
+	<div class="comp" id="FAU_ARP.1"><h4>FAU_ARP.1 Security Alarms</h4>
+	<div class="element"><div class="reqid" id="FAU_ARP.1.1"><a href="#FAU_ARP.1.1" class="abbr">FAU_ARP.1.1</a></div><div class="reqdesc">
+	The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall take [<b>assignment</b>: 
+     <span class="assignable-content">list of actions</span>]upon detection of potential security violation<a id="period_320" href="#period_320">. </a>	<div class="appnote"><span class="note-header">Application
+      Note:
+    </span><span class="note"><i>
+	<p>At minimum, the set of potential security violations must include network traffic
+		in excess of maximum quotas<a id="period_321" href="#period_321">. </a>Therefore, when this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is included, the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author
+		must also include FRU_RSA.1<a id="period_322" href="#period_322">. </a></p><p>In <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr> Part 2, FAU_ARP is intended to depend on FAU_SAA to define a potential
+		violation of the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr><a id="period_323" href="#period_323">. </a>FAU_SAA is not included in this <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> EP; FRU_RSA and the
+		various <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> class requirements are used instead to define the &#8220;potential security
+		violation&#8221; relevant to FAU_ARP, namely that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> has detected potential
+		malicious network traffic or has experienced a spike in network traffic that has
+		exceeded its ability to inspect all network traffic which may result in some network
+		traffic being uninspected by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr><a id="period_324" href="#period_324">. </a>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> should be used to define actions that
+		the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> can take which may include generating one or more messages that
+		are not part of the audit trail that must be transmitted securely to a remote
+		audit server<a id="period_325" href="#period_325">. </a></p><p>Messaging actions defined by this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> that are not specifically relevant to
+		<a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a> do not need to be encrypted during transit<a id="period_326" href="#period_326">. </a>The primary intent of
+		this functionality is the speed of notification, not the integrity, or confidentiality
+		of the data in transit<a id="period_327" href="#period_327">. </a>In most cases, the audit trail applicable to FAU_STG_EXT.1
+		will be syslog data, and is being protected in transit to help ensure integrity of
+		remotely stored audit data<a id="period_328" href="#period_328">. </a>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> isintended to covertransmission of messages
+		related to single eventsthrough protocols such as SNMP (traps) and <abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> (email)<a id="period_329" href="#period_329">. </a>		In <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr> that support securing SNMP traps, <abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> email, or other messaging types
+		within trusted channels (as defined by FTP_ITC.1), the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author can choose to
+		list these messaging methods within FTP_ITC.1 and/or within this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr><a id="period_330" href="#period_330">. </a>There are
+		no additional auditable <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> events that need to be included in <a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a><a id="period_331" href="#period_331">. </a>		</p></i></span></div></div></div>
+	</div>
+	<div class="comp" id="FAU_SAR.1"><h4>FAU_SAR.1 Audit Review</h4>
+	<div class="element"><div class="reqid" id="FAU_SAR.1.1"><a href="#FAU_SAR.1.1" class="abbr">FAU_SAR.1.1</a></div><div class="reqdesc">
+	The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide [<i>authorized administrators</i>] with the capability to read [<i><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</i>] from the <s>audit records</s> <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> events</b><a id="period_332" href="#period_332">. </a>	</div></div>
+	<div class="element"><div class="reqid" id="FAU_SAR.1.2"><a href="#FAU_SAR.1.2" class="abbr">FAU_SAR.1.2</a></div><div class="reqdesc">
+	The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide the <s>audit records</s> <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b> in a manner suitable for the <s>user</s> <b>administrators</b> to interpret the information<a id="period_333" href="#period_333">. </a>	<div class="appnote"><span class="note-header">Application
+      Note:
+    </span><span class="note"><i>It is anticipated, but not required, that <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr> would provide a graphical user
+		interface that would allow searching and sorting, and it would be acceptable for
+		such output to group similar events together to ease administrative review of the
+		<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data<a id="period_334" href="#period_334">. </a>For example, the display might allow grouping of data by event type, or
+		by source IP address, where multiple events that occurred in a time period are
+		displayed on a single line as in the sample table below<a id="period_335" href="#period_335">. </a>Regardless whether such
+		a view is provided, it is expected that the administrator will be able to view the
+		details of individual event occurrences<a id="period_336" href="#period_336">. </a>		</i>
+		
+		<table border="1">
+		<tr>
+			<th>Time/Date</th>
+			<th>Event Type</th>
+			<th>Reaction</th>
+			<th>Event total</th>
+		</tr>
+		<tr>
+			<th>2013-01-1 10:45:00</th>
+			<th>Port scan from 10.1.2.3 </th>
+			<th>Blocked all traffic from 10.1.2.3</th>
+			<th>34</th>
+		</tr>
+		</table>
+		
+		</span></div></div></div>
+	</div>
+	<div class="comp" id="FAU_SAR.2"><h4>FAU_SAR.2 Audit Review</h4>
+	<div class="element"><div class="reqid" id="FAU_SAR.2.1"><a href="#FAU_SAR.2.1" class="abbr">FAU_SAR.2.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall prohibit all <s>users</s> <b>administrators</b> read access to the <s>audit records</s> <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b>, except those that have been granted explicit read-access<a id="period_337" href="#period_337">. </a></div></div>
+	<div class="element"><div class="reqid" id="FAU_SAR.2.2"><a href="#FAU_SAR.2.2" class="abbr">FAU_SAR.2.2</a></div><div class="reqdesc">
+	The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide the ability to apply [<i>filtering and sorting</i>] of audit <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data
+	based on [<i>filtering parameters: risk rating, time period, source IP address,
+	destination IP address and </i>[<b>selection</b>: <span class="selectable-content" id="_s_77">[<b>assignment</b>: 
+     <span class="assignable-content"> other filtering parameters</span>]</span>, <span class="selectable-content" id="_s_78">No other filtering parameters</span>]<i>; and sorting parameters: event ID, event type, time,
+signature ID, <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> actions performed, and </i>[<b>selection</b>: <span class="selectable-content" id="_s_79">[<b>assignment</b>: 
+     <span class="assignable-content">other sorting parameters</span>]</span>, <span class="selectable-content" id="_s_80">no other sorting parameters</span>]<a id="period_338" href="#period_338">. </a>		<span style="" class="comment " id="Comment-8-">please review </span>
+
+
+	</div></div>
+	</div>
+	
+
+	<h2 id="impl-dep-sfrs" class="indexable" data-level="2">A.3 Implementation-dependent Requirements
     </h2><p>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any 
-       Objective       <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr><a id="period_309" href="#period_309">. </a></p><h2 id="impl-dep-sfrs" class="indexable" data-level="2">A.3 Implementation-dependent Requirements
-    </h2><p>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any 
-       Implementation-dependent       <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr><a id="period_310" href="#period_310">. </a></p><h1 id="sel-sfrs" class="indexable" data-level="1">Appendix B -  Selection-based Requirements
+       Implementation-dependent       <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr><a id="period_339" href="#period_339">. </a></p><h1 id="sel-sfrs" class="indexable" data-level="1">Appendix B -  Selection-based Requirements
     </h1><p>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any 
-       Selection-based       <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr><a id="period_311" href="#period_311">. </a></p><h1 id="satisfiedreqs" class="indexable" data-level="A">Appendix C -  Inherently Satisfied Requirements</h1> 
+       Selection-based       <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr><a id="period_340" href="#period_340">. </a></p><h1 id="satisfiedreqs" class="indexable" data-level="A">Appendix C -  Inherently Satisfied Requirements</h1> 
 		This appendix lists requirements that should be considered satisfied by products
-		successfully evaluated against this Protection Profile<a id="period_312" href="#period_312">. </a> 
+		successfully evaluated against this Protection Profile<a id="period_341" href="#period_341">. </a> 
 		However, these requirements are not featured explicitly as <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> and should not be
-		included in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr><a id="period_313" href="#period_313">. </a> 
+		included in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr><a id="period_342" href="#period_342">. </a> 
 		They are not included as standalone <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> because it would
-		increase the time, cost, and complexity of evaluation<a id="period_314" href="#period_314">. </a> This approach is permitted
-		by <a href="#bibCC">[CC]</a> Part 1, <b>8.2 Dependencies between components</b><a id="period_315" href="#period_315">. </a>		<br>
+		increase the time, cost, and complexity of evaluation<a id="period_343" href="#period_343">. </a> This approach is permitted
+		by <a href="#bibCC">[CC]</a> Part 1, <b>8.2 Dependencies between components</b><a id="period_344" href="#period_344">. </a>		<br>
 		This information benefits systems engineering activities which call for inclusion of 
-		particular security controls<a id="period_316" href="#period_316">. </a> Evaluation against the Protection Profile
-		provides evidence that these controls are present and have been evaluated<a id="period_317" href="#period_317">. </a>		<table>
+		particular security controls<a id="period_345" href="#period_345">. </a> Evaluation against the Protection Profile
+		provides evidence that these controls are present and have been evaluated<a id="period_346" href="#period_346">. </a>		<table>
 			<tr class="header">
 				<td>Requirement</td>
 				<td>Rationale for Satisfaction</td>
@@ -1630,7 +1713,7 @@ forwarded</span>]</span>, <span class="selectable-content" id="_s_75">no other p
 				  including those on behalf of the user who has not been authenticated, 
 				  in order to authenticate;
 				  therefore it is duplicative to include these actions as a 
-				  separate assignment and test<a id="period_318" href="#period_318">. </a>				</td>
+				  separate assignment and test<a id="period_347" href="#period_347">. </a>				</td>
 			</tr>
 			<tr>
 				<td>FIA_UID.1 - Timing of identification</td>
@@ -1639,38 +1722,38 @@ forwarded</span>]</span>, <span class="selectable-content" id="_s_75">no other p
 				  including those on behalf of the user who has not been identified, 
 				  in order to authenticate;
 				  therefore it is duplicative to include these actions as a 
-				  separate assignment and test<a id="period_319" href="#period_319">. </a>				</td>
+				  separate assignment and test<a id="period_348" href="#period_348">. </a>				</td>
 			</tr>
 			<tr>
 				<td>FMT_SMR.1 - Security roles</td>
 				<td>
 				  FMT_MOF_EXT.1 specifies role-based management functions that implicitly defines
 				  user and privileged accounts; 
-				  therefore, it is duplicative to include separate role requirements<a id="period_320" href="#period_320">. </a>				</td>
+				  therefore, it is duplicative to include separate role requirements<a id="period_349" href="#period_349">. </a>				</td>
 			</tr>
 			<tr>
 				<td>FPT_STM.1 - Reliable time stamps</td>
 				<td>
 				  FAU_GEN.1.2 explicitly requires that the OS associate timestamps with audit records;
-				  therefore it is duplicative to include a separate timestamp requirement<a id="period_321" href="#period_321">. </a>				</td>
+				  therefore it is duplicative to include a separate timestamp requirement<a id="period_350" href="#period_350">. </a>				</td>
 			</tr>
 			<tr>
 				<td>FTA_SSL.1 - <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>-initiated session locking</td>
 				<td>
 					  FMT_MOF_EXT.1 defines requirements for managing session locking;
-					  therefore, it is duplicative to include a separate session locking requirement<a id="period_322" href="#period_322">. </a>				</td>
+					  therefore, it is duplicative to include a separate session locking requirement<a id="period_351" href="#period_351">. </a>				</td>
 			</tr>
 			<tr>
 				<td>FTA_SSL.2 - User-initiated locking</td>
 				<td>
 				  FMT_MOF_EXT.1 defines requirements for user-initiated session locking;
-				  therefore, it is duplicative to include a separate session locking requirement<a id="period_323" href="#period_323">. </a>				</td>
+				  therefore, it is duplicative to include a separate session locking requirement<a id="period_352" href="#period_352">. </a>				</td>
 			</tr>
 			<tr>
 				<td>FAU_STG.1 - Protected audit trail storage</td>
 				<td>
 				  FPT_ACF_EXT.1 defines a requirement to protect audit logs;
-				  therefore, it is duplicative to include a separate protection of audit trail requirements<a id="period_324" href="#period_324">. </a>				</td>
+				  therefore, it is duplicative to include a separate protection of audit trail requirements<a id="period_353" href="#period_353">. </a>				</td>
 			</tr>
 			<tr>
 				<td>FAU_GEN.2 - User identity association</td>
@@ -1678,53 +1761,53 @@ forwarded</span>]</span>, <span class="selectable-content" id="_s_75">no other p
 				  FAU_GEN.1.2 explicitly requires that the OS record
 				  any user account associated with each event; therefore, it is duplicative
 				  to include a separate requirement to associate a user account with each
-				  event<a id="period_325" href="#period_325">. </a>				</td>
+				  event<a id="period_354" href="#period_354">. </a>				</td>
 			</tr>
 			<tr>
-				<td>FAU_SAR.1 - Audit review</td>
+				<td><a href="#FAU_SAR.1">FAU_SAR.1</a> - Audit review</td>
 				<td>
 					FPT_ACF_EXT.1.2 requires that audit logs (and other objects)
 					are protected from reading by unprivileged users; therefore, it is duplicative
-					to include a separate requirement to protect only the audit information<a id="period_326" href="#period_326">. </a>				</td>
+					to include a separate requirement to protect only the audit information<a id="period_355" href="#period_355">. </a>				</td>
 			</tr>
 		</table>
 
 	<h1 id="entropyappendix" class="indexable" data-level="A">Appendix D -  Entropy Documentation and Assessment</h1> 
 		<p>
 			This appendix describes the required supplementary information for the entropy
-		  source used by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_327" href="#period_327">. </a>			</p><p>
+		  source used by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_356" href="#period_356">. </a>			</p><p>
 		  The documentation of the entropy source should be detailed enough that, after
 		  reading, the evaluator will thoroughly understand the entropy source and why
-		  it can be relied upon to provide sufficient entropy<a id="period_328" href="#period_328">. </a>This documentation should
+		  it can be relied upon to provide sufficient entropy<a id="period_357" href="#period_357">. </a>This documentation should
 		  include multiple detailed sections: design description, entropy justification,
-		  operating conditions, and health testing<a id="period_329" href="#period_329">. </a>This documentation is not required to
-		  be part of the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr><a id="period_330" href="#period_330">. </a>
+		  operating conditions, and health testing<a id="period_358" href="#period_358">. </a>This documentation is not required to
+		  be part of the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr><a id="period_359" href="#period_359">. </a>
 		</p>
 		<h2 class="indexable" data-level="2" id="entropydesign">D.1 Design Description</h2>
 			<p>
 		  Documentation shall include the design of the entropy source as a whole,
-		  including the interaction of all entropy source components<a id="period_331" href="#period_331">. </a>Any information
+		  including the interaction of all entropy source components<a id="period_360" href="#period_360">. </a>Any information
 		  that can be shared regarding the design should also be included for any
-		  third-party entropy sources that are included in the product<a id="period_332" href="#period_332">. </a>
+		  third-party entropy sources that are included in the product<a id="period_361" href="#period_361">. </a>
 			</p><p>
 		  The documentation will describe the operation of the entropy source to
 		  include, how entropy is produced, and how unprocessed (raw) data can be
-		  obtained from within the entropy source for testing purposes<a id="period_333" href="#period_333">. </a>The documentation
+		  obtained from within the entropy source for testing purposes<a id="period_362" href="#period_362">. </a>The documentation
 		  should walk through the entropy source design indicating where the entropy
 		  comes from, where the entropy output is passed next, any post-processing
 		  of the raw outputs (hash, XOR, etc.), if/where it is stored, and finally,
-		  how it is output from the entropy source<a id="period_334" href="#period_334">. </a>Any conditions placed on the
+		  how it is output from the entropy source<a id="period_363" href="#period_363">. </a>Any conditions placed on the
 		  process (e.g., blocking) should also be described in the entropy source
-		  design<a id="period_335" href="#period_335">. </a>Diagrams and examples are encouraged<a id="period_336" href="#period_336">. </a>
+		  design<a id="period_364" href="#period_364">. </a>Diagrams and examples are encouraged<a id="period_365" href="#period_365">. </a>
 			</p><p>
 		  This design must also include a description of the content of the
 		  security boundary of the entropy source and a description of how
 		  the security boundary ensures that an adversary outside the boundary
-		  cannot affect the entropy rate<a id="period_337" href="#period_337">. </a>			</p><p>
+		  cannot affect the entropy rate<a id="period_366" href="#period_366">. </a>			</p><p>
 		  If implemented, the design description shall include a description
-		  of how third-party applications can add entropy to the RBG<a id="period_338" href="#period_338">. </a>A
+		  of how third-party applications can add entropy to the RBG<a id="period_367" href="#period_367">. </a>A
 		  description of any RBG state saving between power-off and
-		  power-on shall be included<a id="period_339" href="#period_339">. </a>			</p>
+		  power-on shall be included<a id="period_368" href="#period_368">. </a>			</p>
 		
 
 		<h2 class="indexable" data-level="2" id="entropyjustification">D.2 Entropy Justification</h2>
@@ -1732,139 +1815,139 @@ forwarded</span>]</span>, <span class="selectable-content" id="_s_75">no other p
 		  There should be a technical argument for where the unpredictability in
 		  the source comes from and why there is confidence in the entropy source
 		  delivering sufficient entropy for the uses made of the RBG output
-		  (by this particular <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>)<a id="period_340" href="#period_340">. </a>This argument will include a description of
-		  the expected min-entropy rate (i.e<a id="period_341" href="#period_341">. </a>the minimum entropy (in bits) per
+		  (by this particular <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>)<a id="period_369" href="#period_369">. </a>This argument will include a description of
+		  the expected min-entropy rate (i.e<a id="period_370" href="#period_370">. </a>the minimum entropy (in bits) per
 		  bit or byte of source data) and explain that sufficient entropy is
-		  going into the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> randomizer seeding process<a id="period_342" href="#period_342">. </a>This discussion will
+		  going into the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> randomizer seeding process<a id="period_371" href="#period_371">. </a>This discussion will
 		  be part of a justification for why the entropy source can be relied
-		  upon to produce bits with entropy<a id="period_343" href="#period_343">. </a>			</p><p>
+		  upon to produce bits with entropy<a id="period_372" href="#period_372">. </a>			</p><p>
 		  The amount of information necessary to justify the expected
 		  min-entropy rate depends on the type of entropy source included in the
-		  product<a id="period_344" href="#period_344">. </a>			</p><p>
+		  product<a id="period_373" href="#period_373">. </a>			</p><p>
 		  For developer provided entropy sources, in order to justify the
 		  min-entropy rate, it is expected that a large number of raw source
 		  bits will be collected, statistical tests will be performed, and the
-		  min-entropy rate determined from the statistical tests<a id="period_345" href="#period_345">. </a>While no
+		  min-entropy rate determined from the statistical tests<a id="period_374" href="#period_374">. </a>While no
 		  particular statistical tests are required at this time, it is expected
 		  that some testing is necessary in order to determine the amount of
-		  min-entropy in each output<a id="period_346" href="#period_346">. </a>			</p><p>
+		  min-entropy in each output<a id="period_375" href="#period_375">. </a>			</p><p>
 		  For third party provided entropy sources, in which the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> vendor
 		  has limited access to the design and raw entropy data of the source, the
 		  documentation will indicate an estimate of the amount of min-entropy
-		  obtained from this third-party source<a id="period_347" href="#period_347">. </a> It is acceptable for the vendor
+		  obtained from this third-party source<a id="period_376" href="#period_376">. </a> It is acceptable for the vendor
 		  to &#8220;assume&#8221; an amount of min-entropy, however, this assumption must be
-		  clearly stated in the documentation provided<a id="period_348" href="#period_348">. </a> In particular, the
+		  clearly stated in the documentation provided<a id="period_377" href="#period_377">. </a> In particular, the
 		  min-entropy estimate must be specified and the assumption included
-		  in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr><a id="period_349" href="#period_349">. </a>			</p><p>
+		  in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr><a id="period_378" href="#period_378">. </a>			</p><p>
 		  Regardless of type of entropy source, the justification will also
 		  include how the DRBG is initialized with the entropy stated in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>,
 		  for example by verifying that the min-entropy rate is multiplied by the
 		  amount of source data used to seed the DRBG or that the rate of entropy
 		  expected based on the amount of source data is explicitly stated and
-		  compared to the statistical rate<a id="period_350" href="#period_350">. </a>If the amount of source data used to
+		  compared to the statistical rate<a id="period_379" href="#period_379">. </a>If the amount of source data used to
 		  seed the DRBG is not clear or the calculated rate is not explicitly
-		  related to the seed, the documentation will not be considered complete<a id="period_351" href="#period_351">. </a>			</p><p>
+		  related to the seed, the documentation will not be considered complete<a id="period_380" href="#period_380">. </a>			</p><p>
 		  The entropy justification shall not include any data added from
-		  any third-party application or from any state saving between restarts<a id="period_352" href="#period_352">. </a>			</p>
+		  any third-party application or from any state saving between restarts<a id="period_381" href="#period_381">. </a>			</p>
 		
 
 		<h2 class="indexable" data-level="2" id="entropyoperatingconditions">D.3 Operating Conditions</h2>
 		  The entropy rate may be affected by conditions outside the control
-		  of the entropy source itself<a id="period_353" href="#period_353">. </a> For example, voltage, frequency,
+		  of the entropy source itself<a id="period_382" href="#period_382">. </a> For example, voltage, frequency,
 		  temperature, and elapsed time after power-on are just a few of the
-		  factors that may affect the operation of the entropy source<a id="period_354" href="#period_354">. </a>		  As such, documentation will also include the range of operating conditions
-		  under which the entropy source is expected to generate random data<a id="period_355" href="#period_355">. </a>		  It will clearly describe the measures that have been taken in the
+		  factors that may affect the operation of the entropy source<a id="period_383" href="#period_383">. </a>		  As such, documentation will also include the range of operating conditions
+		  under which the entropy source is expected to generate random data<a id="period_384" href="#period_384">. </a>		  It will clearly describe the measures that have been taken in the
 		  system design to ensure the entropy source continues to operate
-		  under those conditions<a id="period_356" href="#period_356">. </a>Similarly, documentation shall describe
+		  under those conditions<a id="period_385" href="#period_385">. </a>Similarly, documentation shall describe
 		  the conditions under which the entropy source is known to malfunction
-		  or become inconsistent<a id="period_357" href="#period_357">. </a>Methods used to detect failure or degradation
-		  of the source shall be included<a id="period_358" href="#period_358">. </a>		
+		  or become inconsistent<a id="period_386" href="#period_386">. </a>Methods used to detect failure or degradation
+		  of the source shall be included<a id="period_387" href="#period_387">. </a>		
 
 		<h2 class="indexable" data-level="2" id="entropyhealthtesting">D.4 Health Testing</h2>
 		  More specifically, all entropy source health tests and their rationale
-		  will be documented<a id="period_359" href="#period_359">. </a>This will include a description of the health tests,
+		  will be documented<a id="period_388" href="#period_388">. </a>This will include a description of the health tests,
 		  the rate and conditions under which each health test is performed
 		  (e.g., at startup, continuously, or on-demand), the expected results
 		  for each health test, and rationale indicating why each test is
 		  believed to be appropriate for detecting one or more failures in the
-		  entropy source<a id="period_360" href="#period_360">. </a>		
+		  entropy source<a id="period_389" href="#period_389">. </a>		
   
 	<h1 id="apndx-equiv" class="indexable" data-level="A">Appendix E -  Application Software Equivalency Guidelines</h1>
 		<h2 class="indexable" data-level="2" id="app-intro">E.1 Introduction</h2>
 			<p>
 		  The purpose of equivalence in <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-based evaluations is to find a balance between evaluation rigor and commercial practicability&#8212;to 
 		  ensure that evaluations meet customer expectations while recognizing that there is little to be gained from requiring that every 
-		  variation in a product or platform be fully tested<a id="period_361" href="#period_361">. </a>If a product is found to be compliant with a <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> on one platform, then all 
-		  equivalent products on equivalent platforms are also considered to be compliant with the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><a id="period_362" href="#period_362">. </a>			</p><p>
+		  variation in a product or platform be fully tested<a id="period_390" href="#period_390">. </a>If a product is found to be compliant with a <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> on one platform, then all 
+		  equivalent products on equivalent platforms are also considered to be compliant with the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><a id="period_391" href="#period_391">. </a>			</p><p>
 		  A Vendor can make a claim of equivalence if the Vendor believes that a particular instance of their Product implements <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified 
 		  security functionality in a way equivalent to the implementation of the same functionality on another instance of their Product on 
-		  which the functionality was tested<a id="period_363" href="#period_363">. </a>The Product instances can differ in version number or feature level (model), or the instances may
-		  run on different platforms<a id="period_364" href="#period_364">. </a>Equivalency can be used to reduce the testing required across claimed evaluated configurations<a id="period_365" href="#period_365">. </a>It can 
-		  also be used during Assurance Maintenance to reduce testing needed to add more evaluated configurations to a certification<a id="period_366" href="#period_366">. </a>			</p><p>
-		  These equivalency guidelines do not replace Assurance Maintenance requirements or NIAP Policy #5 requirements for CAVP certificates<a id="period_367" href="#period_367">. </a>
-		  Nor may equivalency be used to leverage evaluations with expired certifications<a id="period_368" href="#period_368">. </a>			</p><p>
-		  These Equivalency Guidelines represent a shift from complete testing of all product instances to more of a risk-based approach<a id="period_369" href="#period_369">. </a>
+		  which the functionality was tested<a id="period_392" href="#period_392">. </a>The Product instances can differ in version number or feature level (model), or the instances may
+		  run on different platforms<a id="period_393" href="#period_393">. </a>Equivalency can be used to reduce the testing required across claimed evaluated configurations<a id="period_394" href="#period_394">. </a>It can 
+		  also be used during Assurance Maintenance to reduce testing needed to add more evaluated configurations to a certification<a id="period_395" href="#period_395">. </a>			</p><p>
+		  These equivalency guidelines do not replace Assurance Maintenance requirements or NIAP Policy #5 requirements for CAVP certificates<a id="period_396" href="#period_396">. </a>
+		  Nor may equivalency be used to leverage evaluations with expired certifications<a id="period_397" href="#period_397">. </a>			</p><p>
+		  These Equivalency Guidelines represent a shift from complete testing of all product instances to more of a risk-based approach<a id="period_398" href="#period_398">. </a>
 		  Rather than require that every combination of product and platform be tested, these guidelines support an approach that recognizes
 		  that products are being used in a variety of environments&#8212;and often in cloud environments over where the vendor (and sometimes the 
-		  customer) have little or no control over the underlying hardware<a id="period_370" href="#period_370">. </a>Developers should be responsible for the security functionality of 
+		  customer) have little or no control over the underlying hardware<a id="period_399" href="#period_399">. </a>Developers should be responsible for the security functionality of 
 		  their applications on the platforms they are developed for&#8212;whether that is an operating system, a virtual machine, or a software-based
-		  execution environment such as a container<a id="period_371" href="#period_371">. </a>But those platforms may themselves run within other environments&#8212;virtual machines or
-		  operating systems&#8212;that completely abstract away the underlying hardware from the application<a id="period_372" href="#period_372">. </a>The developer should not be held
-		  accountable for security functionality that is implemented by platform layers that are abstracted away<a id="period_373" href="#period_373">. </a>The implication is that
+		  execution environment such as a container<a id="period_400" href="#period_400">. </a>But those platforms may themselves run within other environments&#8212;virtual machines or
+		  operating systems&#8212;that completely abstract away the underlying hardware from the application<a id="period_401" href="#period_401">. </a>The developer should not be held
+		  accountable for security functionality that is implemented by platform layers that are abstracted away<a id="period_402" href="#period_402">. </a>The implication is that
 		  not all security functionality will necessarily be tested for all platform layers down to the hardware for all evaluated
-		  configurations&#8212;especially for applications developed for software-based execution environments such as containers<a id="period_374" href="#period_374">. </a>For these cases, 
-		  the balancing of evaluation rigor and commercial practicability tips in favor of practicability<a id="period_375" href="#period_375">. </a>Note that this does not affect
+		  configurations&#8212;especially for applications developed for software-based execution environments such as containers<a id="period_403" href="#period_403">. </a>For these cases, 
+		  the balancing of evaluation rigor and commercial practicability tips in favor of practicability<a id="period_404" href="#period_404">. </a>Note that this does not affect
 		  the requirement that at least one product instance be fully tested on at least one platform with cryptography mapped to a CAVP 
-		  certificate<a id="period_376" href="#period_376">. </a>			</p><p>
+		  certificate<a id="period_405" href="#period_405">. </a>			</p><p>
 		  Equivalency has two aspects:
 			</p>
 		  <ol>
 			<li><b><i>Product Equivalence:</i></b> Products may be considered equivalent if there are no
-			  differences between Product Models and Product Versions with respect to <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality<a id="period_377" href="#period_377">. </a></li>
+			  differences between Product Models and Product Versions with respect to <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality<a id="period_406" href="#period_406">. </a></li>
 			<li><b><i>Platform Equivalence:</i></b> Platforms may be considered equivalent if there are no
 			  significant differences in the services they provide to the Product&#8212;or in the way the platforms 
-			  provide those services&#8212;with respect to <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality<a id="period_378" href="#period_378">. </a></li>
+			  provide those services&#8212;with respect to <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality<a id="period_407" href="#period_407">. </a></li>
 		  </ol>
-		  The equivalency determination is made in accordance with these guidelines by the Validator and Scheme using information provided by the Evaluator/Vendor<a id="period_379" href="#period_379">. </a>		
+		  The equivalency determination is made in accordance with these guidelines by the Validator and Scheme using information provided by the Evaluator/Vendor<a id="period_408" href="#period_408">. </a>		
 		<h2 class="indexable" data-level="2" id="approach">E.2 Approach to Equivalency Analysis</h2>
 			<p>
-		  There are two scenarios for performing equivalency analysis<a id="period_380" href="#period_380">. </a>One is when a product has been certified and the vendor 
-		  wants to show that a later product should be considered certified due to equivalence with the earlier product<a id="period_381" href="#period_381">. </a>The 
+		  There are two scenarios for performing equivalency analysis<a id="period_409" href="#period_409">. </a>One is when a product has been certified and the vendor 
+		  wants to show that a later product should be considered certified due to equivalence with the earlier product<a id="period_410" href="#period_410">. </a>The 
 		  other is when multiple product variants are going though evaluation together and the vendor would like to reduce 
-		  the amount of testing that must be done<a id="period_382" href="#period_382">. </a>The basic rules for determining equivalence are the same in both cases<a id="period_383" href="#period_383">. </a>
-		  But there is one additional consideration that applies to equivalence with previously certified products<a id="period_384" href="#period_384">. </a>That is, 
+		  the amount of testing that must be done<a id="period_411" href="#period_411">. </a>The basic rules for determining equivalence are the same in both cases<a id="period_412" href="#period_412">. </a>
+		  But there is one additional consideration that applies to equivalence with previously certified products<a id="period_413" href="#period_413">. </a>That is, 
 		  the product with which equivalence is being claimed must have a valid certification in accordance with scheme rules
-		  and the Assurance Maintenance process must be followed<a id="period_385" href="#period_385">. </a>If a product&#8217;s certification has expired, then equivalence 
-		  cannot be claimed with that product<a id="period_386" href="#period_386">. </a>			</p><p>
+		  and the Assurance Maintenance process must be followed<a id="period_414" href="#period_414">. </a>If a product&#8217;s certification has expired, then equivalence 
+		  cannot be claimed with that product<a id="period_415" href="#period_415">. </a>			</p><p>
 		  When performing equivalency analysis, the Evaluator/Vendor should first use the factors and guidelines for Product
-		  Model equivalence to determine the set of Product Models to be evaluated<a id="period_387" href="#period_387">. </a>In general, Product Models that do not differ 
-		  in <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality are considered equivalent for purposes of evaluation against the AppPP<a id="period_388" href="#period_388">. </a>			</p><p>
+		  Model equivalence to determine the set of Product Models to be evaluated<a id="period_416" href="#period_416">. </a>In general, Product Models that do not differ 
+		  in <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality are considered equivalent for purposes of evaluation against the AppPP<a id="period_417" href="#period_417">. </a>			</p><p>
 		  If multiple revision levels of Product Models are to be evaluated&#8212;or to determine whether a revision of an evaluated 
 		  product needs re-evaluation&#8212;the Evaluator/Vendor and Validator should use the factors and guidelines for Product 
-		  Version equivalence to analyze whether Product Versions are equivalent<a id="period_389" href="#period_389">. </a>			</p><p>
+		  Version equivalence to analyze whether Product Versions are equivalent<a id="period_418" href="#period_418">. </a>			</p><p>
 		  Having determined the set of Product Models and Versions to be evaluated, the next step is to determine the set of
-		  Platforms that the Products must be tested on<a id="period_390" href="#period_390">. </a>			</p><p>
+		  Platforms that the Products must be tested on<a id="period_419" href="#period_419">. </a>			</p><p>
 		  Each non-equivalent Product for which compliance is claimed must be fully tested on each non-equivalent platform 
-		  for which compliance is claimed<a id="period_391" href="#period_391">. </a>For non-equivalent Products on equivalent platforms, only the differences that
-		  affect <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality must be tested for each product<a id="period_392" href="#period_392">. </a>			</p><p>
+		  for which compliance is claimed<a id="period_420" href="#period_420">. </a>For non-equivalent Products on equivalent platforms, only the differences that
+		  affect <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality must be tested for each product<a id="period_421" href="#period_421">. </a>			</p><p>
 		  <b><i>&#8220;Differences in <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-Specified Security Functionality&#8221; Defined</i></b>
 			</p><p>
 		  If <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality is implemented by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, then differences in the actual implementation
-		  between versions or product models break equivalence for that feature<a id="period_393" href="#period_393">. </a>Likewise, if the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> implements the 
+		  between versions or product models break equivalence for that feature<a id="period_422" href="#period_422">. </a>Likewise, if the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> implements the 
 		  functionality in one version or model and the functionality is implemented by the platform in another version 
-		  or model, then equivalence is broken<a id="period_394" href="#period_394">. </a>If the functionality is implemented by the platform in multiple models or 
+		  or model, then equivalence is broken<a id="period_423" href="#period_423">. </a>If the functionality is implemented by the platform in multiple models or 
 		  versions on equivalent platforms, then the functionality is considered different if the product invokes the platform 
-		  differently to perform the function<a id="period_395" href="#period_395">. </a>			</p>
+		  differently to perform the function<a id="period_424" href="#period_424">. </a>			</p>
 		
 		<h2 class="indexable" data-level="2" id="modelequiv">E.3 Specific Guidance for Determining Product Model Equivalence</h2>
 		  <p>
 		  Product Model equivalence attempts to determine whether different feature levels of the same product across 
-		  a product line are equivalent for purposes of <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> testing<a id="period_396" href="#period_396">. </a>For example, if a product has a &#8220;basic&#8221; edition and an &#8220;enterprise&#8221; 
+		  a product line are equivalent for purposes of <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> testing<a id="period_425" href="#period_425">. </a>For example, if a product has a &#8220;basic&#8221; edition and an &#8220;enterprise&#8221; 
 		  edition, is it necessary to test both models? Or does testing one model provide sufficient assurance that both models 
 		  are compliant?
 		  </p><p>
 		  Product models are considered equivalent if there are no differences that affect <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security 
-		  functionality&#8212;as indicated in Table 1<a id="period_397" href="#period_397">. </a>		  </p><p>
+		  functionality&#8212;as indicated in Table 1<a id="period_426" href="#period_426">. </a>		  </p><p>
 		  
 		  <table border="1">
 			<tr class="header" bgcolor="#cccccc">
@@ -1875,27 +1958,27 @@ forwarded</span>]</span>, <span class="selectable-content" id="_s_75">no other p
 			<tr>
 			  <td rowspan="2" valign="top"><abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-Specified Functionality</td>
 			  <td valign="top">Same</td>
-			  <td valign="top">If the differences between Models affect only non-PP-specified functionality, then the Models are equivalent<a id="period_398" href="#period_398">. </a></td>
+			  <td valign="top">If the differences between Models affect only non-PP-specified functionality, then the Models are equivalent<a id="period_427" href="#period_427">. </a></td>
 			</tr>
 			<tr>
 			  <td valign="top">Different</td>
 			  <td valign="top">If <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality is affected by the differences between Models, 
-				then the Models are not equivalent and must be tested separately<a id="period_399" href="#period_399">. </a>It is necessary only to test the functionality 
-				affected by the software differences<a id="period_400" href="#period_400">. </a>If only differences are tested, then the differences must be enumerated, 
+				then the Models are not equivalent and must be tested separately<a id="period_428" href="#period_428">. </a>It is necessary only to test the functionality 
+				affected by the software differences<a id="period_429" href="#period_429">. </a>If only differences are tested, then the differences must be enumerated, 
 				and for each difference the Vendor must provide an explanation of why each difference does or does not affect 
-				<abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified functionality<a id="period_401" href="#period_401">. </a>If the Product Models are separately tested fully, then there is no need to document the differences<a id="period_402" href="#period_402">. </a>
+				<abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified functionality<a id="period_430" href="#period_430">. </a>If the Product Models are separately tested fully, then there is no need to document the differences<a id="period_431" href="#period_431">. </a>
 			  </td>
 			</tr>
 		  </table>
-		  <b>Table 1<a id="period_403" href="#period_403">. </a>Determining Product Model Equivalence</b>
+		  <b>Table 1<a id="period_432" href="#period_432">. </a>Determining Product Model Equivalence</b>
 		  </p>
 		
 		<h2 class="indexable" data-level="2" id="versionequiv">E.4 Specific Guidance for Determining Product Version Equivalence</h2>
 		  <p>
 		  In cases of version equivalence, differences are expressed in terms of changes implemented in revisions 
-		  of an evaluated Product<a id="period_404" href="#period_404">. </a>In general, versions are equivalent if the changes have no effect on any 
-		  security-relevant claims about the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> or assurance evidence<a id="period_405" href="#period_405">. </a>Non-security-relevant changes to <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> 
-		  functionality or the addition of non-security-relevant functionality does not affect equivalence<a id="period_406" href="#period_406">. </a>		  </p><p>
+		  of an evaluated Product<a id="period_433" href="#period_433">. </a>In general, versions are equivalent if the changes have no effect on any 
+		  security-relevant claims about the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> or assurance evidence<a id="period_434" href="#period_434">. </a>Non-security-relevant changes to <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> 
+		  functionality or the addition of non-security-relevant functionality does not affect equivalence<a id="period_435" href="#period_435">. </a>		  </p><p>
 		  <table border="1">
 			<tr class="header" bgcolor="#cccccc">
 			  <td valign="top">Factor</td>
@@ -1905,54 +1988,54 @@ forwarded</span>]</span>, <span class="selectable-content" id="_s_75">no other p
 			<tr valign="top">
 			  <td valign="top">Product Models</td>
 			  <td valign="top">Different</td>
-			  <td valign="top">Versions of different Product Models are not equivalent unless the Models are equivalent as defined in Section 3<a id="period_407" href="#period_407">. </a></td>
+			  <td valign="top">Versions of different Product Models are not equivalent unless the Models are equivalent as defined in Section 3<a id="period_436" href="#period_436">. </a></td>
 			</tr>
 			<tr>
 			  <td rowspan="2" valign="top"><abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-Specified Functionality</td>
 			  <td valign="top">Same</td>
-			  <td valign="top">If the differences affect only non-PP-specified functionality, then the Versions are equivalent<a id="period_408" href="#period_408">. </a></td>
+			  <td valign="top">If the differences affect only non-PP-specified functionality, then the Versions are equivalent<a id="period_437" href="#period_437">. </a></td>
 			</tr>
 			<tr>
 			  <td valign="top">Different</td>
 			  <td valign="top">If <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality is affected by the differences, then the 
-				Versions are not considered equivalent and must be tested separately<a id="period_409" href="#period_409">. </a>It is necessary only to test 
-				the functionality affected by the changes<a id="period_410" href="#period_410">. </a>If only the differences are tested, then for each 
+				Versions are not considered equivalent and must be tested separately<a id="period_438" href="#period_438">. </a>It is necessary only to test 
+				the functionality affected by the changes<a id="period_439" href="#period_439">. </a>If only the differences are tested, then for each 
 				difference the Vendor must provide an explanation of why the difference does or does not affect 
-				<abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified functionality<a id="period_411" href="#period_411">. </a>If the Product Versions are separately tested fully, then there is 
-				no need to document the differences<a id="period_412" href="#period_412">. </a></td>
+				<abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified functionality<a id="period_440" href="#period_440">. </a>If the Product Versions are separately tested fully, then there is 
+				no need to document the differences<a id="period_441" href="#period_441">. </a></td>
 			</tr>
 		  </table>
-		  <b>Table 2<a id="period_413" href="#period_413">. </a>Factors for Determining Product Version Equivalence</b>
+		  <b>Table 2<a id="period_442" href="#period_442">. </a>Factors for Determining Product Version Equivalence</b>
 		  </p>
 		
 		<h2 class="indexable" data-level="2" id="platformequiv">E.5 Specific Guidance for Determining Platform Equivalence</h2>
 		  <p>
-		  Platform equivalence is used to determine the platforms that equivalent versions of a Product must be tested on<a id="period_414" href="#period_414">. </a>
-		  Platform equivalence analysis done for one software application cannot be applied to another software application<a id="period_415" href="#period_415">. </a>		  Platform equivalence is not general&#8212;it is with respect to a particular application<a id="period_416" href="#period_416">. </a>
+		  Platform equivalence is used to determine the platforms that equivalent versions of a Product must be tested on<a id="period_443" href="#period_443">. </a>
+		  Platform equivalence analysis done for one software application cannot be applied to another software application<a id="period_444" href="#period_444">. </a>		  Platform equivalence is not general&#8212;it is with respect to a particular application<a id="period_445" href="#period_445">. </a>
 		  </p><p>
-		  Product Equivalency analysis must already have been done and Products have been determined to be equivalent<a id="period_417" href="#period_417">. </a>		  </p><p>
+		  Product Equivalency analysis must already have been done and Products have been determined to be equivalent<a id="period_446" href="#period_446">. </a>		  </p><p>
 		  The platform can be hardware or virtual hardware, an operating system or similar entity, or a software execution 
-		  environment such as a container<a id="period_418" href="#period_418">. </a>For purposes of determining equivalence for software applications, we address each
-		  type of platform separately<a id="period_419" href="#period_419">. </a>In general, platform equivalence is based on differences in the interfaces between the 
-		  <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and Platform that are relevant to the implementation of <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality<a id="period_420" href="#period_420">. </a>		  </p>
+		  environment such as a container<a id="period_447" href="#period_447">. </a>For purposes of determining equivalence for software applications, we address each
+		  type of platform separately<a id="period_448" href="#period_448">. </a>In general, platform equivalence is based on differences in the interfaces between the 
+		  <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and Platform that are relevant to the implementation of <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality<a id="period_449" href="#period_449">. </a>		  </p>
 		  <h3 class="indexable" data-level="3" id="hardware-equiv">E.5.1 Platform Equivalence&#8212;Hardware/Virtual Hardware Platforms</h3>
 			<p>
 				If an application runs directly on hardware without an operating system&#8212;or directly on virtualized 
 			hardware without an operating system&#8212;then platform equivalence is based on processor architecture and 
-			instruction sets<a id="period_421" href="#period_421">. </a>In the case of virtualized hardware, it is the virtualized processor and architecture 
-			that are presented to the application that matters&#8212;not the physical hardware<a id="period_422" href="#period_422">. </a>		  </p><p>
-			Platforms with different processor architectures and instruction sets are not equivalent<a id="period_423" href="#period_423">. </a>This is not 
+			instruction sets<a id="period_450" href="#period_450">. </a>In the case of virtualized hardware, it is the virtualized processor and architecture 
+			that are presented to the application that matters&#8212;not the physical hardware<a id="period_451" href="#period_451">. </a>		  </p><p>
+			Platforms with different processor architectures and instruction sets are not equivalent<a id="period_452" href="#period_452">. </a>This is not 
 			likely to be an issue for equivalency analysis for applications since there is likely to be a different 
-			version of the application for different hardware environments<a id="period_424" href="#period_424">. </a>			Equivalency analysis becomes important when comparing processors with the same architecture<a id="period_425" href="#period_425">. </a>Processors 
+			version of the application for different hardware environments<a id="period_453" href="#period_453">. </a>			Equivalency analysis becomes important when comparing processors with the same architecture<a id="period_454" href="#period_454">. </a>Processors 
 			with the same architecture that have instruction sets that are subsets or supersets of each other are not
-			disqualified from being equivalent for purposes of an App evaluation<a id="period_426" href="#period_426">. </a>If the application takes the same 
+			disqualified from being equivalent for purposes of an App evaluation<a id="period_455" href="#period_455">. </a>If the application takes the same 
 			code paths when executing <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality on different processors of the same family, 
-			then the processors can be considered equivalent with respect to that application<a id="period_427" href="#period_427">. </a>			For example, if an application follows one code path on platforms that support the AES-NI instruction 
+			then the processors can be considered equivalent with respect to that application<a id="period_456" href="#period_456">. </a>			For example, if an application follows one code path on platforms that support the AES-NI instruction 
 			and another on platforms that do not, then those two platforms are not equivalent with respect to that 
-			application functionality<a id="period_428" href="#period_428">. </a>But if the application follows the same code path whether or not the platform 
-			supports AES-NI, then the platforms are equivalent with respect to that functionality<a id="period_429" href="#period_429">. </a>		  </p><p>
+			application functionality<a id="period_457" href="#period_457">. </a>But if the application follows the same code path whether or not the platform 
+			supports AES-NI, then the platforms are equivalent with respect to that functionality<a id="period_458" href="#period_458">. </a>		  </p><p>
 			The platforms are equivalent with respect to the application if the platforms are equivalent with respect to all <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified
-			security functionality<a id="period_430" href="#period_430">. </a>			<table border="1">
+			security functionality<a id="period_459" href="#period_459">. </a>			<table border="1">
 			  <tr class="header" bgcolor="#cccccc">
 				<td valign="top">Factor</td>
 				<td valign="top">Same/Different/None</td>
@@ -1961,23 +2044,23 @@ forwarded</span>]</span>, <span class="selectable-content" id="_s_75">no other p
 			  <tr valign="top">
 				<td valign="top">Platform Architectures</td>
 				<td valign="top">Different</td>
-				<td valign="top">Platforms that present different processor architectures and instruction sets to the application are not equivalent<a id="period_431" href="#period_431">. </a></td>
+				<td valign="top">Platforms that present different processor architectures and instruction sets to the application are not equivalent<a id="period_460" href="#period_460">. </a></td>
 			  </tr>
 			  <tr>
 				<td valign="top"><abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-Specified Functionality</td>
 				<td valign="top">Same</td>
 				<td valign="top">For platforms with the same processor architecture, the platforms are equivalent with
-				  respect to the application if execution of all <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality follows the same code path on both platforms<a id="period_432" href="#period_432">. </a></td>
+				  respect to the application if execution of all <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality follows the same code path on both platforms<a id="period_461" href="#period_461">. </a></td>
 			  </tr>
 			</table>
-			<b>Table 3<a id="period_433" href="#period_433">. </a>Factors for Determining Hardware/Virtual Hardware Platform Equivalence</b>
+			<b>Table 3<a id="period_462" href="#period_462">. </a>Factors for Determining Hardware/Virtual Hardware Platform Equivalence</b>
 		  </p>
 		  
 		  <h3 class="indexable" data-level="3" id="os-equiv">E.5.2 Platform Equivalence&#8212;OS Platforms</h3>
 			<p>
 			For traditional applications that are built for and run on operating systems, platform equivalence is 
 			determined by the interfaces between the application and the operating system that are relevant to <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified 
-			security functionality<a id="period_434" href="#period_434">. </a>Generally, these are the processor interface, device interfaces, and OS APIs<a id="period_435" href="#period_435">. </a>The following 
+			security functionality<a id="period_463" href="#period_463">. </a>Generally, these are the processor interface, device interfaces, and OS APIs<a id="period_464" href="#period_464">. </a>The following 
 			factors applied in order:
 			
 			<table border="1">
@@ -1989,24 +2072,24 @@ forwarded</span>]</span>, <span class="selectable-content" id="_s_75">no other p
 			  <tr valign="top">
 				<td valign="top">Platform Architectures</td>
 				<td valign="top">Different</td>
-				<td valign="top">Platforms that run on different processor architectures and instruction sets are not equivalent<a id="period_436" href="#period_436">. </a></td>
+				<td valign="top">Platforms that run on different processor architectures and instruction sets are not equivalent<a id="period_465" href="#period_465">. </a></td>
 			  </tr>
 			  <tr valign="top">
 				<td valign="top">Platform Vendors</td>
 				<td valign="top">Different</td>
-				<td valign="top">Platforms from different vendors are not equivalent<a id="period_437" href="#period_437">. </a></td>
+				<td valign="top">Platforms from different vendors are not equivalent<a id="period_466" href="#period_466">. </a></td>
 			  </tr>
 			  <tr valign="top">
 				<td valign="top">Platform Versions</td>
 				<td valign="top">Different</td>
-				<td valign="top">Platforms from the same vendor with different major version numbers are not equivalent<a id="period_438" href="#period_438">. </a></td>
+				<td valign="top">Platforms from the same vendor with different major version numbers are not equivalent<a id="period_467" href="#period_467">. </a></td>
 			  </tr>
 			  <tr valign="top">
 				<td valign="top">Platform Interfaces</td>
 				<td valign="top">Different</td>
 				<td valign="top">Platforms from the same vendor and major version are not equivalent if there are
 				  differences in device interfaces and OS APIs that are relevant to the way the platform provides <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified 
-				  security functionality to the application<a id="period_439" href="#period_439">. </a></td>
+				  security functionality to the application<a id="period_468" href="#period_468">. </a></td>
 			  </tr>
 			  <tr valign="top">
 				<td valign="top">Platform Interfaces</td>
@@ -2014,20 +2097,20 @@ forwarded</span>]</span>, <span class="selectable-content" id="_s_75">no other p
 				<td valign="top">Platforms from the same vendor and major version are equivalent if there are 
 				  no differences in device interfaces and OS APIs that are relevant to the way the platform 
 				  provides <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality to the application, or if the Platform does 
-				  not provide such functionality to the application<a id="period_440" href="#period_440">. </a></td>
+				  not provide such functionality to the application<a id="period_469" href="#period_469">. </a></td>
 			  </tr>
 			  
 			</table>
-			<b>Table 4<a id="period_441" href="#period_441">. </a>Factors for Determining OS/VS Platform Equivalence</b>
+			<b>Table 4<a id="period_470" href="#period_470">. </a>Factors for Determining OS/VS Platform Equivalence</b>
 			</p>
 		
 		  
 		  <h3 class="indexable" data-level="3" id="software-equiv">E.5.3 Software-based Execution Environment Platform Equivalence</h3>
 			<p>
 			If an Application is built for and runs in a non-OS software-based execution environment, such as a Container or 
-			Java Runtime, then the below criteria must be used to determine platform equivalence<a id="period_442" href="#period_442">. </a>The key point is that the 
-			underlying hardware (virtual or physical) and OS is not relevant to platform equivalence<a id="period_443" href="#period_443">. </a>This allows applications 
-			to be tested and run on software-based execution environments on any hardware&#8212;as in cloud deployments<a id="period_444" href="#period_444">. </a>			
+			Java Runtime, then the below criteria must be used to determine platform equivalence<a id="period_471" href="#period_471">. </a>The key point is that the 
+			underlying hardware (virtual or physical) and OS is not relevant to platform equivalence<a id="period_472" href="#period_472">. </a>This allows applications 
+			to be tested and run on software-based execution environments on any hardware&#8212;as in cloud deployments<a id="period_473" href="#period_473">. </a>			
 			<table border="1">
 			  <tr class="header" bgcolor="#cccccc">
 				<td valign="top">Factor</td>
@@ -2038,61 +2121,61 @@ forwarded</span>]</span>, <span class="selectable-content" id="_s_75">no other p
 				<td valign="top">Platform Type/Vendor</td>
 				<td valign="top">Different</td>
 				<td valign="top">Software-based execution environments that are substantially different or come 
-				  from different vendors are not equivalent<a id="period_445" href="#period_445">. </a>For example, a Java virtual machine is not the same as a 
-				  container<a id="period_446" href="#period_446">. </a>A Docker container is not the same as a CoreOS container<a id="period_447" href="#period_447">. </a></td>
+				  from different vendors are not equivalent<a id="period_474" href="#period_474">. </a>For example, a Java virtual machine is not the same as a 
+				  container<a id="period_475" href="#period_475">. </a>A Docker container is not the same as a CoreOS container<a id="period_476" href="#period_476">. </a></td>
 			  </tr>
 			  <tr valign="top">
 				<td valign="top">Platform Versions</td>
 				<td valign="top">Different</td>
 				<td valign="top">Execution environments that are otherwise equivalent are not equivalent if they have 
-				  different major version numbers<a id="period_448" href="#period_448">. </a></td>
+				  different major version numbers<a id="period_477" href="#period_477">. </a></td>
 			  </tr>
 			  <tr valign="top">
 				<td valign="top"><abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-Specified Security Functionality</td>
 				<td valign="top">Same</td>
 				<td valign="top">All other things being equal, execution environments are equivalent if there is no 
 				  significant difference in the interfaces through which the environments provide <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security 
-				  functionality to applications<a id="period_449" href="#period_449">. </a></td>
+				  functionality to applications<a id="period_478" href="#period_478">. </a></td>
 			  </tr>
 			</table>
-			<b>Table 5<a id="period_450" href="#period_450">. </a>Factors for Software-based Execution Environment Platform Equivalence</b>
+			<b>Table 5<a id="period_479" href="#period_479">. </a>Factors for Software-based Execution Environment Platform Equivalence</b>
 			</p>
 		  
 		
 		<h2 class="indexable" data-level="2" id="specificity">E.6 Level of Specificity for Tested Configurations and Claimed Equivalent Configurations</h2>
 			<p>
-		  In order to make equivalency determinations, the vendor and evaluator must agree on the equivalency claims<a id="period_451" href="#period_451">. </a>They must 
+		  In order to make equivalency determinations, the vendor and evaluator must agree on the equivalency claims<a id="period_480" href="#period_480">. </a>They must 
 		  then provide the scheme with sufficient information about the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> instances and platforms that were evaluated, and the 
-		  <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> instances and platforms that are claimed to be equivalent<a id="period_452" href="#period_452">. </a>			</p><p>
-		  The <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> must describe all configurations evaluated down to processor manufacturer, model number, and microarchitecture version<a id="period_453" href="#period_453">. </a>
+		  <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> instances and platforms that are claimed to be equivalent<a id="period_481" href="#period_481">. </a>			</p><p>
+		  The <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> must describe all configurations evaluated down to processor manufacturer, model number, and microarchitecture version<a id="period_482" href="#period_482">. </a>
 			</p><p>
-		  The information regarding claimed equivalent configurations depends on the platform that the application was developed for and runs on<a id="period_454" href="#period_454">. </a>			</p><p>
+		  The information regarding claimed equivalent configurations depends on the platform that the application was developed for and runs on<a id="period_483" href="#period_483">. </a>			</p><p>
 		  <b>Bare-Metal Applications</b>
 			</p><p>
 		  For applications that run without an operating system on bare-metal or virtual bare-metal, the claimed configuration must 
-		  describe the platform down to the specific processor manufacturer, model number, and microarchitecture version<a id="period_455" href="#period_455">. </a>The Vendor
+		  describe the platform down to the specific processor manufacturer, model number, and microarchitecture version<a id="period_484" href="#period_484">. </a>The Vendor
 		  must describe the differences in the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> with respect to <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality and how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> functions
 		  differently to leverage platform differences (e.g., instruction set extensions) in the tested configuration versus the 
-		  claimed equivalent configuration<a id="period_456" href="#period_456">. </a>
+		  claimed equivalent configuration<a id="period_485" href="#period_485">. </a>
 			</p><p>
 		  <b>Traditional Applications</b>
 			</p><p>
 		  For applications that run with an operating system as their immediate platform, the claimed configuration must describe 
-		  the platform down to the specific operating system version<a id="period_457" href="#period_457">. </a>If the platform is a virtualization system, then the claimed 
-		  configuration must describe the platform down to the specific virtualization system version<a id="period_458" href="#period_458">. </a>The Vendor must describe the 
+		  the platform down to the specific operating system version<a id="period_486" href="#period_486">. </a>If the platform is a virtualization system, then the claimed 
+		  configuration must describe the platform down to the specific virtualization system version<a id="period_487" href="#period_487">. </a>The Vendor must describe the 
 		  differences in the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> with respect to <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality and how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> functions differently to leverage
-		  platform differences in the tested configuration versus the claimed equivalent configuration<a id="period_459" href="#period_459">. </a>Relevant platform differences 
+		  platform differences in the tested configuration versus the claimed equivalent configuration<a id="period_488" href="#period_488">. </a>Relevant platform differences 
 		  could include instruction sets, device interfaces, and OS APIs invoked by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to implement <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security 
-		  functionality<a id="period_460" href="#period_460">. </a>			</p><p>
+		  functionality<a id="period_489" href="#period_489">. </a>			</p><p>
 		  <b>Software-Based Execution Environments</b>
 			</p><p>
 		  For applications that run in a software-based execution environment such as a Java virtual machine or a Container, then 
-		  the claimed configuration must describe the platform down to the specific version of the software execution environment<a id="period_461" href="#period_461">. </a>
+		  the claimed configuration must describe the platform down to the specific version of the software execution environment<a id="period_490" href="#period_490">. </a>
 		  The Vendor must describe the differences in the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> with respect to <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-specified security functionality and how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> 
 		  functions differently to leverage platform differences in the tested configuration versus the claimed equivalent 
-		  configuration<a id="period_462" href="#period_462">. </a>			</p>
+		  configuration<a id="period_491" href="#period_491">. </a>			</p>
 		
-	<h1 id="acronyms" class="indexable" data-level="A">Appendix F -  Acronyms</h1><table><caption><span class="ctr" data-myid="t-acronyms" data-counter-type="ct-Table" id="t-acronyms">Table <span class="counter">7</span></span>: Acronyms
+	<h1 id="acronyms" class="indexable" data-level="A">Appendix F -  Acronyms</h1><table><caption><span class="ctr" data-myid="t-acronyms" data-counter-type="ct-Table" id="t-acronyms">Table <span class="counter">9</span></span>: Acronyms
 		</caption><tr class="header"><th>Acronym</th><th>Meaning</th></tr><tr><td><span class="term" id="abbr_Base-PP" data-plural="Base-PPs"><abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr></span></td><td><span id="long_abbr_Base-PP">Base Protection Profile</span></td></tr>
 <tr><td><span class="term" id="abbr_CC"><abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr></span></td><td><span id="long_abbr_CC">Common Criteria</span></td></tr>
 <tr><td><span class="term" id="abbr_CEM"><abbr class="dyn-abbr"><a href="#abbr_CEM">CEM</a></abbr></span></td><td><span id="long_abbr_CEM">Common Evaluation Methodology</span></td></tr>
@@ -2134,24 +2217,24 @@ forwarded</span>]</span>, <span class="selectable-content" id="_s_75">no other p
 <tr><td><span class="term" id="abbr_TSS"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></span></td><td><span id="long_abbr_TSS"><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Summary Specification</span></td></tr>
 <tr><td><span class="term" id="abbr_TTL"><abbr class="dyn-abbr"><a href="#abbr_TTL">TTL</a></abbr></span></td><td><span id="long_abbr_TTL">Time to Live</span></td></tr>
 <tr><td><span class="term" id="abbr_UDP"><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr></span></td><td><span id="long_abbr_UDP">User Datagram Protocol</span></td></tr>
-</table><h1 id="appendix-bibliography" class="indexable" data-level="A">Appendix G -  Bibliography</h1><table><caption><span class="ctr" data-myid="t-biblio" data-counter-type="ct-Table" id="t-biblio">Table <span class="counter">8</span></span>: Bibliography</caption><tr class="header"><th>Identifier</th><th>Title</th></tr><tr><td><span id="bibCC">[<abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>]</span></td><td><span class="description">Common Criteria for Information Technology Security Evaluation - <ul>
+</table><h1 id="appendix-bibliography" class="indexable" data-level="A">Appendix G -  Bibliography</h1><table><caption><span class="ctr" data-myid="t-biblio" data-counter-type="ct-Table" id="t-biblio">Table <span class="counter">10</span></span>: Bibliography</caption><tr class="header"><th>Identifier</th><th>Title</th></tr><tr><td><span id="bibCC">[<abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>]</span></td><td><span class="description">Common Criteria for Information Technology Security Evaluation - <ul>
             <li><a href="https://www.commoncriteriaportal.org/files/ccfiles/CC2022PART1R1.pdf">Part 1: 
-				Introduction and general model</a>, CCMB-2022-11-001, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_463" href="#period_463">. </a></li>
+				Introduction and general model</a>, CCMB-2022-11-001, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_492" href="#period_492">. </a></li>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART2R1.pdf">Part 2: 
-				Security functional requirements</a>, CCMB-2022-11-002, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_464" href="#period_464">. </a></li>
+				Security functional requirements</a>, CCMB-2022-11-002, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_493" href="#period_493">. </a></li>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART3R1.pdf">Part 3: 
-                Security assurance requirements</a>, CCMB-2022-11-003, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_465" href="#period_465">. </a></li>
+                Security assurance requirements</a>, CCMB-2022-11-003, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_494" href="#period_494">. </a></li>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART4R1.pdf">Part 4: 
-                Framework for the specification of evaluation methods and activities</a>, CCMB-2022-11-004, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_466" href="#period_466">. </a></li>
+                Framework for the specification of evaluation methods and activities</a>, CCMB-2022-11-004, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_495" href="#period_495">. </a></li>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART5R1.pdf">Part 5: 
-                 Pre-defined packages of security requirements</a>, CCMB-2022-11-005, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_467" href="#period_467">. </a></li>
+                 Pre-defined packages of security requirements</a>, CCMB-2022-11-005, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_496" href="#period_496">. </a></li>
           </ul></span></td></tr><tr><td><span id="bibCEM">[<abbr class="dyn-abbr"><a href="#abbr_CEM">CEM</a></abbr>]</span></td><td><span class="description">Common Methodology for Information Technology Security Evaluation - <ul>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CEM2022R1.pdf">
-                 Evaluation methodology</a>, CCMB-2022-11-006, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_468" href="#period_468">. </a></li>
+                 Evaluation methodology</a>, CCMB-2022-11-006, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_497" href="#period_497">. </a></li>
           </ul></span></td></tr><tr><td><span id="bibCESG">[CESG]</span></td><td><span class="description">CESG - <a href="https://www.gov.uk/government/collections/end-user-devices-security-guidance"> End
             User Devices Security and Configuration Guidance</a></span></td></tr><tr><td><span id="bibCSA">[CSA]</span></td><td><span class="description">
           <a href="http://csrc.nist.gov/groups/SMA/ispab/documents/csa_87.txt">Computer Security Act
-            of 1987</a>, H.R<a id="period_469" href="#period_469">. </a>145, June 11, 1987<a id="period_470" href="#period_470">. </a></span></td></tr><tr><td><span id="bibOMB">[OMB]</span></td><td><span class="description">
+            of 1987</a>, H.R<a id="period_498" href="#period_498">. </a>145, June 11, 1987<a id="period_499" href="#period_499">. </a></span></td></tr><tr><td><span id="bibOMB">[OMB]</span></td><td><span class="description">
           <a href="http://www.whitehouse.gov/sites/default/files/omb/memoranda/fy2006/m06-19.pdf">Reporting Incidents Involving Personally Identifiable Information and Incorporating the
             Cost for Security in Agency Information Technology Investments</a>, OMB M-06-19, July
-          12, 2006<a id="period_471" href="#period_471">. </a></span></td></tr></table></body></html>
+          12, 2006<a id="period_500" href="#period_500">. </a></span></td></tr></table></body></html>
