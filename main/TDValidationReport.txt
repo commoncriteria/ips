@@ -14,8 +14,8 @@
 /home/runner/work/ips/ips/output/effective.xml:1769:30: error: value of attribute "id" is invalid; must be a string matching the regular expression "[a-zA-Z][\-0-9a-zA-Z_]+"
 /home/runner/work/ips/ips/output/effective.xml:1806:16: error: element "sel-sfrs" not allowed here; expected element "impl-dep-sfrs"
 /home/runner/work/ips/ips/output/effective.xml:1813:12: error: element "comment" not allowed here; expected the element end-tag, element "section" or an element from another namespace
-/home/runner/work/ips/ips/output/effective.xml:1875:13: error: element "comment" not allowed here; expected the element end-tag
-/home/runner/work/ips/ips/output/effective.xml:2096:73: error: element "appendix" not allowed here; expected the element end-tag
-/home/runner/work/ips/ips/output/effective.xml:2191:78: error: element "appendix" not allowed here; expected the element end-tag
-/home/runner/work/ips/ips/output/effective.xml:2306:81: error: element "appendix" not allowed here; expected the element end-tag
-/home/runner/work/ips/ips/output/effective.xml:2641:16: error: element "bibliography" not allowed here; expected the element end-tag
+/home/runner/work/ips/ips/output/effective.xml:1874:13: error: element "comment" not allowed here; expected the element end-tag
+/home/runner/work/ips/ips/output/effective.xml:2095:73: error: element "appendix" not allowed here; expected the element end-tag
+/home/runner/work/ips/ips/output/effective.xml:2190:78: error: element "appendix" not allowed here; expected the element end-tag
+/home/runner/work/ips/ips/output/effective.xml:2305:81: error: element "appendix" not allowed here; expected the element end-tag
+/home/runner/work/ips/ips/output/effective.xml:2640:16: error: element "bibliography" not allowed here; expected the element end-tag
