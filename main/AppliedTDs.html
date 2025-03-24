@@ -629,13 +629,13 @@ function showTarget(id){
 	            img[src="images/collapsed.png"] { display:none;}
 
           }
-    </style></head><body onLoad="init()"><div id="commmentbox-"><a href="#Comment-1-">Comment: Comment-1-</a><br/><a href="#Comment-2-">Comment: Comment-2-</a><br/><a href="#Comment-3-">Comment: Comment-3-</a><br/><a href="#Comment-4-">Comment: Comment-4-</a><br/><a href="#Comment-5-">Comment: Comment-5-</a><br/><a href="#Comment-6-">Comment: Comment-6-</a><br/><a href="#Comment-7-">Comment: Comment-7-</a><br/><a href="#Comment-8-">Comment: Comment-8-</a><br/></div><h1 class="title" style="page-break-before:auto;">PP-Module for IPS</h1><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><div class="center"><img src="images/niaplogo.png" alt="NIAP Logo"></img><br/>
+    </style></head><body onLoad="init()"><div id="commmentbox-"><a href="#Comment-1-">Comment: Comment-1-</a><br/><a href="#Comment-2-">Comment: Comment-2-</a><br/><a href="#Comment-3-">Comment: Comment-3-</a><br/><a href="#Comment-4-">Comment: Comment-4-</a><br/><a href="#Comment-5-">Comment: Comment-5-</a><br/><a href="#Comment-6-">Comment: Comment-6-</a><br/><a href="#Comment-7-">Comment: Comment-7-</a><br/><a href="#Comment-8-">Comment: Comment-8-</a><br/><a href="#Comment-9-">Comment: Comment-9-</a><br/><a href="#Comment-10-">Comment: Comment-10-</a><br/></div><h1 class="title" style="page-break-before:auto;">PP-Module for IPS</h1><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><div class="center"><img src="images/niaplogo.png" alt="NIAP Logo"></img><br/>
       Version: 1.1<br/>2025-03-21<br/><b>National Information Assurance Partnership</b><br/></div><h2 style="page-break-before:always;">Revision History</h2><table><tr class="header"><th>Version</th><th>Date</th><th>Comment</th></tr><tr><td>1.1</td><td>2025-03-21</td><td><abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022 updates, incorporation of TDs</td></tr>
 <tr><td>1.0</td><td>2021-05-11</td><td>Initial publication</td></tr>
 </table><h3>TDs Applied</h3><h2>Contents</h2><div class="toc" id="toc"><a href="#Introduction" style="text-indent:0px">1<span>Introduction</span></a><a href="#Overview" style="text-indent:10px">1.1<span>Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#Compliant_Targets_of_Evaluation" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOE_Boundary" style="text-indent:10px">1.4<span>TOE Boundary</span></a><a href="#Use_Cases" style="text-indent:10px">1.5<span>Use Cases</span></a><a href="#app-intro" style="text-indent:10px">1.6<span>Introduction</span></a><a href="#ConformanceClaims" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#Security_Problem_Definition" style="text-indent:0px">3<span>Security Problem Definition</span></a><a href="#sec-threats" style="text-indent:10px">3.1<span>Threats</span></a><a href="#Assumptions" style="text-indent:10px">3.2<span>Assumptions</span></a><a href="#Organizational_Security_Policies" style="text-indent:10px">3.3<span>Organizational Security Policies</span></a><a href="#Security_Objectives" style="text-indent:0px">4<span>Security Objectives</span></a><a href="#Security_Objectives_for_the_Operational_Environment" style="text-indent:10px">4.1<span>Security Objectives for the Operational Environment</span></a><a href="#sec-sor" style="text-indent:10px">4.2<span>Security Objectives Rationale</span></a><a href="#Security_Requirements" style="text-indent:0px">5<span>Security Requirements</span></a><a href="#secreq-ND" style="text-indent:10px">5.1<span>Collaborative 
     Protection Profile for Network Devices
        Security Functional Requirements Direction
-    </span></a><a href="#modsfr-ND" style="text-indent:20px">5.1.1<span> Modified SFRs </span></a><a href="#man-sfrs" style="text-indent:10px">5.2<span>TOE Security Functional Requirements</span></a><a href="#ss-audit-table" style="text-indent:20px">5.2.1<span>Auditable Events for Mandatory SFRs</span></a><a href="#m-fau" style="text-indent:20px">5.2.2<span>Security Audit (FAU)</span></a><a href="#m-fmt" style="text-indent:20px">5.2.3<span>Security Management (FMT)</span></a><a href="#ips" style="text-indent:20px">5.2.4<span>Intrusion Prevention (IPS)</span></a><a href="#obj-req-map" style="text-indent:10px">5.3<span>TOE Security Functional Requirements Rationale</span></a><a href="#mod-conrat" style="text-indent:0px">6<span>Consistency Rationale</span></a><a href="#conrat-ND" style="text-indent:10px">6.1<span>Collaborative 
+    </span></a><a href="#modsfr-ND" style="text-indent:20px">5.1.1<span> Modified SFRs </span></a><a href="#man-sfrs" style="text-indent:10px">5.2<span>TOE Security Functional Requirements</span></a><a href="#m-fau" style="text-indent:20px">5.2.1<span>Security Audit (FAU)</span></a><a href="#ss-audit-table" style="text-indent:30px">5.2.1.1<span>Auditable Events for Mandatory SFRs</span></a><a href="#m-fmt" style="text-indent:20px">5.2.2<span>Security Management (FMT)</span></a><a href="#ips" style="text-indent:20px">5.2.3<span>Intrusion Prevention (IPS)</span></a><a href="#obj-req-map" style="text-indent:10px">5.3<span>TOE Security Functional Requirements Rationale</span></a><a href="#mod-conrat" style="text-indent:0px">6<span>Consistency Rationale</span></a><a href="#conrat-ND" style="text-indent:10px">6.1<span>Collaborative 
     Protection Profile for Network Devices</span></a><a href="#contoe-ND" style="text-indent:20px">6.1.1<span>
 	Consistency of TOE Type
       </span></a><a href="#consecprob-ND" style="text-indent:20px">6.1.2<span>
@@ -801,7 +801,7 @@ The following sections list Common Criteria and technology terms used in this do
 				<li><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> 3 is operating in a combination of promiscuous mode and inline mode. The <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> has at least one pair of interfaces creating a bridge or routing across the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, and is analyzing and filtering traffic in real-time as traffic traverses the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. The same <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> has one or more promiscuous interfaces collecting and analyzing traffic traversing within each separate network, and reacting to anomalous activity, worms, or otherwise unapproved activity.</li>
 			</ul>
 		<p></p>
-		<div class="figure" id="figure-OperEnv"><img id="OperEnv" src="images/deployment_diagram.PNG" width="" height=""></img><br/><span class="ctr" data-myid="OperEnv" data-counter-type="ct-figure">Figure <span class="counter">1</span></span>:
+		<div class="figure" id="figure-OperEnv"><img id="OperEnv" src="images/deployment_diagram.png" width="" height=""></img><br/><span class="ctr" data-myid="OperEnv" data-counter-type="ct-figure">Figure <span class="counter">1</span></span>:
       Figure 1: <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Deployment Scenario Diagram</div>
 	
 	
@@ -913,8 +913,9 @@ The following sections list Common Criteria and technology terms used in this do
 					<abbr class="dyn-abbr"><a href="#abbr_PP-Configuration">PP-Configuration</a></abbr> with this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>:
 					<ul><li><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> for Stateful Traffic Filter Firewalls, Version 1.4e</li><li><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> for Virtual Private Network (VPN) Gateways, Version 1.1</li></ul></dd><dt>Package Claim</dt><p></p><dd>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is not conformant to any 
 						Functional or Assurance Packages.</dd></dl>
+	  <span style="" class="comment " id="Comment-2-">Please review</span>
     <h1 class="indexable" data-level="1" id="Security_Problem_Definition">3 Security Problem Definition</h1>
-  <span style="" class="comment " id="Comment-2-">Switched Security Problem Description(old) to Security_Problem_Definition</span>
+  <span style="" class="comment " id="Comment-3-">Switched Security Problem Description(old) to Security_Problem_Definition</span>
   
     
   	<p>
@@ -998,6 +999,7 @@ security functionality specified in the <abbr class="dyn-abbr"><a href="#abbr_PP
 If the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is placed in an <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> that does not meet these assumptions, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may no longer be able to
 provide all of its security functionality.
       
+		<span style="" class="comment " id="Comment-4-">Note the runner added "These assumptions are made on the Operational Environment (<abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr>) in*"</span>
 		<p>
 		All assumptions for the operational environment of the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> also apply to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
 		A.NO_THRU_TRAFFIC_PROTECTION is still operative, but only for the interfaces in the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that are
@@ -1093,25 +1095,6 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
     
 
 		
-	  <h3 class="indexable" data-level="3" id="ss-audit-table">5.2.1 Auditable Events for Mandatory SFRs</h3>
-	    <table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="mandatory-audit-events" data-counter-type="ct-Table" id="mandatory-audit-events">Table <span class="counter">2</span></span>: Auditable Events for Mandatory Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr><tr data-sortkey="FIP_ABD_EXT.1"><td rowspan="2"><a href="#FIP_ABD_EXT.1">FIP_ABD_EXT.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FIP_ABD_EXT.1#"><td></td></tr><tr data-sortkey="FIP_ABD_EXT.1.3"><td>Inspected traffic matches an anomaly-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy.</td><td><ul><li>Source and destination IP addresses.</li><li>The content of the header fields that were determined to match the policy.</li><li><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface that received the packet.</li><li>Aspect of the anomaly-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy rule that triggered the event (e.g. throughput, time of day, frequency, etc.).</li><li>Network-based action by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> (e.g. allowed, blocked, sent reset to source IP, sent blocking notification to firewall). </li></ul></td></tr><tr data-sortkey="IPS_IPB_EXT.1"><td rowspan="2"><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="IPS_IPB_EXT.1#"><td></td></tr><tr data-sortkey="IPS_IPB_EXT.1.2"><td>Inspected traffic matches a list of known-good or known-bad addresses applied to an <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy.</td><td><ul><li>Source and destination IP addresses (and, if applicable, indication of whether the source and/or destination address matched the list).</li><li><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface that received the packet.</li><li>Network-based action by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> (e.g. allowed, blocked, sent reset).</li></ul></td></tr><tr data-sortkey="IPS_NTA_EXT.1"><td rowspan="4"><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="IPS_NTA_EXT.1#"><td></td></tr><tr data-sortkey="IPS_NTA_EXT.1.3"><td>Modification of which <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies
-				are active on a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface</td><td><ul><li>Identification of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface.
-				</li><li>The <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy and interface mode (if
-				applicable).
-				</li></ul></td></tr><tr data-sortkey="IPS_NTA_EXT.1.4"><td>Enabling/disabling a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
-				interface with <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies
-				applied.
-				</td><td><ul><li>Identification of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface.
-				</li><li>The <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy and interface mode (if
-				applicable).
-				</li></ul></td></tr><tr data-sortkey="IPS_NTA_EXT.1.5"><td>Modification of which mode(s)
-				is/are active on a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface.
-				</td><td><ul><li>Identification of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface.
-				</li><li>The <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy and interface mode (if
-				applicable).
-				</li></ul></td></tr><tr data-sortkey="IPS_SDB_EXT.1"><td rowspan="2"><a href="#IPS_SDB_EXT.1">IPS_SDB_EXT.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="IPS_SDB_EXT.1#"><td></td></tr><tr data-sortkey="IPS_SDB_EXT.1.6"><td>Inspected traffic matches a signature-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> rule with logging enabled.</td><td><ul><li>Name or identifier of the matched signature.</li><li>Source and destination IP addresses.</li><li>The content of the header fields that weredetermined to match the signature.</li><li><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface that received the packet.</li><li>Network-based action by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> (e.g. allowed, blocked, sent reset).</li></ul></td></tr></table>
-		<span style="" class="comment " id="Comment-3-">some audits end without completing the sentence.</span>
-	  
 
 		
 		
@@ -1128,7 +1111,7 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 			
 			
 			
-			<h3 id="m-fau" class="indexable" data-level="3">5.2.2 Security Audit (FAU)</h3>
+			<h3 id="m-fau" class="indexable" data-level="3">5.2.1 Security Audit (FAU)</h3>
 			<div class="comp" id="FAU_GEN.1/IPS"><h4>FAU_GEN.1/IPS Audit Data Generation (IPS)</h4>
 				<div class="element"><div class="reqid" id="FAU_GEN.1.1/IPS"><a href="#FAU_GEN.1.1/IPS" class="abbr">FAU_GEN.1.1/IPS</a></div><div class="reqdesc">
 				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to generate an <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr></b> audit record of the following <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr></b>
@@ -1141,7 +1124,7 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 					<li><i>Totals of similar reactions occurring within a specified time period;</i></li>
 					<li><i>The events in the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> Events table. </i></li>
 					<li>[<b>selection</b>: <span class="selectable-content" id="_s_1">no other auditable events</span>, <span class="selectable-content" id="_s_2">Auditable events listed in the Auditable Events for Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> table (<a onclick="showTarget('at-optional')" href="#at-optional" class="at-optional-ref">Table  <span class="counter">7</span></a>) for <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are present in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></span>, <span class="selectable-content" id="_s_3">Auditable events listed in the Auditable Events for Objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> table (<a onclick="showTarget('at-objective')" href="#at-objective" class="at-objective-ref">Table  <span class="counter">8</span></a>) for <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are present in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></span>]
-						<span style="" class="comment " id="Comment-4-">Review</span>
+						<span style="" class="comment " id="Comment-5-">Review</span>
 					</li>
 				
 					</ol>
@@ -1177,7 +1160,7 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 				<div class="element"><div class="reqid" id="FAU_GEN.1.2/IPS"><a href="#FAU_GEN.1.2/IPS" class="abbr">FAU_GEN.1.2/IPS</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall record within each <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> auditable event</b> record at least the following information: <ol type="a">
 						<li>Date and time of the event, type of event <b>and/or reaction,</b> <s>subject identity, and the outcome (success or failure) of the event; and;</s></li>
 						<li>For each <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> auditable event</b> type, based on the auditable event definitions of the functional components included in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><s>/<abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></s>, [<i>information specified in column three of the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> Events table].</i></li>
-						<span style="" class="comment " id="Comment-5-">Update the second selection to properly have UPS Auidtable evet bolded, just like the first one.</span>
+						<span style="" class="comment " id="Comment-6-">Update the second selection to properly have UPS Auidtable evet bolded, just like the first one.</span>
 					</ol>
 
 					<div class="appnote"><span class="note-header">Application
@@ -1198,10 +1181,29 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 					that trigged event, port, etc.</i></p>
 					</span></div></div></div>
 			</div>
+			<h4 class="indexable" data-level="4" id="ss-audit-table">5.2.1.1 Auditable Events for Mandatory SFRs</h4>
+	    <table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="mandatory-audit-events" data-counter-type="ct-Table" id="mandatory-audit-events">Table <span class="counter">2</span></span>: Auditable Events for Mandatory Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr><tr data-sortkey="FIP_ABD_EXT.1"><td rowspan="2"><a href="#FIP_ABD_EXT.1">FIP_ABD_EXT.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FIP_ABD_EXT.1#"><td></td></tr><tr data-sortkey="FIP_ABD_EXT.1.3"><td>Inspected traffic matches an anomaly-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy.</td><td><ul><li>Source and destination IP addresses.</li><li>The content of the header fields that were determined to match the policy.</li><li><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface that received the packet.</li><li>Aspect of the anomaly-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy rule that triggered the event (e.g. throughput, time of day, frequency, etc.).</li><li>Network-based action by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> (e.g. allowed, blocked, sent reset to source IP, sent blocking notification to firewall). </li></ul></td></tr><tr data-sortkey="IPS_IPB_EXT.1"><td rowspan="2"><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="IPS_IPB_EXT.1#"><td></td></tr><tr data-sortkey="IPS_IPB_EXT.1.2"><td>Inspected traffic matches a list of known-good or known-bad addresses applied to an <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy.</td><td><ul><li>Source and destination IP addresses (and, if applicable, indication of whether the source and/or destination address matched the list).</li><li><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface that received the packet.</li><li>Network-based action by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> (e.g. allowed, blocked, sent reset).</li></ul></td></tr><tr data-sortkey="IPS_NTA_EXT.1"><td rowspan="4"><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="IPS_NTA_EXT.1#"><td></td></tr><tr data-sortkey="IPS_NTA_EXT.1.3"><td>Modification of which <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies
+				are active on a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface</td><td><ul><li>Identification of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface.
+				</li><li>The <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy and interface mode (if
+				applicable).
+				</li></ul></td></tr><tr data-sortkey="IPS_NTA_EXT.1.4"><td>Enabling/disabling a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
+				interface with <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies
+				applied.
+				</td><td><ul><li>Identification of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface.
+				</li><li>The <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy and interface mode (if
+				applicable).
+				</li></ul></td></tr><tr data-sortkey="IPS_NTA_EXT.1.5"><td>Modification of which mode(s)
+				is/are active on a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface.
+				</td><td><ul><li>Identification of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface.
+				</li><li>The <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy and interface mode (if
+				applicable).
+				</li></ul></td></tr><tr data-sortkey="IPS_SDB_EXT.1"><td rowspan="2"><a href="#IPS_SDB_EXT.1">IPS_SDB_EXT.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="IPS_SDB_EXT.1#"><td></td></tr><tr data-sortkey="IPS_SDB_EXT.1.6"><td>Inspected traffic matches a signature-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> rule with logging enabled.</td><td><ul><li>Name or identifier of the matched signature.</li><li>Source and destination IP addresses.</li><li>The content of the header fields that weredetermined to match the signature.</li><li><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface that received the packet.</li><li>Network-based action by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> (e.g. allowed, blocked, sent reset).</li></ul></td></tr></table>
+		<span style="" class="comment " id="Comment-7-">some audits end without completing the sentence.</span>
+	  
 			
 			
 			
-			<h3 id="m-fmt" class="indexable" data-level="3">5.2.3 Security Management (FMT)</h3>
+			<h3 id="m-fmt" class="indexable" data-level="3">5.2.2 Security Management (FMT)</h3>
 			<div class="comp" id="FMT_SMF.1/IPS"><h4>FMT_SMF.1/IPS Specification of Management Functions (IPS)</h4>
 				<div class="element"><div class="reqid" id="FMT_SMF.1.1/IPS"><a href="#FMT_SMF.1.1/IPS" class="abbr">FMT_SMF.1.1/IPS</a></div><div class="reqdesc">
 				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be capable of performing the following management functions: [
@@ -1231,7 +1233,7 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 				</div>
 			
 			
-						<h3 id="ips" class="indexable" data-level="3">5.2.4 Intrusion Prevention (IPS)</h3>
+						<h3 id="ips" class="indexable" data-level="3">5.2.3 Intrusion Prevention (IPS)</h3>
 			<div class="comp" id="FIP_ABD_EXT.1"><h4>FIP_ABD_EXT.1 Anomaly-Based IPS Functionality</h4>
 				<div class="element"><div class="reqid" id="FIP_ABD_EXT.1.1"><a href="#FIP_ABD_EXT.1.1" class="abbr">FIP_ABD_EXT.1.1</a></div><div class="reqdesc">
 				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support the definition of [<b>selection</b>: <span class="selectable-content" id="_s_4">baselines (‘expected and approved’)</span>, <span class="selectable-content" id="_s_5">anomaly (‘unexpected’) traffic patterns</span>, <span class="selectable-content" id="_s_6"></span>] including the specification of [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_7">throughput ([<b>assignment</b>: 
@@ -1635,7 +1637,7 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
         <table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="at-optional" data-counter-type="ct-Table" id="at-optional">Table <span class="counter">7</span></span>: Auditable Events for Strictly Optional Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr><tr data-sortkey="FAU_STG.4/IPS"><td rowspan="2"><a href="#FAU_STG.4/IPS">FAU_STG.4/IPS</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FAU_STG.4/IPS#"><td></td></tr><tr data-sortkey="FAU_STG.4/IPS.1"><td>A local audit store reaches its storage limit.</td><td>Indication that the audit store is full, and (if configurable) how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is responding (e.g. failing to audit new auditable events, or </td></tr><tr data-sortkey="FPT_FLS.1"><td rowspan="2"><a href="#FPT_FLS.1">FPT_FLS.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FPT_FLS.1#"><td></td></tr><tr data-sortkey="FPT_FLS.1.1"><td>A local audit store reaches its storage limit.</td><td>Indication that the audit store is full, and (if configurable) how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is responding (e.g. failing to audit new auditable events, or </td></tr><tr data-sortkey="IPS_SBD_EXT.2"><td rowspan="4"><a href="#IPS_SBD_EXT.2">IPS_SBD_EXT.2</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="IPS_SBD_EXT.2#"><td></td></tr><tr data-sortkey="IPS_SBD_EXT.2.3"><td>Inspection of encapsulated packets.</td><td>Indication of the encapsulation method.</td></tr><tr data-sortkey="IPS_SBD_EXT.2.4"><td>Failure to re-assemble a fragmented packet.</td><td><ul><li>Source and destination IP addresses.</li><li><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface that received the fragment(s).</li></ul></td></tr><tr data-sortkey="IPS_SBD_EXT.2.5"><td>Normalization of traffic by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.</td><td><ul><li>Source and destination IP addresses of discarded packet(s).</li><li><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface that received the packet(s)</li></ul></td></tr></table>
       
 	<h3 id="fau-ops" class="indexable" data-level="3">A.1.2 Security Audit(FAU)</h3>
-	<span style="" class="comment " id="Comment-6-">^this is something that I added, the original <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> pp did not have this entry</span>
+	<span style="" class="comment " id="Comment-8-">^this is something that I added, the original <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> pp did not have this entry</span>
 			<div class="comp" id="FAU_STG.1/IPS"><h4>FAU_STG.1/IPS Protected Audit Trail Storage</h4>
 			<div class="element"><div class="reqid" id="FAU_STG.1/IPS.1"><a href="#FAU_STG.1/IPS.1" class="abbr">FAU_STG.1/IPS.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall protect the stored <s>audit records </s><b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b> from unauthorized deletion.</div></div>
 			<div class="element"><div class="reqid" id="FAU_STG.1/IPS.2"><a href="#FAU_STG.1/IPS.2" class="abbr">FAU_STG.1/IPS.2</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to [<i>prevent</i>] unauthorized modifications to the <s>stored audit records</s> <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b> <s>in the audit trail</s>.</div></div>
@@ -1696,7 +1698,7 @@ forwarded</span>]</span>, <span class="selectable-content" id="_s_76">no other p
 	<h2 id="obj-sfrs" class="indexable" data-level="2">A.2 Objective Requirements
     </h2>
 	<h3 class="indexable" data-level="3" id="_sec_12">A.2.1 Auditable Events for Objective SFRs</h3>
-        <span style="" class="comment " id="Comment-7-">All objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> need a review to determine if they should change status with the new release of this module.</span>
+        <span style="" class="comment " id="Comment-9-">All objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> need a review to determine if they should change status with the new release of this module.</span>
         <table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="at-objective" data-counter-type="ct-Table" id="at-objective">Table <span class="counter">8</span></span>: Auditable Events for Objective Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr></table>
       
 	<h3 id="fau-obj" class="indexable" data-level="3">A.2.2 Security Audit (FAU)</h3>
@@ -1777,7 +1779,7 @@ forwarded</span>]</span>, <span class="selectable-content" id="_s_76">no other p
      <span class="assignable-content"> other filtering parameters</span>]</span>, <span class="selectable-content" id="_s_78">No other filtering parameters</span>]<i>; and sorting parameters: event ID, event type, time,
 signature ID, <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> actions performed, and </i>[<b>selection</b>: <span class="selectable-content" id="_s_79">[<b>assignment</b>: 
      <span class="assignable-content">other sorting parameters</span>]</span>, <span class="selectable-content" id="_s_80">no other sorting parameters</span>].
-		<span style="" class="comment " id="Comment-8-">please review </span>
+		<span style="" class="comment " id="Comment-10-">please review </span>
 
 
 	</div></div>
