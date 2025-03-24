@@ -1462,7 +1462,7 @@ enforce its policies on network traffic of monitored networks.</description>
 				The TSF shall support stream reassembly or equivalent to detect malicious payload even if it is split across multiple non-fragmented packets.
 
                 </title>
-                <aactivity>
+                <aactivity level="element">
 					<TSS>There are no TSS EAs for this element.</TSS>
 					<Guidance>The evaluator shall verify that the operational guidance provides configuration instructions, if needed, to detect payload across multiple packets.</Guidance>
 					<Tests>The evaluator shall repeat one of the tests in IPS_SBD_EXT.1.2 Test 1 but generate multiple nonfragmented packets that contain the string in the rule defined. The evaluator shall verify that the malicious traffic is still detected when split across multiple non-fragmented packets.</Tests>
