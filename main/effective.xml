@@ -790,11 +790,11 @@ enforce its policies on network traffic of monitored networks.</description>
 					<selectable>anomaly (‘unexpected’) traffic patterns</selectable>
 					<selectable/>
 				</selectables> including the specification of <selectables linebreak="yes">
-					<selectable>throughput (<assignable> data elements (e.g. bytes, packets, etc.) per time period (e.g. minutes, hours, days)</assignable>) </selectable>
+					<selectable>throughput (<assignable> data elements (e.g. bytes, packets, etc.) per time period (e.g. minutes, hours, days)</assignable>)</selectable>
 					<selectable>time of day;</selectable>
 					<selectable>frequency;</selectable>
 					<selectable>thresholds;</selectable>
-					<selectable>[ <assignable>other methods</assignable> ]</selectable>
+					<selectable>[ <assignable>other methods</assignable>]</selectable>
 					</selectables>
 					and the following network protocol fields:
 					<h:ul>
@@ -1667,7 +1667,7 @@ forwarded</assignable></selectable>
 	<f-component name="Security Alarms" cc-id="fau_arp.1" id="fau-arp.1">
 	<f-element id="fau-arp.1">
 	<title>
-	The TSF shall take <assignable>list of actions</assignable>upon detection of potential security violation.
+	The TSF shall take <assignable>list of actions</assignable> upon detection of potential security violation.
 	</title>
 	<note role="application"><h:i>
 	<h:p>At minimum, the set of potential security violations must include network traffic
@@ -1806,6 +1806,11 @@ justifying the set of tests as representative and sufficient to exercise the cap
     <sel-sfrs/>
     
     <impl-dep-sfrs>
+	<section id="ss-audit-table" title="Auditable Events for Implementation-Dependent SFRs">
+	    <audit-table table="impl-dep-sfrs" id="Implementation-audit-events">
+	      <h:br/><h:b><ctr ctr-type="Table" pre="Table " id="atref-imp-dep-sfr">: Auditable Events for Mandatory SFRs</ctr></h:b>
+	    </audit-table></section>
+
 	<section title="Resource Utilization" id="fru-imp_dep">
 		<f-component name="Maximum Quotas" cc-id="fru_rsa.1" id="fru-rsa.1">
 		<f-element>
