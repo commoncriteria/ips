@@ -1770,7 +1770,8 @@ forwarded</assignable></selectable>
 	<aactivity>
 	<TSS>The evaluator shall examine the TSS to determine that it identifies what group of users is considered to be ‘administrators’ for the purpose of being granted access to view IPS data.</TSS>
 	<Guidance>The evaluator shall examine the operational guidance to determine what actions are needed to grant or revoke a user’s ability to view IPS data.</Guidance>
-	<Tests>The evaluator shall log on to the TOE as various users to confirm that only those users that are intended to be granted read access to IPS data are able to view it.</Test></aactivity>
+	<Tests>The evaluator shall log on to the TOE as various users to confirm that only those users that are intended to be granted read access to IPS data are able to view it.</Tests>
+	</aactivity>
 	</f-element>
 	</f-component>
 	<f-component name="Selectable Audit Review" cc-id='fau_sar.3' id='fau-sar.3'>
