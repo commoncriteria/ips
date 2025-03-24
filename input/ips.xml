@@ -1702,7 +1702,22 @@ forwarded</assignable></selectable>
 		list these messaging methods within FTP_ITC.1 and/or within this SFR. There are
 		no additional auditable IPS events that need to be included in FAU_GEN.1/IPS.
 		</h:p></h:i></note>
-		<aactivity><no-tests/></aactivity>
+		<aactivity>
+		<TSS>The evaluator shall verify that the TSS includes a description of the alerts specified in the requirement and
+			the events that may trigger these alerts to be generated. The evaluator shall also verify that the TSS states
+			that audit data cannot be transmitted through the security alarms interface.
+
+		</TSS>
+		<Guidance>The evaluator shall verify that the guidance explains how to enable alerts specified in the requirement
+		based on the events that the TSS identifies as potential security violations.
+		</Guidance>
+		<Tests>
+		For each action that can be taken by the TSF upon detection of a potential security violation, the evaluator
+		shall configure the TOE to take that action when a particular event occurs. The evaluator shall then
+		perform some action to trigger the event (e.g. by transmitting network traffic that represents the event
+		to the TOE’s sensor interfaces) and observe that the configured action occurs in response.
+		</Tests>
+		</aactivity>
 	</f-element>
 	</f-component>
 	<f-component name="Audit Review" cc-id='fau_sar.1' id='fau-sar.1'>
@@ -1742,15 +1757,24 @@ forwarded</assignable></selectable>
 		</h:table>
 		
 		</note>
-	<aactivity><no-tests/></aactivity>
+	<aactivity>
+	<TSS>The evaluator shall examine the TSS to verify that it describes the ability of administrators to view IPS data from the IPS events, the format in which this IPS data is displayed, and how an administrator is authorized to view this data.</TSS>
+	
+	<Guidance>The evaluator shall examine the operational guidance to verify that it provides instructions on how to access and interpret IPS events using the TOE’s management interface.</Guidance>
+	<Tests>The evaluator shall devise tests that demonstrate that IPS data (generated as defined in FAU_GEN.1/IPS) can be interpreted by authorized administrators from the TOE’s management interface.</Tests></aactivity>
 	</f-element>
 	</f-component>
-	<f-component name="Audit Review" cc-id='fau_sar.2' id='fau-sar.2'>
+	<f-component name="Restricted Audit Review" cc-id='fau_sar.2' id='fau-sar.2'>
 	<f-element id="fau-sar.2e1">
 	<title>The TSF shall prohibit all <h:s>users</h:s> <h:b>administrators</h:b> read access to the <h:s>audit records</h:s> <h:b>IPS data</h:b>, except those that have been granted explicit read-access.</title>
-	<aactivity><no-tests/></aactivity>
+	<aactivity>
+	<TSS>The evaluator shall examine the TSS to determine that it identifies what group of users is considered to be ‘administrators’ for the purpose of being granted access to view IPS data.</TSS>
+	<Guidance>The evaluator shall examine the operational guidance to determine what actions are needed to grant or revoke a user’s ability to view IPS data.</Guidance>
+	<Tests>The evaluator shall log on to the TOE as various users to confirm that only those users that are intended to be granted read access to IPS data are able to view it.</Test></aactivity>
 	</f-element>
-	<f-element id="fau-sar.2e1">
+	</f-component>
+	<f-component name="Selectable Audit Review" cc-id='fau_sar.3' id='fau-sar.3'>
+	<f-element id="fau-sar.3e1">
 	<title>
 	The TSF shall provide the ability to apply [<h:i>filtering and sorting</h:i>] of audit IPS data
 	based on [<h:i>filtering parameters: risk rating, time period, source IP address,
@@ -1764,7 +1788,24 @@ signature ID, IPS actions performed, and </h:i><selectables>
 
 
 	</title>
-	<aactivity><no-tests/></aactivity>
+	<aactivity>
+	<TSS>The evaluator shall verify that the TSS includes a description of how the TOE has the ability to apply filtering and sorting of IPS data using the parameters listed in the requirement.</TSS>
+	<Guidance>The evaluator shall review the operational guidance to ensure that the guidance itemizes all event types,
+	as well as describes all attributes that are to be selectable in accordance with the requirement, to include
+	those attributes listed in the assignment. The administrative guidance shall also contain instructions on
+	how to set the pre- selection, as well as explain the syntax (if present) for multi-value pre-selection. The
+	administrative guidance shall also identify those audit records that are always recorded, regardless of the
+	selection criteria currently being enforced.</Guidance>
+	<Tests>The evaluator shall perform the following tests:
+		<testlist>
+		<test>For each attribute listed in the requirement, the evaluator shall devise a test to show that selecting
+the attribute causes only audit events with that attribute (or those that are always recorded, as identified
+in the administrative guidance) to be recorded. </test> 
+<test> [conditional]: If the TSF supports specification of more complex audit pre-selection criteria (e.g.,
+multiple attributes, logical expressions using attributes) then the evaluator shall devise tests showing that
+this capability is correctly implemented. The evaluator shall also, in the test plan, provide a short narrative
+justifying the set of tests as representative and sufficient to exercise the capability.</test></testlist>
+		</Tests></aactivity>
 	</f-element>
 	</f-component>
 	</section>
@@ -1772,7 +1813,52 @@ signature ID, IPS actions performed, and </h:i><selectables>
 	</obj-sfrs>
     <sel-sfrs></sel-sfrs>
     
-    <impl-dep-sfrs></impl-dep-sfrs>
+    <impl-dep-sfrs>
+	<section title="Resource Utilization" id="fru-imp_dep">
+		<f-component name='Maximum Quotas' cc-id='fru_rsa.1' id='fru-rsa.1'>
+		<f-element>
+		<title>The TSF shall enforce maximum quotas of the following resources: [<h:i>resources
+supporting inspection of network traffic</h:i>] that [<h:i>subjects</h:i>] can use [<h:i>simultaneously</h:i>].
+		</title>
+		<note role='application'>
+		<h:i><h:p>This SFR is optional but the behavior specified by FAU_ARP.1 requires this function
+		to be implemented. Therefore, this SFR is implementation-dependent on the
+		condition that it be claimed if FAU_ARP.1 is claimed. If FAU_ARP.1 is not claimed
+		this SFR should also not be claimed because effective enforcement of maximum
+		quotas requires an alert mechanism when quotas are exceeded. Otherwise it is
+		not possible for an administrator to determine whether a lack of potential security
+		violations is caused by an absence of potential malicious activity or by the inability
+		of the TSF to detect such activity due to an inability to process the volume of traffic
+		being received</h:p><h:p>Conformant TOEs will impose quotas on exhaustible resources used to support
+		inspection of network traffic that ‘subjects’ (inspected network traffic flows) can
+		use simultaneously. The intent of this requirement is to ensure that the TOE is not
+		deployed in such a way that the flow of data across its sensor interfaces can
+		exceed the amount of traffic that the TOE is capable of inspecting. If the flow
+		(volume/speed) of data to be inspected exceeds the defined quota, the TOE should
+		trigger an alert signifying effect of the exceeded quota. For example, when the
+		TOE is deployed inline, exceeding the quota may result in the TSF dropping (not
+		forwarding) and failing to inspect network traffic; or when the TOE is not deployed
+		inline, exceeding the quota may result in traffic having been forwarded without
+		inspection. In any case, exceeding the maximum quota results in a “potential
+		security violation” relevant to FAU_ARP.1 in that the TSF may have failed to
+		inspect some network traffic.</h:p></h:i>
+		</note>
+		<aactivity>
+			<TSS>The evaluator shall examine the TSS to ensure that it identifies all resources controlled through the quota
+			mechanism, and that this list contains those resources used to support traffic inspection. The evaluator
+			shall ensure that the TSS describes how each resource is counted as “used” and how a maximum quota
+			or use is determined, as well as the action taken when the quota is reached.</TSS>
+			<Guidance>The evaluator shall examine the operational guidance to determine that it contains instructions for
+			establishing quotas (if they are configurable) and that it describes any actions administrators can or should
+			take in response to a quota being reached.
+			</Guidance>
+			<Tests>The evaluator shall follow the operational guidance to configure quotas for the resource (if such a
+			capability is provided). The evaluator then causes the resource quota to be reached, and observes that
+			the action specified in the TSS occurs.</Tests></aactivity>
+			</f-element>
+		</f-component>
+		</section>
+	</impl-dep-sfrs>
 	
 
 
