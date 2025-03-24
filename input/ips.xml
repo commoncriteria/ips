@@ -1724,7 +1724,8 @@ forwarded</assignable></selectable>
 		displayed on a single line as in the sample table below. Regardless whether such
 		a view is provided, it is expected that the administrator will be able to view the
 		details of individual event occurrences.
-		</h:i></note>
+		</h:i>
+		
 		<h:table border='1'>
 		<h:tr>
 			<h:th>Time/Date</h:th>
@@ -1739,13 +1740,32 @@ forwarded</assignable></selectable>
 			<h:th>34</h:th>
 		</h:tr>
 		</h:table>
+		
+		</note>
 	<aactivity><no-tests/></aactivity>
 	</f-element>
 	</f-component>
-	<f-component
-	<f-component name="Audit Review" cc-id='fau_sar.2' id='fau-sar.2'></f-component>
-	<f-element id="fau-sar.1e1">
-	<f-element
+	<f-component name="Audit Review" cc-id='fau_sar.2' id='fau-sar.2'>
+	<f-element id="fau-sar.2e1">
+	<title>The TSF shall prohibit all <h:s>users</h:s> <h:b>administrators</h:b> read access to the <h:s>audit records</h:s> <h:b>IPS data</h:b>, except those that have been granted explicit read-access.</title>
+	<aactivity><no-tests/></aactivity>
+	</f-element>
+	<f-element id="fau-sar.2e1">
+	<title>
+	The TSF shall provide the ability to apply [<h:i>filtering and sorting</h:i>] of audit IPS data
+	based on [<h:i>filtering parameters: risk rating, time period, source IP address,
+	destination IP address and </h:i><selectables>
+		<selectable><assignable> other filtering parameters</assignable></selectable>
+		<selectable>No other filtering parameters</selectable></selectables><h:i>; and sorting parameters: event ID, event type, time,
+signature ID, IPS actions performed, and <h:i></h:i><selectables>
+		<selectable><assignable>other sorting parameters</assignable></selectable>
+		<selectable>no other sorting parameters</selectable></selectables>.
+		<comment>please review </comment>
+
+
+	</title>
+	<aactivity><no-tests/></aactivity>
+	</f-element>
 	</f-component>
 	</section>
 
