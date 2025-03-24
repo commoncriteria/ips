@@ -1199,7 +1199,7 @@ enforce its policies on network traffic of monitored networks.</description>
 					<h:li><h:i>UDP: source port; destination port; length; and UDP checksum</h:i>].</h:li>
 					</h:ul>
 				</title>
-				<aactivity>      <!-- at minimum, only the last f-element in the f-component needs to have this -->
+				<aactivity level='element'>      <!-- at minimum, only the last f-element in the f-component needs to have this -->
 					<TSS>
 					The evaluator shall verify that the TSS describes what is comprised within a signature rule.
 					<h:br/>
@@ -1265,7 +1265,7 @@ enforce its policies on network traffic of monitored networks.</description>
 					<h:li><assignable>other types of packet payload inspection</assignable>].</h:li>				
 				</h:ul>
 				</title>
-				<aactivity>
+				<aactivity level='element'>
 				<TSS>
 					The evaluator shall verify that the TSS describes what is comprised within a string-based detection
 					signature.<h:br/>
@@ -1345,7 +1345,7 @@ enforce its policies on network traffic of monitored networks.</description>
 					</h:li>
 				</h:ol>
                 </title>
-                <aactivity>
+                <aactivity level='element'>
 					<TSS>The evaluator shall verify that the TSS describes how the attacks defined in IPS_SBD_EXT.1.3 are processed by the TOE and what reaction is triggered when these attacks are identified.</TSS>
 					<Guidance>The evaluator shall verify that the operational guidance provides instructions with configuring rules to identify the attacks defined in IPS_SBD_EXT.1.3 as well as the reactions to these attacks as specified in IPS_SBD_EXT.1.5.</Guidance>
 					<Tests>The evaluator shall create and/or configure rules for each attack signature in IPS_SBD_EXT.1.3. For each
@@ -1406,7 +1406,7 @@ enforce its policies on network traffic of monitored networks.</description>
 					correlate collected data.
 					</h:p><h:p>An IPS sensor interface refers to any TOE interface to which an IPS policy is currently applied.</h:p>
 				</note>
-                <aactivity>
+                <aactivity level='element'>
 					<TSS>The evaluator shall verify that the TSS describes how the attacks defined in IPS_SBD_EXT.1.4 are processed by the TOE and what reaction is triggered when these attacks are identified.
 
 					</TSS>
@@ -1462,7 +1462,7 @@ enforce its policies on network traffic of monitored networks.</description>
 				transmitting personally identifiable information or other private data (phone
 				numbers, credit-card numbers, etc.).</note>
 
-                <aactivity>
+                <aactivity level='element'>
 				<TSS>There are no TSS EAs for this element</TSS>
 				<Guidance>The guidance EAs for this element are performed in conjunction with IPS_SBD_EXT.1.1, IPS_SBD_EXT.1.3, and IPS_SBD_EXT.1.4.</Guidance>
 				<Tests>The test EAs for this element are performed in conjunction with those for IPS_SBD_EXT.1.1, IPS_SBD_EXT.1.2, IPS_SBD_EXT.1.3, and IPS_SBD_EXT.1.4.</Tests>
