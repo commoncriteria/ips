@@ -242,7 +242,7 @@
 				<h:li>IPS 3 is operating in a combination of promiscuous mode and inline mode. The IPS has at least one pair of interfaces creating a bridge or routing across the TOE, and is analyzing and filtering traffic in real-time as traffic traverses the TOE. The same IPS has one or more promiscuous interfaces collecting and analyzing traffic traversing within each separate network, and reacting to anomalous activity, worms, or otherwise unapproved activity.</h:li>
 			</h:ul>
 		<h:p/>
-		<figure entity="images/deployment_diagram.png" title="Figure 1: TOE Deployment Scenario Diagram" id="OperEnv"/>
+		<figure entity="images/deployment_diagram.png" title="TOE Deployment Scenario Diagram" id="OperEnv"/>
 	</sec:Compliant_Targets_of_Evaluation>
 	<!-- 1.4 TOE_Boundary -->
     <sec:TOE_Boundary>
@@ -340,9 +340,9 @@
   		instance of a TOE exists and there is a device that provides the necessary functions to interact with the
   		TOE to satisfy the testing activities.
   		</h:p><h:p>
-  			<figure entity="images/deployment_diagram.png" title="Figure 1: TOE Deployment Scenario Diagram" id="OperEnv"/>
-  			<h:br/><h:br/>
-  			<figure entity="images/deployment_diagram.png" title="Figure 1: TOE Deployment Scenario Diagram" id="OperEnv"/>
+  			<figure entity="images/inline_mode.png" title="Sample Inline Mode Test Topology" id="inlinemode"/>
+  	   <h:br/><h:br/>
+  			<figure entity="images/promiscuous_mode.png" title="Sample Promiscuous Mode Test Topology" id="promiscuousmode"/>
   			
   		It is expected that the traffic generator is used to construct network packets and will provide the evaluator
   		with the ability to simulate network attacks. The traffic generator can be a COTS (commercial off the shelf),
@@ -1950,7 +1950,6 @@ forwarded</assignable></selectable>
 signature ID, IPS actions performed, and </h:i><selectables>
 		<selectable><assignable>other sorting parameters</assignable></selectable>
 		<selectable>no other sorting parameters</selectable></selectables>.
-		<comment>please review </comment>
 
 
 	</title>
