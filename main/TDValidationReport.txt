@@ -1,21 +1,5 @@
-/home/runner/work/ips/ips/output/effective.xml:322:13: error: element "comment" not allowed here; expected the element end-tag
-/home/runner/work/ips/ips/output/effective.xml:724:77: error: element "section" not allowed here; expected the element end-tag, text, element "_", "assignable", "audit-table", "choice", "comment", "ctr", "depends", "endnote", "equation", "ext-comp-class", "ext-comp-def", "f-component", "figure", "implements", "no-link", "provides", "refinement", "replace", "requires", "rule", "selectables", "snip", "testlist" or "xref" or an element from another namespace
-/home/runner/work/ips/ips/output/effective.xml:908:82: error: value of attribute "cc-id" is invalid; must be a string matching the regular expression "f[a-z]{2}_[a-z0-9^]{2,10}(_ext)?\.[0-9]"
-/home/runner/work/ips/ips/output/effective.xml:986:95: error: value of attribute "cc-id" is invalid; must be a string matching the regular expression "f[a-z]{2}_[a-z0-9^]{2,10}(_ext)?\.[0-9]"
-/home/runner/work/ips/ips/output/effective.xml:1168:104: error: value of attribute "cc-id" is invalid; must be a string matching the regular expression "f[a-z]{2}_[a-z0-9^]{2,10}(_ext)?\.[0-9]"
-/home/runner/work/ips/ips/output/effective.xml:1496:95: error: value of attribute "cc-id" is invalid; must be a string matching the regular expression "f[a-z]{2}_[a-z0-9^]{2,10}(_ext)?\.[0-9]"
-/home/runner/work/ips/ips/output/effective.xml:1513:95: error: value of attribute "cc-id" is invalid; must be a string matching the regular expression "f[a-z]{2}_[a-z0-9^]{2,10}(_ext)?\.[0-9]"
-/home/runner/work/ips/ips/output/effective.xml:1577:81: error: value of attribute "cc-id" is invalid; must be a string matching the regular expression "f[a-z]{2}_[a-z0-9^]{2,10}(_ext)?\.[0-9]"
-/home/runner/work/ips/ips/output/effective.xml:1661:12: error: element "obj-sfrs" not allowed yet; missing required element "sel-sfrs"
-/home/runner/work/ips/ips/output/effective.xml:1668:28: error: value of attribute "id" is invalid; must be a string matching the regular expression "[a-zA-Z][\-0-9a-zA-Z_]+"
-/home/runner/work/ips/ips/output/effective.xml:1715:30: error: value of attribute "id" is invalid; must be a string matching the regular expression "[a-zA-Z][\-0-9a-zA-Z_]+"
-/home/runner/work/ips/ips/output/effective.xml:1721:30: error: value of attribute "id" is invalid; must be a string matching the regular expression "[a-zA-Z][\-0-9a-zA-Z_]+"
-/home/runner/work/ips/ips/output/effective.xml:1759:30: error: value of attribute "id" is invalid; must be a string matching the regular expression "[a-zA-Z][\-0-9a-zA-Z_]+"
-/home/runner/work/ips/ips/output/effective.xml:1769:30: error: value of attribute "id" is invalid; must be a string matching the regular expression "[a-zA-Z][\-0-9a-zA-Z_]+"
-/home/runner/work/ips/ips/output/effective.xml:1806:16: error: element "sel-sfrs" not allowed here; expected element "impl-dep-sfrs"
-/home/runner/work/ips/ips/output/effective.xml:1813:12: error: element "comment" not allowed here; expected the element end-tag, element "section" or an element from another namespace
-/home/runner/work/ips/ips/output/effective.xml:1874:13: error: element "comment" not allowed here; expected the element end-tag
-/home/runner/work/ips/ips/output/effective.xml:2095:73: error: element "appendix" not allowed here; expected the element end-tag
-/home/runner/work/ips/ips/output/effective.xml:2190:78: error: element "appendix" not allowed here; expected the element end-tag
-/home/runner/work/ips/ips/output/effective.xml:2305:81: error: element "appendix" not allowed here; expected the element end-tag
-/home/runner/work/ips/ips/output/effective.xml:2640:16: error: element "bibliography" not allowed here; expected the element end-tag
+/home/runner/work/ips/ips/output/effective.xml:837:97: error: value of attribute "cc-id" is invalid; must be a string matching the regular expression "f[a-z]{2}_[a-z0-9^]{2,10}(_ext)?\.[0-9]"
+/home/runner/work/ips/ips/output/effective.xml:959:78: error: value of attribute "cc-id" is invalid; must be a string matching the regular expression "f[a-z]{2}_[a-z0-9^]{2,10}(_ext)?\.[0-9]"
+/home/runner/work/ips/ips/output/effective.xml:1036:91: error: value of attribute "cc-id" is invalid; must be a string matching the regular expression "f[a-z]{2}_[a-z0-9^]{2,10}(_ext)?\.[0-9]"
+/home/runner/work/ips/ips/output/effective.xml:1225:100: error: value of attribute "cc-id" is invalid; must be a string matching the regular expression "f[a-z]{2}_[a-z0-9^]{2,10}(_ext)?\.[0-9]"
+/home/runner/work/ips/ips/output/effective.xml:1643:85: error: value of attribute "cc-id" is invalid; must be a string matching the regular expression "f[a-z]{2}_[a-z0-9^]{2,10}(_ext)?\.[0-9]"
