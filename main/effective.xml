@@ -293,6 +293,52 @@
         </feature>
       </implements>			
     </section> 
+  	
+  	<section title="Test Environment for Evaluation Activities">
+  		<h:p>
+  		This section contains the expectations for the evaluator test environment that is used to perform the
+  		test specified by the EAs.
+  		</h:p><h:p>
+  		It is assumed the evaluator will have tools suitable to establish sessions, modify or create session packets,
+  		and perceive whether packets are getting through the TOE as well as to examine the content of those
+  		packets. In general, it is expected that IPS rule configuration and logging capabilities of the TOE can be
+  		used to reach appropriate determinations where applicable.
+  		</h:p><h:p>
+  		The tests need to be repeated for each distinct network interface type capable of monitoring network
+  		traffic on all ‘sensor’ interfaces of the TOE, which may include ‘promiscuous’ interfaces (with or without
+  		an IP address or IP stack, and whether or not the interfaces are capable of attempting to terminate
+  		unapproved traffic flows by transmitting packets such as TCP resets), and inline (pass-through) interfaces
+  		with or without an IP address or IP stack, but not management interfaces used to remotely access the
+  		TOE, or used by the TOE to initiate outbound connections to syslog servers, AAA servers, remote traffic
+  		filtering devices, etc.
+  		</h:p><h:p>
+  		The evaluators shall minimally create a test environment that is functionally equivalent to the test
+  		environment illustrated below. The evaluators must provide justification for any differences in the test
+  		environment. The TOE may be a distributed TOE in which some SFRs or elements of SFRs are enforced
+  		by separate TOE components distributed across a network. For distributed TOEs: <h:ul>
+  		<h:li>the “TOE” in the “inline mode test topology” must be the TOE component that controls the
+  		flow of traffic, but that TOE component does not need to be the same component that collects
+  		or analyzes the traffic;</h:li>
+  		<h:li>the “TOE” in the “promiscuous mode test topology” must be the TOE component that
+  		communicates with the non-TOE traffic filtering device, but that TOE component does not need
+  		to be the same component that collects or analyzes the traffic.</h:li>
+  		</h:ul>
+  		</h:p><h:p>
+  		IPS devices that can be deployed in more than one mode, two instantiations of the TOE will more than
+  		likely make it easier to conduct testing, however, the evaluator is free to construct a test-bed where one
+  		instance of a TOE exists and there is a device that provides the necessary functions to interact with the
+  		TOE to satisfy the testing activities.
+  		</h:p><h:p>
+  			<figure entity="images/deployment_diagram.png" title="Figure 1: TOE Deployment Scenario Diagram" id="OperEnv"/>
+  			<h:br/><h:br/>
+  			<figure entity="images/deployment_diagram.png" title="Figure 1: TOE Deployment Scenario Diagram" id="OperEnv"/>
+  			
+  		It is expected that the traffic generator is used to construct network packets and will provide the evaluator
+  		with the ability to simulate network attacks. The traffic generator can be a COTS (commercial off the shelf),
+  		shareware, or freeware product; special equipment is not necessary.
+  		</h:p>
+  		
+  	</section>
 
 </sec:Introduction>   <!-- Introduction  -->
 

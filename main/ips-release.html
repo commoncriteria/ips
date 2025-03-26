@@ -632,7 +632,7 @@ function showTarget(id){
     </style></head><body onLoad="init()"><div id="commmentbox-"><a href="#Comment-1-">Comment: Comment-1-</a><br/><a href="#Comment-2-">Comment: Comment-2-</a><br/><a href="#Comment-3-">Comment: Comment-3-</a><br/><a href="#Comment-4-">Comment: Comment-4-</a><br/><a href="#Comment-5-">Comment: Comment-5-</a><br/></div><h1 class="title" style="page-break-before:auto;">PP-Module for IPS</h1><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><div class="center"><img src="images/niaplogo.png" alt="NIAP Logo"></img><br/>
       Version: 1.1<br/>2025-03-21<br/><b>National Information Assurance Partnership</b><br/></div><h2 style="page-break-before:always;">Revision History</h2><table><tr class="header"><th>Version</th><th>Date</th><th>Comment</th></tr><tr><td>1.1</td><td>2025-03-21</td><td><abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022 updates, incorporation of TDs</td></tr>
 <tr><td>1.0</td><td>2021-05-11</td><td>Initial publication</td></tr>
-</table><h2>Contents</h2><div class="toc" id="toc"><a href="#Introduction" style="text-indent:0px">1<span>Introduction</span></a><a href="#Overview" style="text-indent:10px">1.1<span>Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#Compliant_Targets_of_Evaluation" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOE_Boundary" style="text-indent:10px">1.4<span>TOE Boundary</span></a><a href="#Use_Cases" style="text-indent:10px">1.5<span>Use Cases</span></a><a href="#sec-features" style="text-indent:10px">1.6<span>Implementation-Based Features</span></a><a href="#feat-alerting" style="text-indent:20px">1.6.1<span>Support for Alerting</span></a><a href="#ConformanceClaims" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#Security_Problem_Definition" style="text-indent:0px">3<span>Security Problem Definition</span></a><a href="#sec-threats" style="text-indent:10px">3.1<span>Threats</span></a><a href="#Assumptions" style="text-indent:10px">3.2<span>Assumptions</span></a><a href="#Organizational_Security_Policies" style="text-indent:10px">3.3<span>Organizational Security Policies</span></a><a href="#Security_Objectives" style="text-indent:0px">4<span>Security Objectives</span></a><a href="#Security_Objectives_for_the_Operational_Environment" style="text-indent:10px">4.1<span>Security Objectives for the Operational Environment</span></a><a href="#sec-sor" style="text-indent:10px">4.2<span>Security Objectives Rationale</span></a><a href="#Security_Requirements" style="text-indent:0px">5<span>Security Requirements</span></a><a href="#secreq-ND" style="text-indent:10px">5.1<span>Collaborative 
+</table><h2>Contents</h2><div class="toc" id="toc"><a href="#Introduction" style="text-indent:0px">1<span>Introduction</span></a><a href="#Overview" style="text-indent:10px">1.1<span>Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#Compliant_Targets_of_Evaluation" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOE_Boundary" style="text-indent:10px">1.4<span>TOE Boundary</span></a><a href="#Use_Cases" style="text-indent:10px">1.5<span>Use Cases</span></a><a href="#sec-features" style="text-indent:10px">1.6<span>Implementation-Based Features</span></a><a href="#feat-alerting" style="text-indent:20px">1.6.1<span>Support for Alerting</span></a><a href="#_sec_2" style="text-indent:10px">1.7<span>Test Environment for Evaluation Activities</span></a><a href="#ConformanceClaims" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#Security_Problem_Definition" style="text-indent:0px">3<span>Security Problem Definition</span></a><a href="#sec-threats" style="text-indent:10px">3.1<span>Threats</span></a><a href="#Assumptions" style="text-indent:10px">3.2<span>Assumptions</span></a><a href="#Organizational_Security_Policies" style="text-indent:10px">3.3<span>Organizational Security Policies</span></a><a href="#Security_Objectives" style="text-indent:0px">4<span>Security Objectives</span></a><a href="#Security_Objectives_for_the_Operational_Environment" style="text-indent:10px">4.1<span>Security Objectives for the Operational Environment</span></a><a href="#sec-sor" style="text-indent:10px">4.2<span>Security Objectives Rationale</span></a><a href="#Security_Requirements" style="text-indent:0px">5<span>Security Requirements</span></a><a href="#secreq-ND" style="text-indent:10px">5.1<span>Collaborative 
     Protection Profile for Network Devices
        Security Functional Requirements Direction
     </span></a><a href="#modsfr-ND" style="text-indent:20px">5.1.1<span> Modified SFRs </span></a><a href="#man-sfrs" style="text-indent:10px">5.2<span>TOE Security Functional Requirements</span></a><a href="#ss-audit-table" style="text-indent:20px">5.2.1<span>Auditable Events for Mandatory SFRs</span></a><a href="#m-fau" style="text-indent:20px">5.2.2<span>Security Audit (FAU)</span></a><a href="#m-fmt" style="text-indent:20px">5.2.3<span>Security Management (FMT)</span></a><a href="#m-ips" style="text-indent:20px">5.2.4<span>Intrusion Prevention (IPS)</span></a><a href="#obj-req-map" style="text-indent:10px">5.3<span>TOE Security Functional Requirements Rationale</span></a><a href="#mod-conrat" style="text-indent:0px">6<span>Consistency Rationale</span></a><a href="#conrat-ND" style="text-indent:10px">6.1<span>Collaborative 
@@ -646,8 +646,8 @@ function showTarget(id){
 	Consistency of Requirements
       </span></a><a href="#opt-sfrs" style="text-indent:0px">Appendix A - <span>Optional SFRs</span></a><a href="#opt-sfrs" style="text-indent:10px">A.1<span>Strictly Optional Requirements
     </span></a><a href="#sec-opt-audit-table" style="text-indent:20px">A.1.1<span>Auditable Events for Optional SFRs</span></a><a href="#fau-ops" style="text-indent:20px">A.1.2<span>Security Audit(FAU)</span></a><a href="#fpt" style="text-indent:20px">A.1.3<span>Protection of the TSF (FPT)</span></a><a href="#ips" style="text-indent:20px">A.1.4<span>Intrusion Prevention (IPS)</span></a><a href="#obj-sfrs" style="text-indent:10px">A.2<span>Objective Requirements
-    </span></a><a href="#_sec_13" style="text-indent:20px">A.2.1<span>Auditable Events for Objective SFRs</span></a><a href="#fau-obj" style="text-indent:20px">A.2.2<span>Security Audit (FAU)</span></a><a href="#impl-dep-sfrs" style="text-indent:10px">A.3<span>Implementation-dependent Requirements
-    </span></a><a href="#_sec_15" style="text-indent:20px">A.3.1<span>Auditable Events for Implementation-Dependent SFRs</span></a><a href="#fru-imp_dep" style="text-indent:20px">A.3.2<span>Resource Utilization</span></a><a href="#sel-sfrs" style="text-indent:0px">Appendix B - <span>Selection-based Requirements
+    </span></a><a href="#_sec_14" style="text-indent:20px">A.2.1<span>Auditable Events for Objective SFRs</span></a><a href="#fau-obj" style="text-indent:20px">A.2.2<span>Security Audit (FAU)</span></a><a href="#impl-dep-sfrs" style="text-indent:10px">A.3<span>Implementation-dependent Requirements
+    </span></a><a href="#_sec_16" style="text-indent:20px">A.3.1<span>Auditable Events for Implementation-Dependent SFRs</span></a><a href="#fru-imp_dep" style="text-indent:20px">A.3.2<span>Resource Utilization</span></a><a href="#sel-sfrs" style="text-indent:0px">Appendix B - <span>Selection-based Requirements
     </span></a><a href="#satisfiedreqs" style="text-indent:0px">Appendix C - <span>Inherently Satisfied Requirements</span></a><a href="#entropyappendix" style="text-indent:0px">Appendix D - <span>Entropy Documentation and Assessment</span></a><a href="#acronyms" style="text-indent:0px">Appendix E - <span>Acronyms</span></a><a href="#appendix-bibliography" style="text-indent:0px">Appendix F - <span>Bibliography</span></a></div><h1 class="indexable" data-level="1" id="Introduction">1 Introduction</h1>
     
      
@@ -853,6 +853,54 @@ The following sections list Common Criteria and technology terms used in this do
 	  If this feature is implemented by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, the following requirements must be claimed in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>:
             <ul><li><b><a href="#FRU_RSA.1">FRU_RSA.1</a></b></li></ul></p>			
      
+  	
+  	<h2 class="indexable" data-level="2" id="_sec_2">1.7 Test Environment for Evaluation Activities</h2>
+  		<p>
+  		This section contains the expectations for the evaluator test environment that is used to perform the
+  		test specified by the EAs.
+  		</p><p>
+  		It is assumed the evaluator will have tools suitable to establish sessions, modify or create session packets,
+  		and perceive whether packets are getting through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> as well as to examine the content of those
+  		packets. In general, it is expected that <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> rule configuration and logging capabilities of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> can be
+  		used to reach appropriate determinations where applicable.
+  		</p><p>
+  		The tests need to be repeated for each distinct network interface type capable of monitoring network
+  		traffic on all ‘sensor’ interfaces of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, which may include ‘promiscuous’ interfaces (with or without
+  		an IP address or IP stack, and whether or not the interfaces are capable of attempting to terminate
+  		unapproved traffic flows by transmitting packets such as <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> resets), and inline (pass-through) interfaces
+  		with or without an IP address or IP stack, but not management interfaces used to remotely access the
+  		<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, or used by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to initiate outbound connections to syslog servers, AAA servers, remote traffic
+  		filtering devices, etc.
+  		</p><p>
+  		The evaluators shall minimally create a test environment that is functionally equivalent to the test
+  		environment illustrated below. The evaluators must provide justification for any differences in the test
+  		environment. The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may be a distributed <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> in which some <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> or elements of <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> are enforced
+  		by separate <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> components distributed across a network. For distributed <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr>: <ul>
+  		<li>the “<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>” in the “inline mode test topology” must be the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> component that controls the
+  		flow of traffic, but that <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> component does not need to be the same component that collects
+  		or analyzes the traffic;</li>
+  		<li>the “<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>” in the “promiscuous mode test topology” must be the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> component that
+  		communicates with the non-TOE traffic filtering device, but that <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> component does not need
+  		to be the same component that collects or analyzes the traffic.</li>
+  		</ul>
+  		</p><p>
+  		<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> devices that can be deployed in more than one mode, two instantiations of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> will more than
+  		likely make it easier to conduct testing, however, the evaluator is free to construct a test-bed where one
+  		instance of a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> exists and there is a device that provides the necessary functions to interact with the
+  		<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to satisfy the testing activities.
+  		</p><p>
+  			<div class="figure" id="figure-OperEnv"><img id="OperEnv" src="images/deployment_diagram.png" width="" height=""></img><br/><span class="ctr" data-myid="OperEnv" data-counter-type="ct-figure">Figure <span class="counter">2</span></span>:
+      Figure 1: <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Deployment Scenario Diagram</div>
+  			<br/><br/>
+  			<div class="figure" id="figure-OperEnv"><img id="OperEnv" src="images/deployment_diagram.png" width="" height=""></img><br/><span class="ctr" data-myid="OperEnv" data-counter-type="ct-figure">Figure <span class="counter">3</span></span>:
+      Figure 1: <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Deployment Scenario Diagram</div>
+  			
+  		It is expected that the traffic generator is used to construct network packets and will provide the evaluator
+  		with the ability to simulate network attacks. The traffic generator can be a COTS (commercial off the shelf),
+  		shareware, or freeware product; special equipment is not necessary.
+  		</p>
+  		
+  	
 
 <h1 class="indexable" data-level="1" id="ConformanceClaims">2 Conformance Claims</h1>
       
@@ -1737,7 +1785,7 @@ forwarded</span>]</span>, <span class="selectable-content" id="_s_75">no other p
 	
 	<h2 id="obj-sfrs" class="indexable" data-level="2">A.2 Objective Requirements
     </h2>
-	<h3 class="indexable" data-level="3" id="_sec_13">A.2.1 Auditable Events for Objective SFRs</h3>
+	<h3 class="indexable" data-level="3" id="_sec_14">A.2.1 Auditable Events for Objective SFRs</h3>
         <span style="" class="comment " id="Comment-4-">All objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> need a review to determine if they should change status with the new release of this module.</span>
         <table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="at-objective" data-counter-type="ct-Table" id="at-objective">Table <span class="counter">8</span></span>: Auditable Events for Objective Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr><tr data-sortkey="FAU_ARP.1"><td rowspan="2"><a href="#FAU_ARP.1">FAU_ARP.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FAU_ARP.1#"><td></td></tr><tr data-sortkey="FAU_ARP.1.1"><td>No events specified</td><td>N/A</td></tr><tr data-sortkey="FAU_SAR.1"><td rowspan="2"><a href="#FAU_SAR.1">FAU_SAR.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FAU_SAR.1#"><td></td></tr><tr data-sortkey="FAU_SAR.1.1"><td>No events specified</td><td>N/A</td></tr><tr data-sortkey="FAU_SAR.2"><td rowspan="2"><a href="#FAU_SAR.2">FAU_SAR.2</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FAU_SAR.2#"><td></td></tr><tr data-sortkey="FAU_SAR.2.1"><td>No events specified</td><td>N/A</td></tr><tr data-sortkey="FAU_SAR.3"><td rowspan="2"><a href="#FAU_SAR.3">FAU_SAR.3</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FAU_SAR.3#"><td></td></tr><tr data-sortkey="FAU_SAR.3.1"><td>No events specified</td><td>N/A</td></tr></table>
       
@@ -1836,7 +1884,7 @@ signature ID, <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> actions 
 
 	<h2 id="impl-dep-sfrs" class="indexable" data-level="2">A.3 Implementation-dependent Requirements
     </h2>
-    	<h3 class="indexable" data-level="3" id="_sec_15">A.3.1 Auditable Events for Implementation-Dependent SFRs</h3>
+    	<h3 class="indexable" data-level="3" id="_sec_16">A.3.1 Auditable Events for Implementation-Dependent SFRs</h3>
     		<table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="at-impl-dep" data-counter-type="ct-Table" id="at-impl-dep">Table <span class="counter">9</span></span>: Auditable Events for  Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr><tr data-sortkey="FRU_RSA.1"><td rowspan="2"><a href="#FRU_RSA.1">FRU_RSA.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FRU_RSA.1#"><td></td></tr><tr data-sortkey="FRU_RSA.1.2"><td>Traffic flow volume exceeds the maximum quota.</td><td>Identification of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface at which the quota was exceeded.</td></tr></table>
     	
 	

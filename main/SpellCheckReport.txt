@@ -115,6 +115,7 @@ output/ips-release.html: nonTOE
 output/ips-release.html: noop
 output/ips-release.html: offending’
 output/ips-release.html: pasv
+output/ips-release.html: promiscuous’
 output/ips-release.html: protoco
 output/ips-release.html: realtime
 output/ips-release.html: retr
@@ -232,6 +233,7 @@ output/ips.html: noop
 output/ips.html: offending’
 output/ips.html: pagecontent
 output/ips.html: pasv
+output/ips.html: promiscuous’
 output/ips.html: protoco
 output/ips.html: realtime
 output/ips.html: retr
