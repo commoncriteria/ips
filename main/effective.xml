@@ -227,7 +227,7 @@
 		implement both modes.</h:p>
 			<h:ul>
 				<h:li>IPS 1 is operating in promiscuous mode, capturing data from two separate networks outside the perimeter firewall, and sending traffic filter updates as needed to the perimeter router and perimeter firewall to block unwanted traffic in real-time.</h:li>
-				<h:li>IPS 2 is operating in inline mode, analyzing traffic to and from a wireless network, and blocking in realtime any traffic that violates the admin-defined IPS policies.</h:li>
+				<h:li>IPS 2 is operating in inline mode, analyzing traffic to and from a wireless network, and blocking in real-time any traffic that violates the admin-defined IPS policies.</h:li>
 				<h:li>IPS 3 is operating in a combination of promiscuous mode and inline mode. The IPS has at least one pair of interfaces creating a bridge or routing across the TOE, and is analyzing and filtering traffic in real-time as traffic traverses the TOE. The same IPS has one or more promiscuous interfaces collecting and analyzing traffic traversing within each separate network, and reacting to anomalous activity, worms, or otherwise unapproved activity.</h:li>
 			</h:ul>
 		<h:p/>
@@ -286,7 +286,7 @@
 	<!-- These are the product features that are defined in order to support implementation-dependent requirements. -->
   
    <section title="Implementation-Based Features" id="sec-features">
-      The following features of the TOE are implementation-based. A TOE is not required to implement these features to conform to this PP-Module, but if the feature is implemented, it is expected that associated implementation-baed requirements be claimed as part of the TSF.  
+      The following features of the TOE are implementation-based. A TOE is not required to implement these features to conform to this PP-Module, but if the feature is implemented, it is expected that associated implementation-based requirements are claimed as part of the TSF.  
       <implements>
         <feature id="feat-alerting" title="Support for Alerting">
           <description>The TOE implements the capability to alert administrators when a potential security incident has occurred.</description>
@@ -455,7 +455,7 @@
         	<addressed-by>FMT_SMF.1/IPS</addressed-by><rationale>This requirement mitigates the threat of network disclosure by providing a mechanism to configure the TSF's ability to detect attempts to realize this threat.</rationale>
         	<addressed-by>IPS_IPB_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network disclosure by providing a mechanism to restrict ingress and egress of network traffic by source or destination.</rationale>
         	<addressed-by>IPS_NTA_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network disclosure by defining the network traffic the TSF is able to examine to determine the potential realization of a threat.</rationale>
-        	<addressed-by>IPS_SBD_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network denial of service by providing a means to detect network traffic signatures that are indicative of attemps to establish insecure or otherwise malformed sessions over a trusted protocol.</rationale>
+        	<addressed-by>IPS_SBD_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network denial of service by providing a means to detect network traffic signatures that are indicative of attempts to establish insecure or otherwise malformed sessions over a trusted protocol.</rationale>
         	
         	<addressed-by>FAU_STG.2/IPS (optional)</addressed-by><rationale>This requirement mitigates the threat by ensuring that records of stored IPS data cannot be read without authorization or modified by any subject so as not to falsely disclose the history of activity observed on the network.</rationale>
         	<addressed-by>FAU_STG.5/IPS (optional)</addressed-by><rationale>This requirement mitigates the threat by providing a predictable mechanism for how storage of IPS data is prioritized in the event that insufficient storage is available, allowing for the administrator to have adequate warning of the limitations of the collection process.</rationale>
@@ -626,35 +626,35 @@ enforce its policies on network traffic of monitored networks.</description>
       <con-mod ref="T.NETWORK_ACCESS">
 	  The NDcPP only defines a security problem that relates to network traffic
 	bound to or originating from the TOE. This PP-Module expands the security
-	problem to include a logical interface for network traffic between two nonTOE endpoints that is intercepted (inline) or observed (promiscuous) by the
+	problem to include a logical interface for network traffic between two non-TOE endpoints that is intercepted (inline) or observed (promiscuous) by the
 	TSF. This is not inconsistent because the PP-Module introduces a new logical
 	interface for this functionality that is beyond the scope of the NDcPP.
 	  </con-mod>
       <con-mod ref="T.NETWORK_DISCLOSURE">
 	  The NDcPP only defines a security problem that relates to network traffic
 	  bound to or originating from the TOE. This PP-Module expands the security
-	  problem to include a logical interface for network traffic between two nonTOE endpoints that is intercepted (inline) or observed (promiscuous) by the
+	  problem to include a logical interface for network traffic between two non-TOE endpoints that is intercepted (inline) or observed (promiscuous) by the
 	  TSF. This is not inconsistent because the PP-Module introduces a new logical
 	  interface for this functionality that is beyond the scope of the NDcPP.
 	  </con-mod>
 	  <con-mod ref="T.NETWORK_DOS">
 	  The NDcPP only defines a security problem that relates to network traffic
 		bound to or originating from the TOE. This PP-Module expands the security
-		problem to include a logical interface for network traffic between two nonTOE endpoints that is intercepted (inline) or observed (promiscuous) by the
+		problem to include a logical interface for network traffic between two non-TOE endpoints that is intercepted (inline) or observed (promiscuous) by the
 		TSF. This is not inconsistent because the PP-Module introduces a new logical
 		interface for this functionality that is beyond the scope of the NDcPP.
 	  </con-mod>
 	  <con-mod ref="T.NETWORK_MISUSE">
 	  The NDcPP only defines a security problem that relates to network traffic
 		bound to or originating from the TOE. This PP-Module expands the security
-		problem to include a logical interface for network traffic between two nonTOE endpoints that is intercepted (inline) or observed (promiscuous) by the
+		problem to include a logical interface for network traffic between two non-TOE endpoints that is intercepted (inline) or observed (promiscuous) by the
 		TSF. This is not inconsistent because the PP-Module introduces a new logical
 		interface for this functionality that is beyond the scope of the NDcPP.
 	  </con-mod>
 	  <con-mod ref="T.NETWORK_MISUSE">
 	  The NDcPP only defines a security problem that relates to network traffic
   	  bound to or originating from the TOE. This PP-Module expands the security
-	  problem to include a logical interface for network traffic between two nonTOE endpoints that is intercepted (inline) or observed(promiscuous) by the
+	  problem to include a logical interface for network traffic between two non-TOE endpoints that is intercepted (inline) or observed(promiscuous) by the
 	  TSF. This is not inconsistent because the PP-Module introduces a new logical
 	  interface for this functionality that is beyond the scope of the NDcPP.
 	  </con-mod>
@@ -825,7 +825,7 @@ enforce its policies on network traffic of monitored networks.</description>
 					</h:i></h:p><h:p><h:i>
 					The ST author should update IPS Events table below with any additional
 					information generated such as source and destination addresses, IP, signature
-					that trigged event, port, etc.</h:i></h:p>
+					that triggered event, port, etc.</h:i></h:p>
 					</note>
 					<aactivity>      <!-- at minimum, only the last f-element in the f-component needs to have this -->
 						<TSS>
@@ -909,7 +909,7 @@ enforce its policies on network traffic of monitored networks.</description>
                 </f-element>	
 <audit-event>
 	<audit-event-descr>Modification of an IPS policy element.</audit-event-descr>
-	<audit-event-info>dentifier or name of the modified IPS policy element (e.g. which signature, baseline, or knowngood/known-bad list was modified).</audit-event-info>
+	<audit-event-info>Identifier or name of the modified IPS policy element (e.g. which signature, baseline, or known-good/known-bad list was modified).</audit-event-info>
 </audit-event>
 				</f-component>
 			</section>
@@ -1230,7 +1230,7 @@ enforce its policies on network traffic of monitored networks.</description>
 							<h:p>
 						The evaluator shall verify that the TSS explains the TOE’s capability of analyzing IP traffic in terms of the
 						TOE’s policy hierarchy (precedence). The TSS should identify if the TOE’s policy hierarchy order is
-						configurable by the administrator for IPS policy elements (known-good lists, known-bad lists, signaturebased rules, and anomaly-based rules).</h:p><h:p>
+						configurable by the administrator for IPS policy elements (known-good lists, known-bad lists, signature-based rules, and anomaly-based rules).</h:p><h:p>
 						Regardless of whether the precedence is configurable, the evaluator shall verify that the TSS describes
 						the default precedence as well as the IP analyzing functions supported by the TOE.
 						</h:p>
@@ -1442,7 +1442,7 @@ enforce its policies on network traffic of monitored networks.</description>
 					</selectables>					
 						</h:li>
 					<h:li>ICMPv6: type; code; and header checksum.</h:li>
-					<h:li>TCP: source port; destination port; sequence number; acknowledgement number; offset; reserved; TCP flags; window; checksum; urgent pointer; and TCP options.</h:li>
+					<h:li>TCP: source port; destination port; sequence number; acknowledgment number; offset; reserved; TCP flags; window; checksum; urgent pointer; and TCP options.</h:li>
 					<h:li>UDP: source port; destination port; length; and UDP checksum.</h:li>
 					</h:ul>
 				</title>
@@ -1466,7 +1466,7 @@ enforce its policies on network traffic of monitored networks.</description>
 						<h:li>IPv6: Version; payload length; next header; hop limit; source address; destination address; routing header; and, if selected, traffic class and/or flow label</h:li>
 						<h:li>ICMP: type; code; header checksum; and, if selected, other header fields (varies based on the ICMP type and code).</h:li>
 						<h:li>ICMPv6: type; code; and header checksum.</h:li>
-						<h:li>TCP: Source port; destination port; sequence number; acknowledgement number; offset; reserved; TCP flags; window; checksum; urgent pointer; and TCP options.</h:li>
+						<h:li>TCP: Source port; destination port; sequence number; acknowledgment number; offset; reserved; TCP flags; window; checksum; urgent pointer; and TCP options.</h:li>
 						<h:li>UDP: source port; destination port; length; and UDP checksum.</h:li>
 					</h:ul>
 					The evaluator shall verify that the operational guidance provides instructions with how to select and/or configure reactions specified in IPS_SBD_EXT.1.5 in the signature rules.
@@ -1484,7 +1484,7 @@ enforce its policies on network traffic of monitored networks.</description>
 								<h:li>IPv6: Version; payload length; next header; hop limit; source address; destination address; routing header; and, if selected, traffic class and/or flow label</h:li>
 								<h:li>ICMP: type; code; header checksum; and, if selected, other header fields (varies based on the ICMP type and code).</h:li>
 							<h:li>ICMPv6: Type; Code; and Header Checksum.</h:li>
-							<h:li>TCP: Source port; destination port; sequence number; acknowledgement number; offset; reserved; TCP flags; window; checksum; urgent pointer; and TCP options.</h:li>
+							<h:li>TCP: Source port; destination port; sequence number; acknowledgment number; offset; reserved; TCP flags; window; checksum; urgent pointer; and TCP options.</h:li>
 							<h:li>UDP: Source port; destination port; length; and UDP checksum.</h:li>
 							
 							</h:ul>
@@ -1554,7 +1554,7 @@ enforce its policies on network traffic of monitored networks.</description>
 							<h:li> HTTP (web) commands and content:
 							<h:ol>
 								<h:li>Test both GET and POST commands</h:li>
-								<h:li>Test at least one administrator-defined strings to match URLs/URIs, and web pagecontent.</h:li>
+								<h:li>Test at least one administrator-defined string to match URLs/URIs and webpage content.</h:li>
 							</h:ol></h:li>
 							<h:li>Test at least one SMTP (email) state: start state, SMTP commands state, mail header state, mail body state, abort state.</h:li>
 							<h:li>Test at least one string in any additional attribute type defined within the “other types of
@@ -1682,7 +1682,7 @@ enforce its policies on network traffic of monitored networks.</description>
                 </f-element>
 				<f-element id="ips-sbd-ext-1e5">
                 <title>
-				The TSF shall allow the following operations to be associated with signaturebased IPS policies:
+				The TSF shall allow the following operations to be associated with signature-based IPS policies:
 				<h:ul>
 					<h:li>In any mode, for any sensor interface: <selectables linebreak="yes">
 						<selectable>allow the traffic flow;</selectable>
@@ -1734,14 +1734,14 @@ enforce its policies on network traffic of monitored networks.</description>
                 <aactivity level="element">
 					<TSS>There are no TSS EAs for this element.</TSS>
 					<Guidance>The evaluator shall verify that the operational guidance provides configuration instructions, if needed, to detect payload across multiple packets.</Guidance>
-					<Tests>The evaluator shall repeat one of the tests in <xref to="sbd-payload-reaction"/> but generate multiple nonfragmented packets that contain the string in the rule defined. The evaluator shall verify that the malicious traffic is still detected when split across multiple non-fragmented packets.</Tests>
+					<Tests>The evaluator shall repeat one of the tests in <xref to="sbd-payload-reaction"/> but generate multiple non-fragmented packets that contain the string in the rule defined. The evaluator shall verify that the malicious traffic is still detected when split across multiple non-fragmented packets.</Tests>
                  </aactivity>
                 </f-element>
 				<audit-event>
 				<audit-event-descr>Inspected traffic matches a signature-based IPS rule with logging enabled.</audit-event-descr>
 				<audit-event-info>Name or identifier of the matched signature.</audit-event-info>
 				<audit-event-info>Source and destination IP addresses.</audit-event-info>
-				<audit-event-info>The content of the header fields that weredetermined to match the signature.</audit-event-info>
+				<audit-event-info>The content of the header fields that were determined to match the signature.</audit-event-info>
 				<audit-event-info>TOE interface that received the packet.</audit-event-info>
 				<audit-event-info>Network-based action by the TOE (e.g. allowed, blocked, sent reset).</audit-event-info>
 				
@@ -1977,8 +1977,8 @@ forwarded</assignable></selectable>
 		this functionality is the speed of notification, not the integrity, or confidentiality
 		of the data in transit. In most cases, the audit trail applicable to FAU_STG.1
 		will be syslog data, and is being protected in transit to help ensure integrity of
-		remotely stored audit data. This SFR isintended to covertransmission of messages
-		related to single eventsthrough protocols such as SNMP (traps) and SMTP (email).
+		remotely stored audit data. This SFR is intended to cover transmission of messages
+		related to single events through protocols such as SNMP (traps) and SMTP (email).
 		In TOEs that support securing SNMP traps, SMTP email, or other messaging types
 		within trusted channels (as defined by FTP_ITC.1), the ST author can choose to
 		list these messaging methods within FTP_ITC.1 and/or within this SFR. There are
@@ -2214,7 +2214,7 @@ supporting inspection of network traffic</h:i>] that [<h:i>subjects</h:i>] can u
 			<tr>
 				<td><b>FAU_GEN.1/IPS - Audit Data Generation (IPS)</b></td>
 				<td>FAU_GEN.1 has a dependency on FPT_STM.1 The
-					extended SFR FPT_STM_EXT.1 that is defined in the BasePP provides equivalent functionality to FPT_STM.1 and
+					extended SFR FPT_STM_EXT.1 that is defined in the Base-PP provides equivalent functionality to FPT_STM.1 and
 					therefore satisfies this dependency.</td>
 			</tr>
 		</table>

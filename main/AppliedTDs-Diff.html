@@ -251,7 +251,7 @@
                 <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> 1 is operating in promiscuous mode, capturing data from two separate networks outside the perimeter firewall, and sending traffic filter updates as needed to the perimeter router and perimeter firewall to block unwanted traffic in real-time.
             </li>
             <li>
-                <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> 2 is operating in inline mode, analyzing traffic to and from a wireless network, and blocking in realtime any traffic that violates the admin-defined <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies.
+                <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> 2 is operating in inline mode, analyzing traffic to and from a wireless network, and blocking in real-time any traffic that violates the admin-defined <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies.
             </li>
             <li>
                 <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> 3 is operating in a combination of promiscuous mode and inline mode. The <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> has at least one pair of interfaces creating a bridge or routing across the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, and is analyzing and filtering traffic in real-time as traffic traverses the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. The same <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> has one or more promiscuous interfaces collecting and analyzing traffic traversing within each separate network, and reacting to anomalous activity, worms, or otherwise unapproved activity.
@@ -287,7 +287,7 @@
         </dl>
          
         <h2 class="indexable" data-level="2" id="sec-features">1.6 Implementation-Based Features</h2>
-         The following features of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> are implementation-based. A <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is not required to implement these features to conform to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>, but if the feature is implemented, it is expected that associated implementation-baed requirements be claimed as part of the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>. 
+         The following features of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> are implementation-based. A <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is not required to implement these features to conform to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>, but if the feature is implemented, it is expected that associated implementation-based requirements are claimed as part of the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>. 
         <h3 class="indexable" data-level="3" id="feat-alerting">1.6.1 Support for Alerting</h3>
         <span class="description">The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> implements the capability to alert administrators when a potential security incident has occurred.</span>
         <br>
@@ -526,7 +526,7 @@
                 <td></td>
             </tr>
             <tr data-sortkey="FMT_SMF.1/IPS.1">
-                <td>Modification of an <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy element.</td><td>dentifier or name of the modified <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy element (e.g. which signature, baseline, or knowngood/known-bad list was modified).</td>
+                <td>Modification of an <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy element.</td><td>Identifier or name of the modified <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy element (e.g. which signature, baseline, or known-good/known-bad list was modified).</td>
             </tr>
             <tr data-sortkey="IPS_ABD_EXT.1">
                 <td rowspan="2"><a href="#IPS_ABD_EXT.1">IPS_ABD_EXT.1</a></td><td style="display:none"></td>
@@ -623,7 +623,7 @@
                     <ul>
                         <li>Name or identifier of the matched signature.</li>
                         <li>Source and destination IP addresses.</li>
-                        <li>The content of the header fields that weredetermined to match the signature.</li>
+                        <li>The content of the header fields that were determined to match the signature.</li>
                         <li>
                             <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface that received the packet.
                         </li>
@@ -710,7 +710,7 @@
                                 <i> For <a href="#IPS_SBD_EXT.1">IPS_SBD_EXT.1</a>, if certain header fields are inspected and dropped or modified by default (e.g., packets with bad checksum, reserved bits set to zero), this logging requirement is not applicable. </i>
                             </p>
                             <p>
-                                <i> The <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author should update <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> Events table below with any additional information generated such as source and destination addresses, IP, signature that trigged event, port, etc.</i>
+                                <i> The <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author should update <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> Events table below with any additional information generated such as source and destination addresses, IP, signature that triggered event, port, etc.</i>
                             </p>
                         </span>
                     </div>
@@ -971,7 +971,7 @@
                         </li>
                         <li>ICMPv6: type; code; and header checksum.</li>
                         <li>
-                            <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr>: source port; destination port; sequence number; acknowledgement number; offset; reserved; <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> flags; window; checksum; urgent pointer; and <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> options.
+                            <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr>: source port; destination port; sequence number; acknowledgment number; offset; reserved; <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> flags; window; checksum; urgent pointer; and <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> options.
                         </li>
                         <li>
                             <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr>: source port; destination port; length; and <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> checksum.
@@ -1133,7 +1133,7 @@
                     <a href="#IPS_SBD_EXT.1.5" class="abbr">IPS_SBD_EXT.1.5</a>
                 </div>
                 <div class="reqdesc">
-                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow the following operations to be associated with signaturebased <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies: 
+                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow the following operations to be associated with signature-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies: 
                     <ul>
                         <li>
                             In any mode, for any sensor interface: [<b>selection</b>: 
@@ -1259,7 +1259,7 @@
                     <td><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td>This requirement mitigates the threat of network disclosure by defining the network traffic the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> is able to examine to determine the potential realization of a threat.</td>
                 </tr>
                 <tr>
-                    <td><a href="#IPS_SBD_EXT.1">IPS_SBD_EXT.1</a></td><td>This requirement mitigates the threat of network denial of service by providing a means to detect network traffic signatures that are indicative of attemps to establish insecure or otherwise malformed sessions over a trusted protocol.</td>
+                    <td><a href="#IPS_SBD_EXT.1">IPS_SBD_EXT.1</a></td><td>This requirement mitigates the threat of network denial of service by providing a means to detect network traffic signatures that are indicative of attempts to establish insecure or otherwise malformed sessions over a trusted protocol.</td>
                 </tr>
                 <tr>
                     <td><a href="#FAU_STG.2/IPS">FAU_STG.2/IPS</a> (optional)</td><td>This requirement mitigates the threat by ensuring that records of stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data cannot be read without authorization or modified by any subject so as not to falsely disclose the history of activity observed on the network.</td>
@@ -1392,16 +1392,16 @@
                 <th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> Threat, Assumption, OSP</th><th>Consistency Rationale</th>
             </tr>
             <tr>
-                <td><a href="#T.NETWORK_ACCESS">T.NETWORK_ACCESS</a></td><td> The NDcPP only defines a security problem that relates to network traffic bound to or originating from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> expands the security problem to include a logical interface for network traffic between two nonTOE endpoints that is intercepted (inline) or observed (promiscuous) by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>. This is not inconsistent because the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> introduces a new logical interface for this functionality that is beyond the scope of the NDcPP. </td>
+                <td><a href="#T.NETWORK_ACCESS">T.NETWORK_ACCESS</a></td><td> The NDcPP only defines a security problem that relates to network traffic bound to or originating from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> expands the security problem to include a logical interface for network traffic between two non-TOE endpoints that is intercepted (inline) or observed (promiscuous) by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>. This is not inconsistent because the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> introduces a new logical interface for this functionality that is beyond the scope of the NDcPP. </td>
             </tr>
             <tr>
-                <td><a href="#T.NETWORK_DISCLOSURE">T.NETWORK_DISCLOSURE</a></td><td> The NDcPP only defines a security problem that relates to network traffic bound to or originating from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> expands the security problem to include a logical interface for network traffic between two nonTOE endpoints that is intercepted (inline) or observed (promiscuous) by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>. This is not inconsistent because the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> introduces a new logical interface for this functionality that is beyond the scope of the NDcPP. </td>
+                <td><a href="#T.NETWORK_DISCLOSURE">T.NETWORK_DISCLOSURE</a></td><td> The NDcPP only defines a security problem that relates to network traffic bound to or originating from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> expands the security problem to include a logical interface for network traffic between two non-TOE endpoints that is intercepted (inline) or observed (promiscuous) by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>. This is not inconsistent because the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> introduces a new logical interface for this functionality that is beyond the scope of the NDcPP. </td>
             </tr>
             <tr>
-                <td><a href="#T.NETWORK_DOS">T.NETWORK_DOS</a></td><td> The NDcPP only defines a security problem that relates to network traffic bound to or originating from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> expands the security problem to include a logical interface for network traffic between two nonTOE endpoints that is intercepted (inline) or observed (promiscuous) by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>. This is not inconsistent because the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> introduces a new logical interface for this functionality that is beyond the scope of the NDcPP. </td>
+                <td><a href="#T.NETWORK_DOS">T.NETWORK_DOS</a></td><td> The NDcPP only defines a security problem that relates to network traffic bound to or originating from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> expands the security problem to include a logical interface for network traffic between two non-TOE endpoints that is intercepted (inline) or observed (promiscuous) by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>. This is not inconsistent because the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> introduces a new logical interface for this functionality that is beyond the scope of the NDcPP. </td>
             </tr>
             <tr>
-                <td><a href="#T.NETWORK_MISUSE">T.NETWORK_MISUSE</a></td><td> The NDcPP only defines a security problem that relates to network traffic bound to or originating from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> expands the security problem to include a logical interface for network traffic between two nonTOE endpoints that is intercepted (inline) or observed (promiscuous) by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>. This is not inconsistent because the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> introduces a new logical interface for this functionality that is beyond the scope of the NDcPP. The NDcPP only defines a security problem that relates to network traffic bound to or originating from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> expands the security problem to include a logical interface for network traffic between two nonTOE endpoints that is intercepted (inline) or observed(promiscuous) by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>. This is not inconsistent because the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> introduces a new logical interface for this functionality that is beyond the scope of the NDcPP. </td>
+                <td><a href="#T.NETWORK_MISUSE">T.NETWORK_MISUSE</a></td><td> The NDcPP only defines a security problem that relates to network traffic bound to or originating from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> expands the security problem to include a logical interface for network traffic between two non-TOE endpoints that is intercepted (inline) or observed (promiscuous) by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>. This is not inconsistent because the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> introduces a new logical interface for this functionality that is beyond the scope of the NDcPP. The NDcPP only defines a security problem that relates to network traffic bound to or originating from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> expands the security problem to include a logical interface for network traffic between two non-TOE endpoints that is intercepted (inline) or observed(promiscuous) by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>. This is not inconsistent because the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> introduces a new logical interface for this functionality that is beyond the scope of the NDcPP. </td>
             </tr>
             <tr>
                 <td><a href="#A.CONNECTIONS">A.CONNECTIONS</a></td><td> This assumption requires a specific network configuration to ensure that network traffic cannot be routed in a way that allows it to bypass the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&rsquo;s inspection interfaces. This does not interfere with any of the assumptions in the NDcPP because the NDcPP doesn&rsquo;t make any assumptions about the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&rsquo;s position in a network architecture. </td>
@@ -1740,7 +1740,7 @@
                                 In <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr> Part 2, FAU_ARP is intended to depend on FAU_SAA to define a potential violation of the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr>. FAU_SAA is not included in this <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> EP; FRU_RSA and the various <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> class requirements are used instead to define the &ldquo;potential security violation&rdquo; relevant to FAU_ARP, namely that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> has detected potential malicious network traffic or has experienced a spike in network traffic that has exceeded its ability to inspect all network traffic which may result in some network traffic being uninspected by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>. This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> should be used to define actions that the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> can take which may include generating one or more messages that are not part of the audit trail that must be transmitted securely to a remote audit server.
                             </p>
                             <p>
-                                Messaging actions defined by this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> that are not specifically relevant to <a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a> do not need to be encrypted during transit. The primary intent of this functionality is the speed of notification, not the integrity, or confidentiality of the data in transit. In most cases, the audit trail applicable to FAU_STG.1 will be syslog data, and is being protected in transit to help ensure integrity of remotely stored audit data. This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> isintended to covertransmission of messages related to single eventsthrough protocols such as SNMP (traps) and <abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> (email). In <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr> that support securing SNMP traps, <abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> email, or other messaging types within trusted channels (as defined by FTP_ITC.1), the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author can choose to list these messaging methods within FTP_ITC.1 and/or within this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>. There are no additional auditable <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> events that need to be included in <a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a>. 
+                                Messaging actions defined by this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> that are not specifically relevant to <a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a> do not need to be encrypted during transit. The primary intent of this functionality is the speed of notification, not the integrity, or confidentiality of the data in transit. In most cases, the audit trail applicable to FAU_STG.1 will be syslog data, and is being protected in transit to help ensure integrity of remotely stored audit data. This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is intended to cover transmission of messages related to single events through protocols such as SNMP (traps) and <abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> (email). In <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr> that support securing SNMP traps, <abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> email, or other messaging types within trusted channels (as defined by FTP_ITC.1), the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author can choose to list these messaging methods within FTP_ITC.1 and/or within this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>. There are no additional auditable <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> events that need to be included in <a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a>. 
                             </p>
                         </span>
                     </div>
@@ -2201,7 +2201,7 @@
                             </li>
                             <li>ICMPv6: type; code; and header checksum.</li>
                             <li>
-                                <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr>: source port; destination port; sequence number; acknowledgement number; offset; reserved; <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> flags; window; checksum; urgent pointer; and <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> options.
+                                <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr>: source port; destination port; sequence number; acknowledgment number; offset; reserved; <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> flags; window; checksum; urgent pointer; and <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> options.
                             </li>
                             <li>
                                 <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr>: source port; destination port; length; and <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> checksum.
@@ -2325,7 +2325,7 @@
                             </li>
                         </ol>
                         <h4 id="ext-comp-IPS_SBD_EXT.1.5">IPS_SBD_EXT.1.5</h4>
-                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow the following operations to be associated with signaturebased <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies: 
+                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow the following operations to be associated with signature-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies: 
                         <ul>
                             <li>
                                 In any mode, for any sensor interface: [<b>selection</b>: 
@@ -2447,7 +2447,7 @@
                 <td><b><a href="#FAU_ARP.1">FAU_ARP.1</a> - Security Alarms</b></td><td><a href="#FAU_ARP.1">FAU_ARP.1</a> has a dependency on FAU_SAA.1. This is because FAU_SAA.1 defines the behavior that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> may consider to be a potential security violation while <a href="#FAU_ARP.1">FAU_ARP.1</a> defines what actions the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> takes when such behavior is detected. This dependency is implicitly satisfied in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because the behavior defined in <a href="#FRU_RSA.1">FRU_RSA.1</a> and the various <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> class requirements collectively define potential security violation behavior so a separate <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to enumerate this is redundant. </td>
             </tr>
             <tr>
-                <td><b><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a> - Audit Data Generation (<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr>)</b></td><td>FAU_GEN.1 has a dependency on FPT_STM.1 The extended <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> FPT_STM_EXT.1 that is defined in the BasePP provides equivalent functionality to FPT_STM.1 and therefore satisfies this dependency.</td>
+                <td><b><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a> - Audit Data Generation (<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr>)</b></td><td>FAU_GEN.1 has a dependency on FPT_STM.1 The extended <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> FPT_STM_EXT.1 that is defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> provides equivalent functionality to FPT_STM.1 and therefore satisfies this dependency.</td>
             </tr>
         </table>
         <h1 id="entropyappendix" class="indexable" data-level="A">Appendix E - Entropy Documentation and Assessment</h1>

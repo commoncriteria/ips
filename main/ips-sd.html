@@ -542,7 +542,7 @@ The following sections list Common Criteria and technology terms used in this do
 							<p>
 						The evaluator shall verify that the TSS explains the TOE’s capability of analyzing IP traffic in terms of the
 						TOE’s policy hierarchy (precedence). The TSS should identify if the TOE’s policy hierarchy order is
-						configurable by the administrator for IPS policy elements (known-good lists, known-bad lists, signaturebased rules, and anomaly-based rules).</p><p>
+						configurable by the administrator for IPS policy elements (known-good lists, known-bad lists, signature-based rules, and anomaly-based rules).</p><p>
 						Regardless of whether the precedence is configurable, the evaluator shall verify that the TSS describes
 						the default precedence as well as the IP analyzing functions supported by the TOE.
 						</p>
@@ -619,7 +619,7 @@ The following sections list Common Criteria and technology terms used in this do
 						<li>IPv6: Version; payload length; next header; hop limit; source address; destination address; routing header; and, if selected, traffic class and/or flow label</li>
 						<li>ICMP: type; code; header checksum; and, if selected, other header fields (varies based on the ICMP type and code).</li>
 						<li>ICMPv6: type; code; and header checksum.</li>
-						<li>TCP: Source port; destination port; sequence number; acknowledgement number; offset; reserved; TCP flags; window; checksum; urgent pointer; and TCP options.</li>
+						<li>TCP: Source port; destination port; sequence number; acknowledgment number; offset; reserved; TCP flags; window; checksum; urgent pointer; and TCP options.</li>
 						<li>UDP: source port; destination port; length; and UDP checksum.</li>
 					</ul>
 					The evaluator shall verify that the operational guidance provides instructions with how to select and/or configure reactions specified in IPS_SBD_EXT.1.5 in the signature rules.
@@ -638,7 +638,7 @@ The following sections list Common Criteria and technology terms used in this do
 								<li>IPv6: Version; payload length; next header; hop limit; source address; destination address; routing header; and, if selected, traffic class and/or flow label</li>
 								<li>ICMP: type; code; header checksum; and, if selected, other header fields (varies based on the ICMP type and code).</li>
 							<li>ICMPv6: Type; Code; and Header Checksum.</li>
-							<li>TCP: Source port; destination port; sequence number; acknowledgement number; offset; reserved; TCP flags; window; checksum; urgent pointer; and TCP options.</li>
+							<li>TCP: Source port; destination port; sequence number; acknowledgment number; offset; reserved; TCP flags; window; checksum; urgent pointer; and TCP options.</li>
 							<li>UDP: Source port; destination port; length; and UDP checksum.</li>
 							
 							</ul>
@@ -688,7 +688,7 @@ The following sections list Common Criteria and technology terms used in this do
 							<li> HTTP (web) commands and content:
 							<ol>
 								<li>Test both GET and POST commands</li>
-								<li>Test at least one administrator-defined strings to match URLs/URIs, and web pagecontent.</li>
+								<li>Test at least one administrator-defined string to match URLs/URIs and webpage content.</li>
 							</ol></li>
 							<li>Test at least one SMTP (email) state: start state, SMTP commands state, mail header state, mail body state, abort state.</li>
 							<li>Test at least one string in any additional attribute type defined within the “other types of
@@ -734,7 +734,7 @@ The following sections list Common Criteria and technology terms used in this do
                  <div class="element-activity-header">IPS_SBD_EXT.1.6</div>
 					<div class="eacategory">TSS</div><div class="ea">There are no TSS EAs for this element.</div>
 					<div class="eacategory">Guidance</div><div class="ea">The evaluator shall verify that the operational guidance provides configuration instructions, if needed, to detect payload across multiple packets.</div>
-					<div class="eacategory">Tests</div><div class="ea">The evaluator shall repeat one of the tests in <a href="#sbd-payload-reaction" class="dynref">Test IPS_SBD_EXT.1.2:1</a> but generate multiple nonfragmented packets that contain the string in the rule defined. The evaluator shall verify that the malicious traffic is still detected when split across multiple non-fragmented packets.</div>
+					<div class="eacategory">Tests</div><div class="ea">The evaluator shall repeat one of the tests in <a href="#sbd-payload-reaction" class="dynref">Test IPS_SBD_EXT.1.2:1</a> but generate multiple non-fragmented packets that contain the string in the rule defined. The evaluator shall verify that the malicious traffic is still detected when split across multiple non-fragmented packets.</div>
                  </span></div><h2 class="indexable" data-level="1" id="opt-sfrs">2.3 Evaluation Activities for Optional SFRs</h2><h2 class="indexable" data-level="2" id="fau-ops">2.3.1 Security Audit(FAU)</h2><div class="comp" id="FAU-STG-2-IPS"><h4>FAU_STG.2/IPS Protected Audit Trail Storage</h4><span class="activity_pane_body"><div class="component-activity-header">FAU_STG.2/IPS</div>
 				
 				
