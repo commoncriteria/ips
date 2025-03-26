@@ -2076,14 +2076,14 @@ forwarded</assignable></selectable>
 	<f-component name="Selectable Audit Review" cc-id='fau_sar.3' id='fau-sar-3'>
 	<f-element id="fau-sar-3e1">
 	<title>
-		The TSF shall provide the ability to apply [<h:i>filtering and sorting</h:i>] of <h:s>audit</h:s> <h:b>IPS</h:b> data
+		The TSF shall provide the ability to apply [<h:i>filtering and sorting</h:i>] of <h:b>IPS</h:b> audit data
 	based on [<h:i>filtering parameters: risk rating, time period, source IP address,
 	destination IP address and </h:i><selectables>
 		<selectable><assignable> other filtering parameters</assignable></selectable>
 		<selectable>no other filtering parameters</selectable></selectables><h:i>; and sorting parameters: event ID, event type, time,
 signature ID, IPS actions performed, and </h:i><selectables>
 		<selectable><assignable>other sorting parameters</assignable></selectable>
-		<selectable>no other sorting parameters</selectable></selectables>.
+		<selectable>no other sorting parameters</selectable></selectables>].
 
 
 	</title>
