@@ -148,7 +148,6 @@ output/ips-sd.html: ICMPv6
 output/ips-sd.html: TDs
 output/ips-sd.html: URIs
 output/ips-sd.html: acknowledgement
-output/ips-sd.html: administrators’
 output/ips-sd.html: allo
 output/ips-sd.html: appe
 output/ips-sd.html: cdup
@@ -198,7 +197,6 @@ output/ips.html: TRP
 output/ips.html: TST
 output/ips.html: URIs
 output/ips.html: acknowledgement
-output/ips.html: administrators’
 output/ips.html: allo
 output/ips.html: anomalous’
 output/ips.html: anomaly’

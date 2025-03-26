@@ -615,9 +615,9 @@ The following sections list Common Criteria and technology terms used in this do
 					<div class="eacategory">Guidance</div><div class="ea">
 					The evaluator shall verify that the operational guidance provides instructions with how to create and/or configure rules using the following protocols and header inspection fields:
 					<ul>
-						<li>IPv4: version; header length; packet length; ID; IP flags; fragment offset; time to live (TTL); protocol; header checksum; source address; destination address; and IP options.</li>
-						<li>IPv6: Version; traffic class; flow label; payload length; next header; hop limit; source address; destination address; routing header; home address options</li>
-						<li>ICMP: type; code; header checksum; and rest of header (varies based on the ICMP type and code).</li>
+						<li>IPv4: version; header length; packet length; ID; IP flags; fragment offset; time to live (TTL); protocol; header checksum; source address; destination address; IP options; and, if selected, type of service (ToS).</li>
+						<li>IPv6: Version; payload length; next header; hop limit; source address; destination address; routing header; and, if selected, traffic class and/or flow label</li>
+						<li>ICMP: type; code; header checksum; and, if selected, other header fields (varies based on the ICMP type and code).</li>
 						<li>ICMPv6: type; code; and header checksum.</li>
 						<li>TCP: Source port; destination port; sequence number; acknowledgement number; offset; reserved; TCP flags; window; checksum; urgent pointer; and TCP options.</li>
 						<li>UDP: source port; destination port; length; and UDP checksum.</li>
@@ -634,9 +634,9 @@ The following sections list Common Criteria and technology terms used in this do
 							IPS_SBD_EXT.1.5 for each of the attributes listed below. Each attribute shall be individually assigned to its
 							own unique signature:
 							<ul>
-							<li>IPv4: Version; Header Length; Packet Length; ID; IP Flags; Fragment Offset; Time to Live (TTL); Protocol; Header Checksum; Source Address; Destination Address; and IP Options</li>
-							<li>IPv6: Version; traffic class; flow label; payload length; next header; hop limit; source address; destination address; routing header; home address options.</li>
-							<li>ICMP: Type; Code; Header Checksum; and Rest of Header (varies based on the ICMP type and code). </li>
+								<li>IPv4: version; header length; packet length; ID; IP flags; fragment offset; time to live (TTL); protocol; header checksum; source address; destination address; IP options; and, if selected, type of service (ToS).</li>
+								<li>IPv6: Version; payload length; next header; hop limit; source address; destination address; routing header; and, if selected, traffic class and/or flow label</li>
+								<li>ICMP: type; code; header checksum; and, if selected, other header fields (varies based on the ICMP type and code).</li>
 							<li>ICMPv6: Type; Code; and Header Checksum.</li>
 							<li>TCP: Source port; destination port; sequence number; acknowledgement number; offset; reserved; TCP flags; window; checksum; urgent pointer; and TCP options.</li>
 							<li>UDP: Source port; destination port; length; and UDP checksum.</li>
@@ -816,7 +816,7 @@ The following sections list Common Criteria and technology terms used in this do
 	
 	
 	
-	<div class="eacategory">TSS</div><div class="ea"><div class="ea">The evaluator shall examine the TSS to determine that it identifies what group of users is considered to be ‘administrators’ for the purpose of being granted access to view IPS data.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall examine the operational guidance to determine what actions are needed to grant or revoke a user’s ability to view IPS data.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall log on to the TOE as various users to confirm that only those users that are intended to be granted read access to IPS data are able to view it.</div></div></span></div><div class="comp" id="FAU-SAR-3"><h4>FAU_SAR.3 Selectable Audit Review</h4><span class="activity_pane_body"><div class="component-activity-header">FAU_SAR.3</div>
+	<div class="eacategory">TSS</div><div class="ea"><div class="ea">The evaluator shall examine the TSS to determine that it identifies the users that are permitted to view IPS data (e.g., members of a particular group).</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall examine the operational guidance to determine what actions are needed to grant or revoke a user’s ability to view IPS data.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall log on to the TOE as various users to confirm that only those users that are intended to be granted read access to IPS data are able to view it.</div></div></span></div><div class="comp" id="FAU-SAR-3"><h4>FAU_SAR.3 Selectable Audit Review</h4><span class="activity_pane_body"><div class="component-activity-header">FAU_SAR.3</div>
 	
 	
 	<div class="eacategory">TSS</div><div class="ea"><div class="ea">The evaluator shall verify that the TSS includes a description of how the TOE has the ability to apply filtering and sorting of IPS data using the parameters listed in the requirement.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall review the operational guidance to ensure that the guidance itemizes all event types,
