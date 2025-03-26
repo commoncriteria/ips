@@ -1307,7 +1307,7 @@ enforce its policies on network traffic of monitored networks.</description>
 				</f-element>
 				<f-element id="ips-nta-ext-1e3">
 					<title>
-						<comment>wording updated as this was previously clunky, but also the "session reset-capable interface" selection was removed becase there are no EAs for that claim, and it also has an open-ended assignment where other types of interfaces can be specified with no instructions on how to test them.</comment>
+						<comment>wording updated as this was previously clunky, but also the "session reset-capable interface" selection was removed because there are no EAs for that claim, and it also has an open-ended assignment where other types of interfaces can be specified with no instructions on how to test them.</comment>
 					The TSF shall allow the signatures to be assigned to sensor interfaces configured
 					for promiscuous and inline mode, and to
 					support designation of one or more interfaces as being used as a management interface for communication between the TOE and external entities without simultaneously
