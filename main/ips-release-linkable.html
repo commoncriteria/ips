@@ -646,7 +646,7 @@ function showTarget(id){
     </span></a><a href="#sec-opt-audit-table" style="text-indent:20px">A.1.1<span>Auditable Events for Optional SFRs</span></a><a href="#fau-ops" style="text-indent:20px">A.1.2<span>Security Audit(FAU)</span></a><a href="#fpt" style="text-indent:20px">A.1.3<span>Protection of the TSF (FPT)</span></a><a href="#ips" style="text-indent:20px">A.1.4<span>Intrusion Prevention (IPS)</span></a><a href="#obj-sfrs" style="text-indent:10px">A.2<span>Objective Requirements
     </span></a><a href="#_sec_14" style="text-indent:20px">A.2.1<span>Auditable Events for Objective SFRs</span></a><a href="#fau-obj" style="text-indent:20px">A.2.2<span>Security Audit (FAU)</span></a><a href="#impl-dep-sfrs" style="text-indent:10px">A.3<span>Implementation-dependent Requirements
     </span></a><a href="#_sec_16" style="text-indent:20px">A.3.1<span>Auditable Events for Implementation-Dependent SFRs</span></a><a href="#fru-imp_dep" style="text-indent:20px">A.3.2<span>Resource Utilization</span></a><a href="#sel-sfrs" style="text-indent:0px">Appendix B - <span>Selection-based Requirements
-    </span></a><a href="#satisfiedreqs" style="text-indent:0px">Appendix C - <span>Inherently Satisfied Requirements</span></a><a href="#entropyappendix" style="text-indent:0px">Appendix D - <span>Entropy Documentation and Assessment</span></a><a href="#acronyms" style="text-indent:0px">Appendix E - <span>Acronyms</span></a><a href="#appendix-bibliography" style="text-indent:0px">Appendix F - <span>Bibliography</span></a></div><h1 class="indexable" data-level="1" id="Introduction">1 Introduction</h1>
+    </span></a><a href="#ext-comp-defs" style="text-indent:0px">Appendix C - <span>Extended Component Definitions</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.1<span>Extended Components Table</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.2<span>Extended Component Definitions</span></a><a href="#ext-comp-IPS" style="text-indent:20px">C.2.1<span>Intrusion Prevention (IPS)</span></a><a href="#ext-comp-IPS_ABD_EXT" style="text-indent:30px">C.2.1.1<span>IPS_ABD_EXT Anomaly-Based IPS Functionality</span></a><a href="#ext-comp-IPS_IPB_EXT" style="text-indent:30px">C.2.1.2<span>IPS_IPB_EXT IP Blocking</span></a><a href="#ext-comp-IPS_NTA_EXT" style="text-indent:30px">C.2.1.3<span>IPS_NTA_EXT Network Traffic Analysis</span></a><a href="#ext-comp-IPS_SBD_EXT" style="text-indent:30px">C.2.1.4<span>IPS_SBD_EXT Signature-Based IPS Functionality</span></a><a href="#satisfiedreqs" style="text-indent:0px">Appendix D - <span>Inherently Satisfied Requirements</span></a><a href="#entropyappendix" style="text-indent:0px">Appendix E - <span>Entropy Documentation and Assessment</span></a><a href="#acronyms" style="text-indent:0px">Appendix F - <span>Acronyms</span></a><a href="#appendix-bibliography" style="text-indent:0px">Appendix G - <span>Bibliography</span></a></div><h1 class="indexable" data-level="1" id="Introduction">1 Introduction</h1>
     
      
     <h2 class="indexable" data-level="2" id="Overview">1.1 Overview</h2>
@@ -1071,7 +1071,7 @@ enforce its policies on network traffic of monitored networks<a id="period_141" 
 			
 		
 		<h3 class="indexable" data-level="3" id="ss-audit-table">5.2.1 Auditable Events for Mandatory SFRs</h3>
-			<table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="mandatory-audit-events" data-counter-type="ct-Table" id="mandatory-audit-events">Table <span class="counter">2</span></span>: Auditable Events for Mandatory Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr><tr data-sortkey="FMT_SMF.1/IPS"><td rowspan="2"><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FMT_SMF.1/IPS#"><td></td></tr><tr data-sortkey="FMT_SMF.1/IPS.1"><td>Modification of an <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy element<a id="period_159" href="#period_159">. </a></td><td>dentifier or name of the modified <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy element (e.g<a id="period_160" href="#period_160">. </a>which signature, baseline, or knowngood/known-bad list was modified)<a id="period_161" href="#period_161">. </a></td></tr><tr data-sortkey="IPS_ABD_EXT.1"><td rowspan="2"><a href="#IPS_ABD_EXT.1">IPS_ABD_EXT.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="IPS_ABD_EXT.1#"><td></td></tr><tr data-sortkey="IPS_ABD_EXT.1.3"><td>Inspected traffic matches an anomaly-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy<a id="period_162" href="#period_162">. </a></td><td><ul><li>Source and destination IP addresses<a id="period_163" href="#period_163">. </a></li><li>The content of the header fields that were determined to match the policy<a id="period_164" href="#period_164">. </a></li><li><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface that received the packet<a id="period_165" href="#period_165">. </a></li><li>Aspect of the anomaly-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy rule that triggered the event (e.g<a id="period_166" href="#period_166">. </a>throughput, time of day, frequency, etc.)<a id="period_167" href="#period_167">. </a></li><li>Network-based action by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> (e.g<a id="period_168" href="#period_168">. </a>allowed, blocked, sent reset to source IP, sent blocking notification to firewall)<a id="period_169" href="#period_169">. </a></li></ul></td></tr><tr data-sortkey="IPS_IPB_EXT.1"><td rowspan="2"><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="IPS_IPB_EXT.1#"><td></td></tr><tr data-sortkey="IPS_IPB_EXT.1.2"><td>Inspected traffic matches a list of known-good or known-bad addresses applied to an <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy<a id="period_170" href="#period_170">. </a></td><td><ul><li>Source and destination IP addresses (and, if applicable, indication of whether the source and/or destination address matched the list)<a id="period_171" href="#period_171">. </a></li><li><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface that received the packet<a id="period_172" href="#period_172">. </a></li><li>Network-based action by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> (e.g<a id="period_173" href="#period_173">. </a>allowed, blocked, sent reset)<a id="period_174" href="#period_174">. </a></li></ul></td></tr><tr data-sortkey="IPS_NTA_EXT.1"><td rowspan="4"><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="IPS_NTA_EXT.1#"><td></td></tr><tr data-sortkey="IPS_NTA_EXT.1.3"><td>Modification of which <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies
+			<table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="mandatory-audit-events" data-counter-type="ct-Table" id="mandatory-audit-events">Table <span class="counter">2</span></span>: Auditable Events for Mandatory Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr><tr data-sortkey="FMT_SMF.1/IPS"><td rowspan="2"><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FMT_SMF.1/IPS#"><td></td></tr><tr data-sortkey="FMT_SMF.1/IPS.1"><td>Modification of an <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy element<a id="period_159" href="#period_159">. </a></td><td>dentifier or name of the modified <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy element (e.g<a id="period_160" href="#period_160">. </a>which signature, baseline, or knowngood/known-bad list was modified)<a id="period_161" href="#period_161">. </a></td></tr><tr data-sortkey="IPS_ABD_EXT.1"><td rowspan="2"><a href="#IPS_ABD_EXT.1">IPS_ABD_EXT.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="IPS_ABD_EXT.1#"><td></td></tr><tr data-sortkey="IPS_ABD_EXT.1.7"><td>Inspected traffic matches an anomaly-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy<a id="period_162" href="#period_162">. </a></td><td><ul><li>Source and destination IP addresses<a id="period_163" href="#period_163">. </a></li><li>The content of the header fields that were determined to match the policy<a id="period_164" href="#period_164">. </a></li><li><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface that received the packet<a id="period_165" href="#period_165">. </a></li><li>Aspect of the anomaly-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy rule that triggered the event (e.g<a id="period_166" href="#period_166">. </a>throughput, time of day, frequency, etc.)<a id="period_167" href="#period_167">. </a></li><li>Network-based action by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> (e.g<a id="period_168" href="#period_168">. </a>allowed, blocked, sent reset to source IP, sent blocking notification to firewall)<a id="period_169" href="#period_169">. </a></li></ul></td></tr><tr data-sortkey="IPS_IPB_EXT.1"><td rowspan="2"><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="IPS_IPB_EXT.1#"><td></td></tr><tr data-sortkey="IPS_IPB_EXT.1.2"><td>Inspected traffic matches a list of known-good or known-bad addresses applied to an <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy<a id="period_170" href="#period_170">. </a></td><td><ul><li>Source and destination IP addresses (and, if applicable, indication of whether the source and/or destination address matched the list)<a id="period_171" href="#period_171">. </a></li><li><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface that received the packet<a id="period_172" href="#period_172">. </a></li><li>Network-based action by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> (e.g<a id="period_173" href="#period_173">. </a>allowed, blocked, sent reset)<a id="period_174" href="#period_174">. </a></li></ul></td></tr><tr data-sortkey="IPS_NTA_EXT.1"><td rowspan="4"><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="IPS_NTA_EXT.1#"><td></td></tr><tr data-sortkey="IPS_NTA_EXT.1.3"><td>Modification of which <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies
 				are active on a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface</td><td><ul><li>Identification of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface<a id="period_175" href="#period_175">. </a>				</li><li>The <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy and interface mode (if
 				applicable)<a id="period_176" href="#period_176">. </a>				</li></ul></td></tr><tr data-sortkey="IPS_NTA_EXT.1.4"><td>Enabling/disabling a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
 				interface with <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies
@@ -1177,7 +1177,17 @@ enforce its policies on network traffic of monitored networks<a id="period_141" 
 			
 			
 						<h3 id="m-ips" class="indexable" data-level="3">5.2.4 Intrusion Prevention (IPS)</h3>
+							
+							
+							
+							
 			<div class="comp" id="IPS_ABD_EXT.1"><h4>IPS_ABD_EXT.1 Anomaly-Based IPS Functionality</h4>
+				
+				
+				
+				
+				
+				
 				<div class="element"><div class="reqid" id="IPS_ABD_EXT.1.1"><a href="#IPS_ABD_EXT.1.1" class="abbr">IPS_ABD_EXT.1.1</a></div><div class="reqdesc">
 				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support the definition of [<b>selection</b>: <span class="selectable-content" id="_s_7">baselines (&#8216;expected and approved&#8217;)</span>, <span class="selectable-content" id="_s_8">anomaly (&#8216;unexpected&#8217;) traffic patterns</span>] including the specification of [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_9">throughput ([<b>assignment</b>: 
      <span class="assignable-content"> data elements (e.g<a id="period_205" href="#period_205">. </a>bytes, packets, etc.) per time period (e.g<a id="period_206" href="#period_206">. </a>minutes, hours, days)</span>])</span></li><li style=""><span class="selectable-content" id="_s_10">time of day;</span></li><li style=""><span class="selectable-content" id="_s_11">frequency;</span></li><li style=""><span class="selectable-content" id="_s_12">thresholds;</span></li><li style=""><span class="selectable-content" id="_s_13">[[<b>assignment</b>: 
@@ -1228,6 +1238,9 @@ enforce its policies on network traffic of monitored networks<a id="period_141" 
 				</div></div>
 				
 				</div>
+							
+							
+							
 				<div class="comp" id="IPS_IPB_EXT.1"><h4>IPS_IPB_EXT.1 IP Blocking</h4>
 				<div class="element"><div class="reqid" id="IPS_IPB_EXT.1.1"><a href="#IPS_IPB_EXT.1.1" class="abbr">IPS_IPB_EXT.1.1</a></div><div class="reqdesc">
 					The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support configuration and implementation of known-good and known-bad lists of [<b>selection</b>: <span class="selectable-content" id="_s_28">source</span>, <span class="selectable-content" id="_s_29">destination</span>] IP addresses and [<b>selection</b>: <span class="selectable-content" id="_s_30">no additional address types</span>, <span class="selectable-content" id="_s_31">
@@ -1246,6 +1259,9 @@ enforce its policies on network traffic of monitored networks<a id="period_141" 
      <span class="assignable-content">other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements</span>]</span>, <span class="selectable-content" id="_s_36">no other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements</span>]<a id="period_219" href="#period_219">. </a>					</div></div>
 				
 				</div>
+							
+							
+							
 				<div class="comp" id="IPS_NTA_EXT.1"><h4>IPS_NTA_EXT.1 Network Traffic Analysis</h4>
 				<div class="element"><div class="reqid" id="IPS_NTA_EXT.1.1"><a href="#IPS_NTA_EXT.1.1" class="abbr">IPS_NTA_EXT.1.1</a></div><div class="reqdesc">
 					The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall perform analysis of IP-based network traffic forwarded to the
@@ -1332,6 +1348,7 @@ enforce its policies on network traffic of monitored networks<a id="period_141" 
 				
 				
 				</div>
+							
 							
 							
 				<div class="comp" id="IPS_SBD_EXT.1"><h4>IPS_SBD_EXT.1 Signature-Based IPS Functionality</h4>
@@ -1822,45 +1839,99 @@ supporting inspection of network traffic</i>] that [<i>subjects</i>] can use [<i
 		
 	<h1 id="sel-sfrs" class="indexable" data-level="1">Appendix B -  Selection-based Requirements
     </h1><p>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any 
-       Selection-based       <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr><a id="period_418" href="#period_418">. </a></p><h1 id="satisfiedreqs" class="indexable" data-level="A">Appendix C -  Inherently Satisfied Requirements</h1> 
+       Selection-based       <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr><a id="period_418" href="#period_418">. </a></p><h1 id="ext-comp-defs" class="indexable" data-level="A">Appendix C -  Extended Component Definitions</h1>
+	This appendix contains the definitions for all extended requirements specified in the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr><a id="period_419" href="#period_419">. </a>
+    <h2 id="ext-comp-defs-bg" class="indexable" data-level="2">C.1 Extended Components Table</h2>
+
+	All extended components specified in the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> are listed in this table:
+
+<table class="sort_kids_"><caption data-sortkey="#0"><b><span class="ctr" data-myid="" data-counter-type="ct-Table" id="">Table <span class="counter">10</span></span>: Extended Component Definitions</b></caption><tr data-sortkey="#1"><th>Functional Class</th><th>Functional Components</th></tr><tr data-sortkey="Intrusion Prevention (IPS)"><td>Intrusion Prevention (<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr>)</td><td>IPS_ABD_EXT Anomaly-Based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> Functionality<br>IPS_IPB_EXT IP Blocking<br>IPS_NTA_EXT Network Traffic Analysis<br>IPS_SBD_EXT Signature-Based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> Functionality<br></td></tr></table><h2 id="ext-comp-defs-bg" class="indexable" data-level="2">C.2 Extended Component Definitions</h2><span class="sort_kids_"><span data-sortkey="Intrusion Prevention (IPS)"><h3 id="ext-comp-IPS" class="indexable" data-level="3">C.2.1 Intrusion Prevention (IPS)</h3>
+								Intrusion prevention involves the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&#8217;s ability to collect network packets, examine their contents for
+								information that suggests malicious activity, and to perform some action in response such as terminating
+								the connection<a id="period_420" href="#period_420">. </a>							<h3 id="ext-comp-IPS_ABD_EXT" class="indexable" data-level="4">C.2.1.1 IPS_ABD_EXT Anomaly-Based IPS Functionality</h3><div style="margin-left: 1em;"><h4>Family Behavior</h4><div>This family defines requirements for detection of anomalous network traffic and how the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> should
+									respond if an anomaly is detected<a id="period_421" href="#period_421">. </a>								</div><h4>Component Leveling</h4><svg style="max-height: 30px;"><text x="4" fill="black" font-size="15" y="24">IPS_ABD_EXT</text><rect x="2" y="11" width="150" height="16" fill="none" stroke="black"></rect><text x="234" fill="black" font-size="15" y="24">1</text><rect x="232" y="11" width="12" height="16" fill="none" stroke="black"></rect><line x1="152" y1="17" x2="231" y2="17" stroke="black"></line></svg><p><a href="#IPS_ABD_EXT.1">IPS_ABD_EXT.1</a>,
+             Anomaly-Based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> Functionality,
+              requires the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to detect anomalous network traffic
+					based on some criteria and to define the response that is issued if an anomaly is detected<a id="period_422" href="#period_422">. </a></p><h4>Management: IPS_ABD_EXT.1</h4><p>The following actions could be considered for the management functions in FMT: 
+					<ul>
+						<li>Configuration of anomaly detection<a id="period_423" href="#period_423">. </a></li>
+						<li>Enabling and disabling actions to be taken when anomaly matches are detected<a id="period_424" href="#period_424">. </a></li>
+						<li>Modification of thresholds that trigger <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> reactions<a id="period_425" href="#period_425">. </a></li>
+						<li>Modification of the duration of traffic blocking actions<a id="period_426" href="#period_426">. </a></li>
+					</ul>
+				</p><h4>Audit: IPS_ABD_EXT.1</h4><p>The following actions should be auditable if FAU_GEN Security audit data generation is included in the
+					<abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>/<abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>:
+					<ul>
+						<li>Inspected traffic that matches an anomaly-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy<a id="period_427" href="#period_427">. </a></li>
+					</ul></p><h4>IPS_ABD_EXT.1 Anomaly-Based IPS Functionality</h4><div style="margin-left: 1em;"><table class="ecd_heir_dep" style="width: 100%"><tr><td style="whitespace: nowrap">Hierarchical to:</td><td style="width: 100%">No other components<a id="period_428" href="#period_428">. </a></td></tr><tr style="background-color: inherit"><td>Dependencies to:</td><td><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a> Network Traffic Analysis<br>
+					<a href="#IPS_SBD_EXT.1">IPS_SBD_EXT.1</a> Signature-Based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> Functionality
+				</td></tr></table><h4 id="ext-comp-IPS_ABD_EXT.1.1">IPS_ABD_EXT.1.1</h4>
+				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support the definition of [<b>selection</b>: <span class="selectable-content" id="_s_7">baselines (&#8216;expected and approved&#8217;)</span>, <span class="selectable-content" id="_s_8">anomaly (&#8216;unexpected&#8217;) traffic patterns</span>] including the specification of [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_9">throughput ([<b>assignment</b>: 
+     <span class="assignable-content"> data elements (e.g<a id="period_429" href="#period_429">. </a>bytes, packets, etc.) per time period (e.g<a id="period_430" href="#period_430">. </a>minutes, hours, days)</span>])</span></li><li style=""><span class="selectable-content" id="_s_10">time of day;</span></li><li style=""><span class="selectable-content" id="_s_11">frequency;</span></li><li style=""><span class="selectable-content" id="_s_12">thresholds;</span></li><li style=""><span class="selectable-content" id="_s_13">[[<b>assignment</b>: 
+     <span class="assignable-content">other methods</span>]]</span></li></ul>]
+					and the following network protocol fields:
+					<ul>
+						<li>[<b>selection</b>: <span class="selectable-content" id="_s_14"> all packet header and data elements defined in <a href="#IPS_SBD_EXT.1">IPS_SBD_EXT.1</a></span>, <span class="selectable-content" id="_s_15">[<b>assignment</b>: 
+     <span class="assignable-content">subset list of packet header and data elements from <a href="#IPS_SBD_EXT.1">IPS_SBD_EXT.1</a></span>]</span>]<a id="period_431" href="#period_431">. </a></li>
+					</ul>
+				<h4 id="ext-comp-IPS_ABD_EXT.1.2">IPS_ABD_EXT.1.2</h4>
+				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support the definition of anomaly activity through [<b>selection</b>: <span class="selectable-content" id="_s_16">manual configuration by administrators</span>, <span class="selectable-content" id="_s_17">automated configuration</span>]<a id="period_432" href="#period_432">. </a>				<h4 id="ext-comp-IPS_ABD_EXT.1.3">IPS_ABD_EXT.1.3</h4>
+				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow the following operations to be associated with anomaly-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies:
+				<ul>
+					<li>In any mode, for any sensor interface: [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_18">allow the traffic flow</span></li><li style=""><span class="selectable-content" id="_s_19">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the source address of the offending traffic</span></li><li style=""><span class="selectable-content" id="_s_20">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the destination address of the offending traffic</span></li><li style=""><span class="selectable-content" id="_s_21">send an <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>
+								[<b>selection</b>: <span class="selectable-content" id="_s_22">host</span>, <span class="selectable-content" id="_s_23">destination</span>, <span class="selectable-content" id="_s_24">port</span>]
+								unreachable message
+								</span></li><li style=""><span class="selectable-content" id="_s_25">trigger a non-TOE network device to block the offending traffic pattern</span></li></ul>]</li>
+					<li>In inline mode:
+						<ul>
+							<li>allow the traffic flow</li>
+							<li>block/drop the traffic flow</li>
+							<li>and 
+									[<b>selection</b>: <span class="selectable-content" id="_s_26">modify and forward packets before they pass through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>, <span class="selectable-content" id="_s_27">no other actions</span>]<a id="period_433" href="#period_433">. </a></li>
+						</ul>
+					</li>
+				</ul>
+				</div></div><h3 id="ext-comp-IPS_IPB_EXT" class="indexable" data-level="4">C.2.1.2 IPS_IPB_EXT IP Blocking</h3><div style="margin-left: 1em;"><h4>Family Behavior</h4><div>This family defines requirements for handling of inspected network traffic based on IP address<a id="period_434" href="#period_434">. </a>								</div><h4>Component Leveling</h4><svg style="max-height: 10px;"><text x="4" fill="black" font-size="15" y="24">IPS_IPB_EXT</text><rect x="2" y="11" width="150" height="16" fill="none" stroke="black"></rect></svg></div><h3 id="ext-comp-IPS_NTA_EXT" class="indexable" data-level="4">C.2.1.3 IPS_NTA_EXT Network Traffic Analysis</h3><div style="margin-left: 1em;"><h4>Family Behavior</h4><div>This family defines the network traffic protocols for which the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is capable of analyzing and detecting violations<a id="period_435" href="#period_435">. </a>
+								</div><h4>Component Leveling</h4><svg style="max-height: 10px;"><text x="4" fill="black" font-size="15" y="24">IPS_NTA_EXT</text><rect x="2" y="11" width="150" height="16" fill="none" stroke="black"></rect></svg></div><h3 id="ext-comp-IPS_SBD_EXT" class="indexable" data-level="4">C.2.1.4 IPS_SBD_EXT Signature-Based IPS Functionality</h3><div style="margin-left: 1em;"><h4>Family Behavior</h4><div>This family defines the network traffic protocols for which the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is capable of analyzing and detecting violations<a id="period_436" href="#period_436">. </a>
+								</div><h4>Component Leveling</h4><svg style="max-height: 10px;"><text x="4" fill="black" font-size="15" y="24">IPS_SBD_EXT</text><rect x="2" y="11" width="150" height="16" fill="none" stroke="black"></rect></svg></div></span></span><h1 id="satisfiedreqs" class="indexable" data-level="A">Appendix D -  Inherently Satisfied Requirements</h1> 
 		This appendix lists requirements that should be considered satisfied by products
-		successfully evaluated against this Protection Profile<a id="period_419" href="#period_419">. </a> 
+		successfully evaluated against this Protection Profile<a id="period_437" href="#period_437">. </a> 
 		However, these requirements are not featured explicitly as <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> and should not be
-		included in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr><a id="period_420" href="#period_420">. </a> 
+		included in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr><a id="period_438" href="#period_438">. </a> 
 		They are not included as standalone <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> because it would
-		increase the time, cost, and complexity of evaluation<a id="period_421" href="#period_421">. </a> This approach is permitted
-		by <a href="#bibCC">[CC]</a> Part 1, <b>8.3 Dependencies between components</b><a id="period_422" href="#period_422">. </a>		<br>
+		increase the time, cost, and complexity of evaluation<a id="period_439" href="#period_439">. </a> This approach is permitted
+		by <a href="#bibCC">[CC]</a> Part 1, <b>8.3 Dependencies between components</b><a id="period_440" href="#period_440">. </a>		<br>
 		This information benefits systems engineering activities which call for inclusion of 
-		particular security controls<a id="period_423" href="#period_423">. </a> Evaluation against the Protection Profile
-		provides evidence that these controls are present and have been evaluated<a id="period_424" href="#period_424">. </a>		<table>
+		particular security controls<a id="period_441" href="#period_441">. </a> Evaluation against the Protection Profile
+		provides evidence that these controls are present and have been evaluated<a id="period_442" href="#period_442">. </a>		<table>
 			<tr class="header">
 				<td>Requirement</td>
 				<td>Rationale for Satisfaction</td>
 			</tr>
 			<tr>
 				<td><b><a href="#FAU_ARP.1">FAU_ARP.1</a> - Security Alarms</b></td>
-				<td><a href="#FAU_ARP.1">FAU_ARP.1</a> has a dependency on FAU_SAA.1<a id="period_425" href="#period_425">. </a>This is
+				<td><a href="#FAU_ARP.1">FAU_ARP.1</a> has a dependency on FAU_SAA.1<a id="period_443" href="#period_443">. </a>This is
 					because FAU_SAA.1 defines the behavior that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> may
 					consider to be a potential security violation while
 					<a href="#FAU_ARP.1">FAU_ARP.1</a> defines what actions the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> takes when such
-					behavior is detected<a id="period_426" href="#period_426">. </a>This dependency is implicitly
+					behavior is detected<a id="period_444" href="#period_444">. </a>This dependency is implicitly
 					satisfied in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because the behavior defined
 					in <a href="#FRU_RSA.1">FRU_RSA.1</a> and the various <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> class requirements
 					collectively define potential security violation behavior so
-					a separate <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to enumerate this is redundant<a id="period_427" href="#period_427">. </a>				</td>
+					a separate <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to enumerate this is redundant<a id="period_445" href="#period_445">. </a>				</td>
 			</tr>
 			<tr>
 				<td><b><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a> - Audit Data Generation (<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr>)</b></td>
 				<td>FAU_GEN.1 has a dependency on FPT_STM.1 The
 					extended <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> FPT_STM_EXT.1 that is defined in the BasePP provides equivalent functionality to FPT_STM.1 and
-					therefore satisfies this dependency<a id="period_428" href="#period_428">. </a></td>
+					therefore satisfies this dependency<a id="period_446" href="#period_446">. </a></td>
 			</tr>
 		</table>
-	<h1 id="entropyappendix" class="indexable" data-level="A">Appendix D -  Entropy Documentation and Assessment</h1> 
+	<h1 id="entropyappendix" class="indexable" data-level="A">Appendix E -  Entropy Documentation and Assessment</h1> 
 		<p>
 			The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> does not require any additional supplementary information to describe its entropy sources
-			beyond the requirements outlined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr><a id="period_429" href="#period_429">. </a>			</p>
-	<h1 id="acronyms" class="indexable" data-level="A">Appendix E -  Acronyms</h1><table><caption><span class="ctr" data-myid="t-acronyms" data-counter-type="ct-Table" id="t-acronyms">Table <span class="counter">10</span></span>: Acronyms
+			beyond the requirements outlined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr><a id="period_447" href="#period_447">. </a>			</p>
+	<h1 id="acronyms" class="indexable" data-level="A">Appendix F -  Acronyms</h1><table><caption><span class="ctr" data-myid="t-acronyms" data-counter-type="ct-Table" id="t-acronyms">Table <span class="counter">11</span></span>: Acronyms
 		</caption><tr class="header"><th>Acronym</th><th>Meaning</th></tr><tr><td><span class="term" id="abbr_Base-PP" data-plural="Base-PPs"><abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr></span></td><td><span id="long_abbr_Base-PP">Base Protection Profile</span></td></tr>
 <tr><td><span class="term" id="abbr_CC"><abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr></span></td><td><span id="long_abbr_CC">Common Criteria</span></td></tr>
 <tr><td><span class="term" id="abbr_CEM"><abbr class="dyn-abbr"><a href="#abbr_CEM">CEM</a></abbr></span></td><td><span id="long_abbr_CEM">Common Evaluation Methodology</span></td></tr>
@@ -1902,18 +1973,18 @@ supporting inspection of network traffic</i>] that [<i>subjects</i>] can use [<i
 <tr><td><span class="term" id="abbr_TSS"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></span></td><td><span id="long_abbr_TSS"><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Summary Specification</span></td></tr>
 <tr><td><span class="term" id="abbr_TTL"><abbr class="dyn-abbr"><a href="#abbr_TTL">TTL</a></abbr></span></td><td><span id="long_abbr_TTL">Time to Live</span></td></tr>
 <tr><td><span class="term" id="abbr_UDP"><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr></span></td><td><span id="long_abbr_UDP">User Datagram Protocol</span></td></tr>
-</table><h1 id="appendix-bibliography" class="indexable" data-level="A">Appendix F -  Bibliography</h1><table><caption><span class="ctr" data-myid="t-biblio" data-counter-type="ct-Table" id="t-biblio">Table <span class="counter">11</span></span>: Bibliography</caption><tr class="header"><th>Identifier</th><th>Title</th></tr><tr><td><span id="bibndcpp3">[NDcPP]</span></td><td><span class="description">NDcPP  - <a href="https://www.niap-ccevs.org/protectionprofiles/482">Collaborative Protection Profile for Network Devices, Version 3.0e, December 06, 2023</a></span></td></tr><tr><td><span id="bibCC">[<abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>]</span></td><td><span class="description">Common Criteria for Information Technology Security Evaluation - <ul>
+</table><h1 id="appendix-bibliography" class="indexable" data-level="A">Appendix G -  Bibliography</h1><table><caption><span class="ctr" data-myid="t-biblio" data-counter-type="ct-Table" id="t-biblio">Table <span class="counter">12</span></span>: Bibliography</caption><tr class="header"><th>Identifier</th><th>Title</th></tr><tr><td><span id="bibndcpp3">[NDcPP]</span></td><td><span class="description">NDcPP  - <a href="https://www.niap-ccevs.org/protectionprofiles/482">Collaborative Protection Profile for Network Devices, Version 3.0e, December 06, 2023</a></span></td></tr><tr><td><span id="bibCC">[<abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>]</span></td><td><span class="description">Common Criteria for Information Technology Security Evaluation - <ul>
             <li><a href="https://www.commoncriteriaportal.org/files/ccfiles/CC2022PART1R1.pdf">Part 1: 
-				Introduction and general model</a>, CCMB-2022-11-001, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_430" href="#period_430">. </a></li>
+				Introduction and general model</a>, CCMB-2022-11-001, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_448" href="#period_448">. </a></li>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART2R1.pdf">Part 2: 
-				Security functional requirements</a>, CCMB-2022-11-002, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_431" href="#period_431">. </a></li>
+				Security functional requirements</a>, CCMB-2022-11-002, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_449" href="#period_449">. </a></li>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART3R1.pdf">Part 3: 
-                Security assurance requirements</a>, CCMB-2022-11-003, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_432" href="#period_432">. </a></li>
+                Security assurance requirements</a>, CCMB-2022-11-003, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_450" href="#period_450">. </a></li>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART4R1.pdf">Part 4: 
-                Framework for the specification of evaluation methods and activities</a>, CCMB-2022-11-004, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_433" href="#period_433">. </a></li>
+                Framework for the specification of evaluation methods and activities</a>, CCMB-2022-11-004, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_451" href="#period_451">. </a></li>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART5R1.pdf">Part 5: 
-                 Pre-defined packages of security requirements</a>, CCMB-2022-11-005, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_434" href="#period_434">. </a></li>
+                 Pre-defined packages of security requirements</a>, CCMB-2022-11-005, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_452" href="#period_452">. </a></li>
           </ul></span></td></tr><tr><td><span id="bibCEM">[<abbr class="dyn-abbr"><a href="#abbr_CEM">CEM</a></abbr>]</span></td><td><span class="description">Common Methodology for Information Technology Security Evaluation - <ul>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CEM2022R1.pdf">
-                 Evaluation methodology</a>, CCMB-2022-11-006, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_435" href="#period_435">. </a></li>
+                 Evaluation methodology</a>, CCMB-2022-11-006, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_453" href="#period_453">. </a></li>
           </ul></span></td></tr></table></body></html>
