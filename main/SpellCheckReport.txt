@@ -22,6 +22,7 @@ output/ips-release-linkable.html: Stateful
 output/ips-release-linkable.html: TDs
 output/ips-release-linkable.html: TODO
 output/ips-release-linkable.html: TRP
+output/ips-release-linkable.html: TST
 output/ips-release-linkable.html: UAU
 output/ips-release-linkable.html: UID
 output/ips-release-linkable.html: URIs
@@ -29,6 +30,7 @@ output/ips-release-linkable.html: acknowledgement
 output/ips-release-linkable.html: allo
 output/ips-release-linkable.html: appe
 output/ips-release-linkable.html: attemps
+output/ips-release-linkable.html: baed
 output/ips-release-linkable.html: becase
 output/ips-release-linkable.html: cdup
 output/ips-release-linkable.html: configurability
@@ -90,6 +92,7 @@ output/ips-release.html: STM
 output/ips-release.html: Stateful
 output/ips-release.html: TDs
 output/ips-release.html: TRP
+output/ips-release.html: TST
 output/ips-release.html: UAU
 output/ips-release.html: UID
 output/ips-release.html: URIs
@@ -100,6 +103,7 @@ output/ips-release.html: anomaly’
 output/ips-release.html: appe
 output/ips-release.html: approved’
 output/ips-release.html: attemps
+output/ips-release.html: baed
 output/ips-release.html: becase
 output/ips-release.html: blocked’
 output/ips-release.html: cdup
@@ -208,6 +212,7 @@ output/ips.html: Stateful
 output/ips.html: TDs
 output/ips.html: TODO
 output/ips.html: TRP
+output/ips.html: TST
 output/ips.html: UAU
 output/ips.html: UID
 output/ips.html: URIs
@@ -219,6 +224,7 @@ output/ips.html: anomaly’
 output/ips.html: appe
 output/ips.html: approved’
 output/ips.html: attemps
+output/ips.html: baed
 output/ips.html: becase
 output/ips.html: blocked’
 output/ips.html: cdup

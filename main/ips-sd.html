@@ -435,7 +435,7 @@ The following sections list Common Criteria and technology terms used in this do
 							Note the following:<ul><li>This testing is addressed with a combination of the Test EAs for the other IPS requirements</li>
 								<li>As part of testing this activity, the evaluator shall also ensure that the audit data the TSF generates to conform to this SFR can be transmitted to an external audit server in the manner that the Base-PP requires for all audit data.</li></ul>
 							</p>
-						</div></div></span></div><h2 class="indexable" data-level="2" id="m-fmt">2.2.2 Security Management (FMT)</h2><div class="comp" id="FMT-SMF-1"><h4>FMT_SMF.1/IPS Specification of Management Functions (IPS)</h4><span class="activity_pane_body"><div class="component-activity-header">FMT_SMF.1/IPS</div>      
+						</div></div></span></div><h2 class="indexable" data-level="2" id="m-fmt">2.2.2 Security Management (FMT)</h2><div class="comp" id="FMT-SMF-1-IPS"><h4>FMT_SMF.1/IPS Specification of Management Functions (IPS)</h4><span class="activity_pane_body"><div class="component-activity-header">FMT_SMF.1/IPS</div>      
    					
 					
 					
@@ -461,7 +461,7 @@ The following sections list Common Criteria and technology terms used in this do
 							</p><p>
 								Testing for this SFR will generally be performed in conjunction with the test activities for IPS_ABD_EXT.1 and IPS_SBD_EXT.1, as testing various aspects of IPS functionality will necessarily involve this functionality to be configured such that the TSF is in a known state when being tested.
 							</p>	
-					</div></div></span></div><h2 class="indexable" data-level="2" id="m-ips">2.2.3 Intrusion Prevention (IPS)</h2><div class="comp" id="IPS-ADB-EXT-1"><h4>IPS_ABD_EXT.1 Anomaly-Based IPS Functionality</h4><span class="activity_pane_body"><div class="component-activity-header">IPS_ABD_EXT.1</div>      
+					</div></div></span></div><h2 class="indexable" data-level="2" id="m-ips">2.2.3 Intrusion Prevention (IPS)</h2><div class="comp" id="IPS-ABD-EXT-1"><h4>IPS_ABD_EXT.1 Anomaly-Based IPS Functionality</h4><span class="activity_pane_body"><div class="component-activity-header">IPS_ABD_EXT.1</div>      
 						
 						
 						
@@ -599,7 +599,7 @@ The following sections list Common Criteria and technology terms used in this do
 						<div class="eacategory">Tests</div><div class="ea">
 						Testing for this element is performed in conjunction with testing where promiscuous and inline interfaces are tested. 
 						</div>
-					</span></div><div class="comp" id="IPS-SBD-EXT.1"><h4>IPS_SBD_EXT.1 Signature-Based IPS Functionality</h4><span class="activity_pane_body"><div class="element-activity-header">IPS_SBD_EXT.1.1</div>      
+					</span></div><div class="comp" id="IPS-SBD-EXT-1"><h4>IPS_SBD_EXT.1 Signature-Based IPS Functionality</h4><span class="activity_pane_body"><div class="element-activity-header">IPS_SBD_EXT.1.1</div>      
 					<div class="eacategory">TSS</div><div class="ea">
 						<p>
 					The evaluator shall verify that the TSS describes what is comprised within a signature rule.
@@ -735,7 +735,7 @@ The following sections list Common Criteria and technology terms used in this do
 					<div class="eacategory">TSS</div><div class="ea">There are no TSS EAs for this element.</div>
 					<div class="eacategory">Guidance</div><div class="ea">The evaluator shall verify that the operational guidance provides configuration instructions, if needed, to detect payload across multiple packets.</div>
 					<div class="eacategory">Tests</div><div class="ea">The evaluator shall repeat one of the tests in <a href="#sbd-payload-reaction" class="dynref">Test IPS_SBD_EXT.1.2:1</a> but generate multiple nonfragmented packets that contain the string in the rule defined. The evaluator shall verify that the malicious traffic is still detected when split across multiple non-fragmented packets.</div>
-                 </span></div><h2 class="indexable" data-level="1" id="opt-sfrs">2.3 Evaluation Activities for Optional SFRs</h2><h2 class="indexable" data-level="2" id="fau-ops">2.3.1 Security Audit(FAU)</h2><div class="comp" id="FAU-STG.1-IPS"><h4>FAU_STG.1/ips Protected Audit Trail Storage</h4><span class="activity_pane_body"><div class="component-activity-header">FAU_STG.1/ips</div>
+                 </span></div><h2 class="indexable" data-level="1" id="opt-sfrs">2.3 Evaluation Activities for Optional SFRs</h2><h2 class="indexable" data-level="2" id="fau-ops">2.3.1 Security Audit(FAU)</h2><div class="comp" id="FAU-STG-2-IPS"><h4>FAU_STG.2/ips Protected Audit Trail Storage</h4><span class="activity_pane_body"><div class="component-activity-header">FAU_STG.2/ips</div>
 				
 		TODO: You need to explain the lack of EAs for this component!!!!
 	
@@ -743,11 +743,11 @@ The following sections list Common Criteria and technology terms used in this do
 				
 				
 				
-			<div class="eacategory">TSS</div><div class="ea"><div class="ea">The evaluator shall ensure that the TSS identifies how IPS data is protected from unauthorized modification and deletion.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall confirm the guidance documentation describes how to protect IPS data from unauthorized modification and deletion.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall devise tests that demonstrate that IPS data can be protected from unauthorized modification and deletion.</div></div></span></div><div class="comp" id="FAU-STG-4-IPS"><h4>FAU_STG.4/ips Prevention of Audit Data Loss</h4><span class="activity_pane_body"><div class="component-activity-header">FAU_STG.4/ips</div>
+			<div class="eacategory">TSS</div><div class="ea"><div class="ea">The evaluator shall ensure that the TSS identifies how IPS data is protected from unauthorized modification and deletion.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall confirm the guidance documentation describes how to protect IPS data from unauthorized modification and deletion.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall devise tests that demonstrate that IPS data can be protected from unauthorized modification and deletion.</div></div></span></div><div class="comp" id="FAU-STG-5-IPS"><h4>FAU_STG.5/ips Prevention of Audit Data Loss</h4><span class="activity_pane_body"><div class="component-activity-header">FAU_STG.5/ips</div>
 				
 				
 				
-				<div class="eacategory">TSS</div><div class="ea"><div class="ea">The evaluator shall ensure that the TSS identifies how IPS data logging is handled once the IPS data trail is full.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall confirm the guidance documentation describes any steps involved to manage IPS data logging when the IPS audit trail is full.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">There are no test EAs for this component.</div></div></span></div><h2 class="indexable" data-level="2" id="fpt">2.3.2 Protection of the TSF (FPT)</h2><div class="comp" id="FPT-FLS.1"><h4>FPT_FLS.1 Failure with Preservation of Secure State</h4><span class="activity_pane_body"><div class="component-activity-header">FPT_FLS.1</div>
+				<div class="eacategory">TSS</div><div class="ea"><div class="ea">The evaluator shall ensure that the TSS identifies how IPS data logging is handled once the IPS data trail is full.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">The evaluator shall confirm the guidance documentation describes any steps involved to manage IPS data logging when the IPS audit trail is full.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">There are no test EAs for this component.</div></div></span></div><h2 class="indexable" data-level="2" id="fpt">2.3.2 Protection of the TSF (FPT)</h2><div class="comp" id="FPT-FLS-1-IPS"><h4>FPT_FLS.1/ips Failure with Preservation of Secure State</h4><span class="activity_pane_body"><div class="component-activity-header">FPT_FLS.1/ips</div>
 	
 	<div class="eacategory">TSS</div><div class="ea"><div class="ea">The evaluator shall examine the TSS section to determine that the TOE’s implementation of the fail secure
 	functionality is documented. The evaluator shall ensure that the TSS identifies all failures that will result
@@ -840,7 +840,7 @@ in the administrative guidance) to be recorded. </li>
 multiple attributes, logical expressions using attributes) then the evaluator shall devise tests showing that
 this capability is correctly implemented. The evaluator shall also, in the test plan, provide a short narrative
 justifying the set of tests as representative and sufficient to exercise the capability.</li></ul></span>
-		</div></div></span></div><h2 class="indexable" data-level="1" id="impl-sfrs-">2.6 Evaluation Activities for Implementation-dependent SFRs</h2><h2 class="indexable" data-level="2" id="fru-imp_dep">2.6.1 Resource Utilization</h2><div class="comp" id="FRU-RSA.1"><h4>FRU_RSA.1 Maximum Quotas</h4><span class="activity_pane_body"><div class="component-activity-header">FRU_RSA.1</div>
+		</div></div></span></div><h2 class="indexable" data-level="1" id="impl-sfrs-">2.6 Evaluation Activities for Implementation-dependent SFRs</h2><h2 class="indexable" data-level="2" id="fru-imp_dep">2.6.1 Resource Utilization</h2><div class="comp" id="FRU-RSA-1"><h4>FRU_RSA.1 Maximum Quotas</h4><span class="activity_pane_body"><div class="component-activity-header">FRU_RSA.1</div>
 			
 			
 			<div class="eacategory">TSS</div><div class="ea"><div class="ea">The evaluator shall examine the TSS to ensure that it identifies all resources controlled through the quota
