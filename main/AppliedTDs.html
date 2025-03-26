@@ -1387,50 +1387,50 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 				</ul>
 				</div></div>
 				<div class="element"><div class="reqid" id="IPS_SBD_EXT.1.3"><a href="#IPS_SBD_EXT.1.3" class="abbr">IPS_SBD_EXT.1.3</a></div><div class="reqdesc">
-				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to detect the following header-based signatures (using fields identified in <a href="#IPS_SBD_EXT.1.1">IPS_SBD_EXT.1.1</a>) at <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> sensor interfaces: [
+				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to detect the following header-based signatures (using fields identified in <a href="#IPS_SBD_EXT.1.1">IPS_SBD_EXT.1.1</a>) at <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> sensor interfaces: 
 				<ol type="a">
-					<li><i>IP Attacks
+					<li>IP Attacks
 						<ol type="i">
 							<li>IP Fragments Overlap (Teardrop attack, Bonk attack, or Boink attack)</li>
 							<li>IP source address equal to the IP destination (Land attack)</li>
 						</ol>
-					</i></li>
-					<li><i><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> Attacks
+					</li>
+					<li><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> Attacks
 						<ol type="i">
 							<li>Fragmented <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> Traffic (e.g. Nuke attack)</li>
 							<li>Large <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> Traffic (Ping of Death attack)</li>
 						</ol>
-					</i></li>
-					<li><i><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> Attacks
+					</li>
+					<li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> Attacks
 						<ol type="i">
 							<li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> NULL flags</li>
 							<li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> SYN+FIN flags</li>
 							<li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> FIN only flags</li>
 							<li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> SYN+RST flags</li>
 						</ol>
-					</i></li>
-					<li><i><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> Attacks</i>
+					</li>
+					<li><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> Attacks
 						<ol type="i">
 							<li><i><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> Bomb Attack</i></li>
-							<li><i><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> Chargen <abbr class="dyn-abbr"><a href="#abbr_DDoS">DDoS</a></abbr> Attack</i>].</li>
+							<li><i><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> Chargen <abbr class="dyn-abbr"><a href="#abbr_DDoS">DDoS</a></abbr> Attack</i>.</li>
 						</ol>
 					</li>
-				</ol>
+				</ol>.
                 </div></div>
-				<div class="element"><div class="reqid" id="IPS_SBD_EXT.1.4"><a href="#IPS_SBD_EXT.1.4" class="abbr">IPS_SBD_EXT.1.4</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to detect all the following traffic-pattern detection signatures, and to have these signatures applied to <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> sensor interfaces: [
+				<div class="element"><div class="reqid" id="IPS_SBD_EXT.1.4"><a href="#IPS_SBD_EXT.1.4" class="abbr">IPS_SBD_EXT.1.4</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to detect all the following traffic-pattern detection signatures, and to have these signatures applied to <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> sensor interfaces: 
 					<ol type="a">
-						<li><i>Flooding a host (<abbr class="dyn-abbr"><a href="#abbr_DoS">DoS</a></abbr> attack)
+						<li>Flooding a host (<abbr class="dyn-abbr"><a href="#abbr_DoS">DoS</a></abbr> attack)
 							<ol type="i">
 								<li><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> flooding (Smurf attack, and ping flood)</li>
 								<li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> flooding (e.g. SYN flood)</li>
-							</ol></i></li>
-						<li><i>Flooding a network (<abbr class="dyn-abbr"><a href="#abbr_DoS">DoS</a></abbr> attack)</i></li>
-						<li><i>Protocol and port scanning</i>
+							</ol></li>
+						<li>Flooding a network (<abbr class="dyn-abbr"><a href="#abbr_DoS">DoS</a></abbr> attack)</li>
+						<li>Protocol and port scanning
 							<ol type="i">
-								<li><i>IP protocol scanning</i></li>
-								<li><i><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> port scanning</i></li>
-								<li><i><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> port scanning</i></li>
-								<li><i><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> scanning</i>].</li>
+								<li>IP protocol scanning</li>
+								<li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> port scanning</li>
+								<li><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> port scanning</li>
+								<li><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> scanning.</li>
 							</ol></li>
 					</ol>
                 <div class="appnote"><span class="note-header">Application
@@ -1470,11 +1470,11 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 				<div class="element"><div class="reqid" id="IPS_SBD_EXT.1.5"><a href="#IPS_SBD_EXT.1.5" class="abbr">IPS_SBD_EXT.1.5</a></div><div class="reqdesc">
 				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow the following operations to be associated with signaturebased <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies:
 				<ul>
-					<li>In any mode, for any sensor interface:[<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_47">allow the traffic flow;</span></li><li style=""><span class="selectable-content" id="_s_48">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the source address of the offending traffic;</span></li><li style=""><span class="selectable-content" id="_s_49">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the destination address of the offending traffic;</span></li><li style=""><span class="selectable-content" id="_s_50">send an <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>[<b>selection</b>: <span class="selectable-content" id="_s_51">host</span>, <span class="selectable-content" id="_s_52">destination</span>, <span class="selectable-content" id="_s_53">port</span>]unreachable message;</span></li><li style=""><span class="selectable-content" id="_s_54">trigger a non-TOE network device to block the offending traffic pattern</span></li></ul>]</li>
+					<li>In any mode, for any sensor interface: [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_47">allow the traffic flow;</span></li><li style=""><span class="selectable-content" id="_s_48">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the source address of the offending traffic;</span></li><li style=""><span class="selectable-content" id="_s_49">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the destination address of the offending traffic;</span></li><li style=""><span class="selectable-content" id="_s_50">send an <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>[<b>selection</b>: <span class="selectable-content" id="_s_51">host</span>, <span class="selectable-content" id="_s_52">destination</span>, <span class="selectable-content" id="_s_53">port</span>]unreachable message;</span></li><li style=""><span class="selectable-content" id="_s_54">trigger a non-TOE network device to block the offending traffic pattern</span></li></ul>]</li>
 					<li>In inline mode:
 						<ul>
 							<li>block/drop the traffic flow;</li>
-							<li>and[<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_55">allow all traffic flow;</span></li><li style=""><span class="selectable-content" id="_s_56">allow the traffic flow with following exceptions:[<b>assignment</b>: 
+							<li>and [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_55">allow all traffic flow;</span></li><li style=""><span class="selectable-content" id="_s_56">allow the traffic flow with following exceptions:[<b>assignment</b>: 
      <span class="assignable-content">malicious traffic such as but not limited to IPS_EXT.1.3 and IPS_EXT.1.4 if always dropped</span>];</span></li><li style=""><span class="selectable-content" id="_s_57">modify and forward packets before they pass through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span></li></ul>].</li>
 						</ul>
 					</li>
@@ -1616,7 +1616,11 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 	  </td></tr></table><h3 id="conobj-ND" class="indexable" data-level="3">6.1.3 
 			Consistency of OE Objectives
 		</h3><p>The objectives for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s operational environment are consistent with the NDcPP based on the following rationale: <table><caption><span class="ctr" data-myid="t-con-oe-objs" data-counter-type="ct-Table" id="t-con-oe-objs">Table <span class="counter">5</span></span>: Consistency of <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objectives (NDcPP base)
-		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objective</th><th>Consistency Rationale</th></tr><tr><td><a href="#OE.CONNECTIONS">OE.CONNECTIONS</a></td><td></td></tr></table></p><h3 id="conreq-ND" class="indexable" data-level="3">6.1.4 
+		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objective</th><th>Consistency Rationale</th></tr><tr><td><a href="#OE.CONNECTIONS">OE.CONNECTIONS</a></td><td>This objective expects the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to be deployed in a network architecture that
+    		insures that network traffic cannot be routed in a way that allows it to
+    		bypass the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s inspection interfaces. This does not interfere with any of
+    		the environmental objectives in the NDcPP because the NDcPP doesn’t have
+    		any objectives that relate to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s position in a network architecture.</td></tr></table></p><h3 id="conreq-ND" class="indexable" data-level="3">6.1.4 
 	Consistency of Requirements
       </h3>
       This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> identifies several <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> from the

@@ -1318,93 +1318,92 @@ enforce its policies on network traffic of monitored networks<a id="period_127" 
 				</ul>
 				</div></div>
 				<div class="element"><div class="reqid" id="IPS_SBD_EXT.1.3"><a href="#IPS_SBD_EXT.1.3" class="abbr">IPS_SBD_EXT.1.3</a></div><div class="reqdesc">
-				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to detect the following header-based signatures (using fields identified in <a href="#IPS_SBD_EXT.1.1">IPS_SBD_EXT.1.1</a>) at <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> sensor interfaces: [
+				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to detect the following header-based signatures (using fields identified in <a href="#IPS_SBD_EXT.1.1">IPS_SBD_EXT.1.1</a>) at <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> sensor interfaces: 
 				<ol type="a">
-					<li><i>IP Attacks
+					<li>IP Attacks
 						<ol type="i">
 							<li>IP Fragments Overlap (Teardrop attack, Bonk attack, or Boink attack)</li>
 							<li>IP source address equal to the IP destination (Land attack)</li>
 						</ol>
-					</i></li>
-					<li><i><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> Attacks
+					</li>
+					<li><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> Attacks
 						<ol type="i">
 							<li>Fragmented <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> Traffic (e.g<a id="period_236" href="#period_236">. </a>Nuke attack)</li>
 							<li>Large <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> Traffic (Ping of Death attack)</li>
 						</ol>
-					</i></li>
-					<li><i><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> Attacks
+					</li>
+					<li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> Attacks
 						<ol type="i">
 							<li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> NULL flags</li>
 							<li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> SYN+FIN flags</li>
 							<li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> FIN only flags</li>
 							<li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> SYN+RST flags</li>
 						</ol>
-					</i></li>
-					<li><i><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> Attacks</i>
+					</li>
+					<li><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> Attacks
 						<ol type="i">
 							<li><i><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> Bomb Attack</i></li>
-							<li><i><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> Chargen <abbr class="dyn-abbr"><a href="#abbr_DDoS">DDoS</a></abbr> Attack</i>]<a id="period_237" href="#period_237">. </a></li>
+							<li><i><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> Chargen <abbr class="dyn-abbr"><a href="#abbr_DDoS">DDoS</a></abbr> Attack</i><a id="period_237" href="#period_237">. </a></li>
 						</ol>
 					</li>
-				</ol>
-                </div></div>
-				<div class="element"><div class="reqid" id="IPS_SBD_EXT.1.4"><a href="#IPS_SBD_EXT.1.4" class="abbr">IPS_SBD_EXT.1.4</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to detect all the following traffic-pattern detection signatures, and to have these signatures applied to <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> sensor interfaces: [
+				</ol><a id="period_238" href="#period_238">. </a>                </div></div>
+				<div class="element"><div class="reqid" id="IPS_SBD_EXT.1.4"><a href="#IPS_SBD_EXT.1.4" class="abbr">IPS_SBD_EXT.1.4</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to detect all the following traffic-pattern detection signatures, and to have these signatures applied to <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> sensor interfaces: 
 					<ol type="a">
-						<li><i>Flooding a host (<abbr class="dyn-abbr"><a href="#abbr_DoS">DoS</a></abbr> attack)
+						<li>Flooding a host (<abbr class="dyn-abbr"><a href="#abbr_DoS">DoS</a></abbr> attack)
 							<ol type="i">
 								<li><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> flooding (Smurf attack, and ping flood)</li>
-								<li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> flooding (e.g<a id="period_238" href="#period_238">. </a>SYN flood)</li>
-							</ol></i></li>
-						<li><i>Flooding a network (<abbr class="dyn-abbr"><a href="#abbr_DoS">DoS</a></abbr> attack)</i></li>
-						<li><i>Protocol and port scanning</i>
+								<li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> flooding (e.g<a id="period_239" href="#period_239">. </a>SYN flood)</li>
+							</ol></li>
+						<li>Flooding a network (<abbr class="dyn-abbr"><a href="#abbr_DoS">DoS</a></abbr> attack)</li>
+						<li>Protocol and port scanning
 							<ol type="i">
-								<li><i>IP protocol scanning</i></li>
-								<li><i><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> port scanning</i></li>
-								<li><i><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> port scanning</i></li>
-								<li><i><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> scanning</i>]<a id="period_239" href="#period_239">. </a></li>
+								<li>IP protocol scanning</li>
+								<li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> port scanning</li>
+								<li><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> port scanning</li>
+								<li><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> scanning<a id="period_240" href="#period_240">. </a></li>
 							</ol></li>
 					</ol>
                 <div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note">
 				<p>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defines the minimum set of packet header fields, packet payload strings,
-					signature types, and potentially malicious traffic patterns (e.g<a id="period_240" href="#period_240">. </a>flooding and
-					scanning) that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must be able to detect<a id="period_241" href="#period_241">. </a>Valid signatures can be comprised
+					signature types, and potentially malicious traffic patterns (e.g<a id="period_241" href="#period_241">. </a>flooding and
+					scanning) that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must be able to detect<a id="period_242" href="#period_242">. </a>Valid signatures can be comprised
 					of one, some, or all attributes listed in this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>, and <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr> may support
 					inspection of additional attributes not listed in this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>, but only those listed in
-					the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> will be tested by the evaluators<a id="period_242" href="#period_242">. </a>The set of signature types, traffic
-					patterns, etc<a id="period_243" href="#period_243">. </a>identified in this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> are not intended to be an exhaustive or
+					the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> will be tested by the evaluators<a id="period_243" href="#period_243">. </a>The set of signature types, traffic
+					patterns, etc<a id="period_244" href="#period_244">. </a>identified in this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> are not intended to be an exhaustive or
 					completely representative list of malicious activity, nor is it meant to address
 					<abbr class="dyn-abbr"><a href="#abbr_DDoS">DDoS</a></abbr> attacks &#8211; the intent of this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is addressing attacks form a single source
-					IP<a id="period_244" href="#period_244">. </a></p><p>
+					IP<a id="period_245" href="#period_245">. </a></p><p>
 					Protocol and port scanning refers to reconnaissance attacks that scan target IP
 					addresses for open/listening/responsive services by targeting multiple
 					protocols/ports on one or more target IP address using obvious (sequentially
 					numbered) patterns of target protocol/port numbers or by randomizing the
 					protocol/port numbers and/or randomizing the time delays between
-					transmissions<a id="period_245" href="#period_245">. </a>					</p><p>
+					transmissions<a id="period_246" href="#period_246">. </a>					</p><p>
 					It is understood and expected that <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> product vendors will support pre-defined
 					signatures, but inspection of the efficacy of the pre-defined signatures
-					themselves is not objective of this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr><a id="period_246" href="#period_246">. </a>Instead, this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> focuses
+					themselves is not objective of this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr><a id="period_247" href="#period_247">. </a>Instead, this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> focuses
 					on the ability of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to perform detailed analysis of network traffic, and
 					those pre-defined signatures may be used during evaluation, the evaluation
-					team is expected to make use of custom-made signatures as well<a id="period_247" href="#period_247">. </a>This set of
-					signature types, traffic patterns, etc<a id="period_248" href="#period_248">. </a>has been selected to: 1) place reasonable
+					team is expected to make use of custom-made signatures as well<a id="period_248" href="#period_248">. </a>This set of
+					signature types, traffic patterns, etc<a id="period_249" href="#period_249">. </a>has been selected to: 1) place reasonable
 					boundaries around the scope of testing; and 2) provide a sufficient sampling of
 					packet contents, and traffic patterns to demonstrate the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&#8217;s ability to inspect
 					packet contents, to collect traffic pattern statistics over a period of time, and to
-					correlate collected data<a id="period_249" href="#period_249">. </a>					</p><p>An <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> sensor interface refers to any <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface to which an <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy is currently applied<a id="period_250" href="#period_250">. </a></p>
+					correlate collected data<a id="period_250" href="#period_250">. </a>					</p><p>An <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> sensor interface refers to any <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface to which an <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy is currently applied<a id="period_251" href="#period_251">. </a></p>
 					
 				</span></div></div></div>
 				<div class="element"><div class="reqid" id="IPS_SBD_EXT.1.5"><a href="#IPS_SBD_EXT.1.5" class="abbr">IPS_SBD_EXT.1.5</a></div><div class="reqdesc">
 				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow the following operations to be associated with signaturebased <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies:
 				<ul>
-					<li>In any mode, for any sensor interface:[<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_47">allow the traffic flow;</span></li><li style=""><span class="selectable-content" id="_s_48">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the source address of the offending traffic;</span></li><li style=""><span class="selectable-content" id="_s_49">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the destination address of the offending traffic;</span></li><li style=""><span class="selectable-content" id="_s_50">send an <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>[<b>selection</b>: <span class="selectable-content" id="_s_51">host</span>, <span class="selectable-content" id="_s_52">destination</span>, <span class="selectable-content" id="_s_53">port</span>]unreachable message;</span></li><li style=""><span class="selectable-content" id="_s_54">trigger a non-TOE network device to block the offending traffic pattern</span></li></ul>]</li>
+					<li>In any mode, for any sensor interface: [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_47">allow the traffic flow;</span></li><li style=""><span class="selectable-content" id="_s_48">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the source address of the offending traffic;</span></li><li style=""><span class="selectable-content" id="_s_49">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the destination address of the offending traffic;</span></li><li style=""><span class="selectable-content" id="_s_50">send an <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>[<b>selection</b>: <span class="selectable-content" id="_s_51">host</span>, <span class="selectable-content" id="_s_52">destination</span>, <span class="selectable-content" id="_s_53">port</span>]unreachable message;</span></li><li style=""><span class="selectable-content" id="_s_54">trigger a non-TOE network device to block the offending traffic pattern</span></li></ul>]</li>
 					<li>In inline mode:
 						<ul>
 							<li>block/drop the traffic flow;</li>
-							<li>and[<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_55">allow all traffic flow;</span></li><li style=""><span class="selectable-content" id="_s_56">allow the traffic flow with following exceptions:[<b>assignment</b>: 
-     <span class="assignable-content">malicious traffic such as but not limited to IPS_EXT.1.3 and IPS_EXT.1.4 if always dropped</span>];</span></li><li style=""><span class="selectable-content" id="_s_57">modify and forward packets before they pass through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span></li></ul>]<a id="period_251" href="#period_251">. </a></li>
+							<li>and [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_55">allow all traffic flow;</span></li><li style=""><span class="selectable-content" id="_s_56">allow the traffic flow with following exceptions:[<b>assignment</b>: 
+     <span class="assignable-content">malicious traffic such as but not limited to IPS_EXT.1.3 and IPS_EXT.1.4 if always dropped</span>];</span></li><li style=""><span class="selectable-content" id="_s_57">modify and forward packets before they pass through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span></li></ul>]<a id="period_252" href="#period_252">. </a></li>
 						</ul>
 					</li>
 				</ul>
@@ -1415,18 +1414,18 @@ enforce its policies on network traffic of monitored networks<a id="period_127" 
 				across an IP network and uses a remote administration interface of the remote
 				device to modify the active configuration on that device; or one in which the
 				connection between the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and the non-TOE network device does not traverse
-				an IP network<a id="period_252" href="#period_252">. </a>If the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author selects &#8220;trigger a non-TOE network device&#8230;&#8221; and
+				an IP network<a id="period_253" href="#period_253">. </a>If the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author selects &#8220;trigger a non-TOE network device&#8230;&#8221; and
 				the connection between the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and the non-TOE network device traverses an
 				IP network, the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author must ensure that the non- <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> device type is identified
 				within FTP_ITC.1.3 (of the base), and the connection between the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and the
-				remote device must be secured in accordance with FTP_ITC.1<a id="period_253" href="#period_253">. </a>In the last bullet
+				remote device must be secured in accordance with FTP_ITC.1<a id="period_254" href="#period_254">. </a>In the last bullet
 				of the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>, &#8220;modify and forward packets before they pass through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>,&#8221;
 				could include such actions as removing from packet data character strings that
 				match regular expression (regex) conditions that violate policies, such as
 				transmitting personally identifiable information or other private data (phone
-				numbers, credit-card numbers, etc.)<a id="period_254" href="#period_254">. </a></span></div></div></div>
+				numbers, credit-card numbers, etc.)<a id="period_255" href="#period_255">. </a></span></div></div></div>
 				<div class="element"><div class="reqid" id="IPS_SBD_EXT.1.6"><a href="#IPS_SBD_EXT.1.6" class="abbr">IPS_SBD_EXT.1.6</a></div><div class="reqdesc">
-				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support stream reassembly or equivalent to detect malicious payload even if it is split across multiple non-fragmented packets<a id="period_255" href="#period_255">. </a>
+				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support stream reassembly or equivalent to detect malicious payload even if it is split across multiple non-fragmented packets<a id="period_256" href="#period_256">. </a>
                 </div></div>
 				
 				</div>
@@ -1435,139 +1434,143 @@ enforce its policies on network traffic of monitored networks<a id="period_127" 
 
 	
 	<h2 id="obj-req-map" class="indexable" data-level="2">5.3 TOE Security Functional Requirements Rationale</h2><p>The following rationale provides justification for each <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, 
-    showing that the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> are suitable to address the specified threats:<br><table><caption><span class="ctr" data-myid="t-obj_map" data-counter-type="ct-Table" id="t-obj_map">Table <span class="counter">3</span></span>: <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> Rationale</caption><tr><th>Threat</th><th>Addressed by</th><th>Rationale</th></tr><tr class="major-row"><td rowspan="13"><a href="#T.NETWORK_ACCESS">T.NETWORK_&#8203;ACCESS</a><br></td><td><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a></td><td>This requirement mitigates the threat of network access by providing a log of network activity that could aid in detecting attempts to realize this threat<a id="period_256" href="#period_256">. </a></td></tr>
-<tr><td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td>This requirement mitigates the threat of network access by providing a mechanism to configure the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>'s ability to detect attempts to realize this threat<a id="period_257" href="#period_257">. </a></td></tr>
-<tr><td><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td>This requirement mitigates the threat of network access by providing a mechanism to restrict network traffic that originates from a particular source<a id="period_258" href="#period_258">. </a></td></tr>
-<tr><td><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td>This requirement mitigates the threat of network access by defining the network traffic the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> is able to examine to determine the potential realization of a threat<a id="period_259" href="#period_259">. </a></td></tr>
-<tr><td>FAU_STG.2/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by ensuring that records of stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data cannot be read without authorization or modified by any subject so as not to falsely disclose the history of activity observed on the network<a id="period_260" href="#period_260">. </a></td></tr>
-<tr><td>FAU_STG.5/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by providing a predictable mechanism for how storage of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data is prioritized in the event that insufficient storage is available, allowing for the administrator to have adequate warning of the limitations of the collection process<a id="period_261" href="#period_261">. </a></td></tr>
-<tr><td><a href="#FPT_FLS.1">FPT_FLS.1</a>/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by implementing a mechanism that allows the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to fail closed so that network traffic is not transmitted without inspection in the event that its inspection functionality is unavailable<a id="period_262" href="#period_262">. </a></td></tr>
-<tr><td><a href="#IPS_SBD_EXT.2">IPS_SBD_EXT.2</a> (optional)</td><td>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets<a id="period_263" href="#period_263">. </a></td></tr>
-<tr><td><a href="#FAU_ARP.1">FAU_ARP.1</a> (objective)</td><td>This requirement mitigates the threat by generating an alert in response to the detection of suspicious network events, allowing for timely analysis of potential threats<a id="period_264" href="#period_264">. </a></td></tr>
-<tr><td><a href="#FAU_SAR.1">FAU_SAR.1</a> (objective)</td><td>This requirement mitigates the threat by providing authorized subjects with a means to review stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data for detection of potential threats<a id="period_265" href="#period_265">. </a></td></tr>
-<tr><td><a href="#FAU_SAR.2">FAU_SAR.2</a> (objective)</td><td>This requirement mitigates the threat by providing a mechanism to review stored network data for administrative analysis<a id="period_266" href="#period_266">. </a></td></tr>
-<tr><td><a href="#FAU_SAR.3">FAU_SAR.3</a> (objective)</td><td>This requirement mitigates the threat by enforcing restrictions on the subjects that can review stored network data so that this is not disclosed to untrusted or potentially malicious subjects<a id="period_267" href="#period_267">. </a></td></tr>
-<tr><td><a href="#FRU_RSA.1">FRU_RSA.1</a> (implementation-based)</td><td>This requirement mitigates the threat by enforcing network traffic quotas so that network traffic is not transmitted through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> without analysis<a id="period_268" href="#period_268">. </a></td></tr>
-<tr class="major-row"><td rowspan="14"><a href="#T.NETWORK_DISCLOSURE">T.NETWORK_&#8203;DISCLOSURE</a><br></td><td><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a></td><td>This requirement mitigates the threat of network disclosure by providing a log of network activity that could aid in detecting attempts to realize this threat<a id="period_269" href="#period_269">. </a></td></tr>
-<tr><td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td>This requirement mitigates the threat of network disclosure by providing a mechanism to configure the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>'s ability to detect attempts to realize this threat<a id="period_270" href="#period_270">. </a></td></tr>
-<tr><td><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td>This requirement mitigates the threat of network disclosure by providing a mechanism to restrict ingress and egress of network traffic by source or destination<a id="period_271" href="#period_271">. </a></td></tr>
-<tr><td><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td>This requirement mitigates the threat of network disclosure by defining the network traffic the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> is able to examine to determine the potential realization of a threat<a id="period_272" href="#period_272">. </a></td></tr>
-<tr><td><a href="#IPS_SBD_EXT.1">IPS_SBD_EXT.1</a></td><td>This requirement mitigates the threat of network denial of service by providing a means to detect network traffic signatures that are indicative of attemps to establish insecure or otherwise malformed sessions over a trusted protocol<a id="period_273" href="#period_273">. </a></td></tr>
-<tr><td>FAU_STG.2/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by ensuring that records of stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data cannot be read without authorization or modified by any subject so as not to falsely disclose the history of activity observed on the network<a id="period_274" href="#period_274">. </a></td></tr>
-<tr><td>FAU_STG.5/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by providing a predictable mechanism for how storage of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data is prioritized in the event that insufficient storage is available, allowing for the administrator to have adequate warning of the limitations of the collection process<a id="period_275" href="#period_275">. </a></td></tr>
-<tr><td><a href="#FPT_FLS.1">FPT_FLS.1</a>/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by implementing a mechanism that allows the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to fail closed so that network traffic is not transmitted without inspection in the event that its inspection functionality is unavailable<a id="period_276" href="#period_276">. </a></td></tr>
-<tr><td><a href="#IPS_SBD_EXT.2">IPS_SBD_EXT.2</a> (optional)</td><td>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets<a id="period_277" href="#period_277">. </a></td></tr>
-<tr><td><a href="#FAU_ARP.1">FAU_ARP.1</a> (objective)</td><td>This requirement mitigates the threat by generating an alert in response to the detection of suspicious network events, allowing for timely analysis of potential threats<a id="period_278" href="#period_278">. </a></td></tr>
-<tr><td><a href="#FAU_SAR.1">FAU_SAR.1</a> (objective)</td><td>This requirement mitigates the threat by providing authorized subjects with a means to review stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data for detection of potential threats<a id="period_279" href="#period_279">. </a></td></tr>
-<tr><td><a href="#FAU_SAR.2">FAU_SAR.2</a> (objective)</td><td>This requirement mitigates the threat by providing a mechanism to review stored network data for administrative analysis<a id="period_280" href="#period_280">. </a></td></tr>
-<tr><td><a href="#FAU_SAR.3">FAU_SAR.3</a> (objective)</td><td>This requirement mitigates the threat by enforcing restrictions on the subjects that can review stored network data so that this is not disclosed to untrusted or potentially malicious subjects<a id="period_281" href="#period_281">. </a></td></tr>
-<tr><td><a href="#FRU_RSA.1">FRU_RSA.1</a> (implementation-based)</td><td>This requirement mitigates the threat by enforcing network traffic quotas so that network traffic is not transmitted through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> without analysis<a id="period_282" href="#period_282">. </a></td></tr>
-<tr class="major-row"><td rowspan="14"><a href="#T.NETWORK_DOS">T.NETWORK_&#8203;DOS</a><br></td><td><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a></td><td>This requirement mitigates the threat of network denial of service by providing a log of network activity that could aid in detecting attempts to realize this threat<a id="period_283" href="#period_283">. </a></td></tr>
-<tr><td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td>This requirement mitigates the threat of network denial of service by providing a mechanism to configure the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>'s ability to detect attempts to realize this threat<a id="period_284" href="#period_284">. </a></td></tr>
-<tr><td><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td>This requirement mitigates the threat of network denial of service by providing a mechanism to restrict network traffic that originates from a particular source<a id="period_285" href="#period_285">. </a></td></tr>
-<tr><td><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td>This requirement mitigates the threat of network denial of service by defining the network traffic the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> is able to examine to determine the potential realization of a threat<a id="period_286" href="#period_286">. </a></td></tr>
-<tr><td><a href="#IPS_SBD_EXT.1">IPS_SBD_EXT.1</a></td><td>This requirement mitigates the threat of network denial of service by providing a means to detect network traffic signatures that are indicative of denial of service attempts<a id="period_287" href="#period_287">. </a></td></tr>
-<tr><td>FAU_STG.2/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by ensuring that records of stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data cannot be read without authorization or modified by any subject so as not to falsely disclose the history of activity observed on the network<a id="period_288" href="#period_288">. </a></td></tr>
-<tr><td>FAU_STG.5/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by providing a predictable mechanism for how storage of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data is prioritized in the event that insufficient storage is available, allowing for the administrator to have adequate warning of the limitations of the collection process<a id="period_289" href="#period_289">. </a></td></tr>
-<tr><td><a href="#FPT_FLS.1">FPT_FLS.1</a>/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by implementing a mechanism that allows the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to fail closed so that network traffic is not transmitted without inspection in the event that its inspection functionality is unavailable<a id="period_290" href="#period_290">. </a></td></tr>
-<tr><td><a href="#IPS_SBD_EXT.2">IPS_SBD_EXT.2</a> (optional)</td><td>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets<a id="period_291" href="#period_291">. </a></td></tr>
-<tr><td><a href="#FAU_ARP.1">FAU_ARP.1</a> (objective)</td><td>This requirement mitigates the threat by generating an alert in response to the detection of suspicious network events, allowing for timely analysis of potential threats<a id="period_292" href="#period_292">. </a></td></tr>
-<tr><td><a href="#FAU_SAR.1">FAU_SAR.1</a> (objective)</td><td>This requirement mitigates the threat by providing authorized subjects with a means to review stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data for detection of potential threats<a id="period_293" href="#period_293">. </a></td></tr>
-<tr><td><a href="#FAU_SAR.2">FAU_SAR.2</a> (objective)</td><td>This requirement mitigates the threat by providing a mechanism to review stored network data for administrative analysis<a id="period_294" href="#period_294">. </a></td></tr>
-<tr><td><a href="#FAU_SAR.3">FAU_SAR.3</a> (objective)</td><td>This requirement mitigates the threat by enforcing restrictions on the subjects that can review stored network data so that this is not disclosed to untrusted or potentially malicious subjects<a id="period_295" href="#period_295">. </a></td></tr>
-<tr><td><a href="#FRU_RSA.1">FRU_RSA.1</a> (implementation-based)</td><td>This requirement mitigates the threat by enforcing network traffic quotas so that network traffic is not transmitted through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> without analysis<a id="period_296" href="#period_296">. </a></td></tr>
-<tr class="major-row"><td rowspan="14"><a href="#T.NETWORK_MISUSE">T.NETWORK_&#8203;MISUSE</a><br></td><td><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a></td><td>This requirement mitigates the threat of network misuse by providing a log of network activity that could aid in detecting attempts to realize this threat<a id="period_297" href="#period_297">. </a></td></tr>
-<tr><td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td>This requirement mitigates the threat of network misuse by providing a mechanism to configure the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>'s ability to detect attempts to realize this threat<a id="period_298" href="#period_298">. </a></td></tr>
-<tr><td><a href="#IPS_ABD_EXT.1">IPS_ABD_EXT.1</a></td><td>This requirement mitigates the threat of network misuse by providing a mechanism to detect anomalous activity that may indicate network misuse<a id="period_299" href="#period_299">. </a></td></tr>
-<tr><td><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td>This requirement mitigates the threat of network misuse by providing a mechanism to restrict network traffic that originates from within a protected network and is bound for an untrusted source, which may indicate compromise or misuse of a protected resource<a id="period_300" href="#period_300">. </a></td></tr>
-<tr><td><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td>This requirement mitigates the threat of network misuse by defining the network traffic the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> is able to examine to determine the potential realization of a threat<a id="period_301" href="#period_301">. </a></td></tr>
-<tr><td>FAU_STG.2/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by ensuring that records of stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data cannot be read without authorization or modified by any subject so as not to falsely disclose the history of activity observed on the network<a id="period_302" href="#period_302">. </a></td></tr>
-<tr><td>FAU_STG.5/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by providing a predictable mechanism for how storage of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data is prioritized in the event that insufficient storage is available, allowing for the administrator to have adequate warning of the limitations of the collection process<a id="period_303" href="#period_303">. </a></td></tr>
-<tr><td><a href="#FPT_FLS.1">FPT_FLS.1</a>/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by implementing a mechanism that allows the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to fail closed so that network traffic is not transmitted without inspection in the event that its inspection functionality is unavailable<a id="period_304" href="#period_304">. </a></td></tr>
-<tr><td><a href="#IPS_SBD_EXT.2">IPS_SBD_EXT.2</a> (optional)</td><td>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets<a id="period_305" href="#period_305">. </a></td></tr>
-<tr><td><a href="#FAU_ARP.1">FAU_ARP.1</a> (objective)</td><td>This requirement mitigates the threat by generating an alert in response to the detection of suspicious network events, allowing for timely analysis of potential threats<a id="period_306" href="#period_306">. </a></td></tr>
-<tr><td><a href="#FAU_SAR.1">FAU_SAR.1</a> (objective)</td><td>This requirement mitigates the threat by providing authorized subjects with a means to review stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data for detection of potential threats<a id="period_307" href="#period_307">. </a></td></tr>
-<tr><td><a href="#FAU_SAR.2">FAU_SAR.2</a> (objective)</td><td>This requirement mitigates the threat by providing a mechanism to review stored network data for administrative analysis<a id="period_308" href="#period_308">. </a></td></tr>
-<tr><td><a href="#FAU_SAR.3">FAU_SAR.3</a> (objective)</td><td>This requirement mitigates the threat by enforcing restrictions on the subjects that can review stored network data so that this is not disclosed to untrusted or potentially malicious subjects<a id="period_309" href="#period_309">. </a></td></tr>
-<tr><td><a href="#FRU_RSA.1">FRU_RSA.1</a> (implementation-based)</td><td>This requirement mitigates the threat by enforcing network traffic quotas so that network traffic is not transmitted through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> without analysis<a id="period_310" href="#period_310">. </a></td></tr>
+    showing that the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> are suitable to address the specified threats:<br><table><caption><span class="ctr" data-myid="t-obj_map" data-counter-type="ct-Table" id="t-obj_map">Table <span class="counter">3</span></span>: <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> Rationale</caption><tr><th>Threat</th><th>Addressed by</th><th>Rationale</th></tr><tr class="major-row"><td rowspan="13"><a href="#T.NETWORK_ACCESS">T.NETWORK_&#8203;ACCESS</a><br></td><td><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a></td><td>This requirement mitigates the threat of network access by providing a log of network activity that could aid in detecting attempts to realize this threat<a id="period_257" href="#period_257">. </a></td></tr>
+<tr><td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td>This requirement mitigates the threat of network access by providing a mechanism to configure the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>'s ability to detect attempts to realize this threat<a id="period_258" href="#period_258">. </a></td></tr>
+<tr><td><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td>This requirement mitigates the threat of network access by providing a mechanism to restrict network traffic that originates from a particular source<a id="period_259" href="#period_259">. </a></td></tr>
+<tr><td><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td>This requirement mitigates the threat of network access by defining the network traffic the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> is able to examine to determine the potential realization of a threat<a id="period_260" href="#period_260">. </a></td></tr>
+<tr><td>FAU_STG.2/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by ensuring that records of stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data cannot be read without authorization or modified by any subject so as not to falsely disclose the history of activity observed on the network<a id="period_261" href="#period_261">. </a></td></tr>
+<tr><td>FAU_STG.5/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by providing a predictable mechanism for how storage of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data is prioritized in the event that insufficient storage is available, allowing for the administrator to have adequate warning of the limitations of the collection process<a id="period_262" href="#period_262">. </a></td></tr>
+<tr><td><a href="#FPT_FLS.1">FPT_FLS.1</a>/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by implementing a mechanism that allows the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to fail closed so that network traffic is not transmitted without inspection in the event that its inspection functionality is unavailable<a id="period_263" href="#period_263">. </a></td></tr>
+<tr><td><a href="#IPS_SBD_EXT.2">IPS_SBD_EXT.2</a> (optional)</td><td>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets<a id="period_264" href="#period_264">. </a></td></tr>
+<tr><td><a href="#FAU_ARP.1">FAU_ARP.1</a> (objective)</td><td>This requirement mitigates the threat by generating an alert in response to the detection of suspicious network events, allowing for timely analysis of potential threats<a id="period_265" href="#period_265">. </a></td></tr>
+<tr><td><a href="#FAU_SAR.1">FAU_SAR.1</a> (objective)</td><td>This requirement mitigates the threat by providing authorized subjects with a means to review stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data for detection of potential threats<a id="period_266" href="#period_266">. </a></td></tr>
+<tr><td><a href="#FAU_SAR.2">FAU_SAR.2</a> (objective)</td><td>This requirement mitigates the threat by providing a mechanism to review stored network data for administrative analysis<a id="period_267" href="#period_267">. </a></td></tr>
+<tr><td><a href="#FAU_SAR.3">FAU_SAR.3</a> (objective)</td><td>This requirement mitigates the threat by enforcing restrictions on the subjects that can review stored network data so that this is not disclosed to untrusted or potentially malicious subjects<a id="period_268" href="#period_268">. </a></td></tr>
+<tr><td><a href="#FRU_RSA.1">FRU_RSA.1</a> (implementation-based)</td><td>This requirement mitigates the threat by enforcing network traffic quotas so that network traffic is not transmitted through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> without analysis<a id="period_269" href="#period_269">. </a></td></tr>
+<tr class="major-row"><td rowspan="14"><a href="#T.NETWORK_DISCLOSURE">T.NETWORK_&#8203;DISCLOSURE</a><br></td><td><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a></td><td>This requirement mitigates the threat of network disclosure by providing a log of network activity that could aid in detecting attempts to realize this threat<a id="period_270" href="#period_270">. </a></td></tr>
+<tr><td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td>This requirement mitigates the threat of network disclosure by providing a mechanism to configure the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>'s ability to detect attempts to realize this threat<a id="period_271" href="#period_271">. </a></td></tr>
+<tr><td><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td>This requirement mitigates the threat of network disclosure by providing a mechanism to restrict ingress and egress of network traffic by source or destination<a id="period_272" href="#period_272">. </a></td></tr>
+<tr><td><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td>This requirement mitigates the threat of network disclosure by defining the network traffic the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> is able to examine to determine the potential realization of a threat<a id="period_273" href="#period_273">. </a></td></tr>
+<tr><td><a href="#IPS_SBD_EXT.1">IPS_SBD_EXT.1</a></td><td>This requirement mitigates the threat of network denial of service by providing a means to detect network traffic signatures that are indicative of attemps to establish insecure or otherwise malformed sessions over a trusted protocol<a id="period_274" href="#period_274">. </a></td></tr>
+<tr><td>FAU_STG.2/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by ensuring that records of stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data cannot be read without authorization or modified by any subject so as not to falsely disclose the history of activity observed on the network<a id="period_275" href="#period_275">. </a></td></tr>
+<tr><td>FAU_STG.5/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by providing a predictable mechanism for how storage of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data is prioritized in the event that insufficient storage is available, allowing for the administrator to have adequate warning of the limitations of the collection process<a id="period_276" href="#period_276">. </a></td></tr>
+<tr><td><a href="#FPT_FLS.1">FPT_FLS.1</a>/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by implementing a mechanism that allows the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to fail closed so that network traffic is not transmitted without inspection in the event that its inspection functionality is unavailable<a id="period_277" href="#period_277">. </a></td></tr>
+<tr><td><a href="#IPS_SBD_EXT.2">IPS_SBD_EXT.2</a> (optional)</td><td>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets<a id="period_278" href="#period_278">. </a></td></tr>
+<tr><td><a href="#FAU_ARP.1">FAU_ARP.1</a> (objective)</td><td>This requirement mitigates the threat by generating an alert in response to the detection of suspicious network events, allowing for timely analysis of potential threats<a id="period_279" href="#period_279">. </a></td></tr>
+<tr><td><a href="#FAU_SAR.1">FAU_SAR.1</a> (objective)</td><td>This requirement mitigates the threat by providing authorized subjects with a means to review stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data for detection of potential threats<a id="period_280" href="#period_280">. </a></td></tr>
+<tr><td><a href="#FAU_SAR.2">FAU_SAR.2</a> (objective)</td><td>This requirement mitigates the threat by providing a mechanism to review stored network data for administrative analysis<a id="period_281" href="#period_281">. </a></td></tr>
+<tr><td><a href="#FAU_SAR.3">FAU_SAR.3</a> (objective)</td><td>This requirement mitigates the threat by enforcing restrictions on the subjects that can review stored network data so that this is not disclosed to untrusted or potentially malicious subjects<a id="period_282" href="#period_282">. </a></td></tr>
+<tr><td><a href="#FRU_RSA.1">FRU_RSA.1</a> (implementation-based)</td><td>This requirement mitigates the threat by enforcing network traffic quotas so that network traffic is not transmitted through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> without analysis<a id="period_283" href="#period_283">. </a></td></tr>
+<tr class="major-row"><td rowspan="14"><a href="#T.NETWORK_DOS">T.NETWORK_&#8203;DOS</a><br></td><td><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a></td><td>This requirement mitigates the threat of network denial of service by providing a log of network activity that could aid in detecting attempts to realize this threat<a id="period_284" href="#period_284">. </a></td></tr>
+<tr><td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td>This requirement mitigates the threat of network denial of service by providing a mechanism to configure the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>'s ability to detect attempts to realize this threat<a id="period_285" href="#period_285">. </a></td></tr>
+<tr><td><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td>This requirement mitigates the threat of network denial of service by providing a mechanism to restrict network traffic that originates from a particular source<a id="period_286" href="#period_286">. </a></td></tr>
+<tr><td><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td>This requirement mitigates the threat of network denial of service by defining the network traffic the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> is able to examine to determine the potential realization of a threat<a id="period_287" href="#period_287">. </a></td></tr>
+<tr><td><a href="#IPS_SBD_EXT.1">IPS_SBD_EXT.1</a></td><td>This requirement mitigates the threat of network denial of service by providing a means to detect network traffic signatures that are indicative of denial of service attempts<a id="period_288" href="#period_288">. </a></td></tr>
+<tr><td>FAU_STG.2/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by ensuring that records of stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data cannot be read without authorization or modified by any subject so as not to falsely disclose the history of activity observed on the network<a id="period_289" href="#period_289">. </a></td></tr>
+<tr><td>FAU_STG.5/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by providing a predictable mechanism for how storage of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data is prioritized in the event that insufficient storage is available, allowing for the administrator to have adequate warning of the limitations of the collection process<a id="period_290" href="#period_290">. </a></td></tr>
+<tr><td><a href="#FPT_FLS.1">FPT_FLS.1</a>/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by implementing a mechanism that allows the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to fail closed so that network traffic is not transmitted without inspection in the event that its inspection functionality is unavailable<a id="period_291" href="#period_291">. </a></td></tr>
+<tr><td><a href="#IPS_SBD_EXT.2">IPS_SBD_EXT.2</a> (optional)</td><td>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets<a id="period_292" href="#period_292">. </a></td></tr>
+<tr><td><a href="#FAU_ARP.1">FAU_ARP.1</a> (objective)</td><td>This requirement mitigates the threat by generating an alert in response to the detection of suspicious network events, allowing for timely analysis of potential threats<a id="period_293" href="#period_293">. </a></td></tr>
+<tr><td><a href="#FAU_SAR.1">FAU_SAR.1</a> (objective)</td><td>This requirement mitigates the threat by providing authorized subjects with a means to review stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data for detection of potential threats<a id="period_294" href="#period_294">. </a></td></tr>
+<tr><td><a href="#FAU_SAR.2">FAU_SAR.2</a> (objective)</td><td>This requirement mitigates the threat by providing a mechanism to review stored network data for administrative analysis<a id="period_295" href="#period_295">. </a></td></tr>
+<tr><td><a href="#FAU_SAR.3">FAU_SAR.3</a> (objective)</td><td>This requirement mitigates the threat by enforcing restrictions on the subjects that can review stored network data so that this is not disclosed to untrusted or potentially malicious subjects<a id="period_296" href="#period_296">. </a></td></tr>
+<tr><td><a href="#FRU_RSA.1">FRU_RSA.1</a> (implementation-based)</td><td>This requirement mitigates the threat by enforcing network traffic quotas so that network traffic is not transmitted through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> without analysis<a id="period_297" href="#period_297">. </a></td></tr>
+<tr class="major-row"><td rowspan="14"><a href="#T.NETWORK_MISUSE">T.NETWORK_&#8203;MISUSE</a><br></td><td><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a></td><td>This requirement mitigates the threat of network misuse by providing a log of network activity that could aid in detecting attempts to realize this threat<a id="period_298" href="#period_298">. </a></td></tr>
+<tr><td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td>This requirement mitigates the threat of network misuse by providing a mechanism to configure the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>'s ability to detect attempts to realize this threat<a id="period_299" href="#period_299">. </a></td></tr>
+<tr><td><a href="#IPS_ABD_EXT.1">IPS_ABD_EXT.1</a></td><td>This requirement mitigates the threat of network misuse by providing a mechanism to detect anomalous activity that may indicate network misuse<a id="period_300" href="#period_300">. </a></td></tr>
+<tr><td><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td>This requirement mitigates the threat of network misuse by providing a mechanism to restrict network traffic that originates from within a protected network and is bound for an untrusted source, which may indicate compromise or misuse of a protected resource<a id="period_301" href="#period_301">. </a></td></tr>
+<tr><td><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td>This requirement mitigates the threat of network misuse by defining the network traffic the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> is able to examine to determine the potential realization of a threat<a id="period_302" href="#period_302">. </a></td></tr>
+<tr><td>FAU_STG.2/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by ensuring that records of stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data cannot be read without authorization or modified by any subject so as not to falsely disclose the history of activity observed on the network<a id="period_303" href="#period_303">. </a></td></tr>
+<tr><td>FAU_STG.5/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by providing a predictable mechanism for how storage of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data is prioritized in the event that insufficient storage is available, allowing for the administrator to have adequate warning of the limitations of the collection process<a id="period_304" href="#period_304">. </a></td></tr>
+<tr><td><a href="#FPT_FLS.1">FPT_FLS.1</a>/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by implementing a mechanism that allows the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to fail closed so that network traffic is not transmitted without inspection in the event that its inspection functionality is unavailable<a id="period_305" href="#period_305">. </a></td></tr>
+<tr><td><a href="#IPS_SBD_EXT.2">IPS_SBD_EXT.2</a> (optional)</td><td>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets<a id="period_306" href="#period_306">. </a></td></tr>
+<tr><td><a href="#FAU_ARP.1">FAU_ARP.1</a> (objective)</td><td>This requirement mitigates the threat by generating an alert in response to the detection of suspicious network events, allowing for timely analysis of potential threats<a id="period_307" href="#period_307">. </a></td></tr>
+<tr><td><a href="#FAU_SAR.1">FAU_SAR.1</a> (objective)</td><td>This requirement mitigates the threat by providing authorized subjects with a means to review stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data for detection of potential threats<a id="period_308" href="#period_308">. </a></td></tr>
+<tr><td><a href="#FAU_SAR.2">FAU_SAR.2</a> (objective)</td><td>This requirement mitigates the threat by providing a mechanism to review stored network data for administrative analysis<a id="period_309" href="#period_309">. </a></td></tr>
+<tr><td><a href="#FAU_SAR.3">FAU_SAR.3</a> (objective)</td><td>This requirement mitigates the threat by enforcing restrictions on the subjects that can review stored network data so that this is not disclosed to untrusted or potentially malicious subjects<a id="period_310" href="#period_310">. </a></td></tr>
+<tr><td><a href="#FRU_RSA.1">FRU_RSA.1</a> (implementation-based)</td><td>This requirement mitigates the threat by enforcing network traffic quotas so that network traffic is not transmitted through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> without analysis<a id="period_311" href="#period_311">. </a></td></tr>
 </table></p><h1 id="mod-conrat" class="indexable" data-level="1">6 Consistency Rationale</h1><h2 id="conrat-ND" class="indexable" data-level="2">6.1 Collaborative 
     Protection Profile for Network Devices</h2><h3 id="contoe-ND" class="indexable" data-level="3">6.1.1 
 	Consistency of TOE Type
       </h3>
         When this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is used to extend the NDcPP, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> type for the overall <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is still a network
-		device<a id="period_311" href="#period_311">. </a>The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> boundary is simply extended to include <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality that is provided by the network
-		device<a id="period_312" href="#period_312">. </a>      <h3 id="consecprob-ND" class="indexable" data-level="3">6.1.2 
+		device<a id="period_312" href="#period_312">. </a>The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> boundary is simply extended to include <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality that is provided by the network
+		device<a id="period_313" href="#period_313">. </a>      <h3 id="consecprob-ND" class="indexable" data-level="3">6.1.2 
 	Consistency of Security Problem Definition
       </h3>
 	  The threats defined by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> (see section 3.1) supplement those defined in the NDcPP as follows:
 	  <table><caption><span class="ctr" data-myid="t-con-sec-prob-def" data-counter-type="ct-Table" id="t-con-sec-prob-def">Table <span class="counter">4</span></span>: Consistency of Security Problem Definition (NDcPP base)
 		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> Threat, Assumption, OSP</th><th>Consistency Rationale</th></tr><tr><td><a href="#T.NETWORK_ACCESS">T.NETWORK_ACCESS</a></td><td>
 	  The NDcPP only defines a security problem that relates to network traffic
-	bound to or originating from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_313" href="#period_313">. </a>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> expands the security
+	bound to or originating from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_314" href="#period_314">. </a>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> expands the security
 	problem to include a logical interface for network traffic between two nonTOE endpoints that is intercepted (inline) or observed (promiscuous) by the
-	<abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr><a id="period_314" href="#period_314">. </a>This is not inconsistent because the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> introduces a new logical
-	interface for this functionality that is beyond the scope of the NDcPP<a id="period_315" href="#period_315">. </a>	  </td></tr><tr><td><a href="#T.NETWORK_DISCLOSURE">T.NETWORK_DISCLOSURE</a></td><td>
+	<abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr><a id="period_315" href="#period_315">. </a>This is not inconsistent because the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> introduces a new logical
+	interface for this functionality that is beyond the scope of the NDcPP<a id="period_316" href="#period_316">. </a>	  </td></tr><tr><td><a href="#T.NETWORK_DISCLOSURE">T.NETWORK_DISCLOSURE</a></td><td>
 	  The NDcPP only defines a security problem that relates to network traffic
-	  bound to or originating from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_316" href="#period_316">. </a>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> expands the security
+	  bound to or originating from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_317" href="#period_317">. </a>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> expands the security
 	  problem to include a logical interface for network traffic between two nonTOE endpoints that is intercepted (inline) or observed (promiscuous) by the
-	  <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr><a id="period_317" href="#period_317">. </a>This is not inconsistent because the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> introduces a new logical
-	  interface for this functionality that is beyond the scope of the NDcPP<a id="period_318" href="#period_318">. </a>	  </td></tr><tr><td><a href="#T.NETWORK_DOS">T.NETWORK_DOS</a></td><td>
+	  <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr><a id="period_318" href="#period_318">. </a>This is not inconsistent because the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> introduces a new logical
+	  interface for this functionality that is beyond the scope of the NDcPP<a id="period_319" href="#period_319">. </a>	  </td></tr><tr><td><a href="#T.NETWORK_DOS">T.NETWORK_DOS</a></td><td>
 	  The NDcPP only defines a security problem that relates to network traffic
-		bound to or originating from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_319" href="#period_319">. </a>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> expands the security
+		bound to or originating from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_320" href="#period_320">. </a>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> expands the security
 		problem to include a logical interface for network traffic between two nonTOE endpoints that is intercepted (inline) or observed (promiscuous) by the
-		<abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr><a id="period_320" href="#period_320">. </a>This is not inconsistent because the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> introduces a new logical
-		interface for this functionality that is beyond the scope of the NDcPP<a id="period_321" href="#period_321">. </a>	  </td></tr><tr><td><a href="#T.NETWORK_MISUSE">T.NETWORK_MISUSE</a></td><td>
+		<abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr><a id="period_321" href="#period_321">. </a>This is not inconsistent because the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> introduces a new logical
+		interface for this functionality that is beyond the scope of the NDcPP<a id="period_322" href="#period_322">. </a>	  </td></tr><tr><td><a href="#T.NETWORK_MISUSE">T.NETWORK_MISUSE</a></td><td>
 	  The NDcPP only defines a security problem that relates to network traffic
-		bound to or originating from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_322" href="#period_322">. </a>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> expands the security
+		bound to or originating from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_323" href="#period_323">. </a>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> expands the security
 		problem to include a logical interface for network traffic between two nonTOE endpoints that is intercepted (inline) or observed (promiscuous) by the
-		<abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr><a id="period_323" href="#period_323">. </a>This is not inconsistent because the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> introduces a new logical
-		interface for this functionality that is beyond the scope of the NDcPP<a id="period_324" href="#period_324">. </a>	  
+		<abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr><a id="period_324" href="#period_324">. </a>This is not inconsistent because the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> introduces a new logical
+		interface for this functionality that is beyond the scope of the NDcPP<a id="period_325" href="#period_325">. </a>	  
 	  The NDcPP only defines a security problem that relates to network traffic
-  	  bound to or originating from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_325" href="#period_325">. </a>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> expands the security
+  	  bound to or originating from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_326" href="#period_326">. </a>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> expands the security
 	  problem to include a logical interface for network traffic between two nonTOE endpoints that is intercepted (inline) or observed(promiscuous) by the
-	  <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr><a id="period_326" href="#period_326">. </a>This is not inconsistent because the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> introduces a new logical
-	  interface for this functionality that is beyond the scope of the NDcPP<a id="period_327" href="#period_327">. </a>	  </td></tr><tr><td><a href="#A.CONNECTIONS">A.CONNECTIONS</a></td><td>
+	  <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr><a id="period_327" href="#period_327">. </a>This is not inconsistent because the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> introduces a new logical
+	  interface for this functionality that is beyond the scope of the NDcPP<a id="period_328" href="#period_328">. </a>	  </td></tr><tr><td><a href="#A.CONNECTIONS">A.CONNECTIONS</a></td><td>
 	  This assumption requires a specific network configuration to ensure that
 		network traffic cannot be routed in a way that allows it to bypass the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&#8217;s
-		inspection interfaces<a id="period_328" href="#period_328">. </a>This does not interfere with any of the assumptions in the NDcPP because the NDcPP doesn&#8217;t make any assumptions about the
-		<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&#8217;s position in a network architecture<a id="period_329" href="#period_329">. </a>
+		inspection interfaces<a id="period_329" href="#period_329">. </a>This does not interfere with any of the assumptions in the NDcPP because the NDcPP doesn&#8217;t make any assumptions about the
+		<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&#8217;s position in a network architecture<a id="period_330" href="#period_330">. </a>
 	  </td></tr><tr><td><a href="#P.ANALYZE">P.ANALYZE</a></td><td>
 	  This organizational security policy does not conflict with the NDcPP because
 		it sets expectations for administrative use of the data that is specifically
-		collected by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&#8217;s <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> function<a id="period_330" href="#period_330">. </a>	  </td></tr></table><h3 id="conobj-ND" class="indexable" data-level="3">6.1.3 
+		collected by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&#8217;s <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> function<a id="period_331" href="#period_331">. </a>	  </td></tr></table><h3 id="conobj-ND" class="indexable" data-level="3">6.1.3 
 			Consistency of OE Objectives
 		</h3><p>The objectives for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&#8217;s operational environment are consistent with the NDcPP based on the following rationale: <table><caption><span class="ctr" data-myid="t-con-oe-objs" data-counter-type="ct-Table" id="t-con-oe-objs">Table <span class="counter">5</span></span>: Consistency of <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objectives (NDcPP base)
-		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objective</th><th>Consistency Rationale</th></tr><tr><td><a href="#OE.CONNECTIONS">OE.CONNECTIONS</a></td><td></td></tr></table></p><h3 id="conreq-ND" class="indexable" data-level="3">6.1.4 
+		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objective</th><th>Consistency Rationale</th></tr><tr><td><a href="#OE.CONNECTIONS">OE.CONNECTIONS</a></td><td>This objective expects the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to be deployed in a network architecture that
+    		insures that network traffic cannot be routed in a way that allows it to
+    		bypass the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&#8217;s inspection interfaces<a id="period_332" href="#period_332">. </a>This does not interfere with any of
+    		the environmental objectives in the NDcPP because the NDcPP doesn&#8217;t have
+    		any objectives that relate to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&#8217;s position in a network architecture<a id="period_333" href="#period_333">. </a></td></tr></table></p><h3 id="conreq-ND" class="indexable" data-level="3">6.1.4 
 	Consistency of Requirements
       </h3>
       This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> identifies several <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> from the
       NDcPP that are needed to support
-      <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality<a id="period_331" href="#period_331">. </a>      This is considered to be consistent because the functionality provided by the
-      NDcPP is being used for its intended purpose<a id="period_332" href="#period_332">. </a>      
+      <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality<a id="period_334" href="#period_334">. </a>      This is considered to be consistent because the functionality provided by the
+      NDcPP is being used for its intended purpose<a id="period_335" href="#period_335">. </a>      
           The rationale for why this does not conflict with the claims
       defined by the
       NDcPP are as follows:
       <table><caption><span class="ctr" data-myid="t-con-reqs" data-counter-type="ct-Table" id="t-con-reqs">Table <span class="counter">6</span></span>: Consistency of Requirements (NDcPP base)
 		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> Requirement</th><th>Consistency Rationale</th></tr><tr><th colspan="2"> Modified <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th></tr><tr><td colspan="2" style="text-align:center">
 			This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not modify any requirements when the
-			NDcPP is the base<a id="period_333" href="#period_333">. </a>		  </td></tr><tr><th colspan="2"> Additional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th></tr><tr><td colspan="2" style="text-align:center">
+			NDcPP is the base<a id="period_336" href="#period_336">. </a>		  </td></tr><tr><th colspan="2"> Additional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th></tr><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not add any requirements when the
-	      NDcPP is the base<a id="period_334" href="#period_334">. </a>	    </td></tr><tr><th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a></td><td></td></tr><tr><td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td></td></tr><tr><td><a href="#IPS_ABD_EXT.1">IPS_ABD_EXT.1</a></td><td></td></tr><tr><td><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td></td></tr><tr><td><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td></td></tr><tr><td><a href="#IPS_SBD_EXT.1">IPS_SBD_EXT.1</a></td><td></td></tr></tr><tr><th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_STG.1/ips">FAU_STG.1/ips</a></td><td></td></tr><tr><td><a href="#FAU_STG.4/ips">FAU_STG.4/ips</a></td><td></td></tr><tr><td><a href="#FPT_FLS.1">FPT_FLS.1</a></td><td></td></tr><tr><td><a href="#IPS_SBD_EXT.2">IPS_SBD_EXT.2</a></td><td></td></tr></tr><tr><th colspan="2"> Objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_ARP.1">FAU_ARP.1</a></td><td></td></tr><tr><td><a href="#FAU_SAR.1">FAU_SAR.1</a></td><td></td></tr><tr><td><a href="#FAU_SAR.2">FAU_SAR.2</a></td><td></td></tr><tr><td><a href="#FAU_SAR.3">FAU_SAR.3</a></td><td></td></tr></tr><tr><th colspan="2"> Implementation-dependent <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FRU_RSA.1">FRU_RSA.1</a></td><td></td></tr></tr><tr><th colspan="2"> Selection-based <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
-	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Selection-based requirements<a id="period_335" href="#period_335">. </a>	    </td></tr></tr></table><h1 id="opt-sfrs" class="indexable" data-level="A">Appendix A -  Optional SFRs</h1><h2 id="opt-sfrs" class="indexable" data-level="2">A.1 Strictly Optional Requirements
+	      NDcPP is the base<a id="period_337" href="#period_337">. </a>	    </td></tr><tr><th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a></td><td></td></tr><tr><td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td></td></tr><tr><td><a href="#IPS_ABD_EXT.1">IPS_ABD_EXT.1</a></td><td></td></tr><tr><td><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td></td></tr><tr><td><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td></td></tr><tr><td><a href="#IPS_SBD_EXT.1">IPS_SBD_EXT.1</a></td><td></td></tr></tr><tr><th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_STG.1/ips">FAU_STG.1/ips</a></td><td></td></tr><tr><td><a href="#FAU_STG.4/ips">FAU_STG.4/ips</a></td><td></td></tr><tr><td><a href="#FPT_FLS.1">FPT_FLS.1</a></td><td></td></tr><tr><td><a href="#IPS_SBD_EXT.2">IPS_SBD_EXT.2</a></td><td></td></tr></tr><tr><th colspan="2"> Objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_ARP.1">FAU_ARP.1</a></td><td></td></tr><tr><td><a href="#FAU_SAR.1">FAU_SAR.1</a></td><td></td></tr><tr><td><a href="#FAU_SAR.2">FAU_SAR.2</a></td><td></td></tr><tr><td><a href="#FAU_SAR.3">FAU_SAR.3</a></td><td></td></tr></tr><tr><th colspan="2"> Implementation-dependent <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FRU_RSA.1">FRU_RSA.1</a></td><td></td></tr></tr><tr><th colspan="2"> Selection-based <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
+	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Selection-based requirements<a id="period_338" href="#period_338">. </a>	    </td></tr></tr></table><h1 id="opt-sfrs" class="indexable" data-level="A">Appendix A -  Optional SFRs</h1><h2 id="opt-sfrs" class="indexable" data-level="2">A.1 Strictly Optional Requirements
     </h2>
 		<h3 class="indexable" data-level="3" id="sec-opt-audit-table">A.1.1 Auditable Events for Optional SFRs</h3>
-        <table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="at-optional" data-counter-type="ct-Table" id="at-optional">Table <span class="counter">7</span></span>: Auditable Events for Strictly Optional Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr><tr data-sortkey="FAU_STG.4/ips"><td rowspan="2"><a href="#FAU_STG.4/ips">FAU_STG.4/ips</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FAU_STG.4/ips#"><td></td></tr><tr data-sortkey="FAU_STG.4/ips.1"><td>A local audit store reaches its storage limit<a id="period_336" href="#period_336">. </a></td><td>Indication that the audit store is full, and (if configurable) how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is responding (e.g<a id="period_337" href="#period_337">. </a>failing to audit new auditable events, or </td></tr><tr data-sortkey="FPT_FLS.1"><td rowspan="2"><a href="#FPT_FLS.1">FPT_FLS.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FPT_FLS.1#"><td></td></tr><tr data-sortkey="FPT_FLS.1.1"><td>A local audit store reaches its storage limit<a id="period_338" href="#period_338">. </a></td><td>Indication that the audit store is full, and (if configurable) how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is responding (e.g<a id="period_339" href="#period_339">. </a>failing to audit new auditable events, or </td></tr><tr data-sortkey="IPS_SBD_EXT.2"><td rowspan="4"><a href="#IPS_SBD_EXT.2">IPS_SBD_EXT.2</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="IPS_SBD_EXT.2#"><td></td></tr><tr data-sortkey="IPS_SBD_EXT.2.3"><td>Inspection of encapsulated packets<a id="period_340" href="#period_340">. </a></td><td>Indication of the encapsulation method<a id="period_341" href="#period_341">. </a></td></tr><tr data-sortkey="IPS_SBD_EXT.2.4"><td>Failure to re-assemble a fragmented packet<a id="period_342" href="#period_342">. </a></td><td><ul><li>Source and destination IP addresses<a id="period_343" href="#period_343">. </a></li><li><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface that received the fragment(s)<a id="period_344" href="#period_344">. </a></li></ul></td></tr><tr data-sortkey="IPS_SBD_EXT.2.5"><td>Normalization of traffic by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_345" href="#period_345">. </a></td><td><ul><li>Source and destination IP addresses of discarded packet(s)<a id="period_346" href="#period_346">. </a></li><li><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface that received the packet(s)</li></ul></td></tr></table>
+        <table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="at-optional" data-counter-type="ct-Table" id="at-optional">Table <span class="counter">7</span></span>: Auditable Events for Strictly Optional Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr><tr data-sortkey="FAU_STG.4/ips"><td rowspan="2"><a href="#FAU_STG.4/ips">FAU_STG.4/ips</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FAU_STG.4/ips#"><td></td></tr><tr data-sortkey="FAU_STG.4/ips.1"><td>A local audit store reaches its storage limit<a id="period_339" href="#period_339">. </a></td><td>Indication that the audit store is full, and (if configurable) how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is responding (e.g<a id="period_340" href="#period_340">. </a>failing to audit new auditable events, or </td></tr><tr data-sortkey="FPT_FLS.1"><td rowspan="2"><a href="#FPT_FLS.1">FPT_FLS.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FPT_FLS.1#"><td></td></tr><tr data-sortkey="FPT_FLS.1.1"><td>A local audit store reaches its storage limit<a id="period_341" href="#period_341">. </a></td><td>Indication that the audit store is full, and (if configurable) how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is responding (e.g<a id="period_342" href="#period_342">. </a>failing to audit new auditable events, or </td></tr><tr data-sortkey="IPS_SBD_EXT.2"><td rowspan="4"><a href="#IPS_SBD_EXT.2">IPS_SBD_EXT.2</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="IPS_SBD_EXT.2#"><td></td></tr><tr data-sortkey="IPS_SBD_EXT.2.3"><td>Inspection of encapsulated packets<a id="period_343" href="#period_343">. </a></td><td>Indication of the encapsulation method<a id="period_344" href="#period_344">. </a></td></tr><tr data-sortkey="IPS_SBD_EXT.2.4"><td>Failure to re-assemble a fragmented packet<a id="period_345" href="#period_345">. </a></td><td><ul><li>Source and destination IP addresses<a id="period_346" href="#period_346">. </a></li><li><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface that received the fragment(s)<a id="period_347" href="#period_347">. </a></li></ul></td></tr><tr data-sortkey="IPS_SBD_EXT.2.5"><td>Normalization of traffic by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_348" href="#period_348">. </a></td><td><ul><li>Source and destination IP addresses of discarded packet(s)<a id="period_349" href="#period_349">. </a></li><li><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface that received the packet(s)</li></ul></td></tr></table>
       
 	<h3 id="fau-ops" class="indexable" data-level="3">A.1.2 Security Audit(FAU)</h3>
 			<div class="comp" id="FAU_STG.1/ips"><h4>FAU_STG.1/ips Protected Audit Trail Storage</h4>
-			<div class="element"><div class="reqid" id="FAU_STG.1.1/ips"><a href="#FAU_STG.1.1/ips" class="abbr">FAU_STG.1.1/ips</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall protect the stored <s>audit records </s><b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b> from unauthorized deletion<a id="period_347" href="#period_347">. </a></div></div>
-			<div class="element"><div class="reqid" id="FAU_STG.1.2/ips"><a href="#FAU_STG.1.2/ips" class="abbr">FAU_STG.1.2/ips</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to [<i>prevent</i>] unauthorized modifications to the <s>stored audit records</s> <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b> <s>in the audit trail</s><a id="period_348" href="#period_348">. </a></div></div>
+			<div class="element"><div class="reqid" id="FAU_STG.1.1/ips"><a href="#FAU_STG.1.1/ips" class="abbr">FAU_STG.1.1/ips</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall protect the stored <s>audit records </s><b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b> from unauthorized deletion<a id="period_350" href="#period_350">. </a></div></div>
+			<div class="element"><div class="reqid" id="FAU_STG.1.2/ips"><a href="#FAU_STG.1.2/ips" class="abbr">FAU_STG.1.2/ips</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to [<i>prevent</i>] unauthorized modifications to the <s>stored audit records</s> <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b> <s>in the audit trail</s><a id="period_351" href="#period_351">. </a></div></div>
 			
 			</div>
 			<div class="comp" id="FAU_STG.4/ips"><h4>FAU_STG.4/ips Prevention of Audit Data Loss</h4>
 			<div class="element"><div class="reqid" id="FAU_STG.4.1/ips"><a href="#FAU_STG.4.1/ips" class="abbr">FAU_STG.4.1/ips</a></div><div class="reqdesc">
 			The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall <b>be able to</b>
-				[<b>selection</b>: <span class="selectable-content" id="_s_58">ignore <s>audited</s> <b>generation of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr></b> events <b>that would otherwise be generated</b></span>, <span class="selectable-content" id="_s_59">prevent audited <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr></b> events</span>, <span class="selectable-content" id="_s_60"><s>except those taken by the authorized user with special rights</s></span>, <span class="selectable-content" id="_s_61">overwrite the oldest stored <s>audit records</s> <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</span>], and [<i>no other actions</i>] if the <s>audit</s> <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b> trail is full<a id="period_349" href="#period_349">. </a>			
+				[<b>selection</b>: <span class="selectable-content" id="_s_58">ignore <s>audited</s> <b>generation of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr></b> events <b>that would otherwise be generated</b></span>, <span class="selectable-content" id="_s_59">prevent audited <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr></b> events</span>, <span class="selectable-content" id="_s_60"><s>except those taken by the authorized user with special rights</s></span>, <span class="selectable-content" id="_s_61">overwrite the oldest stored <s>audit records</s> <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</span>], and [<i>no other actions</i>] if the <s>audit</s> <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b> trail is full<a id="period_352" href="#period_352">. </a>			
 			</div></div>
 			
 			</div>
@@ -1581,17 +1584,17 @@ enforce its policies on network traffic of monitored networks<a id="period_127" 
 	The intent of this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is to allow the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author to define the types of failures
 	that can occur on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> which could result in failure to effectively detect and
 	react to <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy violations for traffic traversing inline interface, and to not
-	allow traffic to traverse those interfaces<a id="period_350" href="#period_350">. </a>The first refinement &#8220;to be able&#8221; is
+	allow traffic to traverse those interfaces<a id="period_353" href="#period_353">. </a>The first refinement &#8220;to be able&#8221; is
 	included to allow the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> administrator to configure the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to allow traffic to
 	traverse inline interfaces when the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is in a partially of fully failed state, but
 	to provide assurance that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is capable of blocking traffic if it has been
-	configured to do so<a id="period_351" href="#period_351">. </a>The purpose of this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>, as stated in <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr> Part 2, is to &#8220;ensure
+	configured to do so<a id="period_354" href="#period_354">. </a>The purpose of this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>, as stated in <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr> Part 2, is to &#8220;ensure
 	that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> will always enforce its <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> in the event of identified categories of
 	failures in the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>.&#8221; Since some of the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> require inspection of data, and that inspection cannot occur when a network interface fails, it will not always be
 	true that &#8220;all&#8221; the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> will continue to be enforced in the event of failure of
-	certain components<a id="period_352" href="#period_352">. </a>The intent here is to ensure that if network traffic is not
+	certain components<a id="period_355" href="#period_355">. </a>The intent here is to ensure that if network traffic is not
 	capable of being inspected by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>, then it should automatically be treated
-	as untrusted<a id="period_353" href="#period_353">. </a></i>
+	as untrusted<a id="period_356" href="#period_356">. </a></i>
 	</span></div></div></div>
 	
 	</div>
@@ -1600,9 +1603,9 @@ enforce its policies on network traffic of monitored networks<a id="period_127" 
 	<div class="comp" id="IPS_SBD_EXT.2"><h4>IPS_SBD_EXT.2 Traffic Normalization</h4>
 	<div class="element"><div class="reqid" id="IPS_SBD_EXT.2.1"><a href="#IPS_SBD_EXT.2.1" class="abbr">IPS_SBD_EXT.2.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to inspect packets encapsulated through the following means: [<b>selection</b>: <span class="selectable-content" id="_s_62"><abbr class="dyn-abbr"><a href="#abbr_GRE">GRE</a></abbr></span>, <span class="selectable-content" id="_s_63">IP-in-IP</span>, <span class="selectable-content" id="_s_64">IPv4-in-IPv6</span>, <span class="selectable-content" id="_s_65"><abbr class="dyn-abbr"><a href="#abbr_MPLS">MPLS</a></abbr></span>, <span class="selectable-content" id="_s_66"> <abbr class="dyn-abbr"><a href="#abbr_PPTP">PPTP</a></abbr></span>, <span class="selectable-content" id="_s_67">[<b>assignment</b>: 
      <span class="assignable-content">other
-encapsulation methods</span>]</span>]<a id="period_354" href="#period_354">. </a>	</div></div>
+encapsulation methods</span>]</span>]<a id="period_357" href="#period_357">. </a>	</div></div>
 	
-	<div class="element"><div class="reqid" id="IPS_SBD_EXT.2.2"><a href="#IPS_SBD_EXT.2.2" class="abbr">IPS_SBD_EXT.2.2</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to perform IP normalization to reassemble fragmented packets for inspection, and: [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_68">For data collected at promiscuous interfaces: generate an alert if the packet cannot be reassembled;</span></li><li style=""><span class="selectable-content" id="_s_69">For data collected at inline interfaces: do not forward any packet fragments and generate an alert if the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> cannot reassemble the entire packet</span></li></ul>]<a id="period_355" href="#period_355">. </a></div></div>
+	<div class="element"><div class="reqid" id="IPS_SBD_EXT.2.2"><a href="#IPS_SBD_EXT.2.2" class="abbr">IPS_SBD_EXT.2.2</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to perform IP normalization to reassemble fragmented packets for inspection, and: [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_68">For data collected at promiscuous interfaces: generate an alert if the packet cannot be reassembled;</span></li><li style=""><span class="selectable-content" id="_s_69">For data collected at inline interfaces: do not forward any packet fragments and generate an alert if the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> cannot reassemble the entire packet</span></li></ul>]<a id="period_358" href="#period_358">. </a></div></div>
 	
 	<div class="element"><div class="reqid" id="IPS_SBD_EXT.2.3"><a href="#IPS_SBD_EXT.2.3" class="abbr">IPS_SBD_EXT.2.3</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to perform <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> normalization for traffic flows through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> when the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is deployed in inline mode, and prohibit forwarding of: [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_70">duplicate packets;</span></li><li style=""><span class="selectable-content" id="_s_71">changed packets;</span></li><li style=""><span class="selectable-content" id="_s_72">out-of-sequence packets;</span></li><li style=""><span class="selectable-content" id="_s_73">
 			[<b>selection</b>: <span class="selectable-content" id="_s_74">[<b>assignment</b>: 
@@ -1617,52 +1620,52 @@ forwarded</span>]</span>, <span class="selectable-content" id="_s_75">no other p
 	<h2 id="obj-sfrs" class="indexable" data-level="2">A.2 Objective Requirements
     </h2>
 	<h3 class="indexable" data-level="3" id="_sec_12">A.2.1 Auditable Events for Objective SFRs</h3>
-        <span style="" class="comment " id="Comment-4-">All objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> need a review to determine if they should change status with the new release of this module<a id="period_356" href="#period_356">. </a></span>
+        <span style="" class="comment " id="Comment-4-">All objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> need a review to determine if they should change status with the new release of this module<a id="period_359" href="#period_359">. </a></span>
         <table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="at-objective" data-counter-type="ct-Table" id="at-objective">Table <span class="counter">8</span></span>: Auditable Events for Objective Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr></table>
       
 	<h3 id="fau-obj" class="indexable" data-level="3">A.2.2 Security Audit (FAU)</h3>
 	<div class="comp" id="FAU_ARP.1"><h4>FAU_ARP.1 Security Alarms</h4>
 	<div class="element"><div class="reqid" id="FAU_ARP.1.1"><a href="#FAU_ARP.1.1" class="abbr">FAU_ARP.1.1</a></div><div class="reqdesc">
 	The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall take [<b>assignment</b>: 
-     <span class="assignable-content">list of actions</span>] upon detection of potential security violation<a id="period_357" href="#period_357">. </a>	<div class="appnote"><span class="note-header">Application
+     <span class="assignable-content">list of actions</span>] upon detection of potential security violation<a id="period_360" href="#period_360">. </a>	<div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note"><i>
 	<p>At minimum, the set of potential security violations must include network traffic
-		in excess of maximum quotas<a id="period_358" href="#period_358">. </a>Therefore, when this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is included, the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author
-		must also include <a href="#FRU_RSA.1">FRU_RSA.1</a><a id="period_359" href="#period_359">. </a></p><p>In <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr> Part 2, FAU_ARP is intended to depend on FAU_SAA to define a potential
-		violation of the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr><a id="period_360" href="#period_360">. </a>FAU_SAA is not included in this <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> EP; FRU_RSA and the
+		in excess of maximum quotas<a id="period_361" href="#period_361">. </a>Therefore, when this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is included, the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author
+		must also include <a href="#FRU_RSA.1">FRU_RSA.1</a><a id="period_362" href="#period_362">. </a></p><p>In <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr> Part 2, FAU_ARP is intended to depend on FAU_SAA to define a potential
+		violation of the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr><a id="period_363" href="#period_363">. </a>FAU_SAA is not included in this <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> EP; FRU_RSA and the
 		various <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> class requirements are used instead to define the &#8220;potential security
 		violation&#8221; relevant to FAU_ARP, namely that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> has detected potential
 		malicious network traffic or has experienced a spike in network traffic that has
 		exceeded its ability to inspect all network traffic which may result in some network
-		traffic being uninspected by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr><a id="period_361" href="#period_361">. </a>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> should be used to define actions that
+		traffic being uninspected by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr><a id="period_364" href="#period_364">. </a>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> should be used to define actions that
 		the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> can take which may include generating one or more messages that
 		are not part of the audit trail that must be transmitted securely to a remote
-		audit server<a id="period_362" href="#period_362">. </a></p><p>Messaging actions defined by this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> that are not specifically relevant to
-		<a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a> do not need to be encrypted during transit<a id="period_363" href="#period_363">. </a>The primary intent of
+		audit server<a id="period_365" href="#period_365">. </a></p><p>Messaging actions defined by this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> that are not specifically relevant to
+		<a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a> do not need to be encrypted during transit<a id="period_366" href="#period_366">. </a>The primary intent of
 		this functionality is the speed of notification, not the integrity, or confidentiality
-		of the data in transit<a id="period_364" href="#period_364">. </a>In most cases, the audit trail applicable to FAU_STG_EXT.1
+		of the data in transit<a id="period_367" href="#period_367">. </a>In most cases, the audit trail applicable to FAU_STG_EXT.1
 		will be syslog data, and is being protected in transit to help ensure integrity of
-		remotely stored audit data<a id="period_365" href="#period_365">. </a>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> isintended to covertransmission of messages
-		related to single eventsthrough protocols such as SNMP (traps) and <abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> (email)<a id="period_366" href="#period_366">. </a>		In <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr> that support securing SNMP traps, <abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> email, or other messaging types
+		remotely stored audit data<a id="period_368" href="#period_368">. </a>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> isintended to covertransmission of messages
+		related to single eventsthrough protocols such as SNMP (traps) and <abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> (email)<a id="period_369" href="#period_369">. </a>		In <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr> that support securing SNMP traps, <abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> email, or other messaging types
 		within trusted channels (as defined by FTP_ITC.1), the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author can choose to
-		list these messaging methods within FTP_ITC.1 and/or within this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr><a id="period_367" href="#period_367">. </a>There are
-		no additional auditable <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> events that need to be included in <a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a><a id="period_368" href="#period_368">. </a>		</p></i></span></div></div></div>
+		list these messaging methods within FTP_ITC.1 and/or within this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr><a id="period_370" href="#period_370">. </a>There are
+		no additional auditable <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> events that need to be included in <a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a><a id="period_371" href="#period_371">. </a>		</p></i></span></div></div></div>
 	</div>
 	<div class="comp" id="FAU_SAR.1"><h4>FAU_SAR.1 Audit Review</h4>
 	<div class="element"><div class="reqid" id="FAU_SAR.1.1"><a href="#FAU_SAR.1.1" class="abbr">FAU_SAR.1.1</a></div><div class="reqdesc">
-	The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide [<i>authorized administrators</i>] with the capability to read [<i><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</i>] from the <s>audit records</s> <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> events</b><a id="period_369" href="#period_369">. </a>	</div></div>
+	The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide [<i>authorized administrators</i>] with the capability to read [<i><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</i>] from the <s>audit records</s> <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> events</b><a id="period_372" href="#period_372">. </a>	</div></div>
 	<div class="element"><div class="reqid" id="FAU_SAR.1.2"><a href="#FAU_SAR.1.2" class="abbr">FAU_SAR.1.2</a></div><div class="reqdesc">
-	The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide the <s>audit records</s> <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b> in a manner suitable for the <s>user</s> <b>administrators</b> to interpret the information<a id="period_370" href="#period_370">. </a>	<div class="appnote"><span class="note-header">Application
+	The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide the <s>audit records</s> <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b> in a manner suitable for the <s>user</s> <b>administrators</b> to interpret the information<a id="period_373" href="#period_373">. </a>	<div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note"><i>It is anticipated, but not required, that <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr> would provide a graphical user
 		interface that would allow searching and sorting, and it would be acceptable for
 		such output to group similar events together to ease administrative review of the
-		<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data<a id="period_371" href="#period_371">. </a>For example, the display might allow grouping of data by event type, or
+		<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data<a id="period_374" href="#period_374">. </a>For example, the display might allow grouping of data by event type, or
 		by source IP address, where multiple events that occurred in a time period are
-		displayed on a single line as in the sample table below<a id="period_372" href="#period_372">. </a>Regardless whether such
+		displayed on a single line as in the sample table below<a id="period_375" href="#period_375">. </a>Regardless whether such
 		a view is provided, it is expected that the administrator will be able to view the
-		details of individual event occurrences<a id="period_373" href="#period_373">. </a>		</i>
+		details of individual event occurrences<a id="period_376" href="#period_376">. </a>		</i>
 		
 		<table border="1">
 		<tr>
@@ -1682,7 +1685,7 @@ forwarded</span>]</span>, <span class="selectable-content" id="_s_75">no other p
 		</span></div></div></div>
 	</div>
 	<div class="comp" id="FAU_SAR.2"><h4>FAU_SAR.2 Restricted Audit Review</h4>
-	<div class="element"><div class="reqid" id="FAU_SAR.2.1"><a href="#FAU_SAR.2.1" class="abbr">FAU_SAR.2.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall prohibit all <s>users</s> <b>administrators</b> read access to the <s>audit records</s> <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b>, except those that have been granted explicit read-access<a id="period_374" href="#period_374">. </a></div></div>
+	<div class="element"><div class="reqid" id="FAU_SAR.2.1"><a href="#FAU_SAR.2.1" class="abbr">FAU_SAR.2.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall prohibit all <s>users</s> <b>administrators</b> read access to the <s>audit records</s> <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b>, except those that have been granted explicit read-access<a id="period_377" href="#period_377">. </a></div></div>
 	</div>
 	<div class="comp" id="FAU_SAR.3"><h4>FAU_SAR.3 Selectable Audit Review</h4>
 	<div class="element"><div class="reqid" id="FAU_SAR.3.1"><a href="#FAU_SAR.3.1" class="abbr">FAU_SAR.3.1</a></div><div class="reqdesc">
@@ -1691,7 +1694,7 @@ forwarded</span>]</span>, <span class="selectable-content" id="_s_75">no other p
 	destination IP address and </i>[<b>selection</b>: <span class="selectable-content" id="_s_76">[<b>assignment</b>: 
      <span class="assignable-content"> other filtering parameters</span>]</span>, <span class="selectable-content" id="_s_77">No other filtering parameters</span>]<i>; and sorting parameters: event ID, event type, time,
 signature ID, <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> actions performed, and </i>[<b>selection</b>: <span class="selectable-content" id="_s_78">[<b>assignment</b>: 
-     <span class="assignable-content">other sorting parameters</span>]</span>, <span class="selectable-content" id="_s_79">no other sorting parameters</span>]<a id="period_375" href="#period_375">. </a>		<span style="" class="comment " id="Comment-5-">please review </span>
+     <span class="assignable-content">other sorting parameters</span>]</span>, <span class="selectable-content" id="_s_79">no other sorting parameters</span>]<a id="period_378" href="#period_378">. </a>		<span style="" class="comment " id="Comment-5-">please review </span>
 
 
 	</div></div>
@@ -1707,47 +1710,47 @@ signature ID, <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> actions 
 	<h3 id="fru-imp_dep" class="indexable" data-level="3">A.3.2 Resource Utilization</h3>
 		<div class="comp" id="FRU_RSA.1"><h4>FRU_RSA.1 Maximum Quotas</h4>
 		<div class="element"><div class="reqid" id="FRU_RSA.1.1"><a href="#FRU_RSA.1.1" class="abbr">FRU_RSA.1.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall enforce maximum quotas of the following resources: [<i>resources
-supporting inspection of network traffic</i>] that [<i>subjects</i>] can use [<i>simultaneously</i>]<a id="period_376" href="#period_376">. </a>		<div class="appnote"><span class="note-header">Application
+supporting inspection of network traffic</i>] that [<i>subjects</i>] can use [<i>simultaneously</i>]<a id="period_379" href="#period_379">. </a>		<div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note">
 		<i><p>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is optional but the behavior specified by <a href="#FAU_ARP.1">FAU_ARP.1</a> requires this function
-		to be implemented<a id="period_377" href="#period_377">. </a>Therefore, this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is implementation-dependent on the
-		condition that it be claimed if <a href="#FAU_ARP.1">FAU_ARP.1</a> is claimed<a id="period_378" href="#period_378">. </a>If <a href="#FAU_ARP.1">FAU_ARP.1</a> is not claimed
+		to be implemented<a id="period_380" href="#period_380">. </a>Therefore, this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is implementation-dependent on the
+		condition that it be claimed if <a href="#FAU_ARP.1">FAU_ARP.1</a> is claimed<a id="period_381" href="#period_381">. </a>If <a href="#FAU_ARP.1">FAU_ARP.1</a> is not claimed
 		this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> should also not be claimed because effective enforcement of maximum
-		quotas requires an alert mechanism when quotas are exceeded<a id="period_379" href="#period_379">. </a>Otherwise it is
+		quotas requires an alert mechanism when quotas are exceeded<a id="period_382" href="#period_382">. </a>Otherwise it is
 		not possible for an administrator to determine whether a lack of potential security
 		violations is caused by an absence of potential malicious activity or by the inability
 		of the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to detect such activity due to an inability to process the volume of traffic
 		being received</p><p>Conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr> will impose quotas on exhaustible resources used to support
 		inspection of network traffic that &#8216;subjects&#8217; (inspected network traffic flows) can
-		use simultaneously<a id="period_380" href="#period_380">. </a>The intent of this requirement is to ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is not
+		use simultaneously<a id="period_383" href="#period_383">. </a>The intent of this requirement is to ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is not
 		deployed in such a way that the flow of data across its sensor interfaces can
-		exceed the amount of traffic that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is capable of inspecting<a id="period_381" href="#period_381">. </a>If the flow
+		exceed the amount of traffic that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is capable of inspecting<a id="period_384" href="#period_384">. </a>If the flow
 		(volume/speed) of data to be inspected exceeds the defined quota, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> should
-		trigger an alert signifying effect of the exceeded quota<a id="period_382" href="#period_382">. </a>For example, when the
+		trigger an alert signifying effect of the exceeded quota<a id="period_385" href="#period_385">. </a>For example, when the
 		<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is deployed inline, exceeding the quota may result in the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> dropping (not
 		forwarding) and failing to inspect network traffic; or when the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is not deployed
 		inline, exceeding the quota may result in traffic having been forwarded without
-		inspection<a id="period_383" href="#period_383">. </a>In any case, exceeding the maximum quota results in a &#8220;potential
+		inspection<a id="period_386" href="#period_386">. </a>In any case, exceeding the maximum quota results in a &#8220;potential
 		security violation&#8221; relevant to <a href="#FAU_ARP.1">FAU_ARP.1</a> in that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> may have failed to
-		inspect some network traffic<a id="period_384" href="#period_384">. </a></p></i>
+		inspect some network traffic<a id="period_387" href="#period_387">. </a></p></i>
 		</span></div></div></div>
 			
 		</div>
 		
 	<h1 id="sel-sfrs" class="indexable" data-level="1">Appendix B -  Selection-based Requirements
     </h1><p>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any 
-       Selection-based       <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr><a id="period_385" href="#period_385">. </a></p><h1 id="satisfiedreqs" class="indexable" data-level="A">Appendix C -  Inherently Satisfied Requirements</h1> 
+       Selection-based       <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr><a id="period_388" href="#period_388">. </a></p><h1 id="satisfiedreqs" class="indexable" data-level="A">Appendix C -  Inherently Satisfied Requirements</h1> 
 		This appendix lists requirements that should be considered satisfied by products
-		successfully evaluated against this Protection Profile<a id="period_386" href="#period_386">. </a> 
+		successfully evaluated against this Protection Profile<a id="period_389" href="#period_389">. </a> 
 		However, these requirements are not featured explicitly as <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> and should not be
-		included in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr><a id="period_387" href="#period_387">. </a> 
+		included in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr><a id="period_390" href="#period_390">. </a> 
 		They are not included as standalone <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> because it would
-		increase the time, cost, and complexity of evaluation<a id="period_388" href="#period_388">. </a> This approach is permitted
-		by <a href="#bibCC">[CC]</a> Part 1, <b>8.2 Dependencies between components</b><a id="period_389" href="#period_389">. </a>		<br>
+		increase the time, cost, and complexity of evaluation<a id="period_391" href="#period_391">. </a> This approach is permitted
+		by <a href="#bibCC">[CC]</a> Part 1, <b>8.2 Dependencies between components</b><a id="period_392" href="#period_392">. </a>		<br>
 		This information benefits systems engineering activities which call for inclusion of 
-		particular security controls<a id="period_390" href="#period_390">. </a> Evaluation against the Protection Profile
-		provides evidence that these controls are present and have been evaluated<a id="period_391" href="#period_391">. </a>		<table>
+		particular security controls<a id="period_393" href="#period_393">. </a> Evaluation against the Protection Profile
+		provides evidence that these controls are present and have been evaluated<a id="period_394" href="#period_394">. </a>		<table>
 			<tr class="header">
 				<td>Requirement</td>
 				<td>Rationale for Satisfaction</td>
@@ -1759,7 +1762,7 @@ supporting inspection of network traffic</i>] that [<i>subjects</i>] can use [<i
 				  including those on behalf of the user who has not been authenticated, 
 				  in order to authenticate;
 				  therefore it is duplicative to include these actions as a 
-				  separate assignment and test<a id="period_392" href="#period_392">. </a>				</td>
+				  separate assignment and test<a id="period_395" href="#period_395">. </a>				</td>
 			</tr>
 			<tr>
 				<td>FIA_UID.1 - Timing of identification</td>
@@ -1768,38 +1771,38 @@ supporting inspection of network traffic</i>] that [<i>subjects</i>] can use [<i
 				  including those on behalf of the user who has not been identified, 
 				  in order to authenticate;
 				  therefore it is duplicative to include these actions as a 
-				  separate assignment and test<a id="period_393" href="#period_393">. </a>				</td>
+				  separate assignment and test<a id="period_396" href="#period_396">. </a>				</td>
 			</tr>
 			<tr>
 				<td>FMT_SMR.1 - Security roles</td>
 				<td>
 				  FMT_MOF_EXT.1 specifies role-based management functions that implicitly defines
 				  user and privileged accounts; 
-				  therefore, it is duplicative to include separate role requirements<a id="period_394" href="#period_394">. </a>				</td>
+				  therefore, it is duplicative to include separate role requirements<a id="period_397" href="#period_397">. </a>				</td>
 			</tr>
 			<tr>
 				<td>FPT_STM.1 - Reliable time stamps</td>
 				<td>
 				  FAU_GEN.1.2 explicitly requires that the OS associate timestamps with audit records;
-				  therefore it is duplicative to include a separate timestamp requirement<a id="period_395" href="#period_395">. </a>				</td>
+				  therefore it is duplicative to include a separate timestamp requirement<a id="period_398" href="#period_398">. </a>				</td>
 			</tr>
 			<tr>
 				<td>FTA_SSL.1 - <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>-initiated session locking</td>
 				<td>
 					  FMT_MOF_EXT.1 defines requirements for managing session locking;
-					  therefore, it is duplicative to include a separate session locking requirement<a id="period_396" href="#period_396">. </a>				</td>
+					  therefore, it is duplicative to include a separate session locking requirement<a id="period_399" href="#period_399">. </a>				</td>
 			</tr>
 			<tr>
 				<td>FTA_SSL.2 - User-initiated locking</td>
 				<td>
 				  FMT_MOF_EXT.1 defines requirements for user-initiated session locking;
-				  therefore, it is duplicative to include a separate session locking requirement<a id="period_397" href="#period_397">. </a>				</td>
+				  therefore, it is duplicative to include a separate session locking requirement<a id="period_400" href="#period_400">. </a>				</td>
 			</tr>
 			<tr>
 				<td>FAU_STG.1 - Protected audit trail storage</td>
 				<td>
 				  FPT_ACF_EXT.1 defines a requirement to protect audit logs;
-				  therefore, it is duplicative to include a separate protection of audit trail requirements<a id="period_398" href="#period_398">. </a>				</td>
+				  therefore, it is duplicative to include a separate protection of audit trail requirements<a id="period_401" href="#period_401">. </a>				</td>
 			</tr>
 			<tr>
 				<td>FAU_GEN.2 - User identity association</td>
@@ -1807,53 +1810,53 @@ supporting inspection of network traffic</i>] that [<i>subjects</i>] can use [<i
 				  FAU_GEN.1.2 explicitly requires that the OS record
 				  any user account associated with each event; therefore, it is duplicative
 				  to include a separate requirement to associate a user account with each
-				  event<a id="period_399" href="#period_399">. </a>				</td>
+				  event<a id="period_402" href="#period_402">. </a>				</td>
 			</tr>
 			<tr>
 				<td><a href="#FAU_SAR.1">FAU_SAR.1</a> - Audit review</td>
 				<td>
 					FPT_ACF_EXT.1.2 requires that audit logs (and other objects)
 					are protected from reading by unprivileged users; therefore, it is duplicative
-					to include a separate requirement to protect only the audit information<a id="period_400" href="#period_400">. </a>				</td>
+					to include a separate requirement to protect only the audit information<a id="period_403" href="#period_403">. </a>				</td>
 			</tr>
 		</table>
 
 	<h1 id="entropyappendix" class="indexable" data-level="A">Appendix D -  Entropy Documentation and Assessment</h1> 
 		<p>
 			This appendix describes the required supplementary information for the entropy
-		  source used by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_401" href="#period_401">. </a>			</p><p>
+		  source used by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_404" href="#period_404">. </a>			</p><p>
 		  The documentation of the entropy source should be detailed enough that, after
 		  reading, the evaluator will thoroughly understand the entropy source and why
-		  it can be relied upon to provide sufficient entropy<a id="period_402" href="#period_402">. </a>This documentation should
+		  it can be relied upon to provide sufficient entropy<a id="period_405" href="#period_405">. </a>This documentation should
 		  include multiple detailed sections: design description, entropy justification,
-		  operating conditions, and health testing<a id="period_403" href="#period_403">. </a>This documentation is not required to
-		  be part of the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr><a id="period_404" href="#period_404">. </a>
+		  operating conditions, and health testing<a id="period_406" href="#period_406">. </a>This documentation is not required to
+		  be part of the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr><a id="period_407" href="#period_407">. </a>
 		</p>
 		<h2 class="indexable" data-level="2" id="entropydesign">D.1 Design Description</h2>
 			<p>
 		  Documentation shall include the design of the entropy source as a whole,
-		  including the interaction of all entropy source components<a id="period_405" href="#period_405">. </a>Any information
+		  including the interaction of all entropy source components<a id="period_408" href="#period_408">. </a>Any information
 		  that can be shared regarding the design should also be included for any
-		  third-party entropy sources that are included in the product<a id="period_406" href="#period_406">. </a>
+		  third-party entropy sources that are included in the product<a id="period_409" href="#period_409">. </a>
 			</p><p>
 		  The documentation will describe the operation of the entropy source to
 		  include, how entropy is produced, and how unprocessed (raw) data can be
-		  obtained from within the entropy source for testing purposes<a id="period_407" href="#period_407">. </a>The documentation
+		  obtained from within the entropy source for testing purposes<a id="period_410" href="#period_410">. </a>The documentation
 		  should walk through the entropy source design indicating where the entropy
 		  comes from, where the entropy output is passed next, any post-processing
 		  of the raw outputs (hash, XOR, etc.), if/where it is stored, and finally,
-		  how it is output from the entropy source<a id="period_408" href="#period_408">. </a>Any conditions placed on the
+		  how it is output from the entropy source<a id="period_411" href="#period_411">. </a>Any conditions placed on the
 		  process (e.g., blocking) should also be described in the entropy source
-		  design<a id="period_409" href="#period_409">. </a>Diagrams and examples are encouraged<a id="period_410" href="#period_410">. </a>
+		  design<a id="period_412" href="#period_412">. </a>Diagrams and examples are encouraged<a id="period_413" href="#period_413">. </a>
 			</p><p>
 		  This design must also include a description of the content of the
 		  security boundary of the entropy source and a description of how
 		  the security boundary ensures that an adversary outside the boundary
-		  cannot affect the entropy rate<a id="period_411" href="#period_411">. </a>			</p><p>
+		  cannot affect the entropy rate<a id="period_414" href="#period_414">. </a>			</p><p>
 		  If implemented, the design description shall include a description
-		  of how third-party applications can add entropy to the RBG<a id="period_412" href="#period_412">. </a>A
+		  of how third-party applications can add entropy to the RBG<a id="period_415" href="#period_415">. </a>A
 		  description of any RBG state saving between power-off and
-		  power-on shall be included<a id="period_413" href="#period_413">. </a>			</p>
+		  power-on shall be included<a id="period_416" href="#period_416">. </a>			</p>
 		
 
 		<h2 class="indexable" data-level="2" id="entropyjustification">D.2 Entropy Justification</h2>
@@ -1861,62 +1864,62 @@ supporting inspection of network traffic</i>] that [<i>subjects</i>] can use [<i
 		  There should be a technical argument for where the unpredictability in
 		  the source comes from and why there is confidence in the entropy source
 		  delivering sufficient entropy for the uses made of the RBG output
-		  (by this particular <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>)<a id="period_414" href="#period_414">. </a>This argument will include a description of
-		  the expected min-entropy rate (i.e<a id="period_415" href="#period_415">. </a>the minimum entropy (in bits) per
+		  (by this particular <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>)<a id="period_417" href="#period_417">. </a>This argument will include a description of
+		  the expected min-entropy rate (i.e<a id="period_418" href="#period_418">. </a>the minimum entropy (in bits) per
 		  bit or byte of source data) and explain that sufficient entropy is
-		  going into the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> randomizer seeding process<a id="period_416" href="#period_416">. </a>This discussion will
+		  going into the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> randomizer seeding process<a id="period_419" href="#period_419">. </a>This discussion will
 		  be part of a justification for why the entropy source can be relied
-		  upon to produce bits with entropy<a id="period_417" href="#period_417">. </a>			</p><p>
+		  upon to produce bits with entropy<a id="period_420" href="#period_420">. </a>			</p><p>
 		  The amount of information necessary to justify the expected
 		  min-entropy rate depends on the type of entropy source included in the
-		  product<a id="period_418" href="#period_418">. </a>			</p><p>
+		  product<a id="period_421" href="#period_421">. </a>			</p><p>
 		  For developer provided entropy sources, in order to justify the
 		  min-entropy rate, it is expected that a large number of raw source
 		  bits will be collected, statistical tests will be performed, and the
-		  min-entropy rate determined from the statistical tests<a id="period_419" href="#period_419">. </a>While no
+		  min-entropy rate determined from the statistical tests<a id="period_422" href="#period_422">. </a>While no
 		  particular statistical tests are required at this time, it is expected
 		  that some testing is necessary in order to determine the amount of
-		  min-entropy in each output<a id="period_420" href="#period_420">. </a>			</p><p>
+		  min-entropy in each output<a id="period_423" href="#period_423">. </a>			</p><p>
 		  For third party provided entropy sources, in which the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> vendor
 		  has limited access to the design and raw entropy data of the source, the
 		  documentation will indicate an estimate of the amount of min-entropy
-		  obtained from this third-party source<a id="period_421" href="#period_421">. </a> It is acceptable for the vendor
+		  obtained from this third-party source<a id="period_424" href="#period_424">. </a> It is acceptable for the vendor
 		  to &#8220;assume&#8221; an amount of min-entropy, however, this assumption must be
-		  clearly stated in the documentation provided<a id="period_422" href="#period_422">. </a> In particular, the
+		  clearly stated in the documentation provided<a id="period_425" href="#period_425">. </a> In particular, the
 		  min-entropy estimate must be specified and the assumption included
-		  in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr><a id="period_423" href="#period_423">. </a>			</p><p>
+		  in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr><a id="period_426" href="#period_426">. </a>			</p><p>
 		  Regardless of type of entropy source, the justification will also
 		  include how the DRBG is initialized with the entropy stated in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>,
 		  for example by verifying that the min-entropy rate is multiplied by the
 		  amount of source data used to seed the DRBG or that the rate of entropy
 		  expected based on the amount of source data is explicitly stated and
-		  compared to the statistical rate<a id="period_424" href="#period_424">. </a>If the amount of source data used to
+		  compared to the statistical rate<a id="period_427" href="#period_427">. </a>If the amount of source data used to
 		  seed the DRBG is not clear or the calculated rate is not explicitly
-		  related to the seed, the documentation will not be considered complete<a id="period_425" href="#period_425">. </a>			</p><p>
+		  related to the seed, the documentation will not be considered complete<a id="period_428" href="#period_428">. </a>			</p><p>
 		  The entropy justification shall not include any data added from
-		  any third-party application or from any state saving between restarts<a id="period_426" href="#period_426">. </a>			</p>
+		  any third-party application or from any state saving between restarts<a id="period_429" href="#period_429">. </a>			</p>
 		
 
 		<h2 class="indexable" data-level="2" id="entropyoperatingconditions">D.3 Operating Conditions</h2>
 		  The entropy rate may be affected by conditions outside the control
-		  of the entropy source itself<a id="period_427" href="#period_427">. </a> For example, voltage, frequency,
+		  of the entropy source itself<a id="period_430" href="#period_430">. </a> For example, voltage, frequency,
 		  temperature, and elapsed time after power-on are just a few of the
-		  factors that may affect the operation of the entropy source<a id="period_428" href="#period_428">. </a>		  As such, documentation will also include the range of operating conditions
-		  under which the entropy source is expected to generate random data<a id="period_429" href="#period_429">. </a>		  It will clearly describe the measures that have been taken in the
+		  factors that may affect the operation of the entropy source<a id="period_431" href="#period_431">. </a>		  As such, documentation will also include the range of operating conditions
+		  under which the entropy source is expected to generate random data<a id="period_432" href="#period_432">. </a>		  It will clearly describe the measures that have been taken in the
 		  system design to ensure the entropy source continues to operate
-		  under those conditions<a id="period_430" href="#period_430">. </a>Similarly, documentation shall describe
+		  under those conditions<a id="period_433" href="#period_433">. </a>Similarly, documentation shall describe
 		  the conditions under which the entropy source is known to malfunction
-		  or become inconsistent<a id="period_431" href="#period_431">. </a>Methods used to detect failure or degradation
-		  of the source shall be included<a id="period_432" href="#period_432">. </a>		
+		  or become inconsistent<a id="period_434" href="#period_434">. </a>Methods used to detect failure or degradation
+		  of the source shall be included<a id="period_435" href="#period_435">. </a>		
 
 		<h2 class="indexable" data-level="2" id="entropyhealthtesting">D.4 Health Testing</h2>
 		  More specifically, all entropy source health tests and their rationale
-		  will be documented<a id="period_433" href="#period_433">. </a>This will include a description of the health tests,
+		  will be documented<a id="period_436" href="#period_436">. </a>This will include a description of the health tests,
 		  the rate and conditions under which each health test is performed
 		  (e.g., at startup, continuously, or on-demand), the expected results
 		  for each health test, and rationale indicating why each test is
 		  believed to be appropriate for detecting one or more failures in the
-		  entropy source<a id="period_434" href="#period_434">. </a>		
+		  entropy source<a id="period_437" href="#period_437">. </a>		
   
 	<h1 id="acronyms" class="indexable" data-level="A">Appendix E -  Acronyms</h1><table><caption><span class="ctr" data-myid="t-acronyms" data-counter-type="ct-Table" id="t-acronyms">Table <span class="counter">10</span></span>: Acronyms
 		</caption><tr class="header"><th>Acronym</th><th>Meaning</th></tr><tr><td><span class="term" id="abbr_Base-PP" data-plural="Base-PPs"><abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr></span></td><td><span id="long_abbr_Base-PP">Base Protection Profile</span></td></tr>
@@ -1962,16 +1965,16 @@ supporting inspection of network traffic</i>] that [<i>subjects</i>] can use [<i
 <tr><td><span class="term" id="abbr_UDP"><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr></span></td><td><span id="long_abbr_UDP">User Datagram Protocol</span></td></tr>
 </table><h1 id="appendix-bibliography" class="indexable" data-level="A">Appendix F -  Bibliography</h1><table><caption><span class="ctr" data-myid="t-biblio" data-counter-type="ct-Table" id="t-biblio">Table <span class="counter">11</span></span>: Bibliography</caption><tr class="header"><th>Identifier</th><th>Title</th></tr><tr><td><span id="bibndcpp3">[NDcPP]</span></td><td><span class="description">NDcPP  - <a href="https://www.niap-ccevs.org/protectionprofiles/482">Collaborative Protection Profile for Network Devices, Version 3.0e, December 06, 2023</a></span></td></tr><tr><td><span id="bibCC">[<abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>]</span></td><td><span class="description">Common Criteria for Information Technology Security Evaluation - <ul>
             <li><a href="https://www.commoncriteriaportal.org/files/ccfiles/CC2022PART1R1.pdf">Part 1: 
-				Introduction and general model</a>, CCMB-2022-11-001, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_435" href="#period_435">. </a></li>
+				Introduction and general model</a>, CCMB-2022-11-001, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_438" href="#period_438">. </a></li>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART2R1.pdf">Part 2: 
-				Security functional requirements</a>, CCMB-2022-11-002, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_436" href="#period_436">. </a></li>
+				Security functional requirements</a>, CCMB-2022-11-002, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_439" href="#period_439">. </a></li>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART3R1.pdf">Part 3: 
-                Security assurance requirements</a>, CCMB-2022-11-003, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_437" href="#period_437">. </a></li>
+                Security assurance requirements</a>, CCMB-2022-11-003, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_440" href="#period_440">. </a></li>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART4R1.pdf">Part 4: 
-                Framework for the specification of evaluation methods and activities</a>, CCMB-2022-11-004, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_438" href="#period_438">. </a></li>
+                Framework for the specification of evaluation methods and activities</a>, CCMB-2022-11-004, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_441" href="#period_441">. </a></li>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART5R1.pdf">Part 5: 
-                 Pre-defined packages of security requirements</a>, CCMB-2022-11-005, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_439" href="#period_439">. </a></li>
+                 Pre-defined packages of security requirements</a>, CCMB-2022-11-005, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_442" href="#period_442">. </a></li>
           </ul></span></td></tr><tr><td><span id="bibCEM">[<abbr class="dyn-abbr"><a href="#abbr_CEM">CEM</a></abbr>]</span></td><td><span class="description">Common Methodology for Information Technology Security Evaluation - <ul>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CEM2022R1.pdf">
-                 Evaluation methodology</a>, CCMB-2022-11-006, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_440" href="#period_440">. </a></li>
+                 Evaluation methodology</a>, CCMB-2022-11-006, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_443" href="#period_443">. </a></li>
           </ul></span></td></tr></table></body></html>

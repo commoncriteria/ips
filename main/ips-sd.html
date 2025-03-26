@@ -668,7 +668,7 @@ The following sections list Common Criteria and technology terms used in this do
 					</div>
 					<div class="eacategory">Tests</div><div class="ea">
 					The evaluator shall perform the following tests:<span class="testlist-"><ul>
-					<li class="test-"><a id="_t_11" class="defined" href="#_t_11">Test IPS_SBD_EXT.1.2:1</a>:
+					<li class="test-"><a id="sbd-payload-reaction" class="defined" href="#sbd-payload-reaction">Test IPS_SBD_EXT.1.2:1</a>:
       The evaluator shall use the instructions in the operational guidance to test that packet payload
 					string-based detection rules can be assigned to the reactions specified in IPS_SBD_EXT.1.5 using the
 					attributes specified in IPS_SBD_EXT.1.2. However it is not required (nor is it feasible) to test all possible
@@ -734,7 +734,7 @@ The following sections list Common Criteria and technology terms used in this do
                  <div class="element-activity-header">IPS_SBD_EXT.1.6</div>
 					<div class="eacategory">TSS</div><div class="ea">There are no TSS EAs for this element.</div>
 					<div class="eacategory">Guidance</div><div class="ea">The evaluator shall verify that the operational guidance provides configuration instructions, if needed, to detect payload across multiple packets.</div>
-					<div class="eacategory">Tests</div><div class="ea">The evaluator shall repeat one of the tests in IPS_SBD_EXT.1.2 Test 1 but generate multiple nonfragmented packets that contain the string in the rule defined. The evaluator shall verify that the malicious traffic is still detected when split across multiple non-fragmented packets.</div>
+					<div class="eacategory">Tests</div><div class="ea">The evaluator shall repeat one of the tests in <a href="#sbd-payload-reaction" class="dynref">Test IPS_SBD_EXT.1.2:1</a> but generate multiple nonfragmented packets that contain the string in the rule defined. The evaluator shall verify that the malicious traffic is still detected when split across multiple non-fragmented packets.</div>
                  </span></div><h2 class="indexable" data-level="1" id="opt-sfrs">2.3 Evaluation Activities for Optional SFRs</h2><h2 class="indexable" data-level="2" id="fau-ops">2.3.1 Security Audit(FAU)</h2><div class="comp" id="FAU-STG.1-IPS"><h4>FAU_STG.1/ips Protected Audit Trail Storage</h4><span class="activity_pane_body"><div class="component-activity-header">FAU_STG.1/ips</div>
 				
 		TODO: You need to explain the lack of EAs for this component!!!!
