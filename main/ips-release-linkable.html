@@ -646,7 +646,7 @@ function showTarget(id){
     </span></a><a href="#sec-opt-audit-table" style="text-indent:20px">A.1.1<span>Auditable Events for Optional SFRs</span></a><a href="#fau-ops" style="text-indent:20px">A.1.2<span>Security Audit(FAU)</span></a><a href="#fpt" style="text-indent:20px">A.1.3<span>Protection of the TSF (FPT)</span></a><a href="#ips" style="text-indent:20px">A.1.4<span>Intrusion Prevention (IPS)</span></a><a href="#obj-sfrs" style="text-indent:10px">A.2<span>Objective Requirements
     </span></a><a href="#_sec_13" style="text-indent:20px">A.2.1<span>Auditable Events for Objective SFRs</span></a><a href="#fau-obj" style="text-indent:20px">A.2.2<span>Security Audit (FAU)</span></a><a href="#impl-dep-sfrs" style="text-indent:10px">A.3<span>Implementation-dependent Requirements
     </span></a><a href="#_sec_15" style="text-indent:20px">A.3.1<span>Auditable Events for Implementation-Dependent SFRs</span></a><a href="#fru-imp_dep" style="text-indent:20px">A.3.2<span>Resource Utilization</span></a><a href="#sel-sfrs" style="text-indent:0px">Appendix B - <span>Selection-based Requirements
-    </span></a><a href="#satisfiedreqs" style="text-indent:0px">Appendix C - <span>Inherently Satisfied Requirements</span></a><a href="#entropyappendix" style="text-indent:0px">Appendix D - <span>Entropy Documentation and Assessment</span></a><a href="#entropydesign" style="text-indent:10px">D.1<span>Design Description</span></a><a href="#entropyjustification" style="text-indent:10px">D.2<span>Entropy Justification</span></a><a href="#entropyoperatingconditions" style="text-indent:10px">D.3<span>Operating Conditions</span></a><a href="#entropyhealthtesting" style="text-indent:10px">D.4<span>Health Testing</span></a><a href="#acronyms" style="text-indent:0px">Appendix E - <span>Acronyms</span></a><a href="#appendix-bibliography" style="text-indent:0px">Appendix F - <span>Bibliography</span></a></div><h1 class="indexable" data-level="1" id="Introduction">1 Introduction</h1>
+    </span></a><a href="#satisfiedreqs" style="text-indent:0px">Appendix C - <span>Inherently Satisfied Requirements</span></a><a href="#entropyappendix" style="text-indent:0px">Appendix D - <span>Entropy Documentation and Assessment</span></a><a href="#acronyms" style="text-indent:0px">Appendix E - <span>Acronyms</span></a><a href="#appendix-bibliography" style="text-indent:0px">Appendix F - <span>Bibliography</span></a></div><h1 class="indexable" data-level="1" id="Introduction">1 Introduction</h1>
     
      
     <h2 class="indexable" data-level="2" id="Overview">1.1 Overview</h2>
@@ -1050,7 +1050,7 @@ enforce its policies on network traffic of monitored networks<a id="period_130" 
 					<li><i>Totals of similar events occurring within a specified time period;</i></li>
 					<li><i>Totals of similar reactions occurring within a specified time period;</i></li>
 					<li><i>The events in the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> Events table; </i></li>
-					<li>[<b>selection</b>: <span class="selectable-content" id="_s_1">no other auditable events</span>, <span class="selectable-content" id="_s_2">Auditable events listed in the Auditable Events for Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> table (<a onclick="showTarget('at-optional')" href="#at-optional" class="at-optional-ref">Table  <span class="counter">7</span></a>) for <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are present in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></span>, <span class="selectable-content" id="_s_3">Auditable events listed in the Auditable Events for Objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> table (<a onclick="showTarget('at-objective')" href="#at-objective" class="at-objective-ref">Table  <span class="counter">8</span></a>) for <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are present in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></span>]
+					<li>[<b>selection</b>: <span class="selectable-content" id="_s_1">no other auditable events</span>, <span class="selectable-content" id="_s_2">Auditable events listed in the Auditable Events for Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> table (<a onclick="showTarget('at-optional')" href="#at-optional" class="at-optional-ref">Table  <span class="counter">7</span></a>) for <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are present in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></span>, <span class="selectable-content" id="_s_3">Auditable events listed in the Auditable Events for Implementation-dependent <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> table (<a onclick="showTarget('at-impl-dep')" href="#at-impl-dep" class="at-impl-dep-ref">Table  <span class="counter">9</span></a>) for <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are present in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></span>]
 					</li>
 				
 					</ol>
@@ -1081,7 +1081,7 @@ enforce its policies on network traffic of monitored networks<a id="period_130" 
 				</span></div></div></div>
 				<div class="element"><div class="reqid" id="FAU_GEN.1.2/IPS"><a href="#FAU_GEN.1.2/IPS" class="abbr">FAU_GEN.1.2/IPS</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall record within each <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> auditable event</b> record at least the following information: <ol type="a">
 						<li>Date and time of the event, type of event <b>and/or reaction,</b> <s>subject identity, and the outcome (success or failure) of the event; and;</s></li>
-						<li>For each <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> auditable event</b> type, based on the auditable event definitions of the functional components included in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><s>/<abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></s>, [<i>information specified in column three of the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> Events table, [<b>selection</b>: <span class="selectable-content" id="_s_4">no other auditable events</span>, <span class="selectable-content" id="_s_5">additional information in column three of the Auditable Events for Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> table (<a onclick="showTarget('at-optional')" href="#at-optional" class="at-optional-ref">Table  <span class="counter">7</span></a>) for <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are present in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></span>, <span class="selectable-content" id="_s_6">additional information in column three of the Auditable Events for Objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> table (<a onclick="showTarget('at-objective')" href="#at-objective" class="at-objective-ref">Table  <span class="counter">8</span></a>) for <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are present in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></span>]]<a id="period_188" href="#period_188">. </a></i></li>
+						<li>For each <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> auditable event</b> type, based on the auditable event definitions of the functional components included in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><s>/<abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></s>, [<i>information specified in column three of the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> Events table, [<b>selection</b>: <span class="selectable-content" id="_s_4">no other auditable events</span>, <span class="selectable-content" id="_s_5">additional information in column three of the Auditable Events for Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> table (<a onclick="showTarget('at-optional')" href="#at-optional" class="at-optional-ref">Table  <span class="counter">7</span></a>) for <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are present in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></span>, <span class="selectable-content" id="_s_6">additional information in column three of the Auditable Events for Implementation-dependent <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> table (<a onclick="showTarget('at-impl-dep')" href="#at-impl-dep" class="at-impl-dep-ref">Table  <span class="counter">9</span></a>) for <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are present in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></span>]]<a id="period_188" href="#period_188">. </a></i></li>
 						
 					</ol>
 
@@ -1787,7 +1787,7 @@ supporting inspection of network traffic</i>] that [<i>subjects</i>] can use [<i
 		included in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr><a id="period_409" href="#period_409">. </a> 
 		They are not included as standalone <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> because it would
 		increase the time, cost, and complexity of evaluation<a id="period_410" href="#period_410">. </a> This approach is permitted
-		by <a href="#bibCC">[CC]</a> Part 1, <b>8.2 Dependencies between components</b><a id="period_411" href="#period_411">. </a>		<br>
+		by <a href="#bibCC">[CC]</a> Part 1, <b>8.3 Dependencies between components</b><a id="period_411" href="#period_411">. </a>		<br>
 		This information benefits systems engineering activities which call for inclusion of 
 		particular security controls<a id="period_412" href="#period_412">. </a> Evaluation against the Protection Profile
 		provides evidence that these controls are present and have been evaluated<a id="period_413" href="#period_413">. </a>		<table>
@@ -1796,171 +1796,28 @@ supporting inspection of network traffic</i>] that [<i>subjects</i>] can use [<i
 				<td>Rationale for Satisfaction</td>
 			</tr>
 			<tr>
-				<td>FIA_UAU.1 - Timing of authentication</td>
-				<td>
-				  FIA_AFL.1 implicitly requires that the OS perform all necessary actions, 
-				  including those on behalf of the user who has not been authenticated, 
-				  in order to authenticate;
-				  therefore it is duplicative to include these actions as a 
-				  separate assignment and test<a id="period_414" href="#period_414">. </a>				</td>
+				<td><b><a href="#FAU_ARP.1">FAU_ARP.1</a> - Security Alarms</b></td>
+				<td><a href="#FAU_ARP.1">FAU_ARP.1</a> has a dependency on FAU_SAA.1<a id="period_414" href="#period_414">. </a>This is
+					because FAU_SAA.1 defines the behavior that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> may
+					consider to be a potential security violation while
+					<a href="#FAU_ARP.1">FAU_ARP.1</a> defines what actions the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> takes when such
+					behavior is detected<a id="period_415" href="#period_415">. </a>This dependency is implicitly
+					satisfied in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because the behavior defined
+					in <a href="#FRU_RSA.1">FRU_RSA.1</a> and the various <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> class requirements
+					collectively define potential security violation behavior so
+					a separate <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> to enumerate this is redundant<a id="period_416" href="#period_416">. </a>				</td>
 			</tr>
 			<tr>
-				<td>FIA_UID.1 - Timing of identification</td>
-				<td>
-				  FIA_AFL.1 implicitly requires that the OS perform all necessary actions, 
-				  including those on behalf of the user who has not been identified, 
-				  in order to authenticate;
-				  therefore it is duplicative to include these actions as a 
-				  separate assignment and test<a id="period_415" href="#period_415">. </a>				</td>
-			</tr>
-			<tr>
-				<td>FMT_SMR.1 - Security roles</td>
-				<td>
-				  FMT_MOF_EXT.1 specifies role-based management functions that implicitly defines
-				  user and privileged accounts; 
-				  therefore, it is duplicative to include separate role requirements<a id="period_416" href="#period_416">. </a>				</td>
-			</tr>
-			<tr>
-				<td>FPT_STM.1 - Reliable time stamps</td>
-				<td>
-				  FAU_GEN.1.2 explicitly requires that the OS associate timestamps with audit records;
-				  therefore it is duplicative to include a separate timestamp requirement<a id="period_417" href="#period_417">. </a>				</td>
-			</tr>
-			<tr>
-				<td>FTA_SSL.1 - <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>-initiated session locking</td>
-				<td>
-					  FMT_MOF_EXT.1 defines requirements for managing session locking;
-					  therefore, it is duplicative to include a separate session locking requirement<a id="period_418" href="#period_418">. </a>				</td>
-			</tr>
-			<tr>
-				<td>FTA_SSL.2 - User-initiated locking</td>
-				<td>
-				  FMT_MOF_EXT.1 defines requirements for user-initiated session locking;
-				  therefore, it is duplicative to include a separate session locking requirement<a id="period_419" href="#period_419">. </a>				</td>
-			</tr>
-			<tr>
-				<td>FAU_STG.1 - Protected audit trail storage</td>
-				<td>
-				  FPT_ACF_EXT.1 defines a requirement to protect audit logs;
-				  therefore, it is duplicative to include a separate protection of audit trail requirements<a id="period_420" href="#period_420">. </a>				</td>
-			</tr>
-			<tr>
-				<td>FAU_GEN.2 - User identity association</td>
-				<td>
-				  FAU_GEN.1.2 explicitly requires that the OS record
-				  any user account associated with each event; therefore, it is duplicative
-				  to include a separate requirement to associate a user account with each
-				  event<a id="period_421" href="#period_421">. </a>				</td>
-			</tr>
-			<tr>
-				<td><a href="#FAU_SAR.1">FAU_SAR.1</a> - Audit review</td>
-				<td>
-					FPT_ACF_EXT.1.2 requires that audit logs (and other objects)
-					are protected from reading by unprivileged users; therefore, it is duplicative
-					to include a separate requirement to protect only the audit information<a id="period_422" href="#period_422">. </a>				</td>
+				<td><b><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a> - Audit Data Generation (<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr>)</b></td>
+				<td>FAU_GEN.1 has a dependency on FPT_STM.1 The
+					extended <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> FPT_STM_EXT.1 that is defined in the BasePP provides equivalent functionality to FPT_STM.1 and
+					therefore satisfies this dependency<a id="period_417" href="#period_417">. </a></td>
 			</tr>
 		</table>
-
 	<h1 id="entropyappendix" class="indexable" data-level="A">Appendix D -  Entropy Documentation and Assessment</h1> 
 		<p>
-			This appendix describes the required supplementary information for the entropy
-		  source used by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_423" href="#period_423">. </a>			</p><p>
-		  The documentation of the entropy source should be detailed enough that, after
-		  reading, the evaluator will thoroughly understand the entropy source and why
-		  it can be relied upon to provide sufficient entropy<a id="period_424" href="#period_424">. </a>This documentation should
-		  include multiple detailed sections: design description, entropy justification,
-		  operating conditions, and health testing<a id="period_425" href="#period_425">. </a>This documentation is not required to
-		  be part of the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr><a id="period_426" href="#period_426">. </a>
-		</p>
-		<h2 class="indexable" data-level="2" id="entropydesign">D.1 Design Description</h2>
-			<p>
-		  Documentation shall include the design of the entropy source as a whole,
-		  including the interaction of all entropy source components<a id="period_427" href="#period_427">. </a>Any information
-		  that can be shared regarding the design should also be included for any
-		  third-party entropy sources that are included in the product<a id="period_428" href="#period_428">. </a>
-			</p><p>
-		  The documentation will describe the operation of the entropy source to
-		  include, how entropy is produced, and how unprocessed (raw) data can be
-		  obtained from within the entropy source for testing purposes<a id="period_429" href="#period_429">. </a>The documentation
-		  should walk through the entropy source design indicating where the entropy
-		  comes from, where the entropy output is passed next, any post-processing
-		  of the raw outputs (hash, XOR, etc.), if/where it is stored, and finally,
-		  how it is output from the entropy source<a id="period_430" href="#period_430">. </a>Any conditions placed on the
-		  process (e.g., blocking) should also be described in the entropy source
-		  design<a id="period_431" href="#period_431">. </a>Diagrams and examples are encouraged<a id="period_432" href="#period_432">. </a>
-			</p><p>
-		  This design must also include a description of the content of the
-		  security boundary of the entropy source and a description of how
-		  the security boundary ensures that an adversary outside the boundary
-		  cannot affect the entropy rate<a id="period_433" href="#period_433">. </a>			</p><p>
-		  If implemented, the design description shall include a description
-		  of how third-party applications can add entropy to the RBG<a id="period_434" href="#period_434">. </a>A
-		  description of any RBG state saving between power-off and
-		  power-on shall be included<a id="period_435" href="#period_435">. </a>			</p>
-		
-
-		<h2 class="indexable" data-level="2" id="entropyjustification">D.2 Entropy Justification</h2>
-			<p>
-		  There should be a technical argument for where the unpredictability in
-		  the source comes from and why there is confidence in the entropy source
-		  delivering sufficient entropy for the uses made of the RBG output
-		  (by this particular <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>)<a id="period_436" href="#period_436">. </a>This argument will include a description of
-		  the expected min-entropy rate (i.e<a id="period_437" href="#period_437">. </a>the minimum entropy (in bits) per
-		  bit or byte of source data) and explain that sufficient entropy is
-		  going into the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> randomizer seeding process<a id="period_438" href="#period_438">. </a>This discussion will
-		  be part of a justification for why the entropy source can be relied
-		  upon to produce bits with entropy<a id="period_439" href="#period_439">. </a>			</p><p>
-		  The amount of information necessary to justify the expected
-		  min-entropy rate depends on the type of entropy source included in the
-		  product<a id="period_440" href="#period_440">. </a>			</p><p>
-		  For developer provided entropy sources, in order to justify the
-		  min-entropy rate, it is expected that a large number of raw source
-		  bits will be collected, statistical tests will be performed, and the
-		  min-entropy rate determined from the statistical tests<a id="period_441" href="#period_441">. </a>While no
-		  particular statistical tests are required at this time, it is expected
-		  that some testing is necessary in order to determine the amount of
-		  min-entropy in each output<a id="period_442" href="#period_442">. </a>			</p><p>
-		  For third party provided entropy sources, in which the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> vendor
-		  has limited access to the design and raw entropy data of the source, the
-		  documentation will indicate an estimate of the amount of min-entropy
-		  obtained from this third-party source<a id="period_443" href="#period_443">. </a> It is acceptable for the vendor
-		  to &#8220;assume&#8221; an amount of min-entropy, however, this assumption must be
-		  clearly stated in the documentation provided<a id="period_444" href="#period_444">. </a> In particular, the
-		  min-entropy estimate must be specified and the assumption included
-		  in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr><a id="period_445" href="#period_445">. </a>			</p><p>
-		  Regardless of type of entropy source, the justification will also
-		  include how the DRBG is initialized with the entropy stated in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>,
-		  for example by verifying that the min-entropy rate is multiplied by the
-		  amount of source data used to seed the DRBG or that the rate of entropy
-		  expected based on the amount of source data is explicitly stated and
-		  compared to the statistical rate<a id="period_446" href="#period_446">. </a>If the amount of source data used to
-		  seed the DRBG is not clear or the calculated rate is not explicitly
-		  related to the seed, the documentation will not be considered complete<a id="period_447" href="#period_447">. </a>			</p><p>
-		  The entropy justification shall not include any data added from
-		  any third-party application or from any state saving between restarts<a id="period_448" href="#period_448">. </a>			</p>
-		
-
-		<h2 class="indexable" data-level="2" id="entropyoperatingconditions">D.3 Operating Conditions</h2>
-		  The entropy rate may be affected by conditions outside the control
-		  of the entropy source itself<a id="period_449" href="#period_449">. </a> For example, voltage, frequency,
-		  temperature, and elapsed time after power-on are just a few of the
-		  factors that may affect the operation of the entropy source<a id="period_450" href="#period_450">. </a>		  As such, documentation will also include the range of operating conditions
-		  under which the entropy source is expected to generate random data<a id="period_451" href="#period_451">. </a>		  It will clearly describe the measures that have been taken in the
-		  system design to ensure the entropy source continues to operate
-		  under those conditions<a id="period_452" href="#period_452">. </a>Similarly, documentation shall describe
-		  the conditions under which the entropy source is known to malfunction
-		  or become inconsistent<a id="period_453" href="#period_453">. </a>Methods used to detect failure or degradation
-		  of the source shall be included<a id="period_454" href="#period_454">. </a>		
-
-		<h2 class="indexable" data-level="2" id="entropyhealthtesting">D.4 Health Testing</h2>
-		  More specifically, all entropy source health tests and their rationale
-		  will be documented<a id="period_455" href="#period_455">. </a>This will include a description of the health tests,
-		  the rate and conditions under which each health test is performed
-		  (e.g., at startup, continuously, or on-demand), the expected results
-		  for each health test, and rationale indicating why each test is
-		  believed to be appropriate for detecting one or more failures in the
-		  entropy source<a id="period_456" href="#period_456">. </a>		
-  
+			The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> does not require any additional supplementary information to describe its entropy sources
+			beyond the requirements outlined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr><a id="period_418" href="#period_418">. </a>			</p>
 	<h1 id="acronyms" class="indexable" data-level="A">Appendix E -  Acronyms</h1><table><caption><span class="ctr" data-myid="t-acronyms" data-counter-type="ct-Table" id="t-acronyms">Table <span class="counter">10</span></span>: Acronyms
 		</caption><tr class="header"><th>Acronym</th><th>Meaning</th></tr><tr><td><span class="term" id="abbr_Base-PP" data-plural="Base-PPs"><abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr></span></td><td><span id="long_abbr_Base-PP">Base Protection Profile</span></td></tr>
 <tr><td><span class="term" id="abbr_CC"><abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr></span></td><td><span id="long_abbr_CC">Common Criteria</span></td></tr>
@@ -2005,16 +1862,16 @@ supporting inspection of network traffic</i>] that [<i>subjects</i>] can use [<i
 <tr><td><span class="term" id="abbr_UDP"><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr></span></td><td><span id="long_abbr_UDP">User Datagram Protocol</span></td></tr>
 </table><h1 id="appendix-bibliography" class="indexable" data-level="A">Appendix F -  Bibliography</h1><table><caption><span class="ctr" data-myid="t-biblio" data-counter-type="ct-Table" id="t-biblio">Table <span class="counter">11</span></span>: Bibliography</caption><tr class="header"><th>Identifier</th><th>Title</th></tr><tr><td><span id="bibndcpp3">[NDcPP]</span></td><td><span class="description">NDcPP  - <a href="https://www.niap-ccevs.org/protectionprofiles/482">Collaborative Protection Profile for Network Devices, Version 3.0e, December 06, 2023</a></span></td></tr><tr><td><span id="bibCC">[<abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>]</span></td><td><span class="description">Common Criteria for Information Technology Security Evaluation - <ul>
             <li><a href="https://www.commoncriteriaportal.org/files/ccfiles/CC2022PART1R1.pdf">Part 1: 
-				Introduction and general model</a>, CCMB-2022-11-001, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_457" href="#period_457">. </a></li>
+				Introduction and general model</a>, CCMB-2022-11-001, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_419" href="#period_419">. </a></li>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART2R1.pdf">Part 2: 
-				Security functional requirements</a>, CCMB-2022-11-002, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_458" href="#period_458">. </a></li>
+				Security functional requirements</a>, CCMB-2022-11-002, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_420" href="#period_420">. </a></li>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART3R1.pdf">Part 3: 
-                Security assurance requirements</a>, CCMB-2022-11-003, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_459" href="#period_459">. </a></li>
+                Security assurance requirements</a>, CCMB-2022-11-003, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_421" href="#period_421">. </a></li>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART4R1.pdf">Part 4: 
-                Framework for the specification of evaluation methods and activities</a>, CCMB-2022-11-004, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_460" href="#period_460">. </a></li>
+                Framework for the specification of evaluation methods and activities</a>, CCMB-2022-11-004, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_422" href="#period_422">. </a></li>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART5R1.pdf">Part 5: 
-                 Pre-defined packages of security requirements</a>, CCMB-2022-11-005, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_461" href="#period_461">. </a></li>
+                 Pre-defined packages of security requirements</a>, CCMB-2022-11-005, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_423" href="#period_423">. </a></li>
           </ul></span></td></tr><tr><td><span id="bibCEM">[<abbr class="dyn-abbr"><a href="#abbr_CEM">CEM</a></abbr>]</span></td><td><span class="description">Common Methodology for Information Technology Security Evaluation - <ul>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CEM2022R1.pdf">
-                 Evaluation methodology</a>, CCMB-2022-11-006, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_462" href="#period_462">. </a></li>
+                 Evaluation methodology</a>, CCMB-2022-11-006, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_424" href="#period_424">. </a></li>
           </ul></span></td></tr></table></body></html>
