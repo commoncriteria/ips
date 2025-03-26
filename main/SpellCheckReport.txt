@@ -20,7 +20,6 @@ output/ips-release-linkable.html: SNMP
 output/ips-release-linkable.html: STM
 output/ips-release-linkable.html: Stateful
 output/ips-release-linkable.html: TDs
-output/ips-release-linkable.html: TODO
 output/ips-release-linkable.html: TRP
 output/ips-release-linkable.html: TST
 output/ips-release-linkable.html: UAU
@@ -158,7 +157,6 @@ output/ips-sd.html: CEM
 output/ips-sd.html: ICMPv4
 output/ips-sd.html: ICMPv6
 output/ips-sd.html: TDs
-output/ips-sd.html: TODO
 output/ips-sd.html: URIs
 output/ips-sd.html: acknowledgement
 output/ips-sd.html: administrators’
@@ -210,7 +208,6 @@ output/ips.html: SNMP
 output/ips.html: STM
 output/ips.html: Stateful
 output/ips.html: TDs
-output/ips.html: TODO
 output/ips.html: TRP
 output/ips.html: TST
 output/ips.html: UAU

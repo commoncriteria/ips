@@ -1602,9 +1602,7 @@ enforce its policies on network traffic of monitored networks.</description>
 			<f-component name="Protected Audit Trail Storage" cc-id="fau_stg.2" iteration="IPS" id="fau-stg-2-ips">
 			<f-element id="fau-stg-1e1-ips">
 				<title>The TSF shall protect the stored <h:s>audit records </h:s><h:b>IPS data</h:b> from unauthorized deletion.</title>
-				<aactivity>
-				<no-tests/>
-				</aactivity>
+
 			</f-element>
 			<f-element id="fau-stg-1e2">
 				<title>The TSF shall be able to [<h:i>prevent</h:i>] unauthorized modifications to the <h:s>stored audit records</h:s> <h:b>IPS data</h:b> <h:s>in the audit trail</h:s>.</title>
@@ -1646,8 +1644,9 @@ enforce its policies on network traffic of monitored networks.</description>
 	<section title="Protection of the TSF (FPT)" id="fpt">
 	<f-component name="Failure with Preservation of Secure State" cc-id="fpt_fls.1" iteration="IPS" id="fpt-fls-1-ips">
 	<f-element id="fpt-fls-1">
-	<title><comment>Iterated in case this is added to NDcPP (dependency on FPT_TST)</comment>The TSF shall <h:br>be able to</h:br> preserve a secure state <h:br>for inline interfaces</h:br> when the following types of failures occur: <assignable>list of types of failures in the TSF</assignable></title>
-	<note role="application"><h:i>
+	<title><comment>Iterated in case this is added to NDcPP (dependency on FPT_TST)</comment>
+		The TSF shall <h:b>be able to</h:b> preserve a secure state <h:b>for inline interfaces</h:b> when the following types of failures occur: <assignable>list of types of failures in the TSF</assignable>.</title>
+	<note role="application">
 	The intent of this SFR is to allow the ST author to define the types of failures
 	that can occur on the TOE which could result in failure to effectively detect and
 	react to IPS policy violations for traffic traversing inline interface, and to not
@@ -1661,7 +1660,7 @@ enforce its policies on network traffic of monitored networks.</description>
 	true that “all” the SFRs will continue to be enforced in the event of failure of
 	certain components. The intent here is to ensure that if network traffic is not
 	capable of being inspected by the TSF, then it should automatically be treated
-	as untrusted.</h:i>
+	as untrusted.
 	</note>
 	<aactivity><TSS>The evaluator shall examine the TSS section to determine that the TOE’s implementation of the fail secure
 	functionality is documented. The evaluator shall ensure that the TSS identifies all failures that will result
@@ -1689,7 +1688,7 @@ enforce its policies on network traffic of monitored networks.</description>
 	<title>The TSF shall be able to inspect packets encapsulated through the following means: <selectables><selectable>GRE</selectable><selectable>IP-in-IP</selectable><selectable>IPv4-in-IPv6</selectable><selectable>MPLS</selectable><selectable> PPTP</selectable><selectable><assignable>other
 encapsulation methods</assignable></selectable></selectables>.
 	</title>
-	<aactivity>
+	<aactivity level="element">
 		<TSS>The evaluator shall verify that the TSS describes how the TOE is able to inspect traffic inside the encapsulation protocols claimed in the requirement.</TSS>
 		<Guidance>The evaluator shall examine the operational guidance to determine that it contains instructions for inspecting tunneled packets through the encapsulation methods identified in the requirement.</Guidance>
 		<Tests>The evaluator shall set up the conditions necessary to execute testing from IPS_SBD_EXT.1 except that
@@ -1708,7 +1707,7 @@ encapsulation methods</assignable></selectable></selectables>.
 
 
 	</selectables>.</title>
-	<aactivity>
+	<aactivity level="element">
 		<TSS>The evaluator shall verify that the TSS describes how audit records are generated when packets cannot
 		be reassembled after fragmentation. Also, for inline mode, the evaluator shall examine the TSS to ensure
 		packets are dropped.</TSS>
@@ -1732,8 +1731,8 @@ encapsulation methods</assignable></selectable></selectables>.
 forwarded</assignable></selectable>
 			<selectable>no other packets</selectable>
 			</selectables>
-			</selectable></selectables></title>
-	<aactivity>
+			</selectable></selectables>.</title>
+	<aactivity level="element">
 	<TSS>The evaluator shall verify that the TSS describes that packets are automatically dropped for the following normalization:<h:ul>
 	<h:li>duplicate packets</h:li>
 	<h:li>changed packets</h:li>
@@ -1741,7 +1740,8 @@ forwarded</assignable></selectable>
 	<h:li>other packet types claimed in the requirement, if any</h:li>
 	</h:ul></TSS>
 	<Guidance>There are no guidance EAs for this element.</Guidance>
-	<Tests>The evaluator shall generate the following types of packets and observe that they are discarded by the TSF: <h:ul><h:li>duplicate packets</h:li>
+	<Tests>The evaluator shall generate the following types of packets and observe that they are discarded by the TSF: 
+		<h:ul>
 		<h:li>duplicate packets</h:li>
 		<h:li>changed packets</h:li>
 		<h:li>out of sequence packets</h:li>
@@ -1780,7 +1780,7 @@ forwarded</assignable></selectable>
 	<title>
 	The TSF shall take <assignable>list of actions</assignable> upon detection of potential security violation.
 	</title>
-	<note role="application"><h:i>
+	<note role="application">
 	<h:p>At minimum, the set of potential security violations must include network traffic
 		in excess of maximum quotas. Therefore, when this SFR is included, the ST author
 		must also include FRU_RSA.1.</h:p><h:p>In CC Part 2, FAU_ARP is intended to depend on FAU_SAA to define a potential
@@ -1803,7 +1803,7 @@ forwarded</assignable></selectable>
 		within trusted channels (as defined by FTP_ITC.1), the ST author can choose to
 		list these messaging methods within FTP_ITC.1 and/or within this SFR. There are
 		no additional auditable IPS events that need to be included in FAU_GEN.1/IPS.
-		</h:p></h:i></note>
+		</h:p></note>
 		<aactivity>
 		<TSS>The evaluator shall verify that the TSS includes a description of the alerts specified in the requirement and
 			the events that may trigger these alerts to be generated. The evaluator shall also verify that the TSS states
@@ -1830,13 +1830,12 @@ forwarded</assignable></selectable>
 	<title>
 	The TSF shall provide [<h:i>authorized administrators</h:i>] with the capability to read [<h:i>IPS data</h:i>] from the <h:s>audit records</h:s> <h:b>IPS events</h:b>.
 	</title>
-	<aactivity><no-tests/></aactivity>
 	</f-element>
 	<f-element id="fau-sar-1e2">
 	<title>
 	The TSF shall provide the <h:s>audit records</h:s> <h:b>IPS data</h:b> in a manner suitable for the <h:s>user</h:s> <h:b>administrators</h:b> to interpret the information.
 	</title>
-	<note role="application"><h:i>It is anticipated, but not required, that TOEs would provide a graphical user
+	<note role="application">It is anticipated, but not required, that TOEs would provide a graphical user
 		interface that would allow searching and sorting, and it would be acceptable for
 		such output to group similar events together to ease administrative review of the
 		IPS data. For example, the display might allow grouping of data by event type, or
@@ -1844,7 +1843,7 @@ forwarded</assignable></selectable>
 		displayed on a single line as in the sample table below. Regardless whether such
 		a view is provided, it is expected that the administrator will be able to view the
 		details of individual event occurrences.
-		</h:i>
+		
 		
 		<h:table border="1">
 		<h:tr>
@@ -1886,11 +1885,11 @@ forwarded</assignable></selectable>
 	<f-component name="Selectable Audit Review" cc-id="fau_sar.3" id="fau-sar-3">
 	<f-element id="fau-sar-3e1">
 	<title>
-	The TSF shall provide the ability to apply [<h:i>filtering and sorting</h:i>] of audit IPS data
+		The TSF shall provide the ability to apply [<h:i>filtering and sorting</h:i>] of <h:s>audit</h:s> <h:b>IPS</h:b> data
 	based on [<h:i>filtering parameters: risk rating, time period, source IP address,
 	destination IP address and </h:i><selectables>
 		<selectable><assignable> other filtering parameters</assignable></selectable>
-		<selectable>No other filtering parameters</selectable></selectables><h:i>; and sorting parameters: event ID, event type, time,
+		<selectable>no other filtering parameters</selectable></selectables><h:i>; and sorting parameters: event ID, event type, time,
 signature ID, IPS actions performed, and </h:i><selectables>
 		<selectable><assignable>other sorting parameters</assignable></selectable>
 		<selectable>no other sorting parameters</selectable></selectables>.
@@ -1925,10 +1924,9 @@ justifying the set of tests as representative and sufficient to exercise the cap
     
     
     <impl-dep-sfrs>
-	<section id="ss-audit-table" title="Auditable Events for Implementation-Dependent SFRs">
-	    <audit-table table="impl-dep-sfrs" id="Implementation-audit-events">
-	      <h:br/><h:b><ctr ctr-type="Table" pre="Table " id="atref-imp-dep-sfr">: Auditable Events for Mandatory SFRs</ctr></h:b>
-	    </audit-table></section>
+    	<section title="Auditable Events for Implementation-Dependent SFRs">
+    		<audit-table id="at-impl-dep" table="impl-dep"/>
+    	</section>
 	
 
 	<section title="Resource Utilization" id="fru-imp_dep">
@@ -1947,7 +1945,7 @@ supporting inspection of network traffic</h:i>] that [<h:i>subjects</h:i>] can u
 		not possible for an administrator to determine whether a lack of potential security
 		violations is caused by an absence of potential malicious activity or by the inability
 		of the TSF to detect such activity due to an inability to process the volume of traffic
-		being received</h:p><h:p>Conformant TOEs will impose quotas on exhaustible resources used to support
+		being received.</h:p><h:p>Conformant TOEs will impose quotas on exhaustible resources used to support
 		inspection of network traffic that ‘subjects’ (inspected network traffic flows) can
 		use simultaneously. The intent of this requirement is to ensure that the TOE is not
 		deployed in such a way that the flow of data across its sensor interfaces can
@@ -1975,7 +1973,7 @@ supporting inspection of network traffic</h:i>] that [<h:i>subjects</h:i>] can u
 			the action specified in the TSS occurs.</Tests></aactivity>
 			
 			</f-element>
-			<audit-event>
+			<audit-event table="impl-dep">
 				<audit-event-descr>Traffic flow volume exceeds the maximum quota.</audit-event-descr>
 				<audit-event-info>Identification of the TOE interface at which the quota was exceeded.</audit-event-info>
 			</audit-event>
