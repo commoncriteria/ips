@@ -1079,6 +1079,24 @@ enforce its policies on network traffic of monitored networks.</description>
 							</ext-comp-def>
 							
 				<f-component name="IP Blocking" cc-id="ips_ipb_ext.1" id="ips-ipb-ext-1">
+					
+					<comp-lev> requires the TSF to enforce IPS policies that are based on IP address.
+					</comp-lev>
+					<management>The following actions could be considered for the management functions in FMT:
+						<h:ul>
+							<h:li>Modification of the known-good and known-bad lists (of IP addresses or address ranges).</h:li>
+							<h:li>Configuration of the known-good and known-bad lists to override signature-based IPS policies.</h:li>
+						</h:ul>
+					</management>
+					<audit>The following actions should be auditable if FAU_GEN Security audit data generation is included in the
+						PP/ST:<h:ul>
+							<h:li>Inspected traffic matches a list of known-good or known-bad addresses applied to an IPS policy.</h:li>
+						</h:ul>
+					</audit>
+					<dependencies>IPS_NTA_EXT.1 Network Traffic Analysis<h:br/>
+						FMT_SMR.1 Security Roles
+					</dependencies>
+					
 				<f-element id="ips-ipb-ext-1e1">
 					<title>
 					The TSF shall support configuration and implementation of known-good and known-bad lists of <selectables>
@@ -1101,14 +1119,25 @@ enforce its policies on network traffic of monitored networks.</description>
 				</f-element>
 				<f-element id="ips-ipb-ext-1e2">
 					<title>
-					The TSF shall allow Security Administrators to configure the following IPS policy elements: <selectables> 
+						The TSF shall allow [<h:i>Security Administrators</h:i>] to configure the following IPS policy elements: <selectables> 
 						<selectable>known-good list rules</selectable> 
 						<selectable>known-bad list rules</selectable>
 						<selectable>IP addresses</selectable>
 						<selectable><assignable>other IPS policy elements</assignable></selectable>
-						<selectable>no other IPS policy elements</selectable>
-						</selectables>.
+						<selectable>no other IPS policy elements</selectable></selectables>.
 					</title>
+					<ext-comp-def-title>
+						<title>
+							
+								The TSF shall allow <assignable>authorized roles</assignable> to configure the following IPS policy elements: <selectables> 
+									<selectable>known-good list rules</selectable> 
+									<selectable>known-bad list rules</selectable>
+									<selectable>IP addresses</selectable>
+									<selectable><assignable>other IPS policy elements</assignable></selectable>
+									<selectable>no other IPS policy elements</selectable></selectables>.
+							
+						</title>
+					</ext-comp-def-title>
 					<aactivity>      <!-- at minimum, only the last f-element in the f-component needs to have this -->
 						<TSS>
 							<h:p>
@@ -1162,6 +1191,25 @@ enforce its policies on network traffic of monitored networks.</description>
 							</ext-comp-def>
 							
 				<f-component name="Network Traffic Analysis" cc-id="ips_nta_ext.1" id="ips-nta-ext-1">
+					
+					<comp-lev> requires the TSF to be able to inspect traffic for certain network
+						protocols and in certain architectural deployments.</comp-lev>
+					<management>The following actions could be considered for the management functions in FMT:
+						<h:ul>
+							<h:li>Modification of the parameters that define the network traffic to be collected and analyzed.</h:li>
+						</h:ul>
+					</management>
+					<audit>The following actions should be auditable if FAU_GEN Security audit data generation is included in the
+						PP/ST:
+						<h:ul>
+						<h:li>Modification of which IPS policies are active on a TOE interface.</h:li>
+						<h:li>Enabling/disabling a TOE interface with IPS policies applied.</h:li>
+						<h:li>Modification of which mode(s) is/are active on a TOE interface.</h:li>
+						</h:ul>
+					</audit>
+					<dependencies>No dependencies.
+					</dependencies>
+					
 				<f-element id="ips-nta-ext-1e1">
 					<title>
 					The TSF shall perform analysis of IP-based network traffic forwarded to the
@@ -1357,6 +1405,26 @@ enforce its policies on network traffic of monitored networks.</description>
 							</ext-comp-def>
 							
 				<f-component name="Signature-Based IPS Functionality" cc-id="ips_sbd_ext.1" id="ips-sbd-ext-1">
+					
+					<comp-lev> requires the TSF to detect network traffic with certain
+						packet characteristics and take some action when this traffic is detected.</comp-lev>
+					<management>The following actions could be considered for the management functions in FMT:
+						<h:ul>
+						<h:li>Enabling and disabling signatures applied to sensor interfaces.</h:li>
+						<h:li>Updating (importing) signatures.</h:li>
+						<h:li>Creating custom signatures.</h:li>
+						<h:li>Enabling and disabling actions to be taken when signature matches are detected.</h:li>
+						</h:ul>
+					</management>
+					<audit>The following actions should be auditable if FAU_GEN Security audit data generation is included in the
+						PP/ST:
+						<h:ul>
+							<h:li>Inspected traffic matches a signature-based IPS rule with logging enabled.</h:li>
+						</h:ul>
+					</audit>
+					<dependencies>IPS_NTA_EXT.1 Network Traffic Analysis
+					</dependencies>
+					
 				<f-element id="ips-sbd-ext-1e1">
 				<title>
 					The TSF shall support inspection of packet header contents and be able to inspect at least the following header fields: 
@@ -1777,7 +1845,29 @@ enforce its policies on network traffic of monitored networks.</description>
 	</f-component>
 	</section>
 	<section title="Intrusion Prevention (IPS)" id="ips">
+		
 	<f-component name="Traffic Normalization" cc-id="ips_sbd_ext.2" id="ips-sbd-ext-2">
+		
+		<comp-lev> requires the TSF to support the inspection of encapsulated or
+			fragmented traffic by normalizing it.
+		</comp-lev>
+		<management>The following actions could be considered for the management functions in FMT:
+			<h:ul>
+			<h:li>Enabling and disabling signatures applied to sensor interfaces.</h:li>
+			<h:li>Updating (importing) signatures.</h:li>
+			<h:li>Creating custom signatures.</h:li>
+			<h:li>Enabling and disabling actions to be taken when signature matches are detected.</h:li>
+			</h:ul>
+		</management>
+		<audit>The following actions should be auditable if FAU_GEN Security audit data generation is included in the
+			PP/ST:
+			<h:ul>
+				<h:li>Inspected traffic matches a signature-based IPS rule with logging enabled.</h:li>
+			</h:ul>
+		</audit>
+		<dependencies>IPS_NTA_EXT.1 Network Traffic Analysis
+		</dependencies>
+		
 	<f-element id="ips-sbd-2e1">
 	<title>The TSF shall be able to inspect packets encapsulated through the following means: <selectables><selectable>GRE</selectable><selectable>IP-in-IP</selectable><selectable>IPv4-in-IPv6</selectable><selectable>MPLS</selectable><selectable> PPTP</selectable><selectable><assignable>other
 encapsulation methods</assignable></selectable></selectables>.
