@@ -929,7 +929,39 @@ enforce its policies on network traffic of monitored networks.</description>
 			</section>
 			<!-- NEW SFR-->
 						<section title="Intrusion Prevention (IPS)" id="m-ips">
+							<class-description>
+								Intrusion prevention involves the TOE’s ability to collect network packets, examine their contents for
+								information that suggests malicious activity, and to perform some action in response such as terminating
+								the connection.
+							</class-description>
+							
+							<ext-comp-def title="Anomaly-Based IPS Functionality" fam-id="IPS_ABD_EXT">
+								<fam-behavior>This family defines requirements for detection of anomalous network traffic and how the TSF should
+									respond if an anomaly is detected.
+								</fam-behavior>
+							</ext-comp-def>
+							
 			<f-component name="Anomaly-Based IPS Functionality" cc-id="ips_abd_ext.1" id="ips-abd-ext-1">
+				
+				<comp-lev> requires the TSF to detect anomalous network traffic
+					based on some criteria and to define the response that is issued if an anomaly is detected. </comp-lev>
+				<management>The following actions could be considered for the management functions in FMT: 
+					<h:ul>
+						<h:li>Configuration of anomaly detection.</h:li>
+						<h:li>Enabling and disabling actions to be taken when anomaly matches are detected.</h:li>
+						<h:li>Modification of thresholds that trigger IPS reactions.</h:li>
+						<h:li>Modification of the duration of traffic blocking actions.</h:li>
+					</h:ul>
+				</management>
+				<audit>The following actions should be auditable if FAU_GEN Security audit data generation is included in the
+					PP/ST:
+					<h:ul>
+						<h:li>Inspected traffic that matches an anomaly-based IPS policy.</h:li>
+					</h:ul></audit>
+				<dependencies>IPS_NTA_EXT.1 Network Traffic Analysis<h:br/>
+					IPS_SBD_EXT.1 Signature-Based IPS Functionality
+				</dependencies>
+				
 				<f-element id="ips-abd-ext-1e1">
 				<title>
 				The TSF shall support the definition of <selectables>
@@ -1051,6 +1083,12 @@ enforce its policies on network traffic of monitored networks.</description>
 					<audit-event-info>Network-based action by the TOE (e.g. allowed, blocked, sent reset to source IP, sent blocking notification to firewall). </audit-event-info>
 				</audit-event>
 				</f-component>
+							
+							<ext-comp-def title="IP Blocking" fam-id="IPS_IPB_EXT">
+								<fam-behavior>This family defines requirements for handling of inspected network traffic based on IP address.
+								</fam-behavior>
+							</ext-comp-def>
+							
 				<f-component name="IP Blocking" cc-id="ips_ipb_ext.1" id="ips-ipb-ext-1">
 				<f-element id="ips-ipb-ext-1e1">
 					<title>
@@ -1128,6 +1166,12 @@ enforce its policies on network traffic of monitored networks.</description>
 				<audit-event-info>Network-based action by the TOE (e.g. allowed, blocked, sent reset).</audit-event-info>
 				</audit-event>
 				</f-component>
+							
+							<ext-comp-def title="Network Traffic Analysis" fam-id="IPS_NTA_EXT">
+								<fam-behavior>This family defines the network traffic protocols for which the TOE is capable of analyzing and detecting violations. 
+								</fam-behavior>
+							</ext-comp-def>
+							
 				<f-component name="Network Traffic Analysis" cc-id="ips_nta_ext.1" id="ips-nta-ext-1">
 				<f-element id="ips-nta-ext-1e1">
 					<title>
@@ -1318,6 +1362,10 @@ enforce its policies on network traffic of monitored networks.</description>
 				</audit-event>
 				</f-component>
 							
+							<ext-comp-def title="Signature-Based IPS Functionality" fam-id="IPS_SBD_EXT">
+								<fam-behavior>This family defines the network traffic protocols for which the TOE is capable of analyzing and detecting violations. 
+								</fam-behavior>
+							</ext-comp-def>
 							
 				<f-component name="Signature-Based IPS Functionality" cc-id="ips_sbd_ext.1" id="ips-sbd-ext-1">
 				<f-element id="ips-sbd-ext-1e1">
