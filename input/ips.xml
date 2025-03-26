@@ -199,7 +199,7 @@
 				<h:li>Transmit IPS data to an external audit storage host, and optionally store IPS data internally. IPS audit
 				data can be pushed (initiated by the TOE) or pulled (initiated by the remote host). Regardless of
 				whether IPS data is pushed or pulled, the transmission must be protected in a manner consistent with
-				protected communications required by FAU_STG_EXT.1 of the NDcPP.</h:li>
+				protected communications required by FAU_STG.1 of the NDcPP.</h:li>
 				<h:li>Analyze network traffic based on rules that an administrator can configure directly on the TOE, and
 				optionally analyze network traffic based on rules imported/applied from another system.</h:li>
 				<h:li>React independently to potentially malicious traffic (such as by blocking traffic flows, or by
@@ -757,31 +757,27 @@ enforce its policies on network traffic of monitored networks.</description>
 			<!-- iteration: This attribute is required only if the SFR is an iteration -->
 		
 		<section id="ss-audit-table" title="Auditable Events for Mandatory SFRs">
-			<audit-table table="mandatory" id="mandatory-audit-events">
-				<h:br/><h:b><ctr ctr-type="Table" pre="Table " id="atref-mandatory">: Auditable Events for Mandatory SFRs</ctr></h:b>
+			<audit-table table="mandatory" id="at-mandatory">
+	<!--			<h:br/><h:b><ctr ctr-type="Table" pre="Table " id="atref-mandatory">: Auditable Events for Mandatory SFRs</ctr></h:b> -->
 			</audit-table>
 		</section>
 		
 			<section title="Security Audit (FAU)" id="m-fau">
 			<f-component name="Audit Data Generation (IPS)" cc-id="fau_gen.1" iteration="IPS" id="fau-gen-1-ips">
 				<f-element id="fau-gen-1e1-ips">
-				<title>
-				The TSF shall be able to generate an <h:b>IPS</h:b> audit record of the following <h:b>IPS</h:b>
+				<title>The TSF shall be able to generate <h:b>IPS</h:b> audit data of the following <h:b>IPS</h:b>
 				auditable events: <h:ol type="a">
-					<h:li>Start-up and shut-down of the <h:b>IPS</h:b> functions;</h:li>
+					<h:li>Start-up and shut-down of the <h:b>IPS</h:b> audit functions;</h:li>
 					<h:li>All <h:b>IPS</h:b> auditable events for the [<h:i>not specified</h:i>] level of audit; and</h:li>
 					<h:li>[<h:i>All dissimilar IPS events;</h:i></h:li>
 					<h:li><h:i>All dissimilar IPS reactions;</h:i></h:li>
 					<h:li><h:i>Totals of similar events occurring within a specified time period;</h:i></h:li>
 					<h:li><h:i>Totals of similar reactions occurring within a specified time period;</h:i></h:li>
-					<h:li><h:i>The events in the IPS Events table; </h:i></h:li>
+					<h:li><h:i>The events in the Auditable Events for Mandatory SFRs table (<xref to="at-mandatory"/>); </h:i></h:li>
 					<h:li><selectables>
 						<selectable>no other auditable events</selectable>
 						 <selectable>Auditable events listed in the Auditable Events for Optional SFRs table (<xref to="at-optional"/>) for SFRs that are present in the ST</selectable>
-                  		<selectable>Auditable events listed in the Auditable Events for Implementation-dependent SFRs table (<xref to="at-impl-dep"/>) for SFRs that are present in the ST</selectable>
-						
-			
-						</selectables>
+                  		<selectable>Auditable events listed in the Auditable Events for Implementation-dependent SFRs table (<xref to="at-impl-dep"/>) for SFRs that are present in the ST</selectable></selectables>].
 					</h:li>
 				
 					</h:ol>
@@ -791,7 +787,7 @@ enforce its policies on network traffic of monitored networks.</description>
 					This SFR exists in addition to the FAU_GEN.1 SFR in the Base-PP. All required
 					auditable events from the Base-PP still apply. As the data that this SFR addresses
 					is still considered to be “audit data,” the requirement for secure remote
-					transmission per FAU_STG_EXT.1 applies to this SFR in the same manner as the
+					transmission per FAU_STG.1 applies to this SFR in the same manner as the
 					Base-PP’s iteration of FAU_GEN.1.
 					</h:p><h:p>
 					The ST author is not limited to the list presented and should update the list of
@@ -817,9 +813,9 @@ enforce its policies on network traffic of monitored networks.</description>
 
 				</f-element>
 				<f-element id="fau-gen-1e2-ips">
-					<title>The TSF shall record within each <h:b>IPS auditable event</h:b> record at least the following information: <h:ol type="a">
+					<title>The TSF shall record within the <h:b>IPS</h:b> audit data at least the following information: <h:ol type="a">
 						<h:li>Date and time of the event, type of event <h:b>and/or reaction,</h:b> <h:s>subject identity, and the outcome (success or failure) of the event; and;</h:s></h:li>
-						<h:li>For each <h:b>IPS auditable event</h:b> type, based on the auditable event definitions of the functional components included in the PP<h:s>/ST</h:s>, [<h:i>information specified in column three of the IPS Events table, <selectables>
+						<h:li>For each <h:b>IPS auditable event</h:b> type, based on the auditable event definitions of the functional components included in the PP<h:s>/ST</h:s>, [<h:i>information specified in column three of the Auditable Events for Mandatory SFRs table (<xref to="at-mandatory"/>), <selectables>
 							<selectable>no other auditable events</selectable>
 							<selectable>additional information in column three of the Auditable Events for Optional SFRs table (<xref to="at-optional"/>) for SFRs that are present in the ST</selectable>
 							<selectable>additional information in column three of the Auditable Events for Implementation-dependent SFRs table (<xref to="at-impl-dep"/>) for SFRs that are present in the ST</selectable></selectables>].</h:i></h:li>
@@ -865,6 +861,7 @@ enforce its policies on network traffic of monitored networks.</description>
 						</Tests>
 					</aactivity>
 				</f-element>
+				<audit-event/>
 			</f-component>
 			</section>
 			
@@ -1266,7 +1263,7 @@ enforce its policies on network traffic of monitored networks.</description>
 					The TSF shall process (be capable of inspecting) the following network traffic protocols:	
 					<h:ul>
 					<h:li>Internet Protocol version 4 (IPv4), RFC 791</h:li>
-					<h:li>Internet Protocol version 6 (IPv6), RFC 2460</h:li>
+					<h:li>Internet Protocol version 6 (IPv6), RFC 8200</h:li>
 					<h:li>Internet control message protocol version 4 (ICMPv4), RFC 792</h:li>
 					<h:li>Internet control message protocol version 6 (ICMPv6), RFC 2463</h:li>
 					<h:li>Transmission Control Protocol (TCP), RFC 793</h:li>
@@ -1476,9 +1473,9 @@ enforce its policies on network traffic of monitored networks.</description>
 					<Guidance>
 					The evaluator shall verify that the operational guidance provides instructions with how to create and/or configure rules using the following protocols and header inspection fields:
 					<h:ul>
-						<h:li>IPv4: version; header length; packet length; ID; IP flags; fragment offset; time to live (TTL); protocol; header checksum; source address; destination address; and IP options.</h:li>
-						<h:li>IPv6: Version; traffic class; flow label; payload length; next header; hop limit; source address; destination address; routing header; home address options</h:li>
-						<h:li>ICMP: type; code; header checksum; and rest of header (varies based on the ICMP type and code).</h:li>
+						<h:li>IPv4: version; header length; packet length; ID; IP flags; fragment offset; time to live (TTL); protocol; header checksum; source address; destination address; IP options; and, if selected, type of service (ToS).</h:li>
+						<h:li>IPv6: Version; payload length; next header; hop limit; source address; destination address; routing header; and, if selected, traffic class and/or flow label</h:li>
+						<h:li>ICMP: type; code; header checksum; and, if selected, other header fields (varies based on the ICMP type and code).</h:li>
 						<h:li>ICMPv6: type; code; and header checksum.</h:li>
 						<h:li>TCP: Source port; destination port; sequence number; acknowledgement number; offset; reserved; TCP flags; window; checksum; urgent pointer; and TCP options.</h:li>
 						<h:li>UDP: source port; destination port; length; and UDP checksum.</h:li>
@@ -1494,9 +1491,9 @@ enforce its policies on network traffic of monitored networks.</description>
 							IPS_SBD_EXT.1.5 for each of the attributes listed below. Each attribute shall be individually assigned to its
 							own unique signature:
 							<h:ul>
-							<h:li>IPv4: Version; Header Length; Packet Length; ID; IP Flags; Fragment Offset; Time to Live (TTL); Protocol; Header Checksum; Source Address; Destination Address; and IP Options</h:li>
-							<h:li>IPv6: Version; traffic class; flow label; payload length; next header; hop limit; source address; destination address; routing header; home address options.</h:li>
-							<h:li>ICMP: Type; Code; Header Checksum; and Rest of Header (varies based on the ICMP type and code). </h:li>
+								<h:li>IPv4: version; header length; packet length; ID; IP flags; fragment offset; time to live (TTL); protocol; header checksum; source address; destination address; IP options; and, if selected, type of service (ToS).</h:li>
+								<h:li>IPv6: Version; payload length; next header; hop limit; source address; destination address; routing header; and, if selected, traffic class and/or flow label</h:li>
+								<h:li>ICMP: type; code; header checksum; and, if selected, other header fields (varies based on the ICMP type and code).</h:li>
 							<h:li>ICMPv6: Type; Code; and Header Checksum.</h:li>
 							<h:li>TCP: Source port; destination port; sequence number; acknowledgement number; offset; reserved; TCP flags; window; checksum; urgent pointer; and TCP options.</h:li>
 							<h:li>UDP: Source port; destination port; length; and UDP checksum.</h:li>
@@ -1773,12 +1770,12 @@ enforce its policies on network traffic of monitored networks.</description>
       </section>
 	<section title="Security Audit(FAU)" id="fau-ops">
 			<f-component name="Protected Audit Trail Storage" cc-id="fau_stg.2" iteration="IPS" id="fau-stg-2-ips">
-			<f-element id='fau-stg-1e1-ips'>
-				<title>The TSF shall protect the stored <h:s>audit records </h:s><h:b>IPS data</h:b> from unauthorized deletion.</title>
+			<f-element id='fau-stg-2e1-ips'>
+				<title>The TSF shall protect the stored <h:b>IPS</h:b> audit data from unauthorized deletion.</title>
 
 			</f-element>
-			<f-element id='fau-stg-1e2'>
-				<title>The TSF shall be able to [<h:i>prevent</h:i>] unauthorized modifications to the <h:s>stored audit records</h:s> <h:b>IPS data</h:b> <h:s>in the audit trail</h:s>.</title>
+			<f-element id='fau-stg-2e2-ips'>
+				<title>The TSF shall be able to [<h:i>prevent</h:i>] unauthorized modifications to the stored <h:b>IPS</h:b> audit data in the audit trail.</title>
 				<aactivity>
 				<TSS>The evaluator shall ensure that the TSS identifies how IPS data is protected from unauthorized modification and deletion.</TSS>
 				<Guidance>The evaluator shall confirm the guidance documentation describes how to protect IPS data from unauthorized modification and deletion.</Guidance>
@@ -1790,15 +1787,14 @@ enforce its policies on network traffic of monitored networks.</description>
 			</f-component>
 		
 			<f-component name="Prevention of Audit Data Loss" cc-id="fau_stg.5" iteration="IPS" id="fau-stg-5-ips">
-			<f-element id='fau-stg-4e1'>
+			<f-element id='fau-stg-5e1'>
 			<title>
-			The TSF shall <h:b>be able to</h:b>
-				<selectables>
-					<selectable>ignore <h:s>audited</h:s> <h:b>generation of IPS</h:b> events <h:b>that would otherwise be generated</h:b></selectable>
-					<selectable>prevent audited <h:b>IPS</h:b> events</selectable>
-					<selectable><h:s>except those taken by the authorized user with special rights</h:s></selectable>
-					<selectable>overwrite the oldest stored <h:s>audit records</h:s> IPS data</selectable>
-				</selectables>, and [<h:i>no other actions</h:i>] if the <h:s>audit</h:s> <h:b>IPS data</h:b> trail is full.
+			The TSF shall 
+				[<selectables>
+					<selectable>ignore generation of IPS events that would otherwise be generated</selectable>
+					<selectable>prevent audited IPS events</selectable>
+					<selectable>overwrite the oldest stored IPS data</selectable>
+				</selectables>] if the <h:b>IPS</h:b> audit data storage is full.
 			
 			</title>
 			<aactivity>
@@ -1809,7 +1805,7 @@ enforce its policies on network traffic of monitored networks.</description>
 			</f-element>
 			<audit-event>
 			<audit-event-descr>A local audit store reaches its storage limit.</audit-event-descr>
-			<audit-event-info>Indication that the audit store is full, and (if configurable) how the TOE is responding (e.g., failing to audit new auditable events, or removing old audit events to make space for new events).</audit-event-info></audit-event>
+			<audit-event-info>Indication that the audit store is full, and (if configurable) how the TOE is responding (e.g., failing to audit new auditable events, removing old audit events to make space for new events, preventing auditable events from occurring).</audit-event-info></audit-event>
 			</f-component>
 	</section>
     	
@@ -1818,7 +1814,7 @@ enforce its policies on network traffic of monitored networks.</description>
 	<f-component name='Failure with Preservation of Secure State' cc-id="fpt_fls.1" iteration="IPS" id='fpt-fls-1-ips'>
 	<f-element id='fpt-fls-1'>
 	<title><comment>Iterated in case this is added to NDcPP (dependency on FPT_TST)</comment>
-		The TSF shall <h:b>be able to</h:b> preserve a secure state <h:b>for inline interfaces</h:b> when the following types of failures occur: <assignable>list of types of failures in the TSF</assignable>.</title>
+		The TSF shall preserve a secure state <h:b>for inline interfaces</h:b> when the following types of failures occur: <assignable>list of types of failures in the TSF</assignable>.</title>
 	<note role='application'>
 	The intent of this SFR is to allow the ST author to define the types of failures
 	that can occur on the TOE which could result in failure to effectively detect and
@@ -1990,7 +1986,7 @@ forwarded</assignable></selectable>
 		audit server.</h:p><h:p>Messaging actions defined by this SFR that are not specifically relevant to
 		FAU_GEN.1/IPS do not need to be encrypted during transit. The primary intent of
 		this functionality is the speed of notification, not the integrity, or confidentiality
-		of the data in transit. In most cases, the audit trail applicable to FAU_STG_EXT.1
+		of the data in transit. In most cases, the audit trail applicable to FAU_STG.1
 		will be syslog data, and is being protected in transit to help ensure integrity of
 		remotely stored audit data. This SFR isintended to covertransmission of messages
 		related to single eventsthrough protocols such as SNMP (traps) and SMTP (email).
@@ -2023,12 +2019,12 @@ forwarded</assignable></selectable>
 	<f-component name="Audit Review" cc-id='fau_sar.1' id='fau-sar-1'>
 	<f-element id="fau-sar-1e1">
 	<title>
-	The TSF shall provide [<h:i>authorized administrators</h:i>] with the capability to read [<h:i>IPS data</h:i>] from the <h:s>audit records</h:s> <h:b>IPS events</h:b>.
+	The TSF shall provide [<h:i>Security Administrators</h:i>] with the capability to read [<h:i>IPS data</h:i>] from the <h:b>IPS</h:b> audit data.
 	</title>
 	</f-element>
 	<f-element id="fau-sar-1e2">
 	<title>
-	The TSF shall provide the <h:s>audit records</h:s> <h:b>IPS data</h:b> in a manner suitable for the <h:s>user</h:s> <h:b>administrators</h:b> to interpret the information.
+	The TSF shall provide the <h:b>IPS</h:b> audit data in a manner suitable for the user to interpret the information.
 	</title>
 	<note role='application'>It is anticipated, but not required, that TOEs would provide a graphical user
 		interface that would allow searching and sorting, and it would be acceptable for
@@ -2067,9 +2063,9 @@ forwarded</assignable></selectable>
 		
 	<f-component name="Restricted Audit Review" cc-id='fau_sar.2' id='fau-sar-2'>
 	<f-element id="fau-sar-2e1">
-	<title>The TSF shall prohibit all <h:s>users</h:s> <h:b>administrators</h:b> read access to the <h:s>audit records</h:s> <h:b>IPS data</h:b>, except those that have been granted explicit read-access.</title>
+	<title>The TSF shall prohibit all users read access to the <h:b>IPS</h:b> audit data, except those that have been granted explicit read access.</title>
 	<aactivity>
-	<TSS>The evaluator shall examine the TSS to determine that it identifies what group of users is considered to be ‘administrators’ for the purpose of being granted access to view IPS data.</TSS>
+	<TSS>The evaluator shall examine the TSS to determine that it identifies the users that are permitted to view IPS data (e.g., members of a particular group).</TSS>
 	<Guidance>The evaluator shall examine the operational guidance to determine what actions are needed to grant or revoke a user’s ability to view IPS data.</Guidance>
 	<Tests>The evaluator shall log on to the TOE as various users to confirm that only those users that are intended to be granted read access to IPS data are able to view it.</Tests>
 	</aactivity>
