@@ -28,8 +28,6 @@
             <br>
             <a href="#Comment-5-">Comment: Comment-5-</a>
             <br>
-            <a href="#Comment-6-">Comment: Comment-6-</a>
-            <br>
         </div>
         <h1 class="title" style="page-break-before:auto;">PP-Module for IPS</h1>
         <h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1>
@@ -592,7 +590,6 @@
                 </td>
             </tr>
         </table>
-         <span style="" class="comment " id="Comment-1-">some audits end without completing the sentence.</span> 
         <h3 id="m-fau" class="indexable" data-level="3">5.2.2 Security Audit (FAU)</h3>
         <div class="comp" id="FAU_GEN.1/IPS">
             <h4>FAU_GEN.1/IPS Audit Data Generation (IPS)</h4>
@@ -882,7 +879,7 @@
                     <a href="#IPS_NTA_EXT.1.3" class="abbr">IPS_NTA_EXT.1.3</a>
                 </div>
                 <div class="reqdesc">
-                     <span style="" class="comment " id="Comment-3-">wording updated as this was previously clunky, but also the "session reset-capable interface" selection was removed becase there are no EAs for that claim, and it also has an open-ended assignment where other types of interfaces can be specified with no instructions on how to test them.</span> The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow the signatures to be assigned to sensor interfaces configured for promiscuous and inline mode, and to support designation of one or more interfaces as being used as a management interface for communication between the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and external entities without simultaneously being a sensor interface, as indicated by the following interface types: 
+                     <span style="" class="comment " id="Comment-2-">wording updated as this was previously clunky, but also the "session reset-capable interface" selection was removed becase there are no EAs for that claim, and it also has an open-ended assignment where other types of interfaces can be specified with no instructions on how to test them.</span> The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow the signatures to be assigned to sensor interfaces configured for promiscuous and inline mode, and to support designation of one or more interfaces as being used as a management interface for communication between the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and external entities without simultaneously being a sensor interface, as indicated by the following interface types: 
                     <ul>
                         <li>
                             Promiscuous (listen-only) mode: [<b>assignment</b>: <span class="assignable-content">list of interface types</span>]
@@ -891,7 +888,7 @@
                             Inline (data pass-through) mode: [<b>assignment</b>: <span class="assignable-content">list of interface types</span>]
                         </li>
                         <li>
-                            Management mode:[<b>assignment</b>: <span class="assignable-content">list of interface types</span>]
+                            Management mode: [<b>assignment</b>: <span class="assignable-content">list of interface types</span>].
                         </li>
                     </ul>
                     <div class="appnote">
@@ -1177,13 +1174,13 @@
                     <td><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td>This requirement mitigates the threat of network access by defining the network traffic the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> is able to examine to determine the potential realization of a threat.</td>
                 </tr>
                 <tr>
-                    <td>FAU_STG.2/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by ensuring that records of stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data cannot be read without authorization or modified by any subject so as not to falsely disclose the history of activity observed on the network.</td>
+                    <td><a href="#FAU_STG.2/IPS">FAU_STG.2/IPS</a> (optional)</td><td>This requirement mitigates the threat by ensuring that records of stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data cannot be read without authorization or modified by any subject so as not to falsely disclose the history of activity observed on the network.</td>
                 </tr>
                 <tr>
-                    <td>FAU_STG.5/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by providing a predictable mechanism for how storage of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data is prioritized in the event that insufficient storage is available, allowing for the administrator to have adequate warning of the limitations of the collection process.</td>
+                    <td><a href="#FAU_STG.5/IPS">FAU_STG.5/IPS</a> (optional)</td><td>This requirement mitigates the threat by providing a predictable mechanism for how storage of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data is prioritized in the event that insufficient storage is available, allowing for the administrator to have adequate warning of the limitations of the collection process.</td>
                 </tr>
                 <tr>
-                    <td>FPT_FLS.1/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by implementing a mechanism that allows the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to fail closed so that network traffic is not transmitted without inspection in the event that its inspection functionality is unavailable.</td>
+                    <td><a href="#FPT_FLS.1/IPS">FPT_FLS.1/IPS</a> (optional)</td><td>This requirement mitigates the threat by implementing a mechanism that allows the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to fail closed so that network traffic is not transmitted without inspection in the event that its inspection functionality is unavailable.</td>
                 </tr>
                 <tr>
                     <td><a href="#IPS_SBD_EXT.2">IPS_SBD_EXT.2</a> (optional)</td><td>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets.</td>
@@ -1221,13 +1218,13 @@
                     <td><a href="#IPS_SBD_EXT.1">IPS_SBD_EXT.1</a></td><td>This requirement mitigates the threat of network denial of service by providing a means to detect network traffic signatures that are indicative of attemps to establish insecure or otherwise malformed sessions over a trusted protocol.</td>
                 </tr>
                 <tr>
-                    <td>FAU_STG.2/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by ensuring that records of stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data cannot be read without authorization or modified by any subject so as not to falsely disclose the history of activity observed on the network.</td>
+                    <td><a href="#FAU_STG.2/IPS">FAU_STG.2/IPS</a> (optional)</td><td>This requirement mitigates the threat by ensuring that records of stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data cannot be read without authorization or modified by any subject so as not to falsely disclose the history of activity observed on the network.</td>
                 </tr>
                 <tr>
-                    <td>FAU_STG.5/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by providing a predictable mechanism for how storage of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data is prioritized in the event that insufficient storage is available, allowing for the administrator to have adequate warning of the limitations of the collection process.</td>
+                    <td><a href="#FAU_STG.5/IPS">FAU_STG.5/IPS</a> (optional)</td><td>This requirement mitigates the threat by providing a predictable mechanism for how storage of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data is prioritized in the event that insufficient storage is available, allowing for the administrator to have adequate warning of the limitations of the collection process.</td>
                 </tr>
                 <tr>
-                    <td>FPT_FLS.1/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by implementing a mechanism that allows the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to fail closed so that network traffic is not transmitted without inspection in the event that its inspection functionality is unavailable.</td>
+                    <td><a href="#FPT_FLS.1/IPS">FPT_FLS.1/IPS</a> (optional)</td><td>This requirement mitigates the threat by implementing a mechanism that allows the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to fail closed so that network traffic is not transmitted without inspection in the event that its inspection functionality is unavailable.</td>
                 </tr>
                 <tr>
                     <td><a href="#IPS_SBD_EXT.2">IPS_SBD_EXT.2</a> (optional)</td><td>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets.</td>
@@ -1265,13 +1262,13 @@
                     <td><a href="#IPS_SBD_EXT.1">IPS_SBD_EXT.1</a></td><td>This requirement mitigates the threat of network denial of service by providing a means to detect network traffic signatures that are indicative of denial of service attempts.</td>
                 </tr>
                 <tr>
-                    <td>FAU_STG.2/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by ensuring that records of stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data cannot be read without authorization or modified by any subject so as not to falsely disclose the history of activity observed on the network.</td>
+                    <td><a href="#FAU_STG.2/IPS">FAU_STG.2/IPS</a> (optional)</td><td>This requirement mitigates the threat by ensuring that records of stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data cannot be read without authorization or modified by any subject so as not to falsely disclose the history of activity observed on the network.</td>
                 </tr>
                 <tr>
-                    <td>FAU_STG.5/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by providing a predictable mechanism for how storage of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data is prioritized in the event that insufficient storage is available, allowing for the administrator to have adequate warning of the limitations of the collection process.</td>
+                    <td><a href="#FAU_STG.5/IPS">FAU_STG.5/IPS</a> (optional)</td><td>This requirement mitigates the threat by providing a predictable mechanism for how storage of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data is prioritized in the event that insufficient storage is available, allowing for the administrator to have adequate warning of the limitations of the collection process.</td>
                 </tr>
                 <tr>
-                    <td>FPT_FLS.1/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by implementing a mechanism that allows the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to fail closed so that network traffic is not transmitted without inspection in the event that its inspection functionality is unavailable.</td>
+                    <td><a href="#FPT_FLS.1/IPS">FPT_FLS.1/IPS</a> (optional)</td><td>This requirement mitigates the threat by implementing a mechanism that allows the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to fail closed so that network traffic is not transmitted without inspection in the event that its inspection functionality is unavailable.</td>
                 </tr>
                 <tr>
                     <td><a href="#IPS_SBD_EXT.2">IPS_SBD_EXT.2</a> (optional)</td><td>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets.</td>
@@ -1309,13 +1306,13 @@
                     <td><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td>This requirement mitigates the threat of network misuse by defining the network traffic the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> is able to examine to determine the potential realization of a threat.</td>
                 </tr>
                 <tr>
-                    <td>FAU_STG.2/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by ensuring that records of stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data cannot be read without authorization or modified by any subject so as not to falsely disclose the history of activity observed on the network.</td>
+                    <td><a href="#FAU_STG.2/IPS">FAU_STG.2/IPS</a> (optional)</td><td>This requirement mitigates the threat by ensuring that records of stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data cannot be read without authorization or modified by any subject so as not to falsely disclose the history of activity observed on the network.</td>
                 </tr>
                 <tr>
-                    <td>FAU_STG.5/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by providing a predictable mechanism for how storage of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data is prioritized in the event that insufficient storage is available, allowing for the administrator to have adequate warning of the limitations of the collection process.</td>
+                    <td><a href="#FAU_STG.5/IPS">FAU_STG.5/IPS</a> (optional)</td><td>This requirement mitigates the threat by providing a predictable mechanism for how storage of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data is prioritized in the event that insufficient storage is available, allowing for the administrator to have adequate warning of the limitations of the collection process.</td>
                 </tr>
                 <tr>
-                    <td>FPT_FLS.1/<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> (optional)</td><td>This requirement mitigates the threat by implementing a mechanism that allows the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to fail closed so that network traffic is not transmitted without inspection in the event that its inspection functionality is unavailable.</td>
+                    <td><a href="#FPT_FLS.1/IPS">FPT_FLS.1/IPS</a> (optional)</td><td>This requirement mitigates the threat by implementing a mechanism that allows the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to fail closed so that network traffic is not transmitted without inspection in the event that its inspection functionality is unavailable.</td>
                 </tr>
                 <tr>
                     <td><a href="#IPS_SBD_EXT.2">IPS_SBD_EXT.2</a> (optional)</td><td>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets.</td>
@@ -1430,13 +1427,13 @@
                 <th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th>
             </tr>
             <tr>
-                <td><a href="#FAU_STG.2/ips">FAU_STG.2/ips</a></td><td>The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> iterates an <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> to define an optional capability for the protection of the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data generated by <a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a>.</td>
+                <td><a href="#FAU_STG.2/IPS">FAU_STG.2/IPS</a></td><td>The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> iterates an <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> to define an optional capability for the protection of the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data generated by <a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a>.</td>
             </tr>
             <tr>
-                <td><a href="#FAU_STG.5/ips">FAU_STG.5/ips</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> applies to <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> audit data, which is beyond the original scope of the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.</td>
+                <td><a href="#FAU_STG.5/IPS">FAU_STG.5/IPS</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> applies to <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> audit data, which is beyond the original scope of the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.</td>
             </tr>
             <tr>
-                <td><a href="#FPT_FLS.1/ips">FPT_FLS.1/ips</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> applies to secure failure for inline interfaces, which is a type of logical interface that was introduced in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> and therefore doesn&rsquo;t interfere with the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.</td>
+                <td><a href="#FPT_FLS.1/IPS">FPT_FLS.1/IPS</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> applies to secure failure for inline interfaces, which is a type of logical interface that was introduced in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> and therefore doesn&rsquo;t interfere with the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.</td>
             </tr>
             <tr>
                 <td><a href="#IPS_SBD_EXT.2">IPS_SBD_EXT.2</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> applies to <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality, which is beyond the original scope of the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr></td>
@@ -1479,23 +1476,32 @@
             <tr data-sortkey="#1">
                 <th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th>
             </tr>
-            <tr data-sortkey="FAU_STG.5/ips">
-                <td rowspan="2"><a href="#FAU_STG.5/ips">FAU_STG.5/ips</a></td><td style="display:none"></td>
+            <tr data-sortkey="FAU_STG.2/IPS">
+                <td rowspan="2"><a href="#FAU_STG.2/IPS">FAU_STG.2/IPS</a></td><td style="display:none"></td>
             </tr>
-            <tr style="display:none;" data-sortkey="FAU_STG.5/ips#">
+            <tr style="display:none;" data-sortkey="FAU_STG.2/IPS#">
                 <td></td>
             </tr>
-            <tr data-sortkey="FAU_STG.5/ips.1">
-                <td>A local audit store reaches its storage limit.</td><td>Indication that the audit store is full, and (if configurable) how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is responding (e.g. failing to audit new auditable events, or </td>
+            <tr data-sortkey="FAU_STG.2/IPS.1">
+                <td>No events specified</td><td>N/A</td>
             </tr>
-            <tr data-sortkey="FPT_FLS.1/ips">
-                <td rowspan="2"><a href="#FPT_FLS.1/ips">FPT_FLS.1/ips</a></td><td style="display:none"></td>
+            <tr data-sortkey="FAU_STG.5/IPS">
+                <td rowspan="2"><a href="#FAU_STG.5/IPS">FAU_STG.5/IPS</a></td><td style="display:none"></td>
             </tr>
-            <tr style="display:none;" data-sortkey="FPT_FLS.1/ips#">
+            <tr style="display:none;" data-sortkey="FAU_STG.5/IPS#">
                 <td></td>
             </tr>
-            <tr data-sortkey="FPT_FLS.1/ips.1">
-                <td>A local audit store reaches its storage limit.</td><td>Indication that the audit store is full, and (if configurable) how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is responding (e.g. failing to audit new auditable events, or </td>
+            <tr data-sortkey="FAU_STG.5/IPS.1">
+                <td>A local audit store reaches its storage limit.</td><td>Indication that the audit store is full, and (if configurable) how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is responding (e.g., failing to audit new auditable events, or removing old audit events to make space for new events).</td>
+            </tr>
+            <tr data-sortkey="FPT_FLS.1/IPS">
+                <td rowspan="2"><a href="#FPT_FLS.1/IPS">FPT_FLS.1/IPS</a></td><td style="display:none"></td>
+            </tr>
+            <tr style="display:none;" data-sortkey="FPT_FLS.1/IPS#">
+                <td></td>
+            </tr>
+            <tr data-sortkey="FPT_FLS.1/IPS.1">
+                <td>Failure of the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>.</td><td>The type of failure that occurred. </td>
             </tr>
             <tr data-sortkey="IPS_SBD_EXT.2">
                 <td rowspan="4"><a href="#IPS_SBD_EXT.2">IPS_SBD_EXT.2</a></td><td style="display:none"></td>
@@ -1528,30 +1534,30 @@
             </tr>
         </table>
         <h3 id="fau-ops" class="indexable" data-level="3">A.1.2 Security Audit(FAU)</h3>
-        <div class="comp" id="FAU_STG.2/ips">
-            <h4>FAU_STG.2/ips Protected Audit Trail Storage</h4>
+        <div class="comp" id="FAU_STG.2/IPS">
+            <h4>FAU_STG.2/IPS Protected Audit Trail Storage</h4>
             <div class="element">
-                <div class="reqid" id="FAU_STG.2.1/ips">
-                    <a href="#FAU_STG.2.1/ips" class="abbr">FAU_STG.2.1/ips</a>
+                <div class="reqid" id="FAU_STG.2.1/IPS">
+                    <a href="#FAU_STG.2.1/IPS" class="abbr">FAU_STG.2.1/IPS</a>
                 </div>
                 <div class="reqdesc">
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall protect the stored <s>audit records </s><b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b> from unauthorized deletion.
                 </div>
             </div>
             <div class="element">
-                <div class="reqid" id="FAU_STG.2.2/ips">
-                    <a href="#FAU_STG.2.2/ips" class="abbr">FAU_STG.2.2/ips</a>
+                <div class="reqid" id="FAU_STG.2.2/IPS">
+                    <a href="#FAU_STG.2.2/IPS" class="abbr">FAU_STG.2.2/IPS</a>
                 </div>
                 <div class="reqdesc">
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to [<i>prevent</i>] unauthorized modifications to the <s>stored audit records</s> <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b> <s>in the audit trail</s>.
                 </div>
             </div>
         </div>
-        <div class="comp" id="FAU_STG.5/ips">
-            <h4>FAU_STG.5/ips Prevention of Audit Data Loss</h4>
+        <div class="comp" id="FAU_STG.5/IPS">
+            <h4>FAU_STG.5/IPS Prevention of Audit Data Loss</h4>
             <div class="element">
-                <div class="reqid" id="FAU_STG.5.1/ips">
-                    <a href="#FAU_STG.5.1/ips" class="abbr">FAU_STG.5.1/ips</a>
+                <div class="reqid" id="FAU_STG.5.1/IPS">
+                    <a href="#FAU_STG.5.1/IPS" class="abbr">FAU_STG.5.1/IPS</a>
                 </div>
                 <div class="reqdesc">
                      The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall <b>be able to</b> [<b>selection</b>: <span class="selectable-content" id="_s_58">ignore <s>audited</s> <b>generation of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr></b> events <b>that would otherwise be generated</b></span>, <span class="selectable-content" id="_s_59">prevent audited <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr></b> events</span>, <span class="selectable-content" id="_s_60"><s>except those taken by the authorized user with special rights</s></span>, <span class="selectable-content" id="_s_61">overwrite the oldest stored <s>audit records</s> <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</span>], and [<i>no other actions</i>] if the <s>audit</s> <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</b> trail is full. 
@@ -1559,14 +1565,14 @@
             </div>
         </div>
         <h3 id="fpt" class="indexable" data-level="3">A.1.3 Protection of the TSF (FPT)</h3>
-        <div class="comp" id="FPT_FLS.1/ips">
-            <h4>FPT_FLS.1/ips Failure with Preservation of Secure State</h4>
+        <div class="comp" id="FPT_FLS.1/IPS">
+            <h4>FPT_FLS.1/IPS Failure with Preservation of Secure State</h4>
             <div class="element">
-                <div class="reqid" id="FPT_FLS.1.1/ips">
-                    <a href="#FPT_FLS.1.1/ips" class="abbr">FPT_FLS.1.1/ips</a>
+                <div class="reqid" id="FPT_FLS.1.1/IPS">
+                    <a href="#FPT_FLS.1.1/IPS" class="abbr">FPT_FLS.1.1/IPS</a>
                 </div>
                 <div class="reqdesc">
-                    <span style="" class="comment " id="Comment-4-">Iterated in case this is added to NDcPP (dependency on FPT_TST)</span>The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall 
+                    <span style="" class="comment " id="Comment-3-">Iterated in case this is added to NDcPP (dependency on FPT_TST)</span>The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall 
                     <br>
                      preserve a secure state 
                     <br>
@@ -1631,13 +1637,49 @@
         </div>
         <h2 id="obj-sfrs" class="indexable" data-level="2">A.2 Objective Requirements </h2>
         <h3 class="indexable" data-level="3" id="_sec_13">A.2.1 Auditable Events for Objective SFRs</h3>
-         <span style="" class="comment " id="Comment-5-">All objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> need a review to determine if they should change status with the new release of this module.</span> 
+         <span style="" class="comment " id="Comment-4-">All objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> need a review to determine if they should change status with the new release of this module.</span> 
         <table class="sort_kids_" border="1">
             <caption data-sortkey="#0">
                 <span class="ctr" data-myid="at-objective" data-counter-type="ct-Table" id="at-objective">Table <span class="counter">8</span></span>: Auditable Events for Objective Requirements
             </caption>
             <tr data-sortkey="#1">
                 <th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th>
+            </tr>
+            <tr data-sortkey="FAU_ARP.1">
+                <td rowspan="2"><a href="#FAU_ARP.1">FAU_ARP.1</a></td><td style="display:none"></td>
+            </tr>
+            <tr style="display:none;" data-sortkey="FAU_ARP.1#">
+                <td></td>
+            </tr>
+            <tr data-sortkey="FAU_ARP.1.1">
+                <td>No events specified</td><td>N/A</td>
+            </tr>
+            <tr data-sortkey="FAU_SAR.1">
+                <td rowspan="2"><a href="#FAU_SAR.1">FAU_SAR.1</a></td><td style="display:none"></td>
+            </tr>
+            <tr style="display:none;" data-sortkey="FAU_SAR.1#">
+                <td></td>
+            </tr>
+            <tr data-sortkey="FAU_SAR.1.1">
+                <td>No events specified</td><td>N/A</td>
+            </tr>
+            <tr data-sortkey="FAU_SAR.2">
+                <td rowspan="2"><a href="#FAU_SAR.2">FAU_SAR.2</a></td><td style="display:none"></td>
+            </tr>
+            <tr style="display:none;" data-sortkey="FAU_SAR.2#">
+                <td></td>
+            </tr>
+            <tr data-sortkey="FAU_SAR.2.1">
+                <td>No events specified</td><td>N/A</td>
+            </tr>
+            <tr data-sortkey="FAU_SAR.3">
+                <td rowspan="2"><a href="#FAU_SAR.3">FAU_SAR.3</a></td><td style="display:none"></td>
+            </tr>
+            <tr style="display:none;" data-sortkey="FAU_SAR.3#">
+                <td></td>
+            </tr>
+            <tr data-sortkey="FAU_SAR.3.1">
+                <td>No events specified</td><td>N/A</td>
             </tr>
         </table>
         <h3 id="fau-obj" class="indexable" data-level="3">A.2.2 Security Audit (FAU)</h3>
@@ -1714,7 +1756,7 @@
                     <a href="#FAU_SAR.3.1" class="abbr">FAU_SAR.3.1</a>
                 </div>
                 <div class="reqdesc">
-                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide the ability to apply [<i>filtering and sorting</i>] of audit <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data based on [<i>filtering parameters: risk rating, time period, source IP address, destination IP address and </i>[<b>selection</b>: <span class="selectable-content" id="_s_76">[<b>assignment</b>: <span class="assignable-content"> other filtering parameters</span>]</span>, <span class="selectable-content" id="_s_77">No other filtering parameters</span>]<i>; and sorting parameters: event ID, event type, time, signature ID, <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> actions performed, and </i>[<b>selection</b>: <span class="selectable-content" id="_s_78">[<b>assignment</b>: <span class="assignable-content">other sorting parameters</span>]</span>, <span class="selectable-content" id="_s_79">no other sorting parameters</span>]. <span style="" class="comment " id="Comment-6-">please review </span> 
+                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide the ability to apply [<i>filtering and sorting</i>] of audit <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data based on [<i>filtering parameters: risk rating, time period, source IP address, destination IP address and </i>[<b>selection</b>: <span class="selectable-content" id="_s_76">[<b>assignment</b>: <span class="assignable-content"> other filtering parameters</span>]</span>, <span class="selectable-content" id="_s_77">No other filtering parameters</span>]<i>; and sorting parameters: event ID, event type, time, signature ID, <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> actions performed, and </i>[<b>selection</b>: <span class="selectable-content" id="_s_78">[<b>assignment</b>: <span class="assignable-content">other sorting parameters</span>]</span>, <span class="selectable-content" id="_s_79">no other sorting parameters</span>]. <span style="" class="comment " id="Comment-5-">please review </span> 
                 </div>
             </div>
         </div>

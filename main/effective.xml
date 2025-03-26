@@ -703,7 +703,6 @@ enforce its policies on network traffic of monitored networks.</description>
 			<audit-table table="mandatory" id="mandatory-audit-events">
 				<h:br/><h:b><ctr ctr-type="Table" pre="Table " id="atref-mandatory">: Auditable Events for Mandatory SFRs</ctr></h:b>
 			</audit-table>
-			<comment>some audits end without completing the sentence.</comment>
 		</section>
 		
 			<section title="Security Audit (FAU)" id="m-fau">
@@ -1170,7 +1169,7 @@ enforce its policies on network traffic of monitored networks.</description>
 					<h:ul>
 					<h:li>Promiscuous (listen-only) mode: <assignable>list of interface types</assignable></h:li>
 					<h:li>Inline (data pass-through) mode: <assignable>list of interface types</assignable></h:li>
-					<h:li>Management mode:<assignable>list of interface types</assignable></h:li>
+					<h:li>Management mode: <assignable>list of interface types</assignable>.</h:li>
 						<!--
 					<h:li><selectables linebreak="yes">
 					<selectable>[Session-reset-capable interfaces:<assignable>list of session-reset-capable interfaces</assignable></selectable>
@@ -1600,7 +1599,7 @@ enforce its policies on network traffic of monitored networks.</description>
         <audit-table id="at-optional" table="optional"/>
       </section>
 	<section title="Security Audit(FAU)" id="fau-ops">
-			<f-component name="Protected Audit Trail Storage" cc-id="fau_stg.2" iteration="ips" id="fau-stg-2-ips">
+			<f-component name="Protected Audit Trail Storage" cc-id="fau_stg.2" iteration="IPS" id="fau-stg-2-ips">
 			<f-element id="fau-stg-1e1-ips">
 				<title>The TSF shall protect the stored <h:s>audit records </h:s><h:b>IPS data</h:b> from unauthorized deletion.</title>
 				<aactivity>
@@ -1614,10 +1613,12 @@ enforce its policies on network traffic of monitored networks.</description>
 				<Guidance>The evaluator shall confirm the guidance documentation describes how to protect IPS data from unauthorized modification and deletion.</Guidance>
 				<Tests>The evaluator shall devise tests that demonstrate that IPS data can be protected from unauthorized modification and deletion.</Tests>
 			</aactivity>
+				
 			</f-element>
-			
+				<audit-event table="optional"/>
 			</f-component>
-			<f-component name="Prevention of Audit Data Loss" cc-id="fau_stg.5" iteration="ips" id="fau-stg-5-ips">
+		
+			<f-component name="Prevention of Audit Data Loss" cc-id="fau_stg.5" iteration="IPS" id="fau-stg-5-ips">
 			<f-element id="fau-stg-4e1">
 			<title>
 			The TSF shall <h:b>be able to</h:b>
@@ -1637,11 +1638,13 @@ enforce its policies on network traffic of monitored networks.</description>
 			</f-element>
 			<audit-event>
 			<audit-event-descr>A local audit store reaches its storage limit.</audit-event-descr>
-			<audit-event-info>Indication that the audit store is full, and (if configurable) how the TOE is responding (e.g. failing to audit new auditable events, or </audit-event-info></audit-event>
+			<audit-event-info>Indication that the audit store is full, and (if configurable) how the TOE is responding (e.g., failing to audit new auditable events, or removing old audit events to make space for new events).</audit-event-info></audit-event>
 			</f-component>
 	</section>
+    	
+    	
 	<section title="Protection of the TSF (FPT)" id="fpt">
-	<f-component name="Failure with Preservation of Secure State" cc-id="fpt_fls.1" iteration="ips" id="fpt-fls-1-ips">
+	<f-component name="Failure with Preservation of Secure State" cc-id="fpt_fls.1" iteration="IPS" id="fpt-fls-1-ips">
 	<f-element id="fpt-fls-1">
 	<title><comment>Iterated in case this is added to NDcPP (dependency on FPT_TST)</comment>The TSF shall <h:br>be able to</h:br> preserve a secure state <h:br>for inline interfaces</h:br> when the following types of failures occur: <assignable>list of types of failures in the TSF</assignable></title>
 	<note role="application"><h:i>
@@ -1676,8 +1679,8 @@ enforce its policies on network traffic of monitored networks.</description>
 	</Tests></aactivity>
 	</f-element>
 	<audit-event>
-	<audit-event-descr>A local audit store reaches its storage limit.</audit-event-descr>
-	<audit-event-info>Indication that the audit store is full, and (if configurable) how the TOE is responding (e.g. failing to audit new auditable events, or </audit-event-info></audit-event>
+		<audit-event-descr>Failure of the TSF.</audit-event-descr>
+		<audit-event-info>The type of failure that occurred. </audit-event-info></audit-event>
 	</f-component>
 	</section>
 	<section title="Intrusion Prevention (IPS)" id="ips">
@@ -1818,7 +1821,10 @@ forwarded</assignable></selectable>
 		</Tests>
 		</aactivity>
 	</f-element>
+		<audit-event table="objective"/>
+		
 	</f-component>
+		
 	<f-component name="Audit Review" cc-id="fau_sar.1" id="fau-sar-1">
 	<f-element id="fau-sar-1e1">
 	<title>
@@ -1862,7 +1868,9 @@ forwarded</assignable></selectable>
 	<Guidance>The evaluator shall examine the operational guidance to verify that it provides instructions on how to access and interpret IPS events using the TOE’s management interface.</Guidance>
 	<Tests>The evaluator shall devise tests that demonstrate that IPS data (generated as defined in FAU_GEN.1/IPS) can be interpreted by authorized administrators from the TOE’s management interface.</Tests></aactivity>
 	</f-element>
+		<audit-event table="objective"/>
 	</f-component>
+		
 	<f-component name="Restricted Audit Review" cc-id="fau_sar.2" id="fau-sar-2">
 	<f-element id="fau-sar-2e1">
 	<title>The TSF shall prohibit all <h:s>users</h:s> <h:b>administrators</h:b> read access to the <h:s>audit records</h:s> <h:b>IPS data</h:b>, except those that have been granted explicit read-access.</title>
@@ -1872,7 +1880,9 @@ forwarded</assignable></selectable>
 	<Tests>The evaluator shall log on to the TOE as various users to confirm that only those users that are intended to be granted read access to IPS data are able to view it.</Tests>
 	</aactivity>
 	</f-element>
+		<audit-event table="objective"/>
 	</f-component>
+		
 	<f-component name="Selectable Audit Review" cc-id="fau_sar.3" id="fau-sar-3">
 	<f-element id="fau-sar-3e1">
 	<title>
@@ -1907,6 +1917,7 @@ this capability is correctly implemented. The evaluator shall also, in the test 
 justifying the set of tests as representative and sufficient to exercise the capability.</test></testlist>
 		</Tests></aactivity>
 	</f-element>
+		<audit-event table="objective"/>
 	</f-component>
 	</section>
 
