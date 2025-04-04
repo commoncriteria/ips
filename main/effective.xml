@@ -430,19 +430,9 @@
 			devices are able to communicate with devices on the protected network via a backdoor then those devices
 			may be susceptible to the unauthorized disclosure of information.</description>
 
-<addressed-by>FAU_GEN.1/IPS</addressed-by><rationale>This requirement mitigates the threat of network access by providing a log of network activity that could aid in detecting attempts to realize this threat.</rationale>
-        	<addressed-by>FMT_SMF.1/IPS</addressed-by><rationale>This requirement mitigates the threat of network access by providing a mechanism to configure the TSF's ability to detect attempts to realize this threat.</rationale>
         	<addressed-by>IPS_IPB_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network access by providing a mechanism to restrict network traffic that originates from a particular source.</rationale>
         	<addressed-by>IPS_NTA_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network access by defining the network traffic the TSF is able to examine to determine the potential realization of a threat.</rationale>
-        	<addressed-by>FAU_STG.2/IPS (optional)</addressed-by><rationale>This requirement mitigates the threat by ensuring that records of stored IPS data cannot be read without authorization or modified by any subject so as not to falsely disclose the history of activity observed on the network.</rationale>
-        	<addressed-by>FAU_STG.5/IPS (optional)</addressed-by><rationale>This requirement mitigates the threat by providing a predictable mechanism for how storage of IPS data is prioritized in the event that insufficient storage is available, allowing for the administrator to have adequate warning of the limitations of the collection process.</rationale>
-        	<addressed-by>FPT_FLS.1/IPS (optional)</addressed-by><rationale>This requirement mitigates the threat by implementing a mechanism that allows the TSF to fail closed so that network traffic is not transmitted without inspection in the event that its inspection functionality is unavailable.</rationale>
         	<addressed-by>IPS_SBD_EXT.2 (optional)</addressed-by><rationale>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets.</rationale>
-        	<addressed-by>FAU_ARP.1 (objective)</addressed-by><rationale>This requirement mitigates the threat by generating an alert in response to the detection of suspicious network events, allowing for timely analysis of potential threats.</rationale>
-        	<addressed-by>FAU_SAR.1 (objective)</addressed-by><rationale>This requirement mitigates the threat by providing authorized subjects with a means to review stored IPS data for detection of potential threats.</rationale>
-        	<addressed-by>FAU_SAR.2 (objective)</addressed-by><rationale>This requirement mitigates the threat by providing a mechanism to review stored network data for administrative analysis.</rationale>
-        	<addressed-by>FAU_SAR.3 (objective)</addressed-by><rationale>This requirement mitigates the threat by enforcing restrictions on the subjects that can review stored network data so that this is not disclosed to untrusted or potentially malicious subjects.</rationale>
-        	<addressed-by>FRU_RSA.1 (implementation-based)</addressed-by><rationale>This requirement mitigates the threat by enforcing network traffic quotas so that network traffic is not transmitted through the TOE without analysis.</rationale>
         	
 
         </threat>
@@ -450,45 +440,25 @@
         <threat name="T.NETWORK_DISCLOSURE" id="t-network-disclosure">
           <description> Sensitive information on a protected network might be disclosed resulting from ingress- or egress-based
 	  	  actions. </description>
-        	
-        	<addressed-by>FAU_GEN.1/IPS</addressed-by><rationale>This requirement mitigates the threat of network disclosure by providing a log of network activity that could aid in detecting attempts to realize this threat.</rationale>
-        	<addressed-by>FMT_SMF.1/IPS</addressed-by><rationale>This requirement mitigates the threat of network disclosure by providing a mechanism to configure the TSF's ability to detect attempts to realize this threat.</rationale>
+ 
         	<addressed-by>IPS_IPB_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network disclosure by providing a mechanism to restrict ingress and egress of network traffic by source or destination.</rationale>
         	<addressed-by>IPS_NTA_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network disclosure by defining the network traffic the TSF is able to examine to determine the potential realization of a threat.</rationale>
         	<addressed-by>IPS_SBD_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network denial of service by providing a means to detect network traffic signatures that are indicative of attempts to establish insecure or otherwise malformed sessions over a trusted protocol.</rationale>
         	
-        	<addressed-by>FAU_STG.2/IPS (optional)</addressed-by><rationale>This requirement mitigates the threat by ensuring that records of stored IPS data cannot be read without authorization or modified by any subject so as not to falsely disclose the history of activity observed on the network.</rationale>
-        	<addressed-by>FAU_STG.5/IPS (optional)</addressed-by><rationale>This requirement mitigates the threat by providing a predictable mechanism for how storage of IPS data is prioritized in the event that insufficient storage is available, allowing for the administrator to have adequate warning of the limitations of the collection process.</rationale>
-        	<addressed-by>FPT_FLS.1/IPS (optional)</addressed-by><rationale>This requirement mitigates the threat by implementing a mechanism that allows the TSF to fail closed so that network traffic is not transmitted without inspection in the event that its inspection functionality is unavailable.</rationale>
         	<addressed-by>IPS_SBD_EXT.2 (optional)</addressed-by><rationale>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets.</rationale>
-        	<addressed-by>FAU_ARP.1 (objective)</addressed-by><rationale>This requirement mitigates the threat by generating an alert in response to the detection of suspicious network events, allowing for timely analysis of potential threats.</rationale>
-        	<addressed-by>FAU_SAR.1 (objective)</addressed-by><rationale>This requirement mitigates the threat by providing authorized subjects with a means to review stored IPS data for detection of potential threats.</rationale>
-        	<addressed-by>FAU_SAR.2 (objective)</addressed-by><rationale>This requirement mitigates the threat by providing a mechanism to review stored network data for administrative analysis.</rationale>
-        	<addressed-by>FAU_SAR.3 (objective)</addressed-by><rationale>This requirement mitigates the threat by enforcing restrictions on the subjects that can review stored network data so that this is not disclosed to untrusted or potentially malicious subjects.</rationale>
-        	<addressed-by>FRU_RSA.1 (implementation-based)</addressed-by><rationale>This requirement mitigates the threat by enforcing network traffic quotas so that network traffic is not transmitted through the TOE without analysis.</rationale>
+
         	
 		  </threat>
 		<threat name="T.NETWORK_DOS" id="t-network-dos">
           <description> Attacks against services inside a protected network, or indirectly by virtue of access to malicious agents
 		  from within a protected network, might lead to denial of services otherwise available within a protected
 		  network. </description>
-			
-			<addressed-by>FAU_GEN.1/IPS</addressed-by><rationale>This requirement mitigates the threat of network denial of service by providing a log of network activity that could aid in detecting attempts to realize this threat.</rationale>
-			<addressed-by>FMT_SMF.1/IPS</addressed-by><rationale>This requirement mitigates the threat of network denial of service by providing a mechanism to configure the TSF's ability to detect attempts to realize this threat.</rationale>
+
 			<addressed-by>IPS_IPB_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network denial of service by providing a mechanism to restrict network traffic that originates from a particular source.</rationale>
 			<addressed-by>IPS_NTA_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network denial of service by defining the network traffic the TSF is able to examine to determine the potential realization of a threat.</rationale>
 			<addressed-by>IPS_SBD_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network denial of service by providing a means to detect network traffic signatures that are indicative of denial of service attempts.</rationale>
-			
-			<addressed-by>FAU_STG.2/IPS (optional)</addressed-by><rationale>This requirement mitigates the threat by ensuring that records of stored IPS data cannot be read without authorization or modified by any subject so as not to falsely disclose the history of activity observed on the network.</rationale>
-			<addressed-by>FAU_STG.5/IPS (optional)</addressed-by><rationale>This requirement mitigates the threat by providing a predictable mechanism for how storage of IPS data is prioritized in the event that insufficient storage is available, allowing for the administrator to have adequate warning of the limitations of the collection process.</rationale>
-			<addressed-by>FPT_FLS.1/IPS (optional)</addressed-by><rationale>This requirement mitigates the threat by implementing a mechanism that allows the TSF to fail closed so that network traffic is not transmitted without inspection in the event that its inspection functionality is unavailable.</rationale>
 			<addressed-by>IPS_SBD_EXT.2 (optional)</addressed-by><rationale>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets.</rationale>
-			<addressed-by>FAU_ARP.1 (objective)</addressed-by><rationale>This requirement mitigates the threat by generating an alert in response to the detection of suspicious network events, allowing for timely analysis of potential threats.</rationale>
-			<addressed-by>FAU_SAR.1 (objective)</addressed-by><rationale>This requirement mitigates the threat by providing authorized subjects with a means to review stored IPS data for detection of potential threats.</rationale>
-			<addressed-by>FAU_SAR.2 (objective)</addressed-by><rationale>This requirement mitigates the threat by providing a mechanism to review stored network data for administrative analysis.</rationale>
-			<addressed-by>FAU_SAR.3 (objective)</addressed-by><rationale>This requirement mitigates the threat by enforcing restrictions on the subjects that can review stored network data so that this is not disclosed to untrusted or potentially malicious subjects.</rationale>
-			<addressed-by>FRU_RSA.1 (implementation-based)</addressed-by><rationale>This requirement mitigates the threat by enforcing network traffic quotas so that network traffic is not transmitted through the TOE without analysis.</rationale>
-			
+
 		</threat>
 		<threat name="T.NETWORK_MISUSE" id="t-network-misuse">
           <description> Access to services made available by a protected network might be used counter to operational
@@ -496,24 +466,41 @@
 		  inappropriate activities while communicating with allowed public services (e.g. manipulation of resident
 		  tools, SQL injection, phishing, forced resets, malicious zip files, disguised executables, privilege escalation
 		  tools, and botnets). </description>
-		  
-			<addressed-by>FAU_GEN.1/IPS</addressed-by><rationale>This requirement mitigates the threat of network misuse by providing a log of network activity that could aid in detecting attempts to realize this threat.</rationale>
-			<addressed-by>FMT_SMF.1/IPS</addressed-by><rationale>This requirement mitigates the threat of network misuse by providing a mechanism to configure the TSF's ability to detect attempts to realize this threat.</rationale>
+
+		
 			<addressed-by>IPS_ABD_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network misuse by providing a mechanism to detect anomalous activity that may indicate network misuse.</rationale>
 			<addressed-by>IPS_IPB_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network misuse by providing a mechanism to restrict network traffic that originates from within a protected network and is bound for an untrusted source, which may indicate compromise or misuse of a protected resource.</rationale>
 			<addressed-by>IPS_NTA_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network misuse by defining the network traffic the TSF is able to examine to determine the potential realization of a threat.</rationale>
 	
-			<addressed-by>FAU_STG.2/IPS (optional)</addressed-by><rationale>This requirement mitigates the threat by ensuring that records of stored IPS data cannot be read without authorization or modified by any subject so as not to falsely disclose the history of activity observed on the network.</rationale>
-			<addressed-by>FAU_STG.5/IPS (optional)</addressed-by><rationale>This requirement mitigates the threat by providing a predictable mechanism for how storage of IPS data is prioritized in the event that insufficient storage is available, allowing for the administrator to have adequate warning of the limitations of the collection process.</rationale>
-			<addressed-by>FPT_FLS.1/IPS (optional)</addressed-by><rationale>This requirement mitigates the threat by implementing a mechanism that allows the TSF to fail closed so that network traffic is not transmitted without inspection in the event that its inspection functionality is unavailable.</rationale>
+
 			<addressed-by>IPS_SBD_EXT.2 (optional)</addressed-by><rationale>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets.</rationale>
-			<addressed-by>FAU_ARP.1 (objective)</addressed-by><rationale>This requirement mitigates the threat by generating an alert in response to the detection of suspicious network events, allowing for timely analysis of potential threats.</rationale>
-			<addressed-by>FAU_SAR.1 (objective)</addressed-by><rationale>This requirement mitigates the threat by providing authorized subjects with a means to review stored IPS data for detection of potential threats.</rationale>
-			<addressed-by>FAU_SAR.2 (objective)</addressed-by><rationale>This requirement mitigates the threat by providing a mechanism to review stored network data for administrative analysis.</rationale>
-			<addressed-by>FAU_SAR.3 (objective)</addressed-by><rationale>This requirement mitigates the threat by enforcing restrictions on the subjects that can review stored network data so that this is not disclosed to untrusted or potentially malicious subjects.</rationale>
-			<addressed-by>FRU_RSA.1 (implementation-based)</addressed-by><rationale>This requirement mitigates the threat by enforcing network traffic quotas so that network traffic is not transmitted through the TOE without analysis.</rationale>
 			
         </threat>
+      	
+      	
+      	<threat name="T.UNAUTHORIZED_ADMINISTRATION">
+      		<from base="ND"/>
+      		<description/>
+      		<addressed-by>FMT_SMF.1/IPS</addressed-by><rationale>This requirement mitigates the threat of unauthorized administration by providing a dedicated mechanism for authorized administration.</rationale>
+      	</threat>
+      	
+      	<threat name="T.UNDETECTED_ACTIVITY">
+      		<from base="ND"/>
+      		<description/>
+      		
+      		<addressed-by>FAU_GEN.1/IPS</addressed-by><rationale>This requirement mitigates the threat of undetected actions by logging the actions that occur on the network.</rationale>
+      		<addressed-by>FAU_STG.2/IPS (optional)</addressed-by><rationale>This requirement mitigates the threat of undetected actions by ensuring that records of stored IPS data cannot be read without authorization or modified by any subject so as not to falsely disclose the history of activity observed on the network.</rationale>
+      		<addressed-by>FAU_STG.5/IPS (optional)</addressed-by><rationale>This requirement mitigates the threat of undetected actions by providing a predictable mechanism for how storage of IPS data is prioritized in the event that insufficient storage is available, allowing for the administrator to have adequate warning of the limitations of the collection process.</rationale>
+      		<addressed-by>FPT_FLS.1/IPS (optional)</addressed-by><rationale>This requirement mitigates the threat of undetected actions by implementing a mechanism that allows the TSF to fail closed so that network traffic is not transmitted without inspection in the event that its inspection functionality is unavailable.</rationale>
+      		
+      		<addressed-by>FAU_ARP.1 (objective)</addressed-by><rationale>This requirement mitigates the threat of undetected actions by generating an alert in response to the detection of suspicious network events, allowing for timely analysis of potential threats.</rationale>
+      		<addressed-by>FAU_SAR.1 (objective)</addressed-by><rationale>This requirement mitigates the threat of undetected actions by providing authorized subjects with a means to review stored IPS data for detection of potential threats.</rationale>
+      		<addressed-by>FAU_SAR.2 (objective)</addressed-by><rationale>This requirement mitigates the threat of undetected actions by providing a mechanism to review stored network data for administrative analysis.</rationale>
+      		<addressed-by>FAU_SAR.3 (objective)</addressed-by><rationale>This requirement mitigates the threat of undetected actions by enforcing restrictions on the subjects that can review stored network data so that this is not disclosed to untrusted or potentially malicious subjects.</rationale>
+      		<addressed-by>FRU_RSA.1 (implementation-based)</addressed-by><rationale>This requirement mitigates the threat of undetected actions by enforcing network traffic quotas so that network traffic is not transmitted through the TOE without analysis.</rationale>
+      		
+      	</threat>
+      		
       </threats>
     </section>  <!-- Threats -->
 	

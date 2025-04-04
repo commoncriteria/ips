@@ -418,6 +418,14 @@
             <dd>
                 <span class="description"> Access to services made available by a protected network might be used counter to operational environment policies. Devices located outside the protected network may attempt to conduct inappropriate activities while communicating with allowed public services (e.g. manipulation of resident tools, <abbr class="dyn-abbr"><a href="#abbr_SQL">SQL</a></abbr> injection, phishing, forced resets, malicious zip files, disguised executables, privilege escalation tools, and botnets). </span>
             </dd>
+            <dt class="threat defined" id="T.UNAUTHORIZED_ADMINISTRATION">T.UNAUTHORIZED_ADMINISTRATION (from NDcPP) </dt>
+            <dd>
+                <span class="description"></span>
+            </dd>
+            <dt class="threat defined" id="T.UNDETECTED_ACTIVITY">T.UNDETECTED_ACTIVITY (from NDcPP) </dt>
+            <dd>
+                <span class="description"></span>
+            </dd>
         </dl>
          
         <h2 class="indexable" data-level="2" id="Assumptions">3.2 Assumptions</h2>
@@ -1204,56 +1212,16 @@
                     <th>Threat</th><th>Addressed by</th><th>Rationale</th>
                 </tr>
                 <tr class="major-row">
-                    <td rowspan="13"><a href="#T.NETWORK_ACCESS">T.NETWORK_​ACCESS</a>
-                        <br>
-                    </td><td><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a></td><td>This requirement mitigates the threat of network access by providing a log of network activity that could aid in detecting attempts to realize this threat.</td>
-                </tr>
-                <tr>
-                    <td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td>This requirement mitigates the threat of network access by providing a mechanism to configure the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>'s ability to detect attempts to realize this threat.</td>
-                </tr>
-                <tr>
-                    <td><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td>This requirement mitigates the threat of network access by providing a mechanism to restrict network traffic that originates from a particular source.</td>
+                    <td rowspan="3"><a href="#T.NETWORK_ACCESS">T.NETWORK_​ACCESS</a></td><td><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td>This requirement mitigates the threat of network access by providing a mechanism to restrict network traffic that originates from a particular source.</td>
                 </tr>
                 <tr>
                     <td><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td>This requirement mitigates the threat of network access by defining the network traffic the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> is able to examine to determine the potential realization of a threat.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FAU_STG.2/IPS">FAU_STG.2/IPS</a> (optional)</td><td>This requirement mitigates the threat by ensuring that records of stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data cannot be read without authorization or modified by any subject so as not to falsely disclose the history of activity observed on the network.</td>
-                </tr>
-                <tr>
-                    <td><a href="#FAU_STG.5/IPS">FAU_STG.5/IPS</a> (optional)</td><td>This requirement mitigates the threat by providing a predictable mechanism for how storage of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data is prioritized in the event that insufficient storage is available, allowing for the administrator to have adequate warning of the limitations of the collection process.</td>
-                </tr>
-                <tr>
-                    <td><a href="#FPT_FLS.1/IPS">FPT_FLS.1/IPS</a> (optional)</td><td>This requirement mitigates the threat by implementing a mechanism that allows the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to fail closed so that network traffic is not transmitted without inspection in the event that its inspection functionality is unavailable.</td>
-                </tr>
-                <tr>
                     <td><a href="#IPS_SBD_EXT.2">IPS_SBD_EXT.2</a> (optional)</td><td>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets.</td>
                 </tr>
-                <tr>
-                    <td><a href="#FAU_ARP.1">FAU_ARP.1</a> (objective)</td><td>This requirement mitigates the threat by generating an alert in response to the detection of suspicious network events, allowing for timely analysis of potential threats.</td>
-                </tr>
-                <tr>
-                    <td><a href="#FAU_SAR.1">FAU_SAR.1</a> (objective)</td><td>This requirement mitigates the threat by providing authorized subjects with a means to review stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data for detection of potential threats.</td>
-                </tr>
-                <tr>
-                    <td><a href="#FAU_SAR.2">FAU_SAR.2</a> (objective)</td><td>This requirement mitigates the threat by providing a mechanism to review stored network data for administrative analysis.</td>
-                </tr>
-                <tr>
-                    <td><a href="#FAU_SAR.3">FAU_SAR.3</a> (objective)</td><td>This requirement mitigates the threat by enforcing restrictions on the subjects that can review stored network data so that this is not disclosed to untrusted or potentially malicious subjects.</td>
-                </tr>
-                <tr>
-                    <td><a href="#FRU_RSA.1">FRU_RSA.1</a> (implementation-based)</td><td>This requirement mitigates the threat by enforcing network traffic quotas so that network traffic is not transmitted through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> without analysis.</td>
-                </tr>
                 <tr class="major-row">
-                    <td rowspan="14"><a href="#T.NETWORK_DISCLOSURE">T.NETWORK_​DISCLOSURE</a>
-                        <br>
-                    </td><td><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a></td><td>This requirement mitigates the threat of network disclosure by providing a log of network activity that could aid in detecting attempts to realize this threat.</td>
-                </tr>
-                <tr>
-                    <td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td>This requirement mitigates the threat of network disclosure by providing a mechanism to configure the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>'s ability to detect attempts to realize this threat.</td>
-                </tr>
-                <tr>
-                    <td><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td>This requirement mitigates the threat of network disclosure by providing a mechanism to restrict ingress and egress of network traffic by source or destination.</td>
+                    <td rowspan="4"><a href="#T.NETWORK_DISCLOSURE">T.NETWORK_​DISCLOSURE</a></td><td><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td>This requirement mitigates the threat of network disclosure by providing a mechanism to restrict ingress and egress of network traffic by source or destination.</td>
                 </tr>
                 <tr>
                     <td><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td>This requirement mitigates the threat of network disclosure by defining the network traffic the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> is able to examine to determine the potential realization of a threat.</td>
@@ -1262,42 +1230,10 @@
                     <td><a href="#IPS_SBD_EXT.1">IPS_SBD_EXT.1</a></td><td>This requirement mitigates the threat of network denial of service by providing a means to detect network traffic signatures that are indicative of attempts to establish insecure or otherwise malformed sessions over a trusted protocol.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FAU_STG.2/IPS">FAU_STG.2/IPS</a> (optional)</td><td>This requirement mitigates the threat by ensuring that records of stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data cannot be read without authorization or modified by any subject so as not to falsely disclose the history of activity observed on the network.</td>
-                </tr>
-                <tr>
-                    <td><a href="#FAU_STG.5/IPS">FAU_STG.5/IPS</a> (optional)</td><td>This requirement mitigates the threat by providing a predictable mechanism for how storage of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data is prioritized in the event that insufficient storage is available, allowing for the administrator to have adequate warning of the limitations of the collection process.</td>
-                </tr>
-                <tr>
-                    <td><a href="#FPT_FLS.1/IPS">FPT_FLS.1/IPS</a> (optional)</td><td>This requirement mitigates the threat by implementing a mechanism that allows the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to fail closed so that network traffic is not transmitted without inspection in the event that its inspection functionality is unavailable.</td>
-                </tr>
-                <tr>
                     <td><a href="#IPS_SBD_EXT.2">IPS_SBD_EXT.2</a> (optional)</td><td>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets.</td>
                 </tr>
-                <tr>
-                    <td><a href="#FAU_ARP.1">FAU_ARP.1</a> (objective)</td><td>This requirement mitigates the threat by generating an alert in response to the detection of suspicious network events, allowing for timely analysis of potential threats.</td>
-                </tr>
-                <tr>
-                    <td><a href="#FAU_SAR.1">FAU_SAR.1</a> (objective)</td><td>This requirement mitigates the threat by providing authorized subjects with a means to review stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data for detection of potential threats.</td>
-                </tr>
-                <tr>
-                    <td><a href="#FAU_SAR.2">FAU_SAR.2</a> (objective)</td><td>This requirement mitigates the threat by providing a mechanism to review stored network data for administrative analysis.</td>
-                </tr>
-                <tr>
-                    <td><a href="#FAU_SAR.3">FAU_SAR.3</a> (objective)</td><td>This requirement mitigates the threat by enforcing restrictions on the subjects that can review stored network data so that this is not disclosed to untrusted or potentially malicious subjects.</td>
-                </tr>
-                <tr>
-                    <td><a href="#FRU_RSA.1">FRU_RSA.1</a> (implementation-based)</td><td>This requirement mitigates the threat by enforcing network traffic quotas so that network traffic is not transmitted through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> without analysis.</td>
-                </tr>
                 <tr class="major-row">
-                    <td rowspan="14"><a href="#T.NETWORK_DOS">T.NETWORK_​DOS</a>
-                        <br>
-                    </td><td><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a></td><td>This requirement mitigates the threat of network denial of service by providing a log of network activity that could aid in detecting attempts to realize this threat.</td>
-                </tr>
-                <tr>
-                    <td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td>This requirement mitigates the threat of network denial of service by providing a mechanism to configure the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>'s ability to detect attempts to realize this threat.</td>
-                </tr>
-                <tr>
-                    <td><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td>This requirement mitigates the threat of network denial of service by providing a mechanism to restrict network traffic that originates from a particular source.</td>
+                    <td rowspan="4"><a href="#T.NETWORK_DOS">T.NETWORK_​DOS</a></td><td><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td>This requirement mitigates the threat of network denial of service by providing a mechanism to restrict network traffic that originates from a particular source.</td>
                 </tr>
                 <tr>
                     <td><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td>This requirement mitigates the threat of network denial of service by defining the network traffic the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> is able to examine to determine the potential realization of a threat.</td>
@@ -1306,42 +1242,10 @@
                     <td><a href="#IPS_SBD_EXT.1">IPS_SBD_EXT.1</a></td><td>This requirement mitigates the threat of network denial of service by providing a means to detect network traffic signatures that are indicative of denial of service attempts.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FAU_STG.2/IPS">FAU_STG.2/IPS</a> (optional)</td><td>This requirement mitigates the threat by ensuring that records of stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data cannot be read without authorization or modified by any subject so as not to falsely disclose the history of activity observed on the network.</td>
-                </tr>
-                <tr>
-                    <td><a href="#FAU_STG.5/IPS">FAU_STG.5/IPS</a> (optional)</td><td>This requirement mitigates the threat by providing a predictable mechanism for how storage of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data is prioritized in the event that insufficient storage is available, allowing for the administrator to have adequate warning of the limitations of the collection process.</td>
-                </tr>
-                <tr>
-                    <td><a href="#FPT_FLS.1/IPS">FPT_FLS.1/IPS</a> (optional)</td><td>This requirement mitigates the threat by implementing a mechanism that allows the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to fail closed so that network traffic is not transmitted without inspection in the event that its inspection functionality is unavailable.</td>
-                </tr>
-                <tr>
                     <td><a href="#IPS_SBD_EXT.2">IPS_SBD_EXT.2</a> (optional)</td><td>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets.</td>
                 </tr>
-                <tr>
-                    <td><a href="#FAU_ARP.1">FAU_ARP.1</a> (objective)</td><td>This requirement mitigates the threat by generating an alert in response to the detection of suspicious network events, allowing for timely analysis of potential threats.</td>
-                </tr>
-                <tr>
-                    <td><a href="#FAU_SAR.1">FAU_SAR.1</a> (objective)</td><td>This requirement mitigates the threat by providing authorized subjects with a means to review stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data for detection of potential threats.</td>
-                </tr>
-                <tr>
-                    <td><a href="#FAU_SAR.2">FAU_SAR.2</a> (objective)</td><td>This requirement mitigates the threat by providing a mechanism to review stored network data for administrative analysis.</td>
-                </tr>
-                <tr>
-                    <td><a href="#FAU_SAR.3">FAU_SAR.3</a> (objective)</td><td>This requirement mitigates the threat by enforcing restrictions on the subjects that can review stored network data so that this is not disclosed to untrusted or potentially malicious subjects.</td>
-                </tr>
-                <tr>
-                    <td><a href="#FRU_RSA.1">FRU_RSA.1</a> (implementation-based)</td><td>This requirement mitigates the threat by enforcing network traffic quotas so that network traffic is not transmitted through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> without analysis.</td>
-                </tr>
                 <tr class="major-row">
-                    <td rowspan="14"><a href="#T.NETWORK_MISUSE">T.NETWORK_​MISUSE</a>
-                        <br>
-                    </td><td><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a></td><td>This requirement mitigates the threat of network misuse by providing a log of network activity that could aid in detecting attempts to realize this threat.</td>
-                </tr>
-                <tr>
-                    <td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td>This requirement mitigates the threat of network misuse by providing a mechanism to configure the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>'s ability to detect attempts to realize this threat.</td>
-                </tr>
-                <tr>
-                    <td><a href="#IPS_ABD_EXT.1">IPS_ABD_EXT.1</a></td><td>This requirement mitigates the threat of network misuse by providing a mechanism to detect anomalous activity that may indicate network misuse.</td>
+                    <td rowspan="4"><a href="#T.NETWORK_MISUSE">T.NETWORK_​MISUSE</a></td><td><a href="#IPS_ABD_EXT.1">IPS_ABD_EXT.1</a></td><td>This requirement mitigates the threat of network misuse by providing a mechanism to detect anomalous activity that may indicate network misuse.</td>
                 </tr>
                 <tr>
                     <td><a href="#IPS_IPB_EXT.1">IPS_IPB_EXT.1</a></td><td>This requirement mitigates the threat of network misuse by providing a mechanism to restrict network traffic that originates from within a protected network and is bound for an untrusted source, which may indicate compromise or misuse of a protected resource.</td>
@@ -1350,31 +1254,37 @@
                     <td><a href="#IPS_NTA_EXT.1">IPS_NTA_EXT.1</a></td><td>This requirement mitigates the threat of network misuse by defining the network traffic the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> is able to examine to determine the potential realization of a threat.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FAU_STG.2/IPS">FAU_STG.2/IPS</a> (optional)</td><td>This requirement mitigates the threat by ensuring that records of stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data cannot be read without authorization or modified by any subject so as not to falsely disclose the history of activity observed on the network.</td>
-                </tr>
-                <tr>
-                    <td><a href="#FAU_STG.5/IPS">FAU_STG.5/IPS</a> (optional)</td><td>This requirement mitigates the threat by providing a predictable mechanism for how storage of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data is prioritized in the event that insufficient storage is available, allowing for the administrator to have adequate warning of the limitations of the collection process.</td>
-                </tr>
-                <tr>
-                    <td><a href="#FPT_FLS.1/IPS">FPT_FLS.1/IPS</a> (optional)</td><td>This requirement mitigates the threat by implementing a mechanism that allows the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to fail closed so that network traffic is not transmitted without inspection in the event that its inspection functionality is unavailable.</td>
-                </tr>
-                <tr>
                     <td><a href="#IPS_SBD_EXT.2">IPS_SBD_EXT.2</a> (optional)</td><td>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets.</td>
                 </tr>
-                <tr>
-                    <td><a href="#FAU_ARP.1">FAU_ARP.1</a> (objective)</td><td>This requirement mitigates the threat by generating an alert in response to the detection of suspicious network events, allowing for timely analysis of potential threats.</td>
+                <tr class="major-row">
+                    <td rowspan="1"><a href="#T.UNAUTHORIZED_ADMINISTRATION">T.UNAUTHORIZED_​ADMINISTRATION</a> (from NDcPP) </td><td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td>This requirement mitigates the threat of unauthorized administration by providing a dedicated mechanism for authorized administration.</td>
+                </tr>
+                <tr class="major-row">
+                    <td rowspan="9"><a href="#T.UNDETECTED_ACTIVITY">T.UNDETECTED_​ACTIVITY</a> (from NDcPP) </td><td><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a></td><td>This requirement mitigates the threat of undetected actions by logging the actions that occur on the network.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FAU_SAR.1">FAU_SAR.1</a> (objective)</td><td>This requirement mitigates the threat by providing authorized subjects with a means to review stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data for detection of potential threats.</td>
+                    <td><a href="#FAU_STG.2/IPS">FAU_STG.2/IPS</a> (optional)</td><td>This requirement mitigates the threat of undetected actions by ensuring that records of stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data cannot be read without authorization or modified by any subject so as not to falsely disclose the history of activity observed on the network.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FAU_SAR.2">FAU_SAR.2</a> (objective)</td><td>This requirement mitigates the threat by providing a mechanism to review stored network data for administrative analysis.</td>
+                    <td><a href="#FAU_STG.5/IPS">FAU_STG.5/IPS</a> (optional)</td><td>This requirement mitigates the threat of undetected actions by providing a predictable mechanism for how storage of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data is prioritized in the event that insufficient storage is available, allowing for the administrator to have adequate warning of the limitations of the collection process.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FAU_SAR.3">FAU_SAR.3</a> (objective)</td><td>This requirement mitigates the threat by enforcing restrictions on the subjects that can review stored network data so that this is not disclosed to untrusted or potentially malicious subjects.</td>
+                    <td><a href="#FPT_FLS.1/IPS">FPT_FLS.1/IPS</a> (optional)</td><td>This requirement mitigates the threat of undetected actions by implementing a mechanism that allows the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to fail closed so that network traffic is not transmitted without inspection in the event that its inspection functionality is unavailable.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FRU_RSA.1">FRU_RSA.1</a> (implementation-based)</td><td>This requirement mitigates the threat by enforcing network traffic quotas so that network traffic is not transmitted through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> without analysis.</td>
+                    <td><a href="#FAU_ARP.1">FAU_ARP.1</a> (objective)</td><td>This requirement mitigates the threat of undetected actions by generating an alert in response to the detection of suspicious network events, allowing for timely analysis of potential threats.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FAU_SAR.1">FAU_SAR.1</a> (objective)</td><td>This requirement mitigates the threat of undetected actions by providing authorized subjects with a means to review stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data for detection of potential threats.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FAU_SAR.2">FAU_SAR.2</a> (objective)</td><td>This requirement mitigates the threat of undetected actions by providing a mechanism to review stored network data for administrative analysis.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FAU_SAR.3">FAU_SAR.3</a> (objective)</td><td>This requirement mitigates the threat of undetected actions by enforcing restrictions on the subjects that can review stored network data so that this is not disclosed to untrusted or potentially malicious subjects.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FRU_RSA.1">FRU_RSA.1</a> (implementation-based)</td><td>This requirement mitigates the threat of undetected actions by enforcing network traffic quotas so that network traffic is not transmitted through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> without analysis.</td>
                 </tr>
             </table>
         </p>
@@ -1402,6 +1312,12 @@
             </tr>
             <tr>
                 <td><a href="#T.NETWORK_MISUSE">T.NETWORK_MISUSE</a></td><td> The NDcPP only defines a security problem that relates to network traffic bound to or originating from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> expands the security problem to include a logical interface for network traffic between two non-TOE endpoints that is intercepted (inline) or observed (promiscuous) by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>. This is not inconsistent because the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> introduces a new logical interface for this functionality that is beyond the scope of the NDcPP. The NDcPP only defines a security problem that relates to network traffic bound to or originating from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> expands the security problem to include a logical interface for network traffic between two non-TOE endpoints that is intercepted (inline) or observed(promiscuous) by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>. This is not inconsistent because the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> introduces a new logical interface for this functionality that is beyond the scope of the NDcPP. </td>
+            </tr>
+            <tr>
+                <td><a href="#T.UNAUTHORIZED_ADMINISTRATION">T.UNAUTHORIZED_ADMINISTRATION</a></td><td></td>
+            </tr>
+            <tr>
+                <td><a href="#T.UNDETECTED_ACTIVITY">T.UNDETECTED_ACTIVITY</a></td><td></td>
             </tr>
             <tr>
                 <td><a href="#A.CONNECTIONS">A.CONNECTIONS</a></td><td> This assumption requires a specific network configuration to ensure that network traffic cannot be routed in a way that allows it to bypass the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&rsquo;s inspection interfaces. This does not interfere with any of the assumptions in the NDcPP because the NDcPP doesn&rsquo;t make any assumptions about the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&rsquo;s position in a network architecture. </td>
