@@ -212,7 +212,7 @@
 		must be capable of initiating a proactive response to terminate/interrupt an active potential threat, and
 		to initiate a response in real time that would cause interruption of the suspicious traffic flow. It is not
 		sufficient for the TOE to only be able to generate an audit event or other alert when potentially malicious
-		traffic is detected. However, the Security Administrator may choose to configure the TOE such that such
+		traffic is detected. However, the security administrator may choose to configure the TOE such that such
 		proactive responses are not enabled, and such a configuration would be a valid configuration for the TOE.
 		Though a conformant TOE may be deployed with only its IDS functionalities enabled, the conformant TOE
 		must demonstrate that capability during the evaluation.</h:p>
@@ -449,8 +449,7 @@
         </threat>
 
         <threat name="T.NETWORK_DISCLOSURE" id="t-network-disclosure">
-          <description> Sensitive information on a protected network might be disclosed resulting from ingress- or egress-based
-	  	  actions. </description>
+          <description> The TSF may inadvertently disclose sensitive information about the devices on a protected network through ingress- or egress-based actions. </description>
  
         	<addressed-by>IPS_IPB_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network disclosure by providing a mechanism to restrict ingress and egress of network traffic by source or destination.</rationale>
         	<addressed-by>IPS_NTA_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network disclosure by defining the network traffic the TSF is able to examine to determine the potential realization of a threat.</rationale>
@@ -764,7 +763,9 @@ enforce its policies on network traffic of monitored networks.</description>
 					<h:li><selectables>
 						<selectable>no other auditable events</selectable>
 						 <selectable>Auditable events listed in the Auditable Events for Optional SFRs table (<xref to="at-optional"/>) for SFRs that are present in the ST</selectable>
-                  		<selectable>Auditable events listed in the Auditable Events for Implementation-dependent SFRs table (<xref to="at-impl-dep"/>) for SFRs that are present in the ST</selectable></selectables>].
+                  	   <selectable>Auditable events listed in the Auditable Events for Objective SFRs
+                  	   	table (<xref to="at-objective"/>) for SFRs that are present in the ST</selectable>
+						 <selectable>Auditable events listed in the Auditable Events for Implementation-dependent SFRs table (<xref to="at-impl-dep"/>) for SFRs that are present in the ST</selectable></selectables>].
 					</h:li>
 				
 					</h:ol>
@@ -802,10 +803,13 @@ enforce its policies on network traffic of monitored networks.</description>
 				<f-element id="fau-gen-1e2-ips">
 					<title>The TSF shall record within the <h:b>IPS</h:b> audit data at least the following information: <h:ol type="a">
 						<h:li>Date and time of the event, type of event <h:b>and/or reaction,</h:b> <h:s>subject identity, and the outcome (success or failure) of the event; and;</h:s></h:li>
-						<h:li>For each <h:b>IPS auditable event</h:b> type, based on the auditable event definitions of the functional components included in the PP<h:s>/ST</h:s>, [<h:i>information specified in column three of the Auditable Events for Mandatory SFRs table (<xref to="at-mandatory"/>), <selectables>
+						<h:li>For each <h:b>IPS</h:b> audita 	ble event type, based on the auditable event definitions
+							of the functional components included in the PP, PP-Module, functional package, or ST, [<h:i>information specified in column three of the Auditable Events for Mandatory SFRs table (<xref to="at-mandatory"/>), <selectables>
 							<selectable>no other auditable events</selectable>
 							<selectable>additional information in column three of the Auditable Events for Optional SFRs table (<xref to="at-optional"/>) for SFRs that are present in the ST</selectable>
-							<selectable>additional information in column three of the Auditable Events for Implementation-dependent SFRs table (<xref to="at-impl-dep"/>) for SFRs that are present in the ST</selectable></selectables>].</h:i></h:li>
+								<selectable>additional information in column three of the Auditable Events for Objective SFRs
+									table (<xref to="at-objective"/>) for SFRs that are present in the ST</selectable>
+								<selectable>additional information in column three of the Auditable Events for Implementation-dependent SFRs table (<xref to="at-impl-dep"/>) for SFRs that are present in the ST</selectable></selectables>].</h:i></h:li>
 						
 					</h:ol>
 
@@ -955,7 +959,7 @@ enforce its policies on network traffic of monitored networks.</description>
 					<selectable>time of day;</selectable>
 					<selectable>frequency;</selectable>
 					<selectable>thresholds;</selectable>
-					<selectable>[<assignable>other methods</assignable>]</selectable>
+					<selectable><assignable>other methods</assignable></selectable>
 					</selectables>
 					and the following network protocol fields:
 					<h:ul>
@@ -1114,7 +1118,7 @@ enforce its policies on network traffic of monitored networks.</description>
 				</f-element>
 				<f-element id="ips-ipb-ext-1e2">
 					<title>
-						The TSF shall allow [<h:i>Security Administrators</h:i>] to configure the following IPS policy elements: <selectables> 
+						The TSF shall allow [<h:i>security administrators</h:i>] to configure the following IPS policy elements: <selectables> 
 						<selectable>known-good list rules</selectable> 
 						<selectable>known-bad list rules</selectable>
 						<selectable>IP addresses</selectable>
@@ -1780,7 +1784,7 @@ enforce its policies on network traffic of monitored networks.</description>
 				[<selectables>
 					<selectable>ignore generation of IPS events that would otherwise be generated</selectable>
 					<selectable>prevent audited IPS events</selectable>
-					<selectable>overwrite the oldest stored IPS data</selectable>
+					<selectable>overwrite the oldest stored <h:b>IPS</h:b> data</selectable>
 				</selectables>] if the <h:b>IPS</h:b> audit data storage is full.
 			
 			</title>
@@ -2006,7 +2010,7 @@ forwarded</assignable></selectable>
 	<f-component name="Audit Review" cc-id='fau_sar.1' id='fau-sar-1'>
 	<f-element id="fau-sar-1e1">
 	<title>
-	The TSF shall provide [<h:i>Security Administrators</h:i>] with the capability to read [<h:i>IPS data</h:i>] from the <h:b>IPS</h:b> audit data.
+	The TSF shall provide [<h:i>security administrators</h:i>] with the capability to read [<h:i>IPS data</h:i>] from the <h:b>IPS</h:b> audit data.
 	</title>
 	</f-element>
 	<f-element id="fau-sar-1e2">
