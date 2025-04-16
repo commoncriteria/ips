@@ -235,7 +235,7 @@
             <li>React independently to potentially malicious traffic (such as by blocking traffic flows, or by transmitting session resets to the endpoints), and optionally react in collaboration with non-TOE components of the overall enterprise security solution by initiating a connection to non-TOE components to cause/configure the non-TOE component to obstruct the traffic flow.</li>
         </ul>
         <p>
-            Many similarities exist between a conformant <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and an Intrusion Detection System (<abbr class="dyn-abbr"><a href="#abbr_IDS">IDS</a></abbr>), but there are some important distinctions. The conformant <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> differs from an <abbr class="dyn-abbr"><a href="#abbr_IDS">IDS</a></abbr> in that the conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must be capable of initiating a proactive response to terminate/interrupt an active potential threat, and to initiate a response in real time that would cause interruption of the suspicious traffic flow. It is not sufficient for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to only be able to generate an audit event or other alert when potentially malicious traffic is detected. However, the Security Administrator may choose to configure the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> such that such proactive responses are not enabled, and such a configuration would be a valid configuration for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. Though a conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may be deployed with only its <abbr class="dyn-abbr"><a href="#abbr_IDS">IDS</a></abbr> functionalities enabled, the conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must demonstrate that capability during the evaluation.
+            Many similarities exist between a conformant <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and an Intrusion Detection System (<abbr class="dyn-abbr"><a href="#abbr_IDS">IDS</a></abbr>), but there are some important distinctions. The conformant <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> differs from an <abbr class="dyn-abbr"><a href="#abbr_IDS">IDS</a></abbr> in that the conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must be capable of initiating a proactive response to terminate/interrupt an active potential threat, and to initiate a response in real time that would cause interruption of the suspicious traffic flow. It is not sufficient for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to only be able to generate an audit event or other alert when potentially malicious traffic is detected. However, the security administrator may choose to configure the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> such that such proactive responses are not enabled, and such a configuration would be a valid configuration for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. Though a conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may be deployed with only its <abbr class="dyn-abbr"><a href="#abbr_IDS">IDS</a></abbr> functionalities enabled, the conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must demonstrate that capability during the evaluation.
         </p>
         <p>
             Conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr> will detect potentially malicious network traffic using various approaches. Broadly speaking, the traffic analysis could be based on identification of &lsquo;known&rsquo; threats, or &lsquo;unknown&rsquo; threats. Identification of &lsquo;known&rsquo; threats may be performed through pattern matching, e.g. by matching strings of characters within an IP packet, or by matching traffic patterns common with reconnaissance or denial of service (<abbr class="dyn-abbr"><a href="#abbr_DoS">DoS</a></abbr>) attacks. Identification of &lsquo;unknown&rsquo; threats may be performed through use of various forms of &lsquo;anomaly&rsquo; detection whereby the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> is provided with (or &lsquo;learns/creates&rsquo;) a definition of &lsquo;expected/typical&rsquo; traffic patterns, such that it&rsquo;s able to detect and react to &lsquo;anomalous&rsquo; (unexpected/atypical) traffic patterns. 
@@ -408,7 +408,7 @@
             </dd>
             <dt class="threat defined" id="T.NETWORK_DISCLOSURE">T.NETWORK_DISCLOSURE</dt>
             <dd>
-                <span class="description"> Sensitive information on a protected network might be disclosed resulting from ingress- or egress-based actions. </span>
+                <span class="description"> The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> may inadvertently disclose sensitive information about the devices on a protected network through ingress- or egress-based actions. </span>
             </dd>
             <dt class="threat defined" id="T.NETWORK_DOS">T.NETWORK_DOS</dt>
             <dd>
@@ -674,7 +674,7 @@
                             <i>The events in the Auditable Events for Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> table (<a href="#at-mandatory" class="at-mandatory-ref">Table <span class="counter">2</span></a>); </i>
                         </li>
                         <li>
-                            [<b>selection</b>: <span class="selectable-content" id="_s_1">no other auditable events</span>, <span class="selectable-content" id="_s_2">Auditable events listed in the Auditable Events for Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> table (<a href="#at-optional" class="at-optional-ref">Table <span class="counter">7</span></a>) for <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are present in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></span>, <span class="selectable-content" id="_s_3">Auditable events listed in the Auditable Events for Implementation-dependent <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> table (<a href="#at-impl-dep" class="at-impl-dep-ref">Table <span class="counter">9</span></a>) for <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are present in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></span>]]. 
+                            [<b>selection</b>: <span class="selectable-content" id="_s_1">no other auditable events</span>, <span class="selectable-content" id="_s_2">Auditable events listed in the Auditable Events for Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> table (<a href="#at-optional" class="at-optional-ref">Table <span class="counter">7</span></a>) for <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are present in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></span>, <span class="selectable-content" id="_s_3">Auditable events listed in the Auditable Events for Objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> table (<a href="#at-objective" class="at-objective-ref">Table <span class="counter">8</span></a>) for <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are present in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></span>, <span class="selectable-content" id="_s_4">Auditable events listed in the Auditable Events for Implementation-dependent <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> table (<a href="#at-impl-dep" class="at-impl-dep-ref">Table <span class="counter">9</span></a>) for <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are present in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></span>]]. 
                         </li>
                     </ol>
                     <div class="appnote">
@@ -706,7 +706,7 @@
                             Date and time of the event, type of event <b>and/or reaction,</b> <s>subject identity, and the outcome (success or failure) of the event; and;</s>
                         </li>
                         <li>
-                            For each <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> auditable event</b> type, based on the auditable event definitions of the functional components included in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><s>/<abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></s>, [<i>information specified in column three of the Auditable Events for Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> table (<a href="#at-mandatory" class="at-mandatory-ref">Table <span class="counter">2</span></a>), [<b>selection</b>: <span class="selectable-content" id="_s_4">no other auditable events</span>, <span class="selectable-content" id="_s_5">additional information in column three of the Auditable Events for Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> table (<a href="#at-optional" class="at-optional-ref">Table <span class="counter">7</span></a>) for <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are present in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></span>, <span class="selectable-content" id="_s_6">additional information in column three of the Auditable Events for Implementation-dependent <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> table (<a href="#at-impl-dep" class="at-impl-dep-ref">Table <span class="counter">9</span></a>) for <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are present in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></span>]].</i>
+                            For each <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr></b> audita ble event type, based on the auditable event definitions of the functional components included in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>, functional package, or <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>, [<i>information specified in column three of the Auditable Events for Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> table (<a href="#at-mandatory" class="at-mandatory-ref">Table <span class="counter">2</span></a>), [<b>selection</b>: <span class="selectable-content" id="_s_5">no other auditable events</span>, <span class="selectable-content" id="_s_6">additional information in column three of the Auditable Events for Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> table (<a href="#at-optional" class="at-optional-ref">Table <span class="counter">7</span></a>) for <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are present in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></span>, <span class="selectable-content" id="_s_7">additional information in column three of the Auditable Events for Objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> table (<a href="#at-objective" class="at-objective-ref">Table <span class="counter">8</span></a>) for <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are present in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></span>, <span class="selectable-content" id="_s_8">additional information in column three of the Auditable Events for Implementation-dependent <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> table (<a href="#at-impl-dep" class="at-impl-dep-ref">Table <span class="counter">9</span></a>) for <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are present in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr></span>]].</i>
                         </li>
                     </ol>
                     <div class="appnote">
@@ -778,28 +778,28 @@
                     <a href="#IPS_ABD_EXT.1.1" class="abbr">IPS_ABD_EXT.1.1</a>
                 </div>
                 <div class="reqdesc">
-                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support the definition of [<b>selection</b>: <span class="selectable-content" id="_s_7">baselines (&lsquo;expected and approved&rsquo;)</span>, <span class="selectable-content" id="_s_8">anomaly (&lsquo;unexpected&rsquo;) traffic patterns</span>] including the specification of [<b>selection</b>: 
+                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support the definition of [<b>selection</b>: <span class="selectable-content" id="_s_9">baselines (&lsquo;expected and approved&rsquo;)</span>, <span class="selectable-content" id="_s_10">anomaly (&lsquo;unexpected&rsquo;) traffic patterns</span>] including the specification of [<b>selection</b>: 
                     <ul>
                         <li style="">
-                            <span class="selectable-content" id="_s_9">throughput ([<b>assignment</b>: <span class="assignable-content"> data elements (e.g. bytes, packets, etc.) per time period (e.g. minutes, hours, days)</span>])</span>
+                            <span class="selectable-content" id="_s_11">throughput ([<b>assignment</b>: <span class="assignable-content"> data elements (e.g. bytes, packets, etc.) per time period (e.g. minutes, hours, days)</span>])</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_10">time of day;</span>
+                            <span class="selectable-content" id="_s_12">time of day;</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_11">frequency;</span>
+                            <span class="selectable-content" id="_s_13">frequency;</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_12">thresholds;</span>
+                            <span class="selectable-content" id="_s_14">thresholds;</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_13">[[<b>assignment</b>: <span class="assignable-content">other methods</span>]]</span>
+                            <span class="selectable-content" id="_s_15">[<b>assignment</b>: <span class="assignable-content">other methods</span>]</span>
                         </li>
                     </ul>
                     ] and the following network protocol fields: 
                     <ul>
                         <li>
-                            [<b>selection</b>: <span class="selectable-content" id="_s_14"> all packet header and data elements defined in <a href="#IPS_SBD_EXT.1">IPS_SBD_EXT.1</a></span>, <span class="selectable-content" id="_s_15">[<b>assignment</b>: <span class="assignable-content">subset list of packet header and data elements from <a href="#IPS_SBD_EXT.1">IPS_SBD_EXT.1</a></span>]</span>].
+                            [<b>selection</b>: <span class="selectable-content" id="_s_16"> all packet header and data elements defined in <a href="#IPS_SBD_EXT.1">IPS_SBD_EXT.1</a></span>, <span class="selectable-content" id="_s_17">[<b>assignment</b>: <span class="assignable-content">subset list of packet header and data elements from <a href="#IPS_SBD_EXT.1">IPS_SBD_EXT.1</a></span>]</span>].
                         </li>
                     </ul>
                     <div class="appnote">
@@ -812,7 +812,7 @@
                     <a href="#IPS_ABD_EXT.1.2" class="abbr">IPS_ABD_EXT.1.2</a>
                 </div>
                 <div class="reqdesc">
-                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support the definition of anomaly activity through [<b>selection</b>: <span class="selectable-content" id="_s_16">manual configuration by administrators</span>, <span class="selectable-content" id="_s_17">automated configuration</span>]. 
+                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support the definition of anomaly activity through [<b>selection</b>: <span class="selectable-content" id="_s_18">manual configuration by administrators</span>, <span class="selectable-content" id="_s_19">automated configuration</span>]. 
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note"> The &ldquo;baseline&rdquo; and &ldquo;anomaly&rdquo; can be something manually defined/configured by a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> administrator (or importing definitions), or something that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is able to automatically define/create by inspecting network traffic over a period of time (a.k.a. &ldquo;profiling&rdquo;). It is not essential for the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to have a capability of &ldquo;profiling&rdquo; a network to dynamically defining a baseline or rule; if the product has this functionality, it is outside the scope of this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>. </span>
                     </div>
@@ -829,19 +829,19 @@
                             In any mode, for any sensor interface: [<b>selection</b>: 
                             <ul>
                                 <li style="">
-                                    <span class="selectable-content" id="_s_18">allow the traffic flow</span>
+                                    <span class="selectable-content" id="_s_20">allow the traffic flow</span>
                                 </li>
                                 <li style="">
-                                    <span class="selectable-content" id="_s_19">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the source address of the offending traffic</span>
+                                    <span class="selectable-content" id="_s_21">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the source address of the offending traffic</span>
                                 </li>
                                 <li style="">
-                                    <span class="selectable-content" id="_s_20">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the destination address of the offending traffic</span>
+                                    <span class="selectable-content" id="_s_22">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the destination address of the offending traffic</span>
                                 </li>
                                 <li style="">
-                                    <span class="selectable-content" id="_s_21">send an <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> [<b>selection</b>: <span class="selectable-content" id="_s_22">host</span>, <span class="selectable-content" id="_s_23">destination</span>, <span class="selectable-content" id="_s_24">port</span>] unreachable message </span>
+                                    <span class="selectable-content" id="_s_23">send an <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> [<b>selection</b>: <span class="selectable-content" id="_s_24">host</span>, <span class="selectable-content" id="_s_25">destination</span>, <span class="selectable-content" id="_s_26">port</span>] unreachable message </span>
                                 </li>
                                 <li style="">
-                                    <span class="selectable-content" id="_s_25">trigger a non-TOE network device to block the offending traffic pattern</span>
+                                    <span class="selectable-content" id="_s_27">trigger a non-TOE network device to block the offending traffic pattern</span>
                                 </li>
                             </ul>
                             ]
@@ -852,7 +852,7 @@
                                 <li>allow the traffic flow</li>
                                 <li>block/drop the traffic flow</li>
                                 <li>
-                                    and [<b>selection</b>: <span class="selectable-content" id="_s_26">modify and forward packets before they pass through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>, <span class="selectable-content" id="_s_27">no other actions</span>].
+                                    and [<b>selection</b>: <span class="selectable-content" id="_s_28">modify and forward packets before they pass through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>, <span class="selectable-content" id="_s_29">no other actions</span>].
                                 </li>
                             </ul>
                         </li>
@@ -867,7 +867,7 @@
                     <a href="#IPS_IPB_EXT.1.1" class="abbr">IPS_IPB_EXT.1.1</a>
                 </div>
                 <div class="reqdesc">
-                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support configuration and implementation of known-good and known-bad lists of [<b>selection</b>: <span class="selectable-content" id="_s_28">source</span>, <span class="selectable-content" id="_s_29">destination</span>] IP addresses and [<b>selection</b>: <span class="selectable-content" id="_s_30">no additional address types</span>, <span class="selectable-content" id="_s_31"> [<b>assignment</b>: <span class="assignable-content">list of address types</span>]</span>]. 
+                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support configuration and implementation of known-good and known-bad lists of [<b>selection</b>: <span class="selectable-content" id="_s_30">source</span>, <span class="selectable-content" id="_s_31">destination</span>] IP addresses and [<b>selection</b>: <span class="selectable-content" id="_s_32">no additional address types</span>, <span class="selectable-content" id="_s_33"> [<b>assignment</b>: <span class="assignable-content">list of address types</span>]</span>]. 
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note"> The address types defined in this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> are limited to IP addresses (e.g., a single IP address or a range of IP addresses) because this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is limited to inspection of IP traffic. <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr> are not prohibited from enabling functionality that would allow/prohibit traffic flow based on other address types, such as <abbr class="dyn-abbr"><a href="#abbr_MAC">MAC</a></abbr> addresses. </span>
                     </div>
@@ -878,7 +878,7 @@
                     <a href="#IPS_IPB_EXT.1.2" class="abbr">IPS_IPB_EXT.1.2</a>
                 </div>
                 <div class="reqdesc">
-                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow [<i>Security Administrators</i>] to configure the following <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements: [<b>selection</b>: <span class="selectable-content" id="_s_32">known-good list rules</span>, <span class="selectable-content" id="_s_33">known-bad list rules</span>, <span class="selectable-content" id="_s_34">IP addresses</span>, <span class="selectable-content" id="_s_35">[<b>assignment</b>: <span class="assignable-content">other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements</span>]</span>, <span class="selectable-content" id="_s_36">no other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements</span>]. 
+                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow [<i>security administrators</i>] to configure the following <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements: [<b>selection</b>: <span class="selectable-content" id="_s_34">known-good list rules</span>, <span class="selectable-content" id="_s_35">known-bad list rules</span>, <span class="selectable-content" id="_s_36">IP addresses</span>, <span class="selectable-content" id="_s_37">[<b>assignment</b>: <span class="assignable-content">other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements</span>]</span>, <span class="selectable-content" id="_s_38">no other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements</span>]. 
                 </div>
             </div>
         </div>
@@ -969,13 +969,13 @@
                      The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support inspection of packet header contents and be able to inspect at least the following header fields: 
                     <ul>
                         <li>
-                            IPv4: version; header length; packet length; ID; IP flags; fragment offset;time to live (<abbr class="dyn-abbr"><a href="#abbr_TTL">TTL</a></abbr>); protocol; header checksum; source address; destination address; IP options; and [<b>selection</b>: <span class="selectable-content" id="_s_42">type of service (<abbr class="dyn-abbr"><a href="#abbr_ToS">ToS</a></abbr>)</span>, <span class="selectable-content" id="_s_43">no other field</span>].
+                            IPv4: version; header length; packet length; ID; IP flags; fragment offset;time to live (<abbr class="dyn-abbr"><a href="#abbr_TTL">TTL</a></abbr>); protocol; header checksum; source address; destination address; IP options; and [<b>selection</b>: <span class="selectable-content" id="_s_44">type of service (<abbr class="dyn-abbr"><a href="#abbr_ToS">ToS</a></abbr>)</span>, <span class="selectable-content" id="_s_45">no other field</span>].
                         </li>
                         <li>
-                            IPv6: version; payload length; next header; hop limit; source address; destination address; routing header; and [<b>selection</b>: <span class="selectable-content" id="_s_44">traffic class</span>, <span class="selectable-content" id="_s_45">flow label</span>, <span class="selectable-content" id="_s_46">no other field</span>] 
+                            IPv6: version; payload length; next header; hop limit; source address; destination address; routing header; and [<b>selection</b>: <span class="selectable-content" id="_s_46">traffic class</span>, <span class="selectable-content" id="_s_47">flow label</span>, <span class="selectable-content" id="_s_48">no other field</span>] 
                         </li>
                         <li>
-                            <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>: type; code; header checksum; and [<b>selection</b>: <span class="selectable-content" id="_s_47">ID</span>, <span class="selectable-content" id="_s_48">sequence number</span>, <span class="selectable-content" id="_s_49">[<b>assignment</b>: <span class="assignable-content">other field in the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> header</span>]</span>] 
+                            <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>: type; code; header checksum; and [<b>selection</b>: <span class="selectable-content" id="_s_49">ID</span>, <span class="selectable-content" id="_s_50">sequence number</span>, <span class="selectable-content" id="_s_51">[<b>assignment</b>: <span class="assignable-content">other field in the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> header</span>]</span>] 
                         </li>
                         <li>ICMPv6: type; code; and header checksum.</li>
                         <li>
@@ -1013,7 +1013,7 @@
                                     <abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> (email) states: start state, <abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> commands state, mail header state, mail body state, abort state
                                 </li>
                                 <li>
-                                    [<b>selection</b>: <span class="selectable-content" id="_s_50">[<b>assignment</b>: <span class="assignable-content">other types of <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> payload inspection</span>]</span>, <span class="selectable-content" id="_s_51">no other types of <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> payload inspection</span>]
+                                    [<b>selection</b>: <span class="selectable-content" id="_s_52">[<b>assignment</b>: <span class="assignable-content">other types of <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> payload inspection</span>]</span>, <span class="selectable-content" id="_s_53">no other types of <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> payload inspection</span>]
                                 </li>
                             </ol>
                         </li>
@@ -1147,19 +1147,19 @@
                             In any mode, for any sensor interface: [<b>selection</b>: 
                             <ul>
                                 <li style="">
-                                    <span class="selectable-content" id="_s_52">allow the traffic flow;</span>
+                                    <span class="selectable-content" id="_s_54">allow the traffic flow;</span>
                                 </li>
                                 <li style="">
-                                    <span class="selectable-content" id="_s_53">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the source address of the offending traffic;</span>
+                                    <span class="selectable-content" id="_s_55">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the source address of the offending traffic;</span>
                                 </li>
                                 <li style="">
-                                    <span class="selectable-content" id="_s_54">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the destination address of the offending traffic;</span>
+                                    <span class="selectable-content" id="_s_56">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the destination address of the offending traffic;</span>
                                 </li>
                                 <li style="">
-                                    <span class="selectable-content" id="_s_55">send an <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>[<b>selection</b>: <span class="selectable-content" id="_s_56">host</span>, <span class="selectable-content" id="_s_57">destination</span>, <span class="selectable-content" id="_s_58">port</span>]unreachable message;</span>
+                                    <span class="selectable-content" id="_s_57">send an <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>[<b>selection</b>: <span class="selectable-content" id="_s_58">host</span>, <span class="selectable-content" id="_s_59">destination</span>, <span class="selectable-content" id="_s_60">port</span>]unreachable message;</span>
                                 </li>
                                 <li style="">
-                                    <span class="selectable-content" id="_s_59">trigger a non-TOE network device to block the offending traffic pattern</span>
+                                    <span class="selectable-content" id="_s_61">trigger a non-TOE network device to block the offending traffic pattern</span>
                                 </li>
                             </ul>
                             ]
@@ -1172,13 +1172,13 @@
                                     and [<b>selection</b>: 
                                     <ul>
                                         <li style="">
-                                            <span class="selectable-content" id="_s_60">allow all traffic flow;</span>
+                                            <span class="selectable-content" id="_s_62">allow all traffic flow;</span>
                                         </li>
                                         <li style="">
-                                            <span class="selectable-content" id="_s_61">allow the traffic flow with following exceptions:[<b>assignment</b>: <span class="assignable-content">malicious traffic such as but not limited to IPS_EXT.1.3 and IPS_EXT.1.4 if always dropped</span>];</span>
+                                            <span class="selectable-content" id="_s_63">allow the traffic flow with following exceptions:[<b>assignment</b>: <span class="assignable-content">malicious traffic such as but not limited to IPS_EXT.1.3 and IPS_EXT.1.4 if always dropped</span>];</span>
                                         </li>
                                         <li style="">
-                                            <span class="selectable-content" id="_s_62">modify and forward packets before they pass through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>
+                                            <span class="selectable-content" id="_s_64">modify and forward packets before they pass through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>
                                         </li>
                                     </ul>
                                     ].
@@ -1520,7 +1520,7 @@
                     <a href="#FAU_STG.5.1/IPS" class="abbr">FAU_STG.5.1/IPS</a>
                 </div>
                 <div class="reqdesc">
-                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [[<b>selection</b>: <span class="selectable-content" id="_s_63">ignore generation of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> events that would otherwise be generated</span>, <span class="selectable-content" id="_s_64">prevent audited <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> events</span>, <span class="selectable-content" id="_s_65">overwrite the oldest stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</span>]] if the <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr></b> audit data storage is full. 
+                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [[<b>selection</b>: <span class="selectable-content" id="_s_65">ignore generation of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> events that would otherwise be generated</span>, <span class="selectable-content" id="_s_66">prevent audited <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> events</span>, <span class="selectable-content" id="_s_67">overwrite the oldest stored <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr></b> data</span>]] if the <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr></b> audit data storage is full. 
                 </div>
             </div>
         </div>
@@ -1547,7 +1547,7 @@
                     <a href="#IPS_SBD_EXT.2.1" class="abbr">IPS_SBD_EXT.2.1</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to inspect packets encapsulated through the following means: [<b>selection</b>: <span class="selectable-content" id="_s_66"><abbr class="dyn-abbr"><a href="#abbr_GRE">GRE</a></abbr></span>, <span class="selectable-content" id="_s_67">IP-in-IP</span>, <span class="selectable-content" id="_s_68">IPv4-in-IPv6</span>, <span class="selectable-content" id="_s_69"><abbr class="dyn-abbr"><a href="#abbr_MPLS">MPLS</a></abbr></span>, <span class="selectable-content" id="_s_70"> <abbr class="dyn-abbr"><a href="#abbr_PPTP">PPTP</a></abbr></span>, <span class="selectable-content" id="_s_71">[<b>assignment</b>: <span class="assignable-content">other encapsulation methods</span>]</span>]. 
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to inspect packets encapsulated through the following means: [<b>selection</b>: <span class="selectable-content" id="_s_68"><abbr class="dyn-abbr"><a href="#abbr_GRE">GRE</a></abbr></span>, <span class="selectable-content" id="_s_69">IP-in-IP</span>, <span class="selectable-content" id="_s_70">IPv4-in-IPv6</span>, <span class="selectable-content" id="_s_71"><abbr class="dyn-abbr"><a href="#abbr_MPLS">MPLS</a></abbr></span>, <span class="selectable-content" id="_s_72"> <abbr class="dyn-abbr"><a href="#abbr_PPTP">PPTP</a></abbr></span>, <span class="selectable-content" id="_s_73">[<b>assignment</b>: <span class="assignable-content">other encapsulation methods</span>]</span>]. 
                 </div>
             </div>
             <div class="element">
@@ -1558,10 +1558,10 @@
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to perform IP normalization to reassemble fragmented packets for inspection, and: [<b>selection</b>: 
                     <ul>
                         <li style="">
-                            <span class="selectable-content" id="_s_72">For data collected at promiscuous interfaces: generate an alert if the packet cannot be reassembled;</span>
+                            <span class="selectable-content" id="_s_74">For data collected at promiscuous interfaces: generate an alert if the packet cannot be reassembled;</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_73">For data collected at inline interfaces: do not forward any packet fragments and generate an alert if the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> cannot reassemble the entire packet</span>
+                            <span class="selectable-content" id="_s_75">For data collected at inline interfaces: do not forward any packet fragments and generate an alert if the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> cannot reassemble the entire packet</span>
                         </li>
                     </ul>
                     ].
@@ -1575,16 +1575,16 @@
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to perform <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> normalization for traffic flows through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> when the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is deployed in inline mode, and prohibit forwarding of: [<b>selection</b>: 
                     <ul>
                         <li style="">
-                            <span class="selectable-content" id="_s_74">duplicate packets;</span>
+                            <span class="selectable-content" id="_s_76">duplicate packets;</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_75">changed packets;</span>
+                            <span class="selectable-content" id="_s_77">changed packets;</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_76">out-of-sequence packets;</span>
+                            <span class="selectable-content" id="_s_78">out-of-sequence packets;</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_77"> [<b>selection</b>: <span class="selectable-content" id="_s_78">[<b>assignment</b>: <span class="assignable-content">other packet types that should not be forwarded</span>]</span>, <span class="selectable-content" id="_s_79">no other packets</span>] </span>
+                            <span class="selectable-content" id="_s_79"> [<b>selection</b>: <span class="selectable-content" id="_s_80">[<b>assignment</b>: <span class="assignable-content">other packet types that should not be forwarded</span>]</span>, <span class="selectable-content" id="_s_81">no other packets</span>] </span>
                         </li>
                     </ul>
                     ].
@@ -1670,7 +1670,7 @@
                     <a href="#FAU_SAR.1.1" class="abbr">FAU_SAR.1.1</a>
                 </div>
                 <div class="reqdesc">
-                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide [<i>Security Administrators</i>] with the capability to read [<i><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</i>] from the <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr></b> audit data. 
+                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide [<i>security administrators</i>] with the capability to read [<i><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data</i>] from the <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr></b> audit data. 
                 </div>
             </div>
             <div class="element">
@@ -1712,7 +1712,7 @@
                     <a href="#FAU_SAR.3.1" class="abbr">FAU_SAR.3.1</a>
                 </div>
                 <div class="reqdesc">
-                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide the ability to apply [<i>filtering and sorting</i>] of <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr></b> audit data based on [<i>filtering parameters: risk rating, time period, source IP address, destination IP address and </i>[<b>selection</b>: <span class="selectable-content" id="_s_80">[<b>assignment</b>: <span class="assignable-content"> other filtering parameters</span>]</span>, <span class="selectable-content" id="_s_81">no other filtering parameters</span>]<i>; and sorting parameters: event ID, event type, time, signature ID, <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> actions performed, and </i>[<b>selection</b>: <span class="selectable-content" id="_s_82">[<b>assignment</b>: <span class="assignable-content">other sorting parameters</span>]</span>, <span class="selectable-content" id="_s_83">no other sorting parameters</span>]]. 
+                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall provide the ability to apply [<i>filtering and sorting</i>] of <b><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr></b> audit data based on [<i>filtering parameters: risk rating, time period, source IP address, destination IP address and </i>[<b>selection</b>: <span class="selectable-content" id="_s_82">[<b>assignment</b>: <span class="assignable-content"> other filtering parameters</span>]</span>, <span class="selectable-content" id="_s_83">no other filtering parameters</span>]<i>; and sorting parameters: event ID, event type, time, signature ID, <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> actions performed, and </i>[<b>selection</b>: <span class="selectable-content" id="_s_84">[<b>assignment</b>: <span class="assignable-content">other sorting parameters</span>]</span>, <span class="selectable-content" id="_s_85">no other sorting parameters</span>]]. 
                 </div>
             </div>
         </div>
@@ -1848,32 +1848,32 @@
                             </tr>
                         </table>
                         <h4 id="ext-comp-IPS_ABD_EXT.1.1">IPS_ABD_EXT.1.1</h4>
-                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support the definition of [<b>selection</b>: <span class="selectable-content" id="_s_7">baselines (&lsquo;expected and approved&rsquo;)</span>, <span class="selectable-content" id="_s_8">anomaly (&lsquo;unexpected&rsquo;) traffic patterns</span>] including the specification of [<b>selection</b>: 
+                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support the definition of [<b>selection</b>: <span class="selectable-content" id="_s_9">baselines (&lsquo;expected and approved&rsquo;)</span>, <span class="selectable-content" id="_s_10">anomaly (&lsquo;unexpected&rsquo;) traffic patterns</span>] including the specification of [<b>selection</b>: 
                         <ul>
                             <li style="">
-                                <span class="selectable-content" id="_s_9">throughput ([<b>assignment</b>: <span class="assignable-content"> data elements (e.g. bytes, packets, etc.) per time period (e.g. minutes, hours, days)</span>])</span>
+                                <span class="selectable-content" id="_s_11">throughput ([<b>assignment</b>: <span class="assignable-content"> data elements (e.g. bytes, packets, etc.) per time period (e.g. minutes, hours, days)</span>])</span>
                             </li>
                             <li style="">
-                                <span class="selectable-content" id="_s_10">time of day;</span>
+                                <span class="selectable-content" id="_s_12">time of day;</span>
                             </li>
                             <li style="">
-                                <span class="selectable-content" id="_s_11">frequency;</span>
+                                <span class="selectable-content" id="_s_13">frequency;</span>
                             </li>
                             <li style="">
-                                <span class="selectable-content" id="_s_12">thresholds;</span>
+                                <span class="selectable-content" id="_s_14">thresholds;</span>
                             </li>
                             <li style="">
-                                <span class="selectable-content" id="_s_13">[[<b>assignment</b>: <span class="assignable-content">other methods</span>]]</span>
+                                <span class="selectable-content" id="_s_15">[<b>assignment</b>: <span class="assignable-content">other methods</span>]</span>
                             </li>
                         </ul>
                         ] and the following network protocol fields: 
                         <ul>
                             <li>
-                                [<b>selection</b>: <span class="selectable-content" id="_s_14"> all packet header and data elements defined in <a href="#IPS_SBD_EXT.1">IPS_SBD_EXT.1</a></span>, <span class="selectable-content" id="_s_15">[<b>assignment</b>: <span class="assignable-content">subset list of packet header and data elements from <a href="#IPS_SBD_EXT.1">IPS_SBD_EXT.1</a></span>]</span>].
+                                [<b>selection</b>: <span class="selectable-content" id="_s_16"> all packet header and data elements defined in <a href="#IPS_SBD_EXT.1">IPS_SBD_EXT.1</a></span>, <span class="selectable-content" id="_s_17">[<b>assignment</b>: <span class="assignable-content">subset list of packet header and data elements from <a href="#IPS_SBD_EXT.1">IPS_SBD_EXT.1</a></span>]</span>].
                             </li>
                         </ul>
                         <h4 id="ext-comp-IPS_ABD_EXT.1.2">IPS_ABD_EXT.1.2</h4>
-                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support the definition of anomaly activity through [<b>selection</b>: <span class="selectable-content" id="_s_16">manual configuration by administrators</span>, <span class="selectable-content" id="_s_17">automated configuration</span>]. 
+                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support the definition of anomaly activity through [<b>selection</b>: <span class="selectable-content" id="_s_18">manual configuration by administrators</span>, <span class="selectable-content" id="_s_19">automated configuration</span>]. 
                         <h4 id="ext-comp-IPS_ABD_EXT.1.3">IPS_ABD_EXT.1.3</h4>
                          The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow the following operations to be associated with anomaly-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies: 
                         <ul>
@@ -1881,19 +1881,19 @@
                                 In any mode, for any sensor interface: [<b>selection</b>: 
                                 <ul>
                                     <li style="">
-                                        <span class="selectable-content" id="_s_18">allow the traffic flow</span>
+                                        <span class="selectable-content" id="_s_20">allow the traffic flow</span>
                                     </li>
                                     <li style="">
-                                        <span class="selectable-content" id="_s_19">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the source address of the offending traffic</span>
+                                        <span class="selectable-content" id="_s_21">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the source address of the offending traffic</span>
                                     </li>
                                     <li style="">
-                                        <span class="selectable-content" id="_s_20">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the destination address of the offending traffic</span>
+                                        <span class="selectable-content" id="_s_22">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the destination address of the offending traffic</span>
                                     </li>
                                     <li style="">
-                                        <span class="selectable-content" id="_s_21">send an <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> [<b>selection</b>: <span class="selectable-content" id="_s_22">host</span>, <span class="selectable-content" id="_s_23">destination</span>, <span class="selectable-content" id="_s_24">port</span>] unreachable message </span>
+                                        <span class="selectable-content" id="_s_23">send an <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> [<b>selection</b>: <span class="selectable-content" id="_s_24">host</span>, <span class="selectable-content" id="_s_25">destination</span>, <span class="selectable-content" id="_s_26">port</span>] unreachable message </span>
                                     </li>
                                     <li style="">
-                                        <span class="selectable-content" id="_s_25">trigger a non-TOE network device to block the offending traffic pattern</span>
+                                        <span class="selectable-content" id="_s_27">trigger a non-TOE network device to block the offending traffic pattern</span>
                                     </li>
                                 </ul>
                                 ]
@@ -1904,7 +1904,7 @@
                                     <li>allow the traffic flow</li>
                                     <li>block/drop the traffic flow</li>
                                     <li>
-                                        and [<b>selection</b>: <span class="selectable-content" id="_s_26">modify and forward packets before they pass through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>, <span class="selectable-content" id="_s_27">no other actions</span>].
+                                        and [<b>selection</b>: <span class="selectable-content" id="_s_28">modify and forward packets before they pass through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>, <span class="selectable-content" id="_s_29">no other actions</span>].
                                     </li>
                                 </ul>
                             </li>
@@ -1958,9 +1958,9 @@
                             </tr>
                         </table>
                         <h4 id="ext-comp-IPS_IPB_EXT.1.1">IPS_IPB_EXT.1.1</h4>
-                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support configuration and implementation of known-good and known-bad lists of [<b>selection</b>: <span class="selectable-content" id="_s_28">source</span>, <span class="selectable-content" id="_s_29">destination</span>] IP addresses and [<b>selection</b>: <span class="selectable-content" id="_s_30">no additional address types</span>, <span class="selectable-content" id="_s_31"> [<b>assignment</b>: <span class="assignable-content">list of address types</span>]</span>]. 
+                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support configuration and implementation of known-good and known-bad lists of [<b>selection</b>: <span class="selectable-content" id="_s_30">source</span>, <span class="selectable-content" id="_s_31">destination</span>] IP addresses and [<b>selection</b>: <span class="selectable-content" id="_s_32">no additional address types</span>, <span class="selectable-content" id="_s_33"> [<b>assignment</b>: <span class="assignable-content">list of address types</span>]</span>]. 
                         <h4 id="ext-comp-IPS_IPB_EXT.1.2">IPS_IPB_EXT.1.2</h4>
-                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow [<b>assignment</b>: <span class="assignable-content">authorized roles</span>] to configure the following <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements: [<b>selection</b>: <span class="selectable-content" id="_s_37">known-good list rules</span>, <span class="selectable-content" id="_s_38">known-bad list rules</span>, <span class="selectable-content" id="_s_39">IP addresses</span>, <span class="selectable-content" id="_s_40">[<b>assignment</b>: <span class="assignable-content">other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements</span>]</span>, <span class="selectable-content" id="_s_41">no other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements</span>]. 
+                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow [<b>assignment</b>: <span class="assignable-content">authorized roles</span>] to configure the following <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements: [<b>selection</b>: <span class="selectable-content" id="_s_39">known-good list rules</span>, <span class="selectable-content" id="_s_40">known-bad list rules</span>, <span class="selectable-content" id="_s_41">IP addresses</span>, <span class="selectable-content" id="_s_42">[<b>assignment</b>: <span class="assignable-content">other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements</span>]</span>, <span class="selectable-content" id="_s_43">no other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements</span>]. 
                     </div>
                 </div>
                 <h3 id="ext-comp-IPS_NTA_EXT" class="indexable" data-level="4">C.2.1.3 IPS_NTA_EXT Network Traffic Analysis</h3>
@@ -2107,13 +2107,13 @@
                          The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support inspection of packet header contents and be able to inspect at least the following header fields: 
                         <ul>
                             <li>
-                                IPv4: version; header length; packet length; ID; IP flags; fragment offset;time to live (<abbr class="dyn-abbr"><a href="#abbr_TTL">TTL</a></abbr>); protocol; header checksum; source address; destination address; IP options; and [<b>selection</b>: <span class="selectable-content" id="_s_42">type of service (<abbr class="dyn-abbr"><a href="#abbr_ToS">ToS</a></abbr>)</span>, <span class="selectable-content" id="_s_43">no other field</span>].
+                                IPv4: version; header length; packet length; ID; IP flags; fragment offset;time to live (<abbr class="dyn-abbr"><a href="#abbr_TTL">TTL</a></abbr>); protocol; header checksum; source address; destination address; IP options; and [<b>selection</b>: <span class="selectable-content" id="_s_44">type of service (<abbr class="dyn-abbr"><a href="#abbr_ToS">ToS</a></abbr>)</span>, <span class="selectable-content" id="_s_45">no other field</span>].
                             </li>
                             <li>
-                                IPv6: version; payload length; next header; hop limit; source address; destination address; routing header; and [<b>selection</b>: <span class="selectable-content" id="_s_44">traffic class</span>, <span class="selectable-content" id="_s_45">flow label</span>, <span class="selectable-content" id="_s_46">no other field</span>] 
+                                IPv6: version; payload length; next header; hop limit; source address; destination address; routing header; and [<b>selection</b>: <span class="selectable-content" id="_s_46">traffic class</span>, <span class="selectable-content" id="_s_47">flow label</span>, <span class="selectable-content" id="_s_48">no other field</span>] 
                             </li>
                             <li>
-                                <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>: type; code; header checksum; and [<b>selection</b>: <span class="selectable-content" id="_s_47">ID</span>, <span class="selectable-content" id="_s_48">sequence number</span>, <span class="selectable-content" id="_s_49">[<b>assignment</b>: <span class="assignable-content">other field in the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> header</span>]</span>] 
+                                <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>: type; code; header checksum; and [<b>selection</b>: <span class="selectable-content" id="_s_49">ID</span>, <span class="selectable-content" id="_s_50">sequence number</span>, <span class="selectable-content" id="_s_51">[<b>assignment</b>: <span class="assignable-content">other field in the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> header</span>]</span>] 
                             </li>
                             <li>ICMPv6: type; code; and header checksum.</li>
                             <li>
@@ -2145,7 +2145,7 @@
                                         <abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> (email) states: start state, <abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> commands state, mail header state, mail body state, abort state
                                     </li>
                                     <li>
-                                        [<b>selection</b>: <span class="selectable-content" id="_s_50">[<b>assignment</b>: <span class="assignable-content">other types of <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> payload inspection</span>]</span>, <span class="selectable-content" id="_s_51">no other types of <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> payload inspection</span>]
+                                        [<b>selection</b>: <span class="selectable-content" id="_s_52">[<b>assignment</b>: <span class="assignable-content">other types of <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> payload inspection</span>]</span>, <span class="selectable-content" id="_s_53">no other types of <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> payload inspection</span>]
                                     </li>
                                 </ol>
                             </li>
@@ -2247,19 +2247,19 @@
                                 In any mode, for any sensor interface: [<b>selection</b>: 
                                 <ul>
                                     <li style="">
-                                        <span class="selectable-content" id="_s_52">allow the traffic flow;</span>
+                                        <span class="selectable-content" id="_s_54">allow the traffic flow;</span>
                                     </li>
                                     <li style="">
-                                        <span class="selectable-content" id="_s_53">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the source address of the offending traffic;</span>
+                                        <span class="selectable-content" id="_s_55">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the source address of the offending traffic;</span>
                                     </li>
                                     <li style="">
-                                        <span class="selectable-content" id="_s_54">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the destination address of the offending traffic;</span>
+                                        <span class="selectable-content" id="_s_56">send a <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> reset to the destination address of the offending traffic;</span>
                                     </li>
                                     <li style="">
-                                        <span class="selectable-content" id="_s_55">send an <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>[<b>selection</b>: <span class="selectable-content" id="_s_56">host</span>, <span class="selectable-content" id="_s_57">destination</span>, <span class="selectable-content" id="_s_58">port</span>]unreachable message;</span>
+                                        <span class="selectable-content" id="_s_57">send an <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>[<b>selection</b>: <span class="selectable-content" id="_s_58">host</span>, <span class="selectable-content" id="_s_59">destination</span>, <span class="selectable-content" id="_s_60">port</span>]unreachable message;</span>
                                     </li>
                                     <li style="">
-                                        <span class="selectable-content" id="_s_59">trigger a non-TOE network device to block the offending traffic pattern</span>
+                                        <span class="selectable-content" id="_s_61">trigger a non-TOE network device to block the offending traffic pattern</span>
                                     </li>
                                 </ul>
                                 ]
@@ -2272,13 +2272,13 @@
                                         and [<b>selection</b>: 
                                         <ul>
                                             <li style="">
-                                                <span class="selectable-content" id="_s_60">allow all traffic flow;</span>
+                                                <span class="selectable-content" id="_s_62">allow all traffic flow;</span>
                                             </li>
                                             <li style="">
-                                                <span class="selectable-content" id="_s_61">allow the traffic flow with following exceptions:[<b>assignment</b>: <span class="assignable-content">malicious traffic such as but not limited to IPS_EXT.1.3 and IPS_EXT.1.4 if always dropped</span>];</span>
+                                                <span class="selectable-content" id="_s_63">allow the traffic flow with following exceptions:[<b>assignment</b>: <span class="assignable-content">malicious traffic such as but not limited to IPS_EXT.1.3 and IPS_EXT.1.4 if always dropped</span>];</span>
                                             </li>
                                             <li style="">
-                                                <span class="selectable-content" id="_s_62">modify and forward packets before they pass through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>
+                                                <span class="selectable-content" id="_s_64">modify and forward packets before they pass through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>
                                             </li>
                                         </ul>
                                         ].
@@ -2319,15 +2319,15 @@
                             </tr>
                         </table>
                         <h4 id="ext-comp-IPS_SBD_EXT.2.1">IPS_SBD_EXT.2.1</h4>
-                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to inspect packets encapsulated through the following means: [<b>selection</b>: <span class="selectable-content" id="_s_66"><abbr class="dyn-abbr"><a href="#abbr_GRE">GRE</a></abbr></span>, <span class="selectable-content" id="_s_67">IP-in-IP</span>, <span class="selectable-content" id="_s_68">IPv4-in-IPv6</span>, <span class="selectable-content" id="_s_69"><abbr class="dyn-abbr"><a href="#abbr_MPLS">MPLS</a></abbr></span>, <span class="selectable-content" id="_s_70"> <abbr class="dyn-abbr"><a href="#abbr_PPTP">PPTP</a></abbr></span>, <span class="selectable-content" id="_s_71">[<b>assignment</b>: <span class="assignable-content">other encapsulation methods</span>]</span>]. 
+                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to inspect packets encapsulated through the following means: [<b>selection</b>: <span class="selectable-content" id="_s_68"><abbr class="dyn-abbr"><a href="#abbr_GRE">GRE</a></abbr></span>, <span class="selectable-content" id="_s_69">IP-in-IP</span>, <span class="selectable-content" id="_s_70">IPv4-in-IPv6</span>, <span class="selectable-content" id="_s_71"><abbr class="dyn-abbr"><a href="#abbr_MPLS">MPLS</a></abbr></span>, <span class="selectable-content" id="_s_72"> <abbr class="dyn-abbr"><a href="#abbr_PPTP">PPTP</a></abbr></span>, <span class="selectable-content" id="_s_73">[<b>assignment</b>: <span class="assignable-content">other encapsulation methods</span>]</span>]. 
                         <h4 id="ext-comp-IPS_SBD_EXT.2.2">IPS_SBD_EXT.2.2</h4>
                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to perform IP normalization to reassemble fragmented packets for inspection, and: [<b>selection</b>: 
                         <ul>
                             <li style="">
-                                <span class="selectable-content" id="_s_72">For data collected at promiscuous interfaces: generate an alert if the packet cannot be reassembled;</span>
+                                <span class="selectable-content" id="_s_74">For data collected at promiscuous interfaces: generate an alert if the packet cannot be reassembled;</span>
                             </li>
                             <li style="">
-                                <span class="selectable-content" id="_s_73">For data collected at inline interfaces: do not forward any packet fragments and generate an alert if the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> cannot reassemble the entire packet</span>
+                                <span class="selectable-content" id="_s_75">For data collected at inline interfaces: do not forward any packet fragments and generate an alert if the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> cannot reassemble the entire packet</span>
                             </li>
                         </ul>
                         ].
@@ -2335,16 +2335,16 @@
                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to perform <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> normalization for traffic flows through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> when the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is deployed in inline mode, and prohibit forwarding of: [<b>selection</b>: 
                         <ul>
                             <li style="">
-                                <span class="selectable-content" id="_s_74">duplicate packets;</span>
+                                <span class="selectable-content" id="_s_76">duplicate packets;</span>
                             </li>
                             <li style="">
-                                <span class="selectable-content" id="_s_75">changed packets;</span>
+                                <span class="selectable-content" id="_s_77">changed packets;</span>
                             </li>
                             <li style="">
-                                <span class="selectable-content" id="_s_76">out-of-sequence packets;</span>
+                                <span class="selectable-content" id="_s_78">out-of-sequence packets;</span>
                             </li>
                             <li style="">
-                                <span class="selectable-content" id="_s_77"> [<b>selection</b>: <span class="selectable-content" id="_s_78">[<b>assignment</b>: <span class="assignable-content">other packet types that should not be forwarded</span>]</span>, <span class="selectable-content" id="_s_79">no other packets</span>] </span>
+                                <span class="selectable-content" id="_s_79"> [<b>selection</b>: <span class="selectable-content" id="_s_80">[<b>assignment</b>: <span class="assignable-content">other packet types that should not be forwarded</span>]</span>, <span class="selectable-content" id="_s_81">no other packets</span>] </span>
                             </li>
                         </ul>
                         ].

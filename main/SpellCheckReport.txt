@@ -21,6 +21,8 @@ output/ips-release-linkable.html: TST
 output/ips-release-linkable.html: URIs
 output/ips-release-linkable.html: allo
 output/ips-release-linkable.html: appe
+output/ips-release-linkable.html: audita
+output/ips-release-linkable.html: ble
 output/ips-release-linkable.html: cdup
 output/ips-release-linkable.html: configurability
 output/ips-release-linkable.html: cwd
@@ -71,6 +73,8 @@ output/ips-release.html: anomalous’
 output/ips-release.html: anomaly’
 output/ips-release.html: appe
 output/ips-release.html: approved’
+output/ips-release.html: audita
+output/ips-release.html: ble
 output/ips-release.html: blocked’
 output/ips-release.html: cdup
 output/ips-release.html: configurability
@@ -164,6 +168,8 @@ output/ips.html: anomalous’
 output/ips.html: anomaly’
 output/ips.html: appe
 output/ips.html: approved’
+output/ips.html: audita
+output/ips.html: ble
 output/ips.html: blocked’
 output/ips.html: cdup
 output/ips.html: configurability
