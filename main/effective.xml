@@ -792,7 +792,7 @@ enforce its policies on network traffic of monitored networks.</description>
 				<f-element id="fau-gen-1e2-ips">
 					<title>The TSF shall record within the <h:b>IPS</h:b> audit data at least the following information: <h:ol type="a">
 						<h:li>Date and time of the event, type of event <h:b>and/or reaction,</h:b> <h:s>subject identity, and the outcome (success or failure) of the event; and;</h:s></h:li>
-						<h:li>For each <h:b>IPS</h:b> audita 	ble event type, based on the auditable event definitions
+						<h:li>For each <h:b>IPS</h:b> auditable event type, based on the auditable event definitions
 							of the functional components included in the PP, PP-Module, functional package, or ST, [<h:i>information specified in column three of the Auditable Events for Mandatory SFRs table (<xref to="at-mandatory"/>), <selectables>
 							<selectable>no other auditable events</selectable>
 							<selectable>additional information in column three of the Auditable Events for Optional SFRs table (<xref to="at-optional"/>) for SFRs that are present in the ST</selectable>
