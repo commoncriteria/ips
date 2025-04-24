@@ -629,7 +629,7 @@ function showTarget(id){
 	            img[src="images/collapsed.png"] { display:none;}
 
           }
-    </style></head><body onLoad="init()"><div id="commmentbox-"><a href="#Comment-1-">Comment: Comment-1-</a><br/><a href="#Comment-2-">Comment: Comment-2-</a><br/><a href="#Comment-3-">Comment: Comment-3-</a><br/><a href="#Comment-4-">Comment: Comment-4-</a><br/></div><h1 class="title" style="page-break-before:auto;">PP-Module for IPS</h1><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><div class="center"><img src="images/niaplogo.png" alt="NIAP Logo"></img><br/>
+    </style></head><body onLoad="init()"><div id="commmentbox-"><a href="#Comment-1-">Comment: Comment-1-</a><br/></div><h1 class="title" style="page-break-before:auto;">PP-Module for IPS</h1><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><div class="center"><img src="images/niaplogo.png" alt="NIAP Logo"></img><br/>
       Version: 2.0<br/>2025-03-21<br/><b>National Information Assurance Partnership</b><br/></div><h2 style="page-break-before:always;">Revision History</h2><table><tr class="header"><th>Version</th><th>Date</th><th>Comment</th></tr><tr><td>2.0</td><td>2025-03-21</td><td><abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022 updates, incorporation of TDs</td></tr>
 <tr><td>1.0</td><td>2021-05-11</td><td>Initial publication</td></tr>
 </table><h2>Contents</h2><div class="toc" id="toc"><a href="#Introduction" style="text-indent:0px">1<span>Introduction</span></a><a href="#Overview" style="text-indent:10px">1.1<span>Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#Compliant_Targets_of_Evaluation" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOE_Boundary" style="text-indent:10px">1.4<span>TOE Boundary</span></a><a href="#Use_Cases" style="text-indent:10px">1.5<span>Use Cases</span></a><a href="#sec-features" style="text-indent:10px">1.6<span>Implementation-Based Features</span></a><a href="#feat-alerting" style="text-indent:20px">1.6.1<span>Support for Alerting</span></a><a href="#_sec_2" style="text-indent:10px">1.7<span>Test Environment for Evaluation Activities</span></a><a href="#ConformanceClaims" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#Security_Problem_Definition" style="text-indent:0px">3<span>Security Problem Definition</span></a><a href="#sec-threats" style="text-indent:10px">3.1<span>Threats</span></a><a href="#Assumptions" style="text-indent:10px">3.2<span>Assumptions</span></a><a href="#Organizational_Security_Policies" style="text-indent:10px">3.3<span>Organizational Security Policies</span></a><a href="#Security_Objectives" style="text-indent:0px">4<span>Security Objectives</span></a><a href="#Security_Objectives_for_the_Operational_Environment" style="text-indent:10px">4.1<span>Security Objectives for the Operational Environment</span></a><a href="#sec-sor" style="text-indent:10px">4.2<span>Security Objectives Rationale</span></a><a href="#Security_Requirements" style="text-indent:0px">5<span>Security Requirements</span></a><a href="#secreq-ND" style="text-indent:10px">5.1<span>Collaborative 
@@ -987,7 +987,9 @@ The following sections list Common Criteria and technology terms used in this do
       <dl><dt class="threat defined" id="T.NETWORK_ACCESS">T.NETWORK_ACCESS</dt><dd><span class="description"> Unauthorized access may be achieved to services on a protected network from outside that network, or
 			alternately services outside a protected network from inside the protected network. If malicious external
 			devices are able to communicate with devices on the protected network via a backdoor then those devices
-			may be susceptible to the unauthorized disclosure of information.</span></dd><dt class="threat defined" id="T.NETWORK_DISCLOSURE">T.NETWORK_DISCLOSURE</dt><dd><span class="description"> The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> may inadvertently disclose sensitive information about the devices on a protected network through ingress- or egress-based actions. </span></dd><dt class="threat defined" id="T.NETWORK_DOS">T.NETWORK_DOS</dt><dd><span class="description"> Attacks against services inside a protected network, or indirectly by virtue of access to malicious agents
+			may be susceptible to the unauthorized disclosure of information.</span></dd><dt class="threat defined" id="T.NETWORK_DISCLOSURE">T.NETWORK_DISCLOSURE</dt><dd><span class="description">Sensitive information on a protected network might be disclosed resulting from ingress- or egress-based
+        		actions.
+        	</span></dd><dt class="threat defined" id="T.NETWORK_DOS">T.NETWORK_DOS</dt><dd><span class="description"> Attacks against services inside a protected network, or indirectly by virtue of access to malicious agents
 		  from within a protected network, might lead to denial of services otherwise available within a protected
 		  network. </span></dd><dt class="threat defined" id="T.NETWORK_MISUSE">T.NETWORK_MISUSE</dt><dd><span class="description"> Access to services made available by a protected network might be used counter to operational
 		  environment policies. Devices located outside the protected network may attempt to conduct
@@ -1390,10 +1392,8 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 							<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must be capable of understanding the <abbr class="dyn-abbr"><a href="#abbr_RFC">RFC</a></abbr> implementation to the extent the
 							<abbr class="dyn-abbr"><a href="#abbr_RFC">RFC</a></abbr> parameters are identified throughout the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr>.
 						</span></div></div></div>
-				<div class="element"><div class="reqid" id="IPS_NTA_EXT.1.3"><a href="#IPS_NTA_EXT.1.3" class="abbr">IPS_NTA_EXT.1.3</a></div><div class="reqdesc">
-						<span style="" class="comment " id="Comment-2-">wording updated as this was previously clunky, but also the "session reset-capable interface" selection was removed because there are no EAs for that claim, and it also has an open-ended assignment where other types of interfaces can be specified with no instructions on how to test them.</span>
-					The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow the signatures to be assigned to sensor interfaces configured
-					for promiscuous and inline mode, and to
+				<div class="element"><div class="reqid" id="IPS_NTA_EXT.1.3"><a href="#IPS_NTA_EXT.1.3" class="abbr">IPS_NTA_EXT.1.3</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow the signatures to be assigned to sensor interfaces configured
+					for promiscuous or inline mode, and to
 					support designation of one or more interfaces as being used as a management interface for communication between the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and external entities without simultaneously
 					being a sensor interface, as indicated by the following interface types:
 					<ul>
@@ -1465,7 +1465,7 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 					</ul>
 				</div></div>
 				<div class="element"><div class="reqid" id="IPS_SBD_EXT.1.2"><a href="#IPS_SBD_EXT.1.2" class="abbr">IPS_SBD_EXT.1.2</a></div><div class="reqdesc">
-				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support inspection of packet payload data and be able to inspect at least the following data elements to perform string-based pattern-matching: [
+				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support inspection of packet payload data and be able to inspect at least the following data elements to perform string-based pattern-matching: 
 				<ul>
 					<li>ICMPv4 data: characters beyond the first 4 bytes of the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> header.</li>
 					<li>ICMPv6 data: characters beyond the first 4 bytes of the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> header.</li>
@@ -1756,8 +1756,7 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
     	
 	<h3 id="fpt" class="indexable" data-level="3">A.1.3 Protection of the TSF (FPT)</h3>
 	<div class="comp" id="FPT_FLS.1/IPS"><h4>FPT_FLS.1/IPS Failure with Preservation of Secure State</h4>
-	<div class="element"><div class="reqid" id="FPT_FLS.1.1/IPS"><a href="#FPT_FLS.1.1/IPS" class="abbr">FPT_FLS.1.1/IPS</a></div><div class="reqdesc"><span style="" class="comment " id="Comment-3-">Iterated in case this is added to NDcPP (dependency on FPT_TST)</span>
-		The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall preserve a secure state <b>for inline interfaces</b> when the following types of failures occur: [<b>assignment</b>: 
+	<div class="element"><div class="reqid" id="FPT_FLS.1.1/IPS"><a href="#FPT_FLS.1.1/IPS" class="abbr">FPT_FLS.1.1/IPS</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall preserve a secure state <b>for inline interfaces</b> when the following types of failures occur: [<b>assignment</b>: 
      <span class="assignable-content">list of types of failures in the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr></span>].<div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note">
@@ -1808,7 +1807,7 @@ forwarded</span>]</span>, <span class="selectable-content" id="_s_81">no other p
 	<h2 id="obj-sfrs" class="indexable" data-level="2">A.2 Objective Requirements
     </h2>
 	<h3 class="indexable" data-level="3" id="_sec_14">A.2.1 Auditable Events for Objective SFRs</h3>
-        <span style="" class="comment " id="Comment-4-">All objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> need a review to determine if they should change status with the new release of this module.</span>
+        <span style="" class="comment " id="Comment-1-">All objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> need a review to determine if they should change status with the new release of this module.</span>
         <table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="at-objective" data-counter-type="ct-Table" id="at-objective">Table <span class="counter">8</span></span>: Auditable Events for Objective Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr><tr data-sortkey="FAU_ARP.1"><td rowspan="2"><a href="#FAU_ARP.1">FAU_ARP.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FAU_ARP.1#"><td></td></tr><tr data-sortkey="FAU_ARP.1.1"><td>No events specified</td><td>N/A</td></tr><tr data-sortkey="FAU_SAR.1"><td rowspan="2"><a href="#FAU_SAR.1">FAU_SAR.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FAU_SAR.1#"><td></td></tr><tr data-sortkey="FAU_SAR.1.1"><td>No events specified</td><td>N/A</td></tr><tr data-sortkey="FAU_SAR.2"><td rowspan="2"><a href="#FAU_SAR.2">FAU_SAR.2</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FAU_SAR.2#"><td></td></tr><tr data-sortkey="FAU_SAR.2.1"><td>No events specified</td><td>N/A</td></tr><tr data-sortkey="FAU_SAR.3"><td rowspan="2"><a href="#FAU_SAR.3">FAU_SAR.3</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FAU_SAR.3#"><td></td></tr><tr data-sortkey="FAU_SAR.3.1"><td>No events specified</td><td>N/A</td></tr></table>
       
 	<h3 id="fau-obj" class="indexable" data-level="3">A.2.2 Security Audit (FAU)</h3>
@@ -2060,10 +2059,8 @@ supporting inspection of network traffic</i>] that [<i>subjects</i>] can use [<i
 
 
 					</ul>
-					<h4 id="ext-comp-IPS_NTA_EXT.1.3">IPS_NTA_EXT.1.3</h4>
-						<span style="" class="comment " id="Comment-2-">wording updated as this was previously clunky, but also the "session reset-capable interface" selection was removed because there are no EAs for that claim, and it also has an open-ended assignment where other types of interfaces can be specified with no instructions on how to test them.</span>
-					The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow the signatures to be assigned to sensor interfaces configured
-					for promiscuous and inline mode, and to
+					<h4 id="ext-comp-IPS_NTA_EXT.1.3">IPS_NTA_EXT.1.3</h4>The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow the signatures to be assigned to sensor interfaces configured
+					for promiscuous or inline mode, and to
 					support designation of one or more interfaces as being used as a management interface for communication between the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and external entities without simultaneously
 					being a sensor interface, as indicated by the following interface types:
 					<ul>
@@ -2110,7 +2107,7 @@ supporting inspection of network traffic</i>] that [<i>subjects</i>] can use [<i
 					<li><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr>: source port; destination port; length; and <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> checksum.</li>
 					</ul>
 				<h4 id="ext-comp-IPS_SBD_EXT.1.2">IPS_SBD_EXT.1.2</h4>
-				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support inspection of packet payload data and be able to inspect at least the following data elements to perform string-based pattern-matching: [
+				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support inspection of packet payload data and be able to inspect at least the following data elements to perform string-based pattern-matching: 
 				<ul>
 					<li>ICMPv4 data: characters beyond the first 4 bytes of the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> header.</li>
 					<li>ICMPv6 data: characters beyond the first 4 bytes of the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> header.</li>

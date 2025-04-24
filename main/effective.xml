@@ -438,7 +438,9 @@
         </threat>
 
         <threat name="T.NETWORK_DISCLOSURE" id="t-network-disclosure">
-          <description> The TSF may inadvertently disclose sensitive information about the devices on a protected network through ingress- or egress-based actions. </description>
+        	<description>Sensitive information on a protected network might be disclosed resulting from ingress- or egress-based
+        		actions.
+        	</description>
  
         	<addressed-by>IPS_IPB_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network disclosure by providing a mechanism to restrict ingress and egress of network traffic by source or destination.</rationale>
         	<addressed-by>IPS_NTA_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network disclosure by defining the network traffic the TSF is able to examine to determine the potential realization of a threat.</rationale>
@@ -883,7 +885,7 @@ enforce its policies on network traffic of monitored networks.</description>
 					and reaction modes.
 					</Guidance>
 					<Tests>
-						<comment>This was updated from the previous version because that testing only had enabling/disabling/loading signatures, which is here because it isn't covered in IPS_SBD_EXT.1. But we should have a more unambiguous "make sure that every management function is tested" clause so one was added.</comment>
+				
 							The evaluator shall perform the following tests:
 							<testlist>
 								<test>The evaluator shall use the operational guidance to create a signature and enable it on an interface. The evaluator shall then generate traffic that would be successfully triggered by the signature. The evaluator should observe the TOE applying the corresponding reaction in the signature.</test>
@@ -1286,10 +1288,8 @@ enforce its policies on network traffic of monitored networks.</description>
 					</aactivity>
 				</f-element>
 				<f-element id="ips-nta-ext-1e3">
-					<title>
-						<comment>wording updated as this was previously clunky, but also the "session reset-capable interface" selection was removed because there are no EAs for that claim, and it also has an open-ended assignment where other types of interfaces can be specified with no instructions on how to test them.</comment>
-					The TSF shall allow the signatures to be assigned to sensor interfaces configured
-					for promiscuous and inline mode, and to
+					<title>The TSF shall allow the signatures to be assigned to sensor interfaces configured
+					for promiscuous or inline mode, and to
 					support designation of one or more interfaces as being used as a management interface for communication between the TOE and external entities without simultaneously
 					being a sensor interface, as indicated by the following interface types:
 					<h:ul>
@@ -1487,7 +1487,7 @@ enforce its policies on network traffic of monitored networks.</description>
 				</f-element>
 				<f-element id="ips-sbd-ext-1e2">
 				<title>
-				The TSF shall support inspection of packet payload data and be able to inspect at least the following data elements to perform string-based pattern-matching: [
+				The TSF shall support inspection of packet payload data and be able to inspect at least the following data elements to perform string-based pattern-matching: 
 				<h:ul>
 					<h:li>ICMPv4 data: characters beyond the first 4 bytes of the ICMP header.</h:li>
 					<h:li>ICMPv6 data: characters beyond the first 4 bytes of the ICMP header.</h:li>
@@ -1793,8 +1793,7 @@ enforce its policies on network traffic of monitored networks.</description>
 	<section title="Protection of the TSF (FPT)" id="fpt">
 	<f-component name="Failure with Preservation of Secure State" cc-id="fpt_fls.1" iteration="IPS" id="fpt-fls-1-ips">
 	<f-element id="fpt-fls-1">
-	<title><comment>Iterated in case this is added to NDcPP (dependency on FPT_TST)</comment>
-		The TSF shall preserve a secure state <h:b>for inline interfaces</h:b> when the following types of failures occur: <assignable>list of types of failures in the TSF</assignable>.</title>
+	<title>The TSF shall preserve a secure state <h:b>for inline interfaces</h:b> when the following types of failures occur: <assignable>list of types of failures in the TSF</assignable>.</title>
 	<note role="application">
 	The intent of this SFR is to allow the ST author to define the types of failures
 	that can occur on the TOE which could result in failure to effectively detect and

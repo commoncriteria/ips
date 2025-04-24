@@ -20,12 +20,6 @@
         <div id="commmentbox-">
             <a href="#Comment-1-">Comment: Comment-1-</a>
             <br>
-            <a href="#Comment-2-">Comment: Comment-2-</a>
-            <br>
-            <a href="#Comment-3-">Comment: Comment-3-</a>
-            <br>
-            <a href="#Comment-4-">Comment: Comment-4-</a>
-            <br>
         </div>
         <h1 class="title" style="page-break-before:auto;">PP-Module for IPS</h1>
         <h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1>
@@ -408,7 +402,7 @@
             </dd>
             <dt class="threat defined" id="T.NETWORK_DISCLOSURE">T.NETWORK_DISCLOSURE</dt>
             <dd>
-                <span class="description"> The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> may inadvertently disclose sensitive information about the devices on a protected network through ingress- or egress-based actions. </span>
+                <span class="description">Sensitive information on a protected network might be disclosed resulting from ingress- or egress-based actions. </span>
             </dd>
             <dt class="threat defined" id="T.NETWORK_DOS">T.NETWORK_DOS</dt>
             <dd>
@@ -931,7 +925,7 @@
                     <a href="#IPS_NTA_EXT.1.3" class="abbr">IPS_NTA_EXT.1.3</a>
                 </div>
                 <div class="reqdesc">
-                     <span style="" class="comment " id="Comment-2-">wording updated as this was previously clunky, but also the "session reset-capable interface" selection was removed because there are no EAs for that claim, and it also has an open-ended assignment where other types of interfaces can be specified with no instructions on how to test them.</span> The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow the signatures to be assigned to sensor interfaces configured for promiscuous and inline mode, and to support designation of one or more interfaces as being used as a management interface for communication between the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and external entities without simultaneously being a sensor interface, as indicated by the following interface types: 
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow the signatures to be assigned to sensor interfaces configured for promiscuous or inline mode, and to support designation of one or more interfaces as being used as a management interface for communication between the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and external entities without simultaneously being a sensor interface, as indicated by the following interface types: 
                     <ul>
                         <li>
                             Promiscuous (listen-only) mode: [<b>assignment</b>: <span class="assignable-content">list of interface types</span>]
@@ -992,7 +986,7 @@
                     <a href="#IPS_SBD_EXT.1.2" class="abbr">IPS_SBD_EXT.1.2</a>
                 </div>
                 <div class="reqdesc">
-                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support inspection of packet payload data and be able to inspect at least the following data elements to perform string-based pattern-matching: [ 
+                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support inspection of packet payload data and be able to inspect at least the following data elements to perform string-based pattern-matching: 
                     <ul>
                         <li>
                             ICMPv4 data: characters beyond the first 4 bytes of the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> header.
@@ -1532,7 +1526,7 @@
                     <a href="#FPT_FLS.1.1/IPS" class="abbr">FPT_FLS.1.1/IPS</a>
                 </div>
                 <div class="reqdesc">
-                    <span style="" class="comment " id="Comment-3-">Iterated in case this is added to NDcPP (dependency on FPT_TST)</span> The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall preserve a secure state <b>for inline interfaces</b> when the following types of failures occur: [<b>assignment</b>: <span class="assignable-content">list of types of failures in the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr></span>].
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall preserve a secure state <b>for inline interfaces</b> when the following types of failures occur: [<b>assignment</b>: <span class="assignable-content">list of types of failures in the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr></span>].
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note"> The intent of this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is to allow the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author to define the types of failures that can occur on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> which could result in failure to effectively detect and react to <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy violations for traffic traversing inline interface, and to not allow traffic to traverse those interfaces. The first refinement &ldquo;to be able&rdquo; is included to allow the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> administrator to configure the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to allow traffic to traverse inline interfaces when the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is in a partially of fully failed state, but to provide assurance that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is capable of blocking traffic if it has been configured to do so. The purpose of this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>, as stated in <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr> Part 2, is to &ldquo;ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> will always enforce its <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> in the event of identified categories of failures in the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>.&rdquo; Since some of the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> require inspection of data, and that inspection cannot occur when a network interface fails, it will not always be true that &ldquo;all&rdquo; the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> will continue to be enforced in the event of failure of certain components. The intent here is to ensure that if network traffic is not capable of being inspected by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>, then it should automatically be treated as untrusted. </span>
                     </div>
@@ -1593,7 +1587,7 @@
         </div>
         <h2 id="obj-sfrs" class="indexable" data-level="2">A.2 Objective Requirements </h2>
         <h3 class="indexable" data-level="3" id="_sec_14">A.2.1 Auditable Events for Objective SFRs</h3>
-         <span style="" class="comment " id="Comment-4-">All objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> need a review to determine if they should change status with the new release of this module.</span> 
+         <span style="" class="comment " id="Comment-1-">All objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> need a review to determine if they should change status with the new release of this module.</span> 
         <table class="sort_kids_" border="1">
             <caption data-sortkey="#0">
                 <span class="ctr" data-myid="at-objective" data-counter-type="ct-Table" id="at-objective">Table <span class="counter">8</span></span>: Auditable Events for Objective Requirements
@@ -2037,7 +2031,7 @@
                             </li>
                         </ul>
                         <h4 id="ext-comp-IPS_NTA_EXT.1.3">IPS_NTA_EXT.1.3</h4>
-                         <span style="" class="comment " id="Comment-2-">wording updated as this was previously clunky, but also the "session reset-capable interface" selection was removed because there are no EAs for that claim, and it also has an open-ended assignment where other types of interfaces can be specified with no instructions on how to test them.</span> The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow the signatures to be assigned to sensor interfaces configured for promiscuous and inline mode, and to support designation of one or more interfaces as being used as a management interface for communication between the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and external entities without simultaneously being a sensor interface, as indicated by the following interface types: 
+                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow the signatures to be assigned to sensor interfaces configured for promiscuous or inline mode, and to support designation of one or more interfaces as being used as a management interface for communication between the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and external entities without simultaneously being a sensor interface, as indicated by the following interface types: 
                         <ul>
                             <li>
                                 Promiscuous (listen-only) mode: [<b>assignment</b>: <span class="assignable-content">list of interface types</span>]
@@ -2124,7 +2118,7 @@
                             </li>
                         </ul>
                         <h4 id="ext-comp-IPS_SBD_EXT.1.2">IPS_SBD_EXT.1.2</h4>
-                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support inspection of packet payload data and be able to inspect at least the following data elements to perform string-based pattern-matching: [ 
+                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support inspection of packet payload data and be able to inspect at least the following data elements to perform string-based pattern-matching: 
                         <ul>
                             <li>
                                 ICMPv4 data: characters beyond the first 4 bytes of the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> header.

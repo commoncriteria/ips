@@ -17,7 +17,6 @@ output/ips-release-linkable.html: STM
 output/ips-release-linkable.html: Stateful
 output/ips-release-linkable.html: TDs
 output/ips-release-linkable.html: TRP
-output/ips-release-linkable.html: TST
 output/ips-release-linkable.html: URIs
 output/ips-release-linkable.html: allo
 output/ips-release-linkable.html: appe
@@ -26,7 +25,6 @@ output/ips-release-linkable.html: configurability
 output/ips-release-linkable.html: cwd
 output/ips-release-linkable.html: doesn
 output/ips-release-linkable.html: exfiltration
-output/ips-release-linkable.html: isn
 output/ips-release-linkable.html: mkd
 output/ips-release-linkable.html: nlst
 output/ips-release-linkable.html: noop
@@ -64,7 +62,6 @@ output/ips-release.html: STM
 output/ips-release.html: Stateful
 output/ips-release.html: TDs
 output/ips-release.html: TRP
-output/ips-release.html: TST
 output/ips-release.html: URIs
 output/ips-release.html: allo
 output/ips-release.html: anomalous’
@@ -122,7 +119,6 @@ output/ips-sd.html: cwd
 output/ips-sd.html: evaluator’s
 output/ips-sd.html: fail’
 output/ips-sd.html: frequency’
-output/ips-sd.html: isn
 output/ips-sd.html: mkd
 output/ips-sd.html: nlst
 output/ips-sd.html: noop
@@ -157,7 +153,6 @@ output/ips.html: STM
 output/ips.html: Stateful
 output/ips.html: TDs
 output/ips.html: TRP
-output/ips.html: TST
 output/ips.html: URIs
 output/ips.html: allo
 output/ips.html: anomalous’
@@ -173,7 +168,6 @@ output/ips.html: data’
 output/ips.html: dissimilar’
 output/ips.html: exfiltration
 output/ips.html: frequency’
-output/ips.html: isn
 output/ips.html: known’
 output/ips.html: manager’
 output/ips.html: mkd
