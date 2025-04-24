@@ -139,7 +139,7 @@
 	  <term full="Profiling (network traffic)">
 	  	See base-lining.</term>
 	  <term full="Promiscuous mode">
-	  	The state of an IPS interface in which it’s listening (collecting and inspecting) network traffic. A promiscuous interface could be one that is only listening and never transmitting traffic, or could be an interface through which traffic flows both inbound and outbound as in an inline mode deployment. </term>
+	  	The state of an IPS interface in which it is collecting and inspecting network traffic. A promiscuous interface could be one that is only listening and never transmitting traffic, or could be an interface through which traffic flows both inbound and outbound as in an inline mode deployment. </term>
 	  <term full="Sensor interface">
 	  	Any interface of the TOE that has an IPS policy applied to it.</term>
       <term abbr='DDoS' full="Distributed Denial of Service"/>
