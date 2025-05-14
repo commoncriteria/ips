@@ -438,8 +438,7 @@
         </threat>
 
         <threat name="T.NETWORK_DISCLOSURE" id="t-network-disclosure">
-        	<description>Sensitive information on a protected network might be disclosed resulting from ingress- or egress-based
-        		actions.
+        	<description>A malicious actor could gain access to sensitive information on a protected network that was disclosed as a result of ingress- or egress-based actions.
         	</description>
  
         	<addressed-by>IPS_IPB_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network disclosure by providing a mechanism to restrict ingress and egress of network traffic by source or destination.</rationale>
@@ -1288,8 +1287,7 @@ enforce its policies on network traffic of monitored networks.</description>
 					</aactivity>
 				</f-element>
 				<f-element id="ips-nta-ext-1e3">
-					<title>The TSF shall allow the signatures to be assigned to sensor interfaces configured
-					for promiscuous or inline mode, and to
+					<title>The TSF shall allow the signatures to be assigned to sensor interfaces configured for promiscuous mode and to sensor interfaces configured for inline mode, and to
 					support designation of one or more interfaces as being used as a management interface for communication between the TOE and external entities without simultaneously
 					being a sensor interface, as indicated by the following interface types:
 					<h:ul>
