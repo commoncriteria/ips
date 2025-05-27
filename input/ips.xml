@@ -92,7 +92,7 @@
       (IPS) in terms of <xref g="CC"/> and to define functional and assurance requirements for such products. This PP-Module is intended for use with the following Base-PPs:
       
       <h:ul>
-        <h:li>collaborative Protection Profile for Network Devices, Version 3.0E (NDcPP or CPP_ND_V3.0E)</h:li>
+        <h:li>Network Device collaborative Protection Profile Version 4.0<comment> Please update the references in the bio. </comment></h:li>
       </h:ul>
       
       <h:p>
@@ -367,6 +367,7 @@
         <cc-pt3-conf>conformant</cc-pt3-conf>
         <cc-pp-conf/>
         <cc-pp-config-with>
+			<PP-cc-ref>Network Device collaborative Protection Profile Version 4.0</PP-cc-ref>
           <Mod-cc-ref>collaborative Protection Profile Module for Stateful Traffic Filter Firewalls v1.4 + Errata 20200625</Mod-cc-ref>
           <Mod-cc-ref>PP-Module for Virtual Private Network (VPN) Gateways, Version 1.4</Mod-cc-ref>
         </cc-pp-config-with>
@@ -2238,7 +2239,7 @@ supporting inspection of network traffic</h:i>] that [<h:i>subjects</h:i>] can u
 		<entry id="bibndcpp3">
 			<tag>NDcPP</tag>
 			<description>NDcPP  - <h:a
-				href="https://www.niap-ccevs.org/protectionprofiles/482">Collaborative Protection Profile for Network Devices, Version 3.0e, December 06, 2023</h:a></description>
+				href="https://www.niap-ccevs.org/protectionprofiles/482">Collaborative Protection Profile for Network Devices, Version 4.0, December 06, 2023</h:a></description>
 			
 		</entry>
 		
