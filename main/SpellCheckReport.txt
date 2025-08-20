@@ -1,3 +1,4 @@
+output/ips-release-linkable.html: 0e
 output/ips-release-linkable.html: CEM
 output/ips-release-linkable.html: CPC
 output/ips-release-linkable.html: Chargen
@@ -27,7 +28,6 @@ output/ips-release-linkable.html: mkd
 output/ips-release-linkable.html: nlst
 output/ips-release-linkable.html: noop
 output/ips-release-linkable.html: pasv
-output/ips-release-linkable.html: protoco
 output/ips-release-linkable.html: retr
 output/ips-release-linkable.html: rmd
 output/ips-release-linkable.html: rnfr
@@ -40,6 +40,7 @@ output/ips-release-linkable.html: subnets
 output/ips-release-linkable.html: syslog
 output/ips-release-linkable.html: uninspected
 output/ips-release-linkable.html: v1
+output/ips-release.html: 0e
 output/ips-release.html: CEM
 output/ips-release.html: CPC
 output/ips-release.html: Chargen
@@ -81,7 +82,6 @@ output/ips-release.html: noop
 output/ips-release.html: offending’
 output/ips-release.html: pasv
 output/ips-release.html: promiscuous’
-output/ips-release.html: protoco
 output/ips-release.html: retr
 output/ips-release.html: rmd
 output/ips-release.html: rnfr
@@ -129,6 +129,7 @@ output/ips-sd.html: stou
 output/ips-sd.html: stru
 output/ips-sd.html: subnet
 output/ips-sd.html: thresholds’
+output/ips.html: 0e
 output/ips.html: CEM
 output/ips.html: CPC
 output/ips.html: Chargen
@@ -171,7 +172,6 @@ output/ips.html: noop
 output/ips.html: offending’
 output/ips.html: pasv
 output/ips.html: promiscuous’
-output/ips.html: protoco
 output/ips.html: retr
 output/ips.html: rmd
 output/ips.html: rnfr
