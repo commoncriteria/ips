@@ -39,7 +39,7 @@ output/ips-release-linkable.html: subnet
 output/ips-release-linkable.html: subnets
 output/ips-release-linkable.html: syslog
 output/ips-release-linkable.html: uninspected
-output/ips-release-linkable.html: v1
+output/ips-release-linkable.html: v2
 output/ips-release.html: 0e
 output/ips-release.html: CEM
 output/ips-release.html: CPC
@@ -99,7 +99,7 @@ output/ips-release.html: typical’
 output/ips-release.html: unexpected’
 output/ips-release.html: uninspected
 output/ips-release.html: unknown’
-output/ips-release.html: v1
+output/ips-release.html: v2
 output/ips-release.html: ’
 output/ips-sd.html: 0e
 output/ips-sd.html: AGD
@@ -190,5 +190,5 @@ output/ips.html: typical’
 output/ips.html: unexpected’
 output/ips.html: uninspected
 output/ips.html: unknown’
-output/ips.html: v1
+output/ips.html: v2
 output/ips.html: ’
