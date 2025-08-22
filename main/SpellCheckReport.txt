@@ -1,4 +1,3 @@
-output/ips-release-linkable.html: 0e
 output/ips-release-linkable.html: CEM
 output/ips-release-linkable.html: CPC
 output/ips-release-linkable.html: Chargen
@@ -40,7 +39,6 @@ output/ips-release-linkable.html: subnets
 output/ips-release-linkable.html: syslog
 output/ips-release-linkable.html: uninspected
 output/ips-release-linkable.html: v2
-output/ips-release.html: 0e
 output/ips-release.html: CEM
 output/ips-release.html: CPC
 output/ips-release.html: Chargen
@@ -101,7 +99,6 @@ output/ips-release.html: uninspected
 output/ips-release.html: unknown’
 output/ips-release.html: v2
 output/ips-release.html: ’
-output/ips-sd.html: 0e
 output/ips-sd.html: AGD
 output/ips-sd.html: CEM
 output/ips-sd.html: ICMPv4
@@ -129,7 +126,6 @@ output/ips-sd.html: stou
 output/ips-sd.html: stru
 output/ips-sd.html: subnet
 output/ips-sd.html: thresholds’
-output/ips.html: 0e
 output/ips.html: CEM
 output/ips.html: CPC
 output/ips.html: Chargen

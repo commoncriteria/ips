@@ -81,7 +81,7 @@
       (IPS) in terms of <xref g="CC"/> and to define functional and assurance requirements for such products. This PP-Module is intended for use with the following Base-PPs:
       
       <h:ul>
-        <h:li>Network Device collaborative Protection Profile Version 3.0e</h:li>
+        <h:li>Network Device collaborative Protection Profile Version 4.0</h:li>
       </h:ul>
       
       <h:p>
@@ -356,7 +356,7 @@
         <cc-pt3-conf>conformant</cc-pt3-conf>
         <cc-pp-conf/>
         <cc-pp-config-with>
-			<PP-cc-ref>Network Device collaborative Protection Profile Version 3.0e</PP-cc-ref>
+			<PP-cc-ref>Network Device collaborative Protection Profile Version 4.0</PP-cc-ref>
           <Mod-cc-ref>collaborative Protection Profile Module for Stateful Traffic Filter Firewalls
           	v2.0</Mod-cc-ref>
           <Mod-cc-ref>PP-Module for Virtual Private Network (VPN) Gateways, Version 2.0</Mod-cc-ref>
@@ -587,7 +587,7 @@ enforce its policies on network traffic of monitored networks.</description>
 
   
   <sec:Security_Requirements>
-    <base-pp id="ND" version="3.0e" name="Network Device" product="Network Device" short="ND" plural="Network Devices">
+    <base-pp id="ND" version="4.0" name="Network Device" product="Network Device" short="ND" plural="Network Devices">
       <url>https://www.niap-ccevs.org/protectionprofiles/482</url>
       <cPP/>
       <sec-func-req-dir> 
@@ -2229,7 +2229,7 @@ supporting inspection of network traffic</h:i>] that [<h:i>subjects</h:i>] can u
 		<entry id="bibndcpp3">
 			<tag>NDcPP</tag>
 			<description>NDcPP  - <h:a href="https://www.niap-ccevs.org/protectionprofiles/482">Collaborative Protection Profile for
-				Network Devices, Version 3.0e, December 06, 2023</h:a></description>
+				Network Devices, Version 4.0, December 06, 2023</h:a></description>
 			
 		</entry>
 		
