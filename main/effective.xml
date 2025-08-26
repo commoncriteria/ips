@@ -34,16 +34,19 @@
 
 <!-- Revision History (all documents) -->
   <RevisionHistory>
+  	
+  	<entry>
+      <version>1.0</version>
+      <date>2021-05-11</date>
+      <subject>Initial publication</subject>
+    </entry>
+  	
     <entry>
       <version>2.0</version>
       <date>2025-03-21</date>
       <subject>CC:2022 updates, incorporation of TDs</subject>
     </entry>
-    <entry>
-      <version>1.0</version>
-      <date>2021-05-11</date>
-      <subject>Initial publication</subject>
-    </entry>
+    
   </RevisionHistory>
 
   <release-notes><h:h3>TDs Applied</h:h3></release-notes><include-pkg id="pkg-ssh">
