@@ -7,6 +7,7 @@ output/ips-release-linkable.html: ICMPv6
 output/ips-release-linkable.html: IPSs
 output/ips-release-linkable.html: ITT
 output/ips-release-linkable.html: Multiprotocol
+output/ips-release-linkable.html: NDcPP
 output/ips-release-linkable.html: RST
 output/ips-release-linkable.html: SAA
 output/ips-release-linkable.html: SMR
@@ -49,6 +50,7 @@ output/ips-release.html: ICMPv6
 output/ips-release.html: IPSs
 output/ips-release.html: ITT
 output/ips-release.html: Multiprotocol
+output/ips-release.html: NDcPP
 output/ips-release.html: RST
 output/ips-release.html: SAA
 output/ips-release.html: SMR
@@ -103,6 +105,7 @@ output/ips-sd.html: AGD
 output/ips-sd.html: CEM
 output/ips-sd.html: ICMPv4
 output/ips-sd.html: ICMPv6
+output/ips-sd.html: NDcPP
 output/ips-sd.html: TDs
 output/ips-sd.html: URIs
 output/ips-sd.html: allo
@@ -136,6 +139,7 @@ output/ips.html: ICMPv6
 output/ips.html: IPSs
 output/ips.html: ITT
 output/ips.html: Multiprotocol
+output/ips.html: NDcPP
 output/ips.html: RST
 output/ips.html: SAA
 output/ips.html: SMR
