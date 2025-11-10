@@ -2238,17 +2238,6 @@ supporting inspection of network traffic</h:i>] that [<h:i>subjects</h:i>] can u
 	
 	<!-- Bibliography is auto generated here with CC and CEM docs. If you want other docs -->
 	<!-- included, add them here. -->
-	<bibliography>
-		<cc-entry/>
-		<entry id="bibndcpp3">
-			<tag>NDcPP</tag>
-			<description>NDcPP  - <h:a
-				href="https://www.niap-ccevs.org/protectionprofiles/482">Collaborative Protection Profile for
-				Network Devices, Version 4.0, December 06, 2023</h:a></description>
-			
-		</entry>
-		
-	</bibliography>
-
+	<bibliography/>
 </Module>
 <!-- </Package>  -->
