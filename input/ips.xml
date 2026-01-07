@@ -1955,7 +1955,7 @@ forwarded</assignable></selectable>
   	<sel-sfrs/>
 	<obj-sfrs>
 	<section title="Auditable Events for Objective SFRs">
-        <comment>All objective SFRs need a review to determine if they should change status with the new release of this module.</comment>
+
         <audit-table id="at-objective" table="objective"/>
       </section>
 	<section title="Security Audit (FAU)" id="fau-obj">
@@ -2238,6 +2238,15 @@ supporting inspection of network traffic</h:i>] that [<h:i>subjects</h:i>] can u
 	
 	<!-- Bibliography is auto generated here with CC and CEM docs. If you want other docs -->
 	<!-- included, add them here. -->
-	<bibliography/>
+	<bibliography>
+		<cc-entry/>
+		<entry id="bibNDcPP">
+			<tag>NDcPP</tag>
+			<description>
+				<h:a href="https://www.niap-ccevs.org/protectionprofiles/524">
+					collaborative Protection Profile for Network Devices, Version 4.0, December 22, 2025</h:a>
+			</description>
+		</entry>
+	</bibliography>
 </Module>
 <!-- </Package>  -->
