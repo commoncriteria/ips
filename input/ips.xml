@@ -862,67 +862,8 @@ enforce its policies on network traffic of monitored networks.</description>
 			</f-component>
 			</section>
 			
-			
-			<section title="Security Management (FMT)" id="m-fmt">
-			<f-component name="Specification of Management Functions (IPS)" cc-id="fmt_smf.1" iteration="IPS" id="fmt-smf-1-ips">
-				<f-element id="fmt-smf-1-1-ips">
-				<title>
-				The TSF shall be capable of performing the following management functions: [
-					<h:i><h:ul>
-					<h:li>Enable, disable signatures applied to sensor interfaces, and determine the behavior of IPS functionality</h:li>
-					<h:li>Modify these parameters that define the network traffic to be collected and analyzed:</h:li>
-					<h:ul>
-						<h:li>Source IP addresses (host address and network address)</h:li>
-						<h:li>Destination IP addresses (host address and network address)</h:li>
-						<h:li>Source port (TCP and UDP)</h:li>
-						<h:li>Destination port (TCP and UDP)</h:li>
-						<h:li>Protocol (IPv4 and IPv6)</h:li>
-						<h:li>ICMP type and code</h:li>
-					</h:ul>
-					<h:li>Update (import) signatures</h:li>
-					<h:li>Create custom signatures</h:li>
-					<h:li>Configure anomaly detection</h:li>
-					<h:li>Enable and disable actions to be taken when signature or anomaly matches are detected</h:li>
-					<h:li>Modify thresholds that trigger IPS reactions</h:li>
-					<h:li>Modify the duration of traffic blocking actions</h:li>
-					<h:li>Modify the known-good and known-bad lists (of IP addresses or address ranges)</h:li>
-					<h:li>Configure the known-good and known-bad lists to override signature-based IPS policies</h:li>
-					</h:ul></h:i>
-					].
-				</title>            
-				<aactivity>      <!-- at minimum, only the last f-element in the f-component needs to have this -->
-   					<TSS>
-					The evaluator shall verify that the TSS describes how the IPS data analysis and reactions can be configured.This may be performed in conjunction with the evaluation of FIP_ABD_EXT.1, FIP_IPB_EXT.1, and FIP_SBD_EXT.1.</TSS>
-					<Guidance>
-					The evaluator shall verify that the operational guidance describes the instructions for each function
-					defined in the SFR, describes how to configure the IPS data analysis and reactions, including how to set
-					any configurable defaults and how to configure each of the applicable analysis pattern matching methods
-					and reaction modes.
-					</Guidance>
-					<Tests>
-				
-							The evaluator shall perform the following tests:
-							<testlist>
-								<test>The evaluator shall use the operational guidance to create a signature and enable it on an interface. The evaluator shall then generate traffic that would be successfully triggered by the signature. The evaluator should observe the TOE applying the corresponding reaction in the signature.</test>
-								<test>The evaluator shall then disable the signature and attempt to regenerate the same traffic and ensure that the TOE allows the traffic to pass with no reaction.</test>
-								<test> The evaluator shall use the operational guidance to import signatures and repeat the test conducted in Test 1.</test>
-							</testlist>
-							<h:p>
-							Additionally, for each other claimed management function, the evaluator shall follow the steps listed in the operational guidance for configuration of that function's behavior and verify that configuration has the intended effect (e.g., for modifying the duration of traffic blocking actions, the evaluator could configure this with two separate time values and verify that traffic was blocked for the configured duration in both cases).  
-							</h:p><h:p>
-								Testing for this SFR will generally be performed in conjunction with the test activities for FIP_ABD_EXT.1 and FIP_SBD_EXT.1, as testing various aspects of IPS functionality will necessarily involve this functionality to be configured such that the TSF is in a known state when being tested.
-							</h:p>	
-					</Tests>
-            	</aactivity>
-                </f-element>	
-<audit-event>
-	<audit-event-descr>Modification of an IPS policy element.</audit-event-descr>
-	<audit-event-info>Identifier or name of the modified IPS policy element (e.g. which signature, baseline, or known-good/known-bad list was modified).</audit-event-info>
-</audit-event>
-				</f-component>
-			</section>
 			<!-- NEW SFR-->
-						<section title="Intrusion Prevention (IPS)" id="m-ips">
+						<section title="Intrusion Prevention (FIP)" id="m-fip">
 							<class-description>
 								Intrusion prevention involves the TOE’s ability to collect network packets, examine their contents for
 								information that suggests malicious activity, and to perform some action in response such as terminating
@@ -1755,6 +1696,66 @@ enforce its policies on network traffic of monitored networks.</description>
 			</section>
 
 
+
+		<section title="Security Management (FMT)" id="m-fmt">
+			<f-component name="Specification of Management Functions (IPS)" cc-id="fmt_smf.1" iteration="IPS" id="fmt-smf-1-ips">
+				<f-element id="fmt-smf-1-1-ips">
+					<title>
+						The TSF shall be capable of performing the following management functions: [
+						<h:i><h:ul>
+							<h:li>Enable, disable signatures applied to sensor interfaces, and determine the behavior of IPS functionality</h:li>
+							<h:li>Modify these parameters that define the network traffic to be collected and analyzed:</h:li>
+							<h:ul>
+								<h:li>Source IP addresses (host address and network address)</h:li>
+								<h:li>Destination IP addresses (host address and network address)</h:li>
+								<h:li>Source port (TCP and UDP)</h:li>
+								<h:li>Destination port (TCP and UDP)</h:li>
+								<h:li>Protocol (IPv4 and IPv6)</h:li>
+								<h:li>ICMP type and code</h:li>
+							</h:ul>
+							<h:li>Update (import) signatures</h:li>
+							<h:li>Create custom signatures</h:li>
+							<h:li>Configure anomaly detection</h:li>
+							<h:li>Enable and disable actions to be taken when signature or anomaly matches are detected</h:li>
+							<h:li>Modify thresholds that trigger IPS reactions</h:li>
+							<h:li>Modify the duration of traffic blocking actions</h:li>
+							<h:li>Modify the known-good and known-bad lists (of IP addresses or address ranges)</h:li>
+							<h:li>Configure the known-good and known-bad lists to override signature-based IPS policies</h:li>
+						</h:ul></h:i>
+						].
+					</title>            
+					<aactivity>      <!-- at minimum, only the last f-element in the f-component needs to have this -->
+						<TSS>
+							The evaluator shall verify that the TSS describes how the IPS data analysis and reactions can be configured.This may be performed in conjunction with the evaluation of FIP_ABD_EXT.1, FIP_IPB_EXT.1, and FIP_SBD_EXT.1.</TSS>
+						<Guidance>
+							The evaluator shall verify that the operational guidance describes the instructions for each function
+							defined in the SFR, describes how to configure the IPS data analysis and reactions, including how to set
+							any configurable defaults and how to configure each of the applicable analysis pattern matching methods
+							and reaction modes.
+						</Guidance>
+						<Tests>
+							
+							The evaluator shall perform the following tests:
+							<testlist>
+								<test>The evaluator shall use the operational guidance to create a signature and enable it on an interface. The evaluator shall then generate traffic that would be successfully triggered by the signature. The evaluator should observe the TOE applying the corresponding reaction in the signature.</test>
+								<test>The evaluator shall then disable the signature and attempt to regenerate the same traffic and ensure that the TOE allows the traffic to pass with no reaction.</test>
+								<test> The evaluator shall use the operational guidance to import signatures and repeat the test conducted in Test 1.</test>
+							</testlist>
+							<h:p>
+								Additionally, for each other claimed management function, the evaluator shall follow the steps listed in the operational guidance for configuration of that function's behavior and verify that configuration has the intended effect (e.g., for modifying the duration of traffic blocking actions, the evaluator could configure this with two separate time values and verify that traffic was blocked for the configured duration in both cases).  
+							</h:p><h:p>
+								Testing for this SFR will generally be performed in conjunction with the test activities for FIP_ABD_EXT.1 and FIP_SBD_EXT.1, as testing various aspects of IPS functionality will necessarily involve this functionality to be configured such that the TSF is in a known state when being tested.
+							</h:p>	
+						</Tests>
+					</aactivity>
+				</f-element>	
+				<audit-event>
+					<audit-event-descr>Modification of an IPS policy element.</audit-event-descr>
+					<audit-event-info>Identifier or name of the modified IPS policy element (e.g. which signature, baseline, or known-good/known-bad list was modified).</audit-event-info>
+				</audit-event>
+			</f-component>
+		</section>
+
 	
 	</man-sfrs>  <!-- SFRs -->
     
@@ -1844,7 +1845,7 @@ enforce its policies on network traffic of monitored networks.</description>
 		<audit-event-info>The type of failure that occurred. </audit-event-info></audit-event>
 	</f-component>
 	</section>
-	<section title="Intrusion Prevention (IPS)" id='ips'>
+	<section title="Intrusion Prevention (FIP)" id='fip'>
 		
 	<f-component name ="Traffic Normalization" cc-id='fip_sbd_ext.2' id='fip-sbd-ext-2'>
 		
