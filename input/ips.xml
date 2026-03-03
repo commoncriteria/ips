@@ -929,13 +929,13 @@ enforce its policies on network traffic of monitored networks.</description>
 								the connection.
 							</class-description>
 							
-							<ext-comp-def title="Anomaly-Based IPS Functionality" fam-id="IPS_ABD_EXT">
+							<ext-comp-def title="Anomaly-Based IPS Functionality" fam-id="FIP_ABD_EXT">
 								<fam-behavior>This family defines requirements for detection of anomalous network traffic and how the TSF should
 									respond if an anomaly is detected.
 								</fam-behavior>
 							</ext-comp-def>
 							
-			<f-component name="Anomaly-Based IPS Functionality" cc-id="ips_abd_ext.1" id="ips-abd-ext-1">
+			<f-component name="Anomaly-Based IPS Functionality" cc-id="fip_abd_ext.1" id="fip-abd-ext-1">
 				
 				<comp-lev> requires the TSF to detect anomalous network traffic
 					based on some criteria and to define the response that is issued if an anomaly is detected. </comp-lev>
