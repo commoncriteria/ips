@@ -236,7 +236,7 @@
 		<h:p>Deployment scenarios supported by the TOE include those shown in Figure 1, which includes a number of
 		possible deployments or use cases for IPS functionality within a single network. Note that this is just an
 		example of an IPS deployment where individual devices implement specific IPS functionality differently;
-		per the requirements in this PP-Module (specifically IPS_NTA_EXT.1), a conformant TOE must implement
+		per the requirements in this PP-Module (specifically FIP_NTA_EXT.1), a conformant TOE must implement
 		both promiscuous and inline mode interfaces, though it is not a requirement for every TOE component to
 		implement both modes.</h:p>
 			<h:ul>
@@ -446,9 +446,9 @@
 			devices are able to communicate with devices on the protected network via a backdoor then those devices
 			may be susceptible to the unauthorized disclosure of information.</description>
 
-        	<addressed-by>IPS_IPB_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network access by providing a mechanism to restrict network traffic that originates from a particular source.</rationale>
-        	<addressed-by>IPS_NTA_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network access by defining the network traffic the TSF is able to examine to determine the potential realization of a threat.</rationale>
-        	<addressed-by>IPS_SBD_EXT.2 (optional)</addressed-by><rationale>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets.</rationale>
+        	<addressed-by>FIP_IPB_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network access by providing a mechanism to restrict network traffic that originates from a particular source.</rationale>
+        	<addressed-by>FIP_NTA_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network access by defining the network traffic the TSF is able to examine to determine the potential realization of a threat.</rationale>
+        	<addressed-by>FIP_SBD_EXT.2 (optional)</addressed-by><rationale>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets.</rationale>
         	
 
         </threat>
@@ -457,11 +457,11 @@
         	<description>A malicious actor could gain access to sensitive information on a protected network that was disclosed as a result of ingress- or egress-based actions.
         	</description>
  
-        	<addressed-by>IPS_IPB_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network disclosure by providing a mechanism to restrict ingress and egress of network traffic by source or destination.</rationale>
-        	<addressed-by>IPS_NTA_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network disclosure by defining the network traffic the TSF is able to examine to determine the potential realization of a threat.</rationale>
-        	<addressed-by>IPS_SBD_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network denial of service by providing a means to detect network traffic signatures that are indicative of attempts to establish insecure or otherwise malformed sessions over a trusted protocol.</rationale>
+        	<addressed-by>FIP_IPB_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network disclosure by providing a mechanism to restrict ingress and egress of network traffic by source or destination.</rationale>
+        	<addressed-by>FIP_NTA_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network disclosure by defining the network traffic the TSF is able to examine to determine the potential realization of a threat.</rationale>
+        	<addressed-by>FIP_SBD_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network denial of service by providing a means to detect network traffic signatures that are indicative of attempts to establish insecure or otherwise malformed sessions over a trusted protocol.</rationale>
         	
-        	<addressed-by>IPS_SBD_EXT.2 (optional)</addressed-by><rationale>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets.</rationale>
+        	<addressed-by>FIP_SBD_EXT.2 (optional)</addressed-by><rationale>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets.</rationale>
 
         	
 		  </threat>
@@ -470,10 +470,10 @@
 		  from within a protected network, might lead to denial of services otherwise available within a protected
 		  network. </description>
 
-			<addressed-by>IPS_IPB_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network denial of service by providing a mechanism to restrict network traffic that originates from a particular source.</rationale>
-			<addressed-by>IPS_NTA_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network denial of service by defining the network traffic the TSF is able to examine to determine the potential realization of a threat.</rationale>
-			<addressed-by>IPS_SBD_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network denial of service by providing a means to detect network traffic signatures that are indicative of denial of service attempts.</rationale>
-			<addressed-by>IPS_SBD_EXT.2 (optional)</addressed-by><rationale>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets.</rationale>
+			<addressed-by>FIP_IPB_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network denial of service by providing a mechanism to restrict network traffic that originates from a particular source.</rationale>
+			<addressed-by>FIP_NTA_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network denial of service by defining the network traffic the TSF is able to examine to determine the potential realization of a threat.</rationale>
+			<addressed-by>FIP_SBD_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network denial of service by providing a means to detect network traffic signatures that are indicative of denial of service attempts.</rationale>
+			<addressed-by>FIP_SBD_EXT.2 (optional)</addressed-by><rationale>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets.</rationale>
 
 		</threat>
 		<threat name="T.NETWORK_MISUSE" id="t-network-misuse">
@@ -484,12 +484,12 @@
 		  tools, and botnets). </description>
 
 		
-			<addressed-by>IPS_ABD_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network misuse by providing a mechanism to detect anomalous activity that may indicate network misuse.</rationale>
-			<addressed-by>IPS_IPB_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network misuse by providing a mechanism to restrict network traffic that originates from within a protected network and is bound for an untrusted source, which may indicate compromise or misuse of a protected resource.</rationale>
-			<addressed-by>IPS_NTA_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network misuse by defining the network traffic the TSF is able to examine to determine the potential realization of a threat.</rationale>
+			<addressed-by>FIP_ABD_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network misuse by providing a mechanism to detect anomalous activity that may indicate network misuse.</rationale>
+			<addressed-by>FIP_IPB_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network misuse by providing a mechanism to restrict network traffic that originates from within a protected network and is bound for an untrusted source, which may indicate compromise or misuse of a protected resource.</rationale>
+			<addressed-by>FIP_NTA_EXT.1</addressed-by><rationale>This requirement mitigates the threat of network misuse by defining the network traffic the TSF is able to examine to determine the potential realization of a threat.</rationale>
 	
 
-			<addressed-by>IPS_SBD_EXT.2 (optional)</addressed-by><rationale>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets.</rationale>
+			<addressed-by>FIP_SBD_EXT.2 (optional)</addressed-by><rationale>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets.</rationale>
 			
         </threat>
       	
@@ -685,13 +685,13 @@ enforce its policies on network traffic of monitored networks.</description>
     	<con-mod ref="fmt-smf-1-ips">The PP-Module iterates an SFR defined in the Base-PP to define additional
     		management functions specific to the IPS functionality that the IPS part of the TOE must generate. Authorizations to perform these functions are based
     		on FMT_SMR.2 defined by the Base-PP.</con-mod>
-    	<con-mod ref="ips-abd-ext-1">This SFR applies to IPS functionality, which is beyond the original scope of
+    	<con-mod ref="fip-abd-ext-1">This SFR applies to IPS functionality, which is beyond the original scope of
     		the Base-PP</con-mod>
-    	<con-mod ref="ips-ipb-ext-1">This SFR applies to IPS functionality, which is beyond the original scope of
+    	<con-mod ref="fip-ipb-ext-1">This SFR applies to IPS functionality, which is beyond the original scope of
     		the Base-PP</con-mod>
-    	<con-mod ref="ips-nta-ext-1">This SFR applies to IPS functionality, which is beyond the original scope of
+    	<con-mod ref="fip-nta-ext-1">This SFR applies to IPS functionality, which is beyond the original scope of
     		the Base-PP</con-mod>
-    	<con-mod ref="ips-sbd-ext-1">This SFR applies to IPS functionality, which is beyond the original scope of
+    	<con-mod ref="fip-sbd-ext-1">This SFR applies to IPS functionality, which is beyond the original scope of
     		the Base-PP</con-mod>
     	<con-mod ref="fau-stg-2-ips">The PP-Module iterates an SFR defined in the Base-PP to define an optional
     		capability for the protection of the IPS data generated by FAU_GEN.1/IPS.</con-mod>
@@ -704,7 +704,7 @@ enforce its policies on network traffic of monitored networks.</description>
     		scanning of network traffic for enforcement of IPS requirements. This
     		functionality was introduced in this PP-Module and therefore doesn’t
     		interfere with the Base-PP.</con-mod>
-    	<con-mod ref="ips-sbd-ext-2">This SFR applies to IPS functionality, which is beyond the original scope of
+    	<con-mod ref="fip-sbd-ext-2">This SFR applies to IPS functionality, which is beyond the original scope of
     		the Base-PP</con-mod>
     	<con-mod ref="fau-arp-1">This SFR applies to IPS functionality, which is beyond the original scope of
     		the Base-PP</con-mod>
@@ -821,13 +821,13 @@ enforce its policies on network traffic of monitored networks.</description>
 
 					</title>
 					<note role="application">
-					<h:p><h:i> For IPS_SBD_EXT.1 and IPS_ABD_EXT.1 there may be several circumstances in
+					<h:p><h:i> For FIP_SBD_EXT.1 and FIP_ABD_EXT.1 there may be several circumstances in
 					which it would not be necessary to explicitly identify the action within the audit
 					messages. For example, if the TOE’s action is implied within the policy definition
 					or if the default action is to allow traffic, then the absence of ‘blocked’ would
 					imply the traffic was allowed.
 					</h:i></h:p><h:p><h:i>
-					For IPS_SBD_EXT.1, if certain header fields are inspected and dropped or modified
+					For FIP_SBD_EXT.1, if certain header fields are inspected and dropped or modified
 					by default (e.g., packets with bad checksum, reserved bits set to zero), this logging
 					requirement is not applicable.
 					</h:i></h:p><h:p><h:i>
@@ -842,7 +842,7 @@ enforce its policies on network traffic of monitored networks.</description>
 							</h:p><h:p>
 							The evaluator shall verify that the TSS describes what (similar) IPS event types the TOE will combine into a single audit record along with the conditions (e.g., thresholds and time periods) for so doing. The TSS shall also describe to what extent (if any) that may be configurable.
 							</h:p><h:p>
-							For IPS_SBD_EXT.1, for each field, the evaluator shall verify that the TSS describes how the field is inspected and if logging is not applicable, any other mechanism such as counting that is deployed.
+							For FIP_SBD_EXT.1, for each field, the evaluator shall verify that the TSS describes how the field is inspected and if logging is not applicable, any other mechanism such as counting that is deployed.
 							</h:p>
 						</TSS>
 						<Guidance>
@@ -892,7 +892,7 @@ enforce its policies on network traffic of monitored networks.</description>
 				</title>            
 				<aactivity>      <!-- at minimum, only the last f-element in the f-component needs to have this -->
    					<TSS>
-					The evaluator shall verify that the TSS describes how the IPS data analysis and reactions can be configured.This may be performed in conjunction with the evaluation of IPS_ABD_EXT.1, IPS_IPB_EXT.1, and IPS_SBD_EXT.1.</TSS>
+					The evaluator shall verify that the TSS describes how the IPS data analysis and reactions can be configured.This may be performed in conjunction with the evaluation of FIP_ABD_EXT.1, FIP_IPB_EXT.1, and FIP_SBD_EXT.1.</TSS>
 					<Guidance>
 					The evaluator shall verify that the operational guidance describes the instructions for each function
 					defined in the SFR, describes how to configure the IPS data analysis and reactions, including how to set
@@ -910,7 +910,7 @@ enforce its policies on network traffic of monitored networks.</description>
 							<h:p>
 							Additionally, for each other claimed management function, the evaluator shall follow the steps listed in the operational guidance for configuration of that function's behavior and verify that configuration has the intended effect (e.g., for modifying the duration of traffic blocking actions, the evaluator could configure this with two separate time values and verify that traffic was blocked for the configured duration in both cases).  
 							</h:p><h:p>
-								Testing for this SFR will generally be performed in conjunction with the test activities for IPS_ABD_EXT.1 and IPS_SBD_EXT.1, as testing various aspects of IPS functionality will necessarily involve this functionality to be configured such that the TSF is in a known state when being tested.
+								Testing for this SFR will generally be performed in conjunction with the test activities for FIP_ABD_EXT.1 and FIP_SBD_EXT.1, as testing various aspects of IPS functionality will necessarily involve this functionality to be configured such that the TSF is in a known state when being tested.
 							</h:p>	
 					</Tests>
             	</aactivity>
@@ -952,11 +952,11 @@ enforce its policies on network traffic of monitored networks.</description>
 					<h:ul>
 						<h:li>Inspected traffic that matches an anomaly-based IPS policy.</h:li>
 					</h:ul></audit>
-				<dependencies>IPS_NTA_EXT.1 Network Traffic Analysis<h:br/>
-					IPS_SBD_EXT.1 Signature-Based IPS Functionality
+				<dependencies>FIP_NTA_EXT.1 Network Traffic Analysis<h:br/>
+					FIP_SBD_EXT.1 Signature-Based IPS Functionality
 				</dependencies>
 				
-				<f-element id="ips-abd-ext-1e1">
+				<f-element id="fip-abd-ext-1e1">
 				<title>
 				The TSF shall support the definition of <selectables>
 					<selectable>baselines (‘expected and approved’)</selectable>
@@ -970,15 +970,15 @@ enforce its policies on network traffic of monitored networks.</description>
 					and the following network protocol fields:
 					<h:ul>
 						<h:li><selectables>
-						<selectable> all packet header and data elements defined in IPS_SBD_EXT.1</selectable>
-						<selectable><assignable>subset list of packet header and data elements from IPS_SBD_EXT.1</assignable></selectable>
+						<selectable> all packet header and data elements defined in FIP_SBD_EXT.1</selectable>
+						<selectable><assignable>subset list of packet header and data elements from FIP_SBD_EXT.1</assignable></selectable>
 						</selectables>.</h:li>
 					</h:ul>
 				</title>  
 					<note role="application">
 					Baselines are the definition of known-good traffic (to be allowed per
-					IPS_ABD_EXT.1.3) whilst anomaly traffic is definition of (‘offending’) traffic that is
-					to be handled per other actions defined in IPS_ABD_EXT.1.3. Frequency can be
+					FIP_ABD_EXT.1.3) whilst anomaly traffic is definition of (‘offending’) traffic that is
+					to be handled per other actions defined in FIP_ABD_EXT.1.3. Frequency can be
 					defined as a number of occurrences of an event (such as detection of packets
 					matching a signature) over a defined period of time, such as the number of new
 					FTP sessions established during one hour. Thresholds can be defined as an amount
@@ -988,7 +988,7 @@ enforce its policies on network traffic of monitored networks.</description>
 	          
 	
 				</f-element>
-				<f-element id="ips-adb-ext-1e2">
+				<f-element id="fip-adb-ext-1e2">
 				<title>
 				The TSF shall support the definition of anomaly activity through <selectables><selectable>manual configuration by administrators</selectable><selectable>automated configuration</selectable></selectables>.
 				</title>
@@ -1002,7 +1002,7 @@ enforce its policies on network traffic of monitored networks.</description>
 				</note>
 				
 				</f-element>
-				<f-element id="ips-adb-ext-1e3">
+				<f-element id="fip-adb-ext-1e3">
 				<title>
 				The TSF shall allow the following operations to be associated with anomaly-based IPS policies:
 				<h:ul>
@@ -1035,13 +1035,13 @@ enforce its policies on network traffic of monitored networks.</description>
 					<aactivity>      <!-- at minimum, only the last f-element in the f-component needs to have this -->
 						<TSS>
 							<h:p>
-							The evaluator shall verify that the TSS describes the composition, construction, and application of baselines or anomaly-based attributes specified in IPS_ABD_EXT.1.1.
+							The evaluator shall verify that the TSS describes the composition, construction, and application of baselines or anomaly-based attributes specified in FIP_ABD_EXT.1.1.
 							</h:p><h:p>
-							If ‘frequency’ is selected in IPS_ABD_EXT.1.1, the TSS shall include an explanation of how frequencies can be defined on the TOE.
+							If ‘frequency’ is selected in FIP_ABD_EXT.1.1, the TSS shall include an explanation of how frequencies can be defined on the TOE.
 							</h:p><h:p>
-							If ‘thresholds’ is selected in IPS_ABD_EXT.1.1, the TSS shall include an explanation of how the thresholds can be defined on the TOE.
+							If ‘thresholds’ is selected in FIP_ABD_EXT.1.1, the TSS shall include an explanation of how the thresholds can be defined on the TOE.
 							</h:p><h:p>
-							The evaluator shall verify that each baseline or anomaly-based rule can be associated with a reaction specified in IPS_ABD_EXT.1.3.
+							The evaluator shall verify that each baseline or anomaly-based rule can be associated with a reaction specified in FIP_ABD_EXT.1.3.
 							</h:p><h:p>
 							The evaluator shall verify that the TSS identifies all interface types capable of applying baseline or
 							anomaly-based rules and explains how they are associated with distinct network interfaces. Where
@@ -1053,16 +1053,16 @@ enforce its policies on network traffic of monitored networks.</description>
 						<Guidance>
 							<h:p>
 							The evaluator shall verify that the operational guidance provides instructions to manually create baselines
-							or anomaly-based rules according to the selections made in IPS_ABD_EXT.1.1. Note that dynamic
+							or anomaly-based rules according to the selections made in FIP_ABD_EXT.1.1. Note that dynamic
 							“profiling” of a network to establish a baseline is outside the scope of the PP-Module
 							</h:p><h:p>
-							The evaluator shall verify that the operational guidance provides instructions to associate reactions specified in IPS_ABD_EXT.1.3 with baselines or anomaly-based rules.
+							The evaluator shall verify that the operational guidance provides instructions to associate reactions specified in FIP_ABD_EXT.1.3 with baselines or anomaly-based rules.
 							</h:p><h:p>
 								The evaluator shall verify that the operational guidance provides instructions to associate the different policies with distinct network interfaces.</h:p>
 						</Guidance>
 						<Tests>
 							The evaluator shall perform the following tests:<testlist>
-								<test>The evaluator shall use the instructions in the operational guidance to configure baselines or anomaly-based rules for each attribute specified in IPS_ABD_EXT.1.1. The evaluator shall send traffic that does not match the baseline or matches the anomaly-based rule and verify the TOE applies the configured reaction. This shall be performed for each attribute in IPS_ABD_EXT.1.1.</test>
+								<test>The evaluator shall use the instructions in the operational guidance to configure baselines or anomaly-based rules for each attribute specified in FIP_ABD_EXT.1.1. The evaluator shall send traffic that does not match the baseline or matches the anomaly-based rule and verify the TOE applies the configured reaction. This shall be performed for each attribute in FIP_ABD_EXT.1.1.</test>
 								<test>The evaluator shall repeat the test above to ensure that baselines or anomaly-based rules can be defined for each distinct network interface type supported by the TOE.</test>
 							</testlist>
 						</Tests>
@@ -1078,12 +1078,12 @@ enforce its policies on network traffic of monitored networks.</description>
 				</audit-event>
 				</f-component>
 							
-							<ext-comp-def title="IP Blocking" fam-id="IPS_IPB_EXT">
+							<ext-comp-def title="IP Blocking" fam-id="FIP_IPB_EXT">
 								<fam-behavior>This family defines requirements for handling of inspected network traffic based on IP address.
 								</fam-behavior>
 							</ext-comp-def>
 							
-				<f-component name="IP Blocking" cc-id="ips_ipb_ext.1" id="ips-ipb-ext-1">
+				<f-component name="IP Blocking" cc-id="fip_ipb_ext.1" id="fip-ipb-ext-1">
 					
 					<comp-lev> requires the TSF to enforce IPS policies that are based on IP address.
 					</comp-lev>
@@ -1098,11 +1098,11 @@ enforce its policies on network traffic of monitored networks.</description>
 							<h:li>Inspected traffic matches a list of known-good or known-bad addresses applied to an IPS policy.</h:li>
 						</h:ul>
 					</audit>
-					<dependencies>IPS_NTA_EXT.1 Network Traffic Analysis<h:br/>
+					<dependencies>FIP_NTA_EXT.1 Network Traffic Analysis<h:br/>
 						FMT_SMR.1 Security Roles
 					</dependencies>
 					
-				<f-element id="ips-ipb-ext-1e1">
+				<f-element id="fip-ipb-ext-1e1">
 					<title>
 					The TSF shall support configuration and implementation of known-good and known-bad lists of <selectables>
 						<selectable>source</selectable>
@@ -1122,7 +1122,7 @@ enforce its policies on network traffic of monitored networks.</description>
 					</note>
 				
 				</f-element>
-				<f-element id="ips-ipb-ext-1e2">
+				<f-element id="fip-ipb-ext-1e2">
 					<title>
 						The TSF shall allow [<h:i>security administrators</h:i>] to configure the following IPS policy elements: <selectables> 
 						<selectable>known-good list rules</selectable> 
@@ -1176,7 +1176,7 @@ enforce its policies on network traffic of monitored networks.</description>
 									evaluator shall attempt to send traffic that would otherwise be denied by the TOE and observe the TOE
 									automatically allowing traffic.</test>
 								<test>The evaluator shall add conflicting IP addresses to each list and ensure that the TOE handles
-									conflicting traffic in a manner consistent with the precedence in IPS_NTA_EXT.1.1.
+									conflicting traffic in a manner consistent with the precedence in FIP_NTA_EXT.1.1.
 								</test>
 							</testlist>
 						</Tests>
@@ -1190,12 +1190,12 @@ enforce its policies on network traffic of monitored networks.</description>
 				</audit-event>
 				</f-component>
 							
-							<ext-comp-def title="Network Traffic Analysis" fam-id="IPS_NTA_EXT">
+							<ext-comp-def title="Network Traffic Analysis" fam-id="FIP_NTA_EXT">
 								<fam-behavior>This family defines the network traffic protocols for which the TOE is capable of analyzing and detecting violations. 
 								</fam-behavior>
 							</ext-comp-def>
 							
-				<f-component name="Network Traffic Analysis" cc-id="ips_nta_ext.1" id="ips-nta-ext-1">
+				<f-component name="Network Traffic Analysis" cc-id="fip_nta_ext.1" id="fip-nta-ext-1">
 					
 					<comp-lev> requires the TSF to be able to inspect traffic for certain network
 						protocols and in certain architectural deployments.</comp-lev>
@@ -1215,7 +1215,7 @@ enforce its policies on network traffic of monitored networks.</description>
 					<dependencies>No dependencies.
 					</dependencies>
 					
-				<f-element id="ips-nta-ext-1e1">
+				<f-element id="fip-nta-ext-1e1">
 					<title>
 					The TSF shall perform analysis of IP-based network traffic forwarded to the
 					TOE’s sensor interfaces, and detect violations of administratively-defined IPS
@@ -1255,7 +1255,7 @@ enforce its policies on network traffic of monitored networks.</description>
 						</Tests>
 					</aactivity>
 				</f-element>
-				<f-element id="ips-nta-ext-1e2">
+				<f-element id="fip-nta-ext-1e2">
 					<title>
 					The TSF shall process (be capable of inspecting) the following network traffic protocols:	
 					<h:ul>
@@ -1302,7 +1302,7 @@ enforce its policies on network traffic of monitored networks.</description>
 						</Tests>
 					</aactivity>
 				</f-element>
-				<f-element id="ips-nta-ext-1e3">
+				<f-element id="fip-nta-ext-1e3">
 					<title>The TSF shall allow the signatures to be assigned to sensor interfaces configured for promiscuous mode and to sensor interfaces configured for inline mode, and to
 					support designation of one or more interfaces as being used as a management interface for communication between the TOE and external entities without simultaneously
 					being a sensor interface, as indicated by the following interface types:
@@ -1340,7 +1340,7 @@ enforce its policies on network traffic of monitored networks.</description>
 					interfaces. Session-reset functionality is not mandatory functionality for the TOE,
 					but is a selectable option within the SFR.
 					</h:p>
-					<h:p>As mentioned in the application note for IPS_NTA_EXT.1.1, it’s not necessary for
+					<h:p>As mentioned in the application note for FIP_NTA_EXT.1.1, it’s not necessary for
 					the TOE to have multiple single-purpose interfaces (e.g. “sensor” interface,
 					“management” interface, etc.), though it is expected that the TOE be able to
 					enable specific ports to serve one or more specific interface functions.
@@ -1401,12 +1401,12 @@ enforce its policies on network traffic of monitored networks.</description>
 				</audit-event>
 				</f-component>
 							
-							<ext-comp-def title="Signature-Based IPS Functionality" fam-id="IPS_SBD_EXT">
+							<ext-comp-def title="Signature-Based IPS Functionality" fam-id="FIP_SBD_EXT">
 								<fam-behavior>This family defines the network traffic protocols for which the TOE is capable of analyzing and detecting violations. 
 								</fam-behavior>
 							</ext-comp-def>
 							
-				<f-component name="Signature-Based IPS Functionality" cc-id="ips_sbd_ext.1" id="ips-sbd-ext-1">
+				<f-component name="Signature-Based IPS Functionality" cc-id="fip_sbd_ext.1" id="fip-sbd-ext-1">
 					
 					<comp-lev> requires the TSF to detect network traffic with certain
 						packet characteristics and take some action when this traffic is detected.</comp-lev>
@@ -1424,10 +1424,10 @@ enforce its policies on network traffic of monitored networks.</description>
 							<h:li>Inspected traffic matches a signature-based IPS rule with logging enabled.</h:li>
 						</h:ul>
 					</audit>
-					<dependencies>IPS_NTA_EXT.1 Network Traffic Analysis
+					<dependencies>FIP_NTA_EXT.1 Network Traffic Analysis
 					</dependencies>
 					
-				<f-element id="ips-sbd-ext-1e1">
+				<f-element id="fip-sbd-ext-1e1">
 				<title>
 					The TSF shall support inspection of packet header contents and be able to inspect at least the following header fields: 
 					<h:ul>
@@ -1456,7 +1456,7 @@ enforce its policies on network traffic of monitored networks.</description>
 						<h:p>
 					The evaluator shall verify that the TSS describes what is comprised within a signature rule.
 						</h:p><h:p>
-					The evaluator shall verify that each signature can be associated with a reaction specified in IPS_SBD_EXT.1.5.
+					The evaluator shall verify that each signature can be associated with a reaction specified in FIP_SBD_EXT.1.5.
 						</h:p><h:p>
 					The evaluator shall verify that the TSS identifies all interface types that are capable of applying signatures
 					and explains how rules are associated with distinct network interfaces. Where interfaces can be grouped
@@ -1474,7 +1474,7 @@ enforce its policies on network traffic of monitored networks.</description>
 						<h:li>TCP: Source port; destination port; sequence number; acknowledgment number; offset; reserved; TCP flags; window; checksum; urgent pointer; and TCP options.</h:li>
 						<h:li>UDP: source port; destination port; length; and UDP checksum.</h:li>
 					</h:ul>
-					The evaluator shall verify that the operational guidance provides instructions with how to select and/or configure reactions specified in IPS_SBD_EXT.1.5 in the signature rules.
+					The evaluator shall verify that the operational guidance provides instructions with how to select and/or configure reactions specified in FIP_SBD_EXT.1.5 in the signature rules.
 
 					</Guidance>
 					<Tests>
@@ -1482,7 +1482,7 @@ enforce its policies on network traffic of monitored networks.</description>
 					<testlist>
 						<test>The evaluator shall use the instructions in the operational guidance to test that packet header
 							signatures can be created and/or configured with the selected and/or configured reactions specified in
-							IPS_SBD_EXT.1.5 for each of the attributes listed below. Each attribute shall be individually assigned to its
+							FIP_SBD_EXT.1.5 for each of the attributes listed below. Each attribute shall be individually assigned to its
 							own unique signature:
 							<h:ul>
 								<h:li>IPv4: version; header length; packet length; ID; IP flags; fragment offset; time to live (TTL); protocol; header checksum; source address; destination address; IP options; and, if selected, type of service (ToS).</h:li>
@@ -1499,7 +1499,7 @@ enforce its policies on network traffic of monitored networks.</description>
 					</Tests>
 				</aactivity>
 				</f-element>
-				<f-element id="ips-sbd-ext-1e2">
+				<f-element id="fip-sbd-ext-1e2">
 				<title>
 				The TSF shall support inspection of packet payload data and be able to inspect at least the following data elements to perform string-based pattern-matching: 
 				<h:ul>
@@ -1526,14 +1526,14 @@ enforce its policies on network traffic of monitored networks.</description>
 					signature.
 					</h:p><h:p>
 					The evaluator shall verify that each packet payload string-based detection signature can be associated
-					with a reaction specified in IPS_SBD_EXT.1.5.
+					with a reaction specified in FIP_SBD_EXT.1.5.
 					</h:p>
 					</TSS>
 					<Guidance>
 						<h:p>
-						The evaluator shall verify that the operational guidance provides instructions with how to configure rules using the packet payload string-based detection fields defined in IPS_SBD_EXT.1.2.
+						The evaluator shall verify that the operational guidance provides instructions with how to configure rules using the packet payload string-based detection fields defined in FIP_SBD_EXT.1.2.
 						</h:p><h:p>
-					The evaluator shall verify that the operational guidance provides instructions with how to configure reactions specified in IPS_SBD_EXT.1.5 for each string-based detection signature.
+					The evaluator shall verify that the operational guidance provides instructions with how to configure reactions specified in FIP_SBD_EXT.1.5 for each string-based detection signature.
 						</h:p><h:p>
 					The evaluator shall verify that the operational guidance provides instructions with how rules are associated with distinct network interfaces that are capable of being associated with signatures.
 						</h:p>
@@ -1541,10 +1541,10 @@ enforce its policies on network traffic of monitored networks.</description>
 					<Tests>
 					The evaluator shall perform the following tests:<testlist>
 					<test id="sbd-payload-reaction">The evaluator shall use the instructions in the operational guidance to test that packet payload
-					string-based detection rules can be assigned to the reactions specified in IPS_SBD_EXT.1.5 using the
-					attributes specified in IPS_SBD_EXT.1.2. However it is not required (nor is it feasible) to test all possible
+					string-based detection rules can be assigned to the reactions specified in FIP_SBD_EXT.1.5 using the
+					attributes specified in FIP_SBD_EXT.1.2. However it is not required (nor is it feasible) to test all possible
 					strings of protocol data, the evaluator shall ensure that a selection of strings in the requirement is selected
-					to be tested. At a minimum at least one string using each of the following attributes from IPS_SBD_EXT.1.2
+					to be tested. At a minimum at least one string using each of the following attributes from FIP_SBD_EXT.1.2
 					should be tested for each protocol. The evaluator shall generate packets that match the string in the rule
 					and observe the corresponding reaction is as configured.
 					<h:ul>
@@ -1575,9 +1575,9 @@ enforce its policies on network traffic of monitored networks.</description>
 					</Tests>    
                  </aactivity>
 				</f-element>
-				<f-element id="ips-sbd-ext-1e3">
+				<f-element id="fip-sbd-ext-1e3">
                 <title>
-				The TSF shall be able to detect the following header-based signatures (using fields identified in IPS_SBD_EXT.1.1) at IPS sensor interfaces: 
+				The TSF shall be able to detect the following header-based signatures (using fields identified in FIP_SBD_EXT.1.1) at IPS sensor interfaces: 
 				<h:ol type='a'>
 					<h:li>IP Attacks
 						<h:ol type='i'>
@@ -1608,18 +1608,18 @@ enforce its policies on network traffic of monitored networks.</description>
 				</h:ol>.
                 </title>
                 <aactivity level="element">
-					<TSS>The evaluator shall verify that the TSS describes how the attacks defined in IPS_SBD_EXT.1.3 are processed by the TOE and what reaction is triggered when these attacks are identified.</TSS>
-					<Guidance>The evaluator shall verify that the operational guidance provides instructions with configuring rules to identify the attacks defined in IPS_SBD_EXT.1.3 as well as the reactions to these attacks as specified in IPS_SBD_EXT.1.5.</Guidance>
-					<Tests>The evaluator shall create and/or configure rules for each attack signature in IPS_SBD_EXT.1.3. For each
+					<TSS>The evaluator shall verify that the TSS describes how the attacks defined in FIP_SBD_EXT.1.3 are processed by the TOE and what reaction is triggered when these attacks are identified.</TSS>
+					<Guidance>The evaluator shall verify that the operational guidance provides instructions with configuring rules to identify the attacks defined in FIP_SBD_EXT.1.3 as well as the reactions to these attacks as specified in FIP_SBD_EXT.1.5.</Guidance>
+					<Tests>The evaluator shall create and/or configure rules for each attack signature in FIP_SBD_EXT.1.3. For each
 					attack, the TOE should apply its corresponding signature and enable it to each distinct network interface
 					type capable of applying the signatures. The evaluator shall use packet captures to ensure that the attack
-					traffic is detected by the TOE and a reaction specified in IPS_SBD_EXT.1.5 is triggered and stops the attack.
+					traffic is detected by the TOE and a reaction specified in FIP_SBD_EXT.1.5 is triggered and stops the attack.
 					Each attack should be performed one after another so as to ensure that its corresponding signature
 					successfully identified and appropriately reacted to a particular attack.
 					</Tests>
                  </aactivity>
                 </f-element>
-				<f-element id="ips-sbd-ext-1e4">
+				<f-element id="fip-sbd-ext-1e4">
                 <title>The TSF shall be able to detect all the following traffic-pattern detection signatures, and to have these signatures applied to IPS sensor interfaces: 
 					<h:ol type='a'>
 						<h:li>Flooding a host (DoS attack)
@@ -1670,22 +1670,22 @@ enforce its policies on network traffic of monitored networks.</description>
 					
 				</note>
                 <aactivity level="element">
-					<TSS>The evaluator shall verify that the TSS describes how the attacks defined in IPS_SBD_EXT.1.4 are processed by the TOE and what reaction is triggered when these attacks are identified.
+					<TSS>The evaluator shall verify that the TSS describes how the attacks defined in FIP_SBD_EXT.1.4 are processed by the TOE and what reaction is triggered when these attacks are identified.
 
 					</TSS>
 					<Guidance>
-					The evaluator shall verify that the operational guidance provides instructions with configuring rules to identify the attacks defined in IPS_SBD_EXT.1.4 as well as the reactions to these attacks as specified in IPS_SBD_EXT.1.5.
+					The evaluator shall verify that the operational guidance provides instructions with configuring rules to identify the attacks defined in FIP_SBD_EXT.1.4 as well as the reactions to these attacks as specified in FIP_SBD_EXT.1.5.
 					</Guidance>
-					<Tests>The evaluator shall configure individual signatures for each attack in IPS_SBD_EXT.1.4. For each attack,
+					<Tests>The evaluator shall configure individual signatures for each attack in FIP_SBD_EXT.1.4. For each attack,
 					the TOE should apply its corresponding signature and enable it to each distinct network interface type
 					capable of applying signatures. The evaluator shall use packet captures to ensure that the attack traffic is
-					detected by the TOE and a reaction specified in IPS_SBD_EXT.1.5 is triggered and stops the attack. Each
+					detected by the TOE and a reaction specified in FIP_SBD_EXT.1.5 is triggered and stops the attack. Each
 					attack should be performed one after another so as to ensure that its corresponding signature successfully
 					identified and appropriately reacted to a particular attack.
 					</Tests>
                 </aactivity>
                 </f-element>
-				<f-element id="ips-sbd-ext-1e5">
+				<f-element id="fip-sbd-ext-1e5">
                 <title>
 				The TSF shall allow the following operations to be associated with signature-based IPS policies:
 				<h:ul>
@@ -1704,7 +1704,7 @@ enforce its policies on network traffic of monitored networks.</description>
 							<h:li>block/drop the traffic flow;</h:li>
 							<h:li>and <selectables linebreak='yes'>
 								<selectable>allow all traffic flow;</selectable>
-								<selectable>allow the traffic flow with following exceptions:<assignable>malicious traffic such as but not limited to IPS_EXT.1.3 and IPS_EXT.1.4 if always dropped</assignable>;</selectable> <selectable>modify and forward packets before they pass through the TOE</selectable></selectables>.</h:li>
+								<selectable>allow the traffic flow with following exceptions:<assignable>malicious traffic such as but not limited to FIP_EXT.1.3 and FIP_EXT.1.4 if always dropped</assignable>;</selectable> <selectable>modify and forward packets before they pass through the TOE</selectable></selectables>.</h:li>
 						</h:ul>
 					</h:li>
 				</h:ul>
@@ -1727,11 +1727,11 @@ enforce its policies on network traffic of monitored networks.</description>
 
                 <aactivity level="element">
 				<TSS>There are no TSS EAs for this element</TSS>
-				<Guidance>The guidance EAs for this element are performed in conjunction with IPS_SBD_EXT.1.1, IPS_SBD_EXT.1.3, and IPS_SBD_EXT.1.4.</Guidance>
-				<Tests>The test EAs for this element are performed in conjunction with those for IPS_SBD_EXT.1.1, IPS_SBD_EXT.1.2, IPS_SBD_EXT.1.3, and IPS_SBD_EXT.1.4.</Tests>
+				<Guidance>The guidance EAs for this element are performed in conjunction with FIP_SBD_EXT.1.1, FIP_SBD_EXT.1.3, and FIP_SBD_EXT.1.4.</Guidance>
+				<Tests>The test EAs for this element are performed in conjunction with those for FIP_SBD_EXT.1.1, FIP_SBD_EXT.1.2, FIP_SBD_EXT.1.3, and FIP_SBD_EXT.1.4.</Tests>
                  </aactivity>
                 </f-element>
-				<f-element id="ips-sbd-ext-1e6">
+				<f-element id="fip-sbd-ext-1e6">
                 <title>
 				The TSF shall support stream reassembly or equivalent to detect malicious payload even if it is split across multiple non-fragmented packets.
 
@@ -1846,7 +1846,7 @@ enforce its policies on network traffic of monitored networks.</description>
 	</section>
 	<section title="Intrusion Prevention (IPS)" id='ips'>
 		
-	<f-component name ="Traffic Normalization" cc-id='ips_sbd_ext.2' id='ips-sbd-ext-2'>
+	<f-component name ="Traffic Normalization" cc-id='fip_sbd_ext.2' id='fip-sbd-ext-2'>
 		
 		<comp-lev> requires the TSF to support the inspection of encapsulated or
 			fragmented traffic by normalizing it.
@@ -1865,17 +1865,17 @@ enforce its policies on network traffic of monitored networks.</description>
 				<h:li>Inspected traffic matches a signature-based IPS rule with logging enabled.</h:li>
 			</h:ul>
 		</audit>
-		<dependencies>IPS_NTA_EXT.1 Network Traffic Analysis
+		<dependencies>FIP_NTA_EXT.1 Network Traffic Analysis
 		</dependencies>
 		
-	<f-element id='ips-sbd-2e1'>
+	<f-element id='fip-sbd-2e1'>
 	<title>The TSF shall be able to inspect packets encapsulated through the following means: <selectables><selectable>GRE</selectable><selectable>IP-in-IP</selectable><selectable>IPv4-in-IPv6</selectable><selectable>MPLS</selectable><selectable> PPTP</selectable><selectable><assignable>other
 encapsulation methods</assignable></selectable></selectables>.
 	</title>
 	<aactivity level="element">
 		<TSS>The evaluator shall verify that the TSS describes how the TOE is able to inspect traffic inside the encapsulation protocols claimed in the requirement.</TSS>
 		<Guidance>The evaluator shall examine the operational guidance to determine that it contains instructions for inspecting tunneled packets through the encapsulation methods identified in the requirement.</Guidance>
-		<Tests>The evaluator shall set up the conditions necessary to execute testing from IPS_SBD_EXT.1 except that
+		<Tests>The evaluator shall set up the conditions necessary to execute testing from FIP_SBD_EXT.1 except that
 		the traffic to be inspected is encapsulated in one of the tunneling protocols that the TOE is capable of
 		inspecting. The evaluator shall transmit the encapsulated traffic and observe that the TSF is able to inspect
 		it and respond in the configured manner. The evaluator shall repeat this test for each type of encapsulated
@@ -1884,7 +1884,7 @@ encapsulation methods</assignable></selectable></selectables>.
 
 	</f-element>
 	
-	<f-element id='ips-sbd-ext-2e2'>
+	<f-element id='fip-sbd-ext-2e2'>
 	<title>The TSF shall be able to perform IP normalization to reassemble fragmented packets for inspection, and: <selectables linebreak='yes'>
 	<selectable>For data collected at promiscuous interfaces: generate an alert if the packet cannot be reassembled;</selectable>
 	<selectable>For data collected at inline interfaces: do not forward any packet fragments and generate an alert if the TSF cannot reassemble the entire packet</selectable>
@@ -1905,7 +1905,7 @@ encapsulation methods</assignable></selectable></selectables>.
 		
 	</f-element>
 	
-	<f-element id='ips-sbd-ext-2e3'>
+	<f-element id='fip-sbd-ext-2e3'>
 	<title>The TSF shall be able to perform TCP normalization for traffic flows through the TOE when the TOE is deployed in inline mode, and prohibit forwarding of: <selectables linebreak='yes'>
 		<selectable>duplicate packets;</selectable>
 		<selectable>changed packets;</selectable>
