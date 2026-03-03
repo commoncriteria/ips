@@ -635,7 +635,7 @@ function showTarget(id){
 </table><h2>Contents</h2><div class="toc" id="toc"><a href="#Introduction" style="text-indent:0px">1<span>Introduction</span></a><a href="#Overview" style="text-indent:10px">1.1<span>Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#Compliant_Targets_of_Evaluation" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOE_Boundary" style="text-indent:10px">1.4<span>TOE Boundary</span></a><a href="#Use_Cases" style="text-indent:10px">1.5<span>Use Cases</span></a><a href="#sec-features" style="text-indent:10px">1.6<span>Implementation-Based Features</span></a><a href="#feat-alerting" style="text-indent:20px">1.6.1<span>Support for Alerting</span></a><a href="#_sec_2" style="text-indent:10px">1.7<span>Test Environment for Evaluation Activities</span></a><a href="#ConformanceClaims" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#Security_Problem_Definition" style="text-indent:0px">3<span>Security Problem Definition</span></a><a href="#sec-threats" style="text-indent:10px">3.1<span>Threats</span></a><a href="#Assumptions" style="text-indent:10px">3.2<span>Assumptions</span></a><a href="#Organizational_Security_Policies" style="text-indent:10px">3.3<span>Organizational Security Policies</span></a><a href="#Security_Objectives" style="text-indent:0px">4<span>Security Objectives</span></a><a href="#Security_Objectives_for_the_Operational_Environment" style="text-indent:10px">4.1<span>Security Objectives for the Operational Environment</span></a><a href="#sec-sor" style="text-indent:10px">4.2<span>Security Objectives Rationale</span></a><a href="#Security_Requirements" style="text-indent:0px">5<span>Security Requirements</span></a><a href="#secreq-ND" style="text-indent:10px">5.1<span>Collaborative 
     Protection Profile for Network Devices
        Security Functional Requirements Direction
-    </span></a><a href="#modsfr-ND" style="text-indent:20px">5.1.1<span> Modified SFRs </span></a><a href="#man-sfrs" style="text-indent:10px">5.2<span>TOE Security Functional Requirements</span></a><a href="#ss-audit-table" style="text-indent:20px">5.2.1<span>Auditable Events for Mandatory SFRs</span></a><a href="#m-fau" style="text-indent:20px">5.2.2<span>Security Audit (FAU)</span></a><a href="#m-fmt" style="text-indent:20px">5.2.3<span>Security Management (FMT)</span></a><a href="#m-ips" style="text-indent:20px">5.2.4<span>Intrusion Prevention (IPS)</span></a><a href="#obj-req-map" style="text-indent:10px">5.3<span>TOE Security Functional Requirements Rationale</span></a><a href="#mod-conrat" style="text-indent:0px">6<span>Consistency Rationale</span></a><a href="#conrat-ND" style="text-indent:10px">6.1<span>Collaborative 
+    </span></a><a href="#modsfr-ND" style="text-indent:20px">5.1.1<span> Modified SFRs </span></a><a href="#man-sfrs" style="text-indent:10px">5.2<span>TOE Security Functional Requirements</span></a><a href="#ss-audit-table" style="text-indent:20px">5.2.1<span>Auditable Events for Mandatory SFRs</span></a><a href="#m-fau" style="text-indent:20px">5.2.2<span>Security Audit (FAU)</span></a><a href="#m-fip" style="text-indent:20px">5.2.3<span>Intrusion Prevention (FIP)</span></a><a href="#m-fmt" style="text-indent:20px">5.2.4<span>Security Management (FMT)</span></a><a href="#obj-req-map" style="text-indent:10px">5.3<span>TOE Security Functional Requirements Rationale</span></a><a href="#mod-conrat" style="text-indent:0px">6<span>Consistency Rationale</span></a><a href="#conrat-ND" style="text-indent:10px">6.1<span>Collaborative 
     Protection Profile for Network Devices</span></a><a href="#contoe-ND" style="text-indent:20px">6.1.1<span>
 	Consistency of TOE Type
       </span></a><a href="#consecprob-ND" style="text-indent:20px">6.1.2<span>
@@ -645,10 +645,10 @@ function showTarget(id){
 		</span></a><a href="#conreq-ND" style="text-indent:20px">6.1.4<span>
 	Consistency of Requirements
       </span></a><a href="#opt-sfrs" style="text-indent:0px">Appendix A - <span>Optional SFRs</span></a><a href="#opt-sfrs" style="text-indent:10px">A.1<span>Strictly Optional Requirements
-    </span></a><a href="#sec-opt-audit-table" style="text-indent:20px">A.1.1<span>Auditable Events for Optional SFRs</span></a><a href="#fau-ops" style="text-indent:20px">A.1.2<span>Security Audit(FAU)</span></a><a href="#fpt" style="text-indent:20px">A.1.3<span>Protection of the TSF (FPT)</span></a><a href="#ips" style="text-indent:20px">A.1.4<span>Intrusion Prevention (IPS)</span></a><a href="#obj-sfrs" style="text-indent:10px">A.2<span>Objective Requirements
+    </span></a><a href="#sec-opt-audit-table" style="text-indent:20px">A.1.1<span>Auditable Events for Optional SFRs</span></a><a href="#fau-ops" style="text-indent:20px">A.1.2<span>Security Audit(FAU)</span></a><a href="#fpt" style="text-indent:20px">A.1.3<span>Protection of the TSF (FPT)</span></a><a href="#fip" style="text-indent:20px">A.1.4<span>Intrusion Prevention (FIP)</span></a><a href="#obj-sfrs" style="text-indent:10px">A.2<span>Objective Requirements
     </span></a><a href="#_sec_14" style="text-indent:20px">A.2.1<span>Auditable Events for Objective SFRs</span></a><a href="#fau-obj" style="text-indent:20px">A.2.2<span>Security Audit (FAU)</span></a><a href="#impl-dep-sfrs" style="text-indent:10px">A.3<span>Implementation-dependent Requirements
     </span></a><a href="#_sec_16" style="text-indent:20px">A.3.1<span>Auditable Events for Implementation-Dependent SFRs</span></a><a href="#fru-imp_dep" style="text-indent:20px">A.3.2<span>Resource Utilization</span></a><a href="#sel-sfrs" style="text-indent:0px">Appendix B - <span>Selection-based Requirements
-    </span></a><a href="#ext-comp-defs" style="text-indent:0px">Appendix C - <span>Extended Component Definitions</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.1<span>Extended Components Table</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.2<span>Extended Component Definitions</span></a><a href="#ext-comp-IPS" style="text-indent:20px">C.2.1<span>Intrusion Prevention (IPS)</span></a><a href="#ext-comp-FIP_ABD_EXT" style="text-indent:30px">C.2.1.1<span>FIP_ABD_EXT Anomaly-Based IPS Functionality</span></a><a href="#ext-comp-FIP_IPB_EXT" style="text-indent:30px">C.2.1.2<span>FIP_IPB_EXT IP Blocking</span></a><a href="#ext-comp-FIP_NTA_EXT" style="text-indent:30px">C.2.1.3<span>FIP_NTA_EXT Network Traffic Analysis</span></a><a href="#ext-comp-FIP_SBD_EXT" style="text-indent:30px">C.2.1.4<span>FIP_SBD_EXT Signature-Based IPS Functionality</span></a><a href="#satisfiedreqs" style="text-indent:0px">Appendix D - <span>Inherently Satisfied Requirements</span></a><a href="#entropyappendix" style="text-indent:0px">Appendix E - <span>Entropy Documentation and Assessment</span></a><a href="#acronyms" style="text-indent:0px">Appendix F - <span>Acronyms</span></a><a href="#appendix-bibliography" style="text-indent:0px">Appendix G - <span>Bibliography</span></a></div><h1 class="indexable" data-level="1" id="Introduction">1 Introduction</h1>
+    </span></a><a href="#ext-comp-defs" style="text-indent:0px">Appendix C - <span>Extended Component Definitions</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.1<span>Extended Components Table</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.2<span>Extended Component Definitions</span></a><a href="#ext-comp-FIP" style="text-indent:20px">C.2.1<span>Intrusion Prevention (FIP)</span></a><a href="#ext-comp-FIP_ABD_EXT" style="text-indent:30px">C.2.1.1<span>FIP_ABD_EXT Anomaly-Based IPS Functionality</span></a><a href="#ext-comp-FIP_IPB_EXT" style="text-indent:30px">C.2.1.2<span>FIP_IPB_EXT IP Blocking</span></a><a href="#ext-comp-FIP_NTA_EXT" style="text-indent:30px">C.2.1.3<span>FIP_NTA_EXT Network Traffic Analysis</span></a><a href="#ext-comp-FIP_SBD_EXT" style="text-indent:30px">C.2.1.4<span>FIP_SBD_EXT Signature-Based IPS Functionality</span></a><a href="#satisfiedreqs" style="text-indent:0px">Appendix D - <span>Inherently Satisfied Requirements</span></a><a href="#entropyappendix" style="text-indent:0px">Appendix E - <span>Entropy Documentation and Assessment</span></a><a href="#acronyms" style="text-indent:0px">Appendix F - <span>Acronyms</span></a><a href="#appendix-bibliography" style="text-indent:0px">Appendix G - <span>Bibliography</span></a></div><h1 class="indexable" data-level="1" id="Introduction">1 Introduction</h1>
     
      
     <h2 class="indexable" data-level="2" id="Overview">1.1 Overview</h2>
@@ -1217,37 +1217,7 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 			
 			
 			
-			<h3 id="m-fmt" class="indexable" data-level="3">5.2.3 Security Management (FMT)</h3>
-			<div class="comp" id="FMT_SMF.1/IPS"><h4>FMT_SMF.1/IPS Specification of Management Functions (IPS)</h4>
-				<div class="element"><div class="reqid" id="FMT_SMF.1.1/IPS"><a href="#FMT_SMF.1.1/IPS" class="abbr">FMT_SMF.1.1/IPS</a></div><div class="reqdesc">
-				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be capable of performing the following management functions: [
-					<i><ul>
-					<li>Enable, disable signatures applied to sensor interfaces, and determine the behavior of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality</li>
-					<li>Modify these parameters that define the network traffic to be collected and analyzed:</li>
-					<ul>
-						<li>Source IP addresses (host address and network address)</li>
-						<li>Destination IP addresses (host address and network address)</li>
-						<li>Source port (<abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr>)</li>
-						<li>Destination port (<abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr>)</li>
-						<li>Protocol (IPv4 and IPv6)</li>
-						<li><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> type and code</li>
-					</ul>
-					<li>Update (import) signatures</li>
-					<li>Create custom signatures</li>
-					<li>Configure anomaly detection</li>
-					<li>Enable and disable actions to be taken when signature or anomaly matches are detected</li>
-					<li>Modify thresholds that trigger <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> reactions</li>
-					<li>Modify the duration of traffic blocking actions</li>
-					<li>Modify the known-good and known-bad lists (of IP addresses or address ranges)</li>
-					<li>Configure the known-good and known-bad lists to override signature-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies</li>
-					</ul></i>
-					].
-				</div></div>	
-
-				</div>
-			
-			
-						<h3 id="m-ips" class="indexable" data-level="3">5.2.4 Intrusion Prevention (IPS)</h3>
+						<h3 id="m-fip" class="indexable" data-level="3">5.2.3 Intrusion Prevention (FIP)</h3>
 							
 							
 							
@@ -1600,6 +1570,37 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 			
 
 
+
+		<h3 id="m-fmt" class="indexable" data-level="3">5.2.4 Security Management (FMT)</h3>
+			<div class="comp" id="FMT_SMF.1/IPS"><h4>FMT_SMF.1/IPS Specification of Management Functions (IPS)</h4>
+				<div class="element"><div class="reqid" id="FMT_SMF.1.1/IPS"><a href="#FMT_SMF.1.1/IPS" class="abbr">FMT_SMF.1.1/IPS</a></div><div class="reqdesc">
+						The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be capable of performing the following management functions: [
+						<i><ul>
+							<li>Enable, disable signatures applied to sensor interfaces, and determine the behavior of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality</li>
+							<li>Modify these parameters that define the network traffic to be collected and analyzed:</li>
+							<ul>
+								<li>Source IP addresses (host address and network address)</li>
+								<li>Destination IP addresses (host address and network address)</li>
+								<li>Source port (<abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr>)</li>
+								<li>Destination port (<abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr>)</li>
+								<li>Protocol (IPv4 and IPv6)</li>
+								<li><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> type and code</li>
+							</ul>
+							<li>Update (import) signatures</li>
+							<li>Create custom signatures</li>
+							<li>Configure anomaly detection</li>
+							<li>Enable and disable actions to be taken when signature or anomaly matches are detected</li>
+							<li>Modify thresholds that trigger <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> reactions</li>
+							<li>Modify the duration of traffic blocking actions</li>
+							<li>Modify the known-good and known-bad lists (of IP addresses or address ranges)</li>
+							<li>Configure the known-good and known-bad lists to override signature-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies</li>
+						</ul></i>
+						].
+					</div></div>	
+				
+			</div>
+		
+
 	
 	<h2 id="obj-req-map" class="indexable" data-level="2">5.3 TOE Security Functional Requirements Rationale</h2><p>The following rationale provides justification for each <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, 
     showing that the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> are suitable to address the specified threats:<br/><table><caption><span class="ctr" data-myid="t-obj_map" data-counter-type="ct-Table" id="t-obj_map">Table <span class="counter">3</span></span>: <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> Rationale</caption><tr><th>Threat</th><th>Addressed by</th><th>Rationale</th></tr><tr class="major-row"><td rowspan="3"><a href="#T.NETWORK_ACCESS">T.NETWORK_​ACCESS</a></td><td><a href="#FIP_IPB_EXT.1">FIP_IPB_EXT.1</a></td><td>This requirement mitigates the threat of network access by providing a mechanism to restrict network traffic that originates from a particular source.</td></tr>
@@ -1710,13 +1711,13 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 	      NDcPP is the base.
 	    </td></tr><tr><th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a></td><td>The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> iterates an <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> to define additional
     		audit events specific to <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality that the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> part of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must
-    		generate.</td></tr><tr><td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td>The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> iterates an <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> to define additional
-    		management functions specific to the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality that the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> part of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must generate. Authorizations to perform these functions are based
-    		on FMT_SMR.2 defined by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.</td></tr><tr><td><a href="#FIP_ABD_EXT.1">FIP_ABD_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> applies to <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality, which is beyond the original scope of
+    		generate.</td></tr><tr><td><a href="#FIP_ABD_EXT.1">FIP_ABD_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> applies to <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality, which is beyond the original scope of
     		the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr></td></tr><tr><td><a href="#FIP_IPB_EXT.1">FIP_IPB_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> applies to <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality, which is beyond the original scope of
     		the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr></td></tr><tr><td><a href="#FIP_NTA_EXT.1">FIP_NTA_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> applies to <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality, which is beyond the original scope of
     		the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr></td></tr><tr><td><a href="#FIP_SBD_EXT.1">FIP_SBD_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> applies to <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality, which is beyond the original scope of
-    		the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr></td></tr></tr><tr><th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_STG.2/IPS">FAU_STG.2/IPS</a></td><td>The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> iterates an <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> to define an optional
+    		the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr></td></tr><tr><td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td>The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> iterates an <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> to define additional
+    		management functions specific to the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality that the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> part of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must generate. Authorizations to perform these functions are based
+    		on FMT_SMR.2 defined by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.</td></tr></tr><tr><th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_STG.2/IPS">FAU_STG.2/IPS</a></td><td>The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> iterates an <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> to define an optional
     		capability for the protection of the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data generated by <a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a>.</td></tr><tr><td><a href="#FAU_STG.5/IPS">FAU_STG.5/IPS</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> applies to <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> audit data, which is beyond the original scope of the
     		<abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.</td></tr><tr><td><a href="#FPT_FLS.1/IPS">FPT_FLS.1/IPS</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> applies to secure failure for inline interfaces, which is a type of
     		logical interface that was introduced in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> and therefore
@@ -1777,7 +1778,7 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 	
 	</div>
 	
-	<h3 id="ips" class="indexable" data-level="3">A.1.4 Intrusion Prevention (IPS)</h3>
+	<h3 id="fip" class="indexable" data-level="3">A.1.4 Intrusion Prevention (FIP)</h3>
 		
 	<div class="comp" id="FIP_SBD_EXT.2"><h4>FIP_SBD_EXT.2 Traffic Normalization</h4>
 		
@@ -1950,7 +1951,7 @@ supporting inspection of network traffic</i>] that [<i>subjects</i>] can use [<i
 
 	All extended components specified in the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> are listed in this table:
 
-<table class="sort_kids_"><caption data-sortkey="#0"><b><span class="ctr" data-myid="" data-counter-type="ct-Table" id="">Table <span class="counter">10</span></span>: Extended Component Definitions</b></caption><tr data-sortkey="#1"><th>Functional Class</th><th>Functional Components</th></tr><tr data-sortkey="Intrusion Prevention (IPS)"><td>Intrusion Prevention (<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr>)</td><td>FIP_ABD_EXT Anomaly-Based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> Functionality<br/>FIP_IPB_EXT IP Blocking<br/>FIP_NTA_EXT Network Traffic Analysis<br/>FIP_SBD_EXT Signature-Based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> Functionality<br/></td></tr></table><h2 id="ext-comp-defs-bg" class="indexable" data-level="2">C.2 Extended Component Definitions</h2><span class="sort_kids_"><span data-sortkey="Intrusion Prevention (IPS)"><h3 id="ext-comp-IPS" class="indexable" data-level="3">C.2.1 Intrusion Prevention (IPS)</h3>
+<table class="sort_kids_"><caption data-sortkey="#0"><b><span class="ctr" data-myid="" data-counter-type="ct-Table" id="">Table <span class="counter">10</span></span>: Extended Component Definitions</b></caption><tr data-sortkey="#1"><th>Functional Class</th><th>Functional Components</th></tr><tr data-sortkey="Intrusion Prevention (FIP)"><td>Intrusion Prevention (FIP)</td><td>FIP_ABD_EXT Anomaly-Based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> Functionality<br/>FIP_IPB_EXT IP Blocking<br/>FIP_NTA_EXT Network Traffic Analysis<br/>FIP_SBD_EXT Signature-Based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> Functionality<br/></td></tr></table><h2 id="ext-comp-defs-bg" class="indexable" data-level="2">C.2 Extended Component Definitions</h2><span class="sort_kids_"><span data-sortkey="Intrusion Prevention (FIP)"><h3 id="ext-comp-FIP" class="indexable" data-level="3">C.2.1 Intrusion Prevention (FIP)</h3>
 								Intrusion prevention involves the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s ability to collect network packets, examine their contents for
 								information that suggests malicious activity, and to perform some action in response such as terminating
 								the connection.

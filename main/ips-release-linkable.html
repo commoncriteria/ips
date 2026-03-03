@@ -633,7 +633,7 @@ function showTarget(id){
 </table><h2>Contents</h2><div class="toc" id="toc"><a href="#Introduction" style="text-indent:0px">1<span>Introduction</span></a><a href="#Overview" style="text-indent:10px">1.1<span>Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#Compliant_Targets_of_Evaluation" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOE_Boundary" style="text-indent:10px">1.4<span>TOE Boundary</span></a><a href="#Use_Cases" style="text-indent:10px">1.5<span>Use Cases</span></a><a href="#sec-features" style="text-indent:10px">1.6<span>Implementation-Based Features</span></a><a href="#feat-alerting" style="text-indent:20px">1.6.1<span>Support for Alerting</span></a><a href="#_sec_2" style="text-indent:10px">1.7<span>Test Environment for Evaluation Activities</span></a><a href="#ConformanceClaims" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#Security_Problem_Definition" style="text-indent:0px">3<span>Security Problem Definition</span></a><a href="#sec-threats" style="text-indent:10px">3.1<span>Threats</span></a><a href="#Assumptions" style="text-indent:10px">3.2<span>Assumptions</span></a><a href="#Organizational_Security_Policies" style="text-indent:10px">3.3<span>Organizational Security Policies</span></a><a href="#Security_Objectives" style="text-indent:0px">4<span>Security Objectives</span></a><a href="#Security_Objectives_for_the_Operational_Environment" style="text-indent:10px">4.1<span>Security Objectives for the Operational Environment</span></a><a href="#sec-sor" style="text-indent:10px">4.2<span>Security Objectives Rationale</span></a><a href="#Security_Requirements" style="text-indent:0px">5<span>Security Requirements</span></a><a href="#secreq-ND" style="text-indent:10px">5.1<span>Collaborative 
     Protection Profile for Network Devices
        Security Functional Requirements Direction
-    </span></a><a href="#modsfr-ND" style="text-indent:20px">5.1.1<span> Modified SFRs </span></a><a href="#man-sfrs" style="text-indent:10px">5.2<span>TOE Security Functional Requirements</span></a><a href="#ss-audit-table" style="text-indent:20px">5.2.1<span>Auditable Events for Mandatory SFRs</span></a><a href="#m-fau" style="text-indent:20px">5.2.2<span>Security Audit (FAU)</span></a><a href="#m-fmt" style="text-indent:20px">5.2.3<span>Security Management (FMT)</span></a><a href="#m-ips" style="text-indent:20px">5.2.4<span>Intrusion Prevention (IPS)</span></a><a href="#obj-req-map" style="text-indent:10px">5.3<span>TOE Security Functional Requirements Rationale</span></a><a href="#mod-conrat" style="text-indent:0px">6<span>Consistency Rationale</span></a><a href="#conrat-ND" style="text-indent:10px">6.1<span>Collaborative 
+    </span></a><a href="#modsfr-ND" style="text-indent:20px">5.1.1<span> Modified SFRs </span></a><a href="#man-sfrs" style="text-indent:10px">5.2<span>TOE Security Functional Requirements</span></a><a href="#ss-audit-table" style="text-indent:20px">5.2.1<span>Auditable Events for Mandatory SFRs</span></a><a href="#m-fau" style="text-indent:20px">5.2.2<span>Security Audit (FAU)</span></a><a href="#m-fip" style="text-indent:20px">5.2.3<span>Intrusion Prevention (FIP)</span></a><a href="#m-fmt" style="text-indent:20px">5.2.4<span>Security Management (FMT)</span></a><a href="#obj-req-map" style="text-indent:10px">5.3<span>TOE Security Functional Requirements Rationale</span></a><a href="#mod-conrat" style="text-indent:0px">6<span>Consistency Rationale</span></a><a href="#conrat-ND" style="text-indent:10px">6.1<span>Collaborative 
     Protection Profile for Network Devices</span></a><a href="#contoe-ND" style="text-indent:20px">6.1.1<span>
 	Consistency of TOE Type
       </span></a><a href="#consecprob-ND" style="text-indent:20px">6.1.2<span>
@@ -643,10 +643,10 @@ function showTarget(id){
 		</span></a><a href="#conreq-ND" style="text-indent:20px">6.1.4<span>
 	Consistency of Requirements
       </span></a><a href="#opt-sfrs" style="text-indent:0px">Appendix A - <span>Optional SFRs</span></a><a href="#opt-sfrs" style="text-indent:10px">A.1<span>Strictly Optional Requirements
-    </span></a><a href="#sec-opt-audit-table" style="text-indent:20px">A.1.1<span>Auditable Events for Optional SFRs</span></a><a href="#fau-ops" style="text-indent:20px">A.1.2<span>Security Audit(FAU)</span></a><a href="#fpt" style="text-indent:20px">A.1.3<span>Protection of the TSF (FPT)</span></a><a href="#ips" style="text-indent:20px">A.1.4<span>Intrusion Prevention (IPS)</span></a><a href="#obj-sfrs" style="text-indent:10px">A.2<span>Objective Requirements
+    </span></a><a href="#sec-opt-audit-table" style="text-indent:20px">A.1.1<span>Auditable Events for Optional SFRs</span></a><a href="#fau-ops" style="text-indent:20px">A.1.2<span>Security Audit(FAU)</span></a><a href="#fpt" style="text-indent:20px">A.1.3<span>Protection of the TSF (FPT)</span></a><a href="#fip" style="text-indent:20px">A.1.4<span>Intrusion Prevention (FIP)</span></a><a href="#obj-sfrs" style="text-indent:10px">A.2<span>Objective Requirements
     </span></a><a href="#_sec_14" style="text-indent:20px">A.2.1<span>Auditable Events for Objective SFRs</span></a><a href="#fau-obj" style="text-indent:20px">A.2.2<span>Security Audit (FAU)</span></a><a href="#impl-dep-sfrs" style="text-indent:10px">A.3<span>Implementation-dependent Requirements
     </span></a><a href="#_sec_16" style="text-indent:20px">A.3.1<span>Auditable Events for Implementation-Dependent SFRs</span></a><a href="#fru-imp_dep" style="text-indent:20px">A.3.2<span>Resource Utilization</span></a><a href="#sel-sfrs" style="text-indent:0px">Appendix B - <span>Selection-based Requirements
-    </span></a><a href="#ext-comp-defs" style="text-indent:0px">Appendix C - <span>Extended Component Definitions</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.1<span>Extended Components Table</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.2<span>Extended Component Definitions</span></a><a href="#ext-comp-IPS" style="text-indent:20px">C.2.1<span>Intrusion Prevention (IPS)</span></a><a href="#ext-comp-FIP_ABD_EXT" style="text-indent:30px">C.2.1.1<span>FIP_ABD_EXT Anomaly-Based IPS Functionality</span></a><a href="#ext-comp-FIP_IPB_EXT" style="text-indent:30px">C.2.1.2<span>FIP_IPB_EXT IP Blocking</span></a><a href="#ext-comp-FIP_NTA_EXT" style="text-indent:30px">C.2.1.3<span>FIP_NTA_EXT Network Traffic Analysis</span></a><a href="#ext-comp-FIP_SBD_EXT" style="text-indent:30px">C.2.1.4<span>FIP_SBD_EXT Signature-Based IPS Functionality</span></a><a href="#satisfiedreqs" style="text-indent:0px">Appendix D - <span>Inherently Satisfied Requirements</span></a><a href="#entropyappendix" style="text-indent:0px">Appendix E - <span>Entropy Documentation and Assessment</span></a><a href="#acronyms" style="text-indent:0px">Appendix F - <span>Acronyms</span></a><a href="#appendix-bibliography" style="text-indent:0px">Appendix G - <span>Bibliography</span></a></div><h1 class="indexable" data-level="1" id="Introduction">1 Introduction</h1>
+    </span></a><a href="#ext-comp-defs" style="text-indent:0px">Appendix C - <span>Extended Component Definitions</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.1<span>Extended Components Table</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.2<span>Extended Component Definitions</span></a><a href="#ext-comp-FIP" style="text-indent:20px">C.2.1<span>Intrusion Prevention (FIP)</span></a><a href="#ext-comp-FIP_ABD_EXT" style="text-indent:30px">C.2.1.1<span>FIP_ABD_EXT Anomaly-Based IPS Functionality</span></a><a href="#ext-comp-FIP_IPB_EXT" style="text-indent:30px">C.2.1.2<span>FIP_IPB_EXT IP Blocking</span></a><a href="#ext-comp-FIP_NTA_EXT" style="text-indent:30px">C.2.1.3<span>FIP_NTA_EXT Network Traffic Analysis</span></a><a href="#ext-comp-FIP_SBD_EXT" style="text-indent:30px">C.2.1.4<span>FIP_SBD_EXT Signature-Based IPS Functionality</span></a><a href="#satisfiedreqs" style="text-indent:0px">Appendix D - <span>Inherently Satisfied Requirements</span></a><a href="#entropyappendix" style="text-indent:0px">Appendix E - <span>Entropy Documentation and Assessment</span></a><a href="#acronyms" style="text-indent:0px">Appendix F - <span>Acronyms</span></a><a href="#appendix-bibliography" style="text-indent:0px">Appendix G - <span>Bibliography</span></a></div><h1 class="indexable" data-level="1" id="Introduction">1 Introduction</h1>
     
      
     <h2 class="indexable" data-level="2" id="Overview">1.1 Overview</h2>
@@ -1169,60 +1169,7 @@ enforce its policies on network traffic of monitored networks<a id="period_141" 
 			
 			
 			
-			<h3 id="m-fmt" class="indexable" data-level="3">5.2.3 Security Management (FMT)</h3>
-			<div class="comp" id="FMT_SMF.1/IPS"><h4>FMT_SMF.1/IPS Specification of Management Functions (IPS)</h4>
-				<div class="element"><div class="reqid" id="FMT_SMF.1.1/IPS"><a href="#FMT_SMF.1.1/IPS" class="abbr">FMT_SMF.1.1/IPS</a></div><div class="reqdesc">
-				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be capable of performing the following management functions: [
-					<i><ul>
-					<li>Enable, disable signatures applied to sensor interfaces, and determine the behavior of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality</li>
-					<li>Modify these parameters that define the network traffic to be collected and analyzed:</li>
-					<ul>
-						<li>Source IP addresses (host address and network address)</li>
-						<li>Destination IP addresses (host address and network address)</li>
-						<li>Source port (<abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr>)</li>
-						<li>Destination port (<abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr>)</li>
-						<li>Protocol (IPv4 and IPv6)</li>
-						<li><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> type and code</li>
-					</ul>
-					<li>Update (import) signatures</li>
-					<li>Create custom signatures</li>
-					<li>Configure anomaly detection</li>
-					<li>Enable and disable actions to be taken when signature or anomaly matches are detected</li>
-					<li>Modify thresholds that trigger <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> reactions</li>
-					<li>Modify the duration of traffic blocking actions</li>
-					<li>Modify the known-good and known-bad lists (of IP addresses or address ranges)</li>
-					<li>Configure the known-good and known-bad lists to override signature-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies</li>
-					</ul></i>
-					]<a id="period_213" href="#period_213">. </a>				</div></div>	
-
-				<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></div>      
-   					
-					
-					
-            	<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">
-					The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> describes how the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data analysis and reactions can be configured.This may be performed in conjunction with the evaluation of <a href="#FIP_ABD_EXT.1">FIP_ABD_EXT.1</a>, <a href="#FIP_IPB_EXT.1">FIP_IPB_EXT.1</a>, and <a href="#FIP_SBD_EXT.1">FIP_SBD_EXT.1</a><a id="period_214" href="#period_214">. </a></div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
-					The evaluator shall verify that the operational guidance describes the instructions for each function
-					defined in the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>, describes how to configure the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data analysis and reactions, including how to set
-					any configurable defaults and how to configure each of the applicable analysis pattern matching methods
-					and reaction modes<a id="period_215" href="#period_215">. </a>					</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
-				
-							The evaluator shall perform the following tests:
-							<span class="testlist-"><ul>
-								<li class="test-"><a id="_t_1" class="defined" href="#_t_1">Test FMT_SMF.1/IPS:1</a>:
-      The evaluator shall use the operational guidance to create a signature and enable it on an interface<a id="period_216" href="#period_216">. </a>The evaluator shall then generate traffic that would be successfully triggered by the signature<a id="period_217" href="#period_217">. </a>The evaluator should observe the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> applying the corresponding reaction in the signature<a id="period_218" href="#period_218">. </a></li>
-								<li class="test-"><a id="_t_2" class="defined" href="#_t_2">Test FMT_SMF.1/IPS:2</a>:
-      The evaluator shall then disable the signature and attempt to regenerate the same traffic and ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> allows the traffic to pass with no reaction<a id="period_219" href="#period_219">. </a></li>
-								<li class="test-"><a id="_t_3" class="defined" href="#_t_3">Test FMT_SMF.1/IPS:3</a>:
-       The evaluator shall use the operational guidance to import signatures and repeat the test conducted in Test 1<a id="period_220" href="#period_220">. </a></li>
-							</ul></span>
-							<p>
-							Additionally, for each other claimed management function, the evaluator shall follow the steps listed in the operational guidance for configuration of that function's behavior and verify that configuration has the intended effect (e.g., for modifying the duration of traffic blocking actions, the evaluator could configure this with two separate time values and verify that traffic was blocked for the configured duration in both cases)<a id="period_221" href="#period_221">. </a> 
-							</p><p>
-								Testing for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> will generally be performed in conjunction with the test activities for <a href="#FIP_ABD_EXT.1">FIP_ABD_EXT.1</a> and <a href="#FIP_SBD_EXT.1">FIP_SBD_EXT.1</a>, as testing various aspects of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality will necessarily involve this functionality to be configured such that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> is in a known state when being tested<a id="period_222" href="#period_222">. </a>							</p>	
-					</div></div></div></div></div>
-			
-			
-						<h3 id="m-ips" class="indexable" data-level="3">5.2.4 Intrusion Prevention (IPS)</h3>
+						<h3 id="m-fip" class="indexable" data-level="3">5.2.3 Intrusion Prevention (FIP)</h3>
 							
 							
 							
@@ -1236,35 +1183,35 @@ enforce its policies on network traffic of monitored networks<a id="period_141" 
 				
 				<div class="element"><div class="reqid" id="FIP_ABD_EXT.1.1"><a href="#FIP_ABD_EXT.1.1" class="abbr">FIP_ABD_EXT.1.1</a></div><div class="reqdesc">
 				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support the definition of [<b>selection</b>: <span class="selectable-content" id="_s_9">baselines (&#8216;expected and approved&#8217;)</span>, <span class="selectable-content" id="_s_10">anomaly (&#8216;unexpected&#8217;) traffic patterns</span>] including the specification of [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_11">throughput ([<b>assignment</b>: 
-     <span class="assignable-content"> data elements (e.g<a id="period_223" href="#period_223">. </a>bytes, packets, etc.) per time period (e.g<a id="period_224" href="#period_224">. </a>minutes, hours, days)</span>])</span></li><li style=""><span class="selectable-content" id="_s_12">time of day;</span></li><li style=""><span class="selectable-content" id="_s_13">frequency;</span></li><li style=""><span class="selectable-content" id="_s_14">thresholds;</span></li><li style=""><span class="selectable-content" id="_s_15">[<b>assignment</b>: 
+     <span class="assignable-content"> data elements (e.g<a id="period_213" href="#period_213">. </a>bytes, packets, etc.) per time period (e.g<a id="period_214" href="#period_214">. </a>minutes, hours, days)</span>])</span></li><li style=""><span class="selectable-content" id="_s_12">time of day;</span></li><li style=""><span class="selectable-content" id="_s_13">frequency;</span></li><li style=""><span class="selectable-content" id="_s_14">thresholds;</span></li><li style=""><span class="selectable-content" id="_s_15">[<b>assignment</b>: 
      <span class="assignable-content">other methods</span>]</span></li></ul>]
 					and the following network protocol fields:
 					<ul>
 						<li>[<b>selection</b>: <span class="selectable-content" id="_s_16"> all packet header and data elements defined in <a href="#FIP_SBD_EXT.1">FIP_SBD_EXT.1</a></span>, <span class="selectable-content" id="_s_17">[<b>assignment</b>: 
-     <span class="assignable-content">subset list of packet header and data elements from <a href="#FIP_SBD_EXT.1">FIP_SBD_EXT.1</a></span>]</span>]<a id="period_225" href="#period_225">. </a></li>
+     <span class="assignable-content">subset list of packet header and data elements from <a href="#FIP_SBD_EXT.1">FIP_SBD_EXT.1</a></span>]</span>]<a id="period_215" href="#period_215">. </a></li>
 					</ul>
 				<div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note">
 					Baselines are the definition of known-good traffic (to be allowed per
 					<a href="#FIP_ABD_EXT.1.3">FIP_ABD_EXT.1.3</a>) whilst anomaly traffic is definition of (&#8216;offending&#8217;) traffic that is
-					to be handled per other actions defined in <a href="#FIP_ABD_EXT.1.3">FIP_ABD_EXT.1.3</a><a id="period_226" href="#period_226">. </a>Frequency can be
+					to be handled per other actions defined in <a href="#FIP_ABD_EXT.1.3">FIP_ABD_EXT.1.3</a><a id="period_216" href="#period_216">. </a>Frequency can be
 					defined as a number of occurrences of an event (such as detection of packets
 					matching a signature) over a defined period of time, such as the number of new
-					<abbr class="dyn-abbr"><a href="#abbr_FTP">FTP</a></abbr> sessions established during one hour<a id="period_227" href="#period_227">. </a>Thresholds can be defined as an amount
+					<abbr class="dyn-abbr"><a href="#abbr_FTP">FTP</a></abbr> sessions established during one hour<a id="period_217" href="#period_217">. </a>Thresholds can be defined as an amount
 					or percentage of deviation from expected levels or limits, such as a number of
-					megabytes of data transferred via <abbr class="dyn-abbr"><a href="#abbr_FTP">FTP</a></abbr> per hour<a id="period_228" href="#period_228">. </a>
+					megabytes of data transferred via <abbr class="dyn-abbr"><a href="#abbr_FTP">FTP</a></abbr> per hour<a id="period_218" href="#period_218">. </a>
 					</span></div></div></div>
 				<div class="element"><div class="reqid" id="FIP_ABD_EXT.1.2"><a href="#FIP_ABD_EXT.1.2" class="abbr">FIP_ABD_EXT.1.2</a></div><div class="reqdesc">
-				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support the definition of anomaly activity through [<b>selection</b>: <span class="selectable-content" id="_s_18">manual configuration by administrators</span>, <span class="selectable-content" id="_s_19">automated configuration</span>]<a id="period_229" href="#period_229">. </a>				<div class="appnote"><span class="note-header">Application
+				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support the definition of anomaly activity through [<b>selection</b>: <span class="selectable-content" id="_s_18">manual configuration by administrators</span>, <span class="selectable-content" id="_s_19">automated configuration</span>]<a id="period_219" href="#period_219">. </a>				<div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note">
 				The &#8220;baseline&#8221; and &#8220;anomaly&#8221; can be something manually defined/configured
 				by a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> administrator (or importing definitions), or something that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is
 				able to automatically define/create by inspecting network traffic over a period
-				of time (a.k.a<a id="period_230" href="#period_230">. </a>&#8220;profiling&#8221;)<a id="period_231" href="#period_231">. </a>It is not essential for the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to have a capability
+				of time (a.k.a<a id="period_220" href="#period_220">. </a>&#8220;profiling&#8221;)<a id="period_221" href="#period_221">. </a>It is not essential for the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to have a capability
 				of &#8220;profiling&#8221; a network to dynamically defining a baseline or rule; if the product
-				has this functionality, it is outside the scope of this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr><a id="period_232" href="#period_232">. </a>				</span></div></div></div>
+				has this functionality, it is outside the scope of this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr><a id="period_222" href="#period_222">. </a>				</span></div></div></div>
 				<div class="element"><div class="reqid" id="FIP_ABD_EXT.1.3"><a href="#FIP_ABD_EXT.1.3" class="abbr">FIP_ABD_EXT.1.3</a></div><div class="reqdesc">
 				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow the following operations to be associated with anomaly-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies:
 				<ul>
@@ -1277,7 +1224,7 @@ enforce its policies on network traffic of monitored networks<a id="period_141" 
 							<li>allow the traffic flow</li>
 							<li>block/drop the traffic flow</li>
 							<li>and 
-									[<b>selection</b>: <span class="selectable-content" id="_s_28">modify and forward packets before they pass through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>, <span class="selectable-content" id="_s_29">no other actions</span>]<a id="period_233" href="#period_233">. </a></li>
+									[<b>selection</b>: <span class="selectable-content" id="_s_28">modify and forward packets before they pass through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span>, <span class="selectable-content" id="_s_29">no other actions</span>]<a id="period_223" href="#period_223">. </a></li>
 						</ul>
 					</li>
 				</ul>
@@ -1289,29 +1236,29 @@ enforce its policies on network traffic of monitored networks<a id="period_141" 
 						
 					<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">
 							<p>
-							The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> describes the composition, construction, and application of baselines or anomaly-based attributes specified in <a href="#FIP_ABD_EXT.1.1">FIP_ABD_EXT.1.1</a><a id="period_234" href="#period_234">. </a>							</p><p>
-							If &#8216;frequency&#8217; is selected in <a href="#FIP_ABD_EXT.1.1">FIP_ABD_EXT.1.1</a>, the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> shall include an explanation of how frequencies can be defined on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_235" href="#period_235">. </a>							</p><p>
-							If &#8216;thresholds&#8217; is selected in <a href="#FIP_ABD_EXT.1.1">FIP_ABD_EXT.1.1</a>, the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> shall include an explanation of how the thresholds can be defined on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_236" href="#period_236">. </a>							</p><p>
-							The evaluator shall verify that each baseline or anomaly-based rule can be associated with a reaction specified in <a href="#FIP_ABD_EXT.1.3">FIP_ABD_EXT.1.3</a><a id="period_237" href="#period_237">. </a>							</p><p>
+							The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> describes the composition, construction, and application of baselines or anomaly-based attributes specified in <a href="#FIP_ABD_EXT.1.1">FIP_ABD_EXT.1.1</a><a id="period_224" href="#period_224">. </a>							</p><p>
+							If &#8216;frequency&#8217; is selected in <a href="#FIP_ABD_EXT.1.1">FIP_ABD_EXT.1.1</a>, the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> shall include an explanation of how frequencies can be defined on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_225" href="#period_225">. </a>							</p><p>
+							If &#8216;thresholds&#8217; is selected in <a href="#FIP_ABD_EXT.1.1">FIP_ABD_EXT.1.1</a>, the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> shall include an explanation of how the thresholds can be defined on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_226" href="#period_226">. </a>							</p><p>
+							The evaluator shall verify that each baseline or anomaly-based rule can be associated with a reaction specified in <a href="#FIP_ABD_EXT.1.3">FIP_ABD_EXT.1.3</a><a id="period_227" href="#period_227">. </a>							</p><p>
 							The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> identifies all interface types capable of applying baseline or
-							anomaly-based rules and explains how they are associated with distinct network interfaces<a id="period_238" href="#period_238">. </a>Where
+							anomaly-based rules and explains how they are associated with distinct network interfaces<a id="period_228" href="#period_228">. </a>Where
 							interfaces can be grouped into a common interface type (e.g., where the same internal logical path is
 							used, perhaps where a common device driver is used) they can be treated collectively as a distinct network
-							interface<a id="period_239" href="#period_239">. </a>							</p>
+							interface<a id="period_229" href="#period_229">. </a>							</p>
 						</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
 							<p>
 							The evaluator shall verify that the operational guidance provides instructions to manually create baselines
-							or anomaly-based rules according to the selections made in <a href="#FIP_ABD_EXT.1.1">FIP_ABD_EXT.1.1</a><a id="period_240" href="#period_240">. </a>Note that dynamic
+							or anomaly-based rules according to the selections made in <a href="#FIP_ABD_EXT.1.1">FIP_ABD_EXT.1.1</a><a id="period_230" href="#period_230">. </a>Note that dynamic
 							&#8220;profiling&#8221; of a network to establish a baseline is outside the scope of the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>
 							</p><p>
-							The evaluator shall verify that the operational guidance provides instructions to associate reactions specified in <a href="#FIP_ABD_EXT.1.3">FIP_ABD_EXT.1.3</a> with baselines or anomaly-based rules<a id="period_241" href="#period_241">. </a>							</p><p>
-								The evaluator shall verify that the operational guidance provides instructions to associate the different policies with distinct network interfaces<a id="period_242" href="#period_242">. </a></p>
+							The evaluator shall verify that the operational guidance provides instructions to associate reactions specified in <a href="#FIP_ABD_EXT.1.3">FIP_ABD_EXT.1.3</a> with baselines or anomaly-based rules<a id="period_231" href="#period_231">. </a>							</p><p>
+								The evaluator shall verify that the operational guidance provides instructions to associate the different policies with distinct network interfaces<a id="period_232" href="#period_232">. </a></p>
 						</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
 							The evaluator shall perform the following tests:<span class="testlist-"><ul>
-								<li class="test-"><a id="_t_4" class="defined" href="#_t_4">Test FIP_ABD_EXT.1:1</a>:
-      The evaluator shall use the instructions in the operational guidance to configure baselines or anomaly-based rules for each attribute specified in <a href="#FIP_ABD_EXT.1.1">FIP_ABD_EXT.1.1</a><a id="period_243" href="#period_243">. </a>The evaluator shall send traffic that does not match the baseline or matches the anomaly-based rule and verify the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> applies the configured reaction<a id="period_244" href="#period_244">. </a>This shall be performed for each attribute in <a href="#FIP_ABD_EXT.1.1">FIP_ABD_EXT.1.1</a><a id="period_245" href="#period_245">. </a></li>
-								<li class="test-"><a id="_t_5" class="defined" href="#_t_5">Test FIP_ABD_EXT.1:2</a>:
-      The evaluator shall repeat the test above to ensure that baselines or anomaly-based rules can be defined for each distinct network interface type supported by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_246" href="#period_246">. </a></li>
+								<li class="test-"><a id="_t_1" class="defined" href="#_t_1">Test FIP_ABD_EXT.1:1</a>:
+      The evaluator shall use the instructions in the operational guidance to configure baselines or anomaly-based rules for each attribute specified in <a href="#FIP_ABD_EXT.1.1">FIP_ABD_EXT.1.1</a><a id="period_233" href="#period_233">. </a>The evaluator shall send traffic that does not match the baseline or matches the anomaly-based rule and verify the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> applies the configured reaction<a id="period_234" href="#period_234">. </a>This shall be performed for each attribute in <a href="#FIP_ABD_EXT.1.1">FIP_ABD_EXT.1.1</a><a id="period_235" href="#period_235">. </a></li>
+								<li class="test-"><a id="_t_2" class="defined" href="#_t_2">Test FIP_ABD_EXT.1:2</a>:
+      The evaluator shall repeat the test above to ensure that baselines or anomaly-based rules can be defined for each distinct network interface type supported by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_236" href="#period_236">. </a></li>
 							</ul></span>
 						</div></div></div></div></div>
 							
@@ -1327,18 +1274,18 @@ enforce its policies on network traffic of monitored networks<a id="period_141" 
 				<div class="element"><div class="reqid" id="FIP_IPB_EXT.1.1"><a href="#FIP_IPB_EXT.1.1" class="abbr">FIP_IPB_EXT.1.1</a></div><div class="reqdesc">
 					The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support configuration and implementation of known-good and known-bad lists of [<b>selection</b>: <span class="selectable-content" id="_s_30">source</span>, <span class="selectable-content" id="_s_31">destination</span>] IP addresses and [<b>selection</b>: <span class="selectable-content" id="_s_32">no additional address types</span>, <span class="selectable-content" id="_s_33">
 							[<b>assignment</b>: 
-     <span class="assignable-content">list of address types</span>]</span>]<a id="period_247" href="#period_247">. </a>
+     <span class="assignable-content">list of address types</span>]</span>]<a id="period_237" href="#period_237">. </a>
 					<div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note">
 						The address types defined in this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> are limited to IP addresses (e.g., a single IP
 						address or a range of IP addresses) because this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is limited to
-						inspection of IP traffic<a id="period_248" href="#period_248">. </a><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr> are not prohibited from enabling functionality
+						inspection of IP traffic<a id="period_238" href="#period_238">. </a><abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr> are not prohibited from enabling functionality
 						that would allow/prohibit traffic flow based on other address types, such as
-						<abbr class="dyn-abbr"><a href="#abbr_MAC">MAC</a></abbr> addresses<a id="period_249" href="#period_249">. </a>					</span></div></div></div>
+						<abbr class="dyn-abbr"><a href="#abbr_MAC">MAC</a></abbr> addresses<a id="period_239" href="#period_239">. </a>					</span></div></div></div>
 				<div class="element"><div class="reqid" id="FIP_IPB_EXT.1.2"><a href="#FIP_IPB_EXT.1.2" class="abbr">FIP_IPB_EXT.1.2</a></div><div class="reqdesc">
 						The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow [<i>security administrators</i>] to configure the following <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements: [<b>selection</b>: <span class="selectable-content" id="_s_34">known-good list rules</span>, <span class="selectable-content" id="_s_35">known-bad list rules</span>, <span class="selectable-content" id="_s_36">IP addresses</span>, <span class="selectable-content" id="_s_37">[<b>assignment</b>: 
-     <span class="assignable-content">other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements</span>]</span>, <span class="selectable-content" id="_s_38">no other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements</span>]<a id="period_250" href="#period_250">. </a>					</div></div>
+     <span class="assignable-content">other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements</span>]</span>, <span class="selectable-content" id="_s_38">no other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements</span>]<a id="period_240" href="#period_240">. </a>					</div></div>
 				
 				<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FIP_IPB_EXT.1">FIP_IPB_EXT.1</a></div>      
 						
@@ -1346,34 +1293,34 @@ enforce its policies on network traffic of monitored networks<a id="period_141" 
 						
 					<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">
 							<p>
-							The evaluator shall verify how good/bad lists affect the way in which traffic is analyzed with respect to processing packets<a id="period_251" href="#period_251">. </a>The evaluator shall also very that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> provides details for the attributes that create a known good list, a known bad list, and their associated rules, including how to define the source or destination IP address (e.g<a id="period_252" href="#period_252">. </a>a single IP address or a range of IP addresses)<a id="period_253" href="#period_253">. </a>							</p><p>
+							The evaluator shall verify how good/bad lists affect the way in which traffic is analyzed with respect to processing packets<a id="period_241" href="#period_241">. </a>The evaluator shall also very that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> provides details for the attributes that create a known good list, a known bad list, and their associated rules, including how to define the source or destination IP address (e.g<a id="period_242" href="#period_242">. </a>a single IP address or a range of IP addresses)<a id="period_243" href="#period_243">. </a>							</p><p>
 							If the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> uses address types other than a single IP or a range of IP addresses (e.g., <abbr class="dyn-abbr"><a href="#abbr_MAC">MAC</a></abbr> addresses), the
 							evaluator shall check that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> explains what configurations would cause non-IP lists of known-good
-							and known-bad addresses to take precedence over IP-based address lists<a id="period_254" href="#period_254">. </a>							</p>
+							and known-bad addresses to take precedence over IP-based address lists<a id="period_244" href="#period_244">. </a>							</p>
 						</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
 							<p>
 							The evaluator shall verify that the administrative guidance provides instructions with how each role
-							specified in the requirement can create, modify and delete the attributes of known-good and known-bad lists<a id="period_255" href="#period_255">. </a>							</p><p>
+							specified in the requirement can create, modify and delete the attributes of known-good and known-bad lists<a id="period_245" href="#period_245">. </a>							</p><p>
 							If the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> uses address types other than a single IP or a range of IP addresses (e.g., <abbr class="dyn-abbr"><a href="#abbr_MAC">MAC</a></abbr> addresses), the
 							evaluator shall check that the operational guidance includes instructions for any configurations that would
 							cause non-IP lists of known-good and known-bad addresses to take precedence over IP-based address
-							lists<a id="period_256" href="#period_256">. </a>							</p>
+							lists<a id="period_246" href="#period_246">. </a>							</p>
 						</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
 							The evaluator shall perform the following tests:
 							<span class="testlist-"><ul>
-								<li class="test-"><a id="_t_6" class="defined" href="#_t_6">Test FIP_IPB_EXT.1:1</a>:
+								<li class="test-"><a id="_t_3" class="defined" href="#_t_3">Test FIP_IPB_EXT.1:1</a>:
       The evaluator shall use the instructions in the operational guidance to create a known-bad address
-									list<a id="period_257" href="#period_257">. </a>Using a single IP address, a list of addresses, or a range of addresses from that list, the evaluator shall
+									list<a id="period_247" href="#period_247">. </a>Using a single IP address, a list of addresses, or a range of addresses from that list, the evaluator shall
 									attempt to send traffic through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that would otherwise be allowed by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and observe the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
-									automatically drops that traffic<a id="period_258" href="#period_258">. </a></li>
-								<li class="test-"><a id="_t_7" class="defined" href="#_t_7">Test FIP_IPB_EXT.1:2</a>:
+									automatically drops that traffic<a id="period_248" href="#period_248">. </a></li>
+								<li class="test-"><a id="_t_4" class="defined" href="#_t_4">Test FIP_IPB_EXT.1:2</a>:
       The evaluator shall use the instructions in the operational guidance to create a known-good
-									address list<a id="period_259" href="#period_259">. </a>Using a single IP address, a list of addresses, or a range of addresses from that list, the
+									address list<a id="period_249" href="#period_249">. </a>Using a single IP address, a list of addresses, or a range of addresses from that list, the
 									evaluator shall attempt to send traffic that would otherwise be denied by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and observe the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
-									automatically allowing traffic<a id="period_260" href="#period_260">. </a></li>
-								<li class="test-"><a id="_t_8" class="defined" href="#_t_8">Test FIP_IPB_EXT.1:3</a>:
+									automatically allowing traffic<a id="period_250" href="#period_250">. </a></li>
+								<li class="test-"><a id="_t_5" class="defined" href="#_t_5">Test FIP_IPB_EXT.1:3</a>:
       The evaluator shall add conflicting IP addresses to each list and ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> handles
-									conflicting traffic in a manner consistent with the precedence in <a href="#FIP_NTA_EXT.1.1">FIP_NTA_EXT.1.1</a><a id="period_261" href="#period_261">. </a>								</li>
+									conflicting traffic in a manner consistent with the precedence in <a href="#FIP_NTA_EXT.1.1">FIP_NTA_EXT.1.1</a><a id="period_251" href="#period_251">. </a>								</li>
 							</ul></span>
 						</div></div></div></div></div>
 							
@@ -1389,19 +1336,19 @@ enforce its policies on network traffic of monitored networks<a id="period_141" 
 				<div class="element"><div class="reqid" id="FIP_NTA_EXT.1.1"><a href="#FIP_NTA_EXT.1.1" class="abbr">FIP_NTA_EXT.1.1</a></div><div class="reqdesc">
 					The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall perform analysis of IP-based network traffic forwarded to the
 					<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&#8217;s sensor interfaces, and detect violations of administratively-defined <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr>
-					policies<a id="period_262" href="#period_262">. </a>
+					policies<a id="period_252" href="#period_252">. </a>
 					<div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note">
 						Though it might be the case in some <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr> that any <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface can be a sensor
-						interface, that capability is not a requirement<a id="period_263" href="#period_263">. </a>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> uses the term &#8220;sensor
+						interface, that capability is not a requirement<a id="period_253" href="#period_253">. </a>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> uses the term &#8220;sensor
 						interface&#8221; to refer to any <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface to which one or more <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy has been
-						applied<a id="period_264" href="#period_264">. </a>An administratively-defined <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy is any set of rules for traffic
+						applied<a id="period_254" href="#period_254">. </a>An administratively-defined <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy is any set of rules for traffic
 						analysis, traffic blocking, signature detection, and/or anomaly detection applied
-						to one or more <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interfaces<a id="period_265" href="#period_265">. </a>The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may be capable of allowing the
+						to one or more <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interfaces<a id="period_255" href="#period_255">. </a>The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may be capable of allowing the
 						administrator to configure the precedence of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements (known-good
 						lists, known-bad lists, signature-based rules, and anomaly- based rules), but any
-						such configurability is not required by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr><a id="period_266" href="#period_266">. </a>					</span></div></div></div>
+						such configurability is not required by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr><a id="period_256" href="#period_256">. </a>					</span></div></div></div>
 				<div class="element"><div class="reqid" id="FIP_NTA_EXT.1.2"><a href="#FIP_NTA_EXT.1.2" class="abbr">FIP_NTA_EXT.1.2</a></div><div class="reqdesc">
 					The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall process (be capable of inspecting) the following network traffic protocols:	
 					<ul>
@@ -1410,7 +1357,7 @@ enforce its policies on network traffic of monitored networks<a id="period_141" 
 					<li>Internet control message protocol version 4 (ICMPv4), <abbr class="dyn-abbr"><a href="#abbr_RFC">RFC</a></abbr> 792</li>
 					<li>Internet control message protocol version 6 (ICMPv6), <abbr class="dyn-abbr"><a href="#abbr_RFC">RFC</a></abbr> 2463</li>
 					<li>Transmission Control Protocol (<abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr>), <abbr class="dyn-abbr"><a href="#abbr_RFC">RFC</a></abbr> 793</li>
-					<li>User Data Protocol (<abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr>), <abbr class="dyn-abbr"><a href="#abbr_RFC">RFC</a></abbr> 768<a id="period_267" href="#period_267">. </a></li>
+					<li>User Data Protocol (<abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr>), <abbr class="dyn-abbr"><a href="#abbr_RFC">RFC</a></abbr> 768<a id="period_257" href="#period_257">. </a></li>
 
 
 					</ul>
@@ -1419,11 +1366,11 @@ enforce its policies on network traffic of monitored networks<a id="period_141" 
     </span><span class="note">The identification of protocol RFCs does not imply that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must ensure all
 							packets are conformant to the identified protocol RFCs at all times, nor does it
 							imply that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> would be able to enforce full conformance with the RFCs for
-							any traffic flow at any time<a id="period_268" href="#period_268">. </a>The identification of RFCs provides a frame of
+							any traffic flow at any time<a id="period_258" href="#period_258">. </a>The identification of RFCs provides a frame of
 							reference for understanding the packet contents (headers, fields, states,
-							commands, etc.) identified else in this and other <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr><a id="period_269" href="#period_269">. </a>The implication is that the
+							commands, etc.) identified else in this and other <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr><a id="period_259" href="#period_259">. </a>The implication is that the
 							<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must be capable of understanding the <abbr class="dyn-abbr"><a href="#abbr_RFC">RFC</a></abbr> implementation to the extent the
-							<abbr class="dyn-abbr"><a href="#abbr_RFC">RFC</a></abbr> parameters are identified throughout the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr><a id="period_270" href="#period_270">. </a>						</span></div></div></div>
+							<abbr class="dyn-abbr"><a href="#abbr_RFC">RFC</a></abbr> parameters are identified throughout the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr><a id="period_260" href="#period_260">. </a>						</span></div></div></div>
 				<div class="element"><div class="reqid" id="FIP_NTA_EXT.1.3"><a href="#FIP_NTA_EXT.1.3" class="abbr">FIP_NTA_EXT.1.3</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow the signatures to be assigned to sensor interfaces configured for promiscuous mode and to sensor interfaces configured for inline mode, and to
 					support designation of one or more interfaces as being used as a management interface for communication between the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and external entities without simultaneously
 					being a sensor interface, as indicated by the following interface types:
@@ -1433,36 +1380,36 @@ enforce its policies on network traffic of monitored networks<a id="period_141" 
 					<li>Inline (data pass-through) mode: [<b>assignment</b>: 
      <span class="assignable-content">list of interface types</span>]</li>
 					<li>Management mode: [<b>assignment</b>: 
-     <span class="assignable-content">list of interface types</span>]<a id="period_271" href="#period_271">. </a></li>
+     <span class="assignable-content">list of interface types</span>]<a id="period_261" href="#period_261">. </a></li>
 						
 					</ul>
 					<div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note">
 					<p>
-					Interface types may be Ethernet, Gigabit Ethernet, etc<a id="period_272" href="#period_272">. </a>Promiscuous interfaces
+					Interface types may be Ethernet, Gigabit Ethernet, etc<a id="period_262" href="#period_262">. </a>Promiscuous interfaces
 					are ones that listen to network traffic for the sole purpose of inspecting the
 					traffic, but do not provide any <abbr class="dyn-abbr"><a href="#abbr_OSI">OSI</a></abbr> Layer 2, Layer 3, or higher layer functionality,
 					so network services are not listening on the interface, and no IP protocol stack
-					enabled on the interface so no IP address is assigned to the interface<a id="period_273" href="#period_273">. </a>Inline
+					enabled on the interface so no IP address is assigned to the interface<a id="period_263" href="#period_263">. </a>Inline
 					interfaces are interface pairings that provide a path for network traffic to
 					traverse the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> such that traffic flows can be blocked or modified by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> in
-					real-time<a id="period_274" href="#period_274">. </a>Like promiscuous interfaces, inline interfaces typically do not support
+					real-time<a id="period_264" href="#period_264">. </a>Like promiscuous interfaces, inline interfaces typically do not support
 					<abbr class="dyn-abbr"><a href="#abbr_OSI">OSI</a></abbr> Layer 3 and higher functionality, though they may provide <abbr class="dyn-abbr"><a href="#abbr_OSI">OSI</a></abbr> Layer 2
 					functionality (with <abbr class="dyn-abbr"><a href="#abbr_MAC">MAC</a></abbr> address assigned to the interfaces) to allow adjacent
-					network devices to forward traffic to/through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_275" href="#period_275">. </a>					</p>
+					network devices to forward traffic to/through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_265" href="#period_265">. </a>					</p>
 					<p>The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may support separate interfaces to be used for
 					administration/management purposes that can be configured as <abbr class="dyn-abbr"><a href="#abbr_OSI">OSI</a></abbr> Layer 3
 					interfaces for communication between the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and remote entities including all
-					entities defined in FTP_ITC, and FTP_TRP<a id="period_276" href="#period_276">. </a>The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may optionally support
-					additional interface types<a id="period_277" href="#period_277">. </a>Session-reset interfaces can be the same as any of the
+					entities defined in FTP_ITC, and FTP_TRP<a id="period_266" href="#period_266">. </a>The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may optionally support
+					additional interface types<a id="period_267" href="#period_267">. </a>Session-reset interfaces can be the same as any of the
 					promiscuous, inline, management, or other interfaces, or can be separate
-					interfaces<a id="period_278" href="#period_278">. </a>Session-reset functionality is not mandatory functionality for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>,
-					but is a selectable option within the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr><a id="period_279" href="#period_279">. </a>					</p>
+					interfaces<a id="period_268" href="#period_268">. </a>Session-reset functionality is not mandatory functionality for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>,
+					but is a selectable option within the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr><a id="period_269" href="#period_269">. </a>					</p>
 					<p>As mentioned in the application note for <a href="#FIP_NTA_EXT.1.1">FIP_NTA_EXT.1.1</a>, it&#8217;s not necessary for
-					the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to have multiple single-purpose interfaces (e.g<a id="period_280" href="#period_280">. </a>&#8220;sensor&#8221; interface,
+					the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to have multiple single-purpose interfaces (e.g<a id="period_270" href="#period_270">. </a>&#8220;sensor&#8221; interface,
 					&#8220;management&#8221; interface, etc.), though it is expected that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> be able to
-					enable specific ports to serve one or more specific interface functions<a id="period_281" href="#period_281">. </a>					</p>
+					enable specific ports to serve one or more specific interface functions<a id="period_271" href="#period_271">. </a>					</p>
 					</span></div></div></div>
 				
 				
@@ -1471,18 +1418,18 @@ enforce its policies on network traffic of monitored networks<a id="period_141" 
 						<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea">
 							<p>
 						The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> explains the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&#8217;s capability of analyzing IP traffic in terms of the
-						<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&#8217;s policy hierarchy (precedence)<a id="period_282" href="#period_282">. </a>The <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> should identify if the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&#8217;s policy hierarchy order is
-						configurable by the administrator for <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements (known-good lists, known-bad lists, signature-based rules, and anomaly-based rules)<a id="period_283" href="#period_283">. </a></p><p>
+						<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&#8217;s policy hierarchy (precedence)<a id="period_272" href="#period_272">. </a>The <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> should identify if the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&#8217;s policy hierarchy order is
+						configurable by the administrator for <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements (known-good lists, known-bad lists, signature-based rules, and anomaly-based rules)<a id="period_273" href="#period_273">. </a></p><p>
 						Regardless of whether the precedence is configurable, the evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> describes
-						the default precedence as well as the IP analyzing functions supported by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_284" href="#period_284">. </a>						</p>
+						the default precedence as well as the IP analyzing functions supported by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_274" href="#period_274">. </a>						</p>
 						</div>
 						<div class="eacategory">Guidance</div><div class="ea">
 							<p>
-						The evaluator shall verify that the guidance describes the default precedence<a id="period_285" href="#period_285">. </a>							</p><p>
-						If the precedence is configurable, the evaluator shall verify that the guidance explains how to configure the precedence<a id="period_286" href="#period_286">. </a>							</p>
+						The evaluator shall verify that the guidance describes the default precedence<a id="period_275" href="#period_275">. </a>							</p><p>
+						If the precedence is configurable, the evaluator shall verify that the guidance explains how to configure the precedence<a id="period_276" href="#period_276">. </a>							</p>
 						</div>
 						<div class="eacategory">Tests</div><div class="ea">
-						There are no test EAs for this element<a id="period_287" href="#period_287">. </a>						</div>
+						There are no test EAs for this element<a id="period_277" href="#period_277">. </a>						</div>
 					<div class="element-activity-header"><a href="#FIP_NTA_EXT.1.2">FIP_NTA_EXT.1.2</a></div>      
 						<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea">
 						The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> indicates that the following protocols are supported:
@@ -1495,29 +1442,29 @@ enforce its policies on network traffic of monitored networks<a id="period_141" 
 							<li><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr></li>
 						</ul>						
 						The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> describes how conformance with the identified protocols has been
-						determined by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> developer (e.g., third party interoperability testing, protocol compliance testing)<a id="period_288" href="#period_288">. </a>												
+						determined by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> developer (e.g., third party interoperability testing, protocol compliance testing)<a id="period_278" href="#period_278">. </a>												
 						</div>
 						<div class="eacategory">Guidance</div><div class="ea">
-						There are no guidance EAs for this element<a id="period_289" href="#period_289">. </a>						</div>
+						There are no guidance EAs for this element<a id="period_279" href="#period_279">. </a>						</div>
 						<div class="eacategory">Tests</div><div class="ea">
-						There are no test EAs for this element<a id="period_290" href="#period_290">. </a>						</div>
+						There are no test EAs for this element<a id="period_280" href="#period_280">. </a>						</div>
 					<div class="element-activity-header"><a href="#FIP_NTA_EXT.1.3">FIP_NTA_EXT.1.3</a></div>
 						<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea">
 						The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> identifies all interface types capable of being deployed in the modes of promiscuous, and or inline mode as well as the interfaces necessary to facilitate each deployment mode
-						(at a minimum, the interfaces need to support inline mode)<a id="period_291" href="#period_291">. </a>The evaluator shall also check that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr>
-						provides a description for how the management interface is logically distinct from any sensor interfaces<a id="period_292" href="#period_292">. </a>						</div>
+						(at a minimum, the interfaces need to support inline mode)<a id="period_281" href="#period_281">. </a>The evaluator shall also check that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr>
+						provides a description for how the management interface is logically distinct from any sensor interfaces<a id="period_282" href="#period_282">. </a>						</div>
 						<div class="eacategory">Guidance</div><div class="ea">
 						<p>
 						The evaluator shall verify that the operational guidance provides instructions on how to deploy each of
-						the deployment methods outlined in the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr><a id="period_293" href="#period_293">. </a>The evaluator shall also verify that the operational guidance
-						provides instructions of applying <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies to interfaces for each deployment mode<a id="period_294" href="#period_294">. </a>If the management
+						the deployment methods outlined in the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr><a id="period_283" href="#period_283">. </a>The evaluator shall also verify that the operational guidance
+						provides instructions of applying <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies to interfaces for each deployment mode<a id="period_284" href="#period_284">. </a>If the management
 						interface is configurable, the evaluator shall verify that the operational guidance explains how to
-						configure the interface as a management interface<a id="period_295" href="#period_295">. </a>						</p><p>
+						configure the interface as a management interface<a id="period_285" href="#period_285">. </a>						</p><p>
 						The evaluator shall verify that the operational guidance explains how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> sends commands to remote
-						traffic filtering devices if this functionality is supported<a id="period_296" href="#period_296">. </a>						</p>
+						traffic filtering devices if this functionality is supported<a id="period_286" href="#period_286">. </a>						</p>
 						</div>
 						<div class="eacategory">Tests</div><div class="ea">
-						Testing for this element is performed in conjunction with testing where promiscuous and inline interfaces are tested<a id="period_297" href="#period_297">. </a>
+						Testing for this element is performed in conjunction with testing where promiscuous and inline interfaces are tested<a id="period_287" href="#period_287">. </a>
 						</div>
 					</div></div></div>
 							
@@ -1533,33 +1480,33 @@ enforce its policies on network traffic of monitored networks<a id="period_141" 
 				<div class="element"><div class="reqid" id="FIP_SBD_EXT.1.1"><a href="#FIP_SBD_EXT.1.1" class="abbr">FIP_SBD_EXT.1.1</a></div><div class="reqdesc">
 					The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support inspection of packet header contents and be able to inspect at least the following header fields: 
 					<ul>
-					<li>IPv4: version; header length; packet length; ID; IP flags; fragment offset;time to live (<abbr class="dyn-abbr"><a href="#abbr_TTL">TTL</a></abbr>); protocol; header checksum; source address; destination address; IP options; and [<b>selection</b>: <span class="selectable-content" id="_s_44">type of service (<abbr class="dyn-abbr"><a href="#abbr_ToS">ToS</a></abbr>)</span>, <span class="selectable-content" id="_s_45">no other field</span>]<a id="period_298" href="#period_298">. </a></li>
+					<li>IPv4: version; header length; packet length; ID; IP flags; fragment offset;time to live (<abbr class="dyn-abbr"><a href="#abbr_TTL">TTL</a></abbr>); protocol; header checksum; source address; destination address; IP options; and [<b>selection</b>: <span class="selectable-content" id="_s_44">type of service (<abbr class="dyn-abbr"><a href="#abbr_ToS">ToS</a></abbr>)</span>, <span class="selectable-content" id="_s_45">no other field</span>]<a id="period_288" href="#period_288">. </a></li>
 					<li>IPv6: version; payload length; next header; hop limit; source address; destination address; routing header; and [<b>selection</b>: <span class="selectable-content" id="_s_46">traffic class</span>, <span class="selectable-content" id="_s_47">flow label</span>, <span class="selectable-content" id="_s_48">no other field</span>]
 					</li>
 					<li><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>: type; code; header checksum; and [<b>selection</b>: <span class="selectable-content" id="_s_49">ID</span>, <span class="selectable-content" id="_s_50">sequence number</span>, <span class="selectable-content" id="_s_51">[<b>assignment</b>: 
      <span class="assignable-content">other field in the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> header</span>]</span>]					
 						</li>
-					<li>ICMPv6: type; code; and header checksum<a id="period_299" href="#period_299">. </a></li>
-					<li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr>: source port; destination port; sequence number; acknowledgment number; offset; reserved; <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> flags; window; checksum; urgent pointer; and <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> options<a id="period_300" href="#period_300">. </a></li>
-					<li><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr>: source port; destination port; length; and <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> checksum<a id="period_301" href="#period_301">. </a></li>
+					<li>ICMPv6: type; code; and header checksum<a id="period_289" href="#period_289">. </a></li>
+					<li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr>: source port; destination port; sequence number; acknowledgment number; offset; reserved; <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> flags; window; checksum; urgent pointer; and <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> options<a id="period_290" href="#period_290">. </a></li>
+					<li><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr>: source port; destination port; length; and <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> checksum<a id="period_291" href="#period_291">. </a></li>
 					</ul>
 				</div></div>
 				<div class="element"><div class="reqid" id="FIP_SBD_EXT.1.2"><a href="#FIP_SBD_EXT.1.2" class="abbr">FIP_SBD_EXT.1.2</a></div><div class="reqdesc">
 				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support inspection of packet payload data and be able to inspect at least the following data elements to perform string-based pattern-matching: 
 				<ul>
-					<li>ICMPv4 data: characters beyond the first 4 bytes of the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> header<a id="period_302" href="#period_302">. </a></li>
-					<li>ICMPv6 data: characters beyond the first 4 bytes of the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> header<a id="period_303" href="#period_303">. </a></li>
+					<li>ICMPv4 data: characters beyond the first 4 bytes of the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> header<a id="period_292" href="#period_292">. </a></li>
+					<li>ICMPv6 data: characters beyond the first 4 bytes of the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> header<a id="period_293" href="#period_293">. </a></li>
 					<li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> data (characters beyond the 20 byte <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> header), with support for detection of:
 						<ol type="i">
-							<li><abbr class="dyn-abbr"><a href="#abbr_FTP">FTP</a></abbr> (file transfer) commands: help, noop, stat, syst, user, abort, acct, allo, appe, cdup, cwd, dele, list, mkd, mode, nlst, pass, pasv, port, pass, quit, rein, rest, retr, rmd, rnfr, rnto, site, smnt, stor, stou, stru, and type<a id="period_304" href="#period_304">. </a></li>
-							<li><abbr class="dyn-abbr"><a href="#abbr_HTTP">HTTP</a></abbr> (web) commands and content: commands including GET and POST, and administrator- defined strings to match URLs/URIs, and web page content<a id="period_305" href="#period_305">. </a></li>
+							<li><abbr class="dyn-abbr"><a href="#abbr_FTP">FTP</a></abbr> (file transfer) commands: help, noop, stat, syst, user, abort, acct, allo, appe, cdup, cwd, dele, list, mkd, mode, nlst, pass, pasv, port, pass, quit, rein, rest, retr, rmd, rnfr, rnto, site, smnt, stor, stou, stru, and type<a id="period_294" href="#period_294">. </a></li>
+							<li><abbr class="dyn-abbr"><a href="#abbr_HTTP">HTTP</a></abbr> (web) commands and content: commands including GET and POST, and administrator- defined strings to match URLs/URIs, and web page content<a id="period_295" href="#period_295">. </a></li>
 							<li><abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> (email) states: start state, <abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> commands state, mail header state, mail body state, abort state</li>
 							<li>[<b>selection</b>: <span class="selectable-content" id="_s_52">[<b>assignment</b>: 
      <span class="assignable-content">other types of <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> payload inspection</span>]</span>, <span class="selectable-content" id="_s_53">no other types of <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> payload inspection</span>]</li>
 						</ol></li>
 					<li><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> data: characters beyond the first 8 bytes of the <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> header;</li>
 					<li>[<b>assignment</b>: 
-     <span class="assignable-content">other types of packet payload inspection</span>]<a id="period_306" href="#period_306">. </a></li>				
+     <span class="assignable-content">other types of packet payload inspection</span>]<a id="period_296" href="#period_296">. </a></li>				
 				</ul>
 				</div></div>
 				<div class="element"><div class="reqid" id="FIP_SBD_EXT.1.3"><a href="#FIP_SBD_EXT.1.3" class="abbr">FIP_SBD_EXT.1.3</a></div><div class="reqdesc">
@@ -1573,7 +1520,7 @@ enforce its policies on network traffic of monitored networks<a id="period_141" 
 					</li>
 					<li><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> Attacks
 						<ol type="i">
-							<li>Fragmented <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> Traffic (e.g<a id="period_307" href="#period_307">. </a>Nuke attack)</li>
+							<li>Fragmented <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> Traffic (e.g<a id="period_297" href="#period_297">. </a>Nuke attack)</li>
 							<li>Large <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> Traffic (Ping of Death attack)</li>
 						</ol>
 					</li>
@@ -1588,16 +1535,16 @@ enforce its policies on network traffic of monitored networks<a id="period_141" 
 					<li><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> Attacks
 						<ol type="i">
 							<li><i><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> Bomb Attack</i></li>
-							<li><i><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> Chargen <abbr class="dyn-abbr"><a href="#abbr_DDoS">DDoS</a></abbr> Attack</i><a id="period_308" href="#period_308">. </a></li>
+							<li><i><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> Chargen <abbr class="dyn-abbr"><a href="#abbr_DDoS">DDoS</a></abbr> Attack</i><a id="period_298" href="#period_298">. </a></li>
 						</ol>
 					</li>
-				</ol><a id="period_309" href="#period_309">. </a>                </div></div>
+				</ol><a id="period_299" href="#period_299">. </a>                </div></div>
 				<div class="element"><div class="reqid" id="FIP_SBD_EXT.1.4"><a href="#FIP_SBD_EXT.1.4" class="abbr">FIP_SBD_EXT.1.4</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to detect all the following traffic-pattern detection signatures, and to have these signatures applied to <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> sensor interfaces: 
 					<ol type="a">
 						<li>Flooding a host (<abbr class="dyn-abbr"><a href="#abbr_DoS">DoS</a></abbr> attack)
 							<ol type="i">
 								<li><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> flooding (Smurf attack, and ping flood)</li>
-								<li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> flooding (e.g<a id="period_310" href="#period_310">. </a>SYN flood)</li>
+								<li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> flooding (e.g<a id="period_300" href="#period_300">. </a>SYN flood)</li>
 							</ol></li>
 						<li>Flooding a network (<abbr class="dyn-abbr"><a href="#abbr_DoS">DoS</a></abbr> attack)</li>
 						<li>Protocol and port scanning
@@ -1605,39 +1552,39 @@ enforce its policies on network traffic of monitored networks<a id="period_141" 
 								<li>IP protocol scanning</li>
 								<li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> port scanning</li>
 								<li><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> port scanning</li>
-								<li><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> scanning<a id="period_311" href="#period_311">. </a></li>
+								<li><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> scanning<a id="period_301" href="#period_301">. </a></li>
 							</ol></li>
 					</ol>
                 <div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note">
 				<p>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defines the minimum set of packet header fields, packet payload strings,
-					signature types, and potentially malicious traffic patterns (e.g<a id="period_312" href="#period_312">. </a>flooding and
-					scanning) that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must be able to detect<a id="period_313" href="#period_313">. </a>Valid signatures can be comprised
+					signature types, and potentially malicious traffic patterns (e.g<a id="period_302" href="#period_302">. </a>flooding and
+					scanning) that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must be able to detect<a id="period_303" href="#period_303">. </a>Valid signatures can be comprised
 					of one, some, or all attributes listed in this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>, and <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr> may support
 					inspection of additional attributes not listed in this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>, but only those listed in
-					the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> will be tested by the evaluators<a id="period_314" href="#period_314">. </a>The set of signature types, traffic
-					patterns, etc<a id="period_315" href="#period_315">. </a>identified in this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> are not intended to be an exhaustive or
+					the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> will be tested by the evaluators<a id="period_304" href="#period_304">. </a>The set of signature types, traffic
+					patterns, etc<a id="period_305" href="#period_305">. </a>identified in this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> are not intended to be an exhaustive or
 					completely representative list of malicious activity, nor is it meant to address
 					<abbr class="dyn-abbr"><a href="#abbr_DDoS">DDoS</a></abbr> attacks &#8211; the intent of this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is addressing attacks form a single source
-					IP<a id="period_316" href="#period_316">. </a></p><p>
+					IP<a id="period_306" href="#period_306">. </a></p><p>
 					Protocol and port scanning refers to reconnaissance attacks that scan target IP
 					addresses for open/listening/responsive services by targeting multiple
 					protocols/ports on one or more target IP address using obvious (sequentially
 					numbered) patterns of target protocol/port numbers or by randomizing the
 					protocol/port numbers and/or randomizing the time delays between
-					transmissions<a id="period_317" href="#period_317">. </a>					</p><p>
+					transmissions<a id="period_307" href="#period_307">. </a>					</p><p>
 					It is understood and expected that <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> product vendors will support pre-defined
 					signatures, but inspection of the efficacy of the pre-defined signatures
-					themselves is not objective of this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr><a id="period_318" href="#period_318">. </a>Instead, this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> focuses
+					themselves is not objective of this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr><a id="period_308" href="#period_308">. </a>Instead, this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> focuses
 					on the ability of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to perform detailed analysis of network traffic, and
 					those pre-defined signatures may be used during evaluation, the evaluation
-					team is expected to make use of custom-made signatures as well<a id="period_319" href="#period_319">. </a>This set of
-					signature types, traffic patterns, etc<a id="period_320" href="#period_320">. </a>has been selected to: 1) place reasonable
+					team is expected to make use of custom-made signatures as well<a id="period_309" href="#period_309">. </a>This set of
+					signature types, traffic patterns, etc<a id="period_310" href="#period_310">. </a>has been selected to: 1) place reasonable
 					boundaries around the scope of testing; and 2) provide a sufficient sampling of
 					packet contents, and traffic patterns to demonstrate the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&#8217;s ability to inspect
 					packet contents, to collect traffic pattern statistics over a period of time, and to
-					correlate collected data<a id="period_321" href="#period_321">. </a>					</p><p>An <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> sensor interface refers to any <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface to which an <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy is currently applied<a id="period_322" href="#period_322">. </a></p>
+					correlate collected data<a id="period_311" href="#period_311">. </a>					</p><p>An <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> sensor interface refers to any <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> interface to which an <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy is currently applied<a id="period_312" href="#period_312">. </a></p>
 					
 				</span></div></div></div>
 				<div class="element"><div class="reqid" id="FIP_SBD_EXT.1.5"><a href="#FIP_SBD_EXT.1.5" class="abbr">FIP_SBD_EXT.1.5</a></div><div class="reqdesc">
@@ -1648,7 +1595,7 @@ enforce its policies on network traffic of monitored networks<a id="period_141" 
 						<ul>
 							<li>block/drop the traffic flow;</li>
 							<li>and [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_62">allow all traffic flow;</span></li><li style=""><span class="selectable-content" id="_s_63">allow the traffic flow with following exceptions:[<b>assignment</b>: 
-     <span class="assignable-content">malicious traffic such as but not limited to FIP_EXT.1.3 and FIP_EXT.1.4 if always dropped</span>];</span></li><li style=""><span class="selectable-content" id="_s_64">modify and forward packets before they pass through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span></li></ul>]<a id="period_323" href="#period_323">. </a></li>
+     <span class="assignable-content">malicious traffic such as but not limited to FIP_EXT.1.3 and FIP_EXT.1.4 if always dropped</span>];</span></li><li style=""><span class="selectable-content" id="_s_64">modify and forward packets before they pass through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr></span></li></ul>]<a id="period_313" href="#period_313">. </a></li>
 						</ul>
 					</li>
 				</ul>
@@ -1659,143 +1606,197 @@ enforce its policies on network traffic of monitored networks<a id="period_141" 
 				across an IP network and uses a remote administration interface of the remote
 				device to modify the active configuration on that device; or one in which the
 				connection between the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and the non-TOE network device does not traverse
-				an IP network<a id="period_324" href="#period_324">. </a>If the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author selects &#8220;trigger a non-TOE network device&#8230;&#8221; and
+				an IP network<a id="period_314" href="#period_314">. </a>If the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author selects &#8220;trigger a non-TOE network device&#8230;&#8221; and
 				the connection between the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and the non-TOE network device traverses an
 				IP network, the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author must ensure that the non- <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> device type is identified
 				within FTP_ITC.1.3 (of the base), and the connection between the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and the
-				remote device must be secured in accordance with FTP_ITC.1<a id="period_325" href="#period_325">. </a>In the last bullet
+				remote device must be secured in accordance with FTP_ITC.1<a id="period_315" href="#period_315">. </a>In the last bullet
 				of the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>, &#8220;modify and forward packets before they pass through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>,&#8221;
 				could include such actions as removing from packet data character strings that
 				match regular expression (regex) conditions that violate policies, such as
 				transmitting personally identifiable information or other private data (phone
-				numbers, credit-card numbers, etc.)<a id="period_326" href="#period_326">. </a></span></div></div></div>
+				numbers, credit-card numbers, etc.)<a id="period_316" href="#period_316">. </a></span></div></div></div>
 				<div class="element"><div class="reqid" id="FIP_SBD_EXT.1.6"><a href="#FIP_SBD_EXT.1.6" class="abbr">FIP_SBD_EXT.1.6</a></div><div class="reqdesc">
-				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support stream reassembly or equivalent to detect malicious payload even if it is split across multiple non-fragmented packets<a id="period_327" href="#period_327">. </a>
+				The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support stream reassembly or equivalent to detect malicious payload even if it is split across multiple non-fragmented packets<a id="period_317" href="#period_317">. </a>
                 </div></div>
 				
 				<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="element-activity-header"><a href="#FIP_SBD_EXT.1.1">FIP_SBD_EXT.1.1</a></div>      
 					<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea">
 						<p>
-					The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> describes what is comprised within a signature rule<a id="period_328" href="#period_328">. </a>						</p><p>
-					The evaluator shall verify that each signature can be associated with a reaction specified in <a href="#FIP_SBD_EXT.1.5">FIP_SBD_EXT.1.5</a><a id="period_329" href="#period_329">. </a>						</p><p>
+					The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> describes what is comprised within a signature rule<a id="period_318" href="#period_318">. </a>						</p><p>
+					The evaluator shall verify that each signature can be associated with a reaction specified in <a href="#FIP_SBD_EXT.1.5">FIP_SBD_EXT.1.5</a><a id="period_319" href="#period_319">. </a>						</p><p>
 					The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> identifies all interface types that are capable of applying signatures
-					and explains how rules are associated with distinct network interfaces<a id="period_330" href="#period_330">. </a>Where interfaces can be grouped
+					and explains how rules are associated with distinct network interfaces<a id="period_320" href="#period_320">. </a>Where interfaces can be grouped
 					into a common interface type (e.g., where the same internal logical path is used, perhaps where a
-					common device driver is used) they can be treated collectively as a distinct network interface<a id="period_331" href="#period_331">. </a>						</p>
+					common device driver is used) they can be treated collectively as a distinct network interface<a id="period_321" href="#period_321">. </a>						</p>
 					</div>
 					<div class="eacategory">Guidance</div><div class="ea">
 					The evaluator shall verify that the operational guidance provides instructions with how to create and/or configure rules using the following protocols and header inspection fields:
 					<ul>
-						<li>IPv4: version; header length; packet length; ID; IP flags; fragment offset; time to live (<abbr class="dyn-abbr"><a href="#abbr_TTL">TTL</a></abbr>); protocol; header checksum; source address; destination address; IP options; and, if selected, type of service (<abbr class="dyn-abbr"><a href="#abbr_ToS">ToS</a></abbr>)<a id="period_332" href="#period_332">. </a></li>
+						<li>IPv4: version; header length; packet length; ID; IP flags; fragment offset; time to live (<abbr class="dyn-abbr"><a href="#abbr_TTL">TTL</a></abbr>); protocol; header checksum; source address; destination address; IP options; and, if selected, type of service (<abbr class="dyn-abbr"><a href="#abbr_ToS">ToS</a></abbr>)<a id="period_322" href="#period_322">. </a></li>
 						<li>IPv6: Version; payload length; next header; hop limit; source address; destination address; routing header; and, if selected, traffic class and/or flow label</li>
-						<li><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>: type; code; header checksum; and, if selected, other header fields (varies based on the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> type and code)<a id="period_333" href="#period_333">. </a></li>
-						<li>ICMPv6: type; code; and header checksum<a id="period_334" href="#period_334">. </a></li>
-						<li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr>: Source port; destination port; sequence number; acknowledgment number; offset; reserved; <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> flags; window; checksum; urgent pointer; and <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> options<a id="period_335" href="#period_335">. </a></li>
-						<li><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr>: source port; destination port; length; and <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> checksum<a id="period_336" href="#period_336">. </a></li>
+						<li><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>: type; code; header checksum; and, if selected, other header fields (varies based on the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> type and code)<a id="period_323" href="#period_323">. </a></li>
+						<li>ICMPv6: type; code; and header checksum<a id="period_324" href="#period_324">. </a></li>
+						<li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr>: Source port; destination port; sequence number; acknowledgment number; offset; reserved; <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> flags; window; checksum; urgent pointer; and <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> options<a id="period_325" href="#period_325">. </a></li>
+						<li><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr>: source port; destination port; length; and <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> checksum<a id="period_326" href="#period_326">. </a></li>
 					</ul>
-					The evaluator shall verify that the operational guidance provides instructions with how to select and/or configure reactions specified in <a href="#FIP_SBD_EXT.1.5">FIP_SBD_EXT.1.5</a> in the signature rules<a id="period_337" href="#period_337">. </a>
+					The evaluator shall verify that the operational guidance provides instructions with how to select and/or configure reactions specified in <a href="#FIP_SBD_EXT.1.5">FIP_SBD_EXT.1.5</a> in the signature rules<a id="period_327" href="#period_327">. </a>
 					</div>
 					<div class="eacategory">Tests</div><div class="ea">
 					The evaluator shall perform the following tests:
 					<span class="testlist-"><ul>
-						<li class="test-"><a id="_t_9" class="defined" href="#_t_9">Test FIP_SBD_EXT.1.1:1</a>:
+						<li class="test-"><a id="_t_6" class="defined" href="#_t_6">Test FIP_SBD_EXT.1.1:1</a>:
       The evaluator shall use the instructions in the operational guidance to test that packet header
 							signatures can be created and/or configured with the selected and/or configured reactions specified in
-							<a href="#FIP_SBD_EXT.1.5">FIP_SBD_EXT.1.5</a> for each of the attributes listed below<a id="period_338" href="#period_338">. </a>Each attribute shall be individually assigned to its
+							<a href="#FIP_SBD_EXT.1.5">FIP_SBD_EXT.1.5</a> for each of the attributes listed below<a id="period_328" href="#period_328">. </a>Each attribute shall be individually assigned to its
 							own unique signature:
 							<ul>
-								<li>IPv4: version; header length; packet length; ID; IP flags; fragment offset; time to live (<abbr class="dyn-abbr"><a href="#abbr_TTL">TTL</a></abbr>); protocol; header checksum; source address; destination address; IP options; and, if selected, type of service (<abbr class="dyn-abbr"><a href="#abbr_ToS">ToS</a></abbr>)<a id="period_339" href="#period_339">. </a></li>
+								<li>IPv4: version; header length; packet length; ID; IP flags; fragment offset; time to live (<abbr class="dyn-abbr"><a href="#abbr_TTL">TTL</a></abbr>); protocol; header checksum; source address; destination address; IP options; and, if selected, type of service (<abbr class="dyn-abbr"><a href="#abbr_ToS">ToS</a></abbr>)<a id="period_329" href="#period_329">. </a></li>
 								<li>IPv6: Version; payload length; next header; hop limit; source address; destination address; routing header; and, if selected, traffic class and/or flow label</li>
-								<li><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>: type; code; header checksum; and, if selected, other header fields (varies based on the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> type and code)<a id="period_340" href="#period_340">. </a></li>
-							<li>ICMPv6: Type; Code; and Header Checksum<a id="period_341" href="#period_341">. </a></li>
-							<li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr>: Source port; destination port; sequence number; acknowledgment number; offset; reserved; <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> flags; window; checksum; urgent pointer; and <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> options<a id="period_342" href="#period_342">. </a></li>
-							<li><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr>: Source port; destination port; length; and <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> checksum<a id="period_343" href="#period_343">. </a></li>
+								<li><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>: type; code; header checksum; and, if selected, other header fields (varies based on the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> type and code)<a id="period_330" href="#period_330">. </a></li>
+							<li>ICMPv6: Type; Code; and Header Checksum<a id="period_331" href="#period_331">. </a></li>
+							<li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr>: Source port; destination port; sequence number; acknowledgment number; offset; reserved; <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> flags; window; checksum; urgent pointer; and <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> options<a id="period_332" href="#period_332">. </a></li>
+							<li><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr>: Source port; destination port; length; and <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> checksum<a id="period_333" href="#period_333">. </a></li>
 							
 							</ul>
-							The evaluator shall generate traffic to trigger a signature and shall then use a packet sniffer to capture traffic that ensures the reactions of each rule are performed as expected<a id="period_344" href="#period_344">. </a></li>
-							<li class="test-"><a id="_t_10" class="defined" href="#_t_10">Test FIP_SBD_EXT.1.1:2</a>:
-      The evaluator shall repeat the test above to ensure that signature-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies can be defined for each distinct network interface type capable of applying signatures as supported by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_345" href="#period_345">. </a></li>
+							The evaluator shall generate traffic to trigger a signature and shall then use a packet sniffer to capture traffic that ensures the reactions of each rule are performed as expected<a id="period_334" href="#period_334">. </a></li>
+							<li class="test-"><a id="_t_7" class="defined" href="#_t_7">Test FIP_SBD_EXT.1.1:2</a>:
+      The evaluator shall repeat the test above to ensure that signature-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies can be defined for each distinct network interface type capable of applying signatures as supported by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_335" href="#period_335">. </a></li>
 						</ul></span>
 					</div>
 				<div class="element-activity-header"><a href="#FIP_SBD_EXT.1.2">FIP_SBD_EXT.1.2</a></div>
 				<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea">
 					<p>
 					The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> describes what is comprised within a string-based detection
-					signature<a id="period_346" href="#period_346">. </a>					</p><p>
+					signature<a id="period_336" href="#period_336">. </a>					</p><p>
 					The evaluator shall verify that each packet payload string-based detection signature can be associated
-					with a reaction specified in <a href="#FIP_SBD_EXT.1.5">FIP_SBD_EXT.1.5</a><a id="period_347" href="#period_347">. </a>					</p>
+					with a reaction specified in <a href="#FIP_SBD_EXT.1.5">FIP_SBD_EXT.1.5</a><a id="period_337" href="#period_337">. </a>					</p>
 					</div>
 					<div class="eacategory">Guidance</div><div class="ea">
 						<p>
-						The evaluator shall verify that the operational guidance provides instructions with how to configure rules using the packet payload string-based detection fields defined in <a href="#FIP_SBD_EXT.1.2">FIP_SBD_EXT.1.2</a><a id="period_348" href="#period_348">. </a>						</p><p>
-					The evaluator shall verify that the operational guidance provides instructions with how to configure reactions specified in <a href="#FIP_SBD_EXT.1.5">FIP_SBD_EXT.1.5</a> for each string-based detection signature<a id="period_349" href="#period_349">. </a>						</p><p>
-					The evaluator shall verify that the operational guidance provides instructions with how rules are associated with distinct network interfaces that are capable of being associated with signatures<a id="period_350" href="#period_350">. </a>						</p>
+						The evaluator shall verify that the operational guidance provides instructions with how to configure rules using the packet payload string-based detection fields defined in <a href="#FIP_SBD_EXT.1.2">FIP_SBD_EXT.1.2</a><a id="period_338" href="#period_338">. </a>						</p><p>
+					The evaluator shall verify that the operational guidance provides instructions with how to configure reactions specified in <a href="#FIP_SBD_EXT.1.5">FIP_SBD_EXT.1.5</a> for each string-based detection signature<a id="period_339" href="#period_339">. </a>						</p><p>
+					The evaluator shall verify that the operational guidance provides instructions with how rules are associated with distinct network interfaces that are capable of being associated with signatures<a id="period_340" href="#period_340">. </a>						</p>
 					</div>
 					<div class="eacategory">Tests</div><div class="ea">
 					The evaluator shall perform the following tests:<span class="testlist-"><ul>
 					<li class="test-"><a id="sbd-payload-reaction" class="defined" href="#sbd-payload-reaction">Test FIP_SBD_EXT.1.2:1</a>:
       The evaluator shall use the instructions in the operational guidance to test that packet payload
 					string-based detection rules can be assigned to the reactions specified in <a href="#FIP_SBD_EXT.1.5">FIP_SBD_EXT.1.5</a> using the
-					attributes specified in <a href="#FIP_SBD_EXT.1.2">FIP_SBD_EXT.1.2</a><a id="period_351" href="#period_351">. </a>However it is not required (nor is it feasible) to test all possible
+					attributes specified in <a href="#FIP_SBD_EXT.1.2">FIP_SBD_EXT.1.2</a><a id="period_341" href="#period_341">. </a>However it is not required (nor is it feasible) to test all possible
 					strings of protocol data, the evaluator shall ensure that a selection of strings in the requirement is selected
-					to be tested<a id="period_352" href="#period_352">. </a>At a minimum at least one string using each of the following attributes from <a href="#FIP_SBD_EXT.1.2">FIP_SBD_EXT.1.2</a>
-					should be tested for each protocol<a id="period_353" href="#period_353">. </a>The evaluator shall generate packets that match the string in the rule
-					and observe the corresponding reaction is as configured<a id="period_354" href="#period_354">. </a>					<ul>
-					<li>Test at least one string of characters for ICMPv4 data: beyond the first 4 bytes of the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> header<a id="period_355" href="#period_355">. </a></li>
+					to be tested<a id="period_342" href="#period_342">. </a>At a minimum at least one string using each of the following attributes from <a href="#FIP_SBD_EXT.1.2">FIP_SBD_EXT.1.2</a>
+					should be tested for each protocol<a id="period_343" href="#period_343">. </a>The evaluator shall generate packets that match the string in the rule
+					and observe the corresponding reaction is as configured<a id="period_344" href="#period_344">. </a>					<ul>
+					<li>Test at least one string of characters for ICMPv4 data: beyond the first 4 bytes of the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> header<a id="period_345" href="#period_345">. </a></li>
 					<li>Test at least one string of characters for ICMPv6 data: beyond the first 4 bytes of the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>
 					header</li>
 					<li> <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> data (characters beyond the 20 byte <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> header):
 						<ol type="i">
 							<li>Test at least one <abbr class="dyn-abbr"><a href="#abbr_FTP">FTP</a></abbr> (file transfer) command: help, noop, stat, syst, user, abort, acct, allo,
 							appe, cdup, cwd, dele, list, mkd, mode, nlst, pass, pasv, port, pass, quit, rein, rest, retr, rmd,
-							rnfr, rnto, site, smnt, stor, stou, stru, and type<a id="period_356" href="#period_356">. </a></li>
+							rnfr, rnto, site, smnt, stor, stou, stru, and type<a id="period_346" href="#period_346">. </a></li>
 							<li> <abbr class="dyn-abbr"><a href="#abbr_HTTP">HTTP</a></abbr> (web) commands and content:
 							<ol>
 								<li>Test both GET and POST commands</li>
-								<li>Test at least one administrator-defined string to match URLs/URIs and webpage content<a id="period_357" href="#period_357">. </a></li>
+								<li>Test at least one administrator-defined string to match URLs/URIs and webpage content<a id="period_347" href="#period_347">. </a></li>
 							</ol></li>
-							<li>Test at least one <abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> (email) state: start state, <abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> commands state, mail header state, mail body state, abort state<a id="period_358" href="#period_358">. </a></li>
+							<li>Test at least one <abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> (email) state: start state, <abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> commands state, mail header state, mail body state, abort state<a id="period_348" href="#period_348">. </a></li>
 							<li>Test at least one string in any additional attribute type defined within the &#8220;other types of
-							<abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> payload inspection&#8221; assignment, if any other types are specified<a id="period_359" href="#period_359">. </a>							</li>
+							<abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> payload inspection&#8221; assignment, if any other types are specified<a id="period_349" href="#period_349">. </a>							</li>
 						</ol></li>
 					<li>Test at least one string of <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> data: characters beyond the first 8 bytes of the <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> header;</li>
 					<li>Test at least one string for each additional attribute type defined in the &#8220;other types of packet
-					payload inspection&#8221; assignment, if any other types are specified<a id="period_360" href="#period_360">. </a></li>
+					payload inspection&#8221; assignment, if any other types are specified<a id="period_350" href="#period_350">. </a></li>
 					</ul></li>
-					<li class="test-"><a id="_t_12" class="defined" href="#_t_12">Test FIP_SBD_EXT.1.2:2</a>:
-      The evaluator shall repeat Test 1 above to ensure that signature-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies can be defined for each distinct network interface type capable of applying signatures as supported by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_361" href="#period_361">. </a></li>
+					<li class="test-"><a id="_t_9" class="defined" href="#_t_9">Test FIP_SBD_EXT.1.2:2</a>:
+      The evaluator shall repeat Test 1 above to ensure that signature-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies can be defined for each distinct network interface type capable of applying signatures as supported by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_351" href="#period_351">. </a></li>
 					</ul></span>
 					</div>    
                  <div class="element-activity-header"><a href="#FIP_SBD_EXT.1.3">FIP_SBD_EXT.1.3</a></div>
-					<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea">The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> describes how the attacks defined in <a href="#FIP_SBD_EXT.1.3">FIP_SBD_EXT.1.3</a> are processed by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and what reaction is triggered when these attacks are identified<a id="period_362" href="#period_362">. </a></div>
-					<div class="eacategory">Guidance</div><div class="ea">The evaluator shall verify that the operational guidance provides instructions with configuring rules to identify the attacks defined in <a href="#FIP_SBD_EXT.1.3">FIP_SBD_EXT.1.3</a> as well as the reactions to these attacks as specified in <a href="#FIP_SBD_EXT.1.5">FIP_SBD_EXT.1.5</a><a id="period_363" href="#period_363">. </a></div>
-					<div class="eacategory">Tests</div><div class="ea">The evaluator shall create and/or configure rules for each attack signature in <a href="#FIP_SBD_EXT.1.3">FIP_SBD_EXT.1.3</a><a id="period_364" href="#period_364">. </a>For each
+					<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea">The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> describes how the attacks defined in <a href="#FIP_SBD_EXT.1.3">FIP_SBD_EXT.1.3</a> are processed by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and what reaction is triggered when these attacks are identified<a id="period_352" href="#period_352">. </a></div>
+					<div class="eacategory">Guidance</div><div class="ea">The evaluator shall verify that the operational guidance provides instructions with configuring rules to identify the attacks defined in <a href="#FIP_SBD_EXT.1.3">FIP_SBD_EXT.1.3</a> as well as the reactions to these attacks as specified in <a href="#FIP_SBD_EXT.1.5">FIP_SBD_EXT.1.5</a><a id="period_353" href="#period_353">. </a></div>
+					<div class="eacategory">Tests</div><div class="ea">The evaluator shall create and/or configure rules for each attack signature in <a href="#FIP_SBD_EXT.1.3">FIP_SBD_EXT.1.3</a><a id="period_354" href="#period_354">. </a>For each
 					attack, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> should apply its corresponding signature and enable it to each distinct network interface
-					type capable of applying the signatures<a id="period_365" href="#period_365">. </a>The evaluator shall use packet captures to ensure that the attack
-					traffic is detected by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and a reaction specified in <a href="#FIP_SBD_EXT.1.5">FIP_SBD_EXT.1.5</a> is triggered and stops the attack<a id="period_366" href="#period_366">. </a>					Each attack should be performed one after another so as to ensure that its corresponding signature
-					successfully identified and appropriately reacted to a particular attack<a id="period_367" href="#period_367">. </a>					</div>
+					type capable of applying the signatures<a id="period_355" href="#period_355">. </a>The evaluator shall use packet captures to ensure that the attack
+					traffic is detected by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and a reaction specified in <a href="#FIP_SBD_EXT.1.5">FIP_SBD_EXT.1.5</a> is triggered and stops the attack<a id="period_356" href="#period_356">. </a>					Each attack should be performed one after another so as to ensure that its corresponding signature
+					successfully identified and appropriately reacted to a particular attack<a id="period_357" href="#period_357">. </a>					</div>
                  <div class="element-activity-header"><a href="#FIP_SBD_EXT.1.4">FIP_SBD_EXT.1.4</a></div>
-					<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea">The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> describes how the attacks defined in <a href="#FIP_SBD_EXT.1.4">FIP_SBD_EXT.1.4</a> are processed by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and what reaction is triggered when these attacks are identified<a id="period_368" href="#period_368">. </a>
+					<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea">The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> describes how the attacks defined in <a href="#FIP_SBD_EXT.1.4">FIP_SBD_EXT.1.4</a> are processed by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and what reaction is triggered when these attacks are identified<a id="period_358" href="#period_358">. </a>
 					</div>
 					<div class="eacategory">Guidance</div><div class="ea">
-					The evaluator shall verify that the operational guidance provides instructions with configuring rules to identify the attacks defined in <a href="#FIP_SBD_EXT.1.4">FIP_SBD_EXT.1.4</a> as well as the reactions to these attacks as specified in <a href="#FIP_SBD_EXT.1.5">FIP_SBD_EXT.1.5</a><a id="period_369" href="#period_369">. </a>					</div>
-					<div class="eacategory">Tests</div><div class="ea">The evaluator shall configure individual signatures for each attack in <a href="#FIP_SBD_EXT.1.4">FIP_SBD_EXT.1.4</a><a id="period_370" href="#period_370">. </a>For each attack,
+					The evaluator shall verify that the operational guidance provides instructions with configuring rules to identify the attacks defined in <a href="#FIP_SBD_EXT.1.4">FIP_SBD_EXT.1.4</a> as well as the reactions to these attacks as specified in <a href="#FIP_SBD_EXT.1.5">FIP_SBD_EXT.1.5</a><a id="period_359" href="#period_359">. </a>					</div>
+					<div class="eacategory">Tests</div><div class="ea">The evaluator shall configure individual signatures for each attack in <a href="#FIP_SBD_EXT.1.4">FIP_SBD_EXT.1.4</a><a id="period_360" href="#period_360">. </a>For each attack,
 					the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> should apply its corresponding signature and enable it to each distinct network interface type
-					capable of applying signatures<a id="period_371" href="#period_371">. </a>The evaluator shall use packet captures to ensure that the attack traffic is
-					detected by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and a reaction specified in <a href="#FIP_SBD_EXT.1.5">FIP_SBD_EXT.1.5</a> is triggered and stops the attack<a id="period_372" href="#period_372">. </a>Each
+					capable of applying signatures<a id="period_361" href="#period_361">. </a>The evaluator shall use packet captures to ensure that the attack traffic is
+					detected by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and a reaction specified in <a href="#FIP_SBD_EXT.1.5">FIP_SBD_EXT.1.5</a> is triggered and stops the attack<a id="period_362" href="#period_362">. </a>Each
 					attack should be performed one after another so as to ensure that its corresponding signature successfully
-					identified and appropriately reacted to a particular attack<a id="period_373" href="#period_373">. </a>					</div>
+					identified and appropriately reacted to a particular attack<a id="period_363" href="#period_363">. </a>					</div>
                 <div class="element-activity-header"><a href="#FIP_SBD_EXT.1.5">FIP_SBD_EXT.1.5</a></div>
 				<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea">There are no <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> EAs for this element</div>
-				<div class="eacategory">Guidance</div><div class="ea">The guidance EAs for this element are performed in conjunction with <a href="#FIP_SBD_EXT.1.1">FIP_SBD_EXT.1.1</a>, <a href="#FIP_SBD_EXT.1.3">FIP_SBD_EXT.1.3</a>, and <a href="#FIP_SBD_EXT.1.4">FIP_SBD_EXT.1.4</a><a id="period_374" href="#period_374">. </a></div>
-				<div class="eacategory">Tests</div><div class="ea">The test EAs for this element are performed in conjunction with those for <a href="#FIP_SBD_EXT.1.1">FIP_SBD_EXT.1.1</a>, <a href="#FIP_SBD_EXT.1.2">FIP_SBD_EXT.1.2</a>, <a href="#FIP_SBD_EXT.1.3">FIP_SBD_EXT.1.3</a>, and <a href="#FIP_SBD_EXT.1.4">FIP_SBD_EXT.1.4</a><a id="period_375" href="#period_375">. </a></div>
+				<div class="eacategory">Guidance</div><div class="ea">The guidance EAs for this element are performed in conjunction with <a href="#FIP_SBD_EXT.1.1">FIP_SBD_EXT.1.1</a>, <a href="#FIP_SBD_EXT.1.3">FIP_SBD_EXT.1.3</a>, and <a href="#FIP_SBD_EXT.1.4">FIP_SBD_EXT.1.4</a><a id="period_364" href="#period_364">. </a></div>
+				<div class="eacategory">Tests</div><div class="ea">The test EAs for this element are performed in conjunction with those for <a href="#FIP_SBD_EXT.1.1">FIP_SBD_EXT.1.1</a>, <a href="#FIP_SBD_EXT.1.2">FIP_SBD_EXT.1.2</a>, <a href="#FIP_SBD_EXT.1.3">FIP_SBD_EXT.1.3</a>, and <a href="#FIP_SBD_EXT.1.4">FIP_SBD_EXT.1.4</a><a id="period_365" href="#period_365">. </a></div>
                  <div class="element-activity-header"><a href="#FIP_SBD_EXT.1.6">FIP_SBD_EXT.1.6</a></div>
-					<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea">There are no <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> EAs for this element<a id="period_376" href="#period_376">. </a></div>
-					<div class="eacategory">Guidance</div><div class="ea">The evaluator shall verify that the operational guidance provides configuration instructions, if needed, to detect payload across multiple packets<a id="period_377" href="#period_377">. </a></div>
-					<div class="eacategory">Tests</div><div class="ea">The evaluator shall repeat one of the tests in <a href="#sbd-payload-reaction" class="dynref">Test FIP_SBD_EXT.1.2:1</a> but generate multiple non-fragmented packets that contain the string in the rule defined<a id="period_378" href="#period_378">. </a>The evaluator shall verify that the malicious traffic is still detected when split across multiple non-fragmented packets<a id="period_379" href="#period_379">. </a></div>
+					<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea">There are no <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> EAs for this element<a id="period_366" href="#period_366">. </a></div>
+					<div class="eacategory">Guidance</div><div class="ea">The evaluator shall verify that the operational guidance provides configuration instructions, if needed, to detect payload across multiple packets<a id="period_367" href="#period_367">. </a></div>
+					<div class="eacategory">Tests</div><div class="ea">The evaluator shall repeat one of the tests in <a href="#sbd-payload-reaction" class="dynref">Test FIP_SBD_EXT.1.2:1</a> but generate multiple non-fragmented packets that contain the string in the rule defined<a id="period_368" href="#period_368">. </a>The evaluator shall verify that the malicious traffic is still detected when split across multiple non-fragmented packets<a id="period_369" href="#period_369">. </a></div>
                  </div></div></div>
 			
 
+
+
+		<h3 id="m-fmt" class="indexable" data-level="3">5.2.4 Security Management (FMT)</h3>
+			<div class="comp" id="FMT_SMF.1/IPS"><h4>FMT_SMF.1/IPS Specification of Management Functions (IPS)</h4>
+				<div class="element"><div class="reqid" id="FMT_SMF.1.1/IPS"><a href="#FMT_SMF.1.1/IPS" class="abbr">FMT_SMF.1.1/IPS</a></div><div class="reqdesc">
+						The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be capable of performing the following management functions: [
+						<i><ul>
+							<li>Enable, disable signatures applied to sensor interfaces, and determine the behavior of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality</li>
+							<li>Modify these parameters that define the network traffic to be collected and analyzed:</li>
+							<ul>
+								<li>Source IP addresses (host address and network address)</li>
+								<li>Destination IP addresses (host address and network address)</li>
+								<li>Source port (<abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr>)</li>
+								<li>Destination port (<abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr>)</li>
+								<li>Protocol (IPv4 and IPv6)</li>
+								<li><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> type and code</li>
+							</ul>
+							<li>Update (import) signatures</li>
+							<li>Create custom signatures</li>
+							<li>Configure anomaly detection</li>
+							<li>Enable and disable actions to be taken when signature or anomaly matches are detected</li>
+							<li>Modify thresholds that trigger <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> reactions</li>
+							<li>Modify the duration of traffic blocking actions</li>
+							<li>Modify the known-good and known-bad lists (of IP addresses or address ranges)</li>
+							<li>Configure the known-good and known-bad lists to override signature-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies</li>
+						</ul></i>
+						]<a id="period_370" href="#period_370">. </a>					</div></div>	
+				
+			<div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></div>      
+						
+						
+						
+					<div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">
+							The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> describes how the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data analysis and reactions can be configured.This may be performed in conjunction with the evaluation of <a href="#FIP_ABD_EXT.1">FIP_ABD_EXT.1</a>, <a href="#FIP_IPB_EXT.1">FIP_IPB_EXT.1</a>, and <a href="#FIP_SBD_EXT.1">FIP_SBD_EXT.1</a><a id="period_371" href="#period_371">. </a></div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
+							The evaluator shall verify that the operational guidance describes the instructions for each function
+							defined in the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>, describes how to configure the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data analysis and reactions, including how to set
+							any configurable defaults and how to configure each of the applicable analysis pattern matching methods
+							and reaction modes<a id="period_372" href="#period_372">. </a>						</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
+							
+							The evaluator shall perform the following tests:
+							<span class="testlist-"><ul>
+								<li class="test-"><a id="_t_10" class="defined" href="#_t_10">Test FMT_SMF.1/IPS:1</a>:
+      The evaluator shall use the operational guidance to create a signature and enable it on an interface<a id="period_373" href="#period_373">. </a>The evaluator shall then generate traffic that would be successfully triggered by the signature<a id="period_374" href="#period_374">. </a>The evaluator should observe the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> applying the corresponding reaction in the signature<a id="period_375" href="#period_375">. </a></li>
+								<li class="test-"><a id="_t_11" class="defined" href="#_t_11">Test FMT_SMF.1/IPS:2</a>:
+      The evaluator shall then disable the signature and attempt to regenerate the same traffic and ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> allows the traffic to pass with no reaction<a id="period_376" href="#period_376">. </a></li>
+								<li class="test-"><a id="_t_12" class="defined" href="#_t_12">Test FMT_SMF.1/IPS:3</a>:
+       The evaluator shall use the operational guidance to import signatures and repeat the test conducted in Test 1<a id="period_377" href="#period_377">. </a></li>
+							</ul></span>
+							<p>
+								Additionally, for each other claimed management function, the evaluator shall follow the steps listed in the operational guidance for configuration of that function's behavior and verify that configuration has the intended effect (e.g., for modifying the duration of traffic blocking actions, the evaluator could configure this with two separate time values and verify that traffic was blocked for the configured duration in both cases)<a id="period_378" href="#period_378">. </a> 
+							</p><p>
+								Testing for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> will generally be performed in conjunction with the test activities for <a href="#FIP_ABD_EXT.1">FIP_ABD_EXT.1</a> and <a href="#FIP_SBD_EXT.1">FIP_SBD_EXT.1</a>, as testing various aspects of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality will necessarily involve this functionality to be configured such that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> is in a known state when being tested<a id="period_379" href="#period_379">. </a>							</p>	
+						</div></div></div></div></div>
+		
 
 	
 	<h2 id="obj-req-map" class="indexable" data-level="2">5.3 TOE Security Functional Requirements Rationale</h2><p>The following rationale provides justification for each <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, 
@@ -1896,13 +1897,13 @@ enforce its policies on network traffic of monitored networks<a id="period_141" 
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not add any requirements when the
 	      NDcPP is the base<a id="period_430" href="#period_430">. </a>	    </td></tr><tr><th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a></td><td>The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> iterates an <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> to define additional
     		audit events specific to <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality that the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> part of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must
-    		generate<a id="period_431" href="#period_431">. </a></td></tr><tr><td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td>The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> iterates an <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> to define additional
-    		management functions specific to the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality that the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> part of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must generate<a id="period_432" href="#period_432">. </a>Authorizations to perform these functions are based
-    		on FMT_SMR.2 defined by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr><a id="period_433" href="#period_433">. </a></td></tr><tr><td><a href="#FIP_ABD_EXT.1">FIP_ABD_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> applies to <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality, which is beyond the original scope of
+    		generate<a id="period_431" href="#period_431">. </a></td></tr><tr><td><a href="#FIP_ABD_EXT.1">FIP_ABD_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> applies to <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality, which is beyond the original scope of
     		the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr></td></tr><tr><td><a href="#FIP_IPB_EXT.1">FIP_IPB_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> applies to <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality, which is beyond the original scope of
     		the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr></td></tr><tr><td><a href="#FIP_NTA_EXT.1">FIP_NTA_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> applies to <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality, which is beyond the original scope of
     		the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr></td></tr><tr><td><a href="#FIP_SBD_EXT.1">FIP_SBD_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> applies to <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality, which is beyond the original scope of
-    		the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr></td></tr></tr><tr><th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_STG.2/IPS">FAU_STG.2/IPS</a></td><td>The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> iterates an <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> to define an optional
+    		the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr></td></tr><tr><td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td>The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> iterates an <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> to define additional
+    		management functions specific to the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality that the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> part of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must generate<a id="period_432" href="#period_432">. </a>Authorizations to perform these functions are based
+    		on FMT_SMR.2 defined by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr><a id="period_433" href="#period_433">. </a></td></tr></tr><tr><th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FAU_STG.2/IPS">FAU_STG.2/IPS</a></td><td>The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> iterates an <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> to define an optional
     		capability for the protection of the <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data generated by <a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a><a id="period_434" href="#period_434">. </a></td></tr><tr><td><a href="#FAU_STG.5/IPS">FAU_STG.5/IPS</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> applies to <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> audit data, which is beyond the original scope of the
     		<abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr><a id="period_435" href="#period_435">. </a></td></tr><tr><td><a href="#FPT_FLS.1/IPS">FPT_FLS.1/IPS</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> applies to secure failure for inline interfaces, which is a type of
     		logical interface that was introduced in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> and therefore
@@ -1979,7 +1980,7 @@ enforce its policies on network traffic of monitored networks<a id="period_141" 
 	in this example, it should be understood that there will be a period at which <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> events are not audited
 	while the audit mechanism is pending restart)<a id="period_476" href="#period_476">. </a>	</div></div></div></div></div>
 	
-	<h3 id="ips" class="indexable" data-level="3">A.1.4 Intrusion Prevention (IPS)</h3>
+	<h3 id="fip" class="indexable" data-level="3">A.1.4 Intrusion Prevention (FIP)</h3>
 		
 	<div class="comp" id="FIP_SBD_EXT.2"><h4>FIP_SBD_EXT.2 Traffic Normalization</h4>
 		
@@ -2230,7 +2231,7 @@ supporting inspection of network traffic</i>] that [<i>subjects</i>] can use [<i
 
 	All extended components specified in the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> are listed in this table:
 
-<table class="sort_kids_"><caption data-sortkey="#0"><b><span class="ctr" data-myid="" data-counter-type="ct-Table" id="">Table <span class="counter">10</span></span>: Extended Component Definitions</b></caption><tr data-sortkey="#1"><th>Functional Class</th><th>Functional Components</th></tr><tr data-sortkey="Intrusion Prevention (IPS)"><td>Intrusion Prevention (<abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr>)</td><td>FIP_ABD_EXT Anomaly-Based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> Functionality<br>FIP_IPB_EXT IP Blocking<br>FIP_NTA_EXT Network Traffic Analysis<br>FIP_SBD_EXT Signature-Based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> Functionality<br></td></tr></table><h2 id="ext-comp-defs-bg" class="indexable" data-level="2">C.2 Extended Component Definitions</h2><span class="sort_kids_"><span data-sortkey="Intrusion Prevention (IPS)"><h3 id="ext-comp-IPS" class="indexable" data-level="3">C.2.1 Intrusion Prevention (IPS)</h3>
+<table class="sort_kids_"><caption data-sortkey="#0"><b><span class="ctr" data-myid="" data-counter-type="ct-Table" id="">Table <span class="counter">10</span></span>: Extended Component Definitions</b></caption><tr data-sortkey="#1"><th>Functional Class</th><th>Functional Components</th></tr><tr data-sortkey="Intrusion Prevention (FIP)"><td>Intrusion Prevention (FIP)</td><td>FIP_ABD_EXT Anomaly-Based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> Functionality<br>FIP_IPB_EXT IP Blocking<br>FIP_NTA_EXT Network Traffic Analysis<br>FIP_SBD_EXT Signature-Based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> Functionality<br></td></tr></table><h2 id="ext-comp-defs-bg" class="indexable" data-level="2">C.2 Extended Component Definitions</h2><span class="sort_kids_"><span data-sortkey="Intrusion Prevention (FIP)"><h3 id="ext-comp-FIP" class="indexable" data-level="3">C.2.1 Intrusion Prevention (FIP)</h3>
 								Intrusion prevention involves the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&#8217;s ability to collect network packets, examine their contents for
 								information that suggests malicious activity, and to perform some action in response such as terminating
 								the connection<a id="period_550" href="#period_550">. </a>							<h3 id="ext-comp-FIP_ABD_EXT" class="indexable" data-level="4">C.2.1.1 FIP_ABD_EXT Anomaly-Based IPS Functionality</h3><div style="margin-left: 1em;"><h4>Family Behavior</h4><div>This family defines requirements for detection of anomalous network traffic and how the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> should
