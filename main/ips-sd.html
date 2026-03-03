@@ -424,7 +424,7 @@ The following sections list Common Criteria and technology terms used in this do
 							</p><p>
 							The evaluator shall verify that the TSS describes what (similar) IPS event types the TOE will combine into a single audit record along with the conditions (e.g., thresholds and time periods) for so doing. The TSS shall also describe to what extent (if any) that may be configurable.
 							</p><p>
-							For IPS_SBD_EXT.1, for each field, the evaluator shall verify that the TSS describes how the field is inspected and if logging is not applicable, any other mechanism such as counting that is deployed.
+							For FIP_SBD_EXT.1, for each field, the evaluator shall verify that the TSS describes how the field is inspected and if logging is not applicable, any other mechanism such as counting that is deployed.
 							</p>
 						</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
 							The evaluator shall verify that the operational guidance describes how to configure the TOE to result in applicable IPS data logging.
@@ -440,7 +440,7 @@ The following sections list Common Criteria and technology terms used in this do
 					
 					
             	<div class="eacategory">TSS</div><div class="ea"><div class="ea">
-					The evaluator shall verify that the TSS describes how the IPS data analysis and reactions can be configured.This may be performed in conjunction with the evaluation of IPS_ABD_EXT.1, IPS_IPB_EXT.1, and IPS_SBD_EXT.1.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
+					The evaluator shall verify that the TSS describes how the IPS data analysis and reactions can be configured.This may be performed in conjunction with the evaluation of FIP_ABD_EXT.1, FIP_IPB_EXT.1, and FIP_SBD_EXT.1.</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
 					The evaluator shall verify that the operational guidance describes the instructions for each function
 					defined in the SFR, describes how to configure the IPS data analysis and reactions, including how to set
 					any configurable defaults and how to configure each of the applicable analysis pattern matching methods
@@ -459,21 +459,21 @@ The following sections list Common Criteria and technology terms used in this do
 							<p>
 							Additionally, for each other claimed management function, the evaluator shall follow the steps listed in the operational guidance for configuration of that function's behavior and verify that configuration has the intended effect (e.g., for modifying the duration of traffic blocking actions, the evaluator could configure this with two separate time values and verify that traffic was blocked for the configured duration in both cases).  
 							</p><p>
-								Testing for this SFR will generally be performed in conjunction with the test activities for IPS_ABD_EXT.1 and IPS_SBD_EXT.1, as testing various aspects of IPS functionality will necessarily involve this functionality to be configured such that the TSF is in a known state when being tested.
+								Testing for this SFR will generally be performed in conjunction with the test activities for FIP_ABD_EXT.1 and FIP_SBD_EXT.1, as testing various aspects of IPS functionality will necessarily involve this functionality to be configured such that the TSF is in a known state when being tested.
 							</p>	
-					</div></div></span></div><h2 class="indexable" data-level="2" id="m-ips">2.2.3 Intrusion Prevention (IPS)</h2><div class="comp" id="IPS-ABD-EXT-1"><h4>IPS_ABD_EXT.1 Anomaly-Based IPS Functionality</h4><span class="activity_pane_body"><div class="component-activity-header">IPS_ABD_EXT.1</div>      
+					</div></div></span></div><h2 class="indexable" data-level="2" id="m-ips">2.2.3 Intrusion Prevention (IPS)</h2><div class="comp" id="FIP-ABD-EXT-1"><h4>FIP_ABD_EXT.1 Anomaly-Based IPS Functionality</h4><span class="activity_pane_body"><div class="component-activity-header">FIP_ABD_EXT.1</div>      
 						
 						
 						
 					<div class="eacategory">TSS</div><div class="ea"><div class="ea">
 							<p>
-							The evaluator shall verify that the TSS describes the composition, construction, and application of baselines or anomaly-based attributes specified in IPS_ABD_EXT.1.1.
+							The evaluator shall verify that the TSS describes the composition, construction, and application of baselines or anomaly-based attributes specified in FIP_ABD_EXT.1.1.
 							</p><p>
-							If ‘frequency’ is selected in IPS_ABD_EXT.1.1, the TSS shall include an explanation of how frequencies can be defined on the TOE.
+							If ‘frequency’ is selected in FIP_ABD_EXT.1.1, the TSS shall include an explanation of how frequencies can be defined on the TOE.
 							</p><p>
-							If ‘thresholds’ is selected in IPS_ABD_EXT.1.1, the TSS shall include an explanation of how the thresholds can be defined on the TOE.
+							If ‘thresholds’ is selected in FIP_ABD_EXT.1.1, the TSS shall include an explanation of how the thresholds can be defined on the TOE.
 							</p><p>
-							The evaluator shall verify that each baseline or anomaly-based rule can be associated with a reaction specified in IPS_ABD_EXT.1.3.
+							The evaluator shall verify that each baseline or anomaly-based rule can be associated with a reaction specified in FIP_ABD_EXT.1.3.
 							</p><p>
 							The evaluator shall verify that the TSS identifies all interface types capable of applying baseline or
 							anomaly-based rules and explains how they are associated with distinct network interfaces. Where
@@ -484,20 +484,20 @@ The following sections list Common Criteria and technology terms used in this do
 						</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
 							<p>
 							The evaluator shall verify that the operational guidance provides instructions to manually create baselines
-							or anomaly-based rules according to the selections made in IPS_ABD_EXT.1.1. Note that dynamic
+							or anomaly-based rules according to the selections made in FIP_ABD_EXT.1.1. Note that dynamic
 							“profiling” of a network to establish a baseline is outside the scope of the PP-Module
 							</p><p>
-							The evaluator shall verify that the operational guidance provides instructions to associate reactions specified in IPS_ABD_EXT.1.3 with baselines or anomaly-based rules.
+							The evaluator shall verify that the operational guidance provides instructions to associate reactions specified in FIP_ABD_EXT.1.3 with baselines or anomaly-based rules.
 							</p><p>
 								The evaluator shall verify that the operational guidance provides instructions to associate the different policies with distinct network interfaces.</p>
 						</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
 							The evaluator shall perform the following tests:<span class="testlist-"><ul>
-								<li class="test-"><a id="_t_4" class="defined" href="#_t_4">Test IPS_ABD_EXT.1:1</a>:
-      The evaluator shall use the instructions in the operational guidance to configure baselines or anomaly-based rules for each attribute specified in IPS_ABD_EXT.1.1. The evaluator shall send traffic that does not match the baseline or matches the anomaly-based rule and verify the TOE applies the configured reaction. This shall be performed for each attribute in IPS_ABD_EXT.1.1.</li>
-								<li class="test-"><a id="_t_5" class="defined" href="#_t_5">Test IPS_ABD_EXT.1:2</a>:
+								<li class="test-"><a id="_t_4" class="defined" href="#_t_4">Test FIP_ABD_EXT.1:1</a>:
+      The evaluator shall use the instructions in the operational guidance to configure baselines or anomaly-based rules for each attribute specified in FIP_ABD_EXT.1.1. The evaluator shall send traffic that does not match the baseline or matches the anomaly-based rule and verify the TOE applies the configured reaction. This shall be performed for each attribute in FIP_ABD_EXT.1.1.</li>
+								<li class="test-"><a id="_t_5" class="defined" href="#_t_5">Test FIP_ABD_EXT.1:2</a>:
       The evaluator shall repeat the test above to ensure that baselines or anomaly-based rules can be defined for each distinct network interface type supported by the TOE.</li>
 							</ul></span>
-						</div></div></span></div><div class="comp" id="IPS-IPB-EXT-1"><h4>IPS_IPB_EXT.1 IP Blocking</h4><span class="activity_pane_body"><div class="component-activity-header">IPS_IPB_EXT.1</div>      
+						</div></div></span></div><div class="comp" id="FIP-IPB-EXT-1"><h4>FIP_IPB_EXT.1 IP Blocking</h4><span class="activity_pane_body"><div class="component-activity-header">FIP_IPB_EXT.1</div>      
 						
 						
 						
@@ -522,22 +522,22 @@ The following sections list Common Criteria and technology terms used in this do
 						</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
 							The evaluator shall perform the following tests:
 							<span class="testlist-"><ul>
-								<li class="test-"><a id="_t_6" class="defined" href="#_t_6">Test IPS_IPB_EXT.1:1</a>:
+								<li class="test-"><a id="_t_6" class="defined" href="#_t_6">Test FIP_IPB_EXT.1:1</a>:
       The evaluator shall use the instructions in the operational guidance to create a known-bad address
 									list. Using a single IP address, a list of addresses, or a range of addresses from that list, the evaluator shall
 									attempt to send traffic through the TOE that would otherwise be allowed by the TOE and observe the TOE
 									automatically drops that traffic.</li>
-								<li class="test-"><a id="_t_7" class="defined" href="#_t_7">Test IPS_IPB_EXT.1:2</a>:
+								<li class="test-"><a id="_t_7" class="defined" href="#_t_7">Test FIP_IPB_EXT.1:2</a>:
       The evaluator shall use the instructions in the operational guidance to create a known-good
 									address list. Using a single IP address, a list of addresses, or a range of addresses from that list, the
 									evaluator shall attempt to send traffic that would otherwise be denied by the TOE and observe the TOE
 									automatically allowing traffic.</li>
-								<li class="test-"><a id="_t_8" class="defined" href="#_t_8">Test IPS_IPB_EXT.1:3</a>:
+								<li class="test-"><a id="_t_8" class="defined" href="#_t_8">Test FIP_IPB_EXT.1:3</a>:
       The evaluator shall add conflicting IP addresses to each list and ensure that the TOE handles
-									conflicting traffic in a manner consistent with the precedence in IPS_NTA_EXT.1.1.
+									conflicting traffic in a manner consistent with the precedence in FIP_NTA_EXT.1.1.
 								</li>
 							</ul></span>
-						</div></div></span></div><div class="comp" id="IPS-NTA-EXT-1"><h4>IPS_NTA_EXT.1 Network Traffic Analysis</h4><span class="activity_pane_body"><div class="element-activity-header">IPS_NTA_EXT.1.1</div>      
+						</div></div></span></div><div class="comp" id="FIP-NTA-EXT-1"><h4>FIP_NTA_EXT.1 Network Traffic Analysis</h4><span class="activity_pane_body"><div class="element-activity-header">FIP_NTA_EXT.1.1</div>      
 						<div class="eacategory">TSS</div><div class="ea">
 							<p>
 						The evaluator shall verify that the TSS explains the TOE’s capability of analyzing IP traffic in terms of the
@@ -557,7 +557,7 @@ The following sections list Common Criteria and technology terms used in this do
 						<div class="eacategory">Tests</div><div class="ea">
 						There are no test EAs for this element.
 						</div>
-					<div class="element-activity-header">IPS_NTA_EXT.1.2</div>      
+					<div class="element-activity-header">FIP_NTA_EXT.1.2</div>      
 						<div class="eacategory">TSS</div><div class="ea">
 						The evaluator shall verify that the TSS indicates that the following protocols are supported:
 						<ul>
@@ -578,7 +578,7 @@ The following sections list Common Criteria and technology terms used in this do
 						<div class="eacategory">Tests</div><div class="ea">
 						There are no test EAs for this element.
 						</div>
-					<div class="element-activity-header">IPS_NTA_EXT.1.3</div>
+					<div class="element-activity-header">FIP_NTA_EXT.1.3</div>
 						<div class="eacategory">TSS</div><div class="ea">
 						The evaluator shall verify that the TSS identifies all interface types capable of being deployed in the modes of promiscuous, and or inline mode as well as the interfaces necessary to facilitate each deployment mode
 						(at a minimum, the interfaces need to support inline mode). The evaluator shall also check that the TSS
@@ -599,12 +599,12 @@ The following sections list Common Criteria and technology terms used in this do
 						<div class="eacategory">Tests</div><div class="ea">
 						Testing for this element is performed in conjunction with testing where promiscuous and inline interfaces are tested. 
 						</div>
-					</span></div><div class="comp" id="IPS-SBD-EXT-1"><h4>IPS_SBD_EXT.1 Signature-Based IPS Functionality</h4><span class="activity_pane_body"><div class="element-activity-header">IPS_SBD_EXT.1.1</div>      
+					</span></div><div class="comp" id="FIP-SBD-EXT-1"><h4>FIP_SBD_EXT.1 Signature-Based IPS Functionality</h4><span class="activity_pane_body"><div class="element-activity-header">FIP_SBD_EXT.1.1</div>      
 					<div class="eacategory">TSS</div><div class="ea">
 						<p>
 					The evaluator shall verify that the TSS describes what is comprised within a signature rule.
 						</p><p>
-					The evaluator shall verify that each signature can be associated with a reaction specified in IPS_SBD_EXT.1.5.
+					The evaluator shall verify that each signature can be associated with a reaction specified in FIP_SBD_EXT.1.5.
 						</p><p>
 					The evaluator shall verify that the TSS identifies all interface types that are capable of applying signatures
 					and explains how rules are associated with distinct network interfaces. Where interfaces can be grouped
@@ -622,16 +622,16 @@ The following sections list Common Criteria and technology terms used in this do
 						<li>TCP: Source port; destination port; sequence number; acknowledgment number; offset; reserved; TCP flags; window; checksum; urgent pointer; and TCP options.</li>
 						<li>UDP: source port; destination port; length; and UDP checksum.</li>
 					</ul>
-					The evaluator shall verify that the operational guidance provides instructions with how to select and/or configure reactions specified in IPS_SBD_EXT.1.5 in the signature rules.
+					The evaluator shall verify that the operational guidance provides instructions with how to select and/or configure reactions specified in FIP_SBD_EXT.1.5 in the signature rules.
 
 					</div>
 					<div class="eacategory">Tests</div><div class="ea">
 					The evaluator shall perform the following tests:
 					<span class="testlist-"><ul>
-						<li class="test-"><a id="_t_9" class="defined" href="#_t_9">Test IPS_SBD_EXT.1.1:1</a>:
+						<li class="test-"><a id="_t_9" class="defined" href="#_t_9">Test FIP_SBD_EXT.1.1:1</a>:
       The evaluator shall use the instructions in the operational guidance to test that packet header
 							signatures can be created and/or configured with the selected and/or configured reactions specified in
-							IPS_SBD_EXT.1.5 for each of the attributes listed below. Each attribute shall be individually assigned to its
+							FIP_SBD_EXT.1.5 for each of the attributes listed below. Each attribute shall be individually assigned to its
 							own unique signature:
 							<ul>
 								<li>IPv4: version; header length; packet length; ID; IP flags; fragment offset; time to live (TTL); protocol; header checksum; source address; destination address; IP options; and, if selected, type of service (ToS).</li>
@@ -643,37 +643,37 @@ The following sections list Common Criteria and technology terms used in this do
 							
 							</ul>
 							The evaluator shall generate traffic to trigger a signature and shall then use a packet sniffer to capture traffic that ensures the reactions of each rule are performed as expected.</li>
-							<li class="test-"><a id="_t_10" class="defined" href="#_t_10">Test IPS_SBD_EXT.1.1:2</a>:
+							<li class="test-"><a id="_t_10" class="defined" href="#_t_10">Test FIP_SBD_EXT.1.1:2</a>:
       The evaluator shall repeat the test above to ensure that signature-based IPS policies can be defined for each distinct network interface type capable of applying signatures as supported by the TOE.</li>
 						</ul></span>
 					</div>
-				<div class="element-activity-header">IPS_SBD_EXT.1.2</div>
+				<div class="element-activity-header">FIP_SBD_EXT.1.2</div>
 				<div class="eacategory">TSS</div><div class="ea">
 					<p>
 					The evaluator shall verify that the TSS describes what is comprised within a string-based detection
 					signature.
 					</p><p>
 					The evaluator shall verify that each packet payload string-based detection signature can be associated
-					with a reaction specified in IPS_SBD_EXT.1.5.
+					with a reaction specified in FIP_SBD_EXT.1.5.
 					</p>
 					</div>
 					<div class="eacategory">Guidance</div><div class="ea">
 						<p>
-						The evaluator shall verify that the operational guidance provides instructions with how to configure rules using the packet payload string-based detection fields defined in IPS_SBD_EXT.1.2.
+						The evaluator shall verify that the operational guidance provides instructions with how to configure rules using the packet payload string-based detection fields defined in FIP_SBD_EXT.1.2.
 						</p><p>
-					The evaluator shall verify that the operational guidance provides instructions with how to configure reactions specified in IPS_SBD_EXT.1.5 for each string-based detection signature.
+					The evaluator shall verify that the operational guidance provides instructions with how to configure reactions specified in FIP_SBD_EXT.1.5 for each string-based detection signature.
 						</p><p>
 					The evaluator shall verify that the operational guidance provides instructions with how rules are associated with distinct network interfaces that are capable of being associated with signatures.
 						</p>
 					</div>
 					<div class="eacategory">Tests</div><div class="ea">
 					The evaluator shall perform the following tests:<span class="testlist-"><ul>
-					<li class="test-"><a id="sbd-payload-reaction" class="defined" href="#sbd-payload-reaction">Test IPS_SBD_EXT.1.2:1</a>:
+					<li class="test-"><a id="sbd-payload-reaction" class="defined" href="#sbd-payload-reaction">Test FIP_SBD_EXT.1.2:1</a>:
       The evaluator shall use the instructions in the operational guidance to test that packet payload
-					string-based detection rules can be assigned to the reactions specified in IPS_SBD_EXT.1.5 using the
-					attributes specified in IPS_SBD_EXT.1.2. However it is not required (nor is it feasible) to test all possible
+					string-based detection rules can be assigned to the reactions specified in FIP_SBD_EXT.1.5 using the
+					attributes specified in FIP_SBD_EXT.1.2. However it is not required (nor is it feasible) to test all possible
 					strings of protocol data, the evaluator shall ensure that a selection of strings in the requirement is selected
-					to be tested. At a minimum at least one string using each of the following attributes from IPS_SBD_EXT.1.2
+					to be tested. At a minimum at least one string using each of the following attributes from FIP_SBD_EXT.1.2
 					should be tested for each protocol. The evaluator shall generate packets that match the string in the rule
 					and observe the corresponding reaction is as configured.
 					<ul>
@@ -699,42 +699,42 @@ The following sections list Common Criteria and technology terms used in this do
 					<li>Test at least one string for each additional attribute type defined in the “other types of packet
 					payload inspection” assignment, if any other types are specified.</li>
 					</ul></li>
-					<li class="test-"><a id="_t_12" class="defined" href="#_t_12">Test IPS_SBD_EXT.1.2:2</a>:
+					<li class="test-"><a id="_t_12" class="defined" href="#_t_12">Test FIP_SBD_EXT.1.2:2</a>:
       The evaluator shall repeat Test 1 above to ensure that signature-based IPS policies can be defined for each distinct network interface type capable of applying signatures as supported by the TOE.</li>
 					</ul></span>
 					</div>    
-                 <div class="element-activity-header">IPS_SBD_EXT.1.3</div>
-					<div class="eacategory">TSS</div><div class="ea">The evaluator shall verify that the TSS describes how the attacks defined in IPS_SBD_EXT.1.3 are processed by the TOE and what reaction is triggered when these attacks are identified.</div>
-					<div class="eacategory">Guidance</div><div class="ea">The evaluator shall verify that the operational guidance provides instructions with configuring rules to identify the attacks defined in IPS_SBD_EXT.1.3 as well as the reactions to these attacks as specified in IPS_SBD_EXT.1.5.</div>
-					<div class="eacategory">Tests</div><div class="ea">The evaluator shall create and/or configure rules for each attack signature in IPS_SBD_EXT.1.3. For each
+                 <div class="element-activity-header">FIP_SBD_EXT.1.3</div>
+					<div class="eacategory">TSS</div><div class="ea">The evaluator shall verify that the TSS describes how the attacks defined in FIP_SBD_EXT.1.3 are processed by the TOE and what reaction is triggered when these attacks are identified.</div>
+					<div class="eacategory">Guidance</div><div class="ea">The evaluator shall verify that the operational guidance provides instructions with configuring rules to identify the attacks defined in FIP_SBD_EXT.1.3 as well as the reactions to these attacks as specified in FIP_SBD_EXT.1.5.</div>
+					<div class="eacategory">Tests</div><div class="ea">The evaluator shall create and/or configure rules for each attack signature in FIP_SBD_EXT.1.3. For each
 					attack, the TOE should apply its corresponding signature and enable it to each distinct network interface
 					type capable of applying the signatures. The evaluator shall use packet captures to ensure that the attack
-					traffic is detected by the TOE and a reaction specified in IPS_SBD_EXT.1.5 is triggered and stops the attack.
+					traffic is detected by the TOE and a reaction specified in FIP_SBD_EXT.1.5 is triggered and stops the attack.
 					Each attack should be performed one after another so as to ensure that its corresponding signature
 					successfully identified and appropriately reacted to a particular attack.
 					</div>
-                 <div class="element-activity-header">IPS_SBD_EXT.1.4</div>
-					<div class="eacategory">TSS</div><div class="ea">The evaluator shall verify that the TSS describes how the attacks defined in IPS_SBD_EXT.1.4 are processed by the TOE and what reaction is triggered when these attacks are identified.
+                 <div class="element-activity-header">FIP_SBD_EXT.1.4</div>
+					<div class="eacategory">TSS</div><div class="ea">The evaluator shall verify that the TSS describes how the attacks defined in FIP_SBD_EXT.1.4 are processed by the TOE and what reaction is triggered when these attacks are identified.
 
 					</div>
 					<div class="eacategory">Guidance</div><div class="ea">
-					The evaluator shall verify that the operational guidance provides instructions with configuring rules to identify the attacks defined in IPS_SBD_EXT.1.4 as well as the reactions to these attacks as specified in IPS_SBD_EXT.1.5.
+					The evaluator shall verify that the operational guidance provides instructions with configuring rules to identify the attacks defined in FIP_SBD_EXT.1.4 as well as the reactions to these attacks as specified in FIP_SBD_EXT.1.5.
 					</div>
-					<div class="eacategory">Tests</div><div class="ea">The evaluator shall configure individual signatures for each attack in IPS_SBD_EXT.1.4. For each attack,
+					<div class="eacategory">Tests</div><div class="ea">The evaluator shall configure individual signatures for each attack in FIP_SBD_EXT.1.4. For each attack,
 					the TOE should apply its corresponding signature and enable it to each distinct network interface type
 					capable of applying signatures. The evaluator shall use packet captures to ensure that the attack traffic is
-					detected by the TOE and a reaction specified in IPS_SBD_EXT.1.5 is triggered and stops the attack. Each
+					detected by the TOE and a reaction specified in FIP_SBD_EXT.1.5 is triggered and stops the attack. Each
 					attack should be performed one after another so as to ensure that its corresponding signature successfully
 					identified and appropriately reacted to a particular attack.
 					</div>
-                <div class="element-activity-header">IPS_SBD_EXT.1.5</div>
+                <div class="element-activity-header">FIP_SBD_EXT.1.5</div>
 				<div class="eacategory">TSS</div><div class="ea">There are no TSS EAs for this element</div>
-				<div class="eacategory">Guidance</div><div class="ea">The guidance EAs for this element are performed in conjunction with IPS_SBD_EXT.1.1, IPS_SBD_EXT.1.3, and IPS_SBD_EXT.1.4.</div>
-				<div class="eacategory">Tests</div><div class="ea">The test EAs for this element are performed in conjunction with those for IPS_SBD_EXT.1.1, IPS_SBD_EXT.1.2, IPS_SBD_EXT.1.3, and IPS_SBD_EXT.1.4.</div>
-                 <div class="element-activity-header">IPS_SBD_EXT.1.6</div>
+				<div class="eacategory">Guidance</div><div class="ea">The guidance EAs for this element are performed in conjunction with FIP_SBD_EXT.1.1, FIP_SBD_EXT.1.3, and FIP_SBD_EXT.1.4.</div>
+				<div class="eacategory">Tests</div><div class="ea">The test EAs for this element are performed in conjunction with those for FIP_SBD_EXT.1.1, FIP_SBD_EXT.1.2, FIP_SBD_EXT.1.3, and FIP_SBD_EXT.1.4.</div>
+                 <div class="element-activity-header">FIP_SBD_EXT.1.6</div>
 					<div class="eacategory">TSS</div><div class="ea">There are no TSS EAs for this element.</div>
 					<div class="eacategory">Guidance</div><div class="ea">The evaluator shall verify that the operational guidance provides configuration instructions, if needed, to detect payload across multiple packets.</div>
-					<div class="eacategory">Tests</div><div class="ea">The evaluator shall repeat one of the tests in <a href="#sbd-payload-reaction" class="dynref">Test IPS_SBD_EXT.1.2:1</a> but generate multiple non-fragmented packets that contain the string in the rule defined. The evaluator shall verify that the malicious traffic is still detected when split across multiple non-fragmented packets.</div>
+					<div class="eacategory">Tests</div><div class="ea">The evaluator shall repeat one of the tests in <a href="#sbd-payload-reaction" class="dynref">Test FIP_SBD_EXT.1.2:1</a> but generate multiple non-fragmented packets that contain the string in the rule defined. The evaluator shall verify that the malicious traffic is still detected when split across multiple non-fragmented packets.</div>
                  </span></div><h2 class="indexable" data-level="1" id="opt-sfrs">2.3 Evaluation Activities for Optional SFRs</h2><h2 class="indexable" data-level="2" id="fau-ops">2.3.1 Security Audit(FAU)</h2><div class="comp" id="FAU-STG-2-IPS"><h4>FAU_STG.2/IPS Protected Audit Trail Storage</h4><span class="activity_pane_body"><div class="component-activity-header">FAU_STG.2/IPS</div>
 				
 				
@@ -756,28 +756,28 @@ The following sections list Common Criteria and technology terms used in this do
 	point during the shutdown or restart of the TOE is any ICMP echo packet allowed through the TOE (though
 	in this example, it should be understood that there will be a period at which IPS events are not audited
 	while the audit mechanism is pending restart).
-	</div></div></span></div><h2 class="indexable" data-level="2" id="ips">2.3.3 Intrusion Prevention (IPS)</h2><div class="comp" id="IPS-SBD-EXT-2"><h4>IPS_SBD_EXT.2 Traffic Normalization</h4><span class="activity_pane_body"><div class="element-activity-header">IPS_SBD_EXT.2.1</div>
+	</div></div></span></div><h2 class="indexable" data-level="2" id="ips">2.3.3 Intrusion Prevention (IPS)</h2><div class="comp" id="FIP-SBD-EXT-2"><h4>FIP_SBD_EXT.2 Traffic Normalization</h4><span class="activity_pane_body"><div class="element-activity-header">FIP_SBD_EXT.2.1</div>
 		<div class="eacategory">TSS</div><div class="ea">The evaluator shall verify that the TSS describes how the TOE is able to inspect traffic inside the encapsulation protocols claimed in the requirement.</div>
 		<div class="eacategory">Guidance</div><div class="ea">The evaluator shall examine the operational guidance to determine that it contains instructions for inspecting tunneled packets through the encapsulation methods identified in the requirement.</div>
-		<div class="eacategory">Tests</div><div class="ea">The evaluator shall set up the conditions necessary to execute testing from IPS_SBD_EXT.1 except that
+		<div class="eacategory">Tests</div><div class="ea">The evaluator shall set up the conditions necessary to execute testing from FIP_SBD_EXT.1 except that
 		the traffic to be inspected is encapsulated in one of the tunneling protocols that the TOE is capable of
 		inspecting. The evaluator shall transmit the encapsulated traffic and observe that the TSF is able to inspect
 		it and respond in the configured manner. The evaluator shall repeat this test for each type of encapsulated
 		traffic supported by the TSF.</div>
-	<div class="element-activity-header">IPS_SBD_EXT.2.2</div>
+	<div class="element-activity-header">FIP_SBD_EXT.2.2</div>
 		<div class="eacategory">TSS</div><div class="ea">The evaluator shall verify that the TSS describes how audit records are generated when packets cannot
 		be reassembled after fragmentation. Also, for inline mode, the evaluator shall examine the TSS to ensure
 		packets are dropped.</div>
 		<div class="eacategory">Guidance</div><div class="ea">There are no guidance EAs for this element.</div>
 		<div class="eacategory">Tests</div><div class="ea">The evaluator shall perform the following tests:<span class="testlist-"><ul>
-		<li class="test-"><a id="_t_13" class="defined" href="#_t_13">Test IPS_SBD_EXT.2.2:1</a>:
+		<li class="test-"><a id="_t_13" class="defined" href="#_t_13">Test FIP_SBD_EXT.2.2:1</a>:
       The evaluator shall generate packets that cannot be reassembled after fragmentation; the evaluator shall ensure audit events are generated for all instances of IP normalization.</li>
-		<li class="test-"><a id="_t_14" class="defined" href="#_t_14">Test IPS_SBD_EXT.2.2:2</a>:
+		<li class="test-"><a id="_t_14" class="defined" href="#_t_14">Test FIP_SBD_EXT.2.2:2</a>:
       For inline mode: The evaluator shall test for automatic packet rejection for when packets cannot be reassembled after fragmentation. The evaluator shall use packet captures to ensure that the IP traffic is detected by the TOE and packets are dropped.</li>
-		<li class="test-"><a id="_t_15" class="defined" href="#_t_15">Test IPS_SBD_EXT.2.2:3</a>:
+		<li class="test-"><a id="_t_15" class="defined" href="#_t_15">Test FIP_SBD_EXT.2.2:3</a>:
       The evaluator shall generate packets that can be reassembled after fragmentation; the evaluator shall ensure audit events are generated for all instances of IP normalization.</li>
 		</ul></span></div>
-		<div class="element-activity-header">IPS_SBD_EXT.2.3</div>
+		<div class="element-activity-header">FIP_SBD_EXT.2.3</div>
 	<div class="eacategory">TSS</div><div class="ea">The evaluator shall verify that the TSS describes that packets are automatically dropped for the following normalization:<ul>
 	<li>duplicate packets</li>
 	<li>changed packets</li>
