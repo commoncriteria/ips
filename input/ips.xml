@@ -1546,7 +1546,7 @@ enforce its policies on network traffic of monitored networks.</description>
 							<h:li><h:i>UDP Chargen DDoS Attack</h:i>.</h:li>
 						</h:ol>
 					</h:li>
-				</h:ol>.
+				</h:ol>
                 </title>
                 <aactivity level="element">
 					<TSS>The evaluator shall verify that the TSS describes how the attacks defined in FIP_SBD_EXT.1.3 are processed by the TOE and what reaction is triggered when these attacks are identified.</TSS>
