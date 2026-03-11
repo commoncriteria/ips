@@ -1,3 +1,4 @@
+* https://commoncriteria.github.io/ips/xml-builder-review/Master-Diff.html[Master-Diff.html]
 * https://commoncriteria.github.io/ips/xml-builder-review/diff-v1.0.html[diff-v1.0.html]
 * https://commoncriteria.github.io/ips/xml-builder-review/ips-release-linkable.html[ips-release-linkable.html]
 * https://commoncriteria.github.io/ips/xml-builder-review/ips-release.html[ips-release.html]
