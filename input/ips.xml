@@ -241,7 +241,7 @@
       </h:p>
     </section>
   </sec:Introduction>
-  <sec:Conformance_Claims boilerplate="yes">
+  <sec:Conformance_Claims>
     <CClaimsInfo cc-version="cc-2022r1" cc-approach="direct-rationale">
       <cc-st-conf>exact</cc-st-conf>
       <cc-pt2-conf>extended</cc-pt2-conf>
@@ -1575,6 +1575,9 @@ enforce its policies on network traffic of monitored networks.</description>
     </opt-sfrs>
     <sel-sfrs/>
     <obj-sfrs>
+      <section id="sec-obj-audit-table" title="Auditable Events for Objective SFRs">
+        <audit-table id="at-objective" table="objective"/>
+      </section>
       <!-- 5.2.7 Security Audit (FAU) -->
       <section title="Security Audit (FAU)" id="fau-obj">
         <!-- FAU_ARP.1 Security Alarms -->
@@ -1734,6 +1737,9 @@ signature ID, IPS actions performed, and</h:i>
       </section>
     </obj-sfrs>
     <impl-dep-sfrs>
+      <section id="sec-impl-audit-table" title="Auditable Events for Implementation-Dependent SFRs">
+        <audit-table id="at-impl-dep" table="impl-dep"/>
+      </section>
       <!-- 5.2.8 Resource Utilization -->
       <section title="Resource Utilization" id="fru-imp_dep">
         <!-- FRU_RSA.1 Maximum Quotas -->
