@@ -367,14 +367,14 @@
         </threat>
         <threat name="T.UNAUTHORIZED_ADMINISTRATION">
           <from base="ND"/>
-          <description>This threat from the above Base PP also applies to the functionality defined in this PP-Module.</description>
+          <description></description>
           <!-- New mapping to build updated threat mapping table. -->
           <addressed-by>FMT_SMF.1/IPS</addressed-by>
           <rationale>This requirement mitigates the threat of unauthorized administration by providing a dedicated mechanism for authorized administration.</rationale>
         </threat>
         <threat name="T.UNDETECTED_ACTIVITY">
           <from base="ND"/>
-          <description>This threat from the above Base PP also applies to the functionality defined in this PP-Module.</description>
+          <description></description>
           <!-- New mapping to build updated threat mapping table. -->
           <addressed-by>FAU_ARP.1 (objective)</addressed-by>
           <rationale>This requirement mitigates the threat of undetected actions by generating an alert in response to the detection of suspicious network events, allowing for timely analysis of potential threats.</rationale>
@@ -1687,8 +1687,18 @@ enforce its policies on network traffic of monitored networks.</description>
 		a view is provided, it is expected that the administrator will be able to view the
 		details of individual event occurrences.
               <h:table border="1">
-                <h:tr></h:tr>
-                <h:tr></h:tr>
+                <h:tr>
+                  <th>Time/Date</th>
+                  <th>Event Type</th>
+                  <th>Reaction</th>
+                  <th>Event total</th>
+                </h:tr>
+                <h:tr>
+                  <th>2013-01-1 10:45:00</th>
+                  <th>Port scan from 10.1.2.3 </th>
+                  <th>Blocked all traffic from 10.1.2.3</th>
+                  <th>34</th>
+                </h:tr>
               </h:table>
             </note>
             <aactivity>
