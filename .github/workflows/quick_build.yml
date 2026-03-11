@@ -109,6 +109,15 @@ jobs:
     #        PP_XML=output/effective.xml PP_RELEASE_HTML=output/AppliedTDs.html make release
     #        java -jar ExecuteDaisy-master/*.jar output/*-release.html output/AppliedTDs.html --file=output/AppliedTDs-Diff.html
 
+    - name: Diff master
+      id: master_diff
+      run: |
+        git fetch origin gh-pages
+        git show origin/gh-pages:master/${{ env.action_projname }}-release-linkable.html > /tmp/master-release-linkable.html 2>/dev/null || true
+        if [ -f /tmp/master-release-linkable.html ]; then
+          java -jar ExecuteDaisy-master/*.jar /tmp/master-release-linkable.html output/${{ env.action_projname }}-release-linkable.html --file=output/Master-Diff.html
+        fi
+
     - name: Set TD badge attributes
       run: |
         NUM=$(ls input/tds/*.xml | wc -l)
