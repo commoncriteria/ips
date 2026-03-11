@@ -367,13 +367,14 @@
         </threat>
         <threat name="T.UNAUTHORIZED_ADMINISTRATION">
           <from base="ND"/>
+          <description>This threat from the above Base PP also applies to the functionality defined in this PP-Module.</description>
           <!-- New mapping to build updated threat mapping table. -->
           <addressed-by>FMT_SMF.1/IPS</addressed-by>
           <rationale>This requirement mitigates the threat of unauthorized administration by providing a dedicated mechanism for authorized administration.</rationale>
         </threat>
         <threat name="T.UNDETECTED_ACTIVITY">
           <from base="ND"/>
-          <description></description>
+          <description>This threat from the above Base PP also applies to the functionality defined in this PP-Module.</description>
           <!-- New mapping to build updated threat mapping table. -->
           <addressed-by>FAU_ARP.1 (objective)</addressed-by>
           <rationale>This requirement mitigates the threat of undetected actions by generating an alert in response to the detection of suspicious network events, allowing for timely analysis of potential threats.</rationale>
