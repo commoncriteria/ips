@@ -390,6 +390,8 @@
           <rationale>This requirement mitigates the threat of undetected actions by providing a predictable mechanism for how storage of IPS data is prioritized in the event that insufficient storage is available, allowing for the administrator to have adequate warning of the limitations of the collection process.</rationale>
           <addressed-by>FPT_FLS.1/IPS (optional)</addressed-by>
           <rationale>This requirement mitigates the threat of undetected actions by implementing a mechanism that allows the TSF to fail closed so that network traffic is not transmitted without inspection in the event that its inspection functionality is unavailable.</rationale>
+          <addressed-by>FRU_RSA.1 (implementation-dependent)</addressed-by>
+          <rationale>This requirement mitigates the threat of undetected actions by enforcing network traffic quotas so that network traffic is not transmitted through the TOE without analysis.</rationale>
         </threat>
       </threats>
     </sec:Threats>
@@ -435,6 +437,11 @@
     <!-- 4.1 Security Objectives for the TOE -->
     <!-- 4.2 Security Objctives for the Operational Environment -->
     <sec:Security_Objectives_for_the_Operational_Environment>
+      <h:p>All objectives for the operational environment of the Base-PP also apply to this PP-Module.
+		OE.NO_THRU_TRAFFIC_PROTECTION is still operative, but only for the interfaces in the TOE that are
+		defined by the Base-PP and not the PP-Module.</h:p>
+      <h:p>This PP-Module defines the following additional environmental security objectives, which extend those
+		defined in the Base-PP.</h:p>
       <SOEs>
         <SOE name="OE.CONNECTIONS">
           <description>TOE administrators will ensure that the TOE is installed in a manner that will allow the TOE to effectively
