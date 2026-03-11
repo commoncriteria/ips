@@ -166,6 +166,16 @@
       </h:ul>
       <h:p/>
       <figure entity="images/deployment_diagram.png" title="TOE Deployment Scenario Diagram" id="OperEnv"/>
+      <sec:TOE_Boundary>
+        <h:p>The physical boundary for a TOE that conforms to this PP-Module is a physical or virtual network device,
+			that also provides generalized network device functionality, such as auditing, I&amp;A, and cryptographic
+			services for network communications. The TOE may be standalone or distributed, where a distributed TOE
+			is one that requires multiple distinct components to operate as a logical whole in order to fulfill the
+			requirements of this PP-Module. The TOE’s logical boundary includes all functionality required by the
+			Base-PP as well as the IPS functionality and related capabilities that are defined in this PP-Module. Any
+			functionality that is provided by the network device that is not relevant to the security requirements
+			defined by this PP-Module or the Base-PP is considered to be outside the scope of the TOE.</h:p>
+      </sec:TOE_Boundary>
     </sec:Compliant_Targets_of_Evaluation>
     <sec:Use_Cases>
       <h:p>This PP-Module defines two potential use cases for the IPS TOE, listed below.</h:p>
@@ -438,7 +448,7 @@ enforce its policies on network traffic of monitored networks.</description>
   <!-- 5.0 Security Requirements -->
   <sec:Security_Requirements title="Security Requirements">
     <!-- 5.1 ND PP Security Functional Requirements Direction -->
-    <base-pp id="ND" name="Network Device" product="Network Device" short="ND" version="4.0">
+    <base-pp id="ND" name="Network Device" product="Network Device" short="ND" version="4.0" plural="Network Devices">
       <url>https://www.niap-ccevs.org/protectionprofiles/482</url>
       <cPP/>
       <sec-func-req-dir>In a PP-Configuration that includes the NDcPP, the TOE is expected to rely on some of the security
