@@ -41,7 +41,7 @@ image::https://raw.githubusercontent.com/commoncriteria/ips/gh-pages/release-2.0
 Profile for IPS] (html)
 
 === Release Version
-* https://commoncriteria.github.io/ips/release-2.0/ips-release-linkable.html[Protection
+* https://commoncriteria.github.io/ips/release-2.0/ips.html[Protection
 Profile for IPS v2.0] (html)
 
 === Contributing
