@@ -954,6 +954,11 @@ provide all of its security functionality.
     
     
     <h2 class="indexable" data-level="2" id="Security_Objectives_for_the_Operational_Environment">4.1 Security Objectives for the Operational Environment</h2>
+      <p>All objectives for the operational environment of the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> also apply to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
+		<abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr>.NO_THRU_TRAFFIC_PROTECTION is still operative, but only for the interfaces in the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that are
+		defined by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> and not the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.</p>
+      <p>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> defines the following additional environmental security objectives, which extend those
+		defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.</p>
       <dl><dt class="SOE defined" id="OE.CONNECTIONS">OE.CONNECTIONS</dt><dd><span class="description"><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> administrators will ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is installed in a manner that will allow the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to effectively
 enforce its policies on network traffic of monitored networks.</span></dd></dl>
     
@@ -1484,7 +1489,7 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 <tr class="major-row"><td rowspan="1"><a href="#T.UNAUTHORIZED_ADMINISTRATION">T.UNAUTHORIZED_​ADMINISTRATION</a>
 	    (from NDcPP)
 	</td><td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td>This requirement mitigates the threat of unauthorized administration by providing a dedicated mechanism for authorized administration.</td></tr>
-<tr class="major-row"><td rowspan="8"><a href="#T.UNDETECTED_ACTIVITY">T.UNDETECTED_​ACTIVITY</a>
+<tr class="major-row"><td rowspan="9"><a href="#T.UNDETECTED_ACTIVITY">T.UNDETECTED_​ACTIVITY</a>
 	    (from NDcPP)
 	</td><td><a href="#FAU_ARP.1">FAU_ARP.1</a> (objective)</td><td>This requirement mitigates the threat of undetected actions by generating an alert in response to the detection of suspicious network events, allowing for timely analysis of potential threats.</td></tr>
 <tr><td><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a></td><td>This requirement mitigates the threat of undetected actions by logging the actions that occur on the network.</td></tr>
@@ -1494,6 +1499,7 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 <tr><td><a href="#FAU_STG.2/IPS">FAU_STG.2/IPS</a> (optional)</td><td>This requirement mitigates the threat of undetected actions by ensuring that records of stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data cannot be read without authorization or modified by any subject so as not to falsely disclose the history of activity observed on the network.</td></tr>
 <tr><td><a href="#FAU_STG.5/IPS">FAU_STG.5/IPS</a> (optional)</td><td>This requirement mitigates the threat of undetected actions by providing a predictable mechanism for how storage of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data is prioritized in the event that insufficient storage is available, allowing for the administrator to have adequate warning of the limitations of the collection process.</td></tr>
 <tr><td><a href="#FPT_FLS.1/IPS">FPT_FLS.1/IPS</a> (optional)</td><td>This requirement mitigates the threat of undetected actions by implementing a mechanism that allows the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to fail closed so that network traffic is not transmitted without inspection in the event that its inspection functionality is unavailable.</td></tr>
+<tr><td><a href="#FRU_RSA.1">FRU_RSA.1</a> (implementation-dependent)</td><td>This requirement mitigates the threat of undetected actions by enforcing network traffic quotas so that network traffic is not transmitted through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> without analysis.</td></tr>
 </table></p><h1 id="mod-conrat" class="indexable" data-level="1">6 Consistency Rationale</h1><h2 id="conrat-ND" class="indexable" data-level="2">6.1 Collaborative 
     Protection Profile for Network Devices</h2><h3 id="contoe-ND" class="indexable" data-level="3">6.1.1 
 	Consistency of TOE Type
