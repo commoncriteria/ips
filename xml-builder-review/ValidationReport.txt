@@ -1,0 +1,1 @@
+/home/runner/work/ips/ips/input/ips.xml:244:45: error: value of attribute "boilerplate" is invalid; must be equal to "no"
