@@ -9,10 +9,6 @@
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Introduction[1]""/section[2]""/h:p[1]"This sect"/h:p[3]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Introduction[1]""/section[2]""/h:p[1]"This sect"/h:p[4]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Introduction[1]""/section[2]""/h:p[1]"This sect"/h:p[5]""
- Failed to find a reference to at-objective.
- Failed to find a reference to at-impl-dep.
- Failed to find a reference to at-objective.
- Failed to find a reference to at-impl-dep.
 * Warning: Since FIP_ABD_EXT.1.1 has an 'id' attribute in a descendant node in the title, you probably need to define an alternative 'ext-comp-def-title'.
                        
 * Warning: Since FIP_ABD_EXT.1.2 has an 'id' attribute in a descendant node in the title, you probably need to define an alternative 'ext-comp-def-title'.
