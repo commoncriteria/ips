@@ -373,6 +373,7 @@
         </threat>
         <threat name="T.UNDETECTED_ACTIVITY">
           <from base="ND"/>
+          <description></description>
           <!-- New mapping to build updated threat mapping table. -->
           <addressed-by>FAU_ARP.1 (objective)</addressed-by>
           <rationale>This requirement mitigates the threat of undetected actions by generating an alert in response to the detection of suspicious network events, allowing for timely analysis of potential threats.</rationale>
