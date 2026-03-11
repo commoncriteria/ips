@@ -410,7 +410,14 @@
     </sec:Assumptions>
     <!-- 3.3 Organizational Security Policies -->
     <sec:Organizational_Security_Policies>
-      <OSPs/>
+      <OSPs>
+        <OSP name="P.ANALYZE">
+          <description>Analytical processes and information to derive conclusions about potential intrusions must be applied to IPS data and appropriate response actions taken.</description>
+          <objective-refer ref="OE.CONNECTIONS">
+            <rationale>The operational environment's ability to facilitate network connections is necessary for the policy to analyze the network traffic associated with these connections.</rationale>
+          </objective-refer>
+        </OSP>
+      </OSPs>
     </sec:Organizational_Security_Policies>
   </sec:Security_Problem_Definition>
   <!-- 4.0 Security Objectives -->
