@@ -1,0 +1,4 @@
+* https://commoncriteria.github.io/ips/release-2.0/ips-sd.html.pdf[ips-sd.html.pdf]
+* https://commoncriteria.github.io/ips/release-2.0/ips.html.pdf[ips.html.pdf]
+* https://commoncriteria.github.io/ips/release-2.0/ips-release.html.pdf[ips-release.html.pdf]
+* https://commoncriteria.github.io/ips/release-2.0/ips-release-linkable.html.pdf[ips-release-linkable.html.pdf]
