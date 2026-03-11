@@ -1688,16 +1688,16 @@ enforce its policies on network traffic of monitored networks.</description>
 		details of individual event occurrences.
               <h:table border="1">
                 <h:tr>
-                  <th>Time/Date</th>
-                  <th>Event Type</th>
-                  <th>Reaction</th>
-                  <th>Event total</th>
+                  <h:th>Time/Date</h:th>
+                  <h:th>Event Type</h:th>
+                  <h:th>Reaction</h:th>
+                  <h:th>Event total</h:th>
                 </h:tr>
                 <h:tr>
-                  <th>2013-01-1 10:45:00</th>
-                  <th>Port scan from 10.1.2.3 </th>
-                  <th>Blocked all traffic from 10.1.2.3</th>
-                  <th>34</th>
+                  <h:th>2013-01-1 10:45:00</h:th>
+                  <h:th>Port scan from 10.1.2.3 </h:th>
+                  <h:th>Blocked all traffic from 10.1.2.3</h:th>
+                  <h:th>34</h:th>
                 </h:tr>
               </h:table>
             </note>
