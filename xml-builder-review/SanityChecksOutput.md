@@ -1,5 +1,19 @@
 * Error: Detected dangling id-reference to fcs-eap-ext-1 from attribute
         on/Module[1]""/include-pkg[2]""/depends[1]""/on[1]""
+* Error: Detected multiple elements with an id of 'fip_abd_ext.1.1_2'.
+* Error: Detected multiple elements with an id of 'fip_abd_ext.1.1_3'.
+* Error: Detected multiple elements with an id of 'fip_abd_ext.1.1_2'.
+* Error: Detected multiple elements with an id of 'fip_abd_ext.1.1_3'.
+* Error: Detected multiple elements with an id of 'fip_ipb_ext.1.1_1'.
+* Error: Detected multiple elements with an id of 'fip_ipb_ext.1.1_1'.
+* Error: Detected multiple elements with an id of 'fip_ipb_ext.1.2_1'.
+* Error: Detected multiple elements with an id of 'fip_ipb_ext.1.2_1'.
+* Error: Detected multiple elements with an id of 'fip_sbd_ext.1.1_1'.
+* Error: Detected multiple elements with an id of 'fip_sbd_ext.1.1_1'.
+* Error: Detected multiple elements with an id of 'fip_sbd_ext.2.1_1'.
+* Error: Detected multiple elements with an id of 'fip_sbd_ext.2.1_1'.
+* Error: Detected multiple elements with an id of 'fip_sbd_ext.2.3_1'.
+* Error: Detected multiple elements with an id of 'fip_sbd_ext.2.3_1'.
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Introduction[1]""/sec:Compliant_Targets_of_Evaluation[1]""/h:p[7]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Introduction[1]""/section[2]""/h:p[1]"This sect"/h:p[1]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Introduction[1]""/section[2]""/h:p[1]"This sect"/h:p[2]""
