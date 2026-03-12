@@ -177,7 +177,7 @@
 			defined by this PP-Module or the Base-PP is considered to be outside the scope of the TOE.</h:p>
       </sec:TOE_Boundary>
     </sec:Compliant_Targets_of_Evaluation>
-    <sec:Use_Cases>
+    <sec:TOE_Usage>
       <h:p>This PP-Module defines two potential use cases for the IPS TOE, listed below.</h:p>
       <h:p>This PP-Module also defines optional and objective requirements for functionality including separation of
       management roles and ability to use the TSF to review collected IPS data. These functions are not
@@ -196,7 +196,7 @@
 			configuration and collect relevant log data for the rest of the TOE.</description>
         </usecase>
       </usecases>
-    </sec:Use_Cases>
+    </sec:TOE_Usage>
     <section title="Implementation-Based Features" id="sec-features">
       The following features of the TOE are implementation-based. A TOE is not required to implement these features to conform to this PP-Module, but if the feature is implemented, it is expected that associated implementation-based requirements are claimed as part of the TSF.
       <implements>
@@ -615,7 +615,7 @@ enforce its policies on network traffic of monitored networks.</description>
           </f-element>
           <f-element id="fau-gen-1e2-ips">
             <title>The TSF shall record within the <h:b>IPS</h:b> audit data at least the following information: <h:ol type="a"><h:li>Date and time of the event, type of event <h:b>and/or reaction,</h:b> <h:s>subject identity, and the outcome (success or failure) of the event; and;</h:s></h:li> <h:li>For each <h:b>IPS</h:b> auditable event type, based on the auditable event definitions
-							of the functional components included in the PP, PP-Module, functional package, or ST, [<h:i>information specified in column three of the Auditable Events for Mandatory SFRs table (<xref to="at-mandatory"/>),  <selectables><selectable id="fau_gen.1.2_IPS_1">no other auditable events</selectable><selectable id="fau_gen.1.2_IPS_2">additional information in column three of the Auditable Events for Optional SFRs table ( <xref to="at-optional"/>) for SFRs that are present in the ST</selectable><selectable id="fau_gen.1.2_IPS_3">additional information in column three of the Auditable Events for Objective SFRs table ( <xref to="at-objective"/>) for SFRs that are present in the ST</selectable><selectable id="fau_gen.1.2_IPS_4">additional information in column three of the Auditable Events for Implementation-dependent SFRs table ( <xref to="at-impl-dep"/>) for SFRs that are present in the ST</selectable></selectables>].</h:i></h:li></h:ol></title>
+							of the functional components included in the PP, PP-Module, functional package, or ST, [<h:i>information specified in column three of the Auditable Events for Mandatory SFRs table (<xref to="at-mandatory"/>),   <selectables><selectable id="fau_gen.1.2_IPS_1">no other auditable events</selectable><selectable id="fau_gen.1.2_IPS_2">additional information in column three of the Auditable Events for Optional SFRs table ( <xref to="at-optional"/>) for SFRs that are present in the ST</selectable><selectable id="fau_gen.1.2_IPS_3">additional information in column three of the Auditable Events for Objective SFRs table ( <xref to="at-objective"/>) for SFRs that are present in the ST</selectable><selectable id="fau_gen.1.2_IPS_4">additional information in column three of the Auditable Events for Implementation-dependent SFRs table ( <xref to="at-impl-dep"/>) for SFRs that are present in the ST</selectable></selectables>].</h:i></h:li></h:ol></title>
             <note role="application">
               <h:p>
                 <h:i>For FIP_SBD_EXT.1 and FIP_ABD_EXT.1 there may be several circumstances in
@@ -713,12 +713,12 @@ enforce its policies on network traffic of monitored networks.</description>
                 <selectable id="fip_abd_ext.1.1_5">time of day;</selectable>
                 <selectable id="fip_abd_ext.1.1_6">frequency;</selectable>
                 <selectable id="fip_abd_ext.1.1_7">thresholds;</selectable>
-                <selectable id="fip_abd_ext.1.1_9">
+                <selectable id="fip_abd_ext.1.1_2">
                   <assignable>other methods</assignable></selectable>
               </selectables>
               and the following network protocol fields:
               <h:ul>
-                <h:li> <selectables><selectable id="fip_abd_ext.1.1_10">all packet header and data elements defined in FIP_SBD_EXT.1</selectable><selectable id="fip_abd_ext.1.1_12"><assignable>subset list of packet header and data elements from FIP_SBD_EXT.1</assignable></selectable></selectables>.</h:li>
+                <h:li> <selectables><selectable id="fip_abd_ext.1.1_10">all packet header and data elements defined in FIP_SBD_EXT.1</selectable><selectable id="fip_abd_ext.1.1_3"><assignable>subset list of packet header and data elements from FIP_SBD_EXT.1</assignable></selectable></selectables>.</h:li>
               </h:ul>
             </title>
             <note role="application">Baselines are the definition of known-good traffic (to be allowed per
@@ -749,7 +749,7 @@ enforce its policies on network traffic of monitored networks.</description>
             <title>
               The TSF shall allow the following operations to be associated with anomaly-based IPS policies:
               <h:ul>
-                <h:li>In any mode, for any sensor interface:  <selectables linebreak="yes"><selectable id="fip_abd_ext.1.3_1">allow the traffic flow</selectable><selectable id="fip_abd_ext.1.3_2">send a TCP reset to the source address of the offending traffic</selectable><selectable id="fip_abd_ext.1.3_3">send a TCP reset to the destination address of the offending traffic</selectable><selectable id="fip_abd_ext.1.3_4">send an ICMP <selectables><selectable id="fip_abd_ext.1.3_5">host</selectable><selectable id="fip_abd_ext.1.3_6">destination</selectable><selectable id="fip_abd_ext.1.3_7">port</selectable></selectables> unreachable message</selectable><selectable id="fip_abd_ext.1.3_8">trigger a non-TOE network device to block the offending traffic pattern</selectable></selectables></h:li>
+                <h:li>In any mode, for any sensor interface:   <selectables linebreak="yes"><selectable id="fip_abd_ext.1.3_1">allow the traffic flow</selectable><selectable id="fip_abd_ext.1.3_2">send a TCP reset to the source address of the offending traffic</selectable><selectable id="fip_abd_ext.1.3_3">send a TCP reset to the destination address of the offending traffic</selectable><selectable id="fip_abd_ext.1.3_4">send an ICMP <selectables><selectable id="fip_abd_ext.1.3_5">host</selectable><selectable id="fip_abd_ext.1.3_6">destination</selectable><selectable id="fip_abd_ext.1.3_7">port</selectable></selectables> unreachable message</selectable><selectable id="fip_abd_ext.1.3_8">trigger a non-TOE network device to block the offending traffic pattern</selectable></selectables></h:li>
                 <h:li>
                   In inline mode:
                   <h:ul>
@@ -836,7 +836,7 @@ enforce its policies on network traffic of monitored networks.</description>
               IP addresses and
               <selectables>
                 <selectable id="fip_ipb_ext.1.1_3">no additional address types</selectable>
-                <selectable id="fip_ipb_ext.1.1_5">
+                <selectable id="fip_ipb_ext.1.1_1">
                   <assignable>list of address types</assignable></selectable>
               </selectables>.
             </title>
@@ -853,7 +853,7 @@ enforce its policies on network traffic of monitored networks.</description>
                 <selectable id="fip_ipb_ext.1.2_1">known-good list rules</selectable>
                 <selectable id="fip_ipb_ext.1.2_2">known-bad list rules</selectable>
                 <selectable id="fip_ipb_ext.1.2_3">IP addresses</selectable>
-                <selectable id="fip_ipb_ext.1.2_5">
+                <selectable id="fip_ipb_ext.1.2_1">
                   <assignable>other IPS policy elements</assignable></selectable>
                 <selectable id="fip_ipb_ext.1.2_6">no other IPS policy elements</selectable>
               </selectables>.
@@ -1086,9 +1086,9 @@ enforce its policies on network traffic of monitored networks.</description>
             <title>
               The TSF shall support inspection of packet header contents and be able to inspect at least the following header fields:
               <h:ul>
-                <h:li>IPv4: version; header length; packet length; ID; IP flags; fragment offset;time to live (TTL); protocol; header checksum; source address; destination address; IP options; and  <selectables><selectable id="fip_sbd_ext.1.1_1">type of service (ToS)</selectable><selectable id="fip_sbd_ext.1.1_2">no other field</selectable></selectables>.</h:li>
-                <h:li>IPv6: version; payload length; next header; hop limit; source address; destination address; routing header; and  <selectables><selectable id="fip_sbd_ext.1.1_3">traffic class</selectable><selectable id="fip_sbd_ext.1.1_4">flow label</selectable><selectable id="fip_sbd_ext.1.1_5">no other field</selectable></selectables></h:li>
-                <h:li>ICMP: type; code; header checksum; and  <selectables><selectable id="fip_sbd_ext.1.1_6">ID</selectable><selectable id="fip_sbd_ext.1.1_7">sequence number</selectable><selectable id="fip_sbd_ext.1.1_9"><assignable>other field in the ICMP header</assignable></selectable></selectables></h:li>
+                <h:li>IPv4: version; header length; packet length; ID; IP flags; fragment offset;time to live (TTL); protocol; header checksum; source address; destination address; IP options; and   <selectables><selectable id="fip_sbd_ext.1.1_1">type of service (ToS)</selectable><selectable id="fip_sbd_ext.1.1_2">no other field</selectable></selectables>.</h:li>
+                <h:li>IPv6: version; payload length; next header; hop limit; source address; destination address; routing header; and   <selectables><selectable id="fip_sbd_ext.1.1_3">traffic class</selectable><selectable id="fip_sbd_ext.1.1_4">flow label</selectable><selectable id="fip_sbd_ext.1.1_5">no other field</selectable></selectables></h:li>
+                <h:li>ICMP: type; code; header checksum; and   <selectables><selectable id="fip_sbd_ext.1.1_6">ID</selectable><selectable id="fip_sbd_ext.1.1_7">sequence number</selectable><selectable id="fip_sbd_ext.1.1_1"><assignable>other field in the ICMP header</assignable></selectable></selectables></h:li>
                 <h:li>ICMPv6: type; code; and header checksum.</h:li>
                 <h:li>TCP: source port; destination port; sequence number; acknowledgment number; offset; reserved; TCP flags; window; checksum; urgent pointer; and TCP options.</h:li>
                 <h:li>UDP: source port; destination port; length; and UDP checksum.</h:li>
@@ -1138,7 +1138,7 @@ enforce its policies on network traffic of monitored networks.</description>
                     <h:li>SMTP (email) states: start state, SMTP commands state, mail header state, mail body state, abort state</h:li>
                     <h:li>
                       <selectables>
-                        <selectable id="fip_sbd_ext.1.2_2">
+                        <selectable id="fip_sbd_ext.1.2_1">
                           <assignable>other types of TCP payload inspection</assignable></selectable>
                         <selectable id="fip_sbd_ext.1.2_3">no other types of TCP payload inspection</selectable>
                       </selectables></h:li>
@@ -1294,12 +1294,12 @@ enforce its policies on network traffic of monitored networks.</description>
             <title>
               The TSF shall allow the following operations to be associated with signature-based IPS policies:
               <h:ul>
-                <h:li>In any mode, for any sensor interface:  <selectables linebreak="yes"><selectable id="fip_sbd_ext.1.5_1">allow the traffic flow;</selectable><selectable id="fip_sbd_ext.1.5_2">send a TCP reset to the source address of the offending traffic;</selectable><selectable id="fip_sbd_ext.1.5_3">send a TCP reset to the destination address of the offending traffic;</selectable><selectable id="fip_sbd_ext.1.5_4">send an ICMP <selectables><selectable id="fip_sbd_ext.1.5_5">host</selectable><selectable id="fip_sbd_ext.1.5_6">destination</selectable><selectable id="fip_sbd_ext.1.5_7">port</selectable></selectables> unreachable message;</selectable><selectable id="fip_sbd_ext.1.5_8">trigger a non-TOE network device to block the offending traffic pattern</selectable></selectables></h:li>
+                <h:li>In any mode, for any sensor interface:   <selectables linebreak="yes"><selectable id="fip_sbd_ext.1.5_1">allow the traffic flow;</selectable><selectable id="fip_sbd_ext.1.5_2">send a TCP reset to the source address of the offending traffic;</selectable><selectable id="fip_sbd_ext.1.5_3">send a TCP reset to the destination address of the offending traffic;</selectable><selectable id="fip_sbd_ext.1.5_4">send an ICMP <selectables><selectable id="fip_sbd_ext.1.5_5">host</selectable><selectable id="fip_sbd_ext.1.5_6">destination</selectable><selectable id="fip_sbd_ext.1.5_7">port</selectable></selectables> unreachable message;</selectable><selectable id="fip_sbd_ext.1.5_8">trigger a non-TOE network device to block the offending traffic pattern</selectable></selectables></h:li>
                 <h:li>
                   In inline mode:
                   <h:ul>
                     <h:li>block/drop the traffic flow;</h:li>
-                    <h:li>and  <selectables linebreak="yes"><selectable id="fip_sbd_ext.1.5_9">allow all traffic flow;</selectable><selectable id="fip_sbd_ext.1.5_10">allow the traffic flow with following exceptions: <assignable>malicious traffic such as but not limited to FIP_EXT.1.3 and FIP_EXT.1.4 if always dropped</assignable>;</selectable><selectable id="fip_sbd_ext.1.5_12">modify and forward packets before they pass through the TOE</selectable></selectables>.</h:li>
+                    <h:li>and   <selectables linebreak="yes"><selectable id="fip_sbd_ext.1.5_9">allow all traffic flow;</selectable><selectable id="fip_sbd_ext.1.5_10">allow the traffic flow with following exceptions: <assignable>malicious traffic such as but not limited to FIP_EXT.1.3 and FIP_EXT.1.4 if always dropped</assignable>;</selectable><selectable id="fip_sbd_ext.1.5_12">modify and forward packets before they pass through the TOE</selectable></selectables>.</h:li>
                   </h:ul>
                 </h:li>
               </h:ul>
@@ -1330,7 +1330,7 @@ enforce its policies on network traffic of monitored networks.</description>
             <aactivity level="element">
               <TSS>There are no TSS EAs for this element.</TSS>
               <Guidance>The evaluator shall verify that the operational guidance provides configuration instructions, if needed, to detect payload across multiple packets.</Guidance>
-              <Tests>The evaluator shall repeat one of the tests in  <xref to="sbd-payload-reaction"/>  but generate multiple non-fragmented packets that contain the string in the rule defined. The evaluator shall verify that the malicious traffic is still detected when split across multiple non-fragmented packets.</Tests>
+              <Tests>The evaluator shall repeat one of the tests in   <xref to="sbd-payload-reaction"/>   but generate multiple non-fragmented packets that contain the string in the rule defined. The evaluator shall verify that the malicious traffic is still detected when split across multiple non-fragmented packets.</Tests>
             </aactivity>
           </f-element>
           <audit-event table="mandatory">
@@ -1487,7 +1487,7 @@ enforce its policies on network traffic of monitored networks.</description>
                 <selectable id="fip_sbd_ext.2.1_3">IPv4-in-IPv6</selectable>
                 <selectable id="fip_sbd_ext.2.1_4">MPLS</selectable>
                 <selectable id="fip_sbd_ext.2.1_5">PPTP</selectable>
-                <selectable id="fip_sbd_ext.2.1_7">
+                <selectable id="fip_sbd_ext.2.1_1">
                   <assignable>other encapsulation methods</assignable></selectable>
               </selectables>.
             </title>
@@ -1502,7 +1502,7 @@ enforce its policies on network traffic of monitored networks.</description>
             </aactivity>
           </f-element>
           <f-element id="fip-sbd-ext-2e2">
-            <title>The TSF shall be able to perform IP normalization to reassemble fragmented packets for inspection, and:  <selectables linebreak="yes"><selectable id="fip_sbd_ext.2.2_1">For data collected at promiscuous interfaces: generate an alert if the packet cannot be reassembled;</selectable><selectable id="fip_sbd_ext.2.2_2">For data collected at inline interfaces: do not forward any packet fragments and generate an alert if the TSF cannot reassemble the entire packet</selectable></selectables>.</title>
+            <title>The TSF shall be able to perform IP normalization to reassemble fragmented packets for inspection, and:   <selectables linebreak="yes"><selectable id="fip_sbd_ext.2.2_1">For data collected at promiscuous interfaces: generate an alert if the packet cannot be reassembled;</selectable><selectable id="fip_sbd_ext.2.2_2">For data collected at inline interfaces: do not forward any packet fragments and generate an alert if the TSF cannot reassemble the entire packet</selectable></selectables>.</title>
             <aactivity level="element">
               <TSS>The evaluator shall verify that the TSS describes how audit records are generated when packets cannot
     						be reassembled after fragmentation. Also, for inline mode, the evaluator shall examine the TSS to ensure
@@ -1519,7 +1519,7 @@ enforce its policies on network traffic of monitored networks.</description>
             </aactivity>
           </f-element>
           <f-element id="fip-sbd-ext-2e3">
-            <title>The TSF shall be able to perform TCP normalization for traffic flows through the TOE when the TOE is deployed in inline mode, and prohibit forwarding of:  <selectables linebreak="yes"><selectable id="fip_sbd_ext.2.3_1">duplicate packets;</selectable><selectable id="fip_sbd_ext.2.3_2">changed packets;</selectable><selectable id="fip_sbd_ext.2.3_3">out-of-sequence packets;</selectable><selectable id="fip_sbd_ext.2.3_4"> <selectables><selectable id="fip_sbd_ext.2.3_6"><assignable>other packet types that should not be forwarded</assignable></selectable><selectable id="fip_sbd_ext.2.3_7">no other packets</selectable></selectables> </selectable></selectables>.</title>
+            <title>The TSF shall be able to perform TCP normalization for traffic flows through the TOE when the TOE is deployed in inline mode, and prohibit forwarding of:   <selectables linebreak="yes"><selectable id="fip_sbd_ext.2.3_1">duplicate packets;</selectable><selectable id="fip_sbd_ext.2.3_2">changed packets;</selectable><selectable id="fip_sbd_ext.2.3_3">out-of-sequence packets;</selectable><selectable id="fip_sbd_ext.2.3_4"> <selectables><selectable id="fip_sbd_ext.2.3_1"><assignable>other packet types that should not be forwarded</assignable></selectable><selectable id="fip_sbd_ext.2.3_7">no other packets</selectable></selectables> </selectable></selectables>.</title>
             <aactivity level="element">
               <TSS>The evaluator shall verify that the TSS describes that packets are automatically dropped for the following normalization:<h:ul><h:li>duplicate packets</h:li> <h:li>changed packets</h:li> <h:li>out of sequence packets</h:li> <h:li>other packet types claimed in the requirement, if any</h:li></h:ul></TSS>
               <Guidance>There are no guidance EAs for this element.</Guidance>
@@ -1559,7 +1559,7 @@ enforce its policies on network traffic of monitored networks.</description>
           </depends>
           <consistency-rationale/>
           <f-element id="fpt-fls-1">
-            <title>The TSF shall preserve a secure state <h:b>for inline interfaces</h:b> when the following types of failures occur:  <assignable>list of types of failures in the TSF</assignable>.</title>
+            <title>The TSF shall preserve a secure state <h:b>for inline interfaces</h:b> when the following types of failures occur:   <assignable>list of types of failures in the TSF</assignable>.</title>
             <note role="application">The intent of this SFR is to allow the ST author to define the types of failures
 	that can occur on the TOE which could result in failure to effectively detect and
 	react to IPS policy violations for traffic traversing inline interface, and to not
@@ -1737,14 +1737,14 @@ enforce its policies on network traffic of monitored networks.</description>
 	based on [<h:i>filtering parameters: risk rating, time period, source IP address,
 	destination IP address and</h:i>
               <selectables>
-                <selectable id="fau_sar.3.1_2">
+                <selectable id="fau_sar.3.1_1">
                   <assignable>other filtering parameters</assignable></selectable>
                 <selectable id="fau_sar.3.1_3">no other filtering parameters</selectable>
               </selectables>
               <h:i>; and sorting parameters: event ID, event type, time,
 signature ID, IPS actions performed, and</h:i>
               <selectables>
-                <selectable id="fau_sar.3.1_5">
+                <selectable id="fau_sar.3.1_2">
                   <assignable>other sorting parameters</assignable></selectable>
                 <selectable id="fau_sar.3.1_6">no other sorting parameters</selectable>
               </selectables>].
