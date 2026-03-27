@@ -553,7 +553,7 @@ enforce its policies on network traffic of monitored networks.</description>
         <audit-table id="at-mandatory" table="mandatory"/>
       </section>
       <!-- 5.2.1 Security Audit (FAU) -->
-      <section title="Security Audit (FAU)" id="m-fau">
+      <section title="Class FAU: Security Audit" id="m-fau">
         <!-- FAU_GEN.1/IPS Audit Data Generation (IPS) -->
         <f-component cc-id="fau_gen.1" id="fau-gen-1-ips" name="Audit Data Generation (IPS)" iteration="IPS">
           <consistency-rationale/>
@@ -658,7 +658,7 @@ enforce its policies on network traffic of monitored networks.</description>
         </f-component>
       </section>
       <!-- 5.2.2 Intrusion Prevention (FIP) -->
-      <section title="Intrusion Prevention (FIP)" id="m-fip">
+      <section title="Class FIP: Intrusion Prevention" id="m-fip">
         <class-description>Intrusion prevention involves the TOE’s ability to collect network packets, examine their contents for
 								information that suggests malicious activity, and to perform some action in response such as terminating
 								the connection.</class-description>
@@ -1344,7 +1344,7 @@ enforce its policies on network traffic of monitored networks.</description>
         </f-component>
       </section>
       <!-- 5.2.3 Security Management (FMT) -->
-      <section title="Security Management (FMT)" id="m-fmt">
+      <section title="Class FMT: Security Management" id="m-fmt">
         <!-- FMT_SMF.1/IPS Specification of Management Functions (IPS) -->
         <f-component cc-id="fmt_smf.1" id="fmt-smf-1-ips" name="Specification of Management Functions (IPS)" iteration="IPS">
           <consistency-rationale/>
@@ -1402,7 +1402,7 @@ enforce its policies on network traffic of monitored networks.</description>
         <audit-table id="at-optional" table="optional"/>
       </section>
       <!-- 5.2.4 Security Audit (FAU) -->
-      <section title="Security Audit (FAU)" id="fau-ops">
+      <section title="Class FAU: Security Audit" id="fau-ops">
         <!-- FAU_STG.2/IPS Protected Audit Trail Storage -->
         <f-component cc-id="fau_stg.2" id="fau-stg-2-ips" name="Protected Audit Trail Storage" iteration="IPS">
           <depends>
@@ -1452,7 +1452,7 @@ enforce its policies on network traffic of monitored networks.</description>
         </f-component>
       </section>
       <!-- 5.2.5 Intrusion Prevention (FIP) -->
-      <section title="Intrusion Prevention (FIP)" id="fip">
+      <section title="Class FIP: Intrusion Prevention" id="fip">
         <!-- FIP_SBD_EXT.2 Traffic Normalization -->
         <f-component cc-id="fip_sbd_ext.2" id="fip-sbd-ext-2" name="Traffic Normalization">
           <depends>
@@ -1551,7 +1551,7 @@ enforce its policies on network traffic of monitored networks.</description>
         </f-component>
       </section>
       <!-- 5.2.6 Protection of the TSF (FPT) -->
-      <section title="Protection of the TSF (FPT)" id="fpt">
+      <section title="Class FPT: Protection of the TSF" id="fpt">
         <!-- FPT_FLS.1/IPS Failure with Preservation of Secure State -->
         <f-component cc-id="fpt_fls.1" id="fpt-fls-1-ips" name="Failure with Preservation of Secure State" iteration="IPS">
           <depends>
@@ -1603,7 +1603,7 @@ enforce its policies on network traffic of monitored networks.</description>
         <audit-table id="at-objective" table="objective"/>
       </section>
       <!-- 5.2.7 Security Audit (FAU) -->
-      <section title="Security Audit (FAU)" id="fau-obj">
+      <section title="Class FAU: Security Audit" id="fau-obj">
         <!-- FAU_ARP.1 Security Alarms -->
         <f-component cc-id="fau_arp.1" id="fau-arp-1" name="Security Alarms">
           <depends>
@@ -1775,7 +1775,7 @@ signature ID, IPS actions performed, and</h:i>
         <audit-table id="at-impl-dep" table="impl-dep"/>
       </section>
       <!-- 5.2.8 Resource Utilization -->
-      <section title="Resource Utilization" id="fru-imp_dep">
+      <section title="Class FRU: Resource Utilization" id="fru-imp_dep">
         <!-- FRU_RSA.1 Maximum Quotas -->
         <f-component cc-id="fru_rsa.1" id="fru-rsa-1" name="Maximum Quotas">
           <depends on="feat-alerting"/>
