@@ -673,6 +673,12 @@ The following sections list Common Criteria and technology terms used in this do
       accredited by the National Voluntary Laboratory Accreditation Program (NVLAP) and approved by the NIAP Validation Body to conduct Common Criteria-based evaluations.
     </td></tr>
 <tr><td><div id="Common_Evaluation_Methodology">Common Evaluation Methodology (CEM)</div></td><td>Common Evaluation Methodology for Information Technology Security Evaluation.</td></tr>
+<tr><td><div id="Direct_Rationale">Direct Rationale</div></td><td>
+		A type of Protection Profile, PP-Module, or Security Target in which the security
+		problem definition (SPD) elements are mapped directly to the SFRs and possibly to the 
+		security objectives for the operational environment. There are no security objectives
+		for the TOE.
+	</td></tr>
 <tr><td><div id="Distributed_TOE">Distributed TOE</div></td><td>A TOE composed of multiple components operating as a logical whole.</td></tr>
 <tr><td><div id="Functional_Package">Functional Package (FP)</div></td><td>A document that collects SFRs for a particular protocol, technology,
 	    or functionality.</td></tr>
@@ -919,22 +925,20 @@ The following sections list Common Criteria and technology terms used in this do
 		  inappropriate activities while communicating with allowed public services (e.g. manipulation of resident
 		  tools, <abbr class="dyn-abbr"><a href="#abbr_SQL">SQL</a></abbr> injection, phishing, forced resets, malicious zip files, disguised executables, privilege escalation
 		  tools, and botnets).</span></dd><dt class="threat defined" id="T.UNAUTHORIZED_ADMINISTRATION">T.UNAUTHORIZED_ADMINISTRATION
-	    (from NDcPP)
+		(from NDcPP)
 	</dt><dd>
 						This threat from the above Base <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> also applies to the functionality defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
 					</dd><dt class="threat defined" id="T.UNDETECTED_ACTIVITY">T.UNDETECTED_ACTIVITY
-	    (from NDcPP)
+		(from NDcPP)
 	</dt><dd>
 						This threat from the above Base <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> also applies to the functionality defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
 					</dd></dl>
     
     
-    <h2 class="indexable" data-level="2" id="Assumptions">3.2 Assumptions</h2>
-These assumptions are made on the Operational Environment (<abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr>) in order to be able to ensure that the
+    <h2 class="indexable" data-level="2" id="Assumptions">3.2 Assumptions</h2><p>These assumptions are made on the Operational Environment (<abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr>) in order to be able to ensure that the
 security functionality specified in the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> can be provided by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.
 If the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is placed in an <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> that does not meet these assumptions, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may no longer be able to
-provide all of its security functionality.
-      
+provide all of its security functionality.</p>
       <p>All assumptions for the operational environment of the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> also apply to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
 		A.NO_THRU_TRAFFIC_PROTECTION is still operative, but only for the interfaces in the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that are
 		defined by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> and not the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.</p>
@@ -945,9 +949,7 @@ provide all of its security functionality.
       <dl><dt class="assumption defined" id="A.CONNECTIONS">A.CONNECTIONS</dt><dd><span class="description"> It is assumed that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is connected to distinct networks in a manner that ensures that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> security policies will be enforced on all applicable network traffic flowing among the attached networks. </span></dd></dl>
     
     
-    <h2 class="indexable" data-level="2" id="Organizational_Security_Policies">3.3 Organizational Security Policies</h2><p>An organization deploying the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is
-      expected to satisfy the organizational security policy listed below in addition to all
-      organizational security policies defined by the claimed <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>. </p>
+    <h2 class="indexable" data-level="2" id="Organizational_Security_Policies">3.3 Organizational Security Policies</h2>
       <dl><dt class="OSP defined" id="P.ANALYZE">P.ANALYZE</dt><dd><span class="description">Analytical processes and information to derive conclusions about potential intrusions must be applied to <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data and appropriate response actions taken.</span></dd></dl>
     
   <h1 class="indexable" data-level="1" id="Security_Objectives">4 Security Objectives</h1>
@@ -1131,8 +1133,7 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
               [<b>selection</b>: <span class="selectable-content" id="fip_abd_ext.1.1_1">baselines (‘expected and approved’)</span>, <span class="selectable-content" id="fip_abd_ext.1.1_2">anomaly (‘unexpected’) traffic patterns</span>]
               including the specification of
               [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="fip_abd_ext.1.1_3">throughput ( [<b>assignment</b>: 
-     <span class="assignable-content">data elements (e.g. bytes, packets, etc.) per time period (e.g. minutes, hours, days)</span>])</span></li><li style=""><span class="selectable-content" id="fip_abd_ext.1.1_5">time of day;</span></li><li style=""><span class="selectable-content" id="fip_abd_ext.1.1_6">frequency;</span></li><li style=""><span class="selectable-content" id="fip_abd_ext.1.1_7">thresholds;</span></li><li style=""><span class="selectable-content" id="fip_abd_ext.1.1_9">
-                  [<b>assignment</b>: 
+     <span class="assignable-content">data elements (e.g. bytes, packets, etc.) per time period (e.g. minutes, hours, days)</span>])</span></li><li style=""><span class="selectable-content" id="fip_abd_ext.1.1_5">time of day;</span></li><li style=""><span class="selectable-content" id="fip_abd_ext.1.1_6">frequency;</span></li><li style=""><span class="selectable-content" id="fip_abd_ext.1.1_7">thresholds;</span></li><li style=""><span class="selectable-content" id="fip_abd_ext.1.1_9">[<b>assignment</b>: 
      <span class="assignable-content">other methods</span>]</span></li></ul>]
               and the following network protocol fields:
               <ul>
@@ -1200,12 +1201,9 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
                 <p>The evaluator shall verify that the operational guidance provides instructions to associate the different policies with distinct network interfaces.</p>
               </div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
                 The evaluator shall perform the following tests:
-                <span class="testlist-"><ul>
-                  <li class="test-"><a id="_t_1" class="defined" href="#_t_1">Test FIP_ABD_EXT.1:1</a>:
-      The evaluator shall use the instructions in the operational guidance to configure baselines or anomaly-based rules for each attribute specified in <a href="#FIP_ABD_EXT.1.1">FIP_ABD_EXT.1.1</a>. The evaluator shall send traffic that does not match the baseline or matches the anomaly-based rule and verify the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> applies the configured reaction. This shall be performed for each attribute in <a href="#FIP_ABD_EXT.1.1">FIP_ABD_EXT.1.1</a>.</li>
-                  <li class="test-"><a id="_t_2" class="defined" href="#_t_2">Test FIP_ABD_EXT.1:2</a>:
-      The evaluator shall repeat the test above to ensure that baselines or anomaly-based rules can be defined for each distinct network interface type supported by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.</li>
-                </ul></span>
+                <span class="testlist-"><ul><li class="test-"><a id="_t_1" class="defined" href="#_t_1">Test FIP_ABD_EXT.1:1</a>:
+      The evaluator shall use the instructions in the operational guidance to configure baselines or anomaly-based rules for each attribute specified in <a href="#FIP_ABD_EXT.1.1">FIP_ABD_EXT.1.1</a>. The evaluator shall send traffic that does not match the baseline or matches the anomaly-based rule and verify the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> applies the configured reaction. This shall be performed for each attribute in <a href="#FIP_ABD_EXT.1.1">FIP_ABD_EXT.1.1</a>.</li><li class="test-"><a id="_t_2" class="defined" href="#_t_2">Test FIP_ABD_EXT.1:2</a>:
+      The evaluator shall repeat the test above to ensure that baselines or anomaly-based rules can be defined for each distinct network interface type supported by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.</li></ul></span>
               </div></div></div></div></div>
         
         <div class="comp" id="FIP_IPB_EXT.1"><h4>FIP_IPB_EXT.1 IP Blocking</h4>
@@ -1218,8 +1216,7 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
               The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support configuration and implementation of known-good and known-bad lists of
               [<b>selection</b>: <span class="selectable-content" id="fip_ipb_ext.1.1_1">source</span>, <span class="selectable-content" id="fip_ipb_ext.1.1_2">destination</span>]
               IP addresses and
-              [<b>selection</b>: <span class="selectable-content" id="fip_ipb_ext.1.1_3">no additional address types</span>, <span class="selectable-content" id="fip_ipb_ext.1.1_5">
-                  [<b>assignment</b>: 
+              [<b>selection</b>: <span class="selectable-content" id="fip_ipb_ext.1.1_3">no additional address types</span>, <span class="selectable-content" id="fip_ipb_ext.1.1_5">[<b>assignment</b>: 
      <span class="assignable-content">list of address types</span>]</span>].
             <div class="appnote"><span class="note-header">Application
       Note:
@@ -1230,8 +1227,7 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 						<abbr class="dyn-abbr"><a href="#abbr_MAC">MAC</a></abbr> addresses.</span></div></div></div>
           <div class="element"><div class="reqid" id="FIP_IPB_EXT.1.2"><a href="#FIP_IPB_EXT.1.2" class="abbr">FIP_IPB_EXT.1.2</a></div><div class="reqdesc">
               The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow [<i>security administrators</i>] to configure the following <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements:
-              [<b>selection</b>: <span class="selectable-content" id="fip_ipb_ext.1.2_1">known-good list rules</span>, <span class="selectable-content" id="fip_ipb_ext.1.2_2">known-bad list rules</span>, <span class="selectable-content" id="fip_ipb_ext.1.2_3">IP addresses</span>, <span class="selectable-content" id="fip_ipb_ext.1.2_5">
-                  [<b>assignment</b>: 
+              [<b>selection</b>: <span class="selectable-content" id="fip_ipb_ext.1.2_1">known-good list rules</span>, <span class="selectable-content" id="fip_ipb_ext.1.2_2">known-bad list rules</span>, <span class="selectable-content" id="fip_ipb_ext.1.2_3">IP addresses</span>, <span class="selectable-content" id="fip_ipb_ext.1.2_5">[<b>assignment</b>: 
      <span class="assignable-content">other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements</span>]</span>, <span class="selectable-content" id="fip_ipb_ext.1.2_6">no other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements</span>].
             </div></div>
           
@@ -1253,14 +1249,10 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 							lists.</p>
               </div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
                 The evaluator shall perform the following tests:
-                <span class="testlist-"><ul>
-                  <li class="test-"><a id="_t_3" class="defined" href="#_t_3">Test FIP_IPB_EXT.1:1</a>:
-      The evaluator shall use the instructions in the operational guidance to create a known-bad address list. Using a single IP address, a list of addresses, or a range of addresses from that list, the evaluator shall attempt to send traffic through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that would otherwise be allowed by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and observe the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> automatically drops that traffic.</li>
-                  <li class="test-"><a id="_t_4" class="defined" href="#_t_4">Test FIP_IPB_EXT.1:2</a>:
-      The evaluator shall use the instructions in the operational guidance to create a known-good address list. Using a single IP address, a list of addresses, or a range of addresses from that list, the evaluator shall attempt to send traffic that would otherwise be denied by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and observe the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> automatically allowing traffic.</li>
-                  <li class="test-"><a id="_t_5" class="defined" href="#_t_5">Test FIP_IPB_EXT.1:3</a>:
-      The evaluator shall add conflicting IP addresses to each list and ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> handles conflicting traffic in a manner consistent with the precedence in <a href="#FIP_NTA_EXT.1.1">FIP_NTA_EXT.1.1</a>.</li>
-                </ul></span>
+                <span class="testlist-"><ul><li class="test-"><a id="_t_3" class="defined" href="#_t_3">Test FIP_IPB_EXT.1:1</a>:
+      The evaluator shall use the instructions in the operational guidance to create a known-bad address list. Using a single IP address, a list of addresses, or a range of addresses from that list, the evaluator shall attempt to send traffic through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that would otherwise be allowed by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and observe the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> automatically drops that traffic.</li><li class="test-"><a id="_t_4" class="defined" href="#_t_4">Test FIP_IPB_EXT.1:2</a>:
+      The evaluator shall use the instructions in the operational guidance to create a known-good address list. Using a single IP address, a list of addresses, or a range of addresses from that list, the evaluator shall attempt to send traffic that would otherwise be denied by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and observe the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> automatically allowing traffic.</li><li class="test-"><a id="_t_5" class="defined" href="#_t_5">Test FIP_IPB_EXT.1:3</a>:
+      The evaluator shall add conflicting IP addresses to each list and ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> handles conflicting traffic in a manner consistent with the precedence in <a href="#FIP_NTA_EXT.1.1">FIP_NTA_EXT.1.1</a>.</li></ul></span>
               </div></div></div></div></div>
         
         <div class="comp" id="FIP_NTA_EXT.1"><h4>FIP_NTA_EXT.1 Network Traffic Analysis</h4>
@@ -1419,8 +1411,7 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
                     <li><abbr class="dyn-abbr"><a href="#abbr_HTTP">HTTP</a></abbr> (web) commands and content: commands including GET and POST, and administrator- defined strings to match URLs/URIs, and web page content.</li>
                     <li><abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> (email) states: start state, <abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> commands state, mail header state, mail body state, abort state</li>
                     <li>
-                      [<b>selection</b>: <span class="selectable-content" id="fip_sbd_ext.1.2_2">
-                          [<b>assignment</b>: 
+                      [<b>selection</b>: <span class="selectable-content" id="fip_sbd_ext.1.2_2">[<b>assignment</b>: 
      <span class="assignable-content">other types of <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> payload inspection</span>]</span>, <span class="selectable-content" id="fip_sbd_ext.1.2_3">no other types of <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> payload inspection</span>]</li>
                   </ol>
                 </li>
@@ -1574,12 +1565,9 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
               </div>
               <div class="eacategory">Tests</div><div class="ea">
                 The evaluator shall perform the following tests:
-                <span class="testlist-"><ul>
-                  <li class="test-"><a id="_t_6" class="defined" href="#_t_6">Test FIP_SBD_EXT.1.1:1</a>:
-      The evaluator shall use the instructions in the operational guidance to test that packet header signatures can be created and/or configured with the selected and/or configured reactions specified in <a href="#FIP_SBD_EXT.1.5">FIP_SBD_EXT.1.5</a> for each of the attributes listed below. Each attribute shall be individually assigned to its own unique signature: <ul><li>IPv4: version; header length; packet length; ID; IP flags; fragment offset; time to live (<abbr class="dyn-abbr"><a href="#abbr_TTL">TTL</a></abbr>); protocol; header checksum; source address; destination address; IP options; and, if selected, type of service (<abbr class="dyn-abbr"><a href="#abbr_ToS">ToS</a></abbr>).</li> <li>IPv6: Version; payload length; next header; hop limit; source address; destination address; routing header; and, if selected, traffic class and/or flow label</li> <li><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>: type; code; header checksum; and, if selected, other header fields (varies based on the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> type and code).</li> <li>ICMPv6: Type; Code; and Header Checksum.</li> <li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr>: Source port; destination port; sequence number; acknowledgment number; offset; reserved; <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> flags; window; checksum; urgent pointer; and <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> options.</li> <li><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr>: Source port; destination port; length; and <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> checksum.</li></ul> The evaluator shall generate traffic to trigger a signature and shall then use a packet sniffer to capture traffic that ensures the reactions of each rule are performed as expected.</li>
-                  <li class="test-"><a id="_t_7" class="defined" href="#_t_7">Test FIP_SBD_EXT.1.1:2</a>:
-      The evaluator shall repeat the test above to ensure that signature-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies can be defined for each distinct network interface type capable of applying signatures as supported by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.</li>
-                </ul></span>
+                <span class="testlist-"><ul><li class="test-"><a id="_t_6" class="defined" href="#_t_6">Test FIP_SBD_EXT.1.1:1</a>:
+      The evaluator shall use the instructions in the operational guidance to test that packet header signatures can be created and/or configured with the selected and/or configured reactions specified in <a href="#FIP_SBD_EXT.1.5">FIP_SBD_EXT.1.5</a> for each of the attributes listed below. Each attribute shall be individually assigned to its own unique signature: <ul><li>IPv4: version; header length; packet length; ID; IP flags; fragment offset; time to live (<abbr class="dyn-abbr"><a href="#abbr_TTL">TTL</a></abbr>); protocol; header checksum; source address; destination address; IP options; and, if selected, type of service (<abbr class="dyn-abbr"><a href="#abbr_ToS">ToS</a></abbr>).</li> <li>IPv6: Version; payload length; next header; hop limit; source address; destination address; routing header; and, if selected, traffic class and/or flow label</li> <li><abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>: type; code; header checksum; and, if selected, other header fields (varies based on the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> type and code).</li> <li>ICMPv6: Type; Code; and Header Checksum.</li> <li><abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr>: Source port; destination port; sequence number; acknowledgment number; offset; reserved; <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> flags; window; checksum; urgent pointer; and <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> options.</li> <li><abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr>: Source port; destination port; length; and <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> checksum.</li></ul> The evaluator shall generate traffic to trigger a signature and shall then use a packet sniffer to capture traffic that ensures the reactions of each rule are performed as expected.</li><li class="test-"><a id="_t_7" class="defined" href="#_t_7">Test FIP_SBD_EXT.1.1:2</a>:
+      The evaluator shall repeat the test above to ensure that signature-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies can be defined for each distinct network interface type capable of applying signatures as supported by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.</li></ul></span>
               </div>
             <div class="element-activity-header"><a href="#FIP_SBD_EXT.1.2">FIP_SBD_EXT.1.2</a></div>
               <div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea">
@@ -1595,8 +1583,7 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
               </div>
               <div class="eacategory">Tests</div><div class="ea">
                 The evaluator shall perform the following tests:
-                <span class="testlist-"><ul>
-                  <li class="test-"><a id="sbd-payload-reaction" class="defined" href="#sbd-payload-reaction">Test FIP_SBD_EXT.1.2:1</a>:
+                <span class="testlist-"><ul><li class="test-"><a id="sbd-payload-reaction" class="defined" href="#sbd-payload-reaction">Test FIP_SBD_EXT.1.2:1</a>:
       The evaluator shall use the instructions in the operational guidance to test that packet payload string-based detection rules can be assigned to the reactions specified in <a href="#FIP_SBD_EXT.1.5">FIP_SBD_EXT.1.5</a> using the attributes specified in <a href="#FIP_SBD_EXT.1.2">FIP_SBD_EXT.1.2</a>. However it is not required (nor is it feasible) to test all possible strings of protocol data, the evaluator shall ensure that a selection of strings in the requirement is selected to be tested. At a minimum at least one string using each of the following attributes from <a href="#FIP_SBD_EXT.1.2">FIP_SBD_EXT.1.2</a> should be tested for each protocol. The evaluator shall generate packets that match the string in the rule and observe the corresponding reaction is as configured. <ul><li>Test at least one string of characters for ICMPv4 data: beyond the first 4 bytes of the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr> header.</li> <li>Test at least one string of characters for ICMPv6 data: beyond the first 4 bytes of the <abbr class="dyn-abbr"><a href="#abbr_ICMP">ICMP</a></abbr>
 					header</li> <li> <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> data (characters beyond the 20 byte <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> header):
 						<ol type="i"><li>Test at least one <abbr class="dyn-abbr"><a href="#abbr_FTP">FTP</a></abbr> (file transfer) command: help, noop, stat, syst, user, abort, acct, allo,
@@ -1605,10 +1592,8 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 							<ol><li>Test both GET and POST commands</li> <li>Test at least one administrator-defined string to match URLs/URIs and webpage content.</li></ol></li> <li>Test at least one <abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> (email) state: start state, <abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> commands state, mail header state, mail body state, abort state.</li> <li>Test at least one string in any additional attribute type defined within the “other types of
 							<abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> payload inspection” assignment, if any other types are specified.
 							</li></ol></li> <li>Test at least one string of <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> data: characters beyond the first 8 bytes of the <abbr class="dyn-abbr"><a href="#abbr_UDP">UDP</a></abbr> header;</li> <li>Test at least one string for each additional attribute type defined in the “other types of packet
-					payload inspection” assignment, if any other types are specified.</li></ul></li>
-                  <li class="test-"><a id="_t_9" class="defined" href="#_t_9">Test FIP_SBD_EXT.1.2:2</a>:
-      The evaluator shall repeat Test 1 above to ensure that signature-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies can be defined for each distinct network interface type capable of applying signatures as supported by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.</li>
-                </ul></span>
+					payload inspection” assignment, if any other types are specified.</li></ul></li><li class="test-"><a id="_t_9" class="defined" href="#_t_9">Test FIP_SBD_EXT.1.2:2</a>:
+      The evaluator shall repeat Test 1 above to ensure that signature-based <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policies can be defined for each distinct network interface type capable of applying signatures as supported by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.</li></ul></span>
               </div>
             <div class="element-activity-header"><a href="#FIP_SBD_EXT.1.3">FIP_SBD_EXT.1.3</a></div>
               <div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea">The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> describes how the attacks defined in <a href="#FIP_SBD_EXT.1.3">FIP_SBD_EXT.1.3</a> are processed by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and what reaction is triggered when these attacks are identified.</div>
@@ -1676,14 +1661,10 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 							any configurable defaults and how to configure each of the applicable analysis pattern matching methods
 							and reaction modes.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
                 The evaluator shall perform the following tests:
-                <span class="testlist-"><ul>
-                  <li class="test-"><a id="_t_10" class="defined" href="#_t_10">Test FMT_SMF.1/IPS:1</a>:
-      The evaluator shall use the operational guidance to create a signature and enable it on an interface. The evaluator shall then generate traffic that would be successfully triggered by the signature. The evaluator should observe the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> applying the corresponding reaction in the signature.</li>
-                  <li class="test-"><a id="_t_11" class="defined" href="#_t_11">Test FMT_SMF.1/IPS:2</a>:
-      The evaluator shall then disable the signature and attempt to regenerate the same traffic and ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> allows the traffic to pass with no reaction.</li>
-                  <li class="test-"><a id="_t_12" class="defined" href="#_t_12">Test FMT_SMF.1/IPS:3</a>:
-      The evaluator shall use the operational guidance to import signatures and repeat the test conducted in Test 1.</li>
-                </ul></span>
+                <span class="testlist-"><ul><li class="test-"><a id="_t_10" class="defined" href="#_t_10">Test FMT_SMF.1/IPS:1</a>:
+      The evaluator shall use the operational guidance to create a signature and enable it on an interface. The evaluator shall then generate traffic that would be successfully triggered by the signature. The evaluator should observe the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> applying the corresponding reaction in the signature.</li><li class="test-"><a id="_t_11" class="defined" href="#_t_11">Test FMT_SMF.1/IPS:2</a>:
+      The evaluator shall then disable the signature and attempt to regenerate the same traffic and ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> allows the traffic to pass with no reaction.</li><li class="test-"><a id="_t_12" class="defined" href="#_t_12">Test FMT_SMF.1/IPS:3</a>:
+      The evaluator shall use the operational guidance to import signatures and repeat the test conducted in Test 1.</li></ul></span>
                 <p>Additionally, for each other claimed management function, the evaluator shall follow the steps listed in the operational guidance for configuration of that function's behavior and verify that configuration has the intended effect (e.g., for modifying the duration of traffic blocking actions, the evaluator could configure this with two separate time values and verify that traffic was blocked for the configured duration in both cases).</p>
                 <p>Testing for this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> will generally be performed in conjunction with the test activities for <a href="#FIP_ABD_EXT.1">FIP_ABD_EXT.1</a> and <a href="#FIP_SBD_EXT.1">FIP_SBD_EXT.1</a>, as testing various aspects of <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> functionality will necessarily involve this functionality to be configured such that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> is in a known state when being tested.</p>
               </div></div></div></div></div>
@@ -1705,10 +1686,10 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
 <tr><td><a href="#FIP_NTA_EXT.1">FIP_NTA_EXT.1</a></td><td>This requirement mitigates the threat of network misuse by defining the network traffic the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> is able to examine to determine the potential realization of a threat.</td></tr>
 <tr><td><a href="#FIP_SBD_EXT.2">FIP_SBD_EXT.2</a> (optional)</td><td>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets.</td></tr>
 <tr class="major-row"><td rowspan="1"><a href="#T.UNAUTHORIZED_ADMINISTRATION">T.UNAUTHORIZED_​ADMINISTRATION</a>
-	    (from NDcPP)
+		(from NDcPP)
 	</td><td><a href="#FMT_SMF.1/IPS">FMT_SMF.1/IPS</a></td><td>This requirement mitigates the threat of unauthorized administration by providing a dedicated mechanism for authorized administration.</td></tr>
 <tr class="major-row"><td rowspan="9"><a href="#T.UNDETECTED_ACTIVITY">T.UNDETECTED_​ACTIVITY</a>
-	    (from NDcPP)
+		(from NDcPP)
 	</td><td><a href="#FAU_ARP.1">FAU_ARP.1</a> (objective)</td><td>This requirement mitigates the threat of undetected actions by generating an alert in response to the detection of suspicious network events, allowing for timely analysis of potential threats.</td></tr>
 <tr><td><a href="#FAU_GEN.1/IPS">FAU_GEN.1/IPS</a></td><td>This requirement mitigates the threat of undetected actions by logging the actions that occur on the network.</td></tr>
 <tr><td><a href="#FAU_SAR.1">FAU_SAR.1</a> (objective)</td><td>This requirement mitigates the threat of undetected actions by providing authorized subjects with a means to review stored <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> data for detection of potential threats.</td></tr>
@@ -1847,13 +1828,12 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
           
           <div class="element"><div class="reqid" id="FIP_SBD_EXT.2.1"><a href="#FIP_SBD_EXT.2.1" class="abbr">FIP_SBD_EXT.2.1</a></div><div class="reqdesc">
               The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to inspect packets encapsulated through the following means:
-              [<b>selection</b>: <span class="selectable-content" id="fip_sbd_ext.2.1_1"><abbr class="dyn-abbr"><a href="#abbr_GRE">GRE</a></abbr></span>, <span class="selectable-content" id="fip_sbd_ext.2.1_2">IP-in-IP</span>, <span class="selectable-content" id="fip_sbd_ext.2.1_3">IPv4-in-IPv6</span>, <span class="selectable-content" id="fip_sbd_ext.2.1_4"><abbr class="dyn-abbr"><a href="#abbr_MPLS">MPLS</a></abbr></span>, <span class="selectable-content" id="fip_sbd_ext.2.1_5"><abbr class="dyn-abbr"><a href="#abbr_PPTP">PPTP</a></abbr></span>, <span class="selectable-content" id="fip_sbd_ext.2.1_7">
-                  [<b>assignment</b>: 
+              [<b>selection</b>: <span class="selectable-content" id="fip_sbd_ext.2.1_1"><abbr class="dyn-abbr"><a href="#abbr_GRE">GRE</a></abbr></span>, <span class="selectable-content" id="fip_sbd_ext.2.1_2">IP-in-IP</span>, <span class="selectable-content" id="fip_sbd_ext.2.1_3">IPv4-in-IPv6</span>, <span class="selectable-content" id="fip_sbd_ext.2.1_4"><abbr class="dyn-abbr"><a href="#abbr_MPLS">MPLS</a></abbr></span>, <span class="selectable-content" id="fip_sbd_ext.2.1_5"><abbr class="dyn-abbr"><a href="#abbr_PPTP">PPTP</a></abbr></span>, <span class="selectable-content" id="fip_sbd_ext.2.1_7">[<b>assignment</b>: 
      <span class="assignable-content">other encapsulation methods</span>]</span>].
             </div></div>
           <div class="element"><div class="reqid" id="FIP_SBD_EXT.2.2"><a href="#FIP_SBD_EXT.2.2" class="abbr">FIP_SBD_EXT.2.2</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to perform IP normalization to reassemble fragmented packets for inspection, and:  [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="fip_sbd_ext.2.2_1">For data collected at promiscuous interfaces: generate an alert if the packet cannot be reassembled;</span></li><li style=""><span class="selectable-content" id="fip_sbd_ext.2.2_2">For data collected at inline interfaces: do not forward any packet fragments and generate an alert if the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> cannot reassemble the entire packet</span></li></ul>].</div></div>
-          <div class="element"><div class="reqid" id="FIP_SBD_EXT.2.3"><a href="#FIP_SBD_EXT.2.3" class="abbr">FIP_SBD_EXT.2.3</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to perform <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> normalization for traffic flows through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> when the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is deployed in inline mode, and prohibit forwarding of:  [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="fip_sbd_ext.2.3_1">duplicate packets;</span></li><li style=""><span class="selectable-content" id="fip_sbd_ext.2.3_2">changed packets;</span></li><li style=""><span class="selectable-content" id="fip_sbd_ext.2.3_3">out-of-sequence packets;</span></li><li style=""><span class="selectable-content" id="fip_sbd_ext.2.3_4"> [<b>selection</b>: <span class="selectable-content" id="fip_sbd_ext.2.3_6">[<b>assignment</b>: 
-     <span class="assignable-content">other packet types that should not be forwarded</span>]</span>, <span class="selectable-content" id="fip_sbd_ext.2.3_7">no other packets</span>] </span></li></ul>].</div></div>
+          <div class="element"><div class="reqid" id="FIP_SBD_EXT.2.3"><a href="#FIP_SBD_EXT.2.3" class="abbr">FIP_SBD_EXT.2.3</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to perform <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> normalization for traffic flows through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> when the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is deployed in inline mode, and prohibit forwarding of:  [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="fip_sbd_ext.2.3_1">duplicate packets;</span></li><li style=""><span class="selectable-content" id="fip_sbd_ext.2.3_2">changed packets;</span></li><li style=""><span class="selectable-content" id="fip_sbd_ext.2.3_3">out-of-sequence packets;</span></li><li style=""><span class="selectable-content" id="fip_sbd_ext.2.3_4">[<b>selection</b>: <span class="selectable-content" id="fip_sbd_ext.2.3_6">[<b>assignment</b>: 
+     <span class="assignable-content">other packet types that should not be forwarded</span>]</span>, <span class="selectable-content" id="fip_sbd_ext.2.3_7">no other packets</span>]</span></li></ul>].</div></div>
           
           
           
@@ -1872,14 +1852,10 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
               <div class="eacategory">Guidance</div><div class="ea">There are no guidance EAs for this element.</div>
               <div class="eacategory">Tests</div><div class="ea">
                 The evaluator shall perform the following tests:
-                <span class="testlist-"><ul>
-                  <li class="test-"><a id="_t_13" class="defined" href="#_t_13">Test FIP_SBD_EXT.2.2:1</a>:
-      The evaluator shall generate packets that cannot be reassembled after fragmentation; the evaluator shall ensure audit events are generated for all instances of IP normalization.</li>
-                  <li class="test-"><a id="_t_14" class="defined" href="#_t_14">Test FIP_SBD_EXT.2.2:2</a>:
-      For inline mode: The evaluator shall test for automatic packet rejection for when packets cannot be reassembled after fragmentation. The evaluator shall use packet captures to ensure that the IP traffic is detected by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and packets are dropped.</li>
-                  <li class="test-"><a id="_t_15" class="defined" href="#_t_15">Test FIP_SBD_EXT.2.2:3</a>:
-      The evaluator shall generate packets that can be reassembled after fragmentation; the evaluator shall ensure audit events are generated for all instances of IP normalization.</li>
-                </ul></span>
+                <span class="testlist-"><ul><li class="test-"><a id="_t_13" class="defined" href="#_t_13">Test FIP_SBD_EXT.2.2:1</a>:
+      The evaluator shall generate packets that cannot be reassembled after fragmentation; the evaluator shall ensure audit events are generated for all instances of IP normalization.</li><li class="test-"><a id="_t_14" class="defined" href="#_t_14">Test FIP_SBD_EXT.2.2:2</a>:
+      For inline mode: The evaluator shall test for automatic packet rejection for when packets cannot be reassembled after fragmentation. The evaluator shall use packet captures to ensure that the IP traffic is detected by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and packets are dropped.</li><li class="test-"><a id="_t_15" class="defined" href="#_t_15">Test FIP_SBD_EXT.2.2:3</a>:
+      The evaluator shall generate packets that can be reassembled after fragmentation; the evaluator shall ensure audit events are generated for all instances of IP normalization.</li></ul></span>
               </div>
             <div class="element-activity-header"><a href="#FIP_SBD_EXT.2.3">FIP_SBD_EXT.2.3</a></div>
               <div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea">The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> describes that packets are automatically dropped for the following normalization:<ul><li>duplicate packets</li> <li>changed packets</li> <li>out of sequence packets</li> <li>other packet types claimed in the requirement, if any</li></ul></div>
@@ -2057,13 +2033,11 @@ enforce its policies on network traffic of monitored networks.</span></dd></dl>
               audit data
 	based on [<i>filtering parameters: risk rating, time period, source IP address,
 	destination IP address and</i>
-              [<b>selection</b>: <span class="selectable-content" id="fau_sar.3.1_2">
-                  [<b>assignment</b>: 
+              [<b>selection</b>: <span class="selectable-content" id="fau_sar.3.1_2">[<b>assignment</b>: 
      <span class="assignable-content">other filtering parameters</span>]</span>, <span class="selectable-content" id="fau_sar.3.1_3">no other filtering parameters</span>]
               <i>; and sorting parameters: event ID, event type, time,
 signature ID, <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> actions performed, and</i>
-              [<b>selection</b>: <span class="selectable-content" id="fau_sar.3.1_5">
-                  [<b>assignment</b>: 
+              [<b>selection</b>: <span class="selectable-content" id="fau_sar.3.1_5">[<b>assignment</b>: 
      <span class="assignable-content">other sorting parameters</span>]</span>, <span class="selectable-content" id="fau_sar.3.1_6">no other sorting parameters</span>]].
             </div></div>
           
@@ -2078,12 +2052,9 @@ signature ID, <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> actions 
 	administrative guidance shall also identify those audit records that are always recorded, regardless of the
 	selection criteria currently being enforced.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
                 The evaluator shall perform the following tests:
-                <span class="testlist-"><ul>
-                  <li class="test-"><a id="_t_16" class="defined" href="#_t_16">Test FAU_SAR.3:1</a>:
-      For each attribute listed in the requirement, the evaluator shall devise a test to show that selecting the attribute causes only audit events with that attribute (or those that are always recorded, as identified in the administrative guidance) to be recorded.</li>
-                  <li class="test-"><a id="_t_17" class="defined" href="#_t_17">Test FAU_SAR.3:2</a>:
-      [conditional]: If the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> supports specification of more complex audit pre-selection criteria (e.g., multiple attributes, logical expressions using attributes) then the evaluator shall devise tests showing that this capability is correctly implemented. The evaluator shall also, in the test plan, provide a short narrative justifying the set of tests as representative and sufficient to exercise the capability.</li>
-                </ul></span>
+                <span class="testlist-"><ul><li class="test-"><a id="_t_16" class="defined" href="#_t_16">Test FAU_SAR.3:1</a>:
+      For each attribute listed in the requirement, the evaluator shall devise a test to show that selecting the attribute causes only audit events with that attribute (or those that are always recorded, as identified in the administrative guidance) to be recorded.</li><li class="test-"><a id="_t_17" class="defined" href="#_t_17">Test FAU_SAR.3:2</a>:
+      [conditional]: If the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> supports specification of more complex audit pre-selection criteria (e.g., multiple attributes, logical expressions using attributes) then the evaluator shall devise tests showing that this capability is correctly implemented. The evaluator shall also, in the test plan, provide a short narrative justifying the set of tests as representative and sufficient to exercise the capability.</li></ul></span>
               </div></div></div></div></div>
       
     <h2 id="impl-dep-sfrs" class="indexable" data-level="2">A.3 Implementation-dependent Requirements
@@ -2182,8 +2153,7 @@ supporting inspection of network traffic</i>] that [<i>subjects</i>] can use [<i
               [<b>selection</b>: <span class="selectable-content" id="fip_abd_ext.1.1_1">baselines (‘expected and approved’)</span>, <span class="selectable-content" id="fip_abd_ext.1.1_2">anomaly (‘unexpected’) traffic patterns</span>]
               including the specification of
               [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="fip_abd_ext.1.1_3">throughput ( [<b>assignment</b>: 
-     <span class="assignable-content">data elements (e.g. bytes, packets, etc.) per time period (e.g. minutes, hours, days)</span>])</span></li><li style=""><span class="selectable-content" id="fip_abd_ext.1.1_5">time of day;</span></li><li style=""><span class="selectable-content" id="fip_abd_ext.1.1_6">frequency;</span></li><li style=""><span class="selectable-content" id="fip_abd_ext.1.1_7">thresholds;</span></li><li style=""><span class="selectable-content" id="fip_abd_ext.1.1_9">
-                  [<b>assignment</b>: 
+     <span class="assignable-content">data elements (e.g. bytes, packets, etc.) per time period (e.g. minutes, hours, days)</span>])</span></li><li style=""><span class="selectable-content" id="fip_abd_ext.1.1_5">time of day;</span></li><li style=""><span class="selectable-content" id="fip_abd_ext.1.1_6">frequency;</span></li><li style=""><span class="selectable-content" id="fip_abd_ext.1.1_7">thresholds;</span></li><li style=""><span class="selectable-content" id="fip_abd_ext.1.1_9">[<b>assignment</b>: 
      <span class="assignable-content">other methods</span>]</span></li></ul>]
               and the following network protocol fields:
               <ul>
@@ -2231,16 +2201,14 @@ supporting inspection of network traffic</i>] that [<i>subjects</i>] can use [<i
               The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support configuration and implementation of known-good and known-bad lists of
               [<b>selection</b>: <span class="selectable-content" id="fip_ipb_ext.1.1_1">source</span>, <span class="selectable-content" id="fip_ipb_ext.1.1_2">destination</span>]
               IP addresses and
-              [<b>selection</b>: <span class="selectable-content" id="fip_ipb_ext.1.1_3">no additional address types</span>, <span class="selectable-content" id="fip_ipb_ext.1.1_5">
-                  [<b>assignment</b>: 
+              [<b>selection</b>: <span class="selectable-content" id="fip_ipb_ext.1.1_3">no additional address types</span>, <span class="selectable-content" id="fip_ipb_ext.1.1_5">[<b>assignment</b>: 
      <span class="assignable-content">list of address types</span>]</span>].
             <h4 id="ext-comp-FIP_IPB_EXT.1.2">FIP_IPB_EXT.1.2</h4>
                 The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow
                 [<b>assignment</b>: 
      <span class="assignable-content">authorized roles</span>]
                 to configure the following <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements:
-                [<b>selection</b>: <span class="selectable-content" id="_s_39">known-good list rules</span>, <span class="selectable-content" id="_s_40">known-bad list rules</span>, <span class="selectable-content" id="_s_41">IP addresses</span>, <span class="selectable-content" id="_s_42">
-                    [<b>assignment</b>: 
+                [<b>selection</b>: <span class="selectable-content" id="_s_39">known-good list rules</span>, <span class="selectable-content" id="_s_40">known-bad list rules</span>, <span class="selectable-content" id="_s_41">IP addresses</span>, <span class="selectable-content" id="_s_42">[<b>assignment</b>: 
      <span class="assignable-content">other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements</span>]</span>, <span class="selectable-content" id="_s_43">no other <abbr class="dyn-abbr"><a href="#abbr_IPS">IPS</a></abbr> policy elements</span>].
               </div></div><h3 id="ext-comp-FIP_NTA_EXT" class="indexable" data-level="4">C.2.1.3 FIP_NTA_EXT Network Traffic Analysis</h3><div style="margin-left: 1em;"><h4>Family Behavior</h4><div>This family defines the network traffic protocols for which the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is capable of analyzing and detecting violations.</div><h4>Component Leveling</h4><svg style="max-height: 30px;"><text x="4" fill="black" font-size="15" y="24">FIP_NTA_EXT</text><rect x="2" y="11" width="150" height="16" fill="none" stroke="black"></rect><text x="234" fill="black" font-size="15" y="24">1</text><rect x="232" y="11" width="12" height="16" fill="none" stroke="black"></rect><line x1="152" y1="17" x2="231" y2="17" stroke="black"></line></svg><p><a href="#FIP_NTA_EXT.1">FIP_NTA_EXT.1</a>,
              Network Traffic Analysis,
@@ -2325,8 +2293,7 @@ supporting inspection of network traffic</i>] that [<i>subjects</i>] can use [<i
                     <li><abbr class="dyn-abbr"><a href="#abbr_HTTP">HTTP</a></abbr> (web) commands and content: commands including GET and POST, and administrator- defined strings to match URLs/URIs, and web page content.</li>
                     <li><abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> (email) states: start state, <abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr> commands state, mail header state, mail body state, abort state</li>
                     <li>
-                      [<b>selection</b>: <span class="selectable-content" id="fip_sbd_ext.1.2_2">
-                          [<b>assignment</b>: 
+                      [<b>selection</b>: <span class="selectable-content" id="fip_sbd_ext.1.2_2">[<b>assignment</b>: 
      <span class="assignable-content">other types of <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> payload inspection</span>]</span>, <span class="selectable-content" id="fip_sbd_ext.1.2_3">no other types of <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> payload inspection</span>]</li>
                   </ol>
                 </li>
@@ -2420,11 +2387,10 @@ supporting inspection of network traffic</i>] that [<i>subjects</i>] can use [<i
             </ul>
           </p><h4>FIP_SBD_EXT.2 Traffic Normalization</h4><div style="margin-left: 1em;"><table class="ecd_heir_dep" style="width: 100%"><tr><td style="whitespace: nowrap">Hierarchical to:</td><td style="width: 100%">No other components.</td></tr><tr style="background-color: inherit"><td>Dependencies to:</td><td><a href="#FIP_NTA_EXT.1">FIP_NTA_EXT.1</a> Network Traffic Analysis</td></tr></table><h4 id="ext-comp-FIP_SBD_EXT.2.1">FIP_SBD_EXT.2.1</h4>
               The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to inspect packets encapsulated through the following means:
-              [<b>selection</b>: <span class="selectable-content" id="fip_sbd_ext.2.1_1"><abbr class="dyn-abbr"><a href="#abbr_GRE">GRE</a></abbr></span>, <span class="selectable-content" id="fip_sbd_ext.2.1_2">IP-in-IP</span>, <span class="selectable-content" id="fip_sbd_ext.2.1_3">IPv4-in-IPv6</span>, <span class="selectable-content" id="fip_sbd_ext.2.1_4"><abbr class="dyn-abbr"><a href="#abbr_MPLS">MPLS</a></abbr></span>, <span class="selectable-content" id="fip_sbd_ext.2.1_5"><abbr class="dyn-abbr"><a href="#abbr_PPTP">PPTP</a></abbr></span>, <span class="selectable-content" id="fip_sbd_ext.2.1_7">
-                  [<b>assignment</b>: 
+              [<b>selection</b>: <span class="selectable-content" id="fip_sbd_ext.2.1_1"><abbr class="dyn-abbr"><a href="#abbr_GRE">GRE</a></abbr></span>, <span class="selectable-content" id="fip_sbd_ext.2.1_2">IP-in-IP</span>, <span class="selectable-content" id="fip_sbd_ext.2.1_3">IPv4-in-IPv6</span>, <span class="selectable-content" id="fip_sbd_ext.2.1_4"><abbr class="dyn-abbr"><a href="#abbr_MPLS">MPLS</a></abbr></span>, <span class="selectable-content" id="fip_sbd_ext.2.1_5"><abbr class="dyn-abbr"><a href="#abbr_PPTP">PPTP</a></abbr></span>, <span class="selectable-content" id="fip_sbd_ext.2.1_7">[<b>assignment</b>: 
      <span class="assignable-content">other encapsulation methods</span>]</span>].
-            <h4 id="ext-comp-FIP_SBD_EXT.2.2">FIP_SBD_EXT.2.2</h4>The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to perform IP normalization to reassemble fragmented packets for inspection, and:  [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="fip_sbd_ext.2.2_1">For data collected at promiscuous interfaces: generate an alert if the packet cannot be reassembled;</span></li><li style=""><span class="selectable-content" id="fip_sbd_ext.2.2_2">For data collected at inline interfaces: do not forward any packet fragments and generate an alert if the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> cannot reassemble the entire packet</span></li></ul>].<h4 id="ext-comp-FIP_SBD_EXT.2.3">FIP_SBD_EXT.2.3</h4>The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to perform <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> normalization for traffic flows through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> when the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is deployed in inline mode, and prohibit forwarding of:  [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="fip_sbd_ext.2.3_1">duplicate packets;</span></li><li style=""><span class="selectable-content" id="fip_sbd_ext.2.3_2">changed packets;</span></li><li style=""><span class="selectable-content" id="fip_sbd_ext.2.3_3">out-of-sequence packets;</span></li><li style=""><span class="selectable-content" id="fip_sbd_ext.2.3_4"> [<b>selection</b>: <span class="selectable-content" id="fip_sbd_ext.2.3_6">[<b>assignment</b>: 
-     <span class="assignable-content">other packet types that should not be forwarded</span>]</span>, <span class="selectable-content" id="fip_sbd_ext.2.3_7">no other packets</span>] </span></li></ul>].</div></div></span></span><h1 id="entropyappendix" class="indexable" data-level="A">Appendix D -  Entropy Documentation and Assessment</h1>
+            <h4 id="ext-comp-FIP_SBD_EXT.2.2">FIP_SBD_EXT.2.2</h4>The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to perform IP normalization to reassemble fragmented packets for inspection, and:  [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="fip_sbd_ext.2.2_1">For data collected at promiscuous interfaces: generate an alert if the packet cannot be reassembled;</span></li><li style=""><span class="selectable-content" id="fip_sbd_ext.2.2_2">For data collected at inline interfaces: do not forward any packet fragments and generate an alert if the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> cannot reassemble the entire packet</span></li></ul>].<h4 id="ext-comp-FIP_SBD_EXT.2.3">FIP_SBD_EXT.2.3</h4>The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be able to perform <abbr class="dyn-abbr"><a href="#abbr_TCP">TCP</a></abbr> normalization for traffic flows through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> when the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is deployed in inline mode, and prohibit forwarding of:  [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="fip_sbd_ext.2.3_1">duplicate packets;</span></li><li style=""><span class="selectable-content" id="fip_sbd_ext.2.3_2">changed packets;</span></li><li style=""><span class="selectable-content" id="fip_sbd_ext.2.3_3">out-of-sequence packets;</span></li><li style=""><span class="selectable-content" id="fip_sbd_ext.2.3_4">[<b>selection</b>: <span class="selectable-content" id="fip_sbd_ext.2.3_6">[<b>assignment</b>: 
+     <span class="assignable-content">other packet types that should not be forwarded</span>]</span>, <span class="selectable-content" id="fip_sbd_ext.2.3_7">no other packets</span>]</span></li></ul>].</div></div></span></span><h1 id="entropyappendix" class="indexable" data-level="A">Appendix D -  Entropy Documentation and Assessment</h1>
     <p>The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> does not require any additional supplementary information to describe its entropy sources
 			beyond the requirements outlined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.</p>
   <h1 id="satisfiedreqs" class="indexable" data-level="A">Appendix E -  Inherently Satisfied Requirements</h1>

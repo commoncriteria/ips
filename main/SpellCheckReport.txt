@@ -11,6 +11,7 @@ output/ips-release-linkable.html: RST
 output/ips-release-linkable.html: SAA
 output/ips-release-linkable.html: SMR
 output/ips-release-linkable.html: SNMP
+output/ips-release-linkable.html: SPD
 output/ips-release-linkable.html: STM
 output/ips-release-linkable.html: Stateful
 output/ips-release-linkable.html: TDs
@@ -53,6 +54,7 @@ output/ips-release.html: RST
 output/ips-release.html: SAA
 output/ips-release.html: SMR
 output/ips-release.html: SNMP
+output/ips-release.html: SPD
 output/ips-release.html: STM
 output/ips-release.html: Stateful
 output/ips-release.html: TDs
@@ -103,6 +105,7 @@ output/ips-sd.html: AGD
 output/ips-sd.html: CEM
 output/ips-sd.html: ICMPv4
 output/ips-sd.html: ICMPv6
+output/ips-sd.html: SPD
 output/ips-sd.html: TDs
 output/ips-sd.html: URIs
 output/ips-sd.html: allo
@@ -140,6 +143,7 @@ output/ips.html: RST
 output/ips.html: SAA
 output/ips.html: SMR
 output/ips.html: SNMP
+output/ips.html: SPD
 output/ips.html: STM
 output/ips.html: Stateful
 output/ips.html: TDs

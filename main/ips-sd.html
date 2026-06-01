@@ -272,7 +272,7 @@
     }    
    
    </style></head><body><div style="text-align: center; margin-left: auto; margin-right: auto;"><h1 class="title" style="page-break-before:auto;">Supporting Document<br/>
-        Mandatory Technical Document</h1><img src="images/niaplogo.png" alt="NIAP"></img><hr width="50%"></hr><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><br/>
+        Mandatory Technical Document</h1><img src="images/niaplogo.png" alt="NIAP Logo"></img><hr width="50%"></hr><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><br/>
     PP-Module for IPS<br/>
       Version: 2.0<br/>2026-03-10<br/><b>National Information Assurance Partnership</b></div><div class="foreword"><h1 style="text-align: center">Foreword</h1><p>This is a Supporting Document (SD), intended to complement the Common Criteria version 3
       and the associated Common Evaluation Methodology for
@@ -342,6 +342,12 @@ The following sections list Common Criteria and technology terms used in this do
       accredited by the National Voluntary Laboratory Accreditation Program (NVLAP) and approved by the NIAP Validation Body to conduct Common Criteria-based evaluations.
     </td></tr>
 <tr><td><div id="Common_Evaluation_Methodology">Common Evaluation Methodology (CEM)</div></td><td>Common Evaluation Methodology for Information Technology Security Evaluation.</td></tr>
+<tr><td><div id="Direct_Rationale">Direct Rationale</div></td><td>
+		A type of Protection Profile, PP-Module, or Security Target in which the security
+		problem definition (SPD) elements are mapped directly to the SFRs and possibly to the 
+		security objectives for the operational environment. There are no security objectives
+		for the TOE.
+	</td></tr>
 <tr><td><div id="Distributed_TOE">Distributed TOE</div></td><td>A TOE composed of multiple components operating as a logical whole.</td></tr>
 <tr><td><div id="Functional_Package">Functional Package (FP)</div></td><td>A document that collects SFRs for a particular protocol, technology,
 	    or functionality.</td></tr>
@@ -438,12 +444,9 @@ The following sections list Common Criteria and technology terms used in this do
                 <p>The evaluator shall verify that the operational guidance provides instructions to associate the different policies with distinct network interfaces.</p>
               </div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
                 The evaluator shall perform the following tests:
-                <span class="testlist-"><ul>
-                  <li class="test-"><a id="_t_1" class="defined" href="#_t_1">Test FIP_ABD_EXT.1:1</a>:
-      The evaluator shall use the instructions in the operational guidance to configure baselines or anomaly-based rules for each attribute specified in FIP_ABD_EXT.1.1. The evaluator shall send traffic that does not match the baseline or matches the anomaly-based rule and verify the TOE applies the configured reaction. This shall be performed for each attribute in FIP_ABD_EXT.1.1.</li>
-                  <li class="test-"><a id="_t_2" class="defined" href="#_t_2">Test FIP_ABD_EXT.1:2</a>:
-      The evaluator shall repeat the test above to ensure that baselines or anomaly-based rules can be defined for each distinct network interface type supported by the TOE.</li>
-                </ul></span>
+                <span class="testlist-"><ul><li class="test-"><a id="_t_1" class="defined" href="#_t_1">Test FIP_ABD_EXT.1:1</a>:
+      The evaluator shall use the instructions in the operational guidance to configure baselines or anomaly-based rules for each attribute specified in FIP_ABD_EXT.1.1. The evaluator shall send traffic that does not match the baseline or matches the anomaly-based rule and verify the TOE applies the configured reaction. This shall be performed for each attribute in FIP_ABD_EXT.1.1.</li><li class="test-"><a id="_t_2" class="defined" href="#_t_2">Test FIP_ABD_EXT.1:2</a>:
+      The evaluator shall repeat the test above to ensure that baselines or anomaly-based rules can be defined for each distinct network interface type supported by the TOE.</li></ul></span>
               </div></div></span></div><div class="comp" id="FIP-IPB-EXT-1"><h4>FIP_IPB_EXT.1 IP Blocking</h4><span class="activity_pane_body"><div class="component-activity-header">FIP_IPB_EXT.1</div>
               
               
@@ -462,14 +465,10 @@ The following sections list Common Criteria and technology terms used in this do
 							lists.</p>
               </div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
                 The evaluator shall perform the following tests:
-                <span class="testlist-"><ul>
-                  <li class="test-"><a id="_t_3" class="defined" href="#_t_3">Test FIP_IPB_EXT.1:1</a>:
-      The evaluator shall use the instructions in the operational guidance to create a known-bad address list. Using a single IP address, a list of addresses, or a range of addresses from that list, the evaluator shall attempt to send traffic through the TOE that would otherwise be allowed by the TOE and observe the TOE automatically drops that traffic.</li>
-                  <li class="test-"><a id="_t_4" class="defined" href="#_t_4">Test FIP_IPB_EXT.1:2</a>:
-      The evaluator shall use the instructions in the operational guidance to create a known-good address list. Using a single IP address, a list of addresses, or a range of addresses from that list, the evaluator shall attempt to send traffic that would otherwise be denied by the TOE and observe the TOE automatically allowing traffic.</li>
-                  <li class="test-"><a id="_t_5" class="defined" href="#_t_5">Test FIP_IPB_EXT.1:3</a>:
-      The evaluator shall add conflicting IP addresses to each list and ensure that the TOE handles conflicting traffic in a manner consistent with the precedence in FIP_NTA_EXT.1.1.</li>
-                </ul></span>
+                <span class="testlist-"><ul><li class="test-"><a id="_t_3" class="defined" href="#_t_3">Test FIP_IPB_EXT.1:1</a>:
+      The evaluator shall use the instructions in the operational guidance to create a known-bad address list. Using a single IP address, a list of addresses, or a range of addresses from that list, the evaluator shall attempt to send traffic through the TOE that would otherwise be allowed by the TOE and observe the TOE automatically drops that traffic.</li><li class="test-"><a id="_t_4" class="defined" href="#_t_4">Test FIP_IPB_EXT.1:2</a>:
+      The evaluator shall use the instructions in the operational guidance to create a known-good address list. Using a single IP address, a list of addresses, or a range of addresses from that list, the evaluator shall attempt to send traffic that would otherwise be denied by the TOE and observe the TOE automatically allowing traffic.</li><li class="test-"><a id="_t_5" class="defined" href="#_t_5">Test FIP_IPB_EXT.1:3</a>:
+      The evaluator shall add conflicting IP addresses to each list and ensure that the TOE handles conflicting traffic in a manner consistent with the precedence in FIP_NTA_EXT.1.1.</li></ul></span>
               </div></div></span></div><div class="comp" id="FIP-NTA-EXT-1"><h4>FIP_NTA_EXT.1 Network Traffic Analysis</h4><span class="activity_pane_body"><div class="element-activity-header">FIP_NTA_EXT.1.1</div>
               <div class="eacategory">TSS</div><div class="ea">
                 <p>The evaluator shall verify that the TSS explains the TOE’s capability of analyzing IP traffic in terms of the
@@ -536,12 +535,9 @@ The following sections list Common Criteria and technology terms used in this do
               </div>
               <div class="eacategory">Tests</div><div class="ea">
                 The evaluator shall perform the following tests:
-                <span class="testlist-"><ul>
-                  <li class="test-"><a id="_t_6" class="defined" href="#_t_6">Test FIP_SBD_EXT.1.1:1</a>:
-      The evaluator shall use the instructions in the operational guidance to test that packet header signatures can be created and/or configured with the selected and/or configured reactions specified in FIP_SBD_EXT.1.5 for each of the attributes listed below. Each attribute shall be individually assigned to its own unique signature: <ul><li>IPv4: version; header length; packet length; ID; IP flags; fragment offset; time to live (TTL); protocol; header checksum; source address; destination address; IP options; and, if selected, type of service (ToS).</li> <li>IPv6: Version; payload length; next header; hop limit; source address; destination address; routing header; and, if selected, traffic class and/or flow label</li> <li>ICMP: type; code; header checksum; and, if selected, other header fields (varies based on the ICMP type and code).</li> <li>ICMPv6: Type; Code; and Header Checksum.</li> <li>TCP: Source port; destination port; sequence number; acknowledgment number; offset; reserved; TCP flags; window; checksum; urgent pointer; and TCP options.</li> <li>UDP: Source port; destination port; length; and UDP checksum.</li></ul> The evaluator shall generate traffic to trigger a signature and shall then use a packet sniffer to capture traffic that ensures the reactions of each rule are performed as expected.</li>
-                  <li class="test-"><a id="_t_7" class="defined" href="#_t_7">Test FIP_SBD_EXT.1.1:2</a>:
-      The evaluator shall repeat the test above to ensure that signature-based IPS policies can be defined for each distinct network interface type capable of applying signatures as supported by the TOE.</li>
-                </ul></span>
+                <span class="testlist-"><ul><li class="test-"><a id="_t_6" class="defined" href="#_t_6">Test FIP_SBD_EXT.1.1:1</a>:
+      The evaluator shall use the instructions in the operational guidance to test that packet header signatures can be created and/or configured with the selected and/or configured reactions specified in FIP_SBD_EXT.1.5 for each of the attributes listed below. Each attribute shall be individually assigned to its own unique signature: <ul><li>IPv4: version; header length; packet length; ID; IP flags; fragment offset; time to live (TTL); protocol; header checksum; source address; destination address; IP options; and, if selected, type of service (ToS).</li> <li>IPv6: Version; payload length; next header; hop limit; source address; destination address; routing header; and, if selected, traffic class and/or flow label</li> <li>ICMP: type; code; header checksum; and, if selected, other header fields (varies based on the ICMP type and code).</li> <li>ICMPv6: Type; Code; and Header Checksum.</li> <li>TCP: Source port; destination port; sequence number; acknowledgment number; offset; reserved; TCP flags; window; checksum; urgent pointer; and TCP options.</li> <li>UDP: Source port; destination port; length; and UDP checksum.</li></ul> The evaluator shall generate traffic to trigger a signature and shall then use a packet sniffer to capture traffic that ensures the reactions of each rule are performed as expected.</li><li class="test-"><a id="_t_7" class="defined" href="#_t_7">Test FIP_SBD_EXT.1.1:2</a>:
+      The evaluator shall repeat the test above to ensure that signature-based IPS policies can be defined for each distinct network interface type capable of applying signatures as supported by the TOE.</li></ul></span>
               </div>
             <div class="element-activity-header">FIP_SBD_EXT.1.2</div>
               <div class="eacategory">TSS</div><div class="ea">
@@ -557,8 +553,7 @@ The following sections list Common Criteria and technology terms used in this do
               </div>
               <div class="eacategory">Tests</div><div class="ea">
                 The evaluator shall perform the following tests:
-                <span class="testlist-"><ul>
-                  <li class="test-"><a id="sbd-payload-reaction" class="defined" href="#sbd-payload-reaction">Test FIP_SBD_EXT.1.2:1</a>:
+                <span class="testlist-"><ul><li class="test-"><a id="sbd-payload-reaction" class="defined" href="#sbd-payload-reaction">Test FIP_SBD_EXT.1.2:1</a>:
       The evaluator shall use the instructions in the operational guidance to test that packet payload string-based detection rules can be assigned to the reactions specified in FIP_SBD_EXT.1.5 using the attributes specified in FIP_SBD_EXT.1.2. However it is not required (nor is it feasible) to test all possible strings of protocol data, the evaluator shall ensure that a selection of strings in the requirement is selected to be tested. At a minimum at least one string using each of the following attributes from FIP_SBD_EXT.1.2 should be tested for each protocol. The evaluator shall generate packets that match the string in the rule and observe the corresponding reaction is as configured. <ul><li>Test at least one string of characters for ICMPv4 data: beyond the first 4 bytes of the ICMP header.</li> <li>Test at least one string of characters for ICMPv6 data: beyond the first 4 bytes of the ICMP
 					header</li> <li> TCP data (characters beyond the 20 byte TCP header):
 						<ol type="i"><li>Test at least one FTP (file transfer) command: help, noop, stat, syst, user, abort, acct, allo,
@@ -567,10 +562,8 @@ The following sections list Common Criteria and technology terms used in this do
 							<ol><li>Test both GET and POST commands</li> <li>Test at least one administrator-defined string to match URLs/URIs and webpage content.</li></ol></li> <li>Test at least one SMTP (email) state: start state, SMTP commands state, mail header state, mail body state, abort state.</li> <li>Test at least one string in any additional attribute type defined within the “other types of
 							TCP payload inspection” assignment, if any other types are specified.
 							</li></ol></li> <li>Test at least one string of UDP data: characters beyond the first 8 bytes of the UDP header;</li> <li>Test at least one string for each additional attribute type defined in the “other types of packet
-					payload inspection” assignment, if any other types are specified.</li></ul></li>
-                  <li class="test-"><a id="_t_9" class="defined" href="#_t_9">Test FIP_SBD_EXT.1.2:2</a>:
-      The evaluator shall repeat Test 1 above to ensure that signature-based IPS policies can be defined for each distinct network interface type capable of applying signatures as supported by the TOE.</li>
-                </ul></span>
+					payload inspection” assignment, if any other types are specified.</li></ul></li><li class="test-"><a id="_t_9" class="defined" href="#_t_9">Test FIP_SBD_EXT.1.2:2</a>:
+      The evaluator shall repeat Test 1 above to ensure that signature-based IPS policies can be defined for each distinct network interface type capable of applying signatures as supported by the TOE.</li></ul></span>
               </div>
             <div class="element-activity-header">FIP_SBD_EXT.1.3</div>
               <div class="eacategory">TSS</div><div class="ea">The evaluator shall verify that the TSS describes how the attacks defined in FIP_SBD_EXT.1.3 are processed by the TOE and what reaction is triggered when these attacks are identified.</div>
@@ -607,14 +600,10 @@ The following sections list Common Criteria and technology terms used in this do
 							any configurable defaults and how to configure each of the applicable analysis pattern matching methods
 							and reaction modes.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
                 The evaluator shall perform the following tests:
-                <span class="testlist-"><ul>
-                  <li class="test-"><a id="_t_10" class="defined" href="#_t_10">Test FMT_SMF.1/IPS:1</a>:
-      The evaluator shall use the operational guidance to create a signature and enable it on an interface. The evaluator shall then generate traffic that would be successfully triggered by the signature. The evaluator should observe the TOE applying the corresponding reaction in the signature.</li>
-                  <li class="test-"><a id="_t_11" class="defined" href="#_t_11">Test FMT_SMF.1/IPS:2</a>:
-      The evaluator shall then disable the signature and attempt to regenerate the same traffic and ensure that the TOE allows the traffic to pass with no reaction.</li>
-                  <li class="test-"><a id="_t_12" class="defined" href="#_t_12">Test FMT_SMF.1/IPS:3</a>:
-      The evaluator shall use the operational guidance to import signatures and repeat the test conducted in Test 1.</li>
-                </ul></span>
+                <span class="testlist-"><ul><li class="test-"><a id="_t_10" class="defined" href="#_t_10">Test FMT_SMF.1/IPS:1</a>:
+      The evaluator shall use the operational guidance to create a signature and enable it on an interface. The evaluator shall then generate traffic that would be successfully triggered by the signature. The evaluator should observe the TOE applying the corresponding reaction in the signature.</li><li class="test-"><a id="_t_11" class="defined" href="#_t_11">Test FMT_SMF.1/IPS:2</a>:
+      The evaluator shall then disable the signature and attempt to regenerate the same traffic and ensure that the TOE allows the traffic to pass with no reaction.</li><li class="test-"><a id="_t_12" class="defined" href="#_t_12">Test FMT_SMF.1/IPS:3</a>:
+      The evaluator shall use the operational guidance to import signatures and repeat the test conducted in Test 1.</li></ul></span>
                 <p>Additionally, for each other claimed management function, the evaluator shall follow the steps listed in the operational guidance for configuration of that function's behavior and verify that configuration has the intended effect (e.g., for modifying the duration of traffic blocking actions, the evaluator could configure this with two separate time values and verify that traffic was blocked for the configured duration in both cases).</p>
                 <p>Testing for this SFR will generally be performed in conjunction with the test activities for FIP_ABD_EXT.1 and FIP_SBD_EXT.1, as testing various aspects of IPS functionality will necessarily involve this functionality to be configured such that the TSF is in a known state when being tested.</p>
               </div></div></span></div><h2 class="indexable" data-level="1" id="opt-sfrs">2.3 Evaluation Activities for Optional SFRs</h2><h2 class="indexable" data-level="2" id="fau-ops">2.3.1 Class FAU: Security Audit</h2><div class="comp" id="FAU-STG-2-IPS"><h4>FAU_STG.2/IPS Protected Audit Trail Storage</h4><span class="activity_pane_body"><div class="component-activity-header">FAU_STG.2/IPS</div>
@@ -640,14 +629,10 @@ The following sections list Common Criteria and technology terms used in this do
               <div class="eacategory">Guidance</div><div class="ea">There are no guidance EAs for this element.</div>
               <div class="eacategory">Tests</div><div class="ea">
                 The evaluator shall perform the following tests:
-                <span class="testlist-"><ul>
-                  <li class="test-"><a id="_t_13" class="defined" href="#_t_13">Test FIP_SBD_EXT.2.2:1</a>:
-      The evaluator shall generate packets that cannot be reassembled after fragmentation; the evaluator shall ensure audit events are generated for all instances of IP normalization.</li>
-                  <li class="test-"><a id="_t_14" class="defined" href="#_t_14">Test FIP_SBD_EXT.2.2:2</a>:
-      For inline mode: The evaluator shall test for automatic packet rejection for when packets cannot be reassembled after fragmentation. The evaluator shall use packet captures to ensure that the IP traffic is detected by the TOE and packets are dropped.</li>
-                  <li class="test-"><a id="_t_15" class="defined" href="#_t_15">Test FIP_SBD_EXT.2.2:3</a>:
-      The evaluator shall generate packets that can be reassembled after fragmentation; the evaluator shall ensure audit events are generated for all instances of IP normalization.</li>
-                </ul></span>
+                <span class="testlist-"><ul><li class="test-"><a id="_t_13" class="defined" href="#_t_13">Test FIP_SBD_EXT.2.2:1</a>:
+      The evaluator shall generate packets that cannot be reassembled after fragmentation; the evaluator shall ensure audit events are generated for all instances of IP normalization.</li><li class="test-"><a id="_t_14" class="defined" href="#_t_14">Test FIP_SBD_EXT.2.2:2</a>:
+      For inline mode: The evaluator shall test for automatic packet rejection for when packets cannot be reassembled after fragmentation. The evaluator shall use packet captures to ensure that the IP traffic is detected by the TOE and packets are dropped.</li><li class="test-"><a id="_t_15" class="defined" href="#_t_15">Test FIP_SBD_EXT.2.2:3</a>:
+      The evaluator shall generate packets that can be reassembled after fragmentation; the evaluator shall ensure audit events are generated for all instances of IP normalization.</li></ul></span>
               </div>
             <div class="element-activity-header">FIP_SBD_EXT.2.3</div>
               <div class="eacategory">TSS</div><div class="ea">The evaluator shall verify that the TSS describes that packets are automatically dropped for the following normalization:<ul><li>duplicate packets</li> <li>changed packets</li> <li>out of sequence packets</li> <li>other packet types claimed in the requirement, if any</li></ul></div>
@@ -704,12 +689,9 @@ The following sections list Common Criteria and technology terms used in this do
 	administrative guidance shall also identify those audit records that are always recorded, regardless of the
 	selection criteria currently being enforced.</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
                 The evaluator shall perform the following tests:
-                <span class="testlist-"><ul>
-                  <li class="test-"><a id="_t_16" class="defined" href="#_t_16">Test FAU_SAR.3:1</a>:
-      For each attribute listed in the requirement, the evaluator shall devise a test to show that selecting the attribute causes only audit events with that attribute (or those that are always recorded, as identified in the administrative guidance) to be recorded.</li>
-                  <li class="test-"><a id="_t_17" class="defined" href="#_t_17">Test FAU_SAR.3:2</a>:
-      [conditional]: If the TSF supports specification of more complex audit pre-selection criteria (e.g., multiple attributes, logical expressions using attributes) then the evaluator shall devise tests showing that this capability is correctly implemented. The evaluator shall also, in the test plan, provide a short narrative justifying the set of tests as representative and sufficient to exercise the capability.</li>
-                </ul></span>
+                <span class="testlist-"><ul><li class="test-"><a id="_t_16" class="defined" href="#_t_16">Test FAU_SAR.3:1</a>:
+      For each attribute listed in the requirement, the evaluator shall devise a test to show that selecting the attribute causes only audit events with that attribute (or those that are always recorded, as identified in the administrative guidance) to be recorded.</li><li class="test-"><a id="_t_17" class="defined" href="#_t_17">Test FAU_SAR.3:2</a>:
+      [conditional]: If the TSF supports specification of more complex audit pre-selection criteria (e.g., multiple attributes, logical expressions using attributes) then the evaluator shall devise tests showing that this capability is correctly implemented. The evaluator shall also, in the test plan, provide a short narrative justifying the set of tests as representative and sufficient to exercise the capability.</li></ul></span>
               </div></div></span></div><h2 class="indexable" data-level="1" id="impl-sfrs-">2.6 Evaluation Activities for Implementation-dependent SFRs</h2><h2 class="indexable" data-level="2" id="fru-imp_dep">2.6.1 Class FRU: Resource Utilization</h2><div class="comp" id="FRU-RSA-1"><h4>FRU_RSA.1 Maximum Quotas</h4><span class="activity_pane_body"><div class="component-activity-header">FRU_RSA.1</div>
               
               
