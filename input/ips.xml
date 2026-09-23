@@ -24,28 +24,6 @@
       <subject>CC:2022 updates, incorporation of TDs</subject>
     </entry>
   </RevisionHistory>
-  <include-pkg id="pkg-ssh">
-    <git>
-      <url>https://github.com/commoncriteria/ssh</url>
-      <branch>master</branch>
-    </git>
-    <url>https://www.niap-ccevs.org/protectionprofiles/515</url>
-  </include-pkg>
-  <include-pkg id="pkg-tls">
-    <git>
-      <url>https://github.com/commoncriteria/tls</url>
-      <branch>release-2.0</branch>
-    </git>
-    <url>https://www.niap-ccevs.org/protectionprofiles/465</url>
-    <depends on="fcs-eap-ext-1"/>
-  </include-pkg>
-  <include-pkg id="pkg-x509">
-    <git>
-      <url>https://github.com/commoncriteria/X509</url>
-      <branch>master</branch>
-    </git>
-    <url>https://www.niap-ccevs.org/protectionprofiles/511</url>
-  </include-pkg>
   <pp-preferences/>
   <sec:Introduction>
     <sec:Overview title="Overview">
@@ -259,12 +237,75 @@
       <cc-pt3-conf>conformant</cc-pt3-conf>
       <cc-pp-conf/>
       <cc-pp-config-with>
-        <PP-cc-ref>Network Device collaborative Protection Profile Version 4.0</PP-cc-ref>
-        <Mod-cc-ref>collaborative Protection Profile Module for Stateful Traffic Filter Firewalls
-          	v2.0</Mod-cc-ref>
-        <Mod-cc-ref>PP-Module for Virtual Private Network (VPN) Gateways, Version 2.0</Mod-cc-ref>
+        <PP-cc-ref>
+			<!-- Network Device collaborative Protection Profile Version 4.0 -->
+			<cc-doc-ref id="ndcpp" 
+				name="Network Device collaborative Protection Profile"      
+				version="4.0"                            
+				short="NDcPP"                             
+				product="network device"     
+				plural="network devices"
+                doctype="cPP">     
+				<url>https://www.niap-ccevs.org/protectionprofiles/524</url>
+			</cc-doc-ref>
+		</PP-cc-ref>
+        <Mod-cc-ref>
+			<!-- collaborative Protection Profile Module for Stateful Traffic Filter Firewalls v2.0 -->
+			<cc-doc-ref id="stffw" 
+				name="collarborative Protection Profile Module for Stateful Traffic Filter Firewalls"      
+				version="2.0"                            
+				short="STFFW"                             
+				product="firewall"     
+				plural="firewalls"
+                doctype="PP-Module">     
+				<url>https://www.niap-ccevs.org/protectionprofiles/540</url>
+			</cc-doc-ref>
+		</Mod-cc-ref>
+        <Mod-cc-ref>
+			<!-- PP-Module for Virtual Private Network (VPN) Gateways, Version 2.0 -->
+			<cc-doc-ref id="vpngw">
+				<git>
+					<url>https://github.com/commoncriteria/vpngw</url>
+					<branch>release-2.0</branch>
+				</git>
+				<url>https://www.niap-ccevs.org/protectionprofiles/527</url>
+			</cc-doc-ref>		
+		</Mod-cc-ref>
       </cc-pp-config-with>
-      <cc-pkg-claim/>
+      <cc-pkg-claim>
+        <FP-cc-ref conf="conformant">
+			<!-- Functional Package for SSH Version 2.0 -->
+			<cc-doc-ref id="ssh">
+				<git>
+					<url>https://github.com/commoncriteria/ssh</url>
+					<branch>release-2.0</branch>
+				</git>
+				<url>https://www.niap-ccevs.org/protectionprofiles/515</url>
+				<depends on-sel="sel_all_ssh"/>
+			</cc-doc-ref>
+		</FP-cc-ref>
+        <FP-cc-ref conf="conformant">
+			<!-- Functional Package for TLS Version 2.1 -->
+			<cc-doc-ref id="tls">
+				<git>
+					<url>https://github.com/commoncriteria/tls</url>
+					<branch>release-2.1</branch>
+				</git>
+				<url>https://www.niap-ccevs.org/protectionprofiles/519</url>
+				<depends on="fcs-eap-ext-1"/>
+			</cc-doc-ref>
+		</FP-cc-ref>
+        <FP-cc-ref conf="conformant">
+			<!-- Functional Package for X.509 Version 1.0 -->	
+			<cc-doc-ref id="X509">
+				<git>
+					<url>https://github.com/commoncriteria/X509</url>
+					<branch>release-1.0</branch>
+				</git>
+				<url>https://www.niap-ccevs.org/protectionprofiles/511</url>
+			</cc-doc-ref>
+		</FP-cc-ref>
+	  </cc-pkg-claim>
     </CClaimsInfo>
   </sec:Conformance_Claims>
   <!-- 3.0 Security Problem Definition-->
@@ -367,13 +408,13 @@
           <rationale>This requirement mitigates the threat by allowing for detection of potential malicious network activity that would otherwise be undetected because of its fragmentation across multiple packets.</rationale>
         </threat>
         <threat name="T.UNAUTHORIZED_ADMINISTRATION">
-          <from base="ND"/>
+          <from base="ndcpp"/>
           <!-- New mapping to build updated threat mapping table. -->
           <addressed-by>FMT_SMF.1/IPS</addressed-by>
           <rationale>This requirement mitigates the threat of unauthorized administration by providing a dedicated mechanism for authorized administration.</rationale>
         </threat>
         <threat name="T.UNDETECTED_ACTIVITY">
-          <from base="ND"/>
+          <from base="ndcpp"/>
           <!-- New mapping to build updated threat mapping table. -->
           <addressed-by>FAU_ARP.1 (objective)</addressed-by>
           <rationale>This requirement mitigates the threat of undetected actions by generating an alert in response to the detection of suspicious network events, allowing for timely analysis of potential threats.</rationale>
@@ -456,8 +497,7 @@ enforce its policies on network traffic of monitored networks.</description>
   <!-- 5.0 Security Requirements -->
   <sec:Security_Requirements title="Security Requirements">
     <!-- 5.1 ND PP Security Functional Requirements Direction -->
-    <base-pp id="ND" name="Network Device" product="Network Device" short="ND" version="4.0" plural="Network Devices">
-      <url>https://www.niap-ccevs.org/protectionprofiles/482</url>
+    <base-pp ref="ndcpp">
       <cPP/>
       <sec-func-req-dir>In a PP-Configuration that includes the NDcPP, the TOE is expected to rely on some of the security
 		functions implemented by the network device as a whole and evaluated against the Base-PP. However,
