@@ -242,7 +242,7 @@
 			<cc-doc-ref id="ndcpp" 
 				name="Network Device collaborative Protection Profile"      
 				version="4.0"                            
-				short="NDcPP"                             
+				short="ND"                             
 				product="network device"     
 				plural="network devices"
                 doctype="cPP">     
