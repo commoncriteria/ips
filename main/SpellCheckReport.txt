@@ -7,6 +7,7 @@ output/ips-release-linkable.html: ICMPv6
 output/ips-release-linkable.html: IPSs
 output/ips-release-linkable.html: ITT
 output/ips-release-linkable.html: Multiprotocol
+output/ips-release-linkable.html: NDcPPcPP
 output/ips-release-linkable.html: RST
 output/ips-release-linkable.html: SAA
 output/ips-release-linkable.html: SMR
@@ -20,6 +21,7 @@ output/ips-release-linkable.html: URIs
 output/ips-release-linkable.html: allo
 output/ips-release-linkable.html: appe
 output/ips-release-linkable.html: cdup
+output/ips-release-linkable.html: collarborative
 output/ips-release-linkable.html: configurability
 output/ips-release-linkable.html: cwd
 output/ips-release-linkable.html: doesn
@@ -39,7 +41,6 @@ output/ips-release-linkable.html: subnet
 output/ips-release-linkable.html: subnets
 output/ips-release-linkable.html: syslog
 output/ips-release-linkable.html: uninspected
-output/ips-release-linkable.html: v2
 output/ips-release.html: CEM
 output/ips-release.html: CPC
 output/ips-release.html: Chargen
@@ -50,6 +51,8 @@ output/ips-release.html: ICMPv6
 output/ips-release.html: IPSs
 output/ips-release.html: ITT
 output/ips-release.html: Multiprotocol
+output/ips-release.html: NDcPPcPP
+output/ips-release.html: PP’s
 output/ips-release.html: RST
 output/ips-release.html: SAA
 output/ips-release.html: SMR
@@ -67,6 +70,7 @@ output/ips-release.html: appe
 output/ips-release.html: approved’
 output/ips-release.html: blocked’
 output/ips-release.html: cdup
+output/ips-release.html: collarborative
 output/ips-release.html: configurability
 output/ips-release.html: creates’
 output/ips-release.html: cwd
@@ -99,7 +103,6 @@ output/ips-release.html: typical’
 output/ips-release.html: unexpected’
 output/ips-release.html: uninspected
 output/ips-release.html: unknown’
-output/ips-release.html: v2
 output/ips-release.html: ’
 output/ips-sd.html: AGD
 output/ips-sd.html: CEM
@@ -139,6 +142,8 @@ output/ips.html: ICMPv6
 output/ips.html: IPSs
 output/ips.html: ITT
 output/ips.html: Multiprotocol
+output/ips.html: NDcPPcPP
+output/ips.html: PP’s
 output/ips.html: RST
 output/ips.html: SAA
 output/ips.html: SMR
@@ -156,6 +161,7 @@ output/ips.html: appe
 output/ips.html: approved’
 output/ips.html: blocked’
 output/ips.html: cdup
+output/ips.html: collarborative
 output/ips.html: configurability
 output/ips.html: creates’
 output/ips.html: cwd
@@ -190,5 +196,4 @@ output/ips.html: typical’
 output/ips.html: unexpected’
 output/ips.html: uninspected
 output/ips.html: unknown’
-output/ips.html: v2
 output/ips.html: ’
